@@ -25,7 +25,7 @@ export function InteractiveMatcher() {
           }
         }
         if (budget === "Premium (৳18L+)") {
-          return ["australia", "canada", "usa", "uk"].includes(d.slug);
+          return ["canada", "netherlands", "uk", "denmark"].includes(d.slug);
         }
         return true;
       })
@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello RANS Scholarships! I used your Study Abroad Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a 100% Free File Opening consultation with a RANS counselor for me!`;
+    const text = `Hello AB STUDY HUB! I used your Study Abroad Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an AB STUDY HUB counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -50,8 +50,8 @@ export function InteractiveMatcher() {
           </h2>
           <p className="mt-1 max-w-2xl text-xs sm:text-sm text-slate-600 leading-relaxed">
             Select your academic degree level, GPA, English status (with or without IELTS), and
-            budget to discover matched destinations across Finland, Canada, USA, UK, Hungary,
-            Netherlands, Italy & Romania.
+            budget to discover matched destinations across Germany, Denmark, Netherlands, Canada, Spain, Greece,
+            Malaysia, Cyprus, and the UK.
           </p>
         </div>
         <div className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-2 text-xs font-bold text-white">
@@ -222,11 +222,11 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a 100% Free Profile Audit by RANS Scholarships Advisors?
+              Want a Free Profile Assessment by AB STUDY HUB Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Walk into our Sylhet Corporate Office at 425 Rang Mohol Tower (Lift: 3), Bandar Bazar,
-              or connect on WhatsApp for an instant evaluation with zero file-opening charges.
+              Walk into our Chattogram Campus at Commerce View Complex (Exim Bank Building), CDA Avenue,
+              East Nasirabad, or connect on WhatsApp for an evaluation.
             </p>
           </div>
           <div className="flex items-center gap-3">

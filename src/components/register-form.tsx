@@ -6,19 +6,22 @@ const field =
 const label = "mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-700";
 
 const serviceOptions = [
-  "100% Free File Opening Charge & Profile Assessment",
-  "Finland Jan 2027 Joint Application & Rolling Admissions",
-  "Study Abroad Admissions (Finland, Canada, USA, UK, Hungary, Europe)",
-  "IELTS Preparation Masterclass (Target Band 7.5+)",
+  "German Language Course (A1–B2 Goethe-Institut Prep)",
+  "Study in Germany (Tuition-Free Public Universities)",
+  "Danish Language Course (Higher Education & Work Permit)",
+  "Study in Denmark (European Quality Education)",
+  "IELTS Private Batch (Target Band 7.5+, 10-12 Students)",
   "Spoken English & Communication Fluency",
-  "Kids English & Spoken Foundation (Ages 5-14)",
-  "English Grammar Masterclass",
-  "Student & Dependent Spouse Visa Filing",
-  "Hungary Stipendium Hungaricum Scholarship",
+  "Kids English & Phonics Foundation (Ages 5-14)",
+  "Study in Netherlands (Zoekjaar Visa)",
+  "Study in Spain / Greece (Schengen European Degree)",
+  "Study in Malaysia / Cyprus (Affordable Global Hubs)",
+  "Study in Canada / UK (Work Permits & Masters)",
+  "German University Admissions & APS / Blocked Account",
 ];
 
 const officeOptions = [
-  "Sylhet Headquarters (425 Rang Mohol Tower, Bandar Bazar)",
+  "Chattogram Headquarters (Commerce View Complex, East Nasirabad)",
   "Online Consultation (WhatsApp / Zoom)",
 ];
 
@@ -28,10 +31,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     name: "",
     email: "",
     phone: "",
-    service: "100% Free File Opening Charge & Profile Assessment",
-    destination: "Finland (Jan 2027 Joint App & Rolling)",
+    service: "German Language Course (A1–B2 Goethe-Institut Prep)",
+    destination: "Germany (Tuition-Free Public Universities)",
     currentStatus: "Bachelor's Graduate (Master's Aspirant)",
-    office: "Sylhet Headquarters (425 Rang Mohol Tower, Bandar Bazar)",
+    office: "Chattogram Headquarters (Commerce View Complex, East Nasirabad)",
     message: "",
   });
 
@@ -40,7 +43,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
   const whatsappHref = () => {
     const lines = [
-      "✨ Free Consultation Request — RANS Scholarships",
+      "✨ Free Consultation Request — AB STUDY HUB",
       `👤 Name: ${form.name}`,
       `📞 Phone: ${form.phone}`,
       form.email ? `✉️ Email: ${form.email}` : "",
@@ -49,7 +52,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       `🎓 Status/Background: ${form.currentStatus}`,
       `🏢 Preferred Office: ${form.office}`,
       form.message ? `📝 Notes: ${form.message}` : "",
-      "\nI would like to schedule a free counseling session with a RANS Scholarships advisor.",
+      "\nI would like to schedule a free counseling session with an AB STUDY HUB advisor.",
     ].filter(Boolean);
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
@@ -69,13 +72,13 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
         <h3 className="font-display text-2xl font-black text-slate-900">Booking Confirmed! 🎉</h3>
         <p className="mx-auto max-w-md text-sm text-slate-600 leading-relaxed">
           Thank you, <strong className="text-slate-900">{form.name}</strong>! Your free consultation
-          has been registered. A <strong>{company.name}</strong> counselor will contact you on{" "}
+          has been registered. An <strong>{company.name}</strong> counselor will contact you on{" "}
           <strong className="text-emerald-700">{form.phone}</strong> shortly.
         </p>
         <div className="mt-2 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-xs text-emerald-800 text-left space-y-1">
-          <p>✔ 100% Free File Opening Charge · Zero upfront fees</p>
-          <p>✔ 425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet</p>
-          <p>✔ Member of FECAS · Established since 2017</p>
+          <p>✔ Commerce View Complex (4th Flr), CDA Ave, East Nasirabad, Chattogram</p>
+          <p>✔ German & Danish Academy · IELTS Private Batches (10–12 Students)</p>
+          <p>✔ Free Profile Assessment & Roadmap</p>
         </div>
         <div className="pt-2 flex flex-col gap-2">
           <a
@@ -104,13 +107,13 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div className="border-b border-slate-100 pb-3 mb-2">
         <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-red-600">
-          RANS Scholarships · 100% Free File Opening
+          AB STUDY HUB · Abroad From Bangladesh
         </span>
         <h3 className="font-display text-xl font-black text-slate-900">
           Book Your Free Assessment
         </h3>
         <p className="text-xs text-slate-500 mt-0.5">
-          100% Free File Opening · Member of FECAS · Rang Mohol Tower, Sylhet
+          Commerce View Complex (4th Flr), CDA Avenue, East Nasirabad, Chattogram
         </p>
       </div>
 
@@ -262,7 +265,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       </button>
 
       <p className="text-center text-[0.7rem] text-slate-600">
-        🔒 100% Privacy Guaranteed · 100% Free File Opening · Member of FECAS
+        🔒 100% Privacy Guaranteed · Abroad From Bangladesh · Chattogram Office
       </p>
     </form>
   );

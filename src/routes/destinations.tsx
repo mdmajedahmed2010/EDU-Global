@@ -6,17 +6,17 @@ import { company, destinations } from "@/lib/site-data";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Study Abroad Destinations | RANS Scholarships — Sylhet, Bangladesh" },
+      { title: "Study Abroad Destinations | AB STUDY HUB — Abroad From Bangladesh | Chattogram" },
       {
         name: "description",
         content:
-          "Explore premier study abroad destinations processed by RANS Scholarships: Finland, Canada, USA, UK, Hungary, Netherlands, Italy, and Romania. 100% Free File Opening Charge. 425 Rang Mohol Tower, Bandar Bazar, Sylhet.",
+          "Explore premier study abroad destinations processed by AB STUDY HUB: Germany (Tuition-free public universities), Denmark, Netherlands, Spain, Greece, Malaysia, Canada, and the UK. Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram.",
       },
-      { property: "og:title", content: "Study Abroad Destinations | RANS Scholarships" },
+      { property: "og:title", content: "Study Abroad Destinations | AB STUDY HUB" },
       {
         property: "og:description",
         content:
-          "DREAM TO STUDY ABROAD! Complete verified guide to international universities, scholarships, and student visas with 100% Free File Opening Charge.",
+          "From Chattogram TO THE WORLD! Complete verified guide to tuition-free German universities, European admissions, language coaching, and student visas.",
       },
     ],
   }),
@@ -46,9 +46,9 @@ function Destinations() {
       <PageHero
         eyebrow="Global University Network"
         title="Verified Study Abroad Portals"
-        subtitle="Explore admission criteria, post-study work rights (PSW), average living costs, scholarships, and without IELTS (MOI) options across accredited partner universities represented by RANS Scholarships."
+        subtitle="Explore admission criteria, post-study work rights (PSW), average living costs, scholarships, and language requirements across accredited partner universities represented by AB STUDY HUB (Abroad From Bangladesh)."
         image="/latest-assets/banner.jpg"
-        imageAlt="RANS Scholarships official global destinations banner"
+        imageAlt="AB STUDY HUB official global destinations banner"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Destinations" }]} />
       </PageHero>
@@ -93,7 +93,7 @@ function Destinations() {
             destinations
           </p>
           <span className="text-red-600 font-bold">
-            ✓ 100% Free File Opening Charge at our Rang Mohol Tower, Sylhet Corporate Office
+            ✓ Free Profile Assessment at our Commerce View Complex, Chattogram Campus
           </span>
         </div>
 

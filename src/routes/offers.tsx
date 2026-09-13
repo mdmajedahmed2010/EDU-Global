@@ -5,17 +5,17 @@ import { company, upcomingIntakesAndOffers } from "@/lib/site-data";
 export const Route = createFileRoute("/offers")({
   head: () => ({
     meta: [
-      { title: "Upcoming Intakes & Admissions Offers | RANS Scholarships" },
+      { title: "Upcoming Intakes & Academy Batches | AB STUDY HUB — Chattogram" },
       {
         name: "description",
         content:
-          "Explore upcoming intakes: Finland January 2027 Joint Application (31 Aug–10 Sep 2026) & rolling admissions, Hungary Stipendium Hungaricum, alongside new IELTS and Kids English batch schedules at RANS Scholarships Sylhet.",
+          "Explore active intakes: German Public Universities (Winter/Summer), Denmark & Netherlands admissions, alongside new German Language (A1–B2 Goethe), Danish, and IELTS Private Batches at AB STUDY HUB Chattogram.",
       },
-      { property: "og:title", content: "Upcoming Intakes & Offers | RANS Scholarships" },
+      { property: "og:title", content: "Upcoming Intakes & Academy Batches | AB STUDY HUB" },
       {
         property: "og:description",
         content:
-          "100% Free File Opening Charge. Secure scholarships, fast-track offer letters, and join new IELTS batches at RANS Scholarships Rang Mohol Tower, Bandar Bazar, Sylhet.",
+          "Secure tuition-free German university admissions, fast-track offers, and join private language batches at AB STUDY HUB Commerce View Complex, East Nasirabad, Chattogram.",
       },
     ],
   }),
@@ -28,9 +28,9 @@ function Offers() {
       <PageHero
         eyebrow="Admissions & Special Intakes"
         title="Upcoming Intakes & Academy Admissions"
-        subtitle="Explore active study abroad application deadlines, Finland January 2027 roadmap, European bursaries, and new IELTS & Kids English coaching schedules at our Sylhet headquarters."
+        subtitle="Explore active German public university intakes, European bursaries, and new Goethe German, Danish, & IELTS Private coaching schedules at our Chattogram campus."
         image="/latest-assets/banner.jpg"
-        imageAlt="RANS Scholarships active admissions and intakes"
+        imageAlt="AB STUDY HUB active admissions and intakes"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Intakes & Offers" }]} />
       </PageHero>
@@ -40,7 +40,7 @@ function Offers() {
         <SectionHeading
           eyebrow="Active Campaigns"
           title="Current Intakes, Drives & Academy Batches"
-          subtitle="All sessions below are actively accepting applications with complete transparency, 100% Free File Opening Charge, and dedicated Sylhet advisory."
+          subtitle="All sessions below are actively accepting applications with complete transparency and dedicated Chattogram advisory."
         />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -72,7 +72,7 @@ function Offers() {
 
               <div className="mt-8 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello RANS Scholarships, I want to apply / register for: "${item.title}".`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AB STUDY HUB, I want to apply / register for: "${item.title}".`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-emerald w-full text-center text-xs py-3 shadow-sm"

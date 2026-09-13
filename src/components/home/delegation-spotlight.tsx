@@ -8,7 +8,7 @@ import { SlideIn, StaggerContainer, StaggerItem } from "@/components/motion-wrap
 export function DelegationSpotlight() {
   const { open } = useRegisterModal();
   const [activeCourseIdx, setActiveCourseIdx] = useState(0);
-  const currentCourse = courses[activeCourseIdx];
+  const currentCourse = courses[activeCourseIdx] ?? courses[0]!;
 
   const visaCategories = [
     { name: "Student Visa", icon: "🎓" },
@@ -33,18 +33,17 @@ export function DelegationSpotlight() {
           <SlideIn direction="left" distance={45} className="space-y-5">
             <div className="inline-flex items-center gap-2 rounded-full bg-red-600/20 border border-red-500/30 px-3.5 py-1 text-xs font-bold text-red-400">
               <IconSparkles className="w-3.5 h-3.5" />
-              <span>RANS Scholarships Language Academy · Bandar Bazar, Sylhet</span>
+              <span>AB STUDY HUB Language Academy · East Nasirabad, Chattogram</span>
             </div>
 
             <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
-              Master English Fluency with <br />
-              <span className="text-red-500">IELTS, Spoken & Kids English</span>
+              Master European Languages & English <br />
+              <span className="text-red-500">German, Danish, IELTS & Spoken English</span>
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
-              Whether you are preparing for international university admission in Finland or Europe,
-              conversational fluency, or giving your child a head-start in English, our certified
-              instructors provide personalized coaching.
+              Whether you are preparing for tuition-free public universities in Germany, higher studies in Denmark,
+              or targeting IELTS Band 7.5+ in private batches, our experienced trainers provide intensive, personalized coaching.
             </p>
 
             {/* Course Selector Tabs */}
@@ -63,7 +62,7 @@ export function DelegationSpotlight() {
                 >
                   <span className="text-base">{c.icon}</span>
                   <span>
-                    {c.title.split(" ")[0]} {c.title.split(" ")[1]}
+                    {c.title.split(" ")[0]} {c.title.split(" ")[1] || ""}
                   </span>
                 </button>
               ))}
@@ -106,7 +105,7 @@ export function DelegationSpotlight() {
 
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello RANS Scholarships! I am interested in ${currentCourse.title}. Please provide batch details and fee structure.`,
+                  `Hello AB STUDY HUB! I am interested in ${currentCourse.title}. Please provide batch details and fee structure.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"
@@ -118,15 +117,15 @@ export function DelegationSpotlight() {
             </div>
           </SlideIn>
 
-          {/* Right: Sylhet Office & Verified Visa Services */}
+          {/* Right: Chattogram Office & Verified Services */}
           <SlideIn direction="right" distance={45} className="space-y-5 lg:pl-4">
             <div className="rounded-2xl bg-slate-800/80 border border-slate-700 p-5 space-y-3">
               <div className="flex items-center justify-between border-b border-slate-700/80 pb-2.5">
                 <span className="text-xs font-bold uppercase tracking-wider text-red-400">
-                  Sylhet Corporate Headquarters
+                  Chattogram Corporate Hub
                 </span>
                 <span className="text-[0.68rem] text-slate-400">
-                  10 Years Experience (Since 2017)
+                  Abroad From Bangladesh
                 </span>
               </div>
 
@@ -135,29 +134,28 @@ export function DelegationSpotlight() {
                   <span className="text-2xl">🏢</span>
                   <div>
                     <span className="block font-display text-xs font-bold text-white">
-                      RANS Scholarships Corporate Office
+                      AB STUDY HUB Central Campus
                     </span>
                     <p className="text-[0.7rem] text-slate-400 leading-snug mt-0.5">
-                      {company.sylhetOffice.full}
+                      {company.offices.headquarters.address}
                     </p>
                     <span className="block text-[0.68rem] text-red-400 font-semibold mt-1">
-                      Hotlines: 01772-063911 (WhatsApp) / 01925-772171
+                      Hotlines: {company.phones[0]} (WhatsApp) / {company.phones[1]}
                     </span>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-700/60 hover-lift">
-                  <span className="text-2xl">🇫🇮</span>
+                  <span className="text-2xl">🇩🇪</span>
                   <div>
                     <span className="block font-display text-xs font-bold text-white">
-                      Finland January 2027 Joint Application Desk
+                      Tuition-Free Germany & European Admissions Desk
                     </span>
                     <p className="text-[0.7rem] text-slate-400 leading-snug mt-0.5">
-                      Joint App: 31 Aug – 10 Sep 2026 · Rolling Admissions without Entrance Exam ·
-                      Spouse Full Work Rights & Child Schooling
+                      German Language (A1–B2 Goethe) · Danish Language Course · APS & Blocked Account Setup · University Shortlisting
                     </p>
                     <span className="block text-[0.68rem] text-amber-300 font-semibold mt-1">
-                      Member of FECAS & FACD-CAB · 100% Free File Opening
+                      Commerce View Complex (4th Flr), CDA Avenue, East Nasirabad, Chattogram
                     </span>
                   </div>
                 </div>

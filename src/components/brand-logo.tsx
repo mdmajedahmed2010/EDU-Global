@@ -2,8 +2,8 @@ import { cn } from "@/lib/utils";
 import { company } from "@/lib/site-data";
 
 /**
- * RANS Scholarships — Official Brand Logo Component.
- * Features the signature "RANS Scholarships" branding with academic mortarboard, world globe, and airplane takeoff flightpath.
+ * AB STUDY HUB — Official Brand Logo Component.
+ * Features the signature "AB STUDY HUB" (Abroad From Bangladesh) branding with academic mortarboard and arrow emblem.
  */
 export function BrandLogo({
   className,
@@ -24,18 +24,18 @@ export function BrandLogo({
     <div className={cn("inline-flex items-center gap-3 select-none group", className)}>
       <div
         className={cn(
-          "relative inline-flex items-center justify-center shrink-0 overflow-hidden rounded-xl bg-white border-2 border-red-600/30 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:border-red-600 p-1",
+          "relative inline-flex items-center justify-center shrink-0 overflow-hidden rounded-xl bg-white border-2 border-red-600/30 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:border-red-600 p-0.5",
         )}
         style={{ width: size, height: size }}
       >
         <img
-          src="/log.jpg"
+          src="/logo.jpg"
           alt={`${company.name} Official Logo`}
           width={size}
           height={size}
-          className="h-full w-full object-contain"
+          className="h-full w-full object-contain rounded-lg"
           onError={(e) => {
-            e.currentTarget.src = "/latest-assets/logo.jpg";
+            e.currentTarget.src = "/brand-assets/logo.jpg";
           }}
         />
       </div>
@@ -48,15 +48,15 @@ export function BrandLogo({
                 "font-display font-black tracking-tight text-base sm:text-lg md:text-xl text-red-600 whitespace-nowrap",
               )}
             >
-              RANS
+              AB
             </span>
             <span
               className={cn(
                 "font-display font-extrabold text-xs sm:text-sm md:text-base tracking-wide whitespace-nowrap",
-                variant === "dark" ? "text-white" : "text-[#043E8B]",
+                variant === "dark" ? "text-white" : "text-slate-950",
               )}
             >
-              SCHOLARSHIPS
+              STUDY HUB
             </span>
           </div>
           <span
@@ -65,7 +65,7 @@ export function BrandLogo({
               variant === "dark" ? "text-slate-300" : "text-slate-600",
             )}
           >
-            {subtitle || "Study Abroad & Language Academy · Sylhet"}
+            {subtitle || "Abroad From Bangladesh · Chattogram"}
           </span>
         </div>
       )}

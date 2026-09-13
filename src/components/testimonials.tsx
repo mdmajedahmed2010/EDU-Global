@@ -29,12 +29,12 @@ export function Testimonials() {
       <div className="section-shell">
         {/* Animated Section Header */}
         <MotionHeading
-          tag="— VERIFIED REVIEWS & ENDORSEMENTS —"
+          tag="— VERIFIED REVIEWS & SUCCESS STORIES —"
           title="What our students"
           highlight="say"
-          description="Real feedback from attendees at the 2-day Finland Education Expo (Hotel Nirvana Inn, Sylhet), guardians, and students enrolled in Finland, Canada, the UK, and Europe."
+          description="Real feedback from German and Danish language course learners, IELTS private batch candidates, and students admitted to universities in Germany, Europe, Canada, and the UK."
           tagColor="text-red-600"
-          highlightColor="text-[#043E8B]"
+          highlightColor="text-red-600"
         />
 
         {/* Testimonials Carousel Container with Navigation Arrows */}
@@ -90,7 +90,7 @@ export function Testimonials() {
                   {/* Bottom Author Row */}
                   <div className="flex items-center justify-between border-t border-slate-100 pt-5 mt-6">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-[#043E8B] to-slate-900 text-white font-bold text-xs shadow-xs">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-red-600 to-slate-900 text-white font-bold text-xs shadow-xs">
                         {r.initials}
                       </div>
                       <div className="min-w-0">

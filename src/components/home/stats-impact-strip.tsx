@@ -3,50 +3,49 @@ import { CountUp, StaggerContainer, StaggerItem } from "@/components/motion-wrap
 export function StatsImpactStrip() {
   const stats = [
     {
-      icon: "⏳",
+      icon: "🎯",
+      val: 100,
+      suffix: "%",
+      label: "Free Assessment",
+      sublabel: "Individual profile evaluation & roadmap",
+    },
+    {
+      icon: "👥",
       val: 10,
-      suffix: " Years",
-      label: "Experience in Sylhet",
-      sublabel: "Guiding students since 2017",
+      suffix: "–12",
+      label: "Private Batch Size",
+      sublabel: "German, Danish & IELTS intensive focus",
     },
     {
-      icon: "🎁",
-      val: 100,
-      suffix: "%",
-      label: "Free File Opening",
-      sublabel: "Zero hidden charges or upfront fees",
-    },
-    {
-      icon: "✓",
-      val: 500,
+      icon: "🇩🇪",
+      val: 300,
       suffix: "+",
-      label: "Successful Visa Grants",
-      sublabel: "Finland, Europe, Canada, UK & USA",
+      label: "German Public Unis",
+      sublabel: "Tuition-free higher education options",
     },
     {
-      icon: "🏛️",
-      val: 100,
-      suffix: "%",
-      label: "Member of FECAS",
-      sublabel: "Govt. registered & ethical standards",
+      icon: "🌍",
+      val: 6,
+      suffix: " Major",
+      label: "Global Destinations",
+      sublabel: "Germany, Denmark, Netherlands, CA, US, UK",
     },
   ];
 
   return (
-    <section className="relative py-16 sm:py-24 bg-blueprint-radial text-white overflow-hidden border-y border-blue-900/40">
+    <section className="relative py-16 sm:py-24 bg-[#0A0A0C] text-white overflow-hidden border-y border-red-900/30">
       {/* Subtle Ambient Radial Lighting */}
-      <div className="pointer-events-none absolute left-1/2 -top-24 -translate-x-1/2 h-72 w-[600px] rounded-full bg-blue-500/10 blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 -top-24 -translate-x-1/2 h-72 w-[600px] rounded-full bg-red-600/10 blur-[120px]" />
 
       <div className="section-shell relative z-10">
         {/* Section Heading with Editorial Italic Serif */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <h2 className="font-serif-editorial text-3xl sm:text-5xl font-normal tracking-tight text-white">
-            Trusted by students & guardians{" "}
-            <span className="italic font-normal text-blue-200">since 2017</span>
+            From Chattogram <span className="italic font-normal text-red-500">to the World</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-400 mt-2 font-medium">
-            Operating from Rang Mohol Tower, Bandar Bazar, Sylhet — empowering students to reach
-            world-class universities with scholarship assistance.
+            Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram — empowering students with
+            European language fluency and global university admissions.
           </p>
         </div>
 

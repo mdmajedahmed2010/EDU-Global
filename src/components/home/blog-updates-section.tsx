@@ -13,34 +13,34 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    title: "Finland January 2027 Joint Application: Dates, UAS Programs & Free File Opening",
+    title: "Study in Germany: Tuition-Free Public Universities, APS & Goethe German Prep",
     excerpt:
-      "Everything you need to know about the upcoming Joint Application (31 August – 10 September 2026), rolling admissions with no entrance exam, and spouse work rights.",
+      "Step-by-step guide on German public university admissions, APS certificate procedures, blocked accounts, and Goethe-Institut German language batches (A1–B2).",
     date: "September 2026",
-    tag: "Finland January 2027",
+    tag: "Germany Tuition-Free",
     image:
-      "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
-    slug: "finland-january-2027-guide",
+      "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
+    slug: "germany-tuition-free-guide",
   },
   {
-    title: "Hungary Stipendium Hungaricum: How to Secure 100% Free European Scholarship & Stipend",
+    title: "Denmark Higher Education & Career Pathways: Danish Language Course in Chattogram",
     excerpt:
-      "Step-by-step guidance on applying for full tuition waivers, monthly living stipends, free university dormitories, and health insurance in Hungary.",
+      "Learn why Denmark is an elite destination for Bangladeshi scholars, combining high-quality Scandinavian degrees with exclusive Danish language coaching at AB STUDY HUB.",
     date: "August 2026",
-    tag: "Europe Scholarship",
+    tag: "Denmark Pathway",
     image:
-      "https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=800&q=80",
-    slug: "hungary-stipendium-guide",
+      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
+    slug: "denmark-pathway-guide",
   },
   {
-    title: "IELTS Band 7.5+ Roadmap: Weekly Cambridge Mock Tests & Speaking Mastery in Sylhet",
+    title: "IELTS Private Batch (Band 7.5+ Target): Intensive Coaching at Commerce View Complex",
     excerpt:
-      "How our dedicated instructors at Rang Mohol Tower, Bandar Bazar help students jump from Band 6.0 to 7.5+ in just 2 months with personalized feedback.",
+      "Why our strictly capped 10–12 students private batches at East Nasirabad, Chattogram consistently produce Band 7.5+ scores with 1-on-1 speaking mock evaluations.",
     date: "August 2026",
     tag: "Language Academy",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
-    slug: "ielts-band-7-roadmap",
+    slug: "ielts-private-batch-guide",
   },
 ];
 
@@ -53,8 +53,8 @@ export function BlogUpdatesSection() {
           tag="— OFFICIAL UPDATES & INSIGHTS —"
           title="Latest"
           highlight="insights"
-          description="Essential intake roadmaps, scholarship announcements, and language mastery tips from RANS Scholarships counselors."
-          tagColor="text-[#043E8B]"
+          description="Essential intake roadmaps, European admission guidelines, and language mastery tips from AB STUDY HUB counselors."
+          tagColor="text-red-600"
           highlightColor="text-red-600"
         />
 

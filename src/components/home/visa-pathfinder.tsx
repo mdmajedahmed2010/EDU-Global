@@ -17,35 +17,27 @@ const educationLevels = [
 ];
 
 const englishProficiency = [
-  { id: "ielts", label: "IELTS 6.0 – 7.5+", badge: "Direct Global Entry" },
-  { id: "moi", label: "Entrance Exam / Without IELTS", badge: "Finland & Europe Path" },
-  { id: "needcoaching", label: "Need IELTS / Spoken Coaching", badge: "Join RANS Batch" },
-  { id: "kids", label: "Parent: Kids English (5-14 yrs)", badge: "Kids Foundation" },
+  { id: "german", label: "German Language Track (A1–B2)", badge: "Tuition-Free Germany" },
+  { id: "danish", label: "Danish Language Track", badge: "Denmark Pathway" },
+  { id: "ielts", label: "IELTS 6.5 – 8.0+", badge: "Direct Global Entry" },
+  { id: "needcoaching", label: "Need IELTS Private Batch", badge: "10–12 Students / Batch" },
+  { id: "kids", label: "Kids English (Ages 5–14)", badge: "Phonics & Spoken" },
 ];
 
 const destinationPreferences = [
   {
-    id: "finland",
-    name: "Finland",
-    flag: "🇫🇮",
-    tag: "Jan 2027 Joint App",
-    partner: "No Exam / Spouse Work",
-  },
-  { id: "canada", name: "Canada", flag: "🇨🇦", tag: "3-Yr PGWP / Co-op", partner: "Public DLIs" },
-  { id: "usa", name: "USA", flag: "🇺🇸", tag: "STEM OPT Career", partner: "F-1 Mock Prep" },
-  {
-    id: "uk",
-    name: "United Kingdom",
-    flag: "🇬🇧",
-    tag: "1-Yr Masters / PSW",
-    partner: "Bursaries to £4,000",
+    id: "germany",
+    name: "Germany",
+    flag: "🇩🇪",
+    tag: "Tuition-Free Public Unis",
+    partner: "APS & Goethe Prep",
   },
   {
-    id: "hungary",
-    name: "Hungary",
-    flag: "🇭🇺",
-    tag: "Stipendium 100% Free",
-    partner: "Schengen 29 Nations",
+    id: "denmark",
+    name: "Denmark",
+    flag: "🇩🇰",
+    tag: "Scandinavian Quality",
+    partner: "Danish Course Included",
   },
   {
     id: "netherlands",
@@ -54,26 +46,63 @@ const destinationPreferences = [
     tag: "Zoekjaar Visa",
     partner: "High Tech Hub",
   },
+  { id: "canada", name: "Canada", flag: "🇨🇦", tag: "3-Yr PGWP / Co-op", partner: "Public DLIs" },
+  { id: "spain", name: "Spain", flag: "🇪🇸", tag: "Schengen Mobility", partner: "Low Tuition Campaign" },
+  {
+    id: "uk",
+    name: "United Kingdom",
+    flag: "🇬🇧",
+    tag: "1-Yr Masters / PSW",
+    partner: "Bursaries to £4,000",
+  },
 ];
 
 export function VisaPathfinder() {
   const { open } = useRegisterModal();
   const [eduLevel, setEduLevel] = useState("bachelor");
-  const [english, setEnglish] = useState("moi");
-  const [destination, setDestination] = useState("finland");
+  const [english, setEnglish] = useState("german");
+  const [destination, setDestination] = useState("germany");
 
   // Dynamic computation logic
   const getMatchData = () => {
+    if (english === "german" || destination === "germany") {
+      return {
+        matchScore: 99,
+        title: "Germany Tuition-Free Public University Track",
+        headline: "Tuition-Free Public Higher Education, APS & Goethe-Institut German A1–B2",
+        timeline: "Winter & Summer Intakes Open",
+        scholarship: "100% Tuition Fee Waiver at German State Universities",
+        moiAccepted: "English-Medium & German-Medium Programs",
+        partnerNote:
+          "Guided by AB STUDY HUB counselors at Commerce View Complex, Chattogram. Complete support for APS verification, blocked accounts, and Goethe German certification.",
+        actionType: "abroad",
+      };
+    }
+
+    if (english === "danish" || destination === "denmark") {
+      return {
+        matchScore: 98,
+        title: "Denmark Higher Education & Career Track",
+        headline: "Scandinavian World-Ranked Education & Tailored Danish Language Training",
+        timeline: "Autumn & Spring Intakes Open",
+        scholarship: "Post-Study Work Permits & High Standard of Living",
+        moiAccepted: "English-Taught Bachelor's & Master's Degrees",
+        partnerNote:
+          "Exclusive Danish language instruction and student visa processing coordinated from our Chattogram headquarters.",
+        actionType: "abroad",
+      };
+    }
+
     if (english === "needcoaching") {
       return {
         matchScore: 99,
-        title: "RANS Language Academy Pathway",
-        headline: "IELTS Preparation Masterclass & Spoken English Fluency",
+        title: "AB STUDY HUB IELTS Private Batch",
+        headline: "Intensive IELTS Preparation (10–12 Students / Batch, Band 7.5+ Target)",
         timeline: "2 to 3 Months to Band 7.5+",
-        scholarship: "100% Free Mock Test & Diagnostic Evaluation",
-        moiAccepted: "Certified IDP/British Council Aligned Curriculum",
+        scholarship: "Free Mock Interview & Detailed Writing Diagnostic",
+        moiAccepted: "British Council & IDP Aligned Curriculum",
         partnerNote:
-          "Trained at our Rang Mohol Tower, Bandar Bazar, Sylhet campus or online with weekly mock tests and individual speaking feedback.",
+          "Conducted at our Commerce View Complex, CDA Avenue, East Nasirabad studio with 1-on-1 speaking evaluations.",
         actionType: "course",
       };
     }
@@ -81,55 +110,27 @@ export function VisaPathfinder() {
     if (english === "kids") {
       return {
         matchScore: 100,
-        title: "Kids English & Spoken Foundation",
+        title: "Kids English & Phonics Foundation",
         headline: "Fun, Creative & Child-Centric English Learning (Ages 5–14)",
         timeline: "3 Months Interactive Batches",
         scholarship: "Sibling Discount & Free Trial Class",
         moiAccepted: "Phonics, Storytelling & Spoken Confidence",
         partnerNote:
-          "Safe, nurturing air-conditioned classroom environment at Rang Mohol Tower with caring, patient instructors.",
+          "Modern air-conditioned classrooms with nurturing, patient trainers at Commerce View Complex, Chattogram.",
         actionType: "course",
       };
     }
 
-    if (destination === "finland") {
+    if (destination === "uk") {
       return {
-        matchScore: english === "moi" ? 99 : 100,
-        title: "Finland Direct Higher Education Admission",
-        headline: "January 2027 Joint Application (31 Aug–10 Sep 2026) & Rolling Admissions",
-        timeline: "Joint App in Sep 2026 · Rolling Open Now",
-        scholarship: "20% – 50% Early Bird Tuition Fee Waivers",
-        moiAccepted:
-          english === "moi"
-            ? "No IELTS Required (Via Finnish Entrance Exam / Rolling)"
-            : "Direct Academic Entry",
-        partnerNote:
-          "RANS Scholarships is Sylhet's #1 recognized specialist for Finland. Benefit from 100% Free File Opening, spouse full working rights, and free schooling for children.",
-        actionType: "abroad",
-      };
-    } else if (destination === "uk") {
-      return {
-        matchScore: english === "moi" ? 98 : 99,
+        matchScore: 98,
         title: "UK Direct University Admission",
         headline: "1-Year Master's, 2-Year PSW & Fast CAS Turnaround",
         timeline: "Offer Letter in 1–2 Weeks",
         scholarship: "Up to £2,000 – £4,000 Merit Bursaries",
-        moiAccepted:
-          english === "moi" ? "MOI Accepted for Eligible Graduates" : "Direct Unconditional Offer",
+        moiAccepted: "MOI Accepted for Eligible Graduates",
         partnerNote:
-          "RANS Scholarships provides complete visa file auditing and 1-on-1 embassy mock interview preparation with zero file opening fee.",
-        actionType: "abroad",
-      };
-    } else if (destination === "hungary") {
-      return {
-        matchScore: 97,
-        title: "Hungary European Degree Pathway",
-        headline: "Stipendium Hungaricum (100% Tuition + Monthly Stipend) & Low Self-Funded Fees",
-        timeline: "September & February Intakes",
-        scholarship: "100% Free Government Grant or Low Tuition (€3,000/yr)",
-        moiAccepted: "English-Taught Bachelor's & Master's",
-        partnerNote:
-          "Affordable European living with unrestricted Schengen travel across 29 European countries.",
+          "AB STUDY HUB provides complete visa file auditing and 1-on-1 embassy mock interview coaching.",
         actionType: "abroad",
       };
     } else if (destination === "canada") {
@@ -144,16 +145,16 @@ export function VisaPathfinder() {
           "Paid co-op internships and open work permit opportunities for accompanying spouses.",
         actionType: "abroad",
       };
-    } else if (destination === "usa") {
+    } else if (destination === "spain") {
       return {
-        matchScore: 94,
-        title: "USA Tier-1 University Admission",
-        headline: "STEM OPT 3-Year Extensions & F-1 Visa Mock Coaching",
-        timeline: "Spring & Fall Intakes",
-        scholarship: "Graduate Assistantships & Merit Awards",
-        moiAccepted: "IELTS / TOEFL / Duolingo",
+        matchScore: 97,
+        title: "Spain European University Pathway",
+        headline: "Affordable Tuition from €1,500/Year & 29 Schengen Countries Access",
+        timeline: "Fall & Spring Intakes Open",
+        scholarship: "Regional & Institutional Merit Grants",
+        moiAccepted: "English-Taught Bachelor's & Master's Degrees",
         partnerNote:
-          "Dedicated 1-on-1 mock embassy interviews by RANS counselors simulating real consular questions.",
+          "Official dedicated campaign by AB STUDY HUB. Affordable living, part-time work rights, and fast European processing.",
         actionType: "abroad",
       };
     }
@@ -350,7 +351,7 @@ export function VisaPathfinder() {
 
                 <a
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                    `Hello RANS Scholarships! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on 100% Free File Opening.`,
+                    `Hello AB STUDY HUB! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on admissions and language batches.`,
                   )}`}
                   target="_blank"
                   rel="noreferrer"

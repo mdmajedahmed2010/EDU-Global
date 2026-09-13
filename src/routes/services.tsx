@@ -16,17 +16,19 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services & Academy | RANS Scholarships — Study Abroad, IELTS & Language Courses" },
+      {
+        title: "Services & Language Academy | AB STUDY HUB — Study in Germany, Danish & IELTS Private Batches",
+      },
       {
         name: "description",
         content:
-          "Explore RANS Scholarships services: 100% Free File Opening Charge, Finland January 2027 Joint App & Rolling Admissions, IELTS Academy (Band 7.5+), Spoken English, Kids English (5-14) & Student Visas. Bandar Bazar, Sylhet. Hotlines: 01772-063911 / 01925-772171.",
+          "Explore AB STUDY HUB services: German Tuition-Free University Admissions (APS & Blocked Account Support), Goethe German Language (A1–B2), Danish Language, IELTS Private Batches (Band 7.5+), Spoken English, and Kids English in Chattogram. Hotlines: 01952-566966 / 01515-219546.",
       },
-      { property: "og:title", content: "Services & Courses | RANS Scholarships" },
+      { property: "og:title", content: "Services & Academy | AB STUDY HUB Chattogram" },
       {
         property: "og:description",
         content:
-          "Study Abroad Admissions & Language Academy at Rang Mohol Tower, Bandar Bazar, Sylhet. 100% Free File Opening Charge, Member of FECAS.",
+          "German Tuition-Free Admissions & Specialized Language Academy at Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram.",
       },
     ],
   }),
@@ -35,71 +37,71 @@ export const Route = createFileRoute("/services")({
 
 const serviceCategories = [
   { id: "all", label: "All Offerings" },
-  { id: "study-abroad", label: "Study Abroad Admissions" },
-  { id: "language-courses", label: "Language Academy (IELTS & English)" },
-  { id: "visa-guidance", label: "Student & Dependent Visas" },
-  { id: "free-file", label: "100% Free File Opening" },
+  { id: "study-abroad", label: "Germany & European Admissions" },
+  { id: "language-courses", label: "Language Academy (German, Danish, IELTS)" },
+  { id: "visa-guidance", label: "Student & Spouse Visas" },
+  { id: "free-file", label: "Free Profile Assessment" },
 ];
 
 const comparisonData = [
   {
-    feature: "File Opening & Profile Assessment",
-    ransScholarships: "100% Free File Opening (Zero Upfront Charge)",
-    traditional: "৳15,000 – ৳30,000 upfront non-refundable fee",
+    feature: "Profile Assessment & Counseling",
+    abStudyHub: "100% Free Transparent Profile Assessment & Strategy",
+    traditional: "৳15,000 – ৳30,000 upfront non-refundable charges",
     highlight: true,
   },
   {
-    feature: "Finland Study Specialization",
-    ransScholarships: "Ranked #1 Priority (Jan 2027 Joint App & Rolling)",
-    traditional: "Generalist advice; limited European UAS expertise",
+    feature: "Germany Tuition-Free Admissions",
+    abStudyHub: "End-to-End APS, Uni-Assist & Blocked Account Guidance",
+    traditional: "Charges exorbitant fees or pushes costly private colleges",
     highlight: true,
   },
   {
     feature: "In-House Language Academy",
-    ransScholarships: "IELTS 7.5+, Spoken English & Kids English (5-14)",
-    traditional: "Consultancy only; no dedicated language training facility",
+    abStudyHub: "German (A1–B2 Goethe), Danish & IELTS 7.5+ in 10–12 batches",
+    traditional: "Consultancy only; no specialized German/Danish language faculty",
     highlight: true,
   },
   {
-    feature: "Accreditation & Industry Standing",
-    ransScholarships: "Member of FECAS & FACD-CAB (Since 2017)",
-    traditional: "Unregistered or commercial brokers without associations",
-    highlight: false,
+    feature: "Batch Size & Mentorship",
+    abStudyHub: "Strictly 10–12 students per private batch",
+    traditional: "Crowded 30–50 student classes with zero individual feedback",
+    highlight: true,
   },
   {
-    feature: "Spouse & Child Benefits Guidance",
-    ransScholarships: "Full Spouse Work Rights & Free Child Schooling in Finland",
+    feature: "Spouse & Family Visa Documentation",
+    abStudyHub: "Dedicated Dependent & Family Visa file preparation",
     traditional: "Usually ignores dependent family documentation",
-    highlight: true,
+    highlight: false,
   },
   {
-    feature: "Direct Sylhet Landmark Office",
-    ransScholarships: "425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet",
+    feature: "Direct Chattogram Landmark Campus",
+    abStudyHub: "Commerce View Complex (Exim Bank Building), CDA Ave, East Nasirabad",
     traditional: "Remote virtual agents without a physical presence",
-    highlight: false,
+    highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "Is RANS Scholarships truly 100% free with no file opening charge?",
-    a: "Yes! RANS Scholarships maintains a strict 100% Free File Opening policy. We charge zero upfront profile evaluation or file opening fees. You only pay mandatory statutory expenses (such as university application fees, tuition deposits, and embassy visa fees) directly to the official portals.",
+    q: "How does AB STUDY HUB assist with tuition-free German universities?",
+    a: "Public universities in Germany charge €0 tuition fees. AB STUDY HUB provides comprehensive end-to-end guidance including academic transcript assessment, APS certificate validation, Uni-Assist and direct university portal applications, blocked account (Coracle/Expatrio) setup, and German Embassy student visa lodgement with 1-on-1 consular mock interviews.",
   },
   {
-    q: "Why is Finland the top study destination at RANS Scholarships?",
-    a: "Finland is the world's happiest country with world-renowned Universities of Applied Sciences (UAS). For the January 2027 Joint Application (31 Aug – 10 Sep 2026) and rolling intakes, students can apply without entrance exams in many programs, spouses enjoy full unrestricted work rights, and children receive free world-class schooling.",
+    q: "What courses are offered at AB Language Academy?",
+    a: "We offer: 1) German Language A1, A2, B1, B2 (Goethe-Zertifikat preparation with exam simulations), 2) Danish Language Course for students aiming for Denmark, 3) IELTS Private Batches (Academic/General with target Band 7.5+ in 10–12 student batches), 4) Spoken English Fluency, and 5) Kids English (Ages 5–14).",
   },
   {
-    q: "What language training courses are offered at RANS Language Academy?",
-    a: "We offer: 1) IELTS Preparation (Academic & General Training with weekly full-length mock tests aiming for Band 7.5+), 2) Spoken English & Professional Communication for students and professionals, 3) Kids English (Ages 5–14) for foundational fluency, and 4) English Grammar Masterclass.",
+    q: "Why are language batches capped at only 10–12 students?",
+    a: "Language learning requires intensive speaking interaction, personalized accent correction, and regular diagnostic testing. By limiting batches strictly to 10–12 students, our trainers ensure every student receives dedicated speaking time and rapid score improvement.",
   },
   {
     q: "Which countries are included in your study abroad portfolio?",
-    a: "Our core destinations featured in our official banner are Finland, Canada, USA, UK, Hungary (Stipendium Hungaricum scholarships), Netherlands, Italy, and Romania.",
+    a: "Our core destinations are Germany (Flagship tuition-free), Denmark, Netherlands, Spain, Greece, Malaysia, Cyprus, Canada, and the UK, alongside selective European Schengen institutions in Hungary and Italy.",
   },
   {
-    q: "Where is the RANS Scholarships corporate office located?",
-    a: "Our corporate headquarters is located at 425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet, Bangladesh. You are welcome to walk in for free 1-on-1 counseling Sunday through Thursday.",
+    q: "Where is the AB STUDY HUB corporate office located?",
+    a: "Our corporate headquarters is located at Commerce View Complex, 4th Floor (Exim Bank Building), 191 CDA Avenue, East Nasirabad, Panchlaish, Chattogram-4200. You are welcome to visit for free 1-on-1 counseling Saturday through Thursday.",
   },
 ];
 
@@ -114,9 +116,9 @@ function Services() {
       <PageHero
         eyebrow="Admissions, Academy & Visas"
         title="Comprehensive Education & Language Services"
-        subtitle="100% Free File Opening Charge, higher education admissions across Finland, Canada, USA, UK, Hungary, Netherlands, Italy & Romania, paired with certified IELTS & Spoken English coaching in Sylhet."
+        subtitle="Tuition-free public university admissions for Germany, European pathways to Denmark & Netherlands, paired with Goethe German (A1–B2), Danish, and IELTS private batches at Commerce View Complex, Chattogram."
         image="/latest-assets/banner.jpg"
-        imageAlt="RANS Scholarships study abroad admissions and language academy"
+        imageAlt="AB STUDY HUB study abroad admissions and language academy"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -124,21 +126,21 @@ function Services() {
             <button
               type="button"
               onClick={open}
-              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-red-600/30"
+              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-red-600/30 cursor-pointer"
             >
               <span>Book Free Profile Assessment</span>
               <IconSparkles className="w-4 h-4" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello RANS Scholarships! I would like to inquire about your 100% Free File Opening and study abroad services.",
+                "Hello AB STUDY HUB! I would like to inquire about your German admissions and language courses in Chattogram.",
               )}`}
               target="_blank"
               rel="noreferrer"
               className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900"
             >
               <IconWhatsApp className="w-4 h-4 text-emerald-600" />
-              <span>WhatsApp: 01772-063911</span>
+              <span>WhatsApp: 01952-566966</span>
             </a>
           </div>
         </div>
@@ -167,20 +169,20 @@ function Services() {
         </div>
       </section>
 
-      {/* 3. Language Academy Specialized Section (IELTS, Spoken & Kids English) */}
+      {/* 3. Language Academy Specialized Section (German, Danish, IELTS, Spoken & Kids English) */}
       {(activeCategory === "all" || activeCategory === "language-courses") && (
         <section className="section-shell py-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-3">
               <IconSparkles className="w-3.5 h-3.5 text-red-600" />
-              <span>RANS Language Academy</span>
+              <span>AB Language Academy</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              IELTS, Spoken English & <span className="text-red-600">Kids English</span>
+              German (A1–B2), Danish & <span className="text-red-600">IELTS Private Batches</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Structured IELTS prep (Band 7.5+), Spoken English, and Kids English (Ages 5–14) at our
-              modern studio in Rang Mohol Tower, Bandar Bazar, Sylhet.
+              Personalized foreign language coaching with private batches strictly capped at 10–12
+              students at our modern campus in Commerce View Complex, CDA Avenue, Chattogram.
             </p>
           </div>
 
@@ -243,14 +245,14 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-red-600/30"
+                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-red-600/30 cursor-pointer"
                   >
                     <span>Enroll / Free Diagnostic Test</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello RANS Language Academy! I want to join the next ${course.title} batch in Sylhet. Please send fee and schedule.`,
+                      `Hello AB Language Academy! I want to join the next ${course.title} batch in Chattogram. Please send fee and schedule.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
@@ -277,11 +279,11 @@ function Services() {
               <span>Full Lifecycle Advisory</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Higher Education Admissions & <span className="text-red-600">Free File Opening</span>
+              Higher Education Admissions & <span className="text-red-600">Visa Processing</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From university course matching at Rang Mohol Tower to visa interview prep, we provide
-              honest end-to-end guidance with zero file opening fee.
+              From university course matching at Commerce View Complex to visa mock interviews, we
+              provide genuine end-to-end guidance for Germany, Denmark, and global destinations.
             </p>
           </div>
 
@@ -329,7 +331,7 @@ function Services() {
         </section>
       )}
 
-      {/* 5. 8 Destinations & Visa Categories Comprehensive Showcase */}
+      {/* 5. Destinations & Visa Categories Comprehensive Showcase */}
       {(activeCategory === "all" || activeCategory === "visa-guidance") && (
         <section className="section-shell py-16 border-t border-slate-200">
           <div className="rounded-3xl border border-slate-800 bg-[#0F172A] p-8 sm:p-12 text-white shadow-2xl">
@@ -338,21 +340,33 @@ function Services() {
                 Global Destinations & Visas
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Destinations Handled by RANS
+                Top Destinations Processed by AB STUDY HUB
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                Expert processing for student visas, spouse work rights, and family relocation
-                across Europe, North America, and the UK.
+                Expert processing for tuition-free public universities, student visas, and spouse work
+                rights across Europe, North America, and the UK.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  title: "Finland",
-                  icon: "🇫🇮",
-                  desc: "Jan 2027 Joint App & Rolling Intakes. No entrance exam for select UAS, spouse work permit, child free education.",
-                  badge: "#1 Priority",
+                  title: "Germany",
+                  icon: "🇩🇪",
+                  desc: "Tuition-free public universities, APS certificate validation, blocked account assistance, and 18-month job search visa.",
+                  badge: "Flagship #1",
+                },
+                {
+                  title: "Denmark",
+                  icon: "🇩🇰",
+                  desc: "Danish language support, world-class technical universities, green innovation programs, and stay back work scheme.",
+                  badge: "Top European",
+                },
+                {
+                  title: "Netherlands",
+                  icon: "🇳🇱",
+                  desc: "English-taught bachelor's & master's degrees, 1-year Search Year (Zoekjaar) visa for international graduates.",
+                  badge: "High Tech Hub",
                 },
                 {
                   title: "Canada",
@@ -373,28 +387,16 @@ function Services() {
                   badge: "Popular Hub",
                 },
                 {
+                  title: "Finland",
+                  icon: "🇫🇮",
+                  desc: "Joint Application & Rolling Intakes, Universities of Applied Sciences, spouse work permit, child education.",
+                  badge: "Schengen EU",
+                },
+                {
                   title: "Hungary",
                   icon: "🇭🇺",
                   desc: "Stipendium Hungaricum scholarship guidance, 100% tuition coverage, accommodation stipends in Schengen.",
                   badge: "Full Scholarship",
-                },
-                {
-                  title: "Netherlands",
-                  icon: "🇳🇱",
-                  desc: "English-taught bachelor's & master's degrees, 1-year Search Year (Zoekjaar) visa for graduates.",
-                  badge: "High Employability",
-                },
-                {
-                  title: "Italy",
-                  icon: "🇮🇹",
-                  desc: "DSU regional scholarship support, low tuition public universities, vibrant European student life.",
-                  badge: "Affordable EU",
-                },
-                {
-                  title: "Romania",
-                  icon: "🇷🇴",
-                  desc: "Recognized European medical, dentistry, and engineering faculties with straightforward admissions.",
-                  badge: "Direct Entry",
                 },
               ].map((v) => (
                 <div
@@ -433,11 +435,11 @@ function Services() {
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-red-600">RANS Scholarships</span>
+            Why Students Choose <span className="text-red-600">AB STUDY HUB</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our verified 100% Free File Opening model and 10 years of experience against
-            traditional agencies.
+            Compare our personalized mentorship model and dedicated language academy against
+            traditional commercial agencies.
           </p>
         </div>
 
@@ -448,7 +450,7 @@ function Services() {
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
                   <th className="p-4 sm:p-5 text-red-400 font-extrabold bg-slate-800">
-                    ★ RANS Scholarships
+                    ★ AB STUDY HUB
                   </th>
                   <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
                 </tr>
@@ -466,7 +468,7 @@ function Services() {
                     <td className="p-4 sm:p-5 font-bold text-red-700 bg-red-50/40">
                       <div className="flex items-center gap-2">
                         <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.ransScholarships}</span>
+                        <span>{row.abStudyHub}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -489,7 +491,7 @@ function Services() {
             Our Proven 5-Step Admission Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Meticulous file preparation from profile assessment at Rang Mohol Tower to visa
+            Meticulous file preparation from profile assessment at Commerce View Complex to visa
             stamping.
           </p>
         </div>
@@ -520,8 +522,8 @@ function Services() {
             Frequently Asked Questions on Services
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Clear, transparent answers about our 100% Free File Opening policy, language batches,
-            and visa processing.
+            Clear, transparent answers about German tuition-free admissions, language batches, and
+            visa processing.
           </p>
         </div>
 

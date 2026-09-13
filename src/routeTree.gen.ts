@@ -19,7 +19,6 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as StudyInChar123countryChar125RouteImport } from './routes/study-in-{$country}'
 import { Route as TermsOfUseRouteImport } from './routes/terms-of-use'
-import { Route as VideosRouteImport } from './routes/videos'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -72,11 +71,6 @@ const TermsOfUseRoute = TermsOfUseRouteImport.update({
   path: '/terms-of-use',
   getParentRoute: () => rootRouteImport,
 } as any)
-const VideosRoute = VideosRouteImport.update({
-  id: '/videos',
-  path: '/videos',
-  getParentRoute: () => rootRouteImport,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -89,7 +83,6 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/study-in-{$country}': typeof StudyInChar123countryChar125Route
   '/terms-of-use': typeof TermsOfUseRoute
-  '/videos': typeof VideosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -102,7 +95,6 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/study-in-{$country}': typeof StudyInChar123countryChar125Route
   '/terms-of-use': typeof TermsOfUseRoute
-  '/videos': typeof VideosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -116,7 +108,6 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/study-in-{$country}': typeof StudyInChar123countryChar125Route
   '/terms-of-use': typeof TermsOfUseRoute
-  '/videos': typeof VideosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -131,7 +122,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/study-in-{$country}'
     | '/terms-of-use'
-    | '/videos'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -144,7 +134,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/study-in-{$country}'
     | '/terms-of-use'
-    | '/videos'
   id:
     | '__root__'
     | '/'
@@ -157,7 +146,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/study-in-{$country}'
     | '/terms-of-use'
-    | '/videos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -171,7 +159,6 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   StudyInChar123countryChar125Route: typeof StudyInChar123countryChar125Route
   TermsOfUseRoute: typeof TermsOfUseRoute
-  VideosRoute: typeof VideosRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -246,13 +233,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsOfUseRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/videos': {
-      id: '/videos'
-      path: '/videos'
-      fullPath: '/videos'
-      preLoaderRoute: typeof VideosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
   }
 }
 
@@ -267,7 +247,6 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   StudyInChar123countryChar125Route: StudyInChar123countryChar125Route,
   TermsOfUseRoute: TermsOfUseRoute,
-  VideosRoute: VideosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

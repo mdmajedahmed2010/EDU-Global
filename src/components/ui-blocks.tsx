@@ -163,7 +163,7 @@ export const globalPartners = [
   { name: "Cyprus English Universities", type: "Affordable €3,000–€5,000", tag: "High Visa Ratio" },
   { name: "Germany Public Universities", type: "Low / Free Tuition", tag: "18-Mo Job Seeker" },
   { name: "Finland UAS Network", type: "English Master's Degrees", tag: "Happiest Country" },
-  { name: "USA Accredited Campuses", type: "STEM OPT 3-Year Extension", tag: "F-1 Mock Prep" },
+  { name: "Spain & Greece Universities", type: "Schengen 29 Countries", tag: "90% Visa Ratio" },
   { name: "Malaysia Partner Colleges", type: "SSC / Dakhil Entry", tag: "Fast EMGS" },
 ];
 
@@ -252,20 +252,20 @@ export function PageHero({
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
                     <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-red-400">
-                      425 Rang Mohol Tower, Sylhet
+                      Commerce View Complex, Chattogram
                     </span>
                     <span className="rounded-full bg-red-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● Member of FECAS
+                      ● Language Academy
                     </span>
                   </div>
                 </div>
 
                 <div className="p-3 text-center">
                   <p className="text-xs font-bold text-white">
-                    {company.name} · Study Abroad & Language Academy
+                    {company.name} · Abroad From Bangladesh
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    100% Free File Opening · Hotline: {company.phones[0]}
+                    German, Danish & IELTS · Hotline: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -429,16 +429,15 @@ export function UniversityMarquee() {
   return (
     <section className="relative border-y border-slate-200/80 bg-white py-14 sm:py-20 overflow-hidden">
       <div className="section-shell text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-        <div className="inline-flex items-center gap-1.5 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-[#043E8B] mb-3">
-          <span>TRUSTED PARTNERS</span>
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-600 mb-3">
+          <span>GLOBAL INSTITUTIONS</span>
         </div>
         <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-          Our Partner <span className="text-[#043E8B]">Universities</span>
+          Top Study Abroad <span className="text-red-600">Destinations & Universities</span>
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 font-medium mt-2 leading-relaxed">
-          We have partnerships with prestigious universities across the UK, Canada, Australia,
-          Cyprus, and Europe to help you achieve your study abroad dreams with confidence and
-          excellence.
+          Comprehensive admission and language coaching for tuition-free German universities,
+          Denmark, Netherlands, Canada, Spain, Greece, and the UK.
         </p>
       </div>
 
@@ -458,7 +457,7 @@ export function UniversityMarquee() {
             >
               <span className="flex h-2 w-2 rounded-full bg-red-600" />
               <span className="text-xs sm:text-sm font-bold text-slate-900">{partner.name}</span>
-              <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-[0.68rem] font-bold text-[#043E8B] border border-blue-200">
+              <span className="rounded-full bg-red-50 px-2.5 py-0.5 text-[0.68rem] font-bold text-red-700 border border-red-200">
                 {partner.tag}
               </span>
             </div>
@@ -500,16 +499,16 @@ export function CtaBand() {
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400">
           <IconGlobe className="w-3.5 h-3.5 text-red-400" />
-          <span>Sylhet Corporate Office · 425 Rang Mohol Tower (Lift: 3), Bandar Bazar</span>
+          <span>Chattogram Campus · Commerce View Complex (Exim Bank Building), CDA Avenue</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          Ready to Make Your Dream to Study Abroad?
+          From Chattogram <span className="text-red-500">TO THE WORLD</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your 100% Free File Opening consultation with RANS Scholarships. Member of FECAS, 10
-          years of trusted experience, specializing in Finland and European admissions.
+          Book your free profile assessment with AB STUDY HUB (Abroad From Bangladesh). Specializing in
+          German tuition-free universities, Danish pathways, Goethe German Language, and IELTS private batches.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -523,7 +522,7 @@ export function CtaBand() {
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello RANS Scholarships! I would like to book a 100% Free File Opening consultation.",
+              "Hello AB STUDY HUB! I would like to book a free consultation for study abroad / language courses.",
             )}`}
             target="_blank"
             rel="noreferrer"

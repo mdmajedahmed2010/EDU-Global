@@ -21,19 +21,49 @@ export interface DestinationCardData {
 
 const destinationCards: DestinationCardData[] = [
   {
-    slug: "finland",
-    name: "Finland",
+    slug: "germany",
+    name: "Germany",
     region: "Europe",
-    flag: "🇫🇮",
+    flag: "🇩🇪",
     image:
-      "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Jan 2027 Joint App (31 Aug–10 Sep)",
-    visaSpeed: "Rolling / No Entrance Exam",
+    highlightTag: "Tuition-Free Public Universities",
+    visaSpeed: "APS & Blocked Account Support",
     withoutIelts: true,
-    avgTuition: "€8,000 – €12,000/yr",
-    pswv: "2-Year Residence Permit",
-    topIntake: "Jan 2027 / Rolling",
+    avgTuition: "€0 – €350/sem (Admin fee)",
+    pswv: "18-Month Post-Study Visa",
+    topIntake: "Winter / Summer Intakes",
+  },
+  {
+    slug: "denmark",
+    name: "Denmark",
+    region: "Europe",
+    flag: "🇩🇰",
+    image:
+      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Danish Language & Tech Focus",
+    visaSpeed: "Fast-Track Student Scheme",
+    withoutIelts: false,
+    avgTuition: "€6,000 – €14,000/yr",
+    pswv: "Up to 3-Year Stay Back",
+    topIntake: "Sep Autumn / Feb Spring",
+  },
+  {
+    slug: "netherlands",
+    name: "Netherlands",
+    region: "Europe",
+    flag: "🇳🇱",
+    image:
+      "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "High Tech Innovation Hub",
+    visaSpeed: "Zoekjaar 1-Year Visa",
+    withoutIelts: false,
+    avgTuition: "€8,000 – €15,000/yr",
+    pswv: "1-Year Orientation Year",
+    topIntake: "Sep / Feb",
   },
   {
     slug: "canada",
@@ -51,19 +81,19 @@ const destinationCards: DestinationCardData[] = [
     topIntake: "Jan / May / Sep",
   },
   {
-    slug: "usa",
-    name: "United States",
-    region: "North America",
-    flag: "🇺🇸",
+    slug: "spain",
+    name: "Spain",
+    region: "Europe",
+    flag: "🇪🇸",
     image:
-      "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Tier-1 Research & STEM OPT",
-    visaSpeed: "F-1 Mock Interview Prep",
-    withoutIelts: false,
-    avgTuition: "$14,000 – $32,000/yr",
-    pswv: "Up to 3-Year STEM OPT",
-    topIntake: "Fall / Spring",
+    highlightTag: "Schengen & Low Tuition",
+    visaSpeed: "Dedicated FB Campaign",
+    withoutIelts: true,
+    avgTuition: "€1,500 – €8,000/yr",
+    pswv: "1-Year Job Search Permit",
+    topIntake: "Sep / Feb",
   },
   {
     slug: "uk",
@@ -81,6 +111,20 @@ const destinationCards: DestinationCardData[] = [
     topIntake: "Jan / May / Sep",
   },
   {
+    slug: "greece",
+    name: "Greece",
+    region: "Europe",
+    flag: "🇬🇷",
+    image:
+      "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80",
+    highlightTag: "90% Visa Success Gateway",
+    visaSpeed: "EU Schengen 29 Countries",
+    withoutIelts: true,
+    avgTuition: "€2,500 – €6,000/yr",
+    pswv: "European Work Pathways",
+    topIntake: "Sep / Feb",
+  },
+  {
     slug: "hungary",
     name: "Hungary",
     region: "Europe",
@@ -93,48 +137,6 @@ const destinationCards: DestinationCardData[] = [
     avgTuition: "€3,000 – €6,000/yr",
     pswv: "9-Month Job Search",
     topIntake: "Sep / Feb",
-  },
-  {
-    slug: "netherlands",
-    name: "Netherlands",
-    region: "Europe",
-    flag: "🇳🇱",
-    image:
-      "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "High Tech Innovation Hub",
-    visaSpeed: "Zoekjaar Visa",
-    withoutIelts: false,
-    avgTuition: "€8,000 – €14,000/yr",
-    pswv: "1-Year Orientation Year",
-    topIntake: "Sep / Feb",
-  },
-  {
-    slug: "italy",
-    name: "Italy",
-    region: "Europe",
-    flag: "🇮🇹",
-    image:
-      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "Regional DSU Scholarships",
-    visaSpeed: "Income-Based Tuition",
-    withoutIelts: true,
-    avgTuition: "€1,000 – €3,500/yr",
-    pswv: "1-Year Job Search",
-    topIntake: "Sep / Oct",
-  },
-  {
-    slug: "romania",
-    name: "Romania",
-    region: "Europe",
-    flag: "🇷🇴",
-    image:
-      "https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "Affordable Medical Degrees",
-    visaSpeed: "Simplified EU Entry",
-    withoutIelts: true,
-    avgTuition: "€2,500 – €5,000/yr",
-    pswv: "European Work Placement",
-    topIntake: "Oct Autumn Intake",
   },
 ];
 
@@ -161,8 +163,9 @@ export function VisualDestinationBento() {
             Explore Verified <span className="text-red-600">Study Portals</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl">
-            Choose your dream destination with RANS Scholarships. Benefit from 100% Free File
-            Opening, scholarship matching, and professional visa guidance in Sylhet.
+            Choose your dream destination with AB STUDY HUB (Abroad From Bangladesh). Benefit from
+            expert German & Danish admissions, Goethe language training, and professional counseling
+            in Chattogram.
           </p>
         </SlideIn>
 

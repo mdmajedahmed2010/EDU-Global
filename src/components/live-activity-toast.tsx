@@ -3,38 +3,38 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const recentActivities = [
   {
-    flag: "🇫🇮",
-    student: "Tanvir A. (Sylhet)",
-    action: "Submitted Finland Jan 2027 Joint Application",
-    subtext: "Centria UAS, Finland · Spouse Work Rights",
+    flag: "🇩🇪",
+    student: "Tanvir A. (Chattogram)",
+    action: "Enrolled in German A2 Goethe Batch",
+    subtext: "AB Language Academy · 10–12 Students Batch",
     time: "3 mins ago",
   },
   {
-    flag: "🇭🇺",
-    student: "Nabila R. (Sylhet)",
-    action: "Shortlisted for Stipendium Hungaricum",
-    subtext: "University of Debrecen · 100% Tuition Waiver",
+    flag: "🇩🇪",
+    student: "Nabila R. (East Nasirabad)",
+    action: "Admitted to German Public University",
+    subtext: "Tuition-Free Higher Education · Winter Intake",
     time: "11 mins ago",
   },
   {
-    flag: "🇨🇦",
-    student: "Mahfuz H. (Moulvibazar)",
-    action: "Offer Letter Received for Fall Intake",
-    subtext: "Fanshawe College, Canada · Post-Grad Work Permit",
+    flag: "🇩🇰",
+    student: "Mahfuz H. (Panchlaish)",
+    action: "Enrolled in Danish Language Course",
+    subtext: "Denmark Higher Education & Career Preparation",
     time: "24 mins ago",
   },
   {
-    flag: "🇫🇮",
-    student: "Farzana S. (Habiganj)",
-    action: "Finland Residence Permit (Type A) Granted",
-    subtext: "LAB University of Applied Sciences · Accomp. Family",
+    flag: "🌟",
+    student: "Kamrul I. (Chattogram)",
+    action: "Achieved IELTS Overall Band 8.0",
+    subtext: "AB STUDY HUB IELTS Private Batch",
     time: "42 mins ago",
   },
   {
-    flag: "🌟",
-    student: "Kamrul I. (Bandar Bazar)",
-    action: "Achieved IELTS Overall Band 7.5",
-    subtext: "RANS Language Academy Intensive Masterclass",
+    flag: "🇳🇱",
+    student: "Farzana S. (Chattogram)",
+    action: "Admitted to University of Amsterdam",
+    subtext: "Netherlands · Zoekjaar Orientation Year Track",
     time: "1 hour ago",
   },
 ];
@@ -71,6 +71,7 @@ export function LiveActivityToast() {
   if (isDismissed) return null;
 
   const current = recentActivities[index];
+  if (!current) return null;
 
   return (
     <aside

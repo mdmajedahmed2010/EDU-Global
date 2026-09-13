@@ -5,13 +5,13 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use | RANS Scholarships" },
+      { title: "Terms of Use | AB STUDY HUB — Chattogram" },
       {
         name: "description",
         content:
-          "Terms and conditions governing educational advisory services, admissions processing, and 100% free file opening counseling at RANS Scholarships.",
+          "Terms and conditions governing educational advisory services, German admissions, and language coaching at AB STUDY HUB Chattogram.",
       },
-      { property: "og:title", content: "Terms of Use | RANS Scholarships" },
+      { property: "og:title", content: "Terms of Use | AB STUDY HUB" },
       {
         property: "og:description",
         content:
@@ -25,23 +25,23 @@ export const Route = createFileRoute("/terms-of-use")({
 const sections = [
   {
     title: "1. Scope of Advisory Services",
-    body: "RANS Scholarships provides 100% Free File Opening Charge, university selection, admission application processing, language academy enrollment, and visa file preparation across our destinations (Finland, Canada, USA, UK, Hungary, Netherlands, Italy, and Romania). We operate on a strict zero file-opening fee basis. Statutory third-party costs (such as university tuition deposits, official embassy visa fees, medical screening, and courier charges) are paid directly to the respective institutions or sovereign authorities.",
+    body: "AB STUDY HUB (Abroad From Bangladesh) provides university selection, admission application processing, APS certificate guidance, language academy enrollment (German A1–B2, Danish, IELTS, Spoken English, Kids English), and visa file preparation across our core destinations (Germany, Denmark, Netherlands, Spain, Greece, Malaysia, Canada, and UK). Statutory third-party costs (such as university semester fees, official embassy visa fees, medical screening, and courier charges) are paid directly to the respective institutions or sovereign authorities.",
   },
   {
     title: "2. Document Authenticity & Applicant Responsibility",
-    body: "Applicants are solely responsible for the authenticity and legality of all academic certificates, marksheets, IELTS score cards, and financial sponsorship documents submitted. RANS Scholarships maintains a strict zero-tolerance policy against fraudulent documentation.",
+    body: "Applicants are solely responsible for the authenticity and legality of all academic certificates, marksheets, IELTS score cards, German language certificates, and financial sponsorship documents submitted. AB STUDY HUB maintains a strict zero-tolerance policy against fraudulent documentation.",
   },
   {
     title: "3. Admissions & Visa Decisions Disclaimer",
-    body: "University admissions and scholarships are decided exclusively by the respective international universities. Visa approvals are determined solely by sovereign immigration authorities (such as Finnish Immigration Service Migri, IRCC, UKVI, and European Embassies). While RANS Scholarships provides comprehensive documentation and consular mock interviews, sovereign decisions remain with the respective government bodies.",
+    body: "University admissions and scholarships are decided exclusively by the respective international universities. Visa approvals are determined solely by sovereign immigration authorities (such as the German Federal Foreign Office, Danish Immigration Service, IRCC, UKVI, and European Embassies). While AB STUDY HUB provides comprehensive documentation and consular mock interviews, sovereign decisions remain with the respective government bodies.",
   },
   {
     title: "4. Language Academy Terms",
-    body: "Students enrolled in our IELTS Preparation, Spoken English, or Kids English programs receive personalized course packs and scheduled interactive mock tests. Batch schedules and studio sessions are coordinated by our Sylhet headquarters at Rang Mohol Tower.",
+    body: "Students enrolled in our German Language (A1–B2), Danish, or IELTS Preparation programs receive personalized course packs and scheduled interactive mock tests. Private batches are capped strictly at 10–12 students to guarantee high-touch instruction.",
   },
   {
     title: "5. Contact & Inquiries",
-    body: `If you have questions regarding these terms, email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Sylhet Headquarters at ${company.offices.headquarters.address}.`,
+    body: `If you have questions regarding these terms, email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Chattogram Campus at ${company.offices.headquarters.address}.`,
   },
 ];
 

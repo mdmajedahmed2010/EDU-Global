@@ -8,53 +8,53 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      stepColor: "bg-[#043E8B] text-white",
+      stepColor: "bg-red-600 text-white",
       dotPosition: "bottom",
-      dotColor: "bg-[#043E8B]",
+      dotColor: "bg-red-600",
       icon: "🔍",
-      iconBg: "bg-blue-50 text-[#043E8B]",
-      title: "Research & Matching",
-      desc: "Explore universities and degree programs across Finland, Canada, the USA, the UK, and Europe that fit your goals and budget.",
+      iconBg: "bg-red-50 text-red-600",
+      title: "Research & Assessment",
+      desc: "Explore programs across Germany (tuition-free public universities), Denmark, Netherlands, Spain, Greece, Canada, and the UK.",
     },
     {
       step: "02",
-      stepColor: "bg-red-600 text-white",
+      stepColor: "bg-slate-900 text-white",
       dotPosition: "top",
-      dotColor: "bg-red-600",
-      icon: "🎁",
-      iconBg: "bg-red-50 text-red-600",
-      title: "100% Free File Opening",
-      desc: "Meet our senior advisors at Rang Mohol Tower, Bandar Bazar, Sylhet or via WhatsApp for 100% free profile assessment.",
+      dotColor: "bg-slate-900",
+      icon: "📋",
+      iconBg: "bg-slate-100 text-slate-800",
+      title: "Free Profile Evaluation",
+      desc: "Meet our senior mentors at Commerce View Complex, East Nasirabad, Chattogram or via WhatsApp for complete profile evaluation.",
     },
     {
       step: "03",
-      stepColor: "bg-[#043E8B] text-white",
+      stepColor: "bg-red-600 text-white",
       dotPosition: "bottom",
-      dotColor: "bg-[#043E8B]",
-      icon: "📄",
-      iconBg: "bg-blue-50 text-[#043E8B]",
-      title: "Application & Offer",
-      desc: "Our admissions team reviews your SOP, transcripts, and credentials to secure your conditional/unconditional offer letters.",
+      dotColor: "bg-red-600",
+      icon: "🗣️",
+      iconBg: "bg-red-50 text-red-600",
+      title: "Language Academy Coaching",
+      desc: "Join Goethe German (A1–B2), Danish Language, or IELTS private batches (10–12 students) with intensive speaking practice.",
     },
     {
       step: "04",
-      stepColor: "bg-red-600 text-white",
+      stepColor: "bg-slate-900 text-white",
       dotPosition: "top",
-      dotColor: "bg-red-600",
+      dotColor: "bg-slate-900",
       icon: "✓",
-      iconBg: "bg-red-50 text-red-600",
-      title: "Visa Filing & Mock Interview",
-      desc: "Comprehensive visa filing, bank solvency check, and rigorous 1-on-1 embassy mock interview coaching.",
+      iconBg: "bg-slate-100 text-slate-800",
+      title: "APS, Application & Offer",
+      desc: "Comprehensive documentation support, APS verification, blocked account guidance, and university offer letter procurement.",
     },
     {
       step: "05",
-      stepColor: "bg-[#043E8B] text-white",
+      stepColor: "bg-red-600 text-white",
       dotPosition: "bottom",
-      dotColor: "bg-[#043E8B]",
+      dotColor: "bg-red-600",
       icon: "✈",
-      iconBg: "bg-blue-50 text-[#043E8B]",
-      title: "Pre-Departure & Arrival Care",
-      desc: "Pre-flight briefing, student airfare assistance, student dorm search, and airport arrival coordination.",
+      iconBg: "bg-red-50 text-red-600",
+      title: "Visa Filing & Pre-Departure",
+      desc: "Embassy mock interview sessions, visa file submission, accommodation guidance, and pre-departure orientation.",
     },
   ];
 
@@ -66,8 +66,8 @@ export function HowItWorksSection() {
           tag="— YOUR ADMISSION ROADMAP —"
           title="How It"
           highlight="Works"
-          description="Your transparent path to studying abroad with RANS Scholarships in 5 simple, structured steps."
-          tagColor="text-[#043E8B]"
+          description="Your transparent path to studying abroad and language mastery with AB STUDY HUB in 5 simple, structured steps."
+          tagColor="text-red-600"
           highlightColor="text-red-600"
         />
 
@@ -127,7 +127,7 @@ export function HowItWorksSection() {
             onClick={open}
             className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 hover:bg-red-700 text-white px-7 py-3.5 text-xs sm:text-sm font-bold shadow-lg hover:shadow-red-600/30 transition-all cursor-pointer"
           >
-            <span>Start Step 1: 100% Free File Opening</span>
+            <span>Start Step 1: Free Profile Assessment</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
         </div>

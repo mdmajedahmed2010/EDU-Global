@@ -9,17 +9,16 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-bangla: "Hind Siliguri", "Plus Jakarta Sans", sans-serif;
 
-  /* RANS Scholarships Aesthetic Palette */
-  --color-agc-navy: #043e8b;
-  --color-agc-navy-dark: #0a192f;
-  --color-agc-navy-midnight: #061224;
-  --color-agc-navy-light: #1e56a0;
-  --color-agc-navy-soft: #f0f5fc;
+  /* AB STUDY HUB Aesthetic Palette (Red, Black, Charcoal, Warm Gold, White) */
+  --color-ab-red: #e51937;
+  --color-ab-red-dark: #b91c1c;
+  --color-ab-red-light: #ef4444;
+  --color-ab-red-soft: #fef2f2;
 
-  --color-agc-red: #dc2626;
-  --color-agc-red-dark: #b91c1c;
-  --color-agc-red-light: #ef4444;
-  --color-agc-red-soft: #fef2f2;
+  --color-ab-black: #0a0a0c;
+  --color-ab-charcoal: #121214;
+  --color-ab-dark: #18181b;
+  --color-ab-slate: #27272a;
 
   --color-gold-metallic: #f59e0b;
   --color-gold-bright: #fbbf24;
@@ -28,6 +27,18 @@
 
   --color-emerald-deep: #059669;
   --color-emerald-soft: #ecfdf5;
+
+  /* Backward Compatibility Aliases */
+  --color-agc-navy: #18181b;
+  --color-agc-navy-dark: #0a0a0c;
+  --color-agc-navy-midnight: #050507;
+  --color-agc-navy-light: #27272a;
+  --color-agc-navy-soft: #f4f4f5;
+
+  --color-agc-red: #e51937;
+  --color-agc-red-dark: #b91c1c;
+  --color-agc-red-light: #ef4444;
+  --color-agc-red-soft: #fef2f2;
 
   --color-sand: #fafafc;
   --color-surface: #ffffff;
@@ -202,7 +213,7 @@ body {
   transform: translate3d(0, -4px, 0);
 }
 
-/* Primary RANS Crimson Red Buttons */
+/* Primary AB STUDY HUB Crimson Red Buttons */
 .btn-luxury-primary,
 .btn-primary {
   background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1c 100%);

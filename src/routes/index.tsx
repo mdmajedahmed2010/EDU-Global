@@ -12,7 +12,7 @@ import { MobileActionDock } from "@/components/home/mobile-action-dock";
 import { OfficeGallery } from "@/components/office-gallery";
 import { Testimonials } from "@/components/testimonials";
 import { UniversityMarquee, CtaBand, IconSparkles } from "@/components/ui-blocks";
-import { faqs } from "@/lib/site-data";
+import { faqs, company } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { LiveActivityToast } from "@/components/live-activity-toast";
@@ -20,17 +20,19 @@ import { LiveActivityToast } from "@/components/live-activity-toast";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RANS Scholarships | Study Abroad & Language Academy | Sylhet, Bangladesh" },
+      {
+        title: `${company.legalName} | Abroad From Bangladesh — Study Abroad & Language Academy | Chattogram`,
+      },
       {
         name: "description",
         content:
-          "RANS Scholarships — 100% Free File Opening Charge. Finland January 2027 Joint App & Rolling Admissions, Canada, USA, UK, Hungary, Netherlands, Italy, Romania. IELTS Preparation & Spoken English Academy. Member of FECAS. 425 Rang Mohol Tower, Bandar Bazar, Sylhet. Hotlines: 01772-063911 / 01925-772171.",
+          "AB STUDY HUB (Abroad From Bangladesh) — Official higher education consultancy in Chattogram. Tuition-free public university admissions for Germany (APS & Blocked Account support), Denmark, Netherlands, Spain, Greece, Malaysia, Canada, UK. German A1–B2, Danish Language, and IELTS Private Batches at Commerce View Complex, East Nasirabad. Hotlines: 01952-566966 / 01515-219546.",
       },
-      { property: "og:title", content: "RANS Scholarships — Dream to Study Abroad" },
+      { property: "og:title", content: `${company.legalName} — From Chattogram TO THE WORLD` },
       {
         property: "og:description",
         content:
-          "100% Free File Opening Charge. Higher education consultancy & Language Academy in Sylhet, Bangladesh. Specializing in Finland, Canada, USA, UK, Hungary, Netherlands, Italy, Romania. Hotlines: 01772-063911 / 01925-772171.",
+          "Higher education consultancy & Language Academy in Chattogram, Bangladesh. Specializing in Germany tuition-free, Denmark, Netherlands, Spain, Greece, Malaysia, Canada, UK, Goethe German Language, Danish, and IELTS Private Batches. Hotlines: 01952-566966 / 01515-219546.",
       },
     ],
   }),
@@ -94,7 +96,7 @@ function Home() {
         <PopularDestinationsSection />
       </ScrollReveal>
 
-      {/* 6. Why Choose RANS Scholarships */}
+      {/* 6. Why Choose AB STUDY HUB */}
       <ScrollReveal direction="up" delay={60}>
         <WhyChooseSection />
       </ScrollReveal>
@@ -118,11 +120,11 @@ function Home() {
               <span>Verified Social Proof</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Inside <span className="text-red-600">RANS Scholarships</span>
+              Inside <span className="text-red-600">AB STUDY HUB</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Watch our official Facebook video reels and explore our corporate office at Rang Mohol
-              Tower, Bandar Bazar, Sylhet.
+              Watch our official Facebook reels and explore our campus at Commerce View Complex, CDA
+              Avenue, East Nasirabad, Chattogram.
             </p>
           </div>
 
@@ -152,8 +154,8 @@ function Home() {
               Frequently Asked <span className="text-red-600">Questions</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent responses regarding admissions, 100% Free File Opening, language
-              batches, visas, and our Sylhet head office.
+              Direct, transparent responses regarding German & European admissions, Goethe language
+              batches, visa processing, and our Chattogram office.
             </p>
           </div>
 

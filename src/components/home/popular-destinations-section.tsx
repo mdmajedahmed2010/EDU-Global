@@ -15,59 +15,26 @@ interface DestinationItem {
 
 const destinationsData: DestinationItem[] = [
   {
-    name: "Finland",
-    code: "FI",
-    flag: "🇫🇮",
-    unis: "35+ UAS & Unis",
+    name: "Germany",
+    code: "DE",
+    flag: "🇩🇪",
+    unis: "300+ Public Unis",
     image:
-      "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "finland",
-    highlight: "Jan 2027 Joint App",
+    slug: "germany",
+    highlight: "Tuition-Free",
   },
   {
-    name: "Canada",
-    code: "CA",
-    flag: "🇨🇦",
-    unis: "80+ DLIs",
+    name: "Denmark",
+    code: "DK",
+    flag: "🇩🇰",
+    unis: "20+ Universities",
     image:
-      "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "canada",
-    highlight: "Up to 3-Yr PGWP",
-  },
-  {
-    name: "USA",
-    code: "US",
-    flag: "🇺🇸",
-    unis: "120+ Universities",
-    image:
-      "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "usa",
-    highlight: "3-Yr STEM OPT",
-  },
-  {
-    name: "United Kingdom",
-    code: "GB",
-    flag: "🇬🇧",
-    unis: "150+ Universities",
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "uk",
-    highlight: "1-Yr Masters / PSW",
-  },
-  {
-    name: "Hungary",
-    code: "HU",
-    flag: "🇭🇺",
-    unis: "25+ Public Unis",
-    image:
-      "https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "hungary",
-    highlight: "Stipendium Grant",
+    slug: "denmark",
+    highlight: "Danish Course",
   },
   {
     name: "Netherlands",
@@ -81,6 +48,39 @@ const destinationsData: DestinationItem[] = [
     highlight: "Zoekjaar Visa",
   },
   {
+    name: "Canada",
+    code: "CA",
+    flag: "🇨🇦",
+    unis: "80+ DLIs",
+    image:
+      "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "canada",
+    highlight: "Up to 3-Yr PGWP",
+  },
+  {
+    name: "Spain",
+    code: "ES",
+    flag: "🇪🇸",
+    unis: "50+ Universities",
+    image:
+      "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "spain",
+    highlight: "Schengen / Low Tuition",
+  },
+  {
+    name: "United Kingdom",
+    code: "GB",
+    flag: "🇬🇧",
+    unis: "150+ Universities",
+    image:
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "uk",
+    highlight: "1-Yr Masters / PSW",
+  },
+  {
     name: "Italy",
     code: "IT",
     flag: "🇮🇹",
@@ -92,15 +92,15 @@ const destinationsData: DestinationItem[] = [
     highlight: "Regional DSU Grant",
   },
   {
-    name: "Romania",
-    code: "RO",
-    flag: "🇷🇴",
-    unis: "20+ Universities",
+    name: "Hungary",
+    code: "HU",
+    flag: "🇭🇺",
+    unis: "25+ Public Unis",
     image:
-      "https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "romania",
-    highlight: "Affordable EU",
+    slug: "hungary",
+    highlight: "Stipendium Grant",
   },
 ];
 
@@ -113,8 +113,8 @@ export function PopularDestinationsSection() {
           tag="— VERIFIED DESTINATIONS —"
           title="Where will you"
           highlight="study?"
-          description="Explore our primary destination countries matching RANS Scholarships' official partnerships, scholarship grants, and visa expertise."
-          tagColor="text-[#043E8B]"
+          description="Explore our primary destination countries matching AB STUDY HUB's language programs, tuition-free German universities, and global admissions expertise."
+          tagColor="text-red-600"
           highlightColor="text-red-600"
         />
 
@@ -133,7 +133,7 @@ export function PopularDestinationsSection() {
                 {/* Card Background Image */}
                 <img
                   src={dest.image}
-                  alt={`Study in ${dest.name} - RANS Scholarships`}
+                  alt={`Study in ${dest.name} - AB STUDY HUB`}
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-115 opacity-80"
                   loading="lazy"
                 />

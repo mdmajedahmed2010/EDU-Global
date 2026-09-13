@@ -6,17 +6,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | RANS Scholarships | Rang Mohol Tower, Sylhet" },
+      { title: "Contact Us | AB STUDY HUB — Commerce View Complex, Chattogram" },
       {
         name: "description",
         content:
-          "Visit RANS Scholarships at 425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet. Call 01772-063911 (WhatsApp) or 01925-772171 for 100% free file opening & counseling.",
+          "Visit AB STUDY HUB at Commerce View Complex, 4th Floor (Exim Bank Building), CDA Avenue, East Nasirabad, Panchlaish, Chattogram-4000. Call 01952-566966 (WhatsApp) or 01515-219546 for free counseling & language courses.",
       },
-      { property: "og:title", content: "Contact RANS Scholarships | Bandar Bazar, Sylhet" },
+      { property: "og:title", content: "Contact AB STUDY HUB | Chattogram" },
       {
         property: "og:description",
         content:
-          "RANS Scholarships Corporate Office in Sylhet. Study Abroad Admissions & Language Academy. 100% Free File Opening Charge.",
+          "AB STUDY HUB Corporate Campus in Chattogram. German public university admissions, APS support & Language Academy.",
       },
     ],
   }),
@@ -28,14 +28,14 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    program: "Study Abroad Admissions (100% Free File Opening)",
-    destination: "Finland (Jan 2027 Joint App & Rolling)",
+    program: "Germany Tuition-Free Public Universities",
+    destination: "Germany (Tuition-Free & APS Support)",
     notes: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello RANS Scholarships!\n\nI want to book a free consultation from your website contact page:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service/Course: ${formData.program}\n• Preferred Country/Goal: ${formData.destination}\n• Question: ${formData.notes || "N/A"}`;
+    const text = `Hello AB STUDY HUB!\n\nI want to book a consultation from your website contact page:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service/Course: ${formData.program}\n• Preferred Country/Goal: ${formData.destination}\n• Question: ${formData.notes || "N/A"}`;
     window.open(
       `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`,
       "_blank",
@@ -47,10 +47,10 @@ function Contact() {
     <>
       <PageHero
         eyebrow="Direct Advisory Desk"
-        title="Connect With Our Sylhet Corporate Headquarters"
-        subtitle="Walk in to our central office at 425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet. 100% Free File Opening Charge, Language Academy counseling, and Finland / European visa guidance."
+        title="Connect With Our Chattogram Campus"
+        subtitle="Walk in to our central office at Commerce View Complex, 4th Floor (Exim Bank Building), CDA Avenue, East Nasirabad, Chattogram-4000. Free 1-on-1 counseling, German & Danish language courses, and visa guidance."
         image="/latest-assets/banner.jpg"
-        imageAlt="RANS Scholarships headquarters at Rang Mohol Tower, Sylhet"
+        imageAlt="AB STUDY HUB campus at Commerce View Complex, Chattogram"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Contact Us" }]} />
       </PageHero>
@@ -58,15 +58,15 @@ function Contact() {
       {/* Office & Hotline Cards Section */}
       <section className="section-shell py-12">
         <div className="grid gap-8 md:grid-cols-2">
-          {/* Sylhet Corporate Headquarters Card */}
+          {/* Chattogram Corporate Hub Card */}
           <div className="card-clean rounded-3xl p-8 border border-red-200/90 shadow-md bg-white flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <span className="badge-clean badge-red text-xs">
                   <span className="h-2 w-2 rounded-full bg-red-600 animate-ping inline-block mr-1" />
-                  Sylhet Corporate Hub
+                  Chattogram Corporate Hub
                 </span>
-                <span className="text-xs font-bold text-slate-500">Member: FECAS</span>
+                <span className="text-xs font-bold text-slate-500">Abroad From Bangladesh</span>
               </div>
 
               <h2 className="mt-4 font-display text-xl font-bold text-slate-900">
@@ -78,7 +78,10 @@ function Contact() {
 
               <div className="mt-5 space-y-2 text-xs sm:text-sm text-slate-700 border-t border-slate-100 pt-4">
                 <p>
-                  <strong>📞 Hotlines:</strong> {company.phones[0]} (WhatsApp) / {company.phones[1]}
+                  <strong>📞 Primary WhatsApp:</strong> {company.phones[0]}
+                </p>
+                <p>
+                  <strong>📞 Alternate Hotline:</strong> {company.phones[1]}
                 </p>
                 <p>
                   <strong>🕒 Working Hours:</strong> {company.offices.headquarters.hours}
@@ -87,20 +90,20 @@ function Contact() {
                   <strong>✉️ Email:</strong> {company.email}
                 </p>
                 <p>
-                  <strong>🌟 Policy:</strong>{" "}
-                  <span className="text-emerald-700 font-bold">100% Free File Opening Charge</span>
+                  <strong>🌟 Specialty:</strong>{" "}
+                  <span className="text-emerald-700 font-bold">Tuition-Free Germany & Elite Language Academy</span>
                 </p>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello RANS Scholarships, I want to book a free consultation at your Rang Mohol Tower office.")}`}
+                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello AB STUDY HUB, I want to book a free consultation at your Chattogram office.")}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-emerald w-full text-center text-xs py-3 shadow-sm"
               >
-                💬 WhatsApp Sylhet Desk: {company.phones[0]}
+                💬 WhatsApp Chattogram Desk: {company.phones[0]}
               </a>
               <a
                 href={`tel:${company.phones[0].replace(/[^0-9+]/g, "")}`}
@@ -111,34 +114,32 @@ function Contact() {
             </div>
           </div>
 
-          {/* Language Academy & Finland Desk Card */}
+          {/* Language Academy & Germany Desk Card */}
           <div className="card-clean rounded-3xl p-8 border border-blue-200/90 shadow-md bg-white flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <span className="badge-clean badge-navy text-xs">
-                  🇫🇮 Finland & Language Academy
+                  🇩🇪 Germany & Language Academy
                 </span>
-                <span className="text-xs font-bold text-slate-500">Since 2017</span>
+                <span className="text-xs font-bold text-slate-500">10–12 Student Batches</span>
               </div>
 
               <h2 className="mt-4 font-display text-xl font-bold text-slate-900">
-                Finland Admissions & Language Studio
+                German Admissions & Language Studio
               </h2>
               <p className="mt-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                📍 425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet
+                📍 {company.offices.headquarters.address}
               </p>
 
               <div className="mt-5 space-y-2 text-xs sm:text-sm text-slate-700 border-t border-slate-100 pt-4">
                 <p>
-                  <strong>🇫🇮 Priority Intake:</strong> Finland January 2027 Joint App (31 Aug – 10
-                  Sep 2026) & Rolling
+                  <strong>🇩🇪 Flagship:</strong> Germany Tuition-Free Public Universities & APS Support
                 </p>
                 <p>
-                  <strong>🎯 Language Academy:</strong> IELTS (Band 7.5+), Spoken English, Kids
-                  English (5-14)
+                  <strong>🎯 Language Academy:</strong> German A1–B2 (Goethe Exam Prep), Danish, IELTS 7.5+
                 </p>
                 <p>
-                  <strong>📜 Accreditations:</strong> Member of FECAS & FACD-CAB
+                  <strong>👥 Private Batch Format:</strong> Strictly 10–12 students per batch
                 </p>
                 <p>
                   <strong>📞 Direct Line:</strong> {company.phones[1]}
@@ -148,7 +149,7 @@ function Contact() {
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello RANS Language Academy, please send me the latest IELTS and Spoken English batch schedule.")}`}
+                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello AB Language Academy, please send me the latest German and IELTS batch schedule in Chattogram.")}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-emerald w-full text-center text-xs py-3 shadow-sm"
@@ -172,17 +173,28 @@ function Contact() {
         <div className="space-y-6">
           <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-sm">
             <div className="p-3 border-b border-slate-100">
-              <p className="text-xs font-bold text-slate-900">
-                📍 Sylhet Corporate Headquarters Map
-              </p>
-              <p className="text-[0.7rem] text-slate-500">
-                425 Rang Mohol Tower (Lift: 3), Bandar Bazar, Sylhet, Bangladesh
+              <div className="flex items-center justify-between">
+                <h3 className="font-display font-bold text-lg text-slate-900">
+                  Campus Location Map
+                </h3>
+                <a
+                  href={company.mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xs font-bold text-red-600 hover:text-red-700 inline-flex items-center gap-1"
+                >
+                  <span>Open in Google Maps</span>
+                  <span>↗</span>
+                </a>
+              </div>
+              <p className="text-xs text-slate-500 mt-1">
+                Commerce View Complex (Exim Bank Building), 191 CDA Avenue, East Nasirabad, Chattogram-4200
               </p>
             </div>
             <div className="h-72 sm:h-80 w-full overflow-hidden rounded-2xl">
               <iframe
-                src={company.offices.headquarters.mapsEmbed}
-                title="RANS Scholarships Rang Mohol Tower Sylhet Office Google Map"
+                src={company.mapsEmbed}
+                title="AB STUDY HUB Chattogram Office Google Map"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -193,17 +205,17 @@ function Contact() {
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-linear-to-br from-slate-900 to-slate-950 p-6 text-white shadow-sm">
-            <span className="badge-clean badge-red text-xs">Verified Accreditations</span>
+            <span className="badge-clean badge-red text-xs">Abroad From Bangladesh</span>
             <h3 className="font-display font-bold text-lg text-white mt-2">
-              Member of FECAS & FACD-CAB
+              From Chattogram TO THE WORLD
             </h3>
             <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-              RANS Scholarships has been serving students from Sylhet and across Bangladesh for 10
-              years (Since 2017). Endorsed by the Rang Mohol Tower community and recognized for
-              zero-file-opening charges.
+              AB STUDY HUB is dedicated to genuine student counseling, tuition-free European higher
+              education, and high visa success. Located conveniently at East Nasirabad, Panchlaish,
+              Chattogram.
             </p>
             <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
-              <span className="text-slate-400">Sylhet Office</span>
+              <span className="text-slate-400">Chattogram Campus</span>
               <a
                 href={company.social.facebook}
                 target="_blank"
@@ -219,13 +231,13 @@ function Contact() {
         {/* Right Column: Interactive Consultation Booking Form */}
         <div className="card-clean rounded-3xl p-8 border border-slate-200 bg-white shadow-sm">
           <div className="border-b border-slate-100 pb-4">
-            <span className="badge-clean badge-red">100% Free File Opening</span>
+            <span className="badge-clean badge-red">Free Profile Assessment</span>
             <h2 className="mt-3 font-display text-2xl font-extrabold text-slate-900">
               Send Your Inquiry / Book Counseling
             </h2>
             <p className="mt-1 text-xs text-slate-600">
-              Fill in your details to immediately connect with a RANS Scholarships counselor on
-              WhatsApp with zero file opening fee.
+              Fill in your details to immediately connect with an AB STUDY HUB counselor on
+              WhatsApp.
             </p>
           </div>
 
@@ -239,7 +251,7 @@ function Contact() {
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto">
                 Thank you, <strong>{formData.name}</strong>. If WhatsApp did not open automatically,
-                tap below to chat with a RANS Scholarships counselor.
+                tap below to chat with an AB STUDY HUB counselor.
               </p>
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
@@ -261,7 +273,7 @@ function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="e.g. Tanzimul Islam"
+                  placeholder="e.g. Mahfuzur Rahman"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-red-500 focus:bg-white transition-colors"
                 />
               </div>
@@ -275,7 +287,7 @@ function Contact() {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="e.g. 01772-XXXXXX"
+                  placeholder="e.g. 01952-XXXXXX"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-red-500 focus:bg-white transition-colors"
                 />
               </div>
@@ -290,24 +302,22 @@ function Contact() {
                     onChange={(e) => setFormData({ ...formData, program: e.target.value })}
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-red-500 focus:bg-white transition-colors"
                   >
-                    <option value="Study Abroad Admissions (100% Free File Opening)">
-                      Study Abroad (Free File Opening)
+                    <option value="Germany Tuition-Free Public Universities">
+                      Germany Tuition-Free Universities
                     </option>
-                    <option value="Finland Jan 2027 Joint Application & Rolling">
-                      Finland Jan 2027 Joint App
+                    <option value="German Language Course (A1, A2, B1, B2 Goethe)">
+                      German Language (A1–B2 Goethe)
                     </option>
-                    <option value="IELTS Preparation (Target Band 7.5+)">
-                      IELTS Preparation (Band 7.5+)
+                    <option value="Danish Language Course">Danish Language Course</option>
+                    <option value="IELTS Private Batch (Band 7.5+ in 10-12 batches)">
+                      IELTS Private Batch (Band 7.5+)
                     </option>
                     <option value="Spoken English & Communication Fluency">
                       Spoken English Fluency
                     </option>
-                    <option value="Kids English & Spoken Foundation (Ages 5-14)">
-                      Kids English (Ages 5-14)
-                    </option>
-                    <option value="English Grammar Masterclass">English Grammar Masterclass</option>
-                    <option value="Hungary Stipendium Hungaricum Scholarship">
-                      Hungary Scholarship
+                    <option value="Kids English (Ages 5-14)">Kids English (Ages 5-14)</option>
+                    <option value="APS Certificate & Uni-Assist Assistance">
+                      APS & Uni-Assist Support
                     </option>
                     <option value="Student Visa & Dependent Spouse Visa">
                       Student & Spouse Visa
@@ -324,19 +334,21 @@ function Contact() {
                     onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-red-500 focus:bg-white transition-colors"
                   >
-                    <option value="Finland (Jan 2027 Joint App & Rolling)">
-                      🇫🇮 Finland (#1 Priority Intake)
+                    <option value="Germany (Tuition-Free & APS Support)">
+                      🇩🇪 Germany (Flagship #1)
                     </option>
+                    <option value="Denmark (Language & Tech Universities)">🇩🇰 Denmark</option>
+                    <option value="United Kingdom (Fast 1-Yr Masters & PSW)">🇬🇧 United Kingdom</option>
+                    <option value="Netherlands (Top English Degrees & Zoekjaar)">🇳🇱 Netherlands</option>
+                    <option value="Spain (European Dream & Schengen Mobility)">🇪🇸 Spain</option>
+                    <option value="Greece (90% Visa Success Rate)">🇬🇷 Greece</option>
+                    <option value="Malaysia (2026-2027 Intakes & Global Campuses)">🇲🇾 Malaysia</option>
+                    <option value="Cyprus (Mediterranean Higher Education)">🇨🇾 Cyprus</option>
                     <option value="Canada (DLI & PGWP)">🇨🇦 Canada</option>
-                    <option value="United States (STEM & Scholarships)">🇺🇸 United States</option>
-                    <option value="United Kingdom (Graduate Route)">🇬🇧 United Kingdom</option>
                     <option value="Hungary (Stipendium Hungaricum)">
                       🇭🇺 Hungary (100% Scholarship)
                     </option>
-                    <option value="Netherlands (Top English Degrees)">🇳🇱 Netherlands</option>
-                    <option value="Italy (DSU Regional Grants)">🇮🇹 Italy</option>
-                    <option value="Romania (Medical & Tech)">🇷🇴 Romania</option>
-                    <option value="RANS Language Academy Only">🎯 Language Academy Only</option>
+                    <option value="AB Language Academy Only">🎓 Language Academy Only</option>
                   </select>
                 </div>
               </div>
@@ -349,7 +361,7 @@ function Contact() {
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="e.g. Completed HSC / Bachelor's in 2024. Interested in Finland Jan 2027 intake or IELTS batch timing in Sylhet..."
+                  placeholder="e.g. Completed HSC / Bachelor's in 2024. Interested in German public university admission or Goethe A1 batch timing in Chattogram..."
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-red-500 focus:bg-white transition-colors"
                 />
               </div>
@@ -357,15 +369,15 @@ function Contact() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="btn-luxury-primary w-full text-xs sm:text-sm py-3.5 shadow-md"
+                  className="btn-luxury-primary w-full text-xs sm:text-sm py-3.5 shadow-md cursor-pointer"
                 >
                   Send Inquiry to WhatsApp ({company.phones[0]}) →
                 </button>
               </div>
 
               <p className="text-[0.68rem] text-slate-500 text-center pt-1">
-                🔒 100% Free File Opening Charge. Member of FECAS. 425 Rang Mohol Tower, Bandar
-                Bazar, Sylhet.
+                🔒 Direct 1-on-1 counseling. Commerce View Complex, CDA Avenue, East Nasirabad,
+                Chattogram.
               </p>
             </form>
           )}

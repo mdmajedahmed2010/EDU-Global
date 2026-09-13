@@ -3,48 +3,48 @@ import { CountUp, MotionHeading, StaggerContainer, StaggerItem } from "@/compone
 export function WhyChooseSection() {
   const features = [
     {
-      icon: "🎁",
-      iconBg: "bg-blue-50 text-[#043E8B]",
+      icon: "🧭",
+      iconBg: "bg-red-50 text-red-600",
       value: 100,
       suffix: "%",
-      label: "",
-      metricColor: "text-[#043E8B]",
-      tag: "OFFICIAL BENEFIT",
-      title: "100% Free File Opening",
-      desc: "Complete transparency from day one. Profile evaluation, gap analysis, and university shortlisting with zero upfront file-opening fees.",
-    },
-    {
-      icon: "⏳",
-      iconBg: "bg-rose-50 text-red-600",
-      value: 10,
-      suffix: " Years",
       label: "",
       metricColor: "text-red-600",
-      tag: "ESTABLISHED 2017",
-      title: "10 Year's Experience",
-      desc: "Operating with high integrity and student trust in Rang Mohol Tower, Bandar Bazar, Sylhet since 2017.",
+      tag: "STUDENT-FIRST",
+      title: "Expert Guidance",
+      desc: "Individual profile evaluation, academic gap analysis, and tailored university shortlisting with transparent roadmap from Chattogram.",
     },
     {
-      icon: "🏛️",
+      icon: "🎓",
       iconBg: "bg-amber-50 text-amber-600",
+      value: 10,
+      suffix: "-12",
+      label: "",
+      metricColor: "text-amber-600",
+      tag: "INTENSIVE TRAINING",
+      title: "Experienced Trainers",
+      desc: "Goethe-oriented German language instructors, native Danish trainers, and certified IELTS mentors providing daily speaking practice.",
+    },
+    {
+      icon: "🤝",
+      iconBg: "bg-emerald-50 text-emerald-600",
       value: 100,
       suffix: "%",
       label: "",
-      metricColor: "text-amber-600",
-      tag: "GOVT RECOGNIZED",
-      title: "Member of FECAS & FACD-CAB",
-      desc: "Proud member of Bangladesh's premier registered education consultancy bodies adhering to ethical, high-quality counseling.",
+      metricColor: "text-emerald-600",
+      tag: "PRIVATE BATCHES",
+      title: "Personalized Support",
+      desc: "Strictly 10–12 students per batch ensuring regular Sprechen sessions, 1-on-1 IELTS diagnostic interviews, and visa mock trials.",
     },
     {
-      icon: "🇫🇮",
-      iconBg: "bg-blue-50 text-[#043E8B]",
-      value: 50,
-      suffix: "+",
+      icon: "🌍",
+      iconBg: "bg-blue-50 text-blue-600",
+      value: 6,
+      suffix: " Major",
       label: "",
-      metricColor: "text-[#043E8B]",
-      tag: "GLOBAL PARTNERS",
-      title: "Finland #1 Specialist",
-      desc: "January 2027 Joint Applications, rolling admissions with no entrance exam, spouse full work rights, and family relocation support.",
+      metricColor: "text-blue-600",
+      tag: "GLOBAL OPPORTUNITIES",
+      title: "Global Destinations",
+      desc: "Specializing in Tuition-Free German Universities, Denmark, Netherlands (Zoekjaar), Spain, Greece, Malaysia, Canada, and UK.",
     },
   ];
 
@@ -53,11 +53,11 @@ export function WhyChooseSection() {
       <div className="section-shell">
         {/* Title with Editorial Italic Serif & Framer Motion */}
         <MotionHeading
-          tag="— WHY RANS SCHOLARSHIPS —"
+          tag="— WHY AB STUDY HUB —"
           title="Why choose"
-          highlight="RANS Scholarships?"
-          description="We are committed to making your study-abroad dream a reality — with 100% free file opening, 10 years of trusted experience, and expert scholarship guidance."
-          tagColor="text-[#043E8B]"
+          highlight="AB STUDY HUB?"
+          description="Learn Today, Lead Tomorrow, Succeed Anywhere. We provide ethical, student-first guidance, premium European language coaching, and international higher education admissions."
+          tagColor="text-red-600"
           highlightColor="text-red-600"
         />
 

@@ -11,11 +11,11 @@ export const Route = createFileRoute("/study-in-{$country}")({
   head: ({ loaderData }) => {
     const d = loaderData?.destination;
     const title = d
-      ? `Study in ${d.name} from Bangladesh | RANS Scholarships — Sylhet`
-      : "Study Abroad Destinations | RANS Scholarships";
+      ? `Study in ${d.name} from Bangladesh | AB STUDY HUB — Chattogram`
+      : "Study Abroad Destinations | AB STUDY HUB";
     const description = d
-      ? `${d.tagline}. 100% Free File Opening Charge, university admissions, scholarships, and student visa guidance for ${d.name} from RANS Scholarships. 425 Rang Mohol Tower, Bandar Bazar, Sylhet. Hotline: 01772-063911.`
-      : "Study abroad guidance from RANS Scholarships.";
+      ? `${d.tagline}. University admissions, APS & scholarships guidance for ${d.name} from AB STUDY HUB (Abroad From Bangladesh). Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram. Hotline: 01952-566966.`
+      : "Study abroad guidance from AB STUDY HUB.";
     return {
       meta: [
         { title },
@@ -32,7 +32,7 @@ function DestinationPage() {
   const { destination: d } = Route.useLoaderData();
 
   const whatsappHref = () => {
-    const text = `Hello RANS Scholarships! I want to study in ${d.name}.\n\nPlease guide me on admission requirements, scholarships, without IELTS options, and upcoming intake deadlines.`;
+    const text = `Hello AB STUDY HUB! I want to study in ${d.name}.\n\nPlease guide me on admission requirements, scholarships, language courses, and upcoming intake deadlines.`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -43,7 +43,7 @@ function DestinationPage() {
         title={`Study in ${d.name}`}
         subtitle={d.tagline}
         image="/latest-assets/banner.jpg"
-        imageAlt={`Study in ${d.name} — RANS Scholarships guidance`}
+        imageAlt={`Study in ${d.name} — AB STUDY HUB guidance`}
       >
         <div className="space-y-6">
           <Breadcrumbs
@@ -116,7 +116,7 @@ function DestinationPage() {
             {/* Why Study in Country */}
             <div className="rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm">
               <h2 className="font-display text-xl font-black text-slate-900 mb-4">
-                Why Study in {d.name} with RANS Scholarships?
+                Why Study in {d.name} with AB STUDY HUB?
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 font-medium">
                 {d.intro}
@@ -149,13 +149,13 @@ function DestinationPage() {
           <aside className="space-y-6">
             <div className="rounded-3xl p-6 sm:p-8 sticky top-24 border border-red-200 bg-white shadow-md space-y-4">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-red-50 border border-red-200 px-3 py-1 text-xs font-bold text-red-700">
-                100% Free File Opening Charge
+                Direct Counselor Support
               </span>
               <h3 className="font-display text-lg font-black text-slate-900">
-                Apply for {d.name} with RANS
+                Apply for {d.name} with AB STUDY HUB
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                Connect directly with our Sylhet counselors for university shortlisting,
+                Connect directly with our Chattogram counselors for university shortlisting,
                 scholarships, and fast-track visa filing.
               </p>
 
@@ -178,16 +178,16 @@ function DestinationPage() {
 
               <div className="border-t border-slate-100 pt-4 text-xs text-slate-600 space-y-2">
                 <p>
-                  <strong>📍 Sylhet Headquarters:</strong> {company.offices.headquarters.address}
+                  <strong>📍 Chattogram Campus:</strong> {company.offices.headquarters.address}
                 </p>
                 <p>
-                  <strong>🏛️ Accreditation:</strong> Member of FECAS & FACD-CAB
+                  <strong>🎓 Language Academy:</strong> German A1–B2 • Danish • IELTS 7.5+
                 </p>
                 <p>
                   <strong>🕒 Hours:</strong> {company.hours}
                 </p>
                 <p className="text-emerald-700 font-bold">
-                  ✓ 100% Free File Opening Charge guaranteed
+                  ✓ Free 1-on-1 Profile Assessment guaranteed
                 </p>
               </div>
             </div>

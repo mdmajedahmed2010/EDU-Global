@@ -5,7 +5,6 @@ import { company, navItems, destinations, courses } from "@/lib/site-data";
 import { useRegisterModal } from "@/components/register-modal";
 import { IconPhone, IconWhatsApp } from "@/components/ui-blocks";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,43 +20,39 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -18 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.55, ease: [0.23, 1, 0.32, 1] }}
-    >
+    <div className="w-full">
       {/* 1. Global Announcement & Top Bar */}
-      <div className="bg-[#043E8B] text-white text-xs py-2 relative z-50 border-b border-blue-900/40">
+      <div className="bg-slate-950 text-white text-xs py-2 relative z-50 border-b border-red-600/30">
         <div className="section-shell flex items-center justify-between gap-3">
           {/* Left: Direct Phone & WhatsApp */}
           <div className="flex items-center gap-3 sm:gap-4 text-[0.73rem] sm:text-xs">
             <a
-              href="tel:01772063911"
-              className="flex items-center gap-1.5 font-bold text-slate-100 hover:text-white transition-colors"
+              href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
+              className="flex items-center gap-1.5 font-bold text-slate-100 hover:text-red-400 transition-colors"
             >
-              <IconPhone className="w-3.5 h-3.5 text-red-400" />
-              <span>01772-063911 (WhatsApp)</span>
+              <IconPhone className="w-3.5 h-3.5 text-red-500" />
+              <span>{company.phones[0]} (WhatsApp)</span>
             </a>
-            <span className="text-blue-300/40 hidden xs:inline">|</span>
+            <span className="text-slate-700 hidden xs:inline">|</span>
             <a
-              href="tel:01925772171"
-              className="hidden xs:flex items-center gap-1 text-slate-200 hover:text-white transition-colors"
+              href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
+              className="hidden xs:flex items-center gap-1 text-slate-300 hover:text-white transition-colors"
             >
-              <span>01925-772171</span>
+              <span>{company.phones[1]}</span>
             </a>
-            <span className="text-blue-300/40 hidden md:inline">|</span>
-            <span className="hidden md:inline-flex items-center gap-1 text-[0.68rem] bg-red-600/90 text-white font-bold px-2 py-0.5 rounded-full">
-              ★ 100% Free File Opening
+            <span className="text-slate-700 hidden md:inline">|</span>
+            <span className="hidden md:inline-flex items-center gap-1 text-[0.68rem] bg-red-600 text-white font-bold px-2 py-0.5 rounded-full">
+              ★ Abroad From Bangladesh
             </span>
           </div>
 
           {/* Right: Office Location & Membership */}
-          <div className="flex items-center gap-2 text-[0.7rem] sm:text-[0.75rem] text-slate-200">
-            <span className="text-red-400">📍</span>
-            <span className="truncate">425 Rang Mohol Tower, Bandar Bazar, Sylhet</span>
-            <span className="hidden lg:inline text-blue-300/40">|</span>
+          <div className="flex items-center gap-2 text-[0.7rem] sm:text-[0.75rem] text-slate-300">
+            <span className="text-red-500">📍</span>
+            <span className="truncate">Commerce View Complex (4th Flr), CDA Ave, East Nasirabad, Chattogram</span>
+            <span className="hidden lg:inline text-slate-700">|</span>
             <span className="hidden lg:inline text-amber-300 font-semibold text-[0.68rem] bg-amber-400/15 px-2 py-0.5 rounded-full border border-amber-400/30">
-              Member of FECAS · Since 2017
+              German & Danish Academy · Study Abroad
             </span>
           </div>
         </div>
@@ -78,7 +73,7 @@ export function SiteHeader() {
             <BrandLogo size={44} withText textClassName="flex" />
             <div className="hidden xl:block h-6 w-px bg-slate-200" />
             <span className="hidden xl:inline text-xs font-semibold text-slate-500">
-              DREAM TO STUDY ABROAD
+              ABROAD FROM BANGLADESH
             </span>
           </Link>
 
@@ -123,8 +118,8 @@ export function SiteHeader() {
                               {isDest
                                 ? "Verified Study Abroad Destinations"
                                 : isCourses
-                                  ? "IELTS, Spoken & Kids English"
-                                  : "Admissions & Visa Services"}
+                                  ? "German, Danish, IELTS & Spoken English"
+                                  : "Admissions & Language Academy"}
                             </span>
                             <Link
                               to={item.to}
@@ -271,7 +266,7 @@ export function SiteHeader() {
                         <Link
                           key={c.label}
                           to={c.to}
-                          params={c.params}
+                          {...(c.params ? { params: c.params } : {})}
                           onClick={() => setMobileOpen(false)}
                           className="block text-xs text-slate-600 hover:text-red-600 py-1"
                         >
@@ -305,15 +300,15 @@ export function SiteHeader() {
                 <span>WhatsApp {company.whatsappFormatted}</span>
               </a>
               <div className="text-center pt-2 text-[0.72rem] text-slate-500">
-                <span>Rang Mohol Tower, Bandar Bazar, Sylhet</span>
+                <span>Commerce View Complex (4th Flr), East Nasirabad, Chattogram</span>
                 <span className="block mt-0.5 font-bold text-slate-700">
-                  Hotlines: 01772-063911 · 01925-772171
+                  Hotlines: {company.phones[0]} · {company.phones[1]}
                 </span>
               </div>
             </div>
           </div>
         )}
       </header>
-    </motion.div>
+    </div>
   );
 }

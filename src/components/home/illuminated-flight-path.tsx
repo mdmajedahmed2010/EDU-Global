@@ -8,76 +8,76 @@ import { SlideIn, StaggerContainer, StaggerItem } from "@/components/motion-wrap
 const flightStages = [
   {
     step: "01",
-    title: "100% Free Profile Audit",
+    title: "Free Profile Assessment",
     timeline: "Day 0 – 2",
-    badge: "Zero File Opening Fee",
-    desc: "Comprehensive evaluation of your GPA, English proficiency (with IELTS or entrance exam / rolling pathway for Finland), and academic budget by RANS Scholarships advisors.",
+    badge: "Personalized Roadmap",
+    desc: "Comprehensive evaluation of your GPA, German or English proficiency, and target destination budget (Germany tuition-free, Denmark, Netherlands, Spain, Greece, Canada, UK) by AB STUDY HUB advisors.",
     checklist: [
       "Academic Transcript Verification",
-      "Finland & Europe Eligibility Check",
-      "Target Country Shortlisting",
+      "Germany & Denmark Eligibility Check",
+      "Language & Country Shortlisting",
     ],
     counselorTip:
-      "Bring your academic certificates to our Rang Mohol Tower, Bandar Bazar, Sylhet office or send digital copies via WhatsApp.",
+      "Bring your academic certificates to our Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram office or connect via WhatsApp (01952-566966).",
   },
   {
     step: "02",
-    title: "University Offer & Scholarships",
+    title: "University Offer & APS Guidance",
     timeline: "Days 3 – 7",
     badge: "Official Acceptance",
-    desc: "Direct application to accredited partner universities across Finland, Canada, the USA, the UK, Hungary, and Europe with scholarship assistance.",
-    checklist: ["SOP & CV Review", "Offer Letter Issued", "Tuition Waiver / Early Bird Applied"],
+    desc: "Direct application to accredited partner universities across Germany, Denmark, the Netherlands, Canada, Spain, Greece, and the UK with APS and scholarship assistance.",
+    checklist: ["SOP & Motivation Letter Review", "APS & Uni-Assist Assistance", "Direct Admission Coordination"],
     counselorTip:
-      "Qualifying applicants can secure 20% to 50% Early Bird discounts in Finland or 100% tuition coverage under Stipendium Hungaricum.",
+      "Qualifying applicants can secure 100% tuition-free education at German public universities or high-demand Danish technical institutions.",
   },
   {
     step: "03",
-    title: "Financial Compliance & Tuition",
+    title: "Blocked Account & Financial Compliance",
     timeline: "Days 8 – 14",
     badge: "Bank & Compliance",
-    desc: "Thorough verification of bank solvency, tuition deposit, sponsor affidavit, and acceptance certificate according to embassy standards.",
+    desc: "Thorough verification of German blocked account setup (Coracle/Expatrio), bank solvency, tuition deposit, and sponsor affidavits according to embassy standards.",
     checklist: [
-      "Bank Statement & Solvency Audit",
-      "Tuition Deposit Coordination",
+      "German Blocked Account / Danish Solvency",
+      "Health Insurance & Compliance Audit",
       "Official Acceptance Certificate Released",
     ],
     counselorTip:
-      "Our 100% compliance vetting ensures your file has zero documentary errors before submission.",
+      "Our compliance vetting ensures your visa file and financial documentation have zero documentary errors before lodgement.",
   },
   {
     step: "04",
     title: "Visa Lodgement & Mock Interview",
     timeline: "Days 15 – 25",
     badge: "Proven Visa Success",
-    desc: "Expert biometrics booking, embassy submission across Student, Spouse, and Family visas with rigorous 1-on-1 interview practice.",
+    desc: "Expert German Embassy / VFS biometrics booking, student & spouse visa file preparation, and rigorous 1-on-1 interview practice.",
     checklist: [
       "VFS / Embassy Appointment Booking",
       "1-on-1 Embassy Mock Interview",
       "Passport Stamped with Visa",
     ],
     counselorTip:
-      "Simulate authentic consular interview questions with our experienced advisors at Rang Mohol Tower, Sylhet.",
+      "Simulate authentic German and European consular interview questions with our experienced advisors at Commerce View Complex, Chattogram.",
   },
   {
     step: "05",
-    title: "Pre-Departure & Settlement",
+    title: "Pre-Departure & European Settlement",
     timeline: "Prior to Departure",
     badge: "Fly With Confidence",
-    desc: "Student airfare booking assistance, extra luggage allowances, student dorm search, forex file guidance, and arrival welcome.",
+    desc: "Student airfare booking assistance, student dorm / WG accommodation search in Germany & Denmark, city registration guidance, and arrival network.",
     checklist: [
       "Student Air Ticket Discount",
-      "Accommodation Guidance",
-      "Post-Landing Student Network",
+      "German WG / Dorm Accommodation Advice",
+      "Post-Landing Student Community",
     ],
     counselorTip:
-      "Our post-visa care connects you with seniors and alumni across Finland, Europe, and global campuses!",
+      "Our post-visa care connects you with seniors and alumni across German, Danish, and European universities!",
   },
 ];
 
 export function IlluminatedFlightPath() {
   const [activeStage, setActiveStage] = useState(0);
   const { open } = useRegisterModal();
-  const current = flightStages[activeStage];
+  const current = flightStages[activeStage] ?? flightStages[0]!;
 
   return (
     <section className="section-shell py-14 sm:py-20 border-t border-slate-200">
@@ -201,7 +201,7 @@ export function IlluminatedFlightPath() {
 
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello RANS Scholarships! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
+                  `Hello AB STUDY HUB! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"

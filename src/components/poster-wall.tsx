@@ -6,14 +6,14 @@ import { company } from "@/lib/site-data";
 const posters = [
   {
     key: "banner",
-    src: "/latest-assets/banner.jpg",
+    src: "/banner.png",
     label:
-      "RANS Scholarships — Official Corporate Banner (Dream to Study Abroad · Since 2017 · Member of FECAS)",
+      "AB STUDY HUB — Official Corporate Banner (From Chattogram TO THE WORLD · Tuition-Free Germany)",
   },
   {
     key: "logo",
-    src: "/latest-assets/logo.jpg",
-    label: "RANS Scholarships — Official Brand Emblem (Crimson & Navy Blue with Graduation Cap)",
+    src: "/logo.jpg",
+    label: "AB STUDY HUB — Official Brand Emblem (Abroad From Bangladesh · Chattogram)",
   },
 ];
 
@@ -27,7 +27,7 @@ export function PosterWall() {
         <SectionHeading
           eyebrow="Official Brand Assets"
           title="Official Visuals & Brand Memorabilia"
-          subtitle="Explore official assets and brand emblems from RANS Scholarships — click any asset to enlarge."
+          subtitle="Explore official assets and brand emblems from AB STUDY HUB — click any asset to enlarge."
         />
       </Reveal>
 

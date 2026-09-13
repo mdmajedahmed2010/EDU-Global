@@ -14,17 +14,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | RANS Scholarships | Since 2017 | Sylhet" },
+      { title: "About Us | AB STUDY HUB — Abroad From Bangladesh | Chattogram" },
       {
         name: "description",
         content:
-          "Learn about RANS Scholarships — Established in 2017 (10 Year's Experience), Member of FECAS. Specializing in Finland, European scholarships, and RANS Language Academy in Sylhet, Bangladesh.",
+          "Learn about AB STUDY HUB (Abroad From Bangladesh) — Official higher education consultancy & specialized language academy in Chattogram. German tuition-free universities, Danish admissions, Goethe German Language, and IELTS Private Batches at Commerce View Complex, CDA Avenue, East Nasirabad.",
       },
-      { property: "og:title", content: "About RANS Scholarships | Dream to Study Abroad" },
+      { property: "og:title", content: "About AB STUDY HUB | From Chattogram TO THE WORLD" },
       {
         property: "og:description",
         content:
-          "Official profile of RANS Scholarships. 100% Free File Opening Charge, Member of FECAS, Rang Mohol Tower, Bandar Bazar, Sylhet.",
+          "Official profile of AB STUDY HUB (Abroad From Bangladesh). German tuition-free admissions, Goethe German Language, Danish, IELTS Private Batches. Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram.",
       },
     ],
   }),
@@ -33,32 +33,32 @@ export const Route = createFileRoute("/about")({
 
 const advisoryWings = [
   {
-    title: "Finland & European Admissions Cell",
-    hub: "Rang Mohol Tower, Sylhet",
-    badge: "Priority Wing",
-    icon: "🇫🇮",
-    desc: "Specialized desk for Finland January 2027 Joint Application (31 Aug – 10 Sep 2026) and rolling admissions with zero entrance exams, spouse work rights, child free schooling, and Hungary Stipendium Hungaricum scholarships.",
+    title: "Germany Admissions & APS Guidance Cell",
+    hub: "Commerce View Complex, Chattogram",
+    badge: "Flagship Wing",
+    icon: "🇩🇪",
+    desc: "Specialized desk for Germany Tuition-Free Public Universities, APS certificate assistance, Uni-Assist portal processing, blocked account (Coracle/Expatrio) setup, and student/spouse visa documentation.",
   },
   {
-    title: "RANS Language Academy Faculty",
-    hub: "Sylhet Campus & Online",
+    title: "AB Language Academy (German, Danish & IELTS)",
+    hub: "Chattogram Campus & Studio",
     badge: "Language Academy",
-    icon: "🎯",
-    desc: "Experienced mentors conducting intensive IELTS preparation (target Band 7.5+), practical Spoken English fluency for adults, and joyful Kids English (Ages 5–14) foundation courses.",
+    icon: "🎓",
+    desc: "Experienced mentors conducting intensive German Language (A1, A2, B1, B2 Goethe exam prep), Danish Language foundation, IELTS Private Batches (Band 7.5+ in 10–12 student batches), Spoken English, and Kids English.",
   },
   {
-    title: "Visa Compliance & Embassy Documentation Cell",
+    title: "European Admissions & Denmark Desk",
+    hub: "European Desk",
+    badge: "European Focus",
+    icon: "🇩🇰",
+    desc: "Expert application processing for top Danish institutions, Netherlands research universities, Finland, and Schengen study pathways with post-study work visa support.",
+  },
+  {
+    title: "Global Admissions & Consular Visa Cell",
     hub: "Executive Desk",
-    badge: "Visa Excellence",
-    icon: "🛂",
-    desc: "Rigorous document auditing, financial sponsorship verification, and 1-on-1 embassy mock interviews for Student and Dependent/Spouse categories with industry-leading approval rates.",
-  },
-  {
-    title: "North America & UK Placements Wing",
-    hub: "Advisory Desk",
     badge: "Global Reach",
     icon: "🌍",
-    desc: "Tailored university shortlisting, statement of purpose guidance, and scholarship mapping for top institutions across Canada, USA, UK, Netherlands, Italy, and Romania.",
+    desc: "Comprehensive admissions and visa counseling for Canada (DLIs & PGWP), UK (1-Year Masters), Spain, Greece, and Malaysia, paired with 1-on-1 consular mock interviews.",
   },
 ];
 
@@ -66,11 +66,11 @@ function About() {
   return (
     <>
       <PageHero
-        eyebrow="Our Story & 10 Years of Excellence"
-        title="DREAM TO STUDY ABROAD"
-        subtitle="Established in 2017 with 10 years of trusted experience, RANS Scholarships is Sylhet's premier higher education consultancy and Language Academy, proud Member of FECAS."
+        eyebrow="Our Story & Global Vision"
+        title="FROM CHATTOGRAM TO THE WORLD"
+        subtitle="AB STUDY HUB (Abroad From Bangladesh) is Chattogram's trusted higher education consultancy and specialized foreign language academy, empowering students to study at tuition-free German universities and top global destinations."
         image="/latest-assets/banner.jpg"
-        imageAlt="RANS Scholarships corporate banner and Sylhet headquarters"
+        imageAlt="AB STUDY HUB corporate banner and Chattogram campus"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "About Us" }]} />
       </PageHero>
@@ -85,7 +85,7 @@ function About() {
               <div>
                 <h3 className="font-display text-xl font-bold text-slate-900">{company.name}</h3>
                 <span className="inline-block rounded-full bg-red-50 border border-red-200 px-3 py-0.5 text-xs font-bold text-red-700 mt-1">
-                  {company.experience} · {company.association}
+                  {company.tagline}
                 </span>
               </div>
             </div>
@@ -96,15 +96,15 @@ function About() {
                 <dd className="font-bold text-slate-900 text-right">{company.legalName}</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Established</dt>
+                <dt className="text-slate-500 font-medium">Brand Identity</dt>
                 <dd className="font-bold text-red-700 text-right">
-                  Since 2017 (10 Year's Experience)
+                  AB STUDY HUB (Abroad From Bangladesh)
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Industry Accreditation</dt>
+                <dt className="text-slate-500 font-medium">Flagship Specialty</dt>
                 <dd className="font-bold text-slate-900 text-right">
-                  {company.association} & {company.secondaryAssociation}
+                  Germany Tuition-Free & APS Support
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
@@ -115,11 +115,11 @@ function About() {
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
                 <dt className="text-slate-500 font-medium">Language Academy</dt>
-                <dd className="font-bold text-red-700 text-right">IELTS • Spoken • Kids English</dd>
+                <dd className="font-bold text-red-700 text-right">German A1–B2 • Danish • IELTS 7.5+</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Consulting Policy</dt>
-                <dd className="font-bold text-emerald-700">100% Free File Opening Charge</dd>
+                <dt className="text-slate-500 font-medium">Batch Format</dt>
+                <dd className="font-bold text-emerald-700">10–12 Students (Personalized Mentorship)</dd>
               </div>
               <div className="flex justify-between pt-1">
                 <dt className="text-slate-500 font-medium">Hotlines & WhatsApp</dt>
@@ -130,8 +130,8 @@ function About() {
             </dl>
 
             <div className="mt-8 rounded-2xl bg-slate-50 p-4 border border-slate-200">
-              <p className="text-xs font-bold text-slate-900 mb-1">Official Motto:</p>
-              <p className="text-xs italic text-red-700">"{company.slogan}"</p>
+              <p className="text-xs font-bold text-slate-900 mb-1">Official Slogan:</p>
+              <p className="text-xs italic text-red-700 font-bold">"{company.slogan}"</p>
             </div>
           </div>
 
@@ -139,50 +139,50 @@ function About() {
           <div className="space-y-6">
             <span className="badge-clean badge-red">Our Vision & Mission</span>
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Ethical Guidance • 100% Free File Opening • European Leadership
+              From Chattogram to the World • Tuition-Free Germany • Elite Language Academy
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
-              Since 2017, RANS Scholarships has stood as a beacon of genuine education consultancy
-              in Sylhet, Bangladesh. Founded on the bedrock of transparency, we pioneered a 100%
-              Free File Opening policy with zero upfront charges, ensuring that every student has
-              equal access to unbiased global academic evaluation.
+              AB STUDY HUB (Abroad From Bangladesh) was established in Chattogram with a clear and
+              uncompromising vision: to provide genuine, transparent, and results-driven educational
+              consulting. We bridge the gap between talented Bangladeshi students and top international
+              institutions across Europe, North America, and the United Kingdom.
             </p>
             <p className="text-sm leading-relaxed text-slate-600">
-              As a proud member of FECAS (Foreign Education Consultancy Association of Bangladesh)
-              and FACD-CAB, we strictly adhere to international compliance and professional ethics.
-              Our specialized focus on Finland, Hungary, Canada, USA, UK, Netherlands, Italy, and
-              Romania has enabled hundreds of Bangladeshi students to achieve their academic and
-              permanent career milestones abroad.
+              Specializing in German public universities where tuition fees are 100% free, we guide students
+              through every rigorous stage—from APS certificate validation and Uni-Assist applications to
+              blocked account setup and visa lodgement. Alongside admissions, our in-house Language Academy
+              delivers targeted Goethe German (A1–B2), Danish, and IELTS private batch coaching with small
+              batches capped at 10–12 students.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2 pt-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🎯 Our Mission</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  To provide transparent, cost-free file opening and high-caliber language training
-                  that turns every student's dream of studying abroad into reality.
+                  To empower Bangladeshi students with ethical counseling, authentic language skills,
+                  and end-to-end guidance to enter prestigious global universities with high visa success.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🔭 Our Vision</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  To remain Bangladesh's most trusted European higher education advisory, recognized
-                  for high visa success rates and life-changing scholarship placements.
+                  To be Chattogram's foremost international education hub, recognized globally for
+                  German higher education excellence, Danish pathways, and transformative student outcomes.
                 </p>
               </div>
             </div>
 
             <div className="rounded-2xl bg-linear-to-r from-red-50/60 via-slate-50 to-blue-50/60 border border-slate-200 p-5">
               <h4 className="font-display text-sm font-bold text-red-700 mb-2">
-                🌟 The RANS Scholarships Pillars:
+                🌟 The 4 AB STUDY HUB Pillars:
               </h4>
               <BulletList
                 items={[
-                  "100% Free File Opening Charge: Zero upfront evaluation or processing fees for higher education files.",
-                  "Finland Priority Specialization: Early roadmap for January 2027 Joint App (31 Aug–10 Sep 2026) & rolling intakes.",
-                  "Member of FECAS & FACD-CAB: 10 years of verified industry standing and professional ethics since 2017.",
-                  "Comprehensive Language Academy: Expert IELTS coaching (Band 7.5+), Spoken English, and Kids English (Ages 5–14).",
+                  "Expert Guidance: Comprehensive profile evaluation, university shortlisting, and APS compliance for German public universities.",
+                  "Experienced Trainers: Goethe-certified and Cambridge-standard instructors delivering practical spoken and exam-oriented curriculum.",
+                  "Personalized Support: Small private batches strictly capped at 10–12 students for maximum individual interaction.",
+                  "Global Destinations: Premium pathways across Germany, Denmark, the Netherlands, Canada, Spain, Greece, Malaysia, and the UK.",
                 ]}
               />
             </div>
@@ -195,37 +195,37 @@ function About() {
         <div className="rounded-3xl bg-slate-950 border border-slate-800 p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
             <div>
-              <span className="badge-clean badge-red text-xs">Sylhet Corporate Headquarters</span>
+              <span className="badge-clean badge-red text-xs">Chattogram Corporate Headquarters</span>
               <h3 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-white">
-                Rang Mohol Tower, Bandar Bazar, Sylhet
+                Commerce View Complex, CDA Avenue, East Nasirabad
               </h3>
               <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Our central office is located in the heart of Sylhet at Rang Mohol Tower. Welcoming
-                students from Sylhet, Moulvibazar, Sunamganj, Habiganj, and all across Bangladesh
-                with state-of-the-art counseling desks and language classrooms.
+                Our central office is conveniently located on the 4th Floor of Commerce View Complex
+                (Exim Bank Building), 191 CDA Avenue, East Nasirabad, Panchlaish, Chattogram-4200. Welcoming
+                students for free 1-on-1 counseling, German & Danish language classes, and visa documentation.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-red-400">📍 Sylhet Corporate Office</p>
+                  <p className="text-xs font-bold text-red-400">📍 Chattogram Office</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
                     {company.offices.headquarters.address}
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
-                    📞 {company.phones[0]} / {company.phones[1]}
+                    📞 {company.phones[0]} (WhatsApp) / {company.phones[1]}
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-blue-400">🏛️ Accreditations</p>
-                  <p className="text-[0.75rem] text-slate-300 mt-1">Member: FECAS & FACD-CAB</p>
-                  <p className="text-[0.75rem] text-slate-400 mt-1">✉️ {company.email}</p>
+                  <p className="text-xs font-bold text-blue-400">✉️ Direct Inquiries</p>
+                  <p className="text-[0.75rem] text-slate-300 mt-1">Email: {company.email}</p>
+                  <p className="text-[0.75rem] text-slate-400 mt-1">Hours: Sat–Thu 10:00 AM – 7:30 PM</p>
                 </div>
               </div>
             </div>
 
             <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
               <img
-                src="/latest-assets/banner.jpg"
-                alt="RANS Scholarships corporate banner"
+                src="/banner.png"
+                alt="AB STUDY HUB corporate banner"
                 width={800}
                 height={500}
                 className="w-full h-full object-cover"
@@ -245,7 +245,7 @@ function About() {
         <SectionHeading
           eyebrow="Specialized Operational Wings"
           title="Our Advisory Divisions"
-          subtitle="Experienced professionals dedicated to university admissions, language training, and visa compliance."
+          subtitle="Experienced professionals dedicated to German admissions, foreign language training, and visa compliance."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -268,7 +268,7 @@ function About() {
 
               <div className="mt-6 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello RANS Scholarships, I want to consult your "${wing.title}" division.`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AB STUDY HUB, I want to consult your "${wing.title}" division.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs font-bold text-red-700 hover:underline flex items-center justify-center gap-1.5"
@@ -285,8 +285,8 @@ function About() {
       <section className="section-shell py-14 sm:py-20 border-t border-slate-200 bg-slate-50/50">
         <SectionHeading
           eyebrow="Verified Community Presence"
-          title="Events, Reels & Headquarters"
-          subtitle="Explore our Finland Education Expo at Hotel Nirvana Inn, video updates, and corporate headquarters."
+          title="Campus, Batches & Student Success"
+          subtitle="Explore our German Goethe language batches, IELTS private sessions, and corporate campus at Commerce View Complex, Chattogram."
         />
         <div className="mt-10">
           <OfficeGallery />

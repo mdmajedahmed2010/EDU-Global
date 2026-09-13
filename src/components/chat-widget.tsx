@@ -6,7 +6,7 @@ export function ChatWidget() {
   const [showCallMenu, setShowCallMenu] = useState(false);
 
   const whatsappUrl = `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    "Hello RANS Scholarships! I would like to get a 100% Free File Opening consultation for Study Abroad / Language Training.",
+    "Hello AB STUDY HUB! I would like to consult about German/Danish language courses and study abroad admissions.",
   )}`;
 
   const messengerUrl = company.social.messenger;
@@ -19,7 +19,7 @@ export function ChatWidget() {
           {/* Action 1: Facebook Messenger */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              Facebook Messenger (@ransscholarships)
+              Facebook Messenger (@abstudyhub)
             </span>
             <a
               href={messengerUrl}
@@ -37,7 +37,7 @@ export function ChatWidget() {
           {/* Action 2: Direct Phone Call Hotlines */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              Direct Hotlines (Sylhet HQ)
+              Direct Hotlines (Chattogram HQ)
             </span>
             <button
               type="button"
@@ -54,20 +54,20 @@ export function ChatWidget() {
             {showCallMenu && (
               <div className="absolute right-full mr-3 bottom-0 w-64 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl animate-in fade-in duration-150">
                 <p className="text-[0.68rem] font-bold uppercase tracking-wider text-slate-500 mb-2">
-                  RANS Scholarships অফিস হটলাইন:
+                  AB STUDY HUB অফিস হটলাইন:
                 </p>
                 <div className="space-y-1.5">
                   <a
-                    href="tel:01772063911"
+                    href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
                     className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    📞 01772-063911 (WhatsApp / Sylhet)
+                    📞 {company.phones[0]} (WhatsApp / Chattogram)
                   </a>
                   <a
-                    href="tel:01925772171"
+                    href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
                     className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    📞 01925-772171 (Sylhet Office)
+                    📞 {company.phones[1]} (Chattogram Office)
                   </a>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export function ChatWidget() {
           {/* Action 3: Direct WhatsApp Instant Chat */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              WhatsApp: 01772-063911
+              WhatsApp: {company.whatsappFormatted}
             </span>
             <a
               href={whatsappUrl}
