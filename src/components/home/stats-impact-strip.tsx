@@ -6,46 +6,46 @@ export function StatsImpactStrip() {
       icon: "🎯",
       val: 100,
       suffix: "%",
-      label: "Free Assessment",
-      sublabel: "Individual profile evaluation & roadmap",
+      label: "Visa Guidance Support",
+      sublabel: "End-to-end documentation and interview coaching",
     },
     {
-      icon: "👥",
-      val: 10,
-      suffix: "–12",
-      label: "Private Batch Size",
-      sublabel: "German, Danish & IELTS intensive focus",
+      icon: "📚",
+      val: 3,
+      suffix: " Months",
+      label: "Intensive Language Packs",
+      sublabel: "Japanese N5/N4 and Goethe German A1 mastery",
     },
     {
-      icon: "🇩🇪",
-      val: 300,
-      suffix: "+",
-      label: "German Public Unis",
-      sublabel: "Tuition-free higher education options",
+      icon: "📖",
+      val: 100,
+      suffix: "% Free",
+      label: "Books & Study Materials",
+      sublabel: "Complete books & lecture notes provided at zero cost",
     },
     {
-      icon: "🌍",
-      val: 6,
-      suffix: " Major",
-      label: "Global Destinations",
-      sublabel: "Germany, Denmark, Netherlands, CA, US, UK",
+      icon: "🗼",
+      val: 2,
+      suffix: " Hubs",
+      label: "International Desks",
+      sublabel: "Jashore Central HQ + Shin-Koiwa Tokyo Branch",
     },
   ];
 
   return (
-    <section className="relative py-16 sm:py-24 bg-[#0A0A0C] text-white overflow-hidden border-y border-red-900/30">
+    <section className="relative py-16 sm:py-24 bg-[#0a1526] text-white overflow-hidden border-y border-sky-500/20">
       {/* Subtle Ambient Radial Lighting */}
-      <div className="pointer-events-none absolute left-1/2 -top-24 -translate-x-1/2 h-72 w-[600px] rounded-full bg-red-600/10 blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 -top-24 -translate-x-1/2 h-72 w-[600px] rounded-full bg-sky-600/15 blur-[120px]" />
 
       <div className="section-shell relative z-10">
         {/* Section Heading with Editorial Italic Serif */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <h2 className="font-serif-editorial text-3xl sm:text-5xl font-normal tracking-tight text-white">
-            From Chattogram <span className="italic font-normal text-red-500">to the World</span>
+            From Jashore <span className="italic font-normal text-sky-400">to the World</span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-400 mt-2 font-medium">
-            Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram — empowering students with
-            European language fluency and global university admissions.
+          <p className="text-xs sm:text-sm text-slate-300 mt-2 font-medium">
+            Nowrin Tower, East Side of Laldighi, Beside Kacchi Queen, Sadar, Jashore — empowering students
+            with foreign language fluency and global higher education admissions.
           </p>
         </div>
 

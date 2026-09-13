@@ -17,92 +17,112 @@ const educationLevels = [
 ];
 
 const englishProficiency = [
-  { id: "german", label: "German Language Track (A1–B2)", badge: "Tuition-Free Germany" },
-  { id: "danish", label: "Danish Language Track", badge: "Denmark Pathway" },
-  { id: "ielts", label: "IELTS 6.5 – 8.0+", badge: "Direct Global Entry" },
-  { id: "needcoaching", label: "Need IELTS Private Batch", badge: "10–12 Students / Batch" },
+  { id: "japanese", label: "Japanese Language Track (N5–N4)", badge: "Tokyo Office Care" },
+  { id: "german", label: "German Language Track (A1 Goethe)", badge: "Tuition-Free & Ausbildung" },
+  { id: "ielts", label: "IELTS Academic (6.5 – 8.0+)", badge: "Direct Global Entry" },
+  { id: "spoken", label: "Spoken English Mastery", badge: "Fluency & Interview Prep" },
   { id: "kids", label: "Kids English (Ages 5–14)", badge: "Phonics & Spoken" },
 ];
 
 const destinationPreferences = [
   {
+    id: "japan",
+    name: "Japan",
+    flag: "🇯🇵",
+    tag: "Tokyo Branch Support",
+    partner: "N5/N4 + SSW & Student Visas",
+  },
+  {
     id: "germany",
     name: "Germany",
     flag: "🇩🇪",
-    tag: "Tuition-Free Public Unis",
-    partner: "APS & Goethe Prep",
+    tag: "Tuition-Free & Ausbildung",
+    partner: "Goethe A1 Prep",
   },
   {
-    id: "denmark",
-    name: "Denmark",
-    flag: "🇩🇰",
-    tag: "Scandinavian Quality",
-    partner: "Danish Course Included",
+    id: "malaysia",
+    name: "Malaysia",
+    flag: "🇲🇾",
+    tag: "Fast EMGS & Affordable",
+    partner: "SSC / HSC Direct Entry",
   },
-  {
-    id: "netherlands",
-    name: "Netherlands",
-    flag: "🇳🇱",
-    tag: "Zoekjaar Visa",
-    partner: "High Tech Hub",
-  },
-  { id: "canada", name: "Canada", flag: "🇨🇦", tag: "3-Yr PGWP / Co-op", partner: "Public DLIs" },
-  { id: "spain", name: "Spain", flag: "🇪🇸", tag: "Schengen Mobility", partner: "Low Tuition Campaign" },
   {
     id: "uk",
     name: "United Kingdom",
     flag: "🇬🇧",
     tag: "1-Yr Masters / PSW",
-    partner: "Bursaries to £4,000",
+    partner: "Fast Track CAS",
+  },
+  { id: "canada", name: "Canada", flag: "🇨🇦", tag: "3-Yr PGWP / Co-op", partner: "Public DLIs" },
+  {
+    id: "australia",
+    name: "Australia",
+    flag: "🇦🇺",
+    tag: "Subclass 500 / High Wages",
+    partner: "Top Universities",
   },
 ];
 
 export function VisaPathfinder() {
   const { open } = useRegisterModal();
   const [eduLevel, setEduLevel] = useState("bachelor");
-  const [english, setEnglish] = useState("german");
-  const [destination, setDestination] = useState("germany");
+  const [english, setEnglish] = useState("japanese");
+  const [destination, setDestination] = useState("japan");
 
   // Dynamic computation logic
   const getMatchData = () => {
+    if (english === "japanese" || destination === "japan") {
+      return {
+        matchScore: 99,
+        title: "Japan Student & SSW Career Pathway",
+        headline: "Intensive Japanese N5/N4 Preparation & Direct Tokyo Branch Support",
+        timeline: "April, July & October Intakes Open",
+        scholarship: "Tuition Support & High Hourly Part-Time Wages (Up to 28 hrs/wk)",
+        moiAccepted: "Japanese Language Schools & SSW Specialized Vocational Tracks",
+        partnerNote:
+          "Guided by Nexus Global trainers in Jashore and received directly by our Tokyo liaison office in Shin-Koiwa, Tokyo for airport pickup and apartment leasing.",
+        actionType: "abroad",
+      };
+    }
+
     if (english === "german" || destination === "germany") {
       return {
         matchScore: 99,
         title: "Germany Tuition-Free Public University Track",
-        headline: "Tuition-Free Public Higher Education, APS & Goethe-Institut German A1–B2",
+        headline: "Public Higher Education, Dual Ausbildung & Goethe A1 Standard",
         timeline: "Winter & Summer Intakes Open",
         scholarship: "100% Tuition Fee Waiver at German State Universities",
         moiAccepted: "English-Medium & German-Medium Programs",
         partnerNote:
-          "Guided by AB STUDY HUB counselors at Commerce View Complex, Chattogram. Complete support for APS verification, blocked accounts, and Goethe German certification.",
+          "Guided by Nexus Global counselors at Nowrin Tower, East Laldighi, Jashore. Complete support for blocked accounts, German A1 Goethe exam prep, and Ausbildung contracts.",
         actionType: "abroad",
       };
     }
 
-    if (english === "danish" || destination === "denmark") {
+    if (english === "spoken") {
       return {
         matchScore: 98,
-        title: "Denmark Higher Education & Career Track",
-        headline: "Scandinavian World-Ranked Education & Tailored Danish Language Training",
-        timeline: "Autumn & Spring Intakes Open",
-        scholarship: "Post-Study Work Permits & High Standard of Living",
-        moiAccepted: "English-Taught Bachelor's & Master's Degrees",
+        title: "Nexus Global Spoken English Mastery",
+        headline: "Interactive Fluency, Pronunciation & Job Interview Confidence",
+        timeline: "2 to 3 Months Intensive Modules",
+        scholarship: "Free Speaking Assessment & Class Notes",
+        moiAccepted: "Practical Everyday & Professional Corporate Communication",
         partnerNote:
-          "Exclusive Danish language instruction and student visa processing coordinated from our Chattogram headquarters.",
-        actionType: "abroad",
+          "Conducted at our modern Jashore academy with multimedia audio-visual labs and interactive group debates.",
+        actionType: "course",
       };
     }
 
-    if (english === "needcoaching") {
+    if (english === "ielts") {
       return {
         matchScore: 99,
-        title: "AB STUDY HUB IELTS Private Batch",
-        headline: "Intensive IELTS Preparation (10–12 Students / Batch, Band 7.5+ Target)",
+        title: "Nexus Global IELTS Preparation Batch",
+        headline: "Intensive IELTS Coaching (Target Band 7.5+, Cambridge Mocks)",
         timeline: "2 to 3 Months to Band 7.5+",
-        scholarship: "Free Mock Interview & Detailed Writing Diagnostic",
+        scholarship: "Free Mock Test & Detailed Writing Diagnostic",
         moiAccepted: "British Council & IDP Aligned Curriculum",
         partnerNote:
-          "Conducted at our Commerce View Complex, CDA Avenue, East Nasirabad studio with 1-on-1 speaking evaluations.",
+          "Conducted at our Jashore headquarters with experienced trainers, mock exam series, and 1-on-1 speaking evaluations.",
         actionType: "course",
       };
     }
@@ -116,12 +136,24 @@ export function VisaPathfinder() {
         scholarship: "Sibling Discount & Free Trial Class",
         moiAccepted: "Phonics, Storytelling & Spoken Confidence",
         partnerNote:
-          "Modern air-conditioned classrooms with nurturing, patient trainers at Commerce View Complex, Chattogram.",
+          "Modern air-conditioned classrooms with nurturing, patient trainers at Nowrin Tower, East Laldighi, Jashore.",
         actionType: "course",
       };
     }
 
-    if (destination === "uk") {
+    if (destination === "malaysia") {
+      return {
+        matchScore: 98,
+        title: "Malaysia Quality Global Education",
+        headline: "Affordable Degrees, Fast EMGS Visa & UK/Australian Twinning Options",
+        timeline: "Multiple Intakes Throughout Year",
+        scholarship: "Merit Discounts & Low Living Cost",
+        moiAccepted: "English-Taught Bachelor's & Master's Degrees",
+        partnerNote:
+          "Ideal for SSC/HSC graduates wanting international university qualifications at a fraction of Western costs.",
+        actionType: "abroad",
+      };
+    } else if (destination === "uk") {
       return {
         matchScore: 98,
         title: "UK Direct University Admission",
@@ -130,7 +162,7 @@ export function VisaPathfinder() {
         scholarship: "Up to £2,000 – £4,000 Merit Bursaries",
         moiAccepted: "MOI Accepted for Eligible Graduates",
         partnerNote:
-          "AB STUDY HUB provides complete visa file auditing and 1-on-1 embassy mock interview coaching.",
+          "Nexus Global provides complete visa file auditing and 1-on-1 embassy mock interview coaching.",
         actionType: "abroad",
       };
     } else if (destination === "canada") {
@@ -142,32 +174,20 @@ export function VisaPathfinder() {
         scholarship: "CAD $2,000 – $8,000 Entrance Grants",
         moiAccepted: "IELTS / PTE / Duolingo Accepted",
         partnerNote:
-          "Paid co-op internships and open work permit opportunities for accompanying spouses.",
-        actionType: "abroad",
-      };
-    } else if (destination === "spain") {
-      return {
-        matchScore: 97,
-        title: "Spain European University Pathway",
-        headline: "Affordable Tuition from €1,500/Year & 29 Schengen Countries Access",
-        timeline: "Fall & Spring Intakes Open",
-        scholarship: "Regional & Institutional Merit Grants",
-        moiAccepted: "English-Taught Bachelor's & Master's Degrees",
-        partnerNote:
-          "Official dedicated campaign by AB STUDY HUB. Affordable living, part-time work rights, and fast European processing.",
+          "Paid co-op internships and post-graduation work permit guidance for global graduates.",
         actionType: "abroad",
       };
     }
 
     return {
-      matchScore: 96,
-      title: "Netherlands High-Tech European Pathway",
-      headline: "100% English-Taught Degrees & 1-Year Zoekjaar Orientation Visa",
-      timeline: "September & February Intakes",
-      scholarship: "Holland Scholarship (€5,000) & Merit Bursaries",
-      moiAccepted: "IELTS / Academic English",
+      matchScore: 97,
+      title: "Australia Subclass 500 University Track",
+      headline: "Top Global Rankings & High Student Minimum Hourly Wage",
+      timeline: "Feb & July Major Intakes",
+      scholarship: "International Merit Scholarships 20%–50%",
+      moiAccepted: "IELTS / PTE Academic",
       partnerNote:
-        "Europe's foremost innovation hub with exceptional global employability upon graduation.",
+        "World-class university degrees in Sydney, Melbourne, Brisbane and regional centers.",
       actionType: "abroad",
     };
   };
@@ -179,16 +199,16 @@ export function VisaPathfinder() {
       <div className="section-shell">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-[#043E8B] mb-3">
-            <IconSparkles className="w-3.5 h-3.5 text-red-600" />
-            <span>AI-Driven Eligibility Calculator</span>
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
+            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+            <span>Eligibility & Pathway Calculator</span>
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Find Your Ideal <span className="text-red-600">Study Abroad Pathway</span>
+            Find Your Ideal <span className="text-sky-600">Study & Career Pathway</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-2 font-medium">
-            Select your academic level, English background, and target country to instantly
-            calculate your admission, scholarship, and visa probability.
+            Select your academic level, language status, and target country to instantly
+            calculate your admission, language training, and visa probability.
           </p>
         </div>
 
@@ -198,7 +218,7 @@ export function VisaPathfinder() {
           <div className="space-y-6">
             {/* 1. Academic Level */}
             <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-red-600 block mb-3">
+              <span className="text-xs font-extrabold uppercase tracking-wider text-sky-600 block mb-3">
                 1. Your Current Academic Qualification
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
@@ -210,7 +230,7 @@ export function VisaPathfinder() {
                     className={cn(
                       "rounded-2xl p-3.5 text-left border transition-all cursor-pointer",
                       eduLevel === lvl.id
-                        ? "border-[#043E8B] bg-blue-50/60 shadow-xs ring-1 ring-[#043E8B]"
+                        ? "border-sky-600 bg-sky-50/60 shadow-xs ring-1 ring-sky-600"
                         : "border-slate-200 hover:border-slate-300 bg-white",
                     )}
                   >
@@ -223,8 +243,8 @@ export function VisaPathfinder() {
 
             {/* 2. English Proficiency */}
             <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-red-600 block mb-3">
-                2. English Proficiency Status
+              <span className="text-xs font-extrabold uppercase tracking-wider text-sky-600 block mb-3">
+                2. Language Proficiency Status
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {englishProficiency.map((eng) => (
@@ -235,7 +255,7 @@ export function VisaPathfinder() {
                     className={cn(
                       "rounded-2xl p-3.5 text-left border transition-all cursor-pointer flex items-center justify-between",
                       english === eng.id
-                        ? "border-[#043E8B] bg-blue-50/60 shadow-xs ring-1 ring-[#043E8B]"
+                        ? "border-sky-600 bg-sky-50/60 shadow-xs ring-1 ring-sky-600"
                         : "border-slate-200 hover:border-slate-300 bg-white",
                     )}
                   >
@@ -252,8 +272,8 @@ export function VisaPathfinder() {
 
             {/* 3. Preferred Destination */}
             <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-red-600 block mb-3">
-                3. Preferred Study Destination
+              <span className="text-xs font-extrabold uppercase tracking-wider text-sky-600 block mb-3">
+                3. Preferred Destination
               </span>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
                 {destinationPreferences.map((dest) => (
@@ -264,7 +284,7 @@ export function VisaPathfinder() {
                     className={cn(
                       "rounded-2xl p-3 text-left border transition-all cursor-pointer",
                       destination === dest.id
-                        ? "border-red-600 bg-red-50/50 shadow-xs ring-1 ring-red-600"
+                        ? "border-sky-600 bg-sky-50/50 shadow-xs ring-1 ring-sky-600"
                         : "border-slate-200 hover:border-slate-300 bg-white",
                     )}
                   >
@@ -281,10 +301,10 @@ export function VisaPathfinder() {
 
           {/* Right: Dynamic Match Assessment Card */}
           <div className="sticky top-24">
-            <div className="rounded-3xl border-2 border-red-500/30 bg-gradient-to-br from-white via-[#F0F5FC]/50 to-white p-6 sm:p-8 shadow-xl">
+            <div className="rounded-3xl border-2 border-sky-500/30 bg-gradient-to-br from-white via-[#F0F7FC]/50 to-white p-6 sm:p-8 shadow-xl">
               <div className="flex items-center justify-between gap-3 border-b border-slate-100 pb-4 mb-5">
                 <div>
-                  <span className="text-[0.65rem] font-black uppercase tracking-widest text-red-600">
+                  <span className="text-[0.65rem] font-black uppercase tracking-widest text-sky-600">
                     Official Assessment
                   </span>
                   <h3 className="font-display text-lg font-bold text-slate-900 mt-0.5">
@@ -326,9 +346,9 @@ export function VisaPathfinder() {
                   </div>
                 </div>
 
-                <div className="rounded-2xl bg-blue-50/70 border border-blue-100 p-3.5">
-                  <span className="text-[#043E8B] font-bold block mb-1">
-                    English & Admission Flexibility:
+                <div className="rounded-2xl bg-sky-50/70 border border-sky-100 p-3.5">
+                  <span className="text-sky-800 font-bold block mb-1">
+                    Language & Admission Flexibility:
                   </span>
                   <span className="text-slate-700 font-medium">{match.moiAccepted}</span>
                 </div>
@@ -343,22 +363,22 @@ export function VisaPathfinder() {
                 <button
                   type="button"
                   onClick={open}
-                  className="btn-shimmer w-full rounded-xl bg-red-600 hover:bg-red-700 text-white py-3 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="btn-shimmer w-full rounded-xl bg-sky-600 hover:bg-sky-700 text-white py-3 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <span>Apply for 100% Free File Opening</span>
+                  <span>Apply for 100% Free Profile Assessment</span>
                   <IconArrowRight className="w-3.5 h-3.5" />
                 </button>
 
                 <a
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                    `Hello AB STUDY HUB! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on admissions and language batches.`,
+                    `Hello Nexus Global! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on language batches and visa requirements.`,
                   )}`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full rounded-xl border border-emerald-600/30 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 py-3 text-xs font-bold transition-colors flex items-center justify-center gap-2"
                 >
                   <IconWhatsApp className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Discuss With Advisor on WhatsApp</span>
+                  <span>Discuss With Counselor on WhatsApp</span>
                 </a>
               </div>
             </div>

@@ -13,34 +13,34 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    title: "Study in Germany: Tuition-Free Public Universities, APS & Goethe German Prep",
+    title: "Study & Work in Japan: Japanese N5/N4 Package, SSW Work Visa & Tokyo Liaison Support",
     excerpt:
-      "Step-by-step guide on German public university admissions, APS certificate procedures, blocked accounts, and Goethe-Institut German language batches (A1–B2).",
+      "A complete guide to learning Japanese language in Jashore, obtaining your Certificate of Eligibility (COE), and receiving on-ground settlement care from our Tokyo office in Shin-Koiwa.",
     date: "September 2026",
+    tag: "Japan Flagship Track",
+    image:
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+    slug: "japan-study-work-guide",
+  },
+  {
+    title: "Study in Germany: Tuition-Free Public Universities, Goethe A1 & Ausbildung Support",
+    excerpt:
+      "How Bangladeshi students can study tuition-free in Germany with Goethe-Institut standard A1 preparation, Ausbildung placement guidance, and German CV formatting at Nexus Global.",
+    date: "August 2026",
     tag: "Germany Tuition-Free",
     image:
       "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
     slug: "germany-tuition-free-guide",
   },
   {
-    title: "Denmark Higher Education & Career Pathways: Danish Language Course in Chattogram",
+    title: "IELTS Band 7.5+ & Spoken English Fluency: Interactive Coaching in Jashore",
     excerpt:
-      "Learn why Denmark is an elite destination for Bangladeshi scholars, combining high-quality Scandinavian degrees with exclusive Danish language coaching at AB STUDY HUB.",
-    date: "August 2026",
-    tag: "Denmark Pathway",
-    image:
-      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
-    slug: "denmark-pathway-guide",
-  },
-  {
-    title: "IELTS Private Batch (Band 7.5+ Target): Intensive Coaching at Commerce View Complex",
-    excerpt:
-      "Why our strictly capped 10–12 students private batches at East Nasirabad, Chattogram consistently produce Band 7.5+ scores with 1-on-1 speaking mock evaluations.",
+      "Why our structured coaching at Nowrin Tower, East Side of Laldighi produces confident speakers and Band 7.5+ scores through 1-on-1 speaking feedback and authentic Cambridge mock tests.",
     date: "August 2026",
     tag: "Language Academy",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
-    slug: "ielts-private-batch-guide",
+    slug: "ielts-spoken-english-guide",
   },
 ];
 
@@ -53,9 +53,9 @@ export function BlogUpdatesSection() {
           tag="— OFFICIAL UPDATES & INSIGHTS —"
           title="Latest"
           highlight="insights"
-          description="Essential intake roadmaps, European admission guidelines, and language mastery tips from AB STUDY HUB counselors."
-          tagColor="text-red-600"
-          highlightColor="text-red-600"
+          description="Essential intake roadmaps, Japanese & German language guidelines, and visa mastery tips from Nexus Global instructors."
+          tagColor="text-sky-600"
+          highlightColor="text-sky-600"
         />
 
         {/* 3 Blog Cards Grid with Staggered Motion */}
@@ -65,7 +65,7 @@ export function BlogUpdatesSection() {
         >
           {posts.map((post) => (
             <StaggerItem key={post.title} className="h-full">
-              <div className="group rounded-3xl border border-slate-200/90 bg-white overflow-hidden shadow-xs hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-red-400/40 flex flex-col justify-between hover-lift h-full">
+              <div className="group rounded-3xl border border-slate-200/90 bg-white overflow-hidden shadow-xs hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-400/40 flex flex-col justify-between hover-lift h-full">
                 {/* Card Image */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
                   <img
@@ -82,7 +82,7 @@ export function BlogUpdatesSection() {
                 {/* Card Body */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div className="space-y-2.5">
-                    <h3 className="font-display text-base sm:text-lg font-bold text-[#043E8B] group-hover:text-red-600 transition-colors leading-snug">
+                    <h3 className="font-display text-base sm:text-lg font-bold text-slate-900 group-hover:text-sky-600 transition-colors leading-snug">
                       {post.title}
                     </h3>
                     <p className="text-xs text-slate-500 leading-relaxed font-medium line-clamp-3">
@@ -95,10 +95,10 @@ export function BlogUpdatesSection() {
                     <span className="text-slate-400 font-semibold">{post.date}</span>
                     <Link
                       to="/offers"
-                      className="font-bold text-red-600 hover:text-red-700 transition-colors inline-flex items-center gap-1 group-hover:translate-x-1 duration-200"
+                      className="font-bold text-sky-600 hover:text-sky-700 transition-colors inline-flex items-center gap-1 group-hover:translate-x-1 duration-200"
                     >
                       <span>Read More</span>
-                      <span>→</span>
+                      <IconArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 </div>

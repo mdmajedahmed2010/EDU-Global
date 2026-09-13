@@ -19,16 +19,34 @@ interface SlideData {
 
 const heroSlides: SlideData[] = [
   {
+    country: "Japan",
+    code: "JP",
+    flag: "🇯🇵",
+    slogan:
+      "Official flagship destination at Nexus Global. Intensive Japanese N5 & N4 language packages in Jashore, Specified Skilled Worker (SSW) pathways, higher education admissions, and on-ground settlement support through Nexus Group Tokyo in Shin-Koiwa.",
+    perks: [
+      "Tokyo Shin-Koiwa Liaison Branch",
+      "Japanese N5 & N4 Packages",
+      "28 Hrs/Wk Part-Time Work",
+      "100% Visa Guidance Guarantee",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1400&q=85",
+    uniCount: "50+ Language Academies & Unis",
+    intakes: "April, July & October Intakes Open",
+    slug: "japan",
+  },
+  {
     country: "Germany",
     code: "DE",
     flag: "🇩🇪",
     slogan:
-      "Flagship destination at AB STUDY HUB. Tuition-free world-class public universities, English & German-taught programs, APS certification, blocked account assistance, and complete Goethe-Institut language preparation (A1–B2).",
+      "Europe's economic powerhouse offering world-renowned tuition-free public universities, Goethe-Institut standard German A1 preparation in Jashore, Ausbildung placement support, and an 18-month post-study job seeker visa.",
     perks: [
       "Tuition-Free Public Universities",
-      "German A1–B2 Goethe Batches",
-      "18-Month Post-Study Job Visa",
-      "APS & Blocked Account Support",
+      "German Goethe A1 Batches",
+      "Free Ausbildung Profile Guidance",
+      "18-Month Job Seeker Visa",
     ],
     image:
       "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1400&q=85",
@@ -37,52 +55,52 @@ const heroSlides: SlideData[] = [
     slug: "germany",
   },
   {
-    country: "Denmark",
-    code: "DK",
-    flag: "🇩🇰",
+    country: "Malaysia",
+    code: "MY",
+    flag: "🇲🇾",
     slogan:
-      "High-standard Scandinavian education, Danish Language courses tailored for higher studies and work permits, generous part-time work rights, and post-study opportunities in Copenhagen and Aarhus.",
+      "Premier Asian education hub hosting world-class UK and Australian branch campuses (Monash, Nottingham) with fast-track EMGS student visa processing and practical Malay language training.",
     perks: [
-      "Exclusive Danish Language Course",
-      "World-Ranked Universities",
-      "Post-Study Work Permit",
-      "High Quality of Life & Safety",
+      "UK/Australian Branch Campuses",
+      "Fast EMGS Student Visas",
+      "Affordable Living & Tuition",
+      "Malay Language Foundation",
     ],
     image:
-      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "20+ Universities & Academies",
-    intakes: "Autumn & Spring Intakes Open",
-    slug: "denmark",
+      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1400&q=85",
+    uniCount: "40+ World-Ranked Campuses",
+    intakes: "Feb, July & Sep Intakes",
+    slug: "malaysia",
   },
   {
-    country: "Netherlands",
-    code: "NL",
-    flag: "🇳🇱",
+    country: "United Kingdom",
+    code: "GB",
+    flag: "🇬🇧",
     slogan:
-      "Europe's premier technology and innovation powerhouse with over 2,000 English-taught programs and the coveted 1-Year Zoekjaar (Orientation Year) post-study work visa.",
+      "Fast 1-year Master's degrees, 2-year Graduate Route PSW, scholarships up to £4,000, and Cambridge-aligned IELTS preparation right here at our Jashore campus.",
     perks: [
-      "Innovation & Research Hub",
-      "1-Year Zoekjaar Work Visa",
-      "English-Taught Bachelor's & Master's",
-      "Schengen 29 Countries Access",
+      "1-Year Fast Master's",
+      "2-Year Graduate Route PSW",
+      "IELTS Band 7.5+ Coaching",
+      "Scholarships up to £4,000",
     ],
     image:
-      "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "30+ World-Ranked Universities",
-    intakes: "September & February Intakes",
-    slug: "netherlands",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=85",
+    uniCount: "100+ Leading Universities",
+    intakes: "Jan, May & Sep Intakes Open",
+    slug: "uk",
   },
   {
     country: "Canada",
     code: "CA",
     flag: "🇨🇦",
     slogan:
-      "Top Designated Learning Institutions (DLIs), co-op internships, up to 3-year Post-Graduation Work Permits (PGWP), and pathways to permanent residency.",
+      "Top Designated Learning Institutions (DLIs), paid co-op internships, up to 3-year Post-Graduation Work Permits (PGWP), and transparent application processing.",
     perks: [
-      "Direct DLI Admissions",
+      "Public DLI Admissions",
       "Paid Co-Op Internships",
       "Up to 3-Year PGWP",
-      "Spouse Work Permit Eligible",
+      "Comprehensive Visa Support",
     ],
     image:
       "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=1400&q=85",
@@ -90,85 +108,43 @@ const heroSlides: SlideData[] = [
     intakes: "Jan, May & Sep Intakes Open",
     slug: "canada",
   },
-  {
-    country: "Spain",
-    code: "ES",
-    flag: "🇪🇸",
-    slogan:
-      "Gateway to European higher education with affordable tuition from €1,500/year, vibrant Mediterranean student lifestyle, and unrestricted Schengen mobility across 29 nations.",
-    perks: [
-      "Affordable Tuition Fees",
-      "Schengen 29 Countries Access",
-      "20 Hrs/Week Work Rights",
-      "High Visa Success Rate",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "50+ Accredited Universities",
-    intakes: "Autumn & Spring Intakes",
-    slug: "spain",
-  },
-  {
-    country: "United Kingdom",
-    code: "GB",
-    flag: "🇬🇧",
-    slogan:
-      "Russell Group institutions, fast-track 1-year Master's degrees, 2-Year Graduate Route PSW, and admissions with or without IELTS (MOI accepted).",
-    perks: [
-      "1-Year Fast Master's",
-      "2-Year Graduate Route PSW",
-      "Scholarships up to £4,000",
-      "Admissions Without IELTS (MOI)",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "150+ Universities",
-    intakes: "Jan, May & Sep Intakes Open",
-    slug: "uk",
-  },
 ];
 
 const liveSuccessToasts = [
   {
     student: "Tanvir A.",
-    action: "Enrolled in German A2 Goethe Batch",
-    countryCode: "DE",
-    flag: "🇩🇪",
+    action: "Enrolled in Japanese N5 Level Batch",
+    flag: "🇯🇵",
     time: "3 mins ago",
   },
   {
-    student: "Nabila R.",
-    action: "Admitted to German Public University",
-    countryCode: "DE",
+    student: "Sabbir H.",
+    action: "Enrolled in German A1 Goethe Batch",
     flag: "🇩🇪",
-    time: "11 mins ago",
+    time: "12 mins ago",
   },
   {
-    student: "Mahfuz H.",
-    action: "Enrolled in Danish Language Course",
-    countryCode: "DK",
-    flag: "🇩🇰",
-    time: "24 mins ago",
+    student: "Nusrat J.",
+    action: "Achieved IELTS Overall Band 7.5",
+    flag: "🇬🇧",
+    time: "28 mins ago",
   },
   {
-    student: "Kamrul I.",
-    action: "Achieved IELTS Overall Band 8.0",
-    countryCode: "🎯",
-    flag: "🎯",
-    time: "42 mins ago",
+    student: "Farhan M.",
+    action: "Received Japan Student Visa & COE",
+    flag: "🇯🇵",
+    time: "45 mins ago",
   },
   {
-    student: "Farzana S.",
-    action: "Admitted to University of Amsterdam",
-    countryCode: "NL",
-    flag: "🇳🇱",
+    student: "Rashed K.",
+    action: "Admitted to German Public University",
+    flag: "🇩🇪",
     time: "1 hour ago",
   },
   {
-    student: "Fahim M.",
-    action: "Joined Spoken English Intensive Batch",
-    countryCode: "🗣️",
-    flag: "🗣️",
+    student: "Sumaiya A.",
+    action: "Joined Kids Spoken English Batch",
+    flag: "🧒",
     time: "2 hours ago",
   },
 ];
@@ -198,10 +174,10 @@ export function HeroCommandCenter() {
   const activeToast = liveSuccessToasts[toastIndex] ?? liveSuccessToasts[0]!;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F0F5FC]/70 via-[#FAFAFC] to-[#FAFAFC] pt-6 pb-14 sm:pt-10 sm:pb-20 border-b border-slate-200/80">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#eef7fc]/80 via-[#FAFAFC] to-[#FAFAFC] pt-6 pb-14 sm:pt-10 sm:pb-20 border-b border-slate-200/80">
       {/* Subtle Ambient Backdrop Glows */}
-      <div className="pointer-events-none absolute -left-28 -top-28 h-96 w-96 rounded-full bg-blue-500/10 blur-[130px]" />
-      <div className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-red-500/8 blur-[130px]" />
+      <div className="pointer-events-none absolute -left-28 -top-28 h-96 w-96 rounded-full bg-sky-500/15 blur-[130px]" />
+      <div className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-orange-500/10 blur-[130px]" />
 
       <div className="section-shell relative z-10">
         {/* Main 2-Column Hero Showcase */}
@@ -210,35 +186,35 @@ export function HeroCommandCenter() {
           <div className="space-y-5">
             {/* Brand Motto Over-Title */}
             <div className="flex items-center gap-2">
-              <span className="text-[0.72rem] sm:text-xs font-bold uppercase tracking-[0.16em] text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-200/80">
-                — AB STUDY HUB · CHATTOGRAM —
+              <span className="text-[0.72rem] sm:text-xs font-bold uppercase tracking-[0.16em] text-sky-800 bg-sky-50 px-3 py-1 rounded-full border border-sky-200/80">
+                — NEXUS GLOBAL · JASHORE & TOKYO —
               </span>
             </div>
 
             {/* Slogan & Destination Headline */}
             <div className="space-y-2">
               <p className="font-serif-editorial italic text-2xl sm:text-3xl lg:text-4xl text-slate-500 font-normal leading-tight">
-                Learn Today, Lead Tomorrow
+                The Best Way to Predict the Future is to Create It
               </p>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.08] tracking-tight">
-                FROM CHATTOGRAM <span className="text-red-600">TO THE WORLD</span>
+                FROM JASHORE <span className="text-sky-600">TO THE WORLD</span>
               </h1>
               <div className="flex items-center gap-2 text-slate-700 font-semibold text-sm sm:text-base pt-1">
-                <span>Featured Focus:</span>
-                <span className="inline-flex items-center gap-1 text-red-600 font-bold bg-red-50 px-2.5 py-0.5 rounded-lg border border-red-200">
+                <span>Flagship Destination:</span>
+                <span className="inline-flex items-center gap-1 text-sky-700 font-bold bg-sky-50 px-2.5 py-0.5 rounded-lg border border-sky-200">
                   <span>{slide.flag}</span>
-                  <span>Study in {slide.country}</span>
+                  <span>Study & Work in {slide.country}</span>
                 </span>
               </div>
-              {/* Red Accent Bar */}
-              <div className="h-1.5 w-24 bg-gradient-to-r from-red-600 to-amber-500 rounded-full mt-2" />
+              {/* Blue & Orange Accent Bar */}
+              <div className="h-1.5 w-28 bg-gradient-to-r from-sky-500 via-sky-600 to-orange-500 rounded-full mt-2" />
             </div>
 
             {/* Live Applications Intake Pill */}
-            <div className="inline-flex items-center gap-2.5 rounded-full bg-red-50 border border-red-200/80 px-4 py-1.5 text-xs font-bold text-red-700 shadow-xs">
+            <div className="inline-flex items-center gap-2.5 rounded-full bg-sky-50 border border-sky-200/80 px-4 py-1.5 text-xs font-bold text-sky-800 shadow-xs">
               <span className="beacon-dot">
-                <span className="beacon-ping bg-red-500" />
-                <span className="beacon-core bg-red-600" />
+                <span className="beacon-ping bg-sky-400" />
+                <span className="beacon-core bg-sky-600" />
               </span>
               <span>{slide.intakes}</span>
             </div>
@@ -253,9 +229,9 @@ export function HeroCommandCenter() {
               {slide.perks.map((perk) => (
                 <span
                   key={perk}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200/80 px-3 py-1.5 text-[0.73rem] sm:text-xs font-semibold text-slate-700 shadow-xs hover:border-red-300 transition-colors"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200/80 px-3 py-1.5 text-[0.73rem] sm:text-xs font-semibold text-slate-700 shadow-xs hover:border-sky-300 transition-colors"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-red-600" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-sky-600" />
                   <span>{perk}</span>
                 </span>
               ))}
@@ -266,7 +242,7 @@ export function HeroCommandCenter() {
               <button
                 type="button"
                 onClick={open}
-                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 hover:bg-red-700 text-white px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg hover:shadow-red-600/30 transition-all cursor-pointer active:scale-95"
+                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg hover:shadow-sky-600/30 transition-all cursor-pointer active:scale-95"
               >
                 <span>Book Free Profile Assessment</span>
                 <IconArrowRight className="w-4 h-4" />
@@ -287,12 +263,12 @@ export function HeroCommandCenter() {
             <div className="pt-2 text-xs text-slate-500 font-medium flex items-center gap-2">
               <span className="text-amber-500 font-bold">★★★★★</span>
               <span>
-                Commerce View Complex (4th Flr), CDA Avenue, East Nasirabad, Chattogram.
+                Nowrin Tower (3rd Flr), East Side of Laldighi, Beside Kacchi Queen, Jashore.
               </span>
             </div>
           </div>
 
-          {/* Right Column: Visual Destination Card with Official Banner Option */}
+          {/* Right Column: Visual Destination Card */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-[2.2rem] sm:rounded-[2.8rem] shadow-2xl border-4 border-white aspect-[4/3] sm:aspect-[16/11] lg:aspect-[5/4] bg-slate-100 group">
               {/* Scenic Destination Photography */}
@@ -318,7 +294,7 @@ export function HeroCommandCenter() {
               </div>
 
               {/* Floating Live Success Toast (Top-Left) */}
-              <div className="absolute top-5 left-5 rounded-xl bg-black/60 backdrop-blur-md px-3 py-1.5 text-xs text-white border border-white/20 flex items-center gap-2 max-w-[240px]">
+              <div className="absolute top-5 left-5 rounded-xl bg-black/60 backdrop-blur-md px-3 py-1.5 text-xs text-white border border-white/20 flex items-center gap-2 max-w-[260px]">
                 <span className="text-base">{activeToast.flag}</span>
                 <span className="truncate text-[0.7rem] font-medium">
                   <strong>{activeToast.student}</strong> {activeToast.action}
@@ -364,7 +340,7 @@ export function HeroCommandCenter() {
                   onClick={() => setCurrentSlide(idx)}
                   className={cn(
                     "h-2 rounded-full transition-all duration-300 cursor-pointer",
-                    currentSlide === idx ? "w-8 bg-red-600" : "w-2 bg-slate-300 hover:bg-slate-400",
+                    currentSlide === idx ? "w-8 bg-sky-600" : "w-2 bg-slate-300 hover:bg-slate-400",
                   )}
                 />
               ))}

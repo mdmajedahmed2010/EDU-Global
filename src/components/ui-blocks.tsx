@@ -154,17 +154,29 @@ export function IconWhatsApp({ className = "w-4 h-4" }: { className?: string }) 
 
 export const globalPartners = [
   {
+    name: "Japan Language Schools & Univs",
+    type: "SSW & Student Visa Pathways",
+    tag: "Tokyo Branch Care",
+  },
+  {
+    name: "Germany Public Universities",
+    type: "Tuition-Free & Ausbildung",
+    tag: "Goethe A1 Prep",
+  },
+  {
+    name: "Malaysia Partner Colleges",
+    type: "Fast EMGS & Credit Transfer",
+    tag: "Affordable Tuition",
+  },
+  {
     name: "United Kingdom Universities",
     type: "1-Yr Master's & 2-Yr PSW",
-    tag: "London Office Care",
+    tag: "Fast Track CAS",
   },
   { name: "Canada Public DLIs", type: "Co-op & 3-Year PGWP", tag: "Fast Permits" },
   { name: "Australia Top Universities", type: "High Student Wages", tag: "Subclass 500" },
-  { name: "Cyprus English Universities", type: "Affordable €3,000–€5,000", tag: "High Visa Ratio" },
-  { name: "Germany Public Universities", type: "Low / Free Tuition", tag: "18-Mo Job Seeker" },
-  { name: "Finland UAS Network", type: "English Master's Degrees", tag: "Happiest Country" },
-  { name: "Spain & Greece Universities", type: "Schengen 29 Countries", tag: "90% Visa Ratio" },
-  { name: "Malaysia Partner Colleges", type: "SSC / Dakhil Entry", tag: "Fast EMGS" },
+  { name: "USA Accredited Universities", type: "F-1 Stem OPT 3-Yr", tag: "Interview Prep" },
+  { name: "Schengen 29 Countries", type: "Finland, Spain & Greece", tag: "High Visa Ratio" },
 ];
 
 export function RegisterButton({
@@ -199,9 +211,9 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white py-12 sm:py-16 lg:py-20 border-b border-slate-800">
-      <div className="pointer-events-none absolute -left-20 top-0 h-96 w-96 rounded-full bg-red-600/15 blur-[120px]" />
-      <div className="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-blue-600/15 blur-[120px]" />
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#0B1528] via-[#0F1E36] to-[#0B1528] text-white py-12 sm:py-16 lg:py-20 border-b border-sky-950">
+      <div className="pointer-events-none absolute -left-20 top-0 h-96 w-96 rounded-full bg-sky-500/15 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-500/15 blur-[120px]" />
 
       {image ? (
         <div
@@ -219,8 +231,8 @@ export function PageHero({
         >
           <div>
             {eyebrow ? (
-              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-500/15 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-red-400 backdrop-blur-md">
-                <IconSparkles className="w-3.5 h-3.5 text-red-400" />
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-sky-400/40 bg-sky-500/15 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-sky-300 backdrop-blur-md">
+                <IconSparkles className="w-3.5 h-3.5 text-sky-400" />
                 <span>{eyebrow}</span>
               </div>
             ) : null}
@@ -240,7 +252,7 @@ export function PageHero({
 
           {image ? (
             <div className="relative hidden lg:block">
-              <div className="relative overflow-hidden rounded-3xl border border-red-500/30 bg-slate-900/90 p-3 shadow-2xl backdrop-blur-xl">
+              <div className="relative overflow-hidden rounded-3xl border border-sky-500/30 bg-slate-900/90 p-3 shadow-2xl backdrop-blur-xl">
                 <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl bg-slate-950">
                   <img
                     src={image}
@@ -251,21 +263,21 @@ export function PageHero({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
-                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-red-400">
-                      Commerce View Complex, Chattogram
+                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-sky-300">
+                      Nowrin Tower, Laldighi, Jashore
                     </span>
-                    <span className="rounded-full bg-red-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● Language Academy
+                    <span className="rounded-full bg-sky-600 px-3 py-1 font-bold text-white shadow-sm">
+                      ● Nexus Global Academy
                     </span>
                   </div>
                 </div>
 
                 <div className="p-3 text-center">
                   <p className="text-xs font-bold text-white">
-                    {company.name} · Abroad From Bangladesh
+                    {company.name} · Language & Skill Training
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    German, Danish & IELTS · Hotline: {company.phones[0]}
+                    Japanese, German & IELTS · Hotline: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -284,11 +296,11 @@ export function Breadcrumbs({ items }: { items: { label: string; to?: string }[]
         <div key={item.label} className="flex items-center gap-2">
           {i > 0 && <span className="text-slate-600">/</span>}
           {item.to ? (
-            <Link to={item.to} className="transition-colors hover:text-red-500">
+            <Link to={item.to} className="transition-colors hover:text-sky-600">
               {item.label}
             </Link>
           ) : (
-            <span className="font-semibold text-red-600">{item.label}</span>
+            <span className="font-semibold text-sky-600">{item.label}</span>
           )}
         </div>
       ))}
@@ -317,8 +329,8 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <div className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-3.5 py-1 text-xs font-bold text-red-700">
-          <IconSparkles className="w-3.5 h-3.5 text-red-600" />
+        <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-3.5 py-1 text-xs font-bold text-sky-700">
+          <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
           <span>{eyebrow}</span>
         </div>
       ) : null}
@@ -357,11 +369,11 @@ export function StatsStrip() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
         {company.stats.slice(0, 4).map((s, idx) => (
           <div key={s.label} className={cn("text-center", idx > 0 ? "pt-4 sm:pt-0 sm:px-4" : "")}>
-            <div className="font-display text-3xl sm:text-4xl font-black text-red-600 tracking-tight">
+            <div className="font-display text-3xl sm:text-4xl font-black text-sky-600 tracking-tight">
               {s.value}
             </div>
             <div className="mt-1 text-xs sm:text-sm font-bold text-slate-800">{s.label}</div>
-            <span className="mt-2 inline-block rounded-full bg-red-50 border border-red-200 px-3 py-0.5 text-[0.68rem] font-bold text-red-700">
+            <span className="mt-2 inline-block rounded-full bg-sky-50 border border-sky-200 px-3 py-0.5 text-[0.68rem] font-bold text-sky-700">
               {s.badge}
             </span>
           </div>
@@ -384,7 +396,7 @@ export function FaqList({ items }: { items: readonly { q: string; a: string }[] 
             className={cn(
               "rounded-2xl border transition-all duration-300 overflow-hidden",
               isOpen
-                ? "bg-white border-red-500 shadow-md ring-1 ring-red-500/20"
+                ? "bg-white border-sky-500 shadow-md ring-1 ring-sky-500/20"
                 : "bg-white/80 border-slate-200 hover:border-slate-300 hover:bg-white",
             )}
           >
@@ -399,7 +411,7 @@ export function FaqList({ items }: { items: readonly { q: string; a: string }[] 
               <span
                 className={cn(
                   "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                  isOpen ? "bg-red-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                  isOpen ? "bg-sky-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
                 )}
               >
                 ↓
@@ -429,15 +441,15 @@ export function UniversityMarquee() {
   return (
     <section className="relative border-y border-slate-200/80 bg-white py-14 sm:py-20 overflow-hidden">
       <div className="section-shell text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-        <div className="inline-flex items-center gap-1.5 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-600 mb-3">
+        <div className="inline-flex items-center gap-1.5 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
           <span>GLOBAL INSTITUTIONS</span>
         </div>
         <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-          Top Study Abroad <span className="text-red-600">Destinations & Universities</span>
+          Top Study & Career <span className="text-sky-600">Destinations & Partners</span>
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 font-medium mt-2 leading-relaxed">
-          Comprehensive admission and language coaching for tuition-free German universities,
-          Denmark, Netherlands, Canada, Spain, Greece, and the UK.
+          Comprehensive admission and language coaching for Japan (with Tokyo liaison office),
+          tuition-free German universities & Ausbildung, Malaysia, UK, Canada, Australia, and the USA.
         </p>
       </div>
 
@@ -455,9 +467,9 @@ export function UniversityMarquee() {
               key={`${partner.name}-${i}`}
               className="flex items-center gap-3 rounded-2xl border border-slate-200/90 bg-slate-50/80 px-5 py-3 shadow-xs hover:shadow-md hover:bg-white transition-all whitespace-nowrap"
             >
-              <span className="flex h-2 w-2 rounded-full bg-red-600" />
+              <span className="flex h-2 w-2 rounded-full bg-sky-600" />
               <span className="text-xs sm:text-sm font-bold text-slate-900">{partner.name}</span>
-              <span className="rounded-full bg-red-50 px-2.5 py-0.5 text-[0.68rem] font-bold text-red-700 border border-red-200">
+              <span className="rounded-full bg-sky-50 px-2.5 py-0.5 text-[0.68rem] font-bold text-sky-700 border border-sky-200">
                 {partner.tag}
               </span>
             </div>
@@ -473,8 +485,8 @@ export function BulletList({ items }: { items: readonly string[] }) {
     <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600">
       {items.map((item, i) => (
         <li key={i} className="flex items-start gap-2.5">
-          <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-red-50 text-red-600 text-[0.65rem] font-bold border border-red-200">
-            <IconCheck className="w-3 text-red-600" />
+          <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-sky-50 text-sky-600 text-[0.65rem] font-bold border border-sky-200">
+            <IconCheck className="w-3 text-sky-600" />
           </span>
           <span className="leading-relaxed font-medium">{item}</span>
         </li>
@@ -487,9 +499,9 @@ export function CtaBand() {
   const { open } = useRegisterModal();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white py-16 sm:py-24 border-t border-slate-800">
-      <div className="pointer-events-none absolute -left-20 top-0 h-96 w-96 rounded-full bg-red-600/15 blur-[120px]" />
-      <div className="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-blue-600/15 blur-[120px]" />
+    <section className="relative overflow-hidden bg-gradient-to-r from-[#0B1528] via-[#0F1E36] to-[#0B1528] text-white py-16 sm:py-24 border-t border-sky-950">
+      <div className="pointer-events-none absolute -left-20 top-0 h-96 w-96 rounded-full bg-sky-500/15 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-500/15 blur-[120px]" />
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -497,32 +509,32 @@ export function CtaBand() {
         viewport={{ once: true }}
         className="section-shell relative z-10 text-center max-w-3xl mx-auto space-y-6"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-red-500/40 bg-red-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-red-400">
-          <IconGlobe className="w-3.5 h-3.5 text-red-400" />
-          <span>Chattogram Campus · Commerce View Complex (Exim Bank Building), CDA Avenue</span>
+        <div className="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-300">
+          <IconGlobe className="w-3.5 h-3.5 text-sky-400" />
+          <span>Jashore Headquarters · Nowrin Tower, East Laldighi | Tokyo Branch Office, Japan</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          From Chattogram <span className="text-red-500">TO THE WORLD</span>
+          From Jashore <span className="text-sky-400">TO THE WORLD</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your free profile assessment with AB STUDY HUB (Abroad From Bangladesh). Specializing in
-          German tuition-free universities, Danish pathways, Goethe German Language, and IELTS private batches.
+          Book your free profile assessment with {company.name} ({company.shortName}). Specializing in
+          Japanese (N5/N4), German Goethe A1, IELTS, and international visa processing with direct support from our Tokyo branch.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           <button
             type="button"
             onClick={open}
-            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-red-600/30 active:scale-95 cursor-pointer"
+            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 active:scale-95 cursor-pointer"
           >
             <span>Book Free Appointment</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello AB STUDY HUB! I would like to book a free consultation for study abroad / language courses.",
+              "Hello Nexus Global! I would like to book a free consultation for Japanese / German / IELTS / study abroad.",
             )}`}
             target="_blank"
             rel="noreferrer"

@@ -5,17 +5,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use | AB STUDY HUB — Chattogram" },
+      { title: "Terms of Use | Nexus Global — Jashore & Tokyo" },
       {
         name: "description",
         content:
-          "Terms and conditions governing educational advisory services, German admissions, and language coaching at AB STUDY HUB Chattogram.",
+          "Terms and conditions governing language training and educational advisory services at Nexus Global Language and Skill Training Centre in Jashore and Tokyo.",
       },
-      { property: "og:title", content: "Terms of Use | AB STUDY HUB" },
+      { property: "og:title", content: "Terms of Use | Nexus Global" },
       {
         property: "og:description",
         content:
-          "Terms governing our overseas education counseling, language academy, and visa processing guidance.",
+          "Terms governing our language academy, skill training, and overseas pathway guidance.",
       },
     ],
   }),
@@ -24,24 +24,24 @@ export const Route = createFileRoute("/terms-of-use")({
 
 const sections = [
   {
-    title: "1. Scope of Advisory Services",
-    body: "AB STUDY HUB (Abroad From Bangladesh) provides university selection, admission application processing, APS certificate guidance, language academy enrollment (German A1–B2, Danish, IELTS, Spoken English, Kids English), and visa file preparation across our core destinations (Germany, Denmark, Netherlands, Spain, Greece, Malaysia, Canada, and UK). Statutory third-party costs (such as university semester fees, official embassy visa fees, medical screening, and courier charges) are paid directly to the respective institutions or sovereign authorities.",
+    title: "1. Scope of Language & Advisory Services",
+    body: "Nexus Global Language and Skill Training Centre provides specialized foreign language training (Japanese N5/N4, German Goethe A1, IELTS, Spoken English, Kids English), university/language school selection, application processing, and visa file preparation for destinations including Japan, Germany, Malaysia, UK, Canada, Australia, and USA. Statutory third-party costs (such as official embassy visa fees, medical tests, language exam fees, and courier services) are paid directly to the respective authorities or test providers.",
   },
   {
     title: "2. Document Authenticity & Applicant Responsibility",
-    body: "Applicants are solely responsible for the authenticity and legality of all academic certificates, marksheets, IELTS score cards, German language certificates, and financial sponsorship documents submitted. AB STUDY HUB maintains a strict zero-tolerance policy against fraudulent documentation.",
+    body: "Applicants and learners are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. Nexus Global adheres to strict legal standards and has zero tolerance for fraudulent submissions.",
   },
   {
     title: "3. Admissions & Visa Decisions Disclaimer",
-    body: "University admissions and scholarships are decided exclusively by the respective international universities. Visa approvals are determined solely by sovereign immigration authorities (such as the German Federal Foreign Office, Danish Immigration Service, IRCC, UKVI, and European Embassies). While AB STUDY HUB provides comprehensive documentation and consular mock interviews, sovereign decisions remain with the respective government bodies.",
+    body: "Admission offers, scholarships, and visa approvals are decided strictly by sovereign immigration authorities (such as the Immigration Services Agency of Japan, German Federal Foreign Office, and respective embassies) and educational institutions. Nexus Global provides expert coaching, rigorous document auditing, and mock interview preparations, but does not claim jurisdiction over sovereign visa grants.",
   },
   {
-    title: "4. Language Academy Terms",
-    body: "Students enrolled in our German Language (A1–B2), Danish, or IELTS Preparation programs receive personalized course packs and scheduled interactive mock tests. Private batches are capped strictly at 10–12 students to guarantee high-touch instruction.",
+    title: "4. Academy & Batch Policies",
+    body: "Students enrolled in our Japanese, German, IELTS, or Spoken English programs receive official study materials and structured class access. Nexus Global reserves the right to maintain discipline, academic rigor, and batch integrity to safeguard student progress.",
   },
   {
     title: "5. Contact & Inquiries",
-    body: `If you have questions regarding these terms, email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Chattogram Campus at ${company.offices.headquarters.address}.`,
+    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Jashore Headquarters at ${company.offices.headquarters.address}.`,
   },
 ];
 

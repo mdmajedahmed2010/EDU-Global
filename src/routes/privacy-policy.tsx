@@ -5,13 +5,13 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | AB STUDY HUB — Chattogram" },
+      { title: "Privacy Policy | Nexus Global — Jashore & Tokyo" },
       {
         name: "description",
         content:
-          "How AB STUDY HUB collects, protects, and handles personal data for study abroad counseling, language academy students, and visa processing in Chattogram.",
+          "How Nexus Global Language and Skill Training Centre collects, protects, and handles personal data for language training, study abroad counseling, and visa processing in Jashore and Tokyo.",
       },
-      { property: "og:title", content: "Privacy Policy | AB STUDY HUB" },
+      { property: "og:title", content: "Privacy Policy | Nexus Global" },
       {
         property: "og:description",
         content: "Our commitment to protecting your personal information and academic records.",
@@ -24,19 +24,19 @@ export const Route = createFileRoute("/privacy-policy")({
 const sections = [
   {
     title: "1. Information We Collect",
-    body: "When you register with AB STUDY HUB (Abroad From Bangladesh) for study abroad admissions, language academy courses (German A1–B2, Danish, IELTS, Spoken English, Kids English), or visa processing, we collect relevant personal details such as your name, phone/WhatsApp number, email address, academic qualifications, test scores, passports, and destination preferences. We also collect minimal anonymous web analytics to ensure website security and performance.",
+    body: "When you register with Nexus Global Language and Skill Training Centre for foreign language courses (Japanese N5/N4, German Goethe A1, IELTS, Spoken English, Kids English) or study abroad pathways, we collect relevant personal details including your name, phone/WhatsApp number, email address, academic credentials, language levels, passports, and destination preferences. We also collect minimal anonymous web analytics to ensure website security and optimal performance.",
   },
   {
     title: "2. How We Use Your Information",
-    body: "Your information is used strictly to provide profile evaluations, course shortlisting, university application submissions, German and Danish language coaching scheduling, and visa processing. All handling is coordinated securely at our Chattogram Corporate Campus at Commerce View Complex, CDA Avenue, East Nasirabad.",
+    body: "Your information is used strictly to provide profile evaluations, course enrollments, textbook distribution, university/language school applications, and visa documentation. All processing is managed securely from our Jashore Headquarters at Nowrin Tower, East Side of Laldighi, and our Tokyo liaison branch in Shin-Koiwa, Tokyo, Japan.",
   },
   {
     title: "3. Information Sharing & Third Parties",
-    body: "We share your documents solely with designated partner universities, awarding bodies, and official sovereign immigration authorities (e.g. German Federal Foreign Office / Embassies, Danish Immigration Service, IRCC, UKVI). We NEVER sell, rent, or trade your personal information with third-party marketers or commercial brokers.",
+    body: "We share your documents solely with designated partner institutions, language schools, and official sovereign immigration authorities (such as the Immigration Services Agency of Japan, German Federal Foreign Office / German Embassy Dhaka, EMGS Malaysia, and relevant high commissions). We NEVER sell, rent, or trade your personal information with third-party marketers or commercial brokers.",
   },
   {
     title: "4. Data Storage & Confidentiality",
-    body: "Student and client records are stored securely in protected digital repositories accessible only to authorized AB STUDY HUB senior counselors. Physical and electronic records are maintained with strict confidentiality.",
+    body: "Student and applicant records are stored securely in protected digital repositories accessible only to authorized Nexus Global senior instructors and counselors. Physical documents and electronic records are maintained with strict confidentiality and integrity.",
   },
   {
     title: "5. Your Privacy Rights",

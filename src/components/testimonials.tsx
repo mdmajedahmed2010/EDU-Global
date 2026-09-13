@@ -1,17 +1,17 @@
 import { useState } from "react";
-import { verifiedStudentReviews } from "@/lib/site-data";
+import { testimonials as studentTestimonials } from "@/lib/site-data";
 import { MotionHeading, StaggerContainer, StaggerItem } from "@/components/motion-wrapper";
 
 export function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const reviews = verifiedStudentReviews.map((r) => ({
+  const reviews = studentTestimonials.map((r) => ({
     name: r.name,
-    role: r.highlight,
-    university: r.destination ? `${r.course} (${r.destination})` : r.course,
-    quote: r.text,
-    stars: r.rating || 5,
-    flag: r.flag || "🎓",
+    role: r.badge,
+    destination: `${r.course} (${r.destination})`,
+    quote: r.quote,
+    stars: 5,
+    flag: r.destination.includes("Japan") ? "🇯🇵" : r.destination.includes("Germany") ? "🇩🇪" : "🇬🇧",
     initials: r.name
       .split(" ")
       .map((n) => n[0])
@@ -32,9 +32,9 @@ export function Testimonials() {
           tag="— VERIFIED REVIEWS & SUCCESS STORIES —"
           title="What our students"
           highlight="say"
-          description="Real feedback from German and Danish language course learners, IELTS private batch candidates, and students admitted to universities in Germany, Europe, Canada, and the UK."
-          tagColor="text-red-600"
-          highlightColor="text-red-600"
+          description="Real feedback from Japanese N5/N4 learners, German A1 Goethe course students, IELTS test takers, and candidates assisted by our Jashore campus and Tokyo branch."
+          tagColor="text-sky-600"
+          highlightColor="text-sky-600"
         />
 
         {/* Testimonials Carousel Container with Navigation Arrows */}
@@ -69,12 +69,12 @@ export function Testimonials() {
               <StaggerItem key={r.name} className="h-full">
                 <div className="rounded-3xl border border-slate-200/90 bg-white p-7 shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full hover-lift">
                   <div>
-                    {/* Top Quote Icon & 5 Red Stars */}
+                    {/* Top Quote Icon & 5 Stars */}
                     <div className="flex items-center justify-between mb-5">
                       <span className="font-serif-editorial text-4xl text-slate-300 leading-none select-none">
                         “
                       </span>
-                      <div className="flex items-center gap-1 text-red-600 text-sm">
+                      <div className="flex items-center gap-1 text-amber-500 text-sm">
                         {Array.from({ length: r.stars }).map((_, i) => (
                           <span key={i}>★</span>
                         ))}
@@ -90,7 +90,7 @@ export function Testimonials() {
                   {/* Bottom Author Row */}
                   <div className="flex items-center justify-between border-t border-slate-100 pt-5 mt-6">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-red-600 to-slate-900 text-white font-bold text-xs shadow-xs">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-sky-600 to-slate-900 text-white font-bold text-xs shadow-xs">
                         {r.initials}
                       </div>
                       <div className="min-w-0">
@@ -98,9 +98,15 @@ export function Testimonials() {
                           <span>{r.name}</span>
                           <span className="text-xs">{r.flag}</span>
                         </div>
-                        <div className="text-[0.7rem] text-slate-500 truncate">{r.university}</div>
+                        <div className="text-[0.7rem] text-slate-400 truncate">
+                          {r.destination}
+                        </div>
                       </div>
                     </div>
+
+                    <span className="badge-clean badge-blue text-[0.68rem] shrink-0 font-bold">
+                      {r.role}
+                    </span>
                   </div>
                 </div>
               </StaggerItem>

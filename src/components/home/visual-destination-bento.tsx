@@ -21,6 +21,21 @@ export interface DestinationCardData {
 
 const destinationCards: DestinationCardData[] = [
   {
+    slug: "japan",
+    name: "Japan",
+    region: "Asia",
+    flag: "🇯🇵",
+    image:
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Tokyo Liaison Branch Support",
+    visaSpeed: "N5/N4 & SSW / Student Visas",
+    withoutIelts: true,
+    avgTuition: "¥700,000 – ¥850,000/yr",
+    pswv: "High Hourly Part-time & Work Visa",
+    topIntake: "April, July & October",
+  },
+  {
     slug: "germany",
     name: "Germany",
     region: "Europe",
@@ -28,42 +43,42 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Tuition-Free Public Universities",
-    visaSpeed: "APS & Blocked Account Support",
+    highlightTag: "Tuition-Free & Dual Ausbildung",
+    visaSpeed: "Goethe A1 Preparation",
     withoutIelts: true,
-    avgTuition: "€0 – €350/sem (Admin fee)",
+    avgTuition: "€0 – €350/sem (Tuition-Free)",
     pswv: "18-Month Post-Study Visa",
     topIntake: "Winter / Summer Intakes",
   },
   {
-    slug: "denmark",
-    name: "Denmark",
-    region: "Europe",
-    flag: "🇩🇰",
+    slug: "malaysia",
+    name: "Malaysia",
+    region: "Asia",
+    flag: "🇲🇾",
     image:
-      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Danish Language & Tech Focus",
-    visaSpeed: "Fast-Track Student Scheme",
-    withoutIelts: false,
-    avgTuition: "€6,000 – €14,000/yr",
-    pswv: "Up to 3-Year Stay Back",
-    topIntake: "Sep Autumn / Feb Spring",
+    highlightTag: "Fast EMGS & Affordable Tuition",
+    visaSpeed: "High Visa Ratio",
+    withoutIelts: true,
+    avgTuition: "$3,000 – $6,000/yr",
+    pswv: "Twinning & Regional Career",
+    topIntake: "Multiple Intakes",
   },
   {
-    slug: "netherlands",
-    name: "Netherlands",
+    slug: "uk",
+    name: "United Kingdom",
     region: "Europe",
-    flag: "🇳🇱",
+    flag: "🇬🇧",
     image:
-      "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "High Tech Innovation Hub",
-    visaSpeed: "Zoekjaar 1-Year Visa",
-    withoutIelts: false,
-    avgTuition: "€8,000 – €15,000/yr",
-    pswv: "1-Year Orientation Year",
-    topIntake: "Sep / Feb",
+    highlightTag: "1-Yr Masters & Fast CAS",
+    visaSpeed: "Fast CAS Turnaround",
+    withoutIelts: true,
+    avgTuition: "£11,000 – £16,000/yr",
+    pswv: "2-Year Graduate Visa",
+    topIntake: "Jan / May / Sep",
   },
   {
     slug: "canada",
@@ -81,61 +96,46 @@ const destinationCards: DestinationCardData[] = [
     topIntake: "Jan / May / Sep",
   },
   {
+    slug: "australia",
+    name: "Australia",
+    region: "Oceania",
+    flag: "🇦🇺",
+    image:
+      "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Subclass 500 & High Wages",
+    visaSpeed: "GTE & Academic Audit",
+    withoutIelts: false,
+    avgTuition: "A$24,000 – A$36,000/yr",
+    pswv: "2–4 Year Post-Study Visa",
+    topIntake: "Feb & July Intakes",
+  },
+  {
+    slug: "usa",
+    name: "United States",
+    region: "North America",
+    flag: "🇺🇸",
+    image:
+      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
+    highlightTag: "F-1 STEM OPT (3 Years)",
+    visaSpeed: "Consular Interview Drills",
+    withoutIelts: false,
+    avgTuition: "$16,000 – $32,000/yr",
+    pswv: "Up to 36 Months STEM OPT",
+    topIntake: "Fall & Spring Intakes",
+  },
+  {
     slug: "spain",
-    name: "Spain",
+    name: "Spain / Schengen",
     region: "Europe",
     flag: "🇪🇸",
     image:
       "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Schengen & Low Tuition",
-    visaSpeed: "Dedicated FB Campaign",
+    highlightTag: "Schengen 29 Countries",
+    visaSpeed: "European Degrees",
     withoutIelts: true,
-    avgTuition: "€1,500 – €8,000/yr",
+    avgTuition: "€2,000 – €8,000/yr",
     pswv: "1-Year Job Search Permit",
-    topIntake: "Sep / Feb",
-  },
-  {
-    slug: "uk",
-    name: "United Kingdom",
-    region: "Europe",
-    flag: "🇬🇧",
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "1-Yr Masters & MOI Options",
-    visaSpeed: "Fast CAS Turnaround",
-    withoutIelts: true,
-    avgTuition: "£11,000 – £16,000/yr",
-    pswv: "2-Year Graduate Visa",
-    topIntake: "Jan / May / Sep",
-  },
-  {
-    slug: "greece",
-    name: "Greece",
-    region: "Europe",
-    flag: "🇬🇷",
-    image:
-      "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "90% Visa Success Gateway",
-    visaSpeed: "EU Schengen 29 Countries",
-    withoutIelts: true,
-    avgTuition: "€2,500 – €6,000/yr",
-    pswv: "European Work Pathways",
-    topIntake: "Sep / Feb",
-  },
-  {
-    slug: "hungary",
-    name: "Hungary",
-    region: "Europe",
-    flag: "🇭🇺",
-    image:
-      "https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "Stipendium 100% Free Grant",
-    visaSpeed: "Schengen 29 Countries",
-    withoutIelts: true,
-    avgTuition: "€3,000 – €6,000/yr",
-    pswv: "9-Month Job Search",
     topIntake: "Sep / Feb",
   },
 ];
@@ -143,7 +143,7 @@ const destinationCards: DestinationCardData[] = [
 export function VisualDestinationBento() {
   const [activeRegion, setActiveRegion] = useState("All");
 
-  const regions = ["All", "Europe", "North America"];
+  const regions = ["All", "Asia", "Europe", "North America", "Oceania"];
 
   const filtered =
     activeRegion === "All"
@@ -155,17 +155,16 @@ export function VisualDestinationBento() {
       {/* Header with Micro-copy */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
         <SlideIn direction="left" distance={35}>
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-red-600" />
-            <span>Curated Study Abroad Destinations</span>
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+            <span>Curated Study & Career Destinations</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Explore Verified <span className="text-red-600">Study Portals</span>
+            Explore Verified <span className="text-sky-600">Global Pathways</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl">
-            Choose your dream destination with AB STUDY HUB (Abroad From Bangladesh). Benefit from
-            expert German & Danish admissions, Goethe language training, and professional counseling
-            in Chattogram.
+            Choose your dream destination with Nexus Global (Nexus Academy). Benefit from
+            specialized Japanese (N5/N4) & German language coaching, Tokyo branch reception, and professional counseling in Jashore.
           </p>
         </SlideIn>
 
@@ -180,7 +179,7 @@ export function VisualDestinationBento() {
                 className={cn(
                   "rounded-full px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer",
                   activeRegion === reg
-                    ? "bg-slate-900 text-white shadow-sm"
+                    ? "bg-sky-600 text-white shadow-sm"
                     : "text-slate-600 hover:text-slate-900",
                 )}
               >
@@ -199,8 +198,8 @@ export function VisualDestinationBento() {
               to="/study-in-{$country}"
               params={{ country: dest.slug }}
               className={cn(
-                "group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 text-white transition-all duration-500 hover:border-red-500 hover:shadow-2xl flex flex-col justify-end min-h-[380px]",
-                dest.featured && "ring-1 ring-red-500/20",
+                "group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 text-white transition-all duration-500 hover:border-sky-500 hover:shadow-2xl flex flex-col justify-end min-h-[380px]",
+                dest.featured && "ring-1 ring-sky-500/20",
               )}
             >
               {/* Background Photographic Poster */}
@@ -222,7 +221,7 @@ export function VisualDestinationBento() {
 
                 {dest.withoutIelts && (
                   <span className="rounded-full bg-emerald-600/90 text-white backdrop-blur-md px-2.5 py-0.5 text-[0.65rem] font-extrabold tracking-wide border border-white/20">
-                    WITHOUT IELTS PATH
+                    WITHOUT IELTS
                   </span>
                 )}
               </div>
@@ -230,20 +229,20 @@ export function VisualDestinationBento() {
               {/* Bottom Content Tray with Micro-chips */}
               <div className="relative z-10 p-5 sm:p-6 space-y-3">
                 <div className="flex items-center gap-2">
-                  <span className="rounded-full bg-red-600/30 border border-red-400/40 px-2.5 py-0.5 text-[0.68rem] font-bold text-red-300 truncate">
+                  <span className="rounded-full bg-sky-600/30 border border-sky-400/40 px-2.5 py-0.5 text-[0.68rem] font-bold text-sky-200 truncate">
                     {dest.highlightTag}
                   </span>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2 text-[0.72rem] pt-1">
                   <div className="rounded-xl bg-white/10 backdrop-blur-md p-2 border border-white/10">
-                    <span className="text-slate-400 block text-[0.65rem]">Visa / Admission:</span>
+                    <span className="text-slate-400 block text-[0.65rem]">Visa / Intake:</span>
                     <span className="font-bold text-emerald-400 truncate block">
                       {dest.visaSpeed}
                     </span>
                   </div>
                   <div className="rounded-xl bg-white/10 backdrop-blur-md p-2 border border-white/10">
-                    <span className="text-slate-400 block text-[0.65rem]">Post-Study Work:</span>
+                    <span className="text-slate-400 block text-[0.65rem]">Work / Career:</span>
                     <span className="font-bold text-amber-300 truncate block">{dest.pswv}</span>
                   </div>
                 </div>
@@ -252,7 +251,7 @@ export function VisualDestinationBento() {
                   <span className="text-slate-300 font-medium">
                     Tuition: <strong className="text-white">{dest.avgTuition}</strong>
                   </span>
-                  <span className="inline-flex items-center gap-1 font-bold text-red-400 group-hover:translate-x-1 transition-transform">
+                  <span className="inline-flex items-center gap-1 font-bold text-sky-400 group-hover:translate-x-1 transition-transform">
                     <span>Explore</span>
                     <IconArrowRight className="w-3.5 h-3.5" />
                   </span>

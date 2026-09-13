@@ -1,20 +1,21 @@
 /**
- * AB STUDY HUB — Curated Media & Verified Brand Assets.
+ * NEXUS GLOBAL / NEXUS ACADEMY — Official Verified Media & Brand Assets.
  * Verified from:
- *  - Official Assets: logo.jpg ("Abroad From Bangladesh", AB monogram)
- *  - Official Banner: banner.png ("From Chattogram TO THE WORLD", Germany, Danish, IELTS Private Batch)
- *  - Official Facebook: https://www.facebook.com/abstudyhub/
+ *  - Official Logo: logo.jpg (Circular emblem with warm orange and ocean blue gradient, white 'N' swoosh, taking-off airplane)
+ *  - Official Facebook: https://www.facebook.com/nexusacademyjessore/
+ *  - Headquarters: Nowrin Tower / Pitha Bari Tower, 3rd Floor, East Side of Laldighi, Beside Kacchi Queen, Sadar, Jashore
+ *  - Tokyo Liaison Branch: Nexus Group, Shin-Koiwa, Tokyo, Japan
  */
 
 export const mediaUrls: Record<string, string> = {
-  // Official AB Study Hub Brand Assets
-  logo: "/latest-assets/logo.jpg",
-  banner: "/latest-assets/banner.png",
-  "hero-banner": "/latest-assets/banner.png",
-  "hero-banner-png": "/latest-assets/banner.png",
-  "poster-fb-main": "/latest-assets/banner.png",
+  // Official Nexus Global Brand Assets
+  logo: "/logo.jpg",
+  "logo-fallback": "/assets/logo.jpg",
+  banner: "/banner.jpg",
+  "hero-banner": "/banner.jpg",
+  "hero-banner-png": "/banner.png",
 };
 
 export function getMediaUrl(key: string, fallback?: string): string {
-  return mediaUrls[key] || fallback || "/latest-assets/banner.png";
+  return mediaUrls[key] || fallback || "/logo.jpg";
 }

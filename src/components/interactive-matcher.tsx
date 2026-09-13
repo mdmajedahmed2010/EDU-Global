@@ -20,12 +20,12 @@ export function InteractiveMatcher() {
         }
         // Low/Zero tuition budget matching
         if (budget === "Affordable (৳8L – ৳15L)") {
-          if (["malaysia", "cyprus", "germany", "uk"].includes(d.slug)) {
+          if (["japan", "germany", "malaysia", "uk"].includes(d.slug)) {
             return true;
           }
         }
         if (budget === "Premium (৳18L+)") {
-          return ["canada", "netherlands", "uk", "denmark"].includes(d.slug);
+          return ["japan", "canada", "germany", "uk", "australia"].includes(d.slug);
         }
         return true;
       })
@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello AB STUDY HUB! I used your Study Abroad Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an AB STUDY HUB counselor for me!`;
+    const text = `Hello Nexus Global! I used your Study Abroad Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with a Nexus Global counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -41,17 +41,16 @@ export function InteractiveMatcher() {
     <div className="card-clean p-6 sm:p-10 border border-slate-200/90 shadow-md bg-white rounded-3xl">
       <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-6">
         <div>
-          <div className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-3.5 py-1 text-xs font-bold text-red-700">
-            <IconSparkles className="w-3.5 h-3.5 text-red-600" />
-            <span>Interactive Tool · 100% Free File Opening</span>
+          <div className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-3.5 py-1 text-xs font-bold text-sky-700">
+            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+            <span>Interactive Tool · 100% Free Profile Assessment</span>
           </div>
           <h2 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Study Abroad <span className="text-red-700">Eligibility Calculator</span>
+            Study Abroad & Career <span className="text-sky-600">Eligibility Calculator</span>
           </h2>
           <p className="mt-1 max-w-2xl text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Select your academic degree level, GPA, English status (with or without IELTS), and
-            budget to discover matched destinations across Germany, Denmark, Netherlands, Canada, Spain, Greece,
-            Malaysia, Cyprus, and the UK.
+            Select your academic degree level, GPA, English status (or Japanese/German level), and
+            budget to discover matched pathways across Japan (Tokyo liaison branch), Germany, Malaysia, Canada, Australia, and the UK.
           </p>
         </div>
         <div className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-2 text-xs font-bold text-white">
@@ -68,10 +67,10 @@ export function InteractiveMatcher() {
           </label>
           <div className="space-y-1.5">
             {[
-              "Diploma (SSC/Dakhil Entry)",
+              "Language School (Japan N5 / Germany A1)",
               "Bachelor's Degree",
               "Master's / MBA",
-              "PhD / Research",
+              "SSW & Skilled Work Permit",
             ].map((opt) => (
               <button
                 key={opt}
@@ -79,7 +78,7 @@ export function InteractiveMatcher() {
                 onClick={() => setLevel(opt)}
                 className={`w-full rounded-xl px-3.5 py-2.5 text-left text-xs font-bold transition-all cursor-pointer ${
                   level === opt
-                    ? "bg-slate-900 text-white shadow-sm border border-red-600"
+                    ? "bg-slate-900 text-white shadow-sm border border-sky-500"
                     : "border border-slate-200 bg-slate-50/80 text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -99,7 +98,7 @@ export function InteractiveMatcher() {
               "GPA 5.0 / First Class",
               "GPA 4.0 – 4.9 / Second Class Upper",
               "GPA 3.0 – 3.9",
-              "Study Gap 2–5+ Yrs",
+              "Study Gap 2–5+ Yrs (Japan Friendly)",
             ].map((opt) => (
               <button
                 key={opt}
@@ -107,7 +106,7 @@ export function InteractiveMatcher() {
                 onClick={() => setScore(opt)}
                 className={`w-full rounded-xl px-3.5 py-2.5 text-left text-xs font-bold transition-all cursor-pointer ${
                   score === opt
-                    ? "bg-slate-900 text-white shadow-sm border border-red-600"
+                    ? "bg-slate-900 text-white shadow-sm border border-sky-500"
                     : "border border-slate-200 bg-slate-50/80 text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -120,14 +119,14 @@ export function InteractiveMatcher() {
         {/* 3. English Test Status */}
         <div>
           <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5">
-            3. English Proficiency
+            3. Language Proficiency
           </label>
           <div className="space-y-1.5">
             {[
-              "Without IELTS (MOI Accepted)",
+              "Without IELTS (Japan N5 / MOI Accepted)",
               "IELTS 6.5 – 7.5+",
-              "IELTS 6.0 – 6.5",
-              "Planning to Take IELTS",
+              "German A1 Completed / In Progress",
+              "Planning to Start Language Course",
             ].map((opt) => (
               <button
                 key={opt}
@@ -135,7 +134,7 @@ export function InteractiveMatcher() {
                 onClick={() => setIelts(opt)}
                 className={`w-full rounded-xl px-3.5 py-2.5 text-left text-xs font-bold transition-all cursor-pointer ${
                   ielts === opt
-                    ? "bg-slate-900 text-white shadow-sm border border-red-600"
+                    ? "bg-slate-900 text-white shadow-sm border border-sky-500"
                     : "border border-slate-200 bg-slate-50/80 text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -152,7 +151,7 @@ export function InteractiveMatcher() {
           </label>
           <div className="space-y-1.5">
             {[
-              "Low Cost / Europe Grants",
+              "Low Cost / Tuition-Free Germany",
               "Affordable (৳8L – ৳15L)",
               "Moderate (৳15L – ৳22L)",
               "Premium (৳18L+)",
@@ -163,7 +162,7 @@ export function InteractiveMatcher() {
                 onClick={() => setBudget(opt)}
                 className={`w-full rounded-xl px-3.5 py-2.5 text-left text-xs font-bold transition-all cursor-pointer ${
                   budget === opt
-                    ? "bg-slate-900 text-white shadow-sm border border-red-600"
+                    ? "bg-slate-900 text-white shadow-sm border border-sky-500"
                     : "border border-slate-200 bg-slate-50/80 text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -189,13 +188,13 @@ export function InteractiveMatcher() {
           {matchedDestinations.map((d) => (
             <div
               key={d.slug}
-              className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 transition-all hover:bg-white hover:border-red-300 hover:shadow-md"
+              className="rounded-2xl border border-slate-200 bg-slate-50/60 p-4 transition-all hover:bg-white hover:border-sky-300 hover:shadow-md"
             >
               <div className="flex items-center justify-between">
                 <span className="flex items-center gap-2 text-sm sm:text-base font-bold text-slate-900">
                   <span className="text-xl">{d.flag}</span> {d.name}
                 </span>
-                <span className="rounded-full bg-red-50 border border-red-200 px-2 py-0.5 text-[0.62rem] font-bold text-red-700">
+                <span className="rounded-full bg-sky-50 border border-sky-200 px-2 py-0.5 text-[0.62rem] font-bold text-sky-700">
                   {d.pswv}
                 </span>
               </div>
@@ -209,7 +208,7 @@ export function InteractiveMatcher() {
                 <Link
                   to="/study-in-{$country}"
                   params={{ country: d.slug }}
-                  className="font-bold text-red-700 hover:underline flex items-center gap-1"
+                  className="font-bold text-sky-600 hover:underline flex items-center gap-1"
                 >
                   <span>Explore</span>
                   <IconArrowRight className="w-3 h-3" />
@@ -222,11 +221,10 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a Free Profile Assessment by AB STUDY HUB Advisors?
+              Want a Free Profile Assessment by Nexus Global Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Walk into our Chattogram Campus at Commerce View Complex (Exim Bank Building), CDA Avenue,
-              East Nasirabad, or connect on WhatsApp for an evaluation.
+              Walk into our Jashore Headquarters at Nowrin Tower (3rd Floor), East Side of Laldighi, or connect with our Tokyo liaison office on WhatsApp.
             </p>
           </div>
           <div className="flex items-center gap-3">

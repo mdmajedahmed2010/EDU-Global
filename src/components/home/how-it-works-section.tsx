@@ -8,33 +8,33 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      stepColor: "bg-red-600 text-white",
+      stepColor: "bg-sky-600 text-white",
       dotPosition: "bottom",
-      dotColor: "bg-red-600",
+      dotColor: "bg-sky-600",
       icon: "🔍",
-      iconBg: "bg-red-50 text-red-600",
-      title: "Research & Assessment",
-      desc: "Explore programs across Germany (tuition-free public universities), Denmark, Netherlands, Spain, Greece, Canada, and the UK.",
+      iconBg: "bg-sky-50 text-sky-600",
+      title: "Free Profile Assessment",
+      desc: "Meet our counselors at Nowrin Tower, East Side of Laldighi, Jashore or consult online. We evaluate your CGPA, language readiness, and target country.",
     },
     {
       step: "02",
       stepColor: "bg-slate-900 text-white",
       dotPosition: "top",
       dotColor: "bg-slate-900",
-      icon: "📋",
+      icon: "📚",
       iconBg: "bg-slate-100 text-slate-800",
-      title: "Free Profile Evaluation",
-      desc: "Meet our senior mentors at Commerce View Complex, East Nasirabad, Chattogram or via WhatsApp for complete profile evaluation.",
+      title: "Language Training",
+      desc: "Enroll in our Japanese (N5/N4), Goethe-standard German (A1), or IELTS batches with 100% free books and personalized speaking care.",
     },
     {
       step: "03",
-      stepColor: "bg-red-600 text-white",
+      stepColor: "bg-sky-600 text-white",
       dotPosition: "bottom",
-      dotColor: "bg-red-600",
-      icon: "🗣️",
-      iconBg: "bg-red-50 text-red-600",
-      title: "Language Academy Coaching",
-      desc: "Join Goethe German (A1–B2), Danish Language, or IELTS private batches (10–12 students) with intensive speaking practice.",
+      dotColor: "bg-sky-600",
+      icon: "📋",
+      iconBg: "bg-sky-50 text-sky-600",
+      title: "Application & COE Support",
+      desc: "Official application lodgement for Japanese language academies, universities in Germany/Malaysia/UK, and COE (Certificate of Eligibility) processing.",
     },
     {
       step: "04",
@@ -43,18 +43,18 @@ export function HowItWorksSection() {
       dotColor: "bg-slate-900",
       icon: "✓",
       iconBg: "bg-slate-100 text-slate-800",
-      title: "APS, Application & Offer",
-      desc: "Comprehensive documentation support, APS verification, blocked account guidance, and university offer letter procurement.",
+      title: "Visa File & Mock Interviews",
+      desc: "Thorough financial document verification, custom Statement of Purpose (SOP) drafting, and rigorous 1-on-1 embassy mock interview sessions.",
     },
     {
       step: "05",
-      stepColor: "bg-red-600 text-white",
+      stepColor: "bg-orange-600 text-white",
       dotPosition: "bottom",
-      dotColor: "bg-red-600",
+      dotColor: "bg-orange-600",
       icon: "✈",
-      iconBg: "bg-red-50 text-red-600",
-      title: "Visa Filing & Pre-Departure",
-      desc: "Embassy mock interview sessions, visa file submission, accommodation guidance, and pre-departure orientation.",
+      iconBg: "bg-orange-50 text-orange-600",
+      title: "Visa & Tokyo Reception",
+      desc: "Celebrate your visa approval! Attend our pre-departure briefing, flight booking, and get connected with our Tokyo office in Shin-Koiwa for arrival reception.",
     },
   ];
 
@@ -66,9 +66,9 @@ export function HowItWorksSection() {
           tag="— YOUR ADMISSION ROADMAP —"
           title="How It"
           highlight="Works"
-          description="Your transparent path to studying abroad and language mastery with AB STUDY HUB in 5 simple, structured steps."
-          tagColor="text-red-600"
-          highlightColor="text-red-600"
+          description="Your transparent path to studying abroad and foreign language mastery with Nexus Global in 5 simple, structured steps."
+          tagColor="text-sky-600"
+          highlightColor="text-sky-600"
         />
 
         {/* 5 Step Roadway Cards with Stagger Animation */}
@@ -82,7 +82,7 @@ export function HowItWorksSection() {
           >
             {steps.map((s) => (
               <StaggerItem key={s.step} className="h-full">
-                <div className="relative rounded-3xl border border-slate-200/90 bg-white p-6 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-red-400/50 flex flex-col justify-between hover-lift group h-full">
+                <div className="relative rounded-3xl border border-slate-200/90 bg-white p-6 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-400/50 flex flex-col justify-between hover-lift group h-full">
                   {/* Step Number Badge */}
                   <div
                     className={`absolute -top-3 -right-3 flex h-9 w-9 items-center justify-center rounded-full text-xs font-black shadow-md transition-transform duration-300 group-hover:scale-110 ${s.stepColor}`}
@@ -98,21 +98,11 @@ export function HowItWorksSection() {
                   </div>
 
                   {/* Content */}
-                  <div className="space-y-2">
-                    <h3 className="font-display text-sm font-bold text-slate-900 group-hover:text-red-600 transition-colors">
+                  <div>
+                    <h3 className="font-display text-base font-bold text-slate-900 mb-2">
                       {s.title}
                     </h3>
                     <p className="text-xs text-slate-500 leading-relaxed font-medium">{s.desc}</p>
-                  </div>
-
-                  {/* Bottom Accent */}
-                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-[0.65rem] font-bold text-slate-400 uppercase tracking-wider">
-                      Step {s.step}
-                    </span>
-                    <span className="text-xs text-red-500 font-bold group-hover:translate-x-1 transition-transform">
-                      →
-                    </span>
                   </div>
                 </div>
               </StaggerItem>
@@ -120,14 +110,14 @@ export function HowItWorksSection() {
           </StaggerContainer>
         </div>
 
-        {/* CTA Button */}
-        <div className="text-center mt-12">
+        {/* Bottom CTA Bar */}
+        <div className="mt-12 text-center">
           <button
             type="button"
             onClick={open}
-            className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-red-600 hover:bg-red-700 text-white px-7 py-3.5 text-xs sm:text-sm font-bold shadow-lg hover:shadow-red-600/30 transition-all cursor-pointer"
+            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-lg active:scale-95 text-white"
           >
-            <span>Start Step 1: Free Profile Assessment</span>
+            <span>Start Step 01: Book Free Consultation</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
         </div>

@@ -3,39 +3,46 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const recentActivities = [
   {
-    flag: "🇩🇪",
-    student: "Tanvir A. (Chattogram)",
-    action: "Enrolled in German A2 Goethe Batch",
-    subtext: "AB Language Academy · 10–12 Students Batch",
+    flag: "🇯🇵",
+    student: "Tanvir A. (Jashore)",
+    action: "Enrolled in Japanese N5 Intensive Batch",
+    subtext: "Nexus Academy · 3 Months Package with Books",
     time: "3 mins ago",
   },
   {
     flag: "🇩🇪",
-    student: "Nabila R. (East Nasirabad)",
-    action: "Admitted to German Public University",
-    subtext: "Tuition-Free Higher Education · Winter Intake",
+    student: "Sultana R. (Khulna)",
+    action: "Enrolled in German Goethe A1 Course",
+    subtext: "Nexus Academy · Netzwerk Neu A1 Standard",
     time: "11 mins ago",
   },
   {
-    flag: "🇩🇰",
-    student: "Mahfuz H. (Panchlaish)",
-    action: "Enrolled in Danish Language Course",
-    subtext: "Denmark Higher Education & Career Preparation",
+    flag: "🇯🇵",
+    student: "Mahfuz H. (Jashore)",
+    action: "Visa Approved: Tokyo Language School",
+    subtext: "Tokyo Liaison Office Reception & Job Guidance",
     time: "24 mins ago",
   },
   {
     flag: "🌟",
-    student: "Kamrul I. (Chattogram)",
-    action: "Achieved IELTS Overall Band 8.0",
-    subtext: "AB STUDY HUB IELTS Private Batch",
+    student: "Kamrul I. (Jashore)",
+    action: "Achieved IELTS Overall Band 7.5",
+    subtext: "Nexus Global IELTS Preparation Batch",
     time: "42 mins ago",
   },
   {
-    flag: "🇳🇱",
-    student: "Farzana S. (Chattogram)",
-    action: "Admitted to University of Amsterdam",
-    subtext: "Netherlands · Zoekjaar Orientation Year Track",
+    flag: "🇩🇪",
+    student: "Farzana K. (Jashore)",
+    action: "German Ausbildung Profile Verified",
+    subtext: "Nexus Global · Document Attestation & CV Prep",
     time: "1 hour ago",
+  },
+  {
+    flag: "🇲🇾",
+    student: "Arif M. (Jhenaidah)",
+    action: "EMGS Visa Approval for Malaysia",
+    subtext: "Nexus Global Study Abroad Division",
+    time: "2 hours ago",
   },
 ];
 
@@ -86,7 +93,7 @@ export function LiveActivityToast() {
     >
       <div className="flex items-start gap-3">
         <div className="relative flex-shrink-0 mt-0.5">
-          <div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center text-xl shadow-xs">
+          <div className="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 flex items-center justify-center text-xl shadow-xs">
             {current.flag}
           </div>
           <span className="absolute -bottom-1 -right-1 flex h-3 w-3">
@@ -97,8 +104,8 @@ export function LiveActivityToast() {
 
         <div className="flex-1 min-w-0 pr-4">
           <div className="flex items-center justify-between gap-1">
-            <span className="text-[0.65rem] font-black uppercase tracking-wider text-red-600 flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse" />
+            <span className="text-[0.65rem] font-black uppercase tracking-wider text-sky-600 flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-sky-600 animate-pulse" />
               Verified Success
             </span>
             <span className="text-[0.62rem] text-slate-400 font-medium">{current.time}</span>

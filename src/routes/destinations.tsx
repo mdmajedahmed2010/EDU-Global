@@ -6,17 +6,17 @@ import { company, destinations } from "@/lib/site-data";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Study Abroad Destinations | AB STUDY HUB — Abroad From Bangladesh | Chattogram" },
+      { title: "Study & Career Destinations | Nexus Global — Japan, Germany, Malaysia, Global | Jashore & Tokyo" },
       {
         name: "description",
         content:
-          "Explore premier study abroad destinations processed by AB STUDY HUB: Germany (Tuition-free public universities), Denmark, Netherlands, Spain, Greece, Malaysia, Canada, and the UK. Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram.",
+          "Explore premier study and career destinations processed by Nexus Global: Japan (with Tokyo liaison office), Germany (tuition-free universities & Ausbildung), Malaysia, UK, Canada, Australia, and USA. Nowrin Tower, East Side of Laldighi, Jashore.",
       },
-      { property: "og:title", content: "Study Abroad Destinations | AB STUDY HUB" },
+      { property: "og:title", content: "Study & Career Destinations | Nexus Global" },
       {
         property: "og:description",
         content:
-          "From Chattogram TO THE WORLD! Complete verified guide to tuition-free German universities, European admissions, language coaching, and student visas.",
+          "From Jashore TO THE WORLD! Complete verified guide to Japan pathways with Tokyo office support, tuition-free German universities, and global admissions.",
       },
     ],
   }),
@@ -27,12 +27,13 @@ function Destinations() {
   const [activeRegion, setActiveRegion] = useState<string>("All");
   const [search, setSearch] = useState<string>("");
 
-  const regions = ["All", "Europe", "North America", "Oceania", "Middle East", "Southeast Asia"];
+  const regions = ["All", "Asia", "Europe", "North America", "Oceania"];
 
   const filtered = destinations.filter((d) => {
     const matchesRegion =
       activeRegion === "All" ||
       d.region === activeRegion ||
+      (activeRegion === "Asia" && (d.region.includes("Asia") || d.slug === "japan" || d.slug === "malaysia")) ||
       (activeRegion === "Europe" && d.region.includes("Europe"));
     const matchesSearch =
       d.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -44,11 +45,11 @@ function Destinations() {
   return (
     <>
       <PageHero
-        eyebrow="Global University Network"
-        title="Verified Study Abroad Portals"
-        subtitle="Explore admission criteria, post-study work rights (PSW), average living costs, scholarships, and language requirements across accredited partner universities represented by AB STUDY HUB (Abroad From Bangladesh)."
+        eyebrow="Global Pathway Network"
+        title="Verified Study & Career Destinations"
+        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited international institutions guided by Nexus Global (Jashore HQ & Tokyo Branch)."
         image="/latest-assets/banner.jpg"
-        imageAlt="AB STUDY HUB official global destinations banner"
+        imageAlt="Nexus Global official global destinations banner"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Destinations" }]} />
       </PageHero>
@@ -65,7 +66,7 @@ function Destinations() {
                 onClick={() => setActiveRegion(reg)}
                 className={`rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer ${
                   activeRegion === reg
-                    ? "bg-slate-900 text-white shadow-sm border border-slate-800"
+                    ? "bg-sky-600 text-white shadow-sm border border-sky-500"
                     : "border border-slate-200 bg-white text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -81,7 +82,7 @@ function Destinations() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="🔍 Search country or program..."
-              className="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-xs text-slate-800 outline-none shadow-sm focus:border-red-500 focus:ring-2 focus:ring-red-500/10"
+              className="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-xs text-slate-800 outline-none shadow-sm focus:border-sky-500 focus:ring-2 focus:ring-sky-500/10"
             />
           </div>
         </div>
@@ -92,8 +93,8 @@ function Destinations() {
             Showing <strong>{filtered.length}</strong> of {destinations.length} verified
             destinations
           </p>
-          <span className="text-red-600 font-bold">
-            ✓ Free Profile Assessment at our Commerce View Complex, Chattogram Campus
+          <span className="text-sky-600 font-bold">
+            ✓ Free Profile Assessment at our Nowrin Tower, Jashore Headquarters
           </span>
         </div>
 
@@ -102,7 +103,7 @@ function Destinations() {
           {filtered.map((d) => (
             <article
               key={d.slug}
-              className="rounded-3xl p-6 flex flex-col justify-between border border-slate-200 bg-white hover:border-red-500/50 shadow-sm hover:shadow-md transition-all"
+              className="rounded-3xl p-6 flex flex-col justify-between border border-slate-200 bg-white hover:border-sky-500/50 shadow-sm hover:shadow-md transition-all"
             >
               <div>
                 <div className="flex items-center justify-between border-b border-slate-100 pb-4">
@@ -113,7 +114,7 @@ function Destinations() {
                       <span className="text-xs font-semibold text-slate-500">{d.region}</span>
                     </div>
                   </div>
-                  <span className="rounded-full bg-red-50 border border-red-200 px-2.5 py-0.5 text-xs font-bold text-red-700">
+                  <span className="rounded-full bg-sky-50 border border-sky-200 px-2.5 py-0.5 text-xs font-bold text-sky-700">
                     {d.pswv}
                   </span>
                 </div>
@@ -134,8 +135,8 @@ function Destinations() {
                     <span className="font-bold text-slate-900">{d.intakes}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500 font-medium">Scholarships:</span>
-                    <span className="font-bold text-red-600">{d.scholarships}</span>
+                    <span className="text-slate-500 font-medium">Scholarships / Perks:</span>
+                    <span className="font-bold text-sky-600">{d.scholarships}</span>
                   </div>
                 </div>
 
@@ -153,12 +154,12 @@ function Destinations() {
 
               <div className="mt-6 border-t border-slate-100 pt-4 flex items-center justify-between">
                 <span className="text-xs text-slate-500">
-                  {d.withoutIelts ? "✅ MOI Accepted" : "IELTS Required"}
+                  {d.withoutIelts ? "✅ MOI / Language Test" : "IELTS Required"}
                 </span>
                 <Link
                   to="/study-in-{$country}"
                   params={{ country: d.slug }}
-                  className="rounded-full bg-red-600 px-4 py-1.5 text-xs font-bold text-white hover:bg-red-700 transition-colors"
+                  className="rounded-full bg-sky-600 px-4 py-1.5 text-xs font-bold text-white hover:bg-sky-700 transition-colors"
                 >
                   Explore Guide →
                 </Link>

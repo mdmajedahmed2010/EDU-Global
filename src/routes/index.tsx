@@ -10,6 +10,7 @@ import { DelegationSpotlight } from "@/components/home/delegation-spotlight";
 import { BlogUpdatesSection } from "@/components/home/blog-updates-section";
 import { MobileActionDock } from "@/components/home/mobile-action-dock";
 import { OfficeGallery } from "@/components/office-gallery";
+import { VideoReelsSection } from "@/components/video-reels-section";
 import { Testimonials } from "@/components/testimonials";
 import { UniversityMarquee, CtaBand, IconSparkles } from "@/components/ui-blocks";
 import { faqs, company } from "@/lib/site-data";
@@ -21,18 +22,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `${company.legalName} | Abroad From Bangladesh — Study Abroad & Language Academy | Chattogram`,
+        title: `${company.legalName} | Nexus Global — Language Academy & Study Abroad | Jashore`,
       },
       {
         name: "description",
         content:
-          "AB STUDY HUB (Abroad From Bangladesh) — Official higher education consultancy in Chattogram. Tuition-free public university admissions for Germany (APS & Blocked Account support), Denmark, Netherlands, Spain, Greece, Malaysia, Canada, UK. German A1–B2, Danish Language, and IELTS Private Batches at Commerce View Complex, East Nasirabad. Hotlines: 01952-566966 / 01515-219546.",
+          "Nexus Global (Nexus Academy) — Premier Foreign Language and Skill Training Centre in Jashore. Japanese Language (N5 & N4), Goethe-standard German Language (A1), IELTS, Spoken English, Kids English, and Study Abroad in Japan (Tokyo Shin-Koiwa liaison office), Germany, Malaysia, UK, Canada. Nowrin Tower, 3rd Floor, East Side of Laldighi, Sadar, Jashore. Hotlines: 01772-399913 / 01827-167332.",
       },
-      { property: "og:title", content: `${company.legalName} — From Chattogram TO THE WORLD` },
+      { property: "og:title", content: `${company.legalName} — Connecting The Future` },
       {
         property: "og:description",
         content:
-          "Higher education consultancy & Language Academy in Chattogram, Bangladesh. Specializing in Germany tuition-free, Denmark, Netherlands, Spain, Greece, Malaysia, Canada, UK, Goethe German Language, Danish, and IELTS Private Batches. Hotlines: 01952-566966 / 01515-219546.",
+          "Premier Foreign Language Academy & Study Abroad Consultant in Jashore, Bangladesh. Specializing in Japanese, German, IELTS, and higher education processing for Japan, Germany, and worldwide.",
       },
     ],
   }),
@@ -45,34 +46,48 @@ function Home() {
 
   const faqCategories = [
     "All",
-    "Study Abroad",
+    "Japanese & German",
     "IELTS & English",
-    "Visas & Dual Hubs",
-    "Costs & Fees",
+    "Study Abroad & Visas",
+    "Tokyo Office",
   ];
 
   const filteredFaqs =
     activeFaqCategory === "All"
       ? faqs
       : faqs.filter((f) => {
-          if (activeFaqCategory === "Study Abroad")
-            return f.q.includes("study") || f.q.includes("intake") || f.q.includes("destination");
-          if (activeFaqCategory === "IELTS & English")
-            return f.q.includes("IELTS") || f.q.includes("English") || f.q.includes("course");
-          if (activeFaqCategory === "Visas & Dual Hubs")
+          if (activeFaqCategory === "Japanese & German")
             return (
-              f.q.includes("visa") ||
-              f.q.includes("Visa") ||
-              f.q.includes("located") ||
-              f.q.includes("contact")
+              f.q.toLowerCase().includes("japanese") ||
+              f.q.toLowerCase().includes("german") ||
+              f.a.toLowerCase().includes("japanese") ||
+              f.a.toLowerCase().includes("german")
             );
-          if (activeFaqCategory === "Costs & Fees")
-            return f.q.includes("fee") || f.q.includes("charge") || f.q.includes("Free");
+          if (activeFaqCategory === "IELTS & English")
+            return (
+              f.q.toLowerCase().includes("english") ||
+              f.q.toLowerCase().includes("ielts") ||
+              f.a.toLowerCase().includes("english") ||
+              f.a.toLowerCase().includes("ielts")
+            );
+          if (activeFaqCategory === "Study Abroad & Visas")
+            return (
+              f.q.toLowerCase().includes("visa") ||
+              f.q.toLowerCase().includes("destination") ||
+              f.a.toLowerCase().includes("visa") ||
+              f.a.toLowerCase().includes("countries")
+            );
+          if (activeFaqCategory === "Tokyo Office")
+            return (
+              f.q.toLowerCase().includes("tokyo") ||
+              f.a.toLowerCase().includes("tokyo") ||
+              f.q.toLowerCase().includes("japan")
+            );
           return true;
         });
 
   return (
-    <div className="relative min-h-screen bg-[#FAFAFC] text-slate-900 selection:bg-red-600 selection:text-white">
+    <div className="relative min-h-screen bg-[#FAFAFC] text-slate-900 selection:bg-sky-600 selection:text-white">
       {/* 1. Destination Hero Slider with Real-time Success Toast */}
       <HeroCommandCenter />
 
@@ -81,12 +96,12 @@ function Home() {
         <QuickLeadSection />
       </ScrollReveal>
 
-      {/* 3. Partner Universities Showcase & Marquee */}
+      {/* 3. Partner Institutions Showcase & Marquee */}
       <ScrollReveal direction="fade" delay={50}>
         <UniversityMarquee />
       </ScrollReveal>
 
-      {/* 4. Blueprint Navy Impact Stats ("Trusted by students worldwide") */}
+      {/* 4. Impact Stats ("From Jashore to the World") */}
       <ScrollReveal direction="up" delay={60}>
         <StatsImpactStrip />
       </ScrollReveal>
@@ -96,7 +111,7 @@ function Home() {
         <PopularDestinationsSection />
       </ScrollReveal>
 
-      {/* 6. Why Choose AB STUDY HUB */}
+      {/* 6. Why Choose Nexus Global */}
       <ScrollReveal direction="up" delay={60}>
         <WhyChooseSection />
       </ScrollReveal>
@@ -111,20 +126,25 @@ function Home() {
         <DelegationSpotlight />
       </ScrollReveal>
 
-      {/* 9. Verified Social Proof & Official Facebook Reels */}
+      {/* 9. Official Facebook Video Reels Showcase */}
+      <ScrollReveal direction="up" delay={60}>
+        <VideoReelsSection />
+      </ScrollReveal>
+
+      {/* 10. Jashore Campus & Tokyo Liaison Desk */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-red-600" />
-              <span>Verified Social Proof</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
+              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+              <span>Campus & Global Liaison</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Inside <span className="text-red-600">AB STUDY HUB</span>
+              Inside <span className="text-sky-600">Nexus Global</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Watch our official Facebook reels and explore our campus at Commerce View Complex, CDA
-              Avenue, East Nasirabad, Chattogram.
+              Visit our central campus at Nowrin Tower, East Side of Laldighi, Sadar, Jashore and connect
+              with our Tokyo branch in Shin-Koiwa, Japan.
             </p>
           </div>
 
@@ -132,30 +152,30 @@ function Home() {
         </section>
       </ScrollReveal>
 
-      {/* 10. Student Testimonials ("What our students say") */}
+      {/* 11. Student Testimonials ("What our students say") */}
       <ScrollReveal direction="up" delay={60}>
         <Testimonials />
       </ScrollReveal>
 
-      {/* 11. Latest Updates / Blog Grid ("Latest updates") */}
+      {/* 12. Latest Updates / Blog Grid ("Latest updates") */}
       <ScrollReveal direction="up" delay={60}>
         <BlogUpdatesSection />
       </ScrollReveal>
 
-      {/* 12. Minimalist Categorized FAQ Accordion */}
+      {/* 13. Minimalist Categorized FAQ Accordion */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-red-600" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
+              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
               <span>Clear Answers</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Frequently Asked <span className="text-red-600">Questions</span>
+              Frequently Asked <span className="text-sky-600">Questions</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent responses regarding German & European admissions, Goethe language
-              batches, visa processing, and our Chattogram office.
+              Direct, transparent responses regarding Japanese & German language courses, IELTS,
+              study abroad procedures, and our Jashore headquarters.
             </p>
           </div>
 
@@ -191,7 +211,7 @@ function Home() {
                   className={cn(
                     "rounded-2xl border transition-all duration-300 overflow-hidden",
                     isOpen
-                      ? "bg-white border-red-500 shadow-md ring-1 ring-red-500/20"
+                      ? "bg-white border-sky-500 shadow-md ring-1 ring-sky-500/20"
                       : "bg-white/80 border-slate-200 hover:border-slate-300 hover:bg-white",
                   )}
                 >
@@ -206,7 +226,7 @@ function Home() {
                     <span
                       className={cn(
                         "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                        isOpen ? "bg-red-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                        isOpen ? "bg-sky-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
                       )}
                     >
                       ↓
@@ -232,13 +252,13 @@ function Home() {
         </section>
       </ScrollReveal>
 
-      {/* 13. Pre-Footer High-Converting Banner */}
+      {/* 14. Pre-Footer High-Converting Banner */}
       <CtaBand />
 
-      {/* 14. Ergonomic Floating Thumb Action Dock on Mobile */}
+      {/* 15. Ergonomic Floating Thumb Action Dock on Mobile */}
       <MobileActionDock />
 
-      {/* 15. Live Real-Time Success Activity Toast (DSA Signature Widget) */}
+      {/* 16. Live Real-Time Success Activity Toast */}
       <LiveActivityToast />
     </div>
   );

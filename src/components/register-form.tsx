@@ -2,26 +2,27 @@ import { useState } from "react";
 import { company, destinations } from "@/lib/site-data";
 
 const field =
-  "w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm text-slate-900 outline-none transition-all hover:bg-white focus:border-red-500 focus:bg-white focus:ring-2 focus:ring-red-500/10";
+  "w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm text-slate-900 outline-none transition-all hover:bg-white focus:border-sky-500 focus:bg-white focus:ring-2 focus:ring-sky-500/10";
 const label = "mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-700";
 
 const serviceOptions = [
-  "German Language Course (A1–B2 Goethe-Institut Prep)",
-  "Study in Germany (Tuition-Free Public Universities)",
-  "Danish Language Course (Higher Education & Work Permit)",
-  "Study in Denmark (European Quality Education)",
-  "IELTS Private Batch (Target Band 7.5+, 10-12 Students)",
-  "Spoken English & Communication Fluency",
-  "Kids English & Phonics Foundation (Ages 5-14)",
-  "Study in Netherlands (Zoekjaar Visa)",
-  "Study in Spain / Greece (Schengen European Degree)",
-  "Study in Malaysia / Cyprus (Affordable Global Hubs)",
-  "Study in Canada / UK (Work Permits & Masters)",
-  "German University Admissions & APS / Blocked Account",
+  "Japanese Language Course (N5 & N4 Levels — 3 Months Package)",
+  "Study & Work in Japan (SSW & Student Visa Pathways with Tokyo Care)",
+  "German Language Course (Goethe A1 Standard — 3 Months)",
+  "Study in Germany (Tuition-Free Public Universities & Ausbildung)",
+  "IELTS Academic / General (Target Band 7.5+, Cambridge Mocks)",
+  "Spoken English & Communication Mastery",
+  "Kids English & Phonics Foundation (Ages 5–14)",
+  "English Grammar & Writing Foundation",
+  "Study in Malaysia (Fast EMGS & Affordable Degree)",
+  "Study in UK (1-Year Master's & 2-Year PSW)",
+  "Study in Canada (Public DLIs & PGWP Work Permits)",
+  "Study in Australia / USA / Schengen Europe",
 ];
 
 const officeOptions = [
-  "Chattogram Headquarters (Commerce View Complex, East Nasirabad)",
+  "Jashore Headquarters (Nowrin Tower, 3rd Floor, East Side of Laldighi)",
+  "Tokyo Branch Office, Japan (Shin-Koiwa, Tokyo)",
   "Online Consultation (WhatsApp / Zoom)",
 ];
 
@@ -31,10 +32,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     name: "",
     email: "",
     phone: "",
-    service: "German Language Course (A1–B2 Goethe-Institut Prep)",
-    destination: "Germany (Tuition-Free Public Universities)",
-    currentStatus: "Bachelor's Graduate (Master's Aspirant)",
-    office: "Chattogram Headquarters (Commerce View Complex, East Nasirabad)",
+    service: "Japanese Language Course (N5 & N4 Levels — 3 Months Package)",
+    destination: "Japan",
+    currentStatus: "HSC / A-Level Completed (Bachelor's Aspirant)",
+    office: "Jashore Headquarters (Nowrin Tower, 3rd Floor, East Side of Laldighi)",
     message: "",
   });
 
@@ -43,7 +44,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
   const whatsappHref = () => {
     const lines = [
-      "✨ Free Consultation Request — AB STUDY HUB",
+      "✨ Free Consultation Request — Nexus Global (Nexus Academy)",
       `👤 Name: ${form.name}`,
       `📞 Phone: ${form.phone}`,
       form.email ? `✉️ Email: ${form.email}` : "",
@@ -52,7 +53,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       `🎓 Status/Background: ${form.currentStatus}`,
       `🏢 Preferred Office: ${form.office}`,
       form.message ? `📝 Notes: ${form.message}` : "",
-      "\nI would like to schedule a free counseling session with an AB STUDY HUB advisor.",
+      "\nI would like to schedule a free counseling session with a Nexus Global advisor.",
     ].filter(Boolean);
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
@@ -72,13 +73,14 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
         <h3 className="font-display text-2xl font-black text-slate-900">Booking Confirmed! 🎉</h3>
         <p className="mx-auto max-w-md text-sm text-slate-600 leading-relaxed">
           Thank you, <strong className="text-slate-900">{form.name}</strong>! Your free consultation
-          has been registered. An <strong>{company.name}</strong> counselor will contact you on{" "}
+          has been registered. A <strong>{company.name}</strong> counselor will contact you on{" "}
           <strong className="text-emerald-700">{form.phone}</strong> shortly.
         </p>
         <div className="mt-2 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-xs text-emerald-800 text-left space-y-1">
-          <p>✔ Commerce View Complex (4th Flr), CDA Ave, East Nasirabad, Chattogram</p>
-          <p>✔ German & Danish Academy · IELTS Private Batches (10–12 Students)</p>
-          <p>✔ Free Profile Assessment & Roadmap</p>
+          <p>✔ Nowrin Tower, 3rd Floor, East Side of Laldighi, Jashore</p>
+          <p>✔ Tokyo Liaison Branch (Shin-Koiwa, Tokyo, Japan)</p>
+          <p>✔ Japanese (N5/N4), German Goethe A1, IELTS, Spoken & Kids English</p>
+          <p>✔ 100% Visa Guidance & Free Profile Assessment</p>
         </div>
         <div className="pt-2 flex flex-col gap-2">
           <a
@@ -106,14 +108,14 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div className="border-b border-slate-100 pb-3 mb-2">
-        <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-red-600">
-          AB STUDY HUB · Abroad From Bangladesh
+        <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-sky-600">
+          Nexus Global · Language and Skill Training Centre
         </span>
         <h3 className="font-display text-xl font-black text-slate-900">
           Book Your Free Assessment
         </h3>
         <p className="text-xs text-slate-500 mt-0.5">
-          Commerce View Complex (4th Flr), CDA Avenue, East Nasirabad, Chattogram
+          Nowrin Tower (3rd Floor), East Side of Laldighi, Jashore · Tokyo Branch Support
         </p>
       </div>
 
@@ -178,7 +180,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
                 {d.flag} {d.name}
               </option>
             ))}
-            <option value="Language Course (IELTS / Spoken / Kids)">
+            <option value="Language Course (Japanese / German / IELTS / Spoken)">
               🎯 Language Training Only
             </option>
             <option value="Other / Need Advice">🌍 Other / Need Advice</option>
@@ -204,8 +206,8 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
               Bachelor's Graduate (Master's)
             </option>
             <option value="Diploma / Polytechnic Holder">Diploma / Polytechnic Graduate</option>
-            <option value="Working Professional (Visa / Language)">
-              Working Professional (Visa / Language)
+            <option value="Working Professional (SSW / Job Seeker / Language)">
+              Working Professional (SSW / Job Seeker / Language)
             </option>
             <option value="Parent for Kids English Course">
               Parent inquiring for Kids English
@@ -244,28 +246,28 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
       <div>
         <label htmlFor="reg-msg" className={label}>
-          Specific Questions or IELTS Score (Optional)
+          Specific Questions or Language Level (Optional)
         </label>
         <textarea
           id="reg-msg"
           rows={2}
           value={form.message}
           onChange={set("message")}
-          placeholder="Tell us your GPA, IELTS score (or without IELTS), target intake, etc."
+          placeholder="Tell us your education background, target intake (April/October for Japan, Winter/Summer for Germany), etc."
           className={field}
         />
       </div>
 
       <button
         type="submit"
-        className="btn-luxury-primary w-full text-xs py-3.5 mt-2 justify-center shadow-lg hover:shadow-red-600/30"
+        className="btn-luxury-primary w-full text-xs py-3.5 mt-2 justify-center shadow-lg hover:shadow-sky-600/30"
       >
         <span>Book Free Appointment</span>
         <span>→</span>
       </button>
 
       <p className="text-center text-[0.7rem] text-slate-600">
-        🔒 100% Privacy Guaranteed · Abroad From Bangladesh · Chattogram Office
+        🔒 100% Privacy Guaranteed · Nexus Global · Jashore HQ & Tokyo Branch
       </p>
     </form>
   );

@@ -11,39 +11,40 @@ export function DelegationSpotlight() {
   const currentCourse = courses[activeCourseIdx] ?? courses[0]!;
 
   const visaCategories = [
-    { name: "Student Visa", icon: "🎓" },
-    { name: "Spouse Visa", icon: "💍" },
-    { name: "Child Accompany", icon: "👶" },
-    { name: "Scholarship Support", icon: "💰" },
-    { name: "Tourist / Visit", icon: "✈️" },
-    { name: "Europe Schengen", icon: "🇪🇺" },
-    { name: "Work Permit", icon: "🛠️" },
-    { name: "Post-Study Visa", icon: "🌍" },
+    { name: "Japan Student Visa", icon: "🇯🇵" },
+    { name: "Japan SSW / Work Visa", icon: "🛠️" },
+    { name: "Germany Public Uni", icon: "🇩🇪" },
+    { name: "Germany Ausbildung", icon: "🏥" },
+    { name: "Malaysia Student Visa", icon: "🇲🇾" },
+    { name: "UK 1-Year Masters", icon: "🇬🇧" },
+    { name: "Canada DLI & PGWP", icon: "🇨🇦" },
+    { name: "Tokyo Liaison Reception", icon: "🗼" },
   ];
 
   return (
     <section className="section-shell py-10 sm:py-16">
       <div className="rounded-3xl border border-slate-800 bg-[#0F172A] p-4 sm:p-8 lg:p-12 relative overflow-hidden text-white shadow-2xl">
         {/* Ambient Glow */}
-        <div className="pointer-events-none absolute -top-20 -left-20 h-80 w-80 rounded-full bg-red-600/15 blur-[100px]" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-blue-600/20 blur-[100px]" />
+        <div className="pointer-events-none absolute -top-20 -left-20 h-80 w-80 rounded-full bg-sky-600/15 blur-[100px]" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-orange-600/15 blur-[100px]" />
 
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center relative z-10">
           {/* Left: Language Academy Interactive Course Selector */}
           <SlideIn direction="left" distance={45} className="space-y-5">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-600/20 border border-red-500/30 px-3.5 py-1 text-xs font-bold text-red-400">
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-600/20 border border-sky-500/30 px-3.5 py-1 text-xs font-bold text-sky-400">
               <IconSparkles className="w-3.5 h-3.5" />
-              <span>AB STUDY HUB Language Academy · East Nasirabad, Chattogram</span>
+              <span>Nexus Language & Skill Training Centre · Jashore HQ</span>
             </div>
 
             <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
-              Master European Languages & English <br />
-              <span className="text-red-500">German, Danish, IELTS & Spoken English</span>
+              Master Global Languages & Career Skills <br />
+              <span className="text-sky-400">Japanese, German, IELTS & Spoken English</span>
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
-              Whether you are preparing for tuition-free public universities in Germany, higher studies in Denmark,
-              or targeting IELTS Band 7.5+ in private batches, our experienced trainers provide intensive, personalized coaching.
+              Whether preparing for higher education or Specified Skilled Worker (SSW) visas in Japan,
+              tuition-free public universities and Ausbildung in Germany, or IELTS Band 7.5+, our experienced
+              instructors provide intensive coaching with 100% free books and personalized care.
             </p>
 
             {/* Course Selector Tabs */}
@@ -56,7 +57,7 @@ export function DelegationSpotlight() {
                   className={cn(
                     "flex items-center gap-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all cursor-pointer active:scale-95",
                     activeCourseIdx === idx
-                      ? "bg-red-600 text-white shadow-md border border-red-500"
+                      ? "bg-sky-600 text-white shadow-md border border-sky-500"
                       : "bg-slate-800/80 text-slate-300 hover:bg-slate-700/80 border border-slate-700",
                   )}
                 >
@@ -75,7 +76,7 @@ export function DelegationSpotlight() {
                   <span>{currentCourse.icon}</span>
                   <span>{currentCourse.title}</span>
                 </span>
-                <span className="rounded-full bg-red-500/20 text-red-400 border border-red-500/30 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                <span className="rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2.5 py-0.5 text-[0.68rem] font-bold">
                   {currentCourse.targetOutcome}
                 </span>
               </div>
@@ -97,91 +98,70 @@ export function DelegationSpotlight() {
               <button
                 type="button"
                 onClick={open}
-                className="btn-shimmer btn-luxury-primary text-xs py-3 px-6 shadow-lg hover:shadow-red-600/30 active:scale-95 cursor-pointer"
+                className="btn-shimmer btn-luxury-primary text-xs py-3 px-6 shadow-lg hover:shadow-sky-600/30 active:scale-95 cursor-pointer text-white"
               >
-                <span>Enroll / Free Diagnostic Test</span>
-                <IconArrowRight className="w-3.5 h-3.5" />
+                <span>Enroll in {currentCourse.title.split(" ")[0]} Batch</span>
+                <IconArrowRight className="w-4 h-4" />
               </button>
 
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello AB STUDY HUB! I am interested in ${currentCourse.title}. Please provide batch details and fee structure.`,
+                  `Hello Nexus Global! I want to enroll in the ${currentCourse.title} at your Jashore campus. Please provide details.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-luxury-secondary text-xs py-3 px-5 text-slate-900 active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3 text-xs font-bold transition-all shadow-md active:scale-95 cursor-pointer"
               >
-                <IconWhatsApp className="w-4 h-4 text-emerald-600" />
-                <span>WhatsApp Query</span>
+                <IconWhatsApp className="w-4 h-4" />
+                <span>WhatsApp Counselor</span>
               </a>
             </div>
           </SlideIn>
 
-          {/* Right: Chattogram Office & Verified Services */}
-          <SlideIn direction="right" distance={45} className="space-y-5 lg:pl-4">
-            <div className="rounded-2xl bg-slate-800/80 border border-slate-700 p-5 space-y-3">
-              <div className="flex items-center justify-between border-b border-slate-700/80 pb-2.5">
-                <span className="text-xs font-bold uppercase tracking-wider text-red-400">
-                  Chattogram Corporate Hub
-                </span>
-                <span className="text-[0.68rem] text-slate-400">
-                  Abroad From Bangladesh
-                </span>
-              </div>
-
-              <div className="space-y-2.5">
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-700/60 hover-lift">
-                  <span className="text-2xl">🏢</span>
-                  <div>
-                    <span className="block font-display text-xs font-bold text-white">
-                      AB STUDY HUB Central Campus
-                    </span>
-                    <p className="text-[0.7rem] text-slate-400 leading-snug mt-0.5">
-                      {company.offices.headquarters.address}
-                    </p>
-                    <span className="block text-[0.68rem] text-red-400 font-semibold mt-1">
-                      Hotlines: {company.phones[0]} (WhatsApp) / {company.phones[1]}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-700/60 hover-lift">
-                  <span className="text-2xl">🇩🇪</span>
-                  <div>
-                    <span className="block font-display text-xs font-bold text-white">
-                      Tuition-Free Germany & European Admissions Desk
-                    </span>
-                    <p className="text-[0.7rem] text-slate-400 leading-snug mt-0.5">
-                      German Language (A1–B2 Goethe) · Danish Language Course · APS & Blocked Account Setup · University Shortlisting
-                    </p>
-                    <span className="block text-[0.68rem] text-amber-300 font-semibold mt-1">
-                      Commerce View Complex (4th Flr), CDA Avenue, East Nasirabad, Chattogram
-                    </span>
-                  </div>
-                </div>
-              </div>
+          {/* Right: 8 Visa Categories Grid & Tokyo Liaison Showcase */}
+          <SlideIn direction="right" distance={45} className="space-y-6">
+            <div className="space-y-2">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-orange-400">
+                — 8 SPECIALIZED GLOBAL TRACKS —
+              </span>
+              <h3 className="font-display text-xl sm:text-3xl font-black text-white tracking-tight">
+                Global Study & Career Pathways
+              </h3>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                From Japanese student & SSW work visas to German tuition-free universities, Ausbildung,
+                and UK/Canada degree admissions.
+              </p>
             </div>
 
-            {/* Core Visa & Advisory Categories */}
-            <div className="rounded-2xl bg-slate-800/80 border border-slate-700 p-5 space-y-3">
-              <span className="text-xs font-bold uppercase tracking-wider text-red-400 block">
-                Educational & Visa Guidance Categories:
-              </span>
-              <StaggerContainer
-                staggerDelay={0.06}
-                className="grid grid-cols-2 sm:grid-cols-4 gap-2"
-              >
-                {visaCategories.map((v) => (
-                  <StaggerItem key={v.name}>
-                    <div className="flex flex-col items-center justify-center p-2.5 rounded-xl bg-slate-900/60 border border-slate-700/60 text-center hover-lift hover:border-red-500/50 hover:bg-slate-900/90 transition-all cursor-default">
-                      <span className="text-base mb-0.5">{v.icon}</span>
-                      <span className="text-[0.68rem] font-bold text-slate-200 leading-tight">
-                        {v.name}
-                      </span>
-                    </div>
-                  </StaggerItem>
-                ))}
-              </StaggerContainer>
+            {/* 8 Category Tiles Grid with Stagger */}
+            <StaggerContainer staggerDelay={0.06} className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {visaCategories.map((v) => (
+                <StaggerItem key={v.name}>
+                  <div className="rounded-2xl border border-slate-700/80 bg-slate-800/40 p-4 text-center hover:bg-slate-800 hover:border-sky-500/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group cursor-pointer hover-lift">
+                    <span className="text-2xl block mb-2 transition-transform duration-300 group-hover:scale-110">
+                      {v.icon}
+                    </span>
+                    <span className="text-[0.7rem] font-bold text-slate-200 group-hover:text-white leading-tight block">
+                      {v.name}
+                    </span>
+                  </div>
+                </StaggerItem>
+              ))}
+            </StaggerContainer>
+
+            {/* Jashore & Tokyo Liaison Highlight Card */}
+            <div className="rounded-2xl border border-sky-500/30 bg-gradient-to-r from-sky-950/60 to-slate-900/80 p-5 space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping inline-block" />
+                <span className="text-xs font-bold text-sky-400 uppercase tracking-wider">
+                  International Student Assurance
+                </span>
+              </div>
+              <p className="text-xs text-slate-300 leading-relaxed">
+                Our active liaison desk in <strong>Shin-Koiwa, Tokyo, Japan</strong> provides direct
+                support for student reception, accommodation assistance, part-time job guidance, and
+                school liaison upon landing.
+              </p>
             </div>
           </SlideIn>
         </div>

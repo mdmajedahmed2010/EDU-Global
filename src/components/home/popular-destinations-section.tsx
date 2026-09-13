@@ -15,6 +15,17 @@ interface DestinationItem {
 
 const destinationsData: DestinationItem[] = [
   {
+    name: "Japan",
+    code: "JP",
+    flag: "🇯🇵",
+    unis: "50+ Academies & Unis",
+    image:
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "japan",
+    highlight: "Tokyo Liaison / SSW Track",
+  },
+  {
     name: "Germany",
     code: "DE",
     flag: "🇩🇪",
@@ -23,29 +34,29 @@ const destinationsData: DestinationItem[] = [
       "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "germany",
-    highlight: "Tuition-Free",
+    highlight: "Tuition-Free & Ausbildung",
   },
   {
-    name: "Denmark",
-    code: "DK",
-    flag: "🇩🇰",
-    unis: "20+ Universities",
+    name: "Malaysia",
+    code: "MY",
+    flag: "🇲🇾",
+    unis: "40+ World Campuses",
     image:
-      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "denmark",
-    highlight: "Danish Course",
+    slug: "malaysia",
+    highlight: "Fast Visa & Affordable",
   },
   {
-    name: "Netherlands",
-    code: "NL",
-    flag: "🇳🇱",
-    unis: "30+ Universities",
+    name: "United Kingdom",
+    code: "GB",
+    flag: "🇬🇧",
+    unis: "100+ Leading Unis",
     image:
-      "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "netherlands",
-    highlight: "Zoekjaar Visa",
+    slug: "uk",
+    highlight: "1-Yr Masters / 2-Yr PSW",
   },
   {
     name: "Canada",
@@ -59,113 +70,102 @@ const destinationsData: DestinationItem[] = [
     highlight: "Up to 3-Yr PGWP",
   },
   {
-    name: "Spain",
-    code: "ES",
-    flag: "🇪🇸",
-    unis: "50+ Universities",
+    name: "United States",
+    code: "US",
+    flag: "🇺🇸",
+    unis: "150+ Top Unis",
     image:
-      "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "spain",
-    highlight: "Schengen / Low Tuition",
+    slug: "usa",
+    highlight: "STEM OPT 3 Years",
   },
   {
-    name: "United Kingdom",
-    code: "GB",
-    flag: "🇬🇧",
-    unis: "150+ Universities",
+    name: "Australia",
+    code: "AU",
+    flag: "🇦🇺",
+    unis: "40+ Universities",
     image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "uk",
-    highlight: "1-Yr Masters / PSW",
+    slug: "australia",
+    highlight: "Post-Study Work Visa",
   },
   {
-    name: "Italy",
-    code: "IT",
-    flag: "🇮🇹",
-    unis: "40+ Historic Unis",
+    name: "Denmark",
+    code: "DK",
+    flag: "🇩🇰",
+    unis: "20+ Universities",
     image:
-      "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "italy",
-    highlight: "Regional DSU Grant",
-  },
-  {
-    name: "Hungary",
-    code: "HU",
-    flag: "🇭🇺",
-    unis: "25+ Public Unis",
-    image:
-      "https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "hungary",
-    highlight: "Stipendium Grant",
+      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
+    popular: false,
+    slug: "denmark",
+    highlight: "Nordic Education",
   },
 ];
 
 export function PopularDestinationsSection() {
   return (
-    <section className="relative py-16 sm:py-24 bg-[#FAFAFC] border-b border-slate-200/80">
+    <section className="relative py-16 sm:py-24 bg-white border-b border-slate-200/80">
       <div className="section-shell">
         {/* Animated Heading */}
         <MotionHeading
-          tag="— VERIFIED DESTINATIONS —"
+          tag="— GLOBAL HIGHER EDUCATION PATHWAYS —"
           title="Where will you"
-          highlight="study?"
-          description="Explore our primary destination countries matching AB STUDY HUB's language programs, tuition-free German universities, and global admissions expertise."
-          tagColor="text-red-600"
-          highlightColor="text-red-600"
+          highlight="study or work?"
+          description="Nexus Global opens doors to premier academic institutions and career visas across Asia, Europe, and North America."
+          tagColor="text-sky-600"
+          highlightColor="text-sky-600"
         />
 
-        {/* 8 Country Destination Cards Grid with Stagger Entrance */}
+        {/* 8-Card Responsive Grid with Stagger Entrance */}
         <StaggerContainer
           staggerDelay={0.08}
-          className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-5"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {destinationsData.map((dest) => (
-            <StaggerItem key={dest.slug}>
+          {destinationsData.map((d) => (
+            <StaggerItem key={d.slug} className="h-full">
               <Link
                 to="/study-in-{$country}"
-                params={{ country: dest.slug }}
-                className="group relative overflow-hidden rounded-3xl aspect-[3/4] shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between p-4 sm:p-5 bg-slate-900 active:scale-[0.98] border border-transparent hover:border-red-500/40"
+                params={{ country: d.slug }}
+                className="group relative block overflow-hidden rounded-3xl border border-slate-200 bg-slate-900 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover-lift h-full"
               >
-                {/* Card Background Image */}
-                <img
-                  src={dest.image}
-                  alt={`Study in ${dest.name} - AB STUDY HUB`}
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-115 opacity-80"
-                  loading="lazy"
-                />
+                {/* Background Image Container */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <img
+                    src={d.image}
+                    alt={`Study in ${d.name} with Nexus Global`}
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    loading="lazy"
+                  />
+                  {/* Subtle Dark Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
 
-                {/* Scrim Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent pointer-events-none" />
+                  {/* Top Flag & Code Badge */}
+                  <div className="absolute top-4 left-4 flex items-center gap-1.5 rounded-full bg-black/60 backdrop-blur-md px-3 py-1 text-xs font-bold text-white border border-white/20">
+                    <span className="text-base">{d.flag}</span>
+                    <span>{d.code}</span>
+                  </div>
 
-                {/* Top Bar inside Card */}
-                <div className="relative z-10 flex items-center justify-between">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/90 backdrop-blur-md text-base shadow-sm">
-                    {dest.flag}
-                  </span>
-                  <span className="font-mono text-xs font-bold text-white/90 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded-lg border border-white/20">
-                    {dest.code}
-                  </span>
-                </div>
-
-                {/* Bottom Content inside Card */}
-                <div className="relative z-10 space-y-1">
-                  {dest.highlight && (
-                    <span className="inline-block rounded-md bg-red-600 px-2 py-0.5 text-[0.62rem] font-black text-white uppercase tracking-wider">
-                      {dest.highlight}
-                    </span>
+                  {/* Top-Right Highlight Pill */}
+                  {d.highlight && (
+                    <div className="absolute top-4 right-4 rounded-full bg-sky-600 text-white px-2.5 py-0.5 text-[0.65rem] font-bold shadow-md">
+                      {d.highlight}
+                    </div>
                   )}
-                  <h3 className="font-display text-base sm:text-lg font-bold text-white group-hover:text-red-300 transition-colors">
-                    {dest.name}
-                  </h3>
-                  <div className="flex items-center justify-between text-[0.7rem] text-slate-300">
-                    <span>{dest.unis}</span>
-                    <span className="font-bold text-white group-hover:translate-x-1 transition-transform inline-flex items-center gap-0.5">
-                      Explore →
-                    </span>
+
+                  {/* Bottom Text Content Inside Image */}
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="font-display text-xl font-black group-hover:text-sky-300 transition-colors">
+                      {d.name}
+                    </h3>
+                    <div className="flex items-center justify-between text-xs text-slate-300 mt-1">
+                      <span>{d.unis}</span>
+                      <span className="flex items-center gap-1 font-bold text-sky-400 group-hover:translate-x-1 transition-transform">
+                        <span>Explore</span>
+                        <IconArrowRight className="w-3.5 h-3.5" />
+                      </span>
+                    </div>
                   </div>
                 </div>
               </Link>
@@ -174,12 +174,12 @@ export function PopularDestinationsSection() {
         </StaggerContainer>
 
         {/* View All Button */}
-        <div className="text-center mt-10">
+        <div className="mt-12 text-center">
           <Link
             to="/destinations"
-            className="inline-flex items-center gap-2 rounded-xl bg-white border border-slate-300 hover:border-red-500 text-slate-800 hover:text-red-600 px-6 py-3 text-xs sm:text-sm font-bold shadow-xs hover:shadow-md transition-all"
+            className="btn-luxury-secondary text-xs sm:text-sm py-3 px-8 rounded-full border border-slate-300 hover:border-sky-600 hover:text-sky-700 transition-all font-bold inline-flex items-center gap-2"
           >
-            <span>View All Destinations & Requirements</span>
+            <span>View All Global Destinations & Requirements</span>
             <IconArrowRight className="w-4 h-4" />
           </Link>
         </div>

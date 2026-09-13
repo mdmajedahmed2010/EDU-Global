@@ -5,17 +5,17 @@ import { company, upcomingIntakesAndOffers } from "@/lib/site-data";
 export const Route = createFileRoute("/offers")({
   head: () => ({
     meta: [
-      { title: "Upcoming Intakes & Academy Batches | AB STUDY HUB — Chattogram" },
+      { title: "Upcoming Intakes & Language Batches | Nexus Global — Jashore & Tokyo" },
       {
         name: "description",
         content:
-          "Explore active intakes: German Public Universities (Winter/Summer), Denmark & Netherlands admissions, alongside new German Language (A1–B2 Goethe), Danish, and IELTS Private Batches at AB STUDY HUB Chattogram.",
+          "Explore active intakes: Japanese Language (N5/N4 packages), German Goethe A1 batches, IELTS preparation, Japan student & SSW visa intakes, and Germany university/Ausbildung sessions at Nexus Global Jashore.",
       },
-      { property: "og:title", content: "Upcoming Intakes & Academy Batches | AB STUDY HUB" },
+      { property: "og:title", content: "Upcoming Intakes & Academy Batches | Nexus Global" },
       {
         property: "og:description",
         content:
-          "Secure tuition-free German university admissions, fast-track offers, and join private language batches at AB STUDY HUB Commerce View Complex, East Nasirabad, Chattogram.",
+          "Register for upcoming Japanese, German, IELTS language batches and international intakes at Nexus Global, Nowrin Tower, East Side of Laldighi, Jashore.",
       },
     ],
   }),
@@ -28,9 +28,9 @@ function Offers() {
       <PageHero
         eyebrow="Admissions & Special Intakes"
         title="Upcoming Intakes & Academy Admissions"
-        subtitle="Explore active German public university intakes, European bursaries, and new Goethe German, Danish, & IELTS Private coaching schedules at our Chattogram campus."
+        subtitle="Explore active Japanese N5/N4 packages, German Goethe A1 batches, IELTS preparation, and international study intakes guided by Nexus Global (Jashore HQ & Tokyo Branch)."
         image="/latest-assets/banner.jpg"
-        imageAlt="AB STUDY HUB active admissions and intakes"
+        imageAlt="Nexus Global active admissions and intakes"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Intakes & Offers" }]} />
       </PageHero>
@@ -40,14 +40,14 @@ function Offers() {
         <SectionHeading
           eyebrow="Active Campaigns"
           title="Current Intakes, Drives & Academy Batches"
-          subtitle="All sessions below are actively accepting applications with complete transparency and dedicated Chattogram advisory."
+          subtitle="All sessions below are actively accepting applications with complete transparency, free study materials, and direct support from our Jashore headquarters and Tokyo branch."
         />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {upcomingIntakesAndOffers.map((item) => (
             <div
               key={item.id}
-              className="card-clean rounded-3xl p-8 flex flex-col justify-between border border-slate-200 hover:border-red-300 shadow-sm hover:shadow-md transition-all bg-white"
+              className="card-clean rounded-3xl p-8 flex flex-col justify-between border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-md transition-all bg-white"
             >
               <div>
                 <div className="flex items-center justify-between border-b border-slate-100 pb-4">
@@ -62,7 +62,7 @@ function Offers() {
 
                 {item.benefits && (
                   <div className="mt-5 rounded-2xl bg-slate-50 p-4 border border-slate-200/80">
-                    <p className="text-[0.68rem] font-bold uppercase tracking-wider text-red-700 mb-2">
+                    <p className="text-[0.68rem] font-bold uppercase tracking-wider text-sky-700 mb-2">
                       Key Highlights & Inclusions:
                     </p>
                     <BulletList items={item.benefits} />
@@ -72,7 +72,7 @@ function Offers() {
 
               <div className="mt-8 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AB STUDY HUB, I want to apply / register for: "${item.title}".`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Nexus Global, I want to apply / register for: "${item.title}".`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-emerald w-full text-center text-xs py-3 shadow-sm"

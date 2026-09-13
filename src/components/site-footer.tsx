@@ -19,7 +19,7 @@ export function SiteFooter() {
   };
 
   return (
-    <footer className="bg-[#0A0A0C] text-white pt-16 pb-24 md:pb-16 text-xs relative overflow-hidden border-t border-red-600/30">
+    <footer className="bg-[#0b1329] text-white pt-16 pb-24 md:pb-16 text-xs relative overflow-hidden border-t border-sky-500/30">
       {/* Subtle Dark Radial Pattern */}
       <div className="absolute inset-0 bg-radial-pattern opacity-10 pointer-events-none" />
 
@@ -37,24 +37,24 @@ export function SiteFooter() {
               </Link>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md font-medium">
-                {company.tagline} Empowering students in Bangladesh with transparent higher education admissions
-                and premier language coaching. Specializing in Germany (Tuition-Free Public Universities),
-                Denmark, Netherlands, Canada, Spain, Greece, Malaysia, and UK.
+                {company.tagline} Empowering students and professionals with world-class foreign language
+                mastery (Japanese, German, English, Malay) and 100% comprehensive visa guidance for Japan,
+                Germany, Malaysia, UK, Canada, and Europe.
               </p>
 
               {/* Newsletter Subscription Box */}
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md max-w-md">
                 <div className="text-sm font-bold text-white mb-1">
-                  Stay Updated on Intakes & Language Batches
+                  Stay Updated on Language Batches & Intakes
                 </div>
                 <p className="text-[0.73rem] text-slate-400 mb-3.5">
-                  Subscribe for verified updates on German A1–B2 Goethe-Institut batches, Danish language courses,
-                  and European university admission deadlines.
+                  Subscribe for verified alerts on Japanese N5/N4 schedules, German A1 batches, IELTS
+                  mock tests, and Japan/Germany admission deadlines.
                 </p>
 
                 {subscribed ? (
                   <div className="rounded-xl bg-emerald-500/20 border border-emerald-400/40 p-2.5 text-center text-xs font-bold text-emerald-200">
-                    ✓ Thank you! You are subscribed to AB STUDY HUB updates.
+                    ✓ Thank you! You are subscribed to Nexus Global updates.
                   </div>
                 ) : (
                   <form onSubmit={handleSubscribe} className="flex gap-2">
@@ -64,11 +64,11 @@ export function SiteFooter() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email address"
-                      className="flex-1 rounded-xl border border-white/20 bg-black/40 px-3.5 py-2.5 text-xs text-white placeholder:text-slate-500 outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500/30"
+                      className="flex-1 rounded-xl border border-white/20 bg-black/40 px-3.5 py-2.5 text-xs text-white placeholder:text-slate-500 outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500/30"
                     />
                     <button
                       type="submit"
-                      className="rounded-xl bg-red-600 hover:bg-red-700 px-4 py-2.5 text-xs font-bold text-white shadow-md transition-colors flex items-center gap-1.5 shrink-0 cursor-pointer"
+                      className="rounded-xl bg-sky-600 hover:bg-sky-500 px-4 py-2.5 text-xs font-bold text-white shadow-md transition-colors flex items-center gap-1.5 shrink-0 cursor-pointer"
                     >
                       <span>Subscribe</span>
                       <span>→</span>
@@ -89,218 +89,166 @@ export function SiteFooter() {
                 <li>
                   <Link
                     to="/"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-red-500">›</span>
+                    <span className="text-sky-400">›</span>
                     <span>Home</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/about"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-red-500">›</span>
-                    <span>About AB STUDY HUB</span>
+                    <span className="text-sky-400">›</span>
+                    <span>About Us (Jashore HQ & Tokyo Office)</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-red-500">›</span>
-                    <span>German Language (A1–B2 Goethe)</span>
+                    <span className="text-sky-400">›</span>
+                    <span>Japanese Language Course (N5 & N4)</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                  >
+                    <span className="text-sky-400">›</span>
+                    <span>German Language Course (Goethe A1)</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                  >
+                    <span className="text-sky-400">›</span>
+                    <span>IELTS & Spoken English Training</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/destinations"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-red-500">›</span>
-                    <span>Study in Germany 🇩🇪 (Tuition-Free)</span>
+                    <span className="text-sky-400">›</span>
+                    <span>Study in Japan (Higher Education & SSW)</span>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    to="/study-in-{$country}"
+                    params={{ country: "germany" }}
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-red-500">›</span>
-                    <span>Danish Language Course</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/services"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
-                  >
-                    <span className="text-red-500">›</span>
-                    <span>IELTS Private Batch (Band 7.5+)</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/destinations"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
-                  >
-                    <span className="text-red-500">›</span>
-                    <span>Verified Study Destinations</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/offers"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
-                  >
-                    <span className="text-red-500">›</span>
-                    <span>Intakes & Batch Schedules</span>
+                    <span className="text-sky-400">›</span>
+                    <span>Study in Germany (Tuition-Free)</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-red-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-red-500">›</span>
-                    <span>Contact Our Chattogram Office</span>
+                    <span className="text-sky-400">›</span>
+                    <span>Contact Us & Campus Map</span>
                   </Link>
                 </li>
               </ul>
             </div>
           </StaggerItem>
 
-          {/* Column 3: Contact & Chattogram Corporate Office */}
+          {/* Column 3: Contact & Global Office Information */}
           <StaggerItem direction="up" distance={24}>
             <div className="space-y-4">
               <div className="text-sm font-bold text-white tracking-wide uppercase">
-                Corporate Hub & Contact
+                Official Contact & Locations
               </div>
-              <div className="space-y-3.5 text-xs text-slate-300 font-medium">
-                {/* Chattogram Address */}
-                <div className="flex items-start gap-2.5">
-                  <span className="text-red-500 text-sm mt-0.5">📍</span>
-                  <div>
-                    <strong className="text-white block">AB STUDY HUB Chattogram:</strong>
-                    <span>
-                      {company.offices.headquarters.address}
-                    </span>
-                    <div className="mt-1">
-                      <a
-                        href={company.mapsUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-[0.72rem] text-red-400 hover:text-red-300 font-bold inline-flex items-center gap-1"
-                      >
-                        <span>View on Google Maps</span>
-                        <span>↗</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                {/* Working Hours */}
-                <div className="flex items-start gap-2.5">
-                  <span className="text-amber-400 text-sm mt-0.5">🕒</span>
-                  <div>
-                    <strong className="text-white block">Office Hours:</strong>
-                    <span>Saturday – Thursday: 10:00 AM – 8:00 PM (Friday Closed)</span>
-                  </div>
+              {/* Jashore Campus */}
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping inline-block" />
+                  <span className="font-bold text-sky-400 text-xs">Jashore Headquarters</span>
                 </div>
-
-                {/* Hotlines */}
-                <div className="flex items-start gap-2.5">
-                  <IconPhone className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
-                  <div className="space-y-0.5">
-                    <div>
-                      <a href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`} className="hover:text-red-400 font-bold text-white">
-                        {company.phones[0]}
-                      </a>{" "}
-                      /{" "}
-                      <a href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`} className="hover:text-red-400 font-bold text-white">
-                        {company.phones[1]}
-                      </a>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-emerald-400 font-bold">
-                      <IconWhatsApp className="w-3.5 h-3.5 text-emerald-400" />
-                      <a
-                        href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:underline"
-                      >
-                        WhatsApp: {company.whatsappFormatted}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-start gap-2.5">
-                  <span className="text-red-500 text-sm mt-0.5">✉</span>
-                  <a href={`mailto:${company.email}`} className="hover:text-red-400 font-semibold">
-                    {company.email}
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  {company.address.full}
+                </p>
+                <div className="pt-2 border-t border-white/10 flex flex-wrap gap-3 text-xs">
+                  <a
+                    href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
+                    className="text-white hover:text-sky-300 flex items-center gap-1 font-bold"
+                  >
+                    <IconPhone className="w-3.5 h-3.5 text-sky-400" />
+                    <span>{company.phones[0]}</span>
+                  </a>
+                  <a
+                    href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
+                    className="text-slate-300 hover:text-white flex items-center gap-1"
+                  >
+                    <span>{company.phones[1]}</span>
                   </a>
                 </div>
+              </div>
 
-                {/* Social Media Links */}
-                <div className="pt-2">
-                  <div className="text-xs font-bold text-white mb-2 uppercase tracking-wider">
-                    Official Channels
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <a
-                      href={company.social.facebook}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 hover:bg-red-600 text-white transition-colors"
-                      aria-label="Facebook"
-                    >
-                      FB
-                    </a>
-                    <a
-                      href={company.social.instagram}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 hover:bg-red-600 text-white transition-colors"
-                      aria-label="Instagram"
-                    >
-                      IG
-                    </a>
-                    <a
-                      href={company.social.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 hover:bg-red-600 text-white transition-colors"
-                      aria-label="LinkedIn"
-                    >
-                      IN
-                    </a>
-                  </div>
+              {/* Tokyo Japan Branch */}
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs">🇯🇵</span>
+                  <span className="font-bold text-orange-400 text-xs">Tokyo Liaison Office (Japan)</span>
                 </div>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  {company.offices.tokyo.address}
+                </p>
+                <p className="text-xs text-slate-400">
+                  <strong>Tokyo Helpline:</strong> {company.tokyoPhone}
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 pt-2">
+                <a
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-emerald text-xs py-2 px-3.5 rounded-full flex items-center gap-1.5"
+                >
+                  <IconWhatsApp className="w-3.5 h-3.5" />
+                  <span>WhatsApp Jashore</span>
+                </a>
+                <a
+                  href={company.social.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2 px-3.5 transition-colors flex items-center gap-1.5"
+                >
+                  <span>Facebook Page</span>
+                  <span>↗</span>
+                </a>
               </div>
             </div>
           </StaggerItem>
         </StaggerContainer>
 
-        {/* Bottom Badges & Copyright Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[0.73rem] text-slate-400">
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-            <span className="font-semibold text-white">Programs & Accreditations:</span>
-            <span className="rounded-full bg-white/10 px-3 py-1 text-white border border-white/10 font-bold">
-              German Goethe-Institut Prep
-            </span>
-            <span className="rounded-full bg-white/10 px-3 py-1 text-white border border-white/10 font-bold">
-              Danish Language Course
-            </span>
-            <span className="rounded-full bg-amber-400/20 px-3 py-1 text-amber-200 border border-amber-400/30 font-bold">
-              IELTS Private Batch (10–12 Students)
-            </span>
+        {/* Bottom Legal Copyright */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[0.72rem]">
+          <div>
+            © {new Date().getFullYear()} {company.legalName}. All rights reserved. Jashore & Tokyo.
           </div>
-
-          <div className="text-center sm:text-right font-medium">
-            © 2026 AB STUDY HUB (Abroad From Bangladesh). All Rights Reserved.
+          <div className="flex items-center gap-4">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span>•</span>
+            <Link to="/terms-of-use" className="hover:text-white transition-colors">
+              Terms of Use
+            </Link>
+            <span>•</span>
+            <span className="text-slate-500">Connecting the future</span>
           </div>
         </div>
       </div>

@@ -7,18 +7,18 @@ export function MobileActionDock() {
 
   return (
     <div className="fixed bottom-3 inset-x-3 max-w-md mx-auto z-40 md:hidden">
-      <div className="rounded-full bg-slate-950/95 backdrop-blur-xl p-1.5 border border-red-500/40 shadow-2xl flex items-center justify-between gap-1.5 text-xs text-white">
+      <div className="rounded-full bg-slate-950/95 backdrop-blur-xl p-1.5 border border-sky-500/40 shadow-2xl flex items-center justify-between gap-1.5 text-xs text-white">
         <a
           href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
           className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-full bg-white/10 hover:bg-white/20 font-bold text-white transition-colors"
         >
-          <IconPhone className="w-3.5 h-3.5 text-red-400" />
+          <IconPhone className="w-3.5 h-3.5 text-sky-400" />
           <span>Call</span>
         </a>
 
         <a
           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-            "Hello AB STUDY HUB! I would like a consultation for study abroad and language courses in Chattogram.",
+            "Hello Nexus Global! I would like a consultation for language courses and study abroad guidance in Jashore.",
           )}`}
           target="_blank"
           rel="noreferrer"
@@ -31,9 +31,9 @@ export function MobileActionDock() {
         <button
           type="button"
           onClick={() => open()}
-          className="flex-1.5 flex items-center justify-center gap-1 py-2.5 px-3 rounded-full bg-gradient-to-r from-red-600 to-red-500 text-white font-black shadow-sm active:scale-95 transition-transform cursor-pointer"
+          className="flex-1.5 flex items-center justify-center gap-1 py-2.5 px-3 rounded-full bg-gradient-to-r from-sky-600 to-sky-500 text-white font-black shadow-sm active:scale-95 transition-transform cursor-pointer"
         >
-          <IconSparkles className="w-3.5 h-3.5" />
+          <IconSparkles className="w-3.5 h-3.5 text-orange-300" />
           <span>Free Assessment</span>
         </button>
       </div>

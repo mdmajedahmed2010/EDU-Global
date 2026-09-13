@@ -17,18 +17,18 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       {
-        title: "Services & Language Academy | AB STUDY HUB — Study in Germany, Danish & IELTS Private Batches",
+        title: "Services & Language Academy | Nexus Global — Japanese N5/N4, German A1, IELTS & Tokyo Support",
       },
       {
         name: "description",
         content:
-          "Explore AB STUDY HUB services: German Tuition-Free University Admissions (APS & Blocked Account Support), Goethe German Language (A1–B2), Danish Language, IELTS Private Batches (Band 7.5+), Spoken English, and Kids English in Chattogram. Hotlines: 01952-566966 / 01515-219546.",
+          "Explore Nexus Global Language & Skill Training Centre services: Japanese Language (N5/N4 packages), German Goethe A1, IELTS coaching, Spoken English, Kids English, and study abroad pathways in Jashore. Direct Tokyo branch support. Hotlines: 01772-399913 / 01827-167332.",
       },
-      { property: "og:title", content: "Services & Academy | AB STUDY HUB Chattogram" },
+      { property: "og:title", content: "Services & Academy | Nexus Global Jashore & Tokyo" },
       {
         property: "og:description",
         content:
-          "German Tuition-Free Admissions & Specialized Language Academy at Commerce View Complex, CDA Avenue, East Nasirabad, Chattogram.",
+          "Japanese N5/N4, German A1, IELTS, Spoken English and Global Admissions with Tokyo Branch Liaison at Nowrin Tower, East Side of Laldighi, Jashore.",
       },
     ],
   }),
@@ -37,71 +37,71 @@ export const Route = createFileRoute("/services")({
 
 const serviceCategories = [
   { id: "all", label: "All Offerings" },
-  { id: "study-abroad", label: "Germany & European Admissions" },
-  { id: "language-courses", label: "Language Academy (German, Danish, IELTS)" },
-  { id: "visa-guidance", label: "Student & Spouse Visas" },
+  { id: "language-courses", label: "Language Academy (Japanese, German, IELTS)" },
+  { id: "study-abroad", label: "Japan, Germany & Global Pathways" },
+  { id: "tokyo-branch", label: "Tokyo Liaison Branch Care" },
   { id: "free-file", label: "Free Profile Assessment" },
 ];
 
 const comparisonData = [
   {
     feature: "Profile Assessment & Counseling",
-    abStudyHub: "100% Free Transparent Profile Assessment & Strategy",
-    traditional: "৳15,000 – ৳30,000 upfront non-refundable charges",
+    nexusGlobal: "100% Free Transparent Assessment & Personalized Strategy",
+    traditional: "Exorbitant upfront fees with vague assurances",
     highlight: true,
   },
   {
-    feature: "Germany Tuition-Free Admissions",
-    abStudyHub: "End-to-End APS, Uni-Assist & Blocked Account Guidance",
-    traditional: "Charges exorbitant fees or pushes costly private colleges",
+    feature: "Japan Language & Career Track",
+    nexusGlobal: "Intensive N5/N4 packages, free books & Tokyo office reception",
+    traditional: "Generic coaching with no on-arrival overseas support",
     highlight: true,
   },
   {
-    feature: "In-House Language Academy",
-    abStudyHub: "German (A1–B2 Goethe), Danish & IELTS 7.5+ in 10–12 batches",
-    traditional: "Consultancy only; no specialized German/Danish language faculty",
+    feature: "Germany & Ausbildung Track",
+    nexusGlobal: "Goethe A1 standard (Netzwerk Neu), Ausbildung and university guidance",
+    traditional: "Pushes costly private colleges without proper language preparation",
     highlight: true,
   },
   {
-    feature: "Batch Size & Mentorship",
-    abStudyHub: "Strictly 10–12 students per private batch",
-    traditional: "Crowded 30–50 student classes with zero individual feedback",
+    feature: "Learning Materials & Support",
+    nexusGlobal: "Free textbooks, listening audio, and free extra classes until fluency",
+    traditional: "Additional hidden fees for books and study materials",
     highlight: true,
   },
   {
-    feature: "Spouse & Family Visa Documentation",
-    abStudyHub: "Dedicated Dependent & Family Visa file preparation",
-    traditional: "Usually ignores dependent family documentation",
-    highlight: false,
+    feature: "International Physical Office",
+    nexusGlobal: "Nexus Group liaison branch in Shin-Koiwa, Tokyo, Japan",
+    traditional: "Zero international branches; students left alone on arrival",
+    highlight: true,
   },
   {
-    feature: "Direct Chattogram Landmark Campus",
-    abStudyHub: "Commerce View Complex (Exim Bank Building), CDA Ave, East Nasirabad",
-    traditional: "Remote virtual agents without a physical presence",
+    feature: "Prime Campus in Jashore",
+    nexusGlobal: "Nowrin Tower (3rd Floor), East Side of Laldighi, Sadar, Jashore",
+    traditional: "Unverified agents operating without dedicated training facilities",
     highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "How does AB STUDY HUB assist with tuition-free German universities?",
-    a: "Public universities in Germany charge €0 tuition fees. AB STUDY HUB provides comprehensive end-to-end guidance including academic transcript assessment, APS certificate validation, Uni-Assist and direct university portal applications, blocked account (Coracle/Expatrio) setup, and German Embassy student visa lodgement with 1-on-1 consular mock interviews.",
+    q: "How does Nexus Global support Japanese language learners and Japan visa applicants?",
+    a: "We offer an intensive 3-month Japanese N5/N4 package taught 6 days a week (2 hours daily) using Minna no Nihongo. We provide free books, audio listening materials, and free extra classes. Once ready, our counselors guide your student or SSW (Specified Skilled Worker) visa application, coordinated directly with our Tokyo liaison office in Shin-Koiwa for airport reception and initial accommodation.",
   },
   {
-    q: "What courses are offered at AB Language Academy?",
-    a: "We offer: 1) German Language A1, A2, B1, B2 (Goethe-Zertifikat preparation with exam simulations), 2) Danish Language Course for students aiming for Denmark, 3) IELTS Private Batches (Academic/General with target Band 7.5+ in 10–12 student batches), 4) Spoken English Fluency, and 5) Kids English (Ages 5–14).",
+    q: "What is included in the German Language (A1) Course at Nexus Academy?",
+    a: "Our German course follows the official Goethe-Institut syllabus using Netzwerk Neu A1 and Grammatik Aktiv A1-B1. Classes run 5 days a week (1.5 hours daily) across 3 months. Students receive free textbooks, audio files, grammar worksheets, regular diagnostic quizzes, and complete guidance for tuition-free German universities or dual vocational Ausbildung programs.",
   },
   {
-    q: "Why are language batches capped at only 10–12 students?",
-    a: "Language learning requires intensive speaking interaction, personalized accent correction, and regular diagnostic testing. By limiting batches strictly to 10–12 students, our trainers ensure every student receives dedicated speaking time and rapid score improvement.",
+    q: "What direct services are provided by the Tokyo Liaison Branch in Japan?",
+    a: "Our Tokyo office (Shin-Koiwa, Tokyo, Helpline: +81 90 7705 8380) handles on-the-ground support for our students: airport reception upon landing in Japan, orientation in Tokyo, assistance with student residence registration and part-time job search guidance in compliance with Japanese immigration regulations (up to 28 hours per week).",
   },
   {
-    q: "Which countries are included in your study abroad portfolio?",
-    a: "Our core destinations are Germany (Flagship tuition-free), Denmark, Netherlands, Spain, Greece, Malaysia, Cyprus, Canada, and the UK, alongside selective European Schengen institutions in Hungary and Italy.",
+    q: "What English training programs are offered at Nexus Academy Jashore?",
+    a: "We provide: 1) IELTS Academic & General Training (target Band 7.5+ with Cambridge mock exams), 2) Spoken English for daily fluency and corporate interviews, 3) Kids English for children aged 5–14 (phonics, vocabulary, confidence), and 4) English Grammar Foundation.",
   },
   {
-    q: "Where is the AB STUDY HUB corporate office located?",
-    a: "Our corporate headquarters is located at Commerce View Complex, 4th Floor (Exim Bank Building), 191 CDA Avenue, East Nasirabad, Panchlaish, Chattogram-4200. You are welcome to visit for free 1-on-1 counseling Saturday through Thursday.",
+    q: "Where is Nexus Global located in Jashore and when can I visit?",
+    a: "Our headquarters is at Nowrin Tower (3rd Floor), East Side of Laldighi, beside Kacchi Queen / backside of Sonali Bank Corporate Branch, Sadar, Jashore - 7400. We are open Saturday through Thursday (9:00 AM – 8:00 PM) for free in-person counseling.",
   },
 ];
 
@@ -115,10 +115,10 @@ function Services() {
       {/* 1. High-Impact Page Hero with Breadcrumbs */}
       <PageHero
         eyebrow="Admissions, Academy & Visas"
-        title="Comprehensive Education & Language Services"
-        subtitle="Tuition-free public university admissions for Germany, European pathways to Denmark & Netherlands, paired with Goethe German (A1–B2), Danish, and IELTS private batches at Commerce View Complex, Chattogram."
+        title="Comprehensive Education & Skill Training Services"
+        subtitle="Specialized foreign language mastery in Japanese (N5/N4) and German (A1 Goethe), paired with IELTS, Spoken English, and global higher education pathways backed by our Tokyo branch."
         image="/latest-assets/banner.jpg"
-        imageAlt="AB STUDY HUB study abroad admissions and language academy"
+        imageAlt="Nexus Global admissions and language academy Jashore"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -126,21 +126,21 @@ function Services() {
             <button
               type="button"
               onClick={open}
-              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-red-600/30 cursor-pointer"
+              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 cursor-pointer"
             >
               <span>Book Free Profile Assessment</span>
               <IconSparkles className="w-4 h-4" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello AB STUDY HUB! I would like to inquire about your German admissions and language courses in Chattogram.",
+                "Hello Nexus Global! I would like to inquire about your language courses and study abroad guidance in Jashore.",
               )}`}
               target="_blank"
               rel="noreferrer"
               className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900"
             >
               <IconWhatsApp className="w-4 h-4 text-emerald-600" />
-              <span>WhatsApp: 01952-566966</span>
+              <span>WhatsApp: {company.phones[0]}</span>
             </a>
           </div>
         </div>
@@ -158,7 +158,7 @@ function Services() {
                 className={cn(
                   "rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer",
                   activeCategory === cat.id
-                    ? "bg-red-600 text-white shadow-md border border-red-500"
+                    ? "bg-sky-600 text-white shadow-md border border-sky-500"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200",
                 )}
               >
@@ -169,20 +169,19 @@ function Services() {
         </div>
       </section>
 
-      {/* 3. Language Academy Specialized Section (German, Danish, IELTS, Spoken & Kids English) */}
+      {/* 3. Language Academy Specialized Section */}
       {(activeCategory === "all" || activeCategory === "language-courses") && (
         <section className="section-shell py-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-red-600" />
-              <span>AB Language Academy</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+              <span>Nexus Language Academy</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              German (A1–B2), Danish & <span className="text-red-600">IELTS Private Batches</span>
+              Japanese (N5/N4), German (A1) & <span className="text-sky-600">IELTS / English Programs</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Personalized foreign language coaching with private batches strictly capped at 10–12
-              students at our modern campus in Commerce View Complex, CDA Avenue, Chattogram.
+              Comprehensive curriculum with experienced trainers, multimedia audio-visual facilities, free books, and regular diagnostic tests at Nowrin Tower, East Side of Laldighi, Jashore.
             </p>
           </div>
 
@@ -190,14 +189,14 @@ function Services() {
             {courses.map((course) => (
               <div
                 key={course.slug}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-md flex flex-col justify-between hover:border-red-500/50 hover:shadow-xl transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-md flex flex-col justify-between hover:border-sky-500/50 hover:shadow-xl transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-4xl p-2 rounded-2xl bg-red-50 border border-red-200/80">
+                    <span className="text-4xl p-2 rounded-2xl bg-sky-50 border border-sky-200/80">
                       {course.icon}
                     </span>
-                    <span className="rounded-full bg-red-100 text-red-700 border border-red-200 px-3 py-1 text-xs font-bold">
+                    <span className="rounded-full bg-sky-100 text-sky-800 border border-sky-200 px-3 py-1 text-xs font-bold">
                       {course.badge}
                     </span>
                   </div>
@@ -206,7 +205,7 @@ function Services() {
                     <h3 className="font-display text-xl font-black text-slate-900">
                       {course.title}
                     </h3>
-                    <p className="text-xs font-semibold text-red-600 mt-0.5">{course.subtitle}</p>
+                    <p className="text-xs font-semibold text-sky-600 mt-0.5">{course.subtitle}</p>
                   </div>
 
                   <p className="text-xs text-slate-600 leading-relaxed">{course.description}</p>
@@ -228,7 +227,7 @@ function Services() {
 
                   <div className="space-y-2 pt-2">
                     <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-slate-500 block">
-                      Course Modules & Benefits:
+                      Course Modules & Highlights:
                     </span>
                     <ul className="space-y-1.5">
                       {course.highlights.slice(0, 4).map((h) => (
@@ -245,14 +244,14 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-red-600/30 cursor-pointer"
+                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-sky-600/30 cursor-pointer"
                   >
-                    <span>Enroll / Free Diagnostic Test</span>
+                    <span>Enroll / Free Demo Class</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello AB Language Academy! I want to join the next ${course.title} batch in Chattogram. Please send fee and schedule.`,
+                      `Hello Nexus Global! I want to join the next ${course.title} batch in Jashore. Please send fee and schedule.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
@@ -274,16 +273,15 @@ function Services() {
         activeCategory === "free-file") && (
         <section className="section-shell py-16 border-t border-slate-200">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-red-600" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
               <span>Full Lifecycle Advisory</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Higher Education Admissions & <span className="text-red-600">Visa Processing</span>
+              Higher Education Admissions & <span className="text-sky-600">Visa Processing</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From university course matching at Commerce View Complex to visa mock interviews, we
-              provide genuine end-to-end guidance for Germany, Denmark, and global destinations.
+              From initial profile assessment at our Jashore campus to embassy interview drills and Tokyo airport reception, we guide your journey with integrity.
             </p>
           </div>
 
@@ -291,13 +289,13 @@ function Services() {
             {services.map((service) => (
               <div
                 key={service.slug}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-red-500/40 hover:shadow-lg transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-sky-500/40 hover:shadow-lg transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{service.icon}</span>
                     {service.highlightBadge && (
-                      <span className="rounded-full bg-red-50 text-red-700 border border-red-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                      <span className="rounded-full bg-sky-50 text-sky-700 border border-sky-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
                         {service.highlightBadge}
                       </span>
                     )}
@@ -319,7 +317,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-red-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
+                    className="text-sky-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     <span>Apply Now</span>
                     <span>→</span>
@@ -332,81 +330,80 @@ function Services() {
       )}
 
       {/* 5. Destinations & Visa Categories Comprehensive Showcase */}
-      {(activeCategory === "all" || activeCategory === "visa-guidance") && (
+      {(activeCategory === "all" || activeCategory === "tokyo-branch" || activeCategory === "study-abroad") && (
         <section className="section-shell py-16 border-t border-slate-200">
-          <div className="rounded-3xl border border-slate-800 bg-[#0F172A] p-8 sm:p-12 text-white shadow-2xl">
+          <div className="rounded-3xl border border-slate-800 bg-[#0B1528] p-8 sm:p-12 text-white shadow-2xl">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="rounded-full bg-red-600/20 text-red-400 border border-red-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
+              <span className="rounded-full bg-sky-600/20 text-sky-400 border border-sky-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
                 Global Destinations & Visas
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Destinations Processed by AB STUDY HUB
+                Top Pathways Processed by Nexus Global
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                Expert processing for tuition-free public universities, student visas, and spouse work
-                rights across Europe, North America, and the UK.
+                Specialized processing for Japan (with Tokyo liaison reception), tuition-free German universities & Ausbildung, Malaysia, UK, Canada, Australia, and the USA.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  title: "Germany",
-                  icon: "🇩🇪",
-                  desc: "Tuition-free public universities, APS certificate validation, blocked account assistance, and 18-month job search visa.",
+                  title: "Japan",
+                  icon: "🇯🇵",
+                  desc: "Japanese language schools, SSW vocational tracks, and direct reception by our Tokyo liaison office in Shin-Koiwa.",
                   badge: "Flagship #1",
                 },
                 {
-                  title: "Denmark",
-                  icon: "🇩🇰",
-                  desc: "Danish language support, world-class technical universities, green innovation programs, and stay back work scheme.",
-                  badge: "Top European",
+                  title: "Germany",
+                  icon: "🇩🇪",
+                  desc: "Tuition-free public universities, dual Ausbildung vocational training, Goethe A1 preparation, and 18-month job search visa.",
+                  badge: "Flagship #2",
                 },
                 {
-                  title: "Netherlands",
-                  icon: "🇳🇱",
-                  desc: "English-taught bachelor's & master's degrees, 1-year Search Year (Zoekjaar) visa for international graduates.",
-                  badge: "High Tech Hub",
+                  title: "Malaysia",
+                  icon: "🇲🇾",
+                  desc: "Affordable global degrees, fast EMGS processing, high visa ratio, and credit transfer options to UK/Australia.",
+                  badge: "Fast Visa Hub",
                 },
                 {
                   title: "Canada",
                   icon: "🇨🇦",
-                  desc: "Designated Learning Institutions (DLI), fast-track SDS & non-SDS student visas, PGWP post-graduation.",
-                  badge: "Top Work Rights",
-                },
-                {
-                  title: "United States",
-                  icon: "🇺🇸",
-                  desc: "I-20 issuance, STEM OPT extensions (up to 3 years), comprehensive embassy mock interview training.",
-                  badge: "World Top 100",
+                  desc: "Public Designated Learning Institutions (DLI), co-op internships, and up to 3-year Post-Graduation Work Permits.",
+                  badge: "Work Permits",
                 },
                 {
                   title: "United Kingdom",
                   icon: "🇬🇧",
-                  desc: "Direct CAS file assembly, foundation to master's programs, 2-year Graduate Route visa guidance.",
-                  badge: "Popular Hub",
+                  desc: "1-year master's degrees, fast CAS issuance, merit bursaries, and 2-year Graduate Route Post-Study Work visa.",
+                  badge: "Popular Master's",
                 },
                 {
-                  title: "Finland",
-                  icon: "🇫🇮",
-                  desc: "Joint Application & Rolling Intakes, Universities of Applied Sciences, spouse work permit, child education.",
-                  badge: "Schengen EU",
+                  title: "Australia",
+                  icon: "🇦🇺",
+                  desc: "World top-ranked universities, high student minimum wage rates, and Subclass 500 visa documentation.",
+                  badge: "Top Living",
                 },
                 {
-                  title: "Hungary",
-                  icon: "🇭🇺",
-                  desc: "Stipendium Hungaricum scholarship guidance, 100% tuition coverage, accommodation stipends in Schengen.",
-                  badge: "Full Scholarship",
+                  title: "United States",
+                  icon: "🇺🇸",
+                  desc: "I-20 issuance, STEM OPT extensions (up to 3 years), and comprehensive consular mock interview coaching.",
+                  badge: "STEM Careers",
+                },
+                {
+                  title: "Schengen Europe",
+                  icon: "🇪🇺",
+                  desc: "English-taught degrees in Finland, Spain, and Greece with European Schengen visa mobility.",
+                  badge: "29 Countries",
                 },
               ].map((v) => (
                 <div
                   key={v.title}
-                  className="rounded-2xl bg-slate-800/80 border border-slate-700/80 p-5 space-y-2.5 flex flex-col justify-between hover:border-red-500/50 transition-colors"
+                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-sky-500/50 transition-colors"
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-2xl">{v.icon}</span>
-                      <span className="text-[0.65rem] font-bold text-red-400 bg-red-500/20 px-2 py-0.5 rounded-full border border-red-500/30">
+                      <span className="text-[0.65rem] font-bold text-sky-400 bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-500/30">
                         {v.badge}
                       </span>
                     </div>
@@ -416,7 +413,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-[0.72rem] font-bold text-red-400 hover:text-red-300 text-left pt-2 border-t border-slate-700 cursor-pointer"
+                    className="text-[0.72rem] font-bold text-sky-400 hover:text-sky-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
                   >
                     Check Eligibility →
                   </button>
@@ -430,27 +427,26 @@ function Services() {
       {/* 6. Transparency Comparison Table */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-red-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-red-600">AB STUDY HUB</span>
+            Why Students Choose <span className="text-sky-600">Nexus Global</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our personalized mentorship model and dedicated language academy against
-            traditional commercial agencies.
+            Compare our personalized language coaching, Tokyo branch reception, and dedicated counseling against traditional commercial agencies.
           </p>
         </div>
 
         <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm max-w-4xl mx-auto">
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs sm:text-sm">
-              <thead className="bg-slate-900 text-white font-display uppercase tracking-wider text-[0.7rem]">
+              <thead className="bg-slate-950 text-white font-display uppercase tracking-wider text-[0.7rem]">
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
-                  <th className="p-4 sm:p-5 text-red-400 font-extrabold bg-slate-800">
-                    ★ AB STUDY HUB
+                  <th className="p-4 sm:p-5 text-sky-400 font-extrabold bg-slate-900">
+                    ★ Nexus Global (Jashore & Tokyo)
                   </th>
                   <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
                 </tr>
@@ -461,14 +457,14 @@ function Services() {
                     key={row.feature}
                     className={cn(
                       "transition-colors hover:bg-slate-50",
-                      row.highlight && "bg-red-50/20",
+                      row.highlight && "bg-sky-50/20",
                     )}
                   >
                     <td className="p-4 sm:p-5 font-bold text-slate-900">{row.feature}</td>
-                    <td className="p-4 sm:p-5 font-bold text-red-700 bg-red-50/40">
+                    <td className="p-4 sm:p-5 font-bold text-sky-800 bg-sky-50/40">
                       <div className="flex items-center gap-2">
                         <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.abStudyHub}</span>
+                        <span>{row.nexusGlobal}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -483,16 +479,15 @@ function Services() {
       {/* 7. Step-by-Step Admission Process */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-200 px-3.5 py-1 text-xs font-bold text-red-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-red-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
             <span>Structured Process</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Our Proven 5-Step Admission Roadmap
+            Our Proven 5-Step Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Meticulous file preparation from profile assessment at Commerce View Complex to visa
-            stamping.
+            Structured preparation from profile assessment at Nowrin Tower, Jashore to visa stamping and Tokyo reception.
           </p>
         </div>
 
@@ -500,10 +495,10 @@ function Services() {
           {processSteps.map((step) => (
             <div
               key={step.step}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-red-500/50 hover:shadow-md transition-all"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-sky-500/50 hover:shadow-md transition-all"
             >
               <div className="flex items-center justify-between">
-                <span className="font-display font-black text-2xl text-red-600">{step.step}</span>
+                <span className="font-display font-black text-2xl text-sky-600">{step.step}</span>
                 <span className="rounded-full bg-slate-100 text-slate-700 text-[0.68rem] font-bold px-2.5 py-0.5">
                   {step.badge}
                 </span>
@@ -522,8 +517,7 @@ function Services() {
             Frequently Asked Questions on Services
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Clear, transparent answers about German tuition-free admissions, language batches, and
-            visa processing.
+            Clear, transparent answers about Japanese N5/N4, German A1, IELTS coaching, Tokyo office reception, and visa processing.
           </p>
         </div>
 
@@ -536,7 +530,7 @@ function Services() {
                 className={cn(
                   "rounded-2xl border transition-all duration-300 overflow-hidden",
                   isOpen
-                    ? "bg-white border-red-500 shadow-md ring-1 ring-red-500/20"
+                    ? "bg-white border-sky-500 shadow-md ring-1 ring-sky-500/20"
                     : "bg-white border-slate-200 hover:border-slate-300",
                 )}
               >
@@ -549,7 +543,7 @@ function Services() {
                   <span
                     className={cn(
                       "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                      isOpen ? "bg-red-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                      isOpen ? "bg-sky-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
                     )}
                   >
                     ↓
