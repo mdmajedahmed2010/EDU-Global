@@ -9,51 +9,71 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-bangla: "Hind Siliguri", "Plus Jakarta Sans", sans-serif;
 
-  /* NEXUS GLOBAL Official Aesthetic Palette (Ocean Blue, Sunrise Orange, Navy Slate, Warm White) */
-  --color-nexus-blue: #0284c7;
-  --color-nexus-blue-dark: #0369a1;
-  --color-nexus-blue-light: #38bdf8;
-  --color-nexus-blue-soft: #f0f9ff;
+  /* ACADEMIAZ Official Brand Palette (Academic Navy, Imperial Gold, Japan Crimson & Crisp Slate) */
+  --color-academia-navy: #0a1931;
+  --color-academia-navy-dark: #061122;
+  --color-academia-navy-light: #0f2c59;
+  --color-academia-navy-soft: #f0f4fa;
 
-  --color-nexus-orange: #f97316;
-  --color-nexus-orange-dark: #ea580c;
-  --color-nexus-orange-light: #fb923c;
-  --color-nexus-orange-soft: #fff7ed;
+  --color-academia-gold: #d4af37;
+  --color-academia-gold-bright: #f3c246;
+  --color-academia-gold-dark: #b8860b;
+  --color-academia-gold-soft: #fef9eb;
 
-  --color-nexus-navy: #0f172a;
-  --color-nexus-sapphire: #1e3a8a;
+  --color-academia-red: #dc2626;
+  --color-academia-red-dark: #b91c1c;
+  --color-academia-red-light: #ef4444;
+  --color-academia-red-soft: #fef2f2;
+
+  --color-academia-blue: #1e3e7b;
+  --color-academia-blue-light: #2563eb;
+  --color-academia-blue-soft: #eff6ff;
+
+  /* Harmonized Theme Aliases for existing components */
+  --color-nexus-blue: #1e3e7b;
+  --color-nexus-blue-dark: #0f2c59;
+  --color-nexus-blue-light: #2563eb;
+  --color-nexus-blue-soft: #eff6ff;
+
+  --color-nexus-orange: #d4af37;
+  --color-nexus-orange-dark: #b8860b;
+  --color-nexus-orange-light: #f3c246;
+  --color-nexus-orange-soft: #fef9eb;
+
+  --color-nexus-navy: #0a1931;
+  --color-nexus-sapphire: #0f2c59;
   --color-nexus-charcoal: #1e293b;
   --color-nexus-slate: #334155;
 
-  --color-gold-metallic: #f59e0b;
-  --color-gold-bright: #fbbf24;
-  --color-gold-deep: #d97706;
-  --color-gold-soft: #fffbeb;
+  --color-gold-metallic: #d4af37;
+  --color-gold-bright: #f3c246;
+  --color-gold-deep: #b8860b;
+  --color-gold-soft: #fef9eb;
 
   --color-emerald-deep: #059669;
   --color-emerald-soft: #ecfdf5;
 
   /* Backward Compatibility Aliases */
-  --color-ab-red: #0284c7;
-  --color-ab-red-dark: #0369a1;
-  --color-ab-red-light: #38bdf8;
-  --color-ab-red-soft: #f0f9ff;
+  --color-ab-red: #dc2626;
+  --color-ab-red-dark: #b91c1c;
+  --color-ab-red-light: #ef4444;
+  --color-ab-red-soft: #fef2f2;
 
-  --color-ab-black: #0a0a0c;
-  --color-ab-charcoal: #0f172a;
-  --color-ab-dark: #18181b;
+  --color-ab-black: #061122;
+  --color-ab-charcoal: #0a1931;
+  --color-ab-dark: #0f172a;
   --color-ab-slate: #334155;
 
-  --color-agc-navy: #0f172a;
-  --color-agc-navy-dark: #020617;
-  --color-agc-navy-midnight: #0b1120;
-  --color-agc-navy-light: #1e293b;
-  --color-agc-navy-soft: #f8fafc;
+  --color-agc-navy: #0a1931;
+  --color-agc-navy-dark: #061122;
+  --color-agc-navy-midnight: #050d1a;
+  --color-agc-navy-light: #0f2c59;
+  --color-agc-navy-soft: #f0f4fa;
 
-  --color-agc-red: #f97316;
-  --color-agc-red-dark: #ea580c;
-  --color-agc-red-light: #fb923c;
-  --color-agc-red-soft: #fff7ed;
+  --color-agc-red: #d4af37;
+  --color-agc-red-dark: #b8860b;
+  --color-agc-red-light: #f3c246;
+  --color-agc-red-soft: #fef9eb;
 
   --color-sand: #fafafc;
   --color-surface: #ffffff;

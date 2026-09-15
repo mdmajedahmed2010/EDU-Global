@@ -22,18 +22,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `${company.legalName} | Nexus Global — Language Academy & Study Abroad | Jashore`,
+        title: `${company.legalName} | AcademiaZ — Japanese Language Training & Visa Consultancy | Rajshahi`,
       },
       {
         name: "description",
         content:
-          "Nexus Global (Nexus Academy) — Premier Foreign Language and Skill Training Centre in Jashore. Japanese Language (N5 & N4), Goethe-standard German Language (A1), IELTS, Spoken English, Kids English, and Study Abroad in Japan (Tokyo Shin-Koiwa liaison office), Germany, Malaysia, UK, Canada. Nowrin Tower, 3rd Floor, East Side of Laldighi, Sadar, Jashore. Hotlines: 01772-399913 / 01827-167332.",
+          "AcademiaZ — Japanese Language Training & Visa Consultancy in Rajshahi. Managed directly from Japan (জাপান থেকে পরিচালিত). Japanese Language (JLPT N5 & N4, NAT-TEST, JFT-Basic), TITP & SSW (Work in Japan), Student Visa, IELTS, Spoken English, Kids English (Ages 5–14). Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi. Hotlines: 01518-951062 / 01632-372232.",
       },
-      { property: "og:title", content: `${company.legalName} — Connecting The Future` },
+      { property: "og:title", content: `${company.legalName} — Learn · Grow · Achieve` },
       {
         property: "og:description",
         content:
-          "Premier Foreign Language Academy & Study Abroad Consultant in Jashore, Bangladesh. Specializing in Japanese, German, IELTS, and higher education processing for Japan, Germany, and worldwide.",
+          "Premier Japanese Language Academy & Visa Consultancy in Rajshahi. Managed directly from Japan. Specializing in Japanese N5/N4, TITP/SSW work programs, student visas, and IELTS coaching.",
       },
     ],
   }),
@@ -46,42 +46,48 @@ function Home() {
 
   const faqCategories = [
     "All",
-    "Japanese & German",
+    "Japanese Language",
+    "Japan Visa & SSW",
     "IELTS & English",
-    "Study Abroad & Visas",
-    "Tokyo Office",
+    "Campus & Guidance",
   ];
 
   const filteredFaqs =
     activeFaqCategory === "All"
       ? faqs
       : faqs.filter((f) => {
-          if (activeFaqCategory === "Japanese & German")
+          if (activeFaqCategory === "Japanese Language")
             return (
               f.q.toLowerCase().includes("japanese") ||
-              f.q.toLowerCase().includes("german") ||
+              f.q.toLowerCase().includes("n5") ||
+              f.q.toLowerCase().includes("n4") ||
               f.a.toLowerCase().includes("japanese") ||
-              f.a.toLowerCase().includes("german")
+              f.a.toLowerCase().includes("nat-test") ||
+              f.a.toLowerCase().includes("jlpt")
+            );
+          if (activeFaqCategory === "Japan Visa & SSW")
+            return (
+              f.q.toLowerCase().includes("visa") ||
+              f.q.toLowerCase().includes("ssw") ||
+              f.q.toLowerCase().includes("titp") ||
+              f.a.toLowerCase().includes("visa") ||
+              f.a.toLowerCase().includes("ssw") ||
+              f.a.toLowerCase().includes("work")
             );
           if (activeFaqCategory === "IELTS & English")
             return (
               f.q.toLowerCase().includes("english") ||
               f.q.toLowerCase().includes("ielts") ||
+              f.q.toLowerCase().includes("kids") ||
               f.a.toLowerCase().includes("english") ||
               f.a.toLowerCase().includes("ielts")
             );
-          if (activeFaqCategory === "Study Abroad & Visas")
+          if (activeFaqCategory === "Campus & Guidance")
             return (
-              f.q.toLowerCase().includes("visa") ||
-              f.q.toLowerCase().includes("destination") ||
-              f.a.toLowerCase().includes("visa") ||
-              f.a.toLowerCase().includes("countries")
-            );
-          if (activeFaqCategory === "Tokyo Office")
-            return (
-              f.q.toLowerCase().includes("tokyo") ||
-              f.a.toLowerCase().includes("tokyo") ||
-              f.q.toLowerCase().includes("japan")
+              f.q.toLowerCase().includes("rajshahi") ||
+              f.q.toLowerCase().includes("japan") ||
+              f.a.toLowerCase().includes("rajshahi") ||
+              f.a.toLowerCase().includes("japan")
             );
           return true;
         });
@@ -101,7 +107,7 @@ function Home() {
         <UniversityMarquee />
       </ScrollReveal>
 
-      {/* 4. Impact Stats ("From Jashore to the World") */}
+      {/* 4. Impact Stats ("Learn · Grow · Achieve") */}
       <ScrollReveal direction="up" delay={60}>
         <StatsImpactStrip />
       </ScrollReveal>
@@ -111,7 +117,7 @@ function Home() {
         <PopularDestinationsSection />
       </ScrollReveal>
 
-      {/* 6. Why Choose Nexus Global */}
+      {/* 6. Why Choose AcademiaZ */}
       <ScrollReveal direction="up" delay={60}>
         <WhyChooseSection />
       </ScrollReveal>
@@ -131,20 +137,20 @@ function Home() {
         <VideoReelsSection />
       </ScrollReveal>
 
-      {/* 10. Jashore Campus & Tokyo Liaison Desk */}
+      {/* 10. Rajshahi Campus & Japan Direct Oversight */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
               <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
-              <span>Campus & Global Liaison</span>
+              <span>Campus & Japan Oversight</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Inside <span className="text-sky-600">Nexus Global</span>
+              Inside <span className="text-sky-600">AcademiaZ</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Visit our central campus at Nowrin Tower, East Side of Laldighi, Sadar, Jashore and connect
-              with our Tokyo branch in Shin-Koiwa, Japan.
+              Visit our academy at Kadirganj, Greater Road, Rajshahi and benefit
+              from our 100% Japan-managed standards and direct oversight.
             </p>
           </div>
 
@@ -174,8 +180,7 @@ function Home() {
               Frequently Asked <span className="text-sky-600">Questions</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent responses regarding Japanese & German language courses, IELTS,
-              study abroad procedures, and our Jashore headquarters.
+              Direct, transparent answers regarding Japanese language courses (N5/N4), Japan student & SSW visa procedures, IELTS, and our Rajshahi campus.
             </p>
           </div>
 

@@ -6,24 +6,20 @@ const field =
 const label = "mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-700";
 
 const serviceOptions = [
-  "Japanese Language Course (N5 & N4 Levels — 3 Months Package)",
-  "Study & Work in Japan (SSW & Student Visa Pathways with Tokyo Care)",
-  "German Language Course (Goethe A1 Standard — 3 Months)",
-  "Study in Germany (Tuition-Free Public Universities & Ausbildung)",
-  "IELTS Academic / General (Target Band 7.5+, Cambridge Mocks)",
-  "Spoken English & Communication Mastery",
+  "Japanese Language Course (JLPT N5 & N4 / NAT-TEST / JFT-Basic)",
+  "Study in Japan (Student Visa, COE Processing & Academy Enrollment)",
+  "Work in Japan (TITP Technical Intern & SSW Specified Skilled Worker)",
+  "IELTS Academic & General (Target Band 7.5+, Authentic Cambridge Mocks)",
+  "Spoken English Fluency & Communication Mastery",
   "Kids English & Phonics Foundation (Ages 5–14)",
-  "English Grammar & Writing Foundation",
-  "Study in Malaysia (Fast EMGS & Affordable Degree)",
-  "Study in UK (1-Year Master's & 2-Year PSW)",
-  "Study in Canada (Public DLIs & PGWP Work Permits)",
-  "Study in Australia / USA / Schengen Europe",
+  "Global Study Abroad (Europe, UK, USA, Canada, Malaysia)",
+  "Document Translation & Verification Support",
 ];
 
 const officeOptions = [
-  "Jashore Headquarters (Nowrin Tower, 3rd Floor, East Side of Laldighi)",
-  "Tokyo Branch Office, Japan (Shin-Koiwa, Tokyo)",
-  "Online Consultation (WhatsApp / Zoom)",
+  "Rajshahi Campus (Kadirganj, Greater Road, Lane beside Ma Photostat)",
+  "Japan Operations (Direct Japan Oversight & Student Support)",
+  "Online Consultation (WhatsApp / Google Meet)",
 ];
 
 export function RegisterForm({ onDone }: { onDone?: () => void }) {
@@ -32,10 +28,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     name: "",
     email: "",
     phone: "",
-    service: "Japanese Language Course (N5 & N4 Levels — 3 Months Package)",
+    service: "Japanese Language Course (JLPT N5 & N4 / NAT-TEST / JFT-Basic)",
     destination: "Japan",
     currentStatus: "HSC / A-Level Completed (Bachelor's Aspirant)",
-    office: "Jashore Headquarters (Nowrin Tower, 3rd Floor, East Side of Laldighi)",
+    office: "Rajshahi Campus (Kadirganj, Greater Road, Lane beside Ma Photostat)",
     message: "",
   });
 
@@ -44,7 +40,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
   const whatsappHref = () => {
     const lines = [
-      "✨ Free Consultation Request — Nexus Global (Nexus Academy)",
+      "✨ Free Consultation Request — AcademiaZ (Rajshahi)",
       `👤 Name: ${form.name}`,
       `📞 Phone: ${form.phone}`,
       form.email ? `✉️ Email: ${form.email}` : "",
@@ -53,7 +49,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       `🎓 Status/Background: ${form.currentStatus}`,
       `🏢 Preferred Office: ${form.office}`,
       form.message ? `📝 Notes: ${form.message}` : "",
-      "\nI would like to schedule a free counseling session with a Nexus Global advisor.",
+      "\nI would like to schedule a free counseling session with an AcademiaZ advisor.",
     ].filter(Boolean);
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
@@ -73,13 +69,13 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
         <h3 className="font-display text-2xl font-black text-slate-900">Booking Confirmed! 🎉</h3>
         <p className="mx-auto max-w-md text-sm text-slate-600 leading-relaxed">
           Thank you, <strong className="text-slate-900">{form.name}</strong>! Your free consultation
-          has been registered. A <strong>{company.name}</strong> counselor will contact you on{" "}
+          has been registered. An <strong>{company.name}</strong> counselor will contact you on{" "}
           <strong className="text-emerald-700">{form.phone}</strong> shortly.
         </p>
         <div className="mt-2 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-xs text-emerald-800 text-left space-y-1">
-          <p>✔ Nowrin Tower, 3rd Floor, East Side of Laldighi, Jashore</p>
-          <p>✔ Tokyo Liaison Branch (Shin-Koiwa, Tokyo, Japan)</p>
-          <p>✔ Japanese (N5/N4), German Goethe A1, IELTS, Spoken & Kids English</p>
+          <p>✔ Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi</p>
+          <p>✔ Japan-Based Direct Oversight & 100% Japan Standard</p>
+          <p>✔ Japanese (N5/N4, NAT-TEST, JFT), TITP & SSW, IELTS, Spoken & Kids English</p>
           <p>✔ 100% Visa Guidance & Free Profile Assessment</p>
         </div>
         <div className="pt-2 flex flex-col gap-2">
@@ -109,13 +105,13 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div className="border-b border-slate-100 pb-3 mb-2">
         <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-sky-600">
-          Nexus Global · Language and Skill Training Centre
+          AcademiaZ · Japanese Language Training & Visa Consultancy
         </span>
         <h3 className="font-display text-xl font-black text-slate-900">
           Book Your Free Assessment
         </h3>
         <p className="text-xs text-slate-500 mt-0.5">
-          Nowrin Tower (3rd Floor), East Side of Laldighi, Jashore · Tokyo Branch Support
+          Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight
         </p>
       </div>
 
@@ -145,7 +141,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
             required
             value={form.phone}
             onChange={set("phone")}
-            placeholder="e.g. 01772-XXXXXX"
+            placeholder="e.g. 01518-XXXXXX"
             className={field}
           />
         </div>
@@ -180,7 +176,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
                 {d.flag} {d.name}
               </option>
             ))}
-            <option value="Language Course (Japanese / German / IELTS / Spoken)">
+            <option value="Language Course (Japanese / IELTS / Spoken / Kids)">
               🎯 Language Training Only
             </option>
             <option value="Other / Need Advice">🌍 Other / Need Advice</option>
@@ -230,44 +226,46 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
         </div>
       </div>
 
-      <div>
-        <label htmlFor="reg-email" className={label}>
-          Email Address (Optional)
-        </label>
-        <input
-          id="reg-email"
-          type="email"
-          value={form.email}
-          onChange={set("email")}
-          placeholder="e.g. name@example.com"
-          className={field}
-        />
-      </div>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label htmlFor="reg-email" className={label}>
+            Email Address (Optional)
+          </label>
+          <input
+            id="reg-email"
+            type="email"
+            value={form.email}
+            onChange={set("email")}
+            placeholder="e.g. name@example.com"
+            className={field}
+          />
+        </div>
 
-      <div>
-        <label htmlFor="reg-msg" className={label}>
-          Specific Questions or Language Level (Optional)
-        </label>
-        <textarea
-          id="reg-msg"
-          rows={2}
-          value={form.message}
-          onChange={set("message")}
-          placeholder="Tell us your education background, target intake (April/October for Japan, Winter/Summer for Germany), etc."
-          className={field}
-        />
+        <div>
+          <label htmlFor="reg-msg" className={label}>
+            Specific Questions / Notes (Optional)
+          </label>
+          <textarea
+            id="reg-msg"
+            rows={1}
+            value={form.message}
+            onChange={set("message")}
+            placeholder="Target intake (April, July, October), background, etc."
+            className={field}
+          />
+        </div>
       </div>
 
       <button
         type="submit"
-        className="btn-luxury-primary w-full text-xs py-3.5 mt-2 justify-center shadow-lg hover:shadow-sky-600/30"
+        className="btn-luxury-primary w-full text-xs py-3.5 mt-2 justify-center shadow-lg hover:shadow-sky-600/30 cursor-pointer font-bold"
       >
         <span>Book Free Appointment</span>
         <span>→</span>
       </button>
 
       <p className="text-center text-[0.7rem] text-slate-600">
-        🔒 100% Privacy Guaranteed · Nexus Global · Jashore HQ & Tokyo Branch
+        🔒 100% Privacy Guaranteed · AcademiaZ · Kadirganj Campus & Japan Direct Oversight
       </p>
     </form>
   );

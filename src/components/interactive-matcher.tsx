@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello Nexus Global! I used your Study Abroad Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with a Nexus Global counselor for me!`;
+    const text = `Hello AcademiaZ! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an AcademiaZ counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -221,10 +221,10 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a Free Profile Assessment by Nexus Global Advisors?
+              Want a Free Profile Assessment by AcademiaZ Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Walk into our Jashore Headquarters at Nowrin Tower (3rd Floor), East Side of Laldighi, or connect with our Tokyo liaison office on WhatsApp.
+              Walk into our Rajshahi Campus at Kadirganj, Greater Road (Lane beside Ma Photostat), or connect with our Japan-based advisory desk on WhatsApp.
             </p>
           </div>
           <div className="flex items-center gap-3">

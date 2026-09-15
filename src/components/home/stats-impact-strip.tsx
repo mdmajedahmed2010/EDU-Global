@@ -1,51 +1,51 @@
 import { CountUp, StaggerContainer, StaggerItem } from "@/components/motion-wrapper";
+import { company } from "@/lib/site-data";
 
 export function StatsImpactStrip() {
   const stats = [
+    {
+      icon: "🇯🇵",
+      val: 100,
+      suffix: "%",
+      label: "Japan Standard Service",
+      sublabel: "জাপান থেকে সরাসরি পরিচালিত ও মনিটরকৃত বিশ্বমানের সেবা",
+    },
+    {
+      icon: "⛩️",
+      val: 2,
+      suffix: " Levels",
+      label: "Japanese N5 & N4",
+      sublabel: "JLPT, JFT-Basic ও NAT-TEST এক্সাম সফলতার নিশ্চয়তা",
+    },
     {
       icon: "🎯",
       val: 100,
       suffix: "%",
       label: "Visa Guidance Support",
-      sublabel: "End-to-end documentation and interview coaching",
+      sublabel: "COE ফাইল প্রিপারেশন, SOP ও ১-অন-১ অ্যাম্ব্যাসি মক ইন্টারভিউ",
     },
     {
-      icon: "📚",
-      val: 3,
-      suffix: " Months",
-      label: "Intensive Language Packs",
-      sublabel: "Japanese N5/N4 and Goethe German A1 mastery",
-    },
-    {
-      icon: "📖",
-      val: 100,
-      suffix: "% Free",
-      label: "Books & Study Materials",
-      sublabel: "Complete books & lecture notes provided at zero cost",
-    },
-    {
-      icon: "🗼",
-      val: 2,
-      suffix: " Hubs",
-      label: "International Desks",
-      sublabel: "Jashore Central HQ + Shin-Koiwa Tokyo Branch",
+      icon: "🗣️",
+      val: 7.5,
+      suffix: "+",
+      label: "IELTS Target Band",
+      sublabel: "কেমব্রিজ মক টেস্ট, স্পোকেন ইংলিশ ও কিডস ইংলিশ একাডেমি",
     },
   ];
 
   return (
-    <section className="relative py-16 sm:py-24 bg-[#0a1526] text-white overflow-hidden border-y border-sky-500/20">
+    <section className="relative py-16 sm:py-24 bg-[#061122] text-white overflow-hidden border-y border-amber-500/20">
       {/* Subtle Ambient Radial Lighting */}
-      <div className="pointer-events-none absolute left-1/2 -top-24 -translate-x-1/2 h-72 w-[600px] rounded-full bg-sky-600/15 blur-[120px]" />
+      <div className="pointer-events-none absolute left-1/2 -top-24 -translate-x-1/2 h-72 w-[600px] rounded-full bg-amber-500/15 blur-[120px]" />
 
       <div className="section-shell relative z-10">
-        {/* Section Heading with Editorial Italic Serif */}
+        {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
-          <h2 className="font-serif-editorial text-3xl sm:text-5xl font-normal tracking-tight text-white">
-            From Jashore <span className="italic font-normal text-sky-400">to the World</span>
+          <h2 className="font-display text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+            From Rajshahi <span className="text-amber-400">to Japan & the World</span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-300 mt-2 font-medium">
-            Nowrin Tower, East Side of Laldighi, Beside Kacchi Queen, Sadar, Jashore — empowering students
-            with foreign language fluency and global higher education admissions.
+          <p className="text-xs sm:text-sm text-slate-300 mt-2 font-medium font-bangla">
+            কাদিরগঞ্জ, গ্রেটার রোড (মা ফটোস্ট্যাট এর পাশের গলি), রাজশাহী — আপনার জাপান ও গ্লোবাল উচ্চশিক্ষা যাত্রার বিশ্বস্ত সহযোগী।
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function StatsImpactStrip() {
               </div>
 
               {/* Animated Serif Counter Number */}
-              <div className="font-serif-editorial text-5xl sm:text-6xl font-normal text-white tracking-tight leading-none mb-3">
+              <div className="font-display text-5xl sm:text-6xl font-black text-amber-400 tracking-tight leading-none mb-3">
                 <CountUp value={stat.val} suffix={stat.suffix} duration={2.2} />
               </div>
 
@@ -70,7 +70,7 @@ export function StatsImpactStrip() {
               <div className="text-sm font-bold text-slate-100 mb-1">{stat.label}</div>
 
               {/* Subtitle */}
-              <div className="text-xs text-slate-400 font-medium max-w-[200px]">
+              <div className="text-xs text-slate-400 font-medium max-w-[210px] font-bangla">
                 {stat.sublabel}
               </div>
             </StaggerItem>

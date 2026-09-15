@@ -6,17 +6,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | Nexus Global — Nowrin Tower, East Side of Laldighi, Jashore" },
+      { title: "Contact Us | AcademiaZ — Kadirganj, Greater Road, Rajshahi" },
       {
         name: "description",
         content:
-          "Visit Nexus Global Language and Skill Training Centre at Nowrin Tower, 3rd Floor (Level-3), East Side of Laldighi, Sadar, Jashore - 7400. Call 01772-399913 (WhatsApp) or 01827-167332 for free counseling, Japanese/German courses, and Japan/Germany visas. Tokyo office: +81 90 7705 8380.",
+          "Visit AcademiaZ at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000. Call 01518-951062 (WhatsApp) or 01632-372232 for free counseling, Japanese language courses (N5/N4), TITP & SSW work programs, and Japan student visas. Managed directly from Japan (জাপান থেকে পরিচালিত).",
       },
-      { property: "og:title", content: "Contact Nexus Global | Jashore & Tokyo" },
+      { property: "og:title", content: "Contact AcademiaZ | Rajshahi & Japan Oversight" },
       {
         property: "og:description",
         content:
-          "Nexus Global Language and Skill Training Centre in Jashore & Shin-Koiwa, Tokyo, Japan. Japanese N5/N4, German A1, IELTS, Spoken English, and visa processing.",
+          "AcademiaZ Japanese Language Training & Visa Consultancy in Rajshahi. Japanese N5/N4, TITP & SSW, IELTS, Spoken English, and Japan visa processing.",
       },
     ],
   }),
@@ -28,14 +28,14 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    program: "Japanese Language Course (N5/N4 Package)",
-    destination: "Japan (Tokyo Branch Support & Student/SSW Visa)",
+    program: "Japanese Language Course (JLPT N5/N4 Package)",
+    destination: "Japan (Flagship #1 — Japan Direct Management)",
     notes: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello Nexus Global!\n\nI want to book a consultation from your website contact page:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service/Course: ${formData.program}\n• Preferred Country/Goal: ${formData.destination}\n• Query: ${formData.notes || "N/A"}`;
+    const text = `Hello AcademiaZ!\n\nI want to book a consultation from your website contact page:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service/Course: ${formData.program}\n• Preferred Country/Goal: ${formData.destination}\n• Query: ${formData.notes || "N/A"}`;
     window.open(
       `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`,
       "_blank",
@@ -47,10 +47,10 @@ function Contact() {
     <>
       <PageHero
         eyebrow="Direct Advisory Desk"
-        title="Connect With Nexus Global"
-        subtitle="Walk in to our central academy at Nowrin Tower, 3rd Floor, East Side of Laldighi, Sadar, Jashore - 7400, or connect with our international branch in Shin-Koiwa, Tokyo, Japan. Free 1-on-1 counseling, foreign language training, and global visa guidance."
-        image="/latest-assets/banner.jpg"
-        imageAlt="Nexus Global training center at Nowrin Tower, Laldighi, Jashore"
+        title="Connect With AcademiaZ"
+        subtitle="Walk in to our academy at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000, or connect directly with our Japan-based management. Free 1-on-1 counseling, Japanese language training, and visa guidance."
+        image="/banner.jpg"
+        imageAlt="AcademiaZ campus at Kadirganj, Greater Road, Rajshahi"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Contact Us" }]} />
       </PageHero>
@@ -58,15 +58,15 @@ function Contact() {
       {/* Office & Hotline Cards Section */}
       <section className="section-shell py-12">
         <div className="grid gap-8 md:grid-cols-2">
-          {/* Jashore Corporate Headquarters Card */}
+          {/* Rajshahi Corporate Headquarters Card */}
           <div className="card-clean rounded-3xl p-8 border border-sky-200/90 shadow-md bg-white flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <span className="badge-clean badge-red text-xs">
                   <span className="h-2 w-2 rounded-full bg-sky-600 animate-ping inline-block mr-1" />
-                  Jashore Headquarters
+                  Rajshahi Campus
                 </span>
-                <span className="text-xs font-bold text-slate-500">Language & Skill Hub</span>
+                <span className="text-xs font-bold text-slate-500">Language & Visa Hub</span>
               </div>
 
               <h2 className="mt-4 font-display text-xl font-bold text-slate-900">
@@ -91,19 +91,19 @@ function Contact() {
                 </p>
                 <p>
                   <strong>🌟 Specialty:</strong>{" "}
-                  <span className="text-sky-700 font-bold">Japanese N5/N4, German A1, IELTS & 100% Visa Guidance</span>
+                  <span className="text-sky-700 font-bold">Japanese N5/N4, TITP & SSW, Student Visa & IELTS</span>
                 </p>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello Nexus Global, I want to book a free consultation at your Jashore office.")}`}
+                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello AcademiaZ, I want to book a free consultation at your Rajshahi office.")}`}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-emerald w-full text-center text-xs py-3 shadow-sm"
+                className="btn-emerald w-full text-center text-xs py-3 shadow-sm font-bold"
               >
-                💬 WhatsApp Jashore Desk: {company.phones[0]}
+                💬 WhatsApp Rajshahi Desk: {company.phones[0]}
               </a>
               <a
                 href={`tel:${company.phones[0].replace(/[^0-9+]/g, "")}`}
@@ -114,14 +114,14 @@ function Contact() {
             </div>
           </div>
 
-          {/* Tokyo Liaison Office Card */}
-          <div className="card-clean rounded-3xl p-8 border border-orange-200/90 shadow-md bg-white flex flex-col justify-between">
+          {/* Japan Direct Management Card */}
+          <div className="card-clean rounded-3xl p-8 border border-amber-200/90 shadow-md bg-white flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <span className="badge-clean badge-navy text-xs">
-                  🇯🇵 International Branch
+                  🇯🇵 Japan Direct Management
                 </span>
-                <span className="text-xs font-bold text-slate-500">Tokyo On-Ground Care</span>
+                <span className="text-xs font-bold text-amber-700 font-bangla">জাপান থেকে পরিচালিত</span>
               </div>
 
               <h2 className="mt-4 font-display text-xl font-bold text-slate-900">
@@ -133,34 +133,34 @@ function Contact() {
 
               <div className="mt-5 space-y-2 text-xs sm:text-sm text-slate-700 border-t border-slate-100 pt-4">
                 <p>
-                  <strong>🇯🇵 Role:</strong> Airport reception, student hostel support, part-time job guidance
+                  <strong>🇯🇵 Standard:</strong> 100% Japan Standard Curriculum & Pedagogy
                 </p>
                 <p>
-                  <strong>📞 Tokyo Helpline:</strong> {company.offices.international.phone}
+                  <strong>🌸 Visa Categories:</strong> Language School Student Visa, TITP Trainee, SSW Worker
                 </p>
                 <p>
-                  <strong>🕒 Working Hours:</strong> {company.offices.international.hours}
+                  <strong>🕒 Advisory Support:</strong> {company.offices.international.hours}
                 </p>
                 <p>
-                  <strong>👥 Direct Coordination:</strong> Seamless link with our Jashore academy
+                  <strong>👥 Direct Coordination:</strong> Seamless link between Rajshahi students and Japanese institutions
                 </p>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/${company.offices.international.phone.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello Nexus Group Tokyo, I am inquiring about student support in Japan.")}`}
+                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello AcademiaZ, I want to consult about Japanese Language courses and Japan Visa processing.")}`}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-emerald w-full text-center text-xs py-3 shadow-sm"
+                className="btn-luxury-primary w-full text-center text-xs py-3 shadow-sm font-bold text-white"
               >
-                💬 WhatsApp Tokyo Helpline: {company.offices.international.phone}
+                💬 WhatsApp Japan Advisory Desk
               </a>
               <a
-                href={`tel:${company.offices.international.phone.replace(/[^0-9+]/g, "")}`}
-                className="rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-center text-xs font-bold text-slate-800 hover:border-orange-300 transition-colors"
+                href={`tel:${company.phones[1].replace(/[^0-9+]/g, "")}`}
+                className="rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-center text-xs font-bold text-slate-800 hover:border-amber-300 transition-colors"
               >
-                📞 Call Tokyo Office: {company.offices.international.phone}
+                📞 Call Alternate Line: {company.phones[1]}
               </a>
             </div>
           </div>
@@ -188,13 +188,13 @@ function Contact() {
                 </a>
               </div>
               <p className="text-xs text-slate-500 mt-1">
-                Nowrin Tower (3rd Floor), East Side of Laldighi, Sadar, Jashore - 7400
+                Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000
               </p>
             </div>
             <div className="h-72 sm:h-80 w-full overflow-hidden rounded-2xl">
               <iframe
                 src={company.mapsEmbed}
-                title="Nexus Global Jashore Office Google Map"
+                title="AcademiaZ Rajshahi Campus Google Map"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -205,15 +205,15 @@ function Contact() {
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-950 p-6 text-white shadow-sm">
-            <span className="badge-clean badge-red text-xs">Where Dreams Take Flight</span>
+            <span className="badge-clean badge-red text-xs">Learn · Grow · Achieve</span>
             <h3 className="font-display font-bold text-lg text-white mt-2">
-              From Jashore TO THE WORLD
+              Your Gateway to Japan
             </h3>
-            <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-              Nexus Global Language & Skill Training Centre is dedicated to honest student counseling, foreign language excellence, and reliable visa success. Located conveniently at East Side of Laldighi, beside Kacchi Queen, Jashore.
+            <p className="text-xs text-slate-300 mt-1 leading-relaxed font-bangla">
+              "{company.slogan}"
             </p>
             <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
-              <span className="text-slate-400">Jashore Campus</span>
+              <span className="text-slate-400">Rajshahi Campus</span>
               <a
                 href={company.social.facebook}
                 target="_blank"
@@ -234,7 +234,7 @@ function Contact() {
               Send Your Inquiry / Book Counseling
             </h2>
             <p className="mt-1 text-xs text-slate-600">
-              Fill in your details to immediately connect with a Nexus Global counselor on WhatsApp.
+              Fill in your details to immediately connect with an AcademiaZ counselor on WhatsApp.
             </p>
           </div>
 
@@ -248,13 +248,13 @@ function Contact() {
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto">
                 Thank you, <strong>{formData.name}</strong>. If WhatsApp did not open automatically,
-                tap below to chat with a Nexus Global counselor.
+                tap below to chat with an AcademiaZ counselor.
               </p>
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-emerald inline-flex text-xs py-3 px-6 shadow-md"
+                className="btn-emerald inline-flex text-xs py-3 px-6 shadow-md font-bold"
               >
                 💬 Open WhatsApp Chat
               </a>
@@ -284,7 +284,7 @@ function Contact() {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="e.g. 01772-XXXXXX"
+                  placeholder="e.g. 01518-XXXXXX"
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
                 />
               </div>
@@ -299,11 +299,14 @@ function Contact() {
                     onChange={(e) => setFormData({ ...formData, program: e.target.value })}
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
                   >
-                    <option value="Japanese Language Course (N5/N4 Package)">
+                    <option value="Japanese Language Course (JLPT N5/N4 Package)">
                       Japanese Language (N5/N4 Package)
                     </option>
-                    <option value="German Language Course (Goethe A1)">
-                      German Language (Goethe A1)
+                    <option value="Study in Japan (Language Academy & Student Visa)">
+                      Study in Japan (Student Visa / COE)
+                    </option>
+                    <option value="Work in Japan (TITP Technical Intern / SSW Worker)">
+                      Work in Japan (TITP / SSW Program)
                     </option>
                     <option value="IELTS Academic / General Training">
                       IELTS Coaching (Band 7.5+)
@@ -311,36 +314,27 @@ function Contact() {
                     <option value="Spoken English & Communication Fluency">
                       Spoken English Fluency
                     </option>
-                    <option value="Kids English (Ages 5-14)">Kids English (Ages 5–14)</option>
-                    <option value="English Grammar & Writing Foundation">
-                      English Grammar Foundation
-                    </option>
-                    <option value="Study & Work in Japan (Language School / SSW)">
-                      Study & Work in Japan (SSW/Student)
-                    </option>
-                    <option value="Germany University & Ausbildung Admission">
-                      Germany Tuition-Free & Ausbildung
-                    </option>
-                    <option value="Malaysia University Admission">
-                      Malaysia University Admission
+                    <option value="Kids English (Ages 5–14)">Kids English (Ages 5–14)</option>
+                    <option value="Document Translation & Verification Support">
+                      Document Translation & Verification
                     </option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                    Target Destination
+                    Target Destination / Goal
                   </label>
                   <select
                     value={formData.destination}
                     onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
                     className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
                   >
-                    <option value="Japan (Tokyo Branch Support & Student/SSW Visa)">
-                      🇯🇵 Japan (Flagship #1 — Tokyo Branch)
+                    <option value="Japan (Flagship #1 — Japan Direct Management)">
+                      🇯🇵 Japan (Flagship #1 — Japan Managed)
                     </option>
                     <option value="Germany (Tuition-Free & Ausbildung Support)">
-                      🇩🇪 Germany (Flagship #2 — Tuition-Free)
+                      🇩🇪 Germany (Tuition-Free)
                     </option>
                     <option value="Malaysia (Fast EMGS & Affordable Degree)">
                       🇲🇾 Malaysia (Fast Visa)
@@ -351,7 +345,7 @@ function Contact() {
                     <option value="Canada (Public DLI & PGWP)">🇨🇦 Canada</option>
                     <option value="Australia (Subclass 500 High Wages)">🇦🇺 Australia</option>
                     <option value="USA (STEM OPT Extensions)">🇺🇸 United States</option>
-                    <option value="Nexus Language Academy Only">🎓 Language Academy Only</option>
+                    <option value="AcademiaZ Language Academy Only">🎓 Language Academy Only</option>
                   </select>
                 </div>
               </div>
@@ -364,7 +358,7 @@ function Contact() {
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="e.g. Completed HSC / Bachelor's. Interested in Japanese N5 morning batch or Germany dual vocational training in Jashore..."
+                  placeholder="e.g. Completed HSC / Bachelor's. Interested in Japanese N5 morning/evening batch or Japan student visa in Rajshahi..."
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
                 />
               </div>
@@ -372,14 +366,14 @@ function Contact() {
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="btn-luxury-primary w-full text-xs sm:text-sm py-3.5 shadow-md cursor-pointer"
+                  className="btn-luxury-primary w-full text-xs sm:text-sm py-3.5 shadow-md cursor-pointer font-bold"
                 >
                   Send Inquiry to WhatsApp ({company.phones[0]}) →
                 </button>
               </div>
 
               <p className="text-[0.68rem] text-slate-500 text-center pt-1">
-                🔒 Direct 1-on-1 counseling. Nowrin Tower, East Side of Laldighi, Jashore & Shin-Koiwa, Tokyo.
+                🔒 Direct 1-on-1 counseling. Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight.
               </p>
             </form>
           )}

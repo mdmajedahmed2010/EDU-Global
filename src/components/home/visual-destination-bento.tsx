@@ -28,7 +28,7 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Tokyo Liaison Branch Support",
+    highlightTag: "Japan-Based Direct Oversight",
     visaSpeed: "N5/N4 & SSW / Student Visas",
     withoutIelts: true,
     avgTuition: "¥700,000 – ¥850,000/yr",
@@ -163,8 +163,7 @@ export function VisualDestinationBento() {
             Explore Verified <span className="text-sky-600">Global Pathways</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl">
-            Choose your dream destination with Nexus Global (Nexus Academy). Benefit from
-            specialized Japanese (N5/N4) & German language coaching, Tokyo branch reception, and professional counseling in Jashore.
+            Choose your dream pathway with AcademiaZ. Benefit from direct Japan-based management, authentic Japanese language training (JLPT N5/N4, NAT-TEST, JFT), TITP & SSW guidance, and expert IELTS coaching in Kadirganj, Rajshahi.
           </p>
         </SlideIn>
 

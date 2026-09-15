@@ -14,17 +14,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | Nexus Global — Language and Skill Training Centre | Jashore & Tokyo" },
+      { title: "About Us | AcademiaZ — Japanese Language Training & Visa Consultancy | Rajshahi" },
       {
         name: "description",
         content:
-          "Discover Nexus Global (Nexus Academy) — Premier foreign language & skill training centre in Jashore with a dedicated liaison office in Tokyo, Japan. Specialized in Japanese N5/N4 packages, German Goethe A1, IELTS, Spoken English, and global higher education. Hotlines: 01772-399913 / 01827-167332.",
+          "Discover AcademiaZ — Premier Japanese language training centre and visa consultancy in Rajshahi. Managed directly from Japan (জাপান থেকে পরিচালিত). Specialized in Japanese JLPT N5/N4, NAT-TEST, JFT-Basic, TITP/SSW programs, Student Visas, IELTS, and Spoken English. Kadirganj, Greater Road, Rajshahi. Hotlines: 01518-951062 / 01632-372232.",
       },
-      { property: "og:title", content: "About Nexus Global | From Jashore TO THE WORLD" },
+      { property: "og:title", content: "About AcademiaZ | Learn · Grow · Achieve" },
       {
         property: "og:description",
         content:
-          "Official profile of Nexus Global Language and Skill Training Centre. Nowrin Tower, East Side of Laldighi, Jashore & Shin-Koiwa, Tokyo, Japan.",
+          "Official profile of AcademiaZ — Japanese Language Training & Visa Consultancy. Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight.",
       },
     ],
   }),
@@ -33,32 +33,32 @@ export const Route = createFileRoute("/about")({
 
 const advisoryWings = [
   {
-    title: "Japan Language (N5/N4) & Tokyo Liaison Wing",
-    hub: "Jashore HQ & Shin-Koiwa, Tokyo",
+    title: "Japanese Language Academy (N5 & N4)",
+    hub: "Rajshahi Campus & Japan Oversight",
     badge: "Flagship Wing",
     icon: "🇯🇵",
-    desc: "Intensive 3-month Japanese N5/N4 packages with free books and extra classes, paired with direct reception, airport pickup, and accommodation support by our Tokyo branch in Japan.",
+    desc: "Intensive 3–4 month Japanese language tracks focusing on JLPT, NAT-TEST, and JFT-Basic exams with Kanji mastery, audio listening labs, and speaking practice.",
   },
   {
-    title: "Germany University & Dual Ausbildung Cell",
-    hub: "Jashore Headquarters",
-    badge: "European Track",
-    icon: "🇩🇪",
-    desc: "Goethe A1 German language preparation using Netzwerk Neu A1, document attestation, motivation letter coaching, and placement in tuition-free universities or paid Ausbildung vocational tracks.",
+    title: "Japan Student Visa & COE Wing",
+    hub: "Rajshahi Campus",
+    badge: "Student Pathway",
+    icon: "🌸",
+    desc: "Comprehensive admissions and Certificate of Eligibility (COE) processing for top language academies, vocational colleges, and universities across Japan.",
   },
   {
-    title: "Nexus English Academy (IELTS, Spoken & Kids)",
-    hub: "Jashore Campus & Audio Labs",
-    badge: "Language Academy",
+    title: "TITP & SSW (Work in Japan) Wing",
+    hub: "Career Cell",
+    badge: "Employment Track",
+    icon: "💼",
+    desc: "Technical Intern Training Program (TITP) and Specified Skilled Worker (SSW) preparation with professional Japanese language coaching and interview grooming.",
+  },
+  {
+    title: "IELTS, Spoken & Kids English Wing",
+    hub: "Rajshahi English Academy",
+    badge: "English Academy",
     icon: "🎓",
     desc: "Target Band 7.5+ IELTS preparation with Cambridge mock exams, practical Spoken English fluency classes, and child-centric Kids English programs for ages 5–14.",
-  },
-  {
-    title: "Global Admissions & Consular Visa Cell",
-    hub: "Global Desk",
-    badge: "Global Reach",
-    icon: "🌍",
-    desc: "Direct admissions and visa guidance for Malaysia, United Kingdom, Canada, Australia, and the USA with 1-on-1 embassy interview preparation.",
   },
 ];
 
@@ -66,11 +66,11 @@ function About() {
   return (
     <>
       <PageHero
-        eyebrow="Our Story & Global Vision"
-        title="FROM JASHORE TO THE WORLD"
-        subtitle="Nexus Global Language and Skill Training Centre is Jashore's leading foreign language institute and international pathway provider, bridging Bangladeshi students with career and educational opportunities in Japan, Germany, and beyond."
-        image="/latest-assets/banner.jpg"
-        imageAlt="Nexus Global corporate campus and training center"
+        eyebrow="Our Story & Japan-Managed Excellence"
+        title="LEARN · GROW · ACHIEVE"
+        subtitle="AcademiaZ is Rajshahi's premier Japanese language training institute and visa consultancy, managed directly from Japan (জাপান থেকে পরিচালিত), opening authentic career and higher education pathways."
+        image="/banner.jpg"
+        imageAlt="AcademiaZ Japanese language and visa consultancy campus"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "About Us" }]} />
       </PageHero>
@@ -84,8 +84,8 @@ function About() {
               <BrandLogo size={56} />
               <div>
                 <h3 className="font-display text-xl font-bold text-slate-900">{company.name}</h3>
-                <span className="inline-block rounded-full bg-sky-50 border border-sky-200 px-3 py-0.5 text-xs font-bold text-sky-700 mt-1">
-                  {company.tagline}
+                <span className="inline-block rounded-full bg-amber-50 border border-amber-200 px-3 py-0.5 text-xs font-bold text-amber-800 mt-1">
+                  জাপান থেকে পরিচালিত
                 </span>
               </div>
             </div>
@@ -98,28 +98,28 @@ function About() {
               <div className="flex justify-between border-b border-slate-100 pb-3">
                 <dt className="text-slate-500 font-medium">Brand Identity</dt>
                 <dd className="font-bold text-sky-700 text-right">
-                  Nexus Global / Nexus Academy
+                  AcademiaZ (Learn · Grow · Achieve)
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Headquarters</dt>
+                <dt className="text-slate-500 font-medium">Campus Location</dt>
                 <dd className="font-bold text-slate-900 text-right max-w-[240px]">
-                  {company.offices.headquarters.address}
+                  {company.address.full}
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">International Branch</dt>
-                <dd className="font-bold text-sky-800 text-right">
-                  {company.offices.international.name}
+                <dt className="text-slate-500 font-medium">Management Origin</dt>
+                <dd className="font-bold text-amber-800 text-right">
+                  Japan Direct Oversight (100% Japan Standard)
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Flagship Languages</dt>
-                <dd className="font-bold text-sky-700 text-right">Japanese N5/N4 • German A1 • IELTS 7.5+</dd>
+                <dt className="text-slate-500 font-medium">Flagship Offerings</dt>
+                <dd className="font-bold text-sky-700 text-right">Japanese N5/N4 • TITP/SSW • Student Visa • IELTS</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
                 <dt className="text-slate-500 font-medium">Learning Model</dt>
-                <dd className="font-bold text-emerald-700">Free Books • Multimedia Labs • Free Extra Classes</dd>
+                <dd className="font-bold text-emerald-700">Japan Curriculum • Listening Labs • Real Mock Tests</dd>
               </div>
               <div className="flex justify-between pt-1">
                 <dt className="text-slate-500 font-medium">Hotlines & WhatsApp</dt>
@@ -129,9 +129,9 @@ function About() {
               </div>
             </dl>
 
-            <div className="mt-8 rounded-2xl bg-slate-50 p-4 border border-slate-200">
+            <div className="mt-8 rounded-2xl bg-amber-50/70 p-4 border border-amber-200">
               <p className="text-xs font-bold text-slate-900 mb-1">Guiding Philosophy:</p>
-              <p className="text-xs italic text-sky-700 font-bold">"{company.slogan}"</p>
+              <p className="text-xs italic text-amber-900 font-bold font-bangla">"{company.slogan}"</p>
             </div>
           </div>
 
@@ -139,41 +139,41 @@ function About() {
           <div className="space-y-6">
             <span className="badge-clean badge-red">Our Vision & Mission</span>
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Empowering Global Futures Through Language, Skill & Sincerity
+              Empowering Aspirations Through Authentic Japanese Education & Integrity
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
-              Nexus Global Language and Skill Training Centre was founded in Jashore with an unwavering commitment: to bring international-standard language coaching and legitimate study abroad pathways within reach of every ambitious youth in southwest Bangladesh.
+              AcademiaZ was established in Kadirganj, Rajshahi with a definitive purpose: to bring genuine, Japan-standard language training and transparent visa consultancy within reach of students and professionals across Bangladesh.
             </p>
             <p className="text-sm leading-relaxed text-slate-600">
-              With a physical presence both in Jashore and in Tokyo, Japan, Nexus Global provides an unmatched continuum of care. From your very first Japanese N5 class or German A1 session in Jashore, through document preparation and visa approval, all the way to airport reception and student hostel settlement in Tokyo, our dedicated team accompanies you every step of the way.
+              Being directly managed from Japan ("জাপান থেকে পরিচালিত"), AcademiaZ offers an unmatched standard of authenticity. We ensure that our students do not simply memorize grammar formulas, but develop genuine conversational fluency, cultural comprehension, and the specific skill set demanded by Japanese educational institutions and employers.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2 pt-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🎯 Our Mission</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  To equip students and professionals with authentic foreign language proficiency, critical life skills, and trusted career guidance for world-class destinations.
+                  To provide premier Japanese and English language education, honest career counseling, and authentic visa processing that empowers candidates to excel abroad.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🔭 Our Vision</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  To stand as the most reliable, transparent, and learner-first international bridge in Bangladesh, setting benchmarks in language education and student care.
+                  To be Bangladesh's most reputable and dependable gateway to Japan, recognized for academic excellence, 100% transparency, and student-first dedication.
                 </p>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-linear-to-r from-sky-50/60 via-slate-50 to-orange-50/60 border border-slate-200 p-5">
+            <div className="rounded-2xl bg-gradient-to-r from-sky-50/60 via-slate-50 to-amber-50/60 border border-slate-200 p-5">
               <h4 className="font-display text-sm font-bold text-sky-700 mb-2">
-                🌟 The 4 Nexus Global Pillars:
+                🌟 The 4 AcademiaZ Pillars:
               </h4>
               <BulletList
                 items={[
-                  "100% Visa Guidance: Thorough document verification, SOP writing, and visa interview drills with high approval records.",
-                  "Experienced Trainers: Passionate language educators offering practical spoken Japanese, German, and Cambridge IELTS curricula.",
-                  "Free Books & Extra Classes: Textbooks and multimedia audio materials provided free, with complimentary extra classes until exam readiness.",
-                  "Direct Tokyo Office: Dedicated Nexus Group branch in Shin-Koiwa, Tokyo ensuring full on-arrival assistance and guidance in Japan.",
+                  "Japan-Based Direct Management: Controlled and supervised directly from Japan, ensuring curriculum adherence to genuine Japanese standards.",
+                  "Japanese Language Mastery (N5 & N4): In-depth training for JLPT, NAT-TEST, and JFT-Basic with Kanji drills, listening audio labs, and speaking sessions.",
+                  "Transparent Visa & COE Guidance: Meticulous document verification, SOP writing, and visa interview preparation with genuine school liaisons.",
+                  "English Language & IELTS Excellence: Interactive Cambridge-standard IELTS coaching, Spoken English fluency, and Kids English (Ages 5–14).",
                 ]}
               />
             </div>
@@ -186,30 +186,30 @@ function About() {
         <div className="rounded-3xl bg-slate-950 border border-slate-800 p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
             <div>
-              <span className="badge-clean badge-red text-xs">Jashore Headquarters & Tokyo Office</span>
+              <span className="badge-clean badge-red text-xs">Rajshahi Campus & Japan Oversight</span>
               <h3 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-white">
-                Nowrin Tower, East Side of Laldighi, Jashore
+                Kadirganj, Greater Road, Rajshahi
               </h3>
               <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Our central academy is conveniently located on the 3rd Floor of Nowrin Tower (Pitha Bari Tower), East Side of Laldighi, beside Kacchi Queen and backside of Sonali Bank Corporate Branch, Sadar, Jashore - 7400. Welcoming students for free counseling, Japanese/German classes, and IELTS preparation.
+                Our modern academy is centrally located at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000. We warmly welcome students and guardians for free profile assessments, Japanese language demo classes, and personalized visa counseling.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-sky-400">📍 Jashore Headquarters</p>
+                  <p className="text-xs font-bold text-sky-400">📍 Rajshahi Campus</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
-                    {company.offices.headquarters.address}
+                    {company.address.full}
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
                     📞 {company.phones[0]} (WhatsApp) / {company.phones[1]}
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-orange-400">🇯🇵 Tokyo Branch Office</p>
+                  <p className="text-xs font-bold text-amber-400">🇯🇵 Japan Direct Management</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
-                    {company.offices.international.address}
+                    Supervised Directly from Japan (জাপান থেকে পরিচালিত)
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
-                    📞 Helpline: {company.offices.international.phone}
+                    🌐 100% Japan Standard Training & Support
                   </p>
                 </div>
               </div>
@@ -219,10 +219,13 @@ function About() {
               <div className="text-center space-y-3">
                 <BrandLogo size={72} />
                 <h4 className="font-display font-black text-xl text-white">
-                  Nexus Global Language and Skill Training Centre
+                  AcademiaZ
                 </h4>
+                <p className="text-xs text-amber-400 font-bold">
+                  Japanese Language Training & Visa Consultancy
+                </p>
                 <p className="text-xs text-slate-400">
-                  Nowrin Tower, East Side of Laldighi, Jashore · Shin-Koiwa, Tokyo, Japan
+                  Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight
                 </p>
               </div>
             </div>
@@ -238,9 +241,9 @@ function About() {
       {/* Operational Wings */}
       <section className="section-shell py-14 sm:py-20 border-t border-slate-200">
         <SectionHeading
-          eyebrow="Specialized Operational Wings"
-          title="Our Advisory Divisions"
-          subtitle="Experienced professionals dedicated to Japanese language, German higher education, IELTS training, and global visa compliance."
+          eyebrow="Specialized Academic & Career Wings"
+          title="Our Operational Divisions"
+          subtitle="Experienced educators and counselors dedicated to Japanese language, Japan visa compliance, TITP/SSW work pathways, and IELTS training."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -263,7 +266,7 @@ function About() {
 
               <div className="mt-6 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Nexus Global, I want to consult your "${wing.title}" division.`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AcademiaZ, I want to consult your "${wing.title}" division.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs font-bold text-sky-700 hover:underline flex items-center justify-center gap-1.5"
@@ -279,9 +282,9 @@ function About() {
       {/* Verified Media & Office Gallery */}
       <section className="section-shell py-14 sm:py-20 border-t border-slate-200 bg-slate-50/50">
         <SectionHeading
-          eyebrow="Verified Campus & Branches"
-          title="Campus, Batches & Tokyo Support"
-          subtitle="Explore our Jashore headquarters at Nowrin Tower, East Side of Laldighi, and our liaison office in Shin-Koiwa, Tokyo, Japan."
+          eyebrow="Verified Campus & Support"
+          title="Rajshahi Campus & Japan Direct Oversight"
+          subtitle="Explore our modern academy at Kadirganj, Greater Road, Rajshahi, and our direct Japanese operational desk."
         />
         <div className="mt-10">
           <OfficeGallery />

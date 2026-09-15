@@ -6,17 +6,17 @@ import { company, destinations } from "@/lib/site-data";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Study & Career Destinations | Nexus Global — Japan, Germany, Malaysia, Global | Jashore & Tokyo" },
+      { title: "Study & Career Destinations | AcademiaZ — Japan & Global Pathways | Rajshahi" },
       {
         name: "description",
         content:
-          "Explore premier study and career destinations processed by Nexus Global: Japan (with Tokyo liaison office), Germany (tuition-free universities & Ausbildung), Malaysia, UK, Canada, Australia, and USA. Nowrin Tower, East Side of Laldighi, Jashore.",
+          "Explore premier study and career destinations processed by AcademiaZ: Japan (direct Japan-based management), Germany, Malaysia, UK, Canada, Australia, and USA. Kadirganj, Greater Road, Rajshahi.",
       },
-      { property: "og:title", content: "Study & Career Destinations | Nexus Global" },
+      { property: "og:title", content: "Study & Career Destinations | AcademiaZ" },
       {
         property: "og:description",
         content:
-          "From Jashore TO THE WORLD! Complete verified guide to Japan pathways with Tokyo office support, tuition-free German universities, and global admissions.",
+          "Your Gateway to Japan & the World! Complete verified guide to Japanese language academies, TITP/SSW work pathways, and global university admissions.",
       },
     ],
   }),
@@ -47,9 +47,9 @@ function Destinations() {
       <PageHero
         eyebrow="Global Pathway Network"
         title="Verified Study & Career Destinations"
-        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited international institutions guided by Nexus Global (Jashore HQ & Tokyo Branch)."
-        image="/latest-assets/banner.jpg"
-        imageAlt="Nexus Global official global destinations banner"
+        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited international institutions guided by AcademiaZ (Rajshahi Campus & Japan Direct Oversight)."
+        image="/banner.jpg"
+        imageAlt="AcademiaZ official global destinations banner"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Destinations" }]} />
       </PageHero>
@@ -94,7 +94,7 @@ function Destinations() {
             destinations
           </p>
           <span className="text-sky-600 font-bold">
-            ✓ Free Profile Assessment at our Nowrin Tower, Jashore Headquarters
+            ✓ Free Profile Assessment at our Kadirganj, Rajshahi Campus
           </span>
         </div>
 

@@ -18,7 +18,7 @@ export function MobileActionDock() {
 
         <a
           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-            "Hello Nexus Global! I would like a consultation for language courses and study abroad guidance in Jashore.",
+            "Hello AcademiaZ! I would like a consultation for Japanese language courses (N5/N4), Japan visa, and IELTS/English courses in Rajshahi.",
           )}`}
           target="_blank"
           rel="noreferrer"

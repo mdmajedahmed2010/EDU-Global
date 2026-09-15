@@ -11,39 +11,39 @@ const flightStages = [
     title: "Free Profile & Language Assessment",
     timeline: "Day 0 – 2",
     badge: "Personalized Roadmap",
-    desc: "Comprehensive evaluation of your academic background, target language pathway (Japanese N5/N4, German Goethe A1, IELTS, Spoken English), and destination budget (Japan, Germany, Malaysia, UK, Canada, Australia) by Nexus Global advisors.",
+    desc: "Comprehensive evaluation of your academic background, target language pathway (Japanese JLPT N5/N4, NAT-TEST, JFT-Basic, IELTS, Spoken English), and destination goals (Japan, Germany, Malaysia, UK, Canada, Australia) by AcademiaZ advisors.",
     checklist: [
       "Academic Document Verification",
-      "Language Track Selection (Japanese / German / IELTS)",
+      "Language Track Selection (Japanese / IELTS / English)",
       "Visa Eligibility & Destination Matching",
     ],
     counselorTip:
-      "Bring your academic certificates to our campus at Nowrin Tower (3rd Floor), East Side of Laldighi, Jashore, or connect via WhatsApp (01772-399913 / 01827-167332).",
+      `Bring your academic certificates to our academy at Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi, or connect via WhatsApp (${company.phones[0]} / ${company.phones[1]}).`,
   },
   {
     step: "02",
     title: "Language Training & Certificate Prep",
     timeline: "Weeks 1 – 12",
     badge: "Accredited Training",
-    desc: "Join interactive multimedia batches for Japanese N5/N4, German Goethe A1, or IELTS Band 7.0+ with modern audio-visual lab facilities, free class recordings, and mock tests.",
+    desc: "Join interactive multimedia batches for Japanese N5/N4 (JLPT, NAT-TEST, JFT-Basic), or IELTS Band 7.5+ with modern listening lab facilities, free course materials, and diagnostic mock tests.",
     checklist: [
       "Interactive Audio-Visual Lab Practice",
-      "Mock Tests & NAT-TEST / JLPT / Goethe Drills",
+      "Mock Tests & NAT-TEST / JLPT / JFT Drills",
       "Official Language Certification Support",
     ],
     counselorTip:
-      "Language proficiency is the foundation for high visa success in Japan and Germany. Our certified instructors ensure high first-attempt pass rates.",
+      "Language proficiency is the foundation for visa and career success in Japan. Our Japan-supervised instructors ensure rigorous preparation.",
   },
   {
     step: "03",
-    title: "University Admission & COE Processing",
+    title: "School Admission & COE Processing",
     timeline: "Weeks 12 – 16",
     badge: "Direct Acceptance",
-    desc: "Direct submission for Japanese Certificate of Eligibility (COE), German APS & university admissions, or partner college applications across Malaysia, the UK, and Canada.",
+    desc: "Direct submission for Japanese Certificate of Eligibility (COE), language academy enrollment, or partner college applications across global destinations.",
     checklist: [
       "COE & Japanese Immigration Dossier",
-      "German APS & Uni-Assist Assistance",
-      "Sponsor Solvency & Bank Asset Compliance",
+      "School Selection & Interview Drills",
+      "Sponsor Solvency & Financial Compliance",
     ],
     counselorTip:
       "Our compliance specialists conduct meticulous document vetting to guarantee zero documentary errors before lodgement.",
@@ -53,28 +53,28 @@ const flightStages = [
     title: "Embassy Lodgement & Consular Mock Interview",
     timeline: "Prior to Visa",
     badge: "Proven Visa Success",
-    desc: "Expert embassy and VFS appointment booking, student and spouse visa dossier compilation, and rigorous 1-on-1 interview practice simulating authentic consular questions.",
+    desc: "Expert embassy appointment scheduling, student and trainee visa dossier compilation, and rigorous 1-on-1 interview practice simulating authentic consular questions.",
     checklist: [
-      "Embassy / VFS Appointment Booking",
-      "1-on-1 Consular Mock Interview",
+      "Embassy / Consular Appointment Booking",
+      "1-on-1 Consular Mock Interview Drills",
       "Passport Stamped with Visa",
     ],
     counselorTip:
-      "Simulate authentic Japanese Embassy, German Embassy, and High Commission consular questions with our experienced mentors at Nexus Academy Laldighi Jashore.",
+      "Simulate authentic Japanese Embassy consular questions with our experienced mentors at AcademiaZ Kadirganj, Rajshahi.",
   },
   {
     step: "05",
-    title: "Tokyo Branch Care & Post-Landing Settlement",
+    title: "Japan Direct Care & Post-Landing Settlement",
     timeline: "Upon Arrival",
-    badge: "Direct Tokyo Reception",
-    desc: "Airport pickup assistance, dormitory / sharehouse accommodation advice, municipal registration, and direct ongoing support from our Tokyo liaison office (Nexus Group, Shin-Koiwa).",
+    badge: "Direct Japan Support",
+    desc: "Airport pickup guidance, dormitory/sharehouse accommodation advice, ward office registration, and direct ongoing support from our Japan-based management.",
     checklist: [
-      "Tokyo Liaison Office On-Ground Reception",
-      "Part-Time Job & Ward Office Registration Advice",
-      "Lifelong Nexus Global Student Community",
+      "Japan-Based Advisory & On-Ground Guidance",
+      "Part-Time Job Rules & City Hall Registration Advice",
+      "Lifelong AcademiaZ Student Network",
     ],
     counselorTip:
-      "You are never alone abroad—our dedicated Tokyo branch (Nexus Group, Shin-Koiwa, Helpline: +81 90 7705 8380) guides you from your first day in Japan!",
+      "You are never alone abroad—our Japan-based management guides and supports you from your very first day in Japan!",
   },
 ];
 
@@ -205,7 +205,7 @@ export function IlluminatedFlightPath() {
 
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello Nexus Global! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
+                  `Hello AcademiaZ! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"

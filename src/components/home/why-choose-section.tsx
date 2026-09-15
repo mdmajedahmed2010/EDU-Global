@@ -3,48 +3,48 @@ import { CountUp, MotionHeading, StaggerContainer, StaggerItem } from "@/compone
 export function WhyChooseSection() {
   const features = [
     {
-      icon: "🧭",
-      iconBg: "bg-sky-50 text-sky-600",
+      icon: "🇯🇵",
+      iconBg: "bg-red-50 text-red-600",
       value: 100,
       suffix: "%",
       label: "",
-      metricColor: "text-sky-600",
-      tag: "VISA & ADMISSIONS",
-      title: "100% Visa Guidance",
-      desc: "End-to-end guidance from university shortlisting and Japanese COE filing to embassy mock interview coaching from Jashore.",
+      metricColor: "text-red-600",
+      tag: "JAPAN BASED & MANAGED",
+      title: "জাপান থেকে পরিচালিত",
+      desc: "সরাসরি জাপান স্ট্যান্ডার্ড সেবা ও মনিটরিং, যা আপনাকে দেয় নিখুঁত তথ্য ও জাপানের প্রতিষ্ঠানের সাথে সরাসরি যোগাযোগ।",
     },
     {
-      icon: "🎓",
-      iconBg: "bg-orange-50 text-orange-600",
-      value: 6,
-      suffix: " Days/Wk",
+      icon: "⛩️",
+      iconBg: "bg-amber-50 text-amber-700",
+      value: 2,
+      suffix: " Levels",
       label: "",
-      metricColor: "text-orange-600",
-      tag: "INTENSIVE TRAINING",
-      title: "Experienced Trainers",
-      desc: "Skilled instructors for Japanese (N5/N4), Goethe-standard German (A1), and Cambridge IELTS delivering daily interactive practice.",
+      metricColor: "text-amber-600",
+      tag: "JLPT / JFT / NAT",
+      title: "Japanese N5 & N4 Courses",
+      desc: "হিরাগানা, কাতাকানা, ১০০+ কাঞ্জি, অডিও লিসেনিং ড্রিল ও সাপ্তাহিক মক টেস্ট সহ বেসিক থেকে অ্যাডভান্সড ট্রেনিং।",
     },
     {
-      icon: "📚",
+      icon: "💼",
+      iconBg: "bg-blue-50 text-blue-600",
+      value: 100,
+      suffix: "%",
+      label: "",
+      metricColor: "text-blue-600",
+      tag: "CAREER & VISA GUIDANCE",
+      title: "Student Visa & SSW/TITP",
+      desc: "জাপানে স্টুডেন্ট ভিসা, স্পেসিফাইড স্কিল্ড ওয়ার্কার (SSW) এবং টেকনিক্যাল ইন্টার্ন (TITP) প্রিপারেশন সাপোর্ট।",
+    },
+    {
+      icon: "📍",
       iconBg: "bg-emerald-50 text-emerald-600",
       value: 100,
       suffix: "% Free",
       label: "",
       metricColor: "text-emerald-600",
-      tag: "SPECIAL CARE",
-      title: "Free Books & Extra Classes",
-      desc: "All study books and audio-visual materials provided completely free of charge, plus free extra classes post-course without any additional fees.",
-    },
-    {
-      icon: "🇯🇵",
-      iconBg: "bg-blue-50 text-blue-600",
-      value: 2,
-      suffix: " Hubs",
-      label: "",
-      metricColor: "text-blue-600",
-      tag: "INTERNATIONAL LIAISON",
-      title: "Tokyo Liaison Branch",
-      desc: "Direct support in Shin-Koiwa, Tokyo, Japan for student reception, accommodation, part-time jobs, and school coordination.",
+      tag: "KADIRGANJ, RAJSHAHI",
+      title: "আন্তরিক সহায়তা ও কাউন্সেলিং",
+      desc: "কাদিরগঞ্জ, গ্রেটার রোডে মনোরম ক্লাসরুম, অভিজ্ঞ ও দক্ষ ট্রেইনার এবং সম্পূর্ণ ফ্রি প্রোফাইল মূল্যায়ন।",
     },
   ];
 
@@ -53,12 +53,12 @@ export function WhyChooseSection() {
       <div className="section-shell">
         {/* Title with Editorial Italic Serif & Framer Motion */}
         <MotionHeading
-          tag="— WHY NEXUS GLOBAL —"
+          tag="— WHY ACADEMIAZ RAJSHAHI —"
           title="Why choose"
-          highlight="Nexus Global?"
-          description="The best way to predict the future is to create it. We provide premier foreign language training, transparent admission processing, and direct Tokyo liaison support."
-          tagColor="text-sky-600"
-          highlightColor="text-sky-600"
+          highlight="AcademiaZ?"
+          description="স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! জাপান থেকে পরিচালিত ১০০% জাপান স্ট্যান্ডার্ড সেবা, অভিজ্ঞ ট্রেইনার টিম এবং আপনার সাফল্যই আমাদের অগ্রাধিকার।"
+          tagColor="text-amber-600"
+          highlightColor="text-amber-600"
         />
 
         {/* 4 Feature Cards Grid with Staggered Entrance & CountUp */}
@@ -68,7 +68,7 @@ export function WhyChooseSection() {
         >
           {features.map((f) => (
             <StaggerItem key={f.title}>
-              <div className="rounded-3xl border border-slate-200/70 bg-slate-50/40 p-7 text-center flex flex-col items-center hover:bg-white hover:border-sky-300 hover:shadow-2xl transition-all duration-300 group hover-lift h-full">
+              <div className="rounded-3xl border border-slate-200/70 bg-slate-50/40 p-7 text-center flex flex-col items-center hover:bg-white hover:border-amber-300 hover:shadow-2xl transition-all duration-300 group hover-lift h-full">
                 {/* Icon Container */}
                 <div
                   className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl mb-4 transition-transform duration-300 group-hover:scale-110 ${f.iconBg}`}
@@ -92,7 +92,7 @@ export function WhyChooseSection() {
                 <h3 className="font-display text-base font-bold text-slate-900 mb-2">{f.title}</h3>
 
                 {/* Description */}
-                <p className="text-xs text-slate-500 leading-relaxed font-medium">{f.desc}</p>
+                <p className="text-xs text-slate-500 leading-relaxed font-medium font-bangla">{f.desc}</p>
               </div>
             </StaggerItem>
           ))}

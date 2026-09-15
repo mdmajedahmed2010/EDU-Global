@@ -13,34 +13,34 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    title: "Study & Work in Japan: Japanese N5/N4 Package, SSW Work Visa & Tokyo Liaison Support",
+    title: "Study in Japan: Japanese N5/N4 Mastery, COE Processing & Student Visa Guide",
     excerpt:
-      "A complete guide to learning Japanese language in Jashore, obtaining your Certificate of Eligibility (COE), and receiving on-ground settlement care from our Tokyo office in Shin-Koiwa.",
+      "Comprehensive guidance on learning Japanese in Rajshahi, achieving JLPT/NAT-TEST/JFT qualifications, and securing your COE directly supervised under our Japan-based management.",
     date: "September 2026",
     tag: "Japan Flagship Track",
     image:
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
-    slug: "japan-study-work-guide",
+    slug: "japan-student-visa-guide",
   },
   {
-    title: "Study in Germany: Tuition-Free Public Universities, Goethe A1 & Ausbildung Support",
+    title: "Work in Japan: TITP Trainee & SSW (Specified Skilled Worker) Program Preparation",
     excerpt:
-      "How Bangladeshi students can study tuition-free in Germany with Goethe-Institut standard A1 preparation, Ausbildung placement guidance, and German CV formatting at Nexus Global.",
-    date: "August 2026",
-    tag: "Germany Tuition-Free",
+      "Explore high-demand career pathways in Japan. Complete your N4 language proficiency, interview grooming, and authentic documentation support in Rajshahi.",
+    date: "September 2026",
+    tag: "Career in Japan",
     image:
-      "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
-    slug: "germany-tuition-free-guide",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+    slug: "japan-work-ssw-titp-guide",
   },
   {
-    title: "IELTS Band 7.5+ & Spoken English Fluency: Interactive Coaching in Jashore",
+    title: "IELTS 7.5+, Spoken English & Kids English (Ages 5–14) at Kadirganj Campus",
     excerpt:
-      "Why our structured coaching at Nowrin Tower, East Side of Laldighi produces confident speakers and Band 7.5+ scores through 1-on-1 speaking feedback and authentic Cambridge mock tests.",
-    date: "August 2026",
-    tag: "Language Academy",
+      "Interactive, communicative English coaching in Rajshahi. Structured batches for university aspirants, job seekers, and specialized language development for children.",
+    date: "September 2026",
+    tag: "English Academy",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
-    slug: "ielts-spoken-english-guide",
+    slug: "ielts-spoken-kids-english-rajshahi",
   },
 ];
 
@@ -53,7 +53,7 @@ export function BlogUpdatesSection() {
           tag="— OFFICIAL UPDATES & INSIGHTS —"
           title="Latest"
           highlight="insights"
-          description="Essential intake roadmaps, Japanese & German language guidelines, and visa mastery tips from Nexus Global instructors."
+          description="Essential Japan intake roadmaps, Japanese language N5/N4 updates, and IELTS mastery tips from AcademiaZ Rajshahi."
           tagColor="text-sky-600"
           highlightColor="text-sky-600"
         />

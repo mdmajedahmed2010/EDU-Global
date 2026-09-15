@@ -9,7 +9,7 @@ import {
   IconSparkles,
   IconWhatsApp,
 } from "@/components/ui-blocks";
-import { company, processSteps, services, courses } from "@/lib/site-data";
+import { company, services, courses } from "@/lib/site-data";
 import { useRegisterModal } from "@/components/register-modal";
 import { cn } from "@/lib/utils";
 
@@ -17,18 +17,18 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       {
-        title: "Services & Language Academy | Nexus Global — Japanese N5/N4, German A1, IELTS & Tokyo Support",
+        title: "Services & Academy | AcademiaZ — Japanese N5/N4, TITP & SSW, IELTS & Visa Consultancy | Rajshahi",
       },
       {
         name: "description",
         content:
-          "Explore Nexus Global Language & Skill Training Centre services: Japanese Language (N5/N4 packages), German Goethe A1, IELTS coaching, Spoken English, Kids English, and study abroad pathways in Jashore. Direct Tokyo branch support. Hotlines: 01772-399913 / 01827-167332.",
+          "Explore AcademiaZ services: Japanese Language (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP & SSW career tracks, Student Visas for Japan, IELTS coaching, Spoken English, and Kids English (Ages 5–14) in Rajshahi. Managed directly from Japan (জাপান থেকে পরিচালিত). Hotlines: 01518-951062 / 01632-372232.",
       },
-      { property: "og:title", content: "Services & Academy | Nexus Global Jashore & Tokyo" },
+      { property: "og:title", content: "Services & Academy | AcademiaZ Rajshahi" },
       {
         property: "og:description",
         content:
-          "Japanese N5/N4, German A1, IELTS, Spoken English and Global Admissions with Tokyo Branch Liaison at Nowrin Tower, East Side of Laldighi, Jashore.",
+          "Japanese N5/N4, TITP & SSW programs, Student Visas, IELTS, Spoken English, and Kids English at Kadirganj, Greater Road, Rajshahi. Managed directly from Japan.",
       },
     ],
   }),
@@ -37,71 +37,71 @@ export const Route = createFileRoute("/services")({
 
 const serviceCategories = [
   { id: "all", label: "All Offerings" },
-  { id: "language-courses", label: "Language Academy (Japanese, German, IELTS)" },
-  { id: "study-abroad", label: "Japan, Germany & Global Pathways" },
-  { id: "tokyo-branch", label: "Tokyo Liaison Branch Care" },
+  { id: "language-courses", label: "Language Academy (Japanese, IELTS, Spoken)" },
+  { id: "study-abroad", label: "Japan Visa & Career Tracks" },
+  { id: "japan-managed", label: "Japan-Based Direct Oversight" },
   { id: "free-file", label: "Free Profile Assessment" },
 ];
 
 const comparisonData = [
   {
     feature: "Profile Assessment & Counseling",
-    nexusGlobal: "100% Free Transparent Assessment & Personalized Strategy",
+    academiaZ: "100% Free Transparent Assessment & Personalized Career Roadmap",
     traditional: "Exorbitant upfront fees with vague assurances",
     highlight: true,
   },
   {
-    feature: "Japan Language & Career Track",
-    nexusGlobal: "Intensive N5/N4 packages, free books & Tokyo office reception",
-    traditional: "Generic coaching with no on-arrival overseas support",
+    feature: "Japanese Language Training",
+    academiaZ: "Intensive JLPT N5/N4, NAT-TEST & JFT-Basic with Kanji drills & listening lab",
+    traditional: "Generic coaching with no exam-specific mock testing",
     highlight: true,
   },
   {
-    feature: "Germany & Ausbildung Track",
-    nexusGlobal: "Goethe A1 standard (Netzwerk Neu), Ausbildung and university guidance",
-    traditional: "Pushes costly private colleges without proper language preparation",
+    feature: "Management & Operational Origin",
+    academiaZ: "Directly managed and supervised from Japan (জাপান থেকে পরিচালিত)",
+    traditional: "Third-party middlemen with zero direct overseas authority",
     highlight: true,
   },
   {
-    feature: "Learning Materials & Support",
-    nexusGlobal: "Free textbooks, listening audio, and free extra classes until fluency",
-    traditional: "Additional hidden fees for books and study materials",
+    feature: "Work & Career Programs in Japan",
+    academiaZ: "TITP Technical Intern & SSW Specified Skilled Worker mentorship",
+    traditional: "Misleading promises without verified immigration category knowledge",
     highlight: true,
   },
   {
-    feature: "International Physical Office",
-    nexusGlobal: "Nexus Group liaison branch in Shin-Koiwa, Tokyo, Japan",
-    traditional: "Zero international branches; students left alone on arrival",
+    feature: "English & IELTS Academy",
+    academiaZ: "Cambridge-standard IELTS 7.5+, Spoken English & Kids English (Ages 5–14)",
+    traditional: "Impersonal large batches with no 1-on-1 speaking feedback",
     highlight: true,
   },
   {
-    feature: "Prime Campus in Jashore",
-    nexusGlobal: "Nowrin Tower (3rd Floor), East Side of Laldighi, Sadar, Jashore",
-    traditional: "Unverified agents operating without dedicated training facilities",
+    feature: "Centrally Located Campus in Rajshahi",
+    academiaZ: "Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi - 6000",
+    traditional: "Unverified agents operating without dedicated classroom infrastructure",
     highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "How does Nexus Global support Japanese language learners and Japan visa applicants?",
-    a: "We offer an intensive 3-month Japanese N5/N4 package taught 6 days a week (2 hours daily) using Minna no Nihongo. We provide free books, audio listening materials, and free extra classes. Once ready, our counselors guide your student or SSW (Specified Skilled Worker) visa application, coordinated directly with our Tokyo liaison office in Shin-Koiwa for airport reception and initial accommodation.",
+    q: "How does AcademiaZ support Japanese language learners and Japan visa applicants?",
+    a: "We offer intensive Japanese N5 and N4 level courses designed for JLPT, NAT-TEST, and JFT-Basic exams using the standard Minna no Nihongo curriculum. Classes focus on Kanji mastery, grammatical precision, and listening comprehension. Because our management is based directly in Japan, our counselors guide your COE (Certificate of Eligibility) and visa application with verified up-to-date immigration guidelines.",
   },
   {
-    q: "What is included in the German Language (A1) Course at Nexus Academy?",
-    a: "Our German course follows the official Goethe-Institut syllabus using Netzwerk Neu A1 and Grammatik Aktiv A1-B1. Classes run 5 days a week (1.5 hours daily) across 3 months. Students receive free textbooks, audio files, grammar worksheets, regular diagnostic quizzes, and complete guidance for tuition-free German universities or dual vocational Ausbildung programs.",
+    q: "What is the difference between Japan Student Visa, TITP, and SSW programs?",
+    a: "1) Student Visa allows you to enroll in Japanese language academies or universities with permission to work part-time (up to 28 hours/week). 2) TITP (Technical Intern Training Program) is a structured technical internship in Japan for vocational skills development. 3) SSW (Specified Skilled Worker) is a full-fledged employment visa for candidates who pass the Japanese language exam (N4/JFT) and specific occupational skills tests. AcademiaZ provides comprehensive training for all three tracks.",
   },
   {
-    q: "What direct services are provided by the Tokyo Liaison Branch in Japan?",
-    a: "Our Tokyo office (Shin-Koiwa, Tokyo, Helpline: +81 90 7705 8380) handles on-the-ground support for our students: airport reception upon landing in Japan, orientation in Tokyo, assistance with student residence registration and part-time job search guidance in compliance with Japanese immigration regulations (up to 28 hours per week).",
+    q: "Why is 'Japan-Based Direct Management' a major advantage for students?",
+    a: "AcademiaZ is managed and directed by professionals currently living and working in Japan. This provides authentic insights into Japanese campus life, living costs, university admission standards, interview expectations, and post-arrival settlement that typical domestic agents cannot offer.",
   },
   {
-    q: "What English training programs are offered at Nexus Academy Jashore?",
-    a: "We provide: 1) IELTS Academic & General Training (target Band 7.5+ with Cambridge mock exams), 2) Spoken English for daily fluency and corporate interviews, 3) Kids English for children aged 5–14 (phonics, vocabulary, confidence), and 4) English Grammar Foundation.",
+    q: "What English training programs are offered at AcademiaZ Rajshahi?",
+    a: "We provide: 1) IELTS Academic & General Training (targeting Band 7.5+ with Cambridge mock exams), 2) Spoken English for corporate and conversational fluency, 3) Kids English for children aged 5–14 (phonics, vocabulary, confidence building), and 4) English Grammar Foundation.",
   },
   {
-    q: "Where is Nexus Global located in Jashore and when can I visit?",
-    a: "Our headquarters is at Nowrin Tower (3rd Floor), East Side of Laldighi, beside Kacchi Queen / backside of Sonali Bank Corporate Branch, Sadar, Jashore - 7400. We are open Saturday through Thursday (9:00 AM – 8:00 PM) for free in-person counseling.",
+    q: "Where is AcademiaZ located in Rajshahi and when can I visit?",
+    a: "Our academy is located at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000. We are open Saturday through Thursday (9:00 AM – 8:00 PM) for free in-person counseling and level assessments.",
   },
 ];
 
@@ -114,11 +114,11 @@ function Services() {
     <>
       {/* 1. High-Impact Page Hero with Breadcrumbs */}
       <PageHero
-        eyebrow="Admissions, Academy & Visas"
-        title="Comprehensive Education & Skill Training Services"
-        subtitle="Specialized foreign language mastery in Japanese (N5/N4) and German (A1 Goethe), paired with IELTS, Spoken English, and global higher education pathways backed by our Tokyo branch."
-        image="/latest-assets/banner.jpg"
-        imageAlt="Nexus Global admissions and language academy Jashore"
+        eyebrow="Academic, Language & Visa Services"
+        title="Comprehensive Japanese Training & Visa Solutions"
+        subtitle="Specialized foreign language mastery in Japanese (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP & SSW career tracks, student visa processing, and communicative English courses supervised under our Japan-based management."
+        image="/banner.jpg"
+        imageAlt="AcademiaZ admissions and language academy Rajshahi"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -126,18 +126,18 @@ function Services() {
             <button
               type="button"
               onClick={open}
-              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 cursor-pointer"
+              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 cursor-pointer font-bold"
             >
               <span>Book Free Profile Assessment</span>
               <IconSparkles className="w-4 h-4" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello Nexus Global! I would like to inquire about your language courses and study abroad guidance in Jashore.",
+                "Hello AcademiaZ! I would like to inquire about your Japanese courses, visa guidance, and English programs in Rajshahi.",
               )}`}
               target="_blank"
               rel="noreferrer"
-              className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900"
+              className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900 font-bold"
             >
               <IconWhatsApp className="w-4 h-4 text-emerald-600" />
               <span>WhatsApp: {company.phones[0]}</span>
@@ -175,13 +175,13 @@ function Services() {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
               <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
-              <span>Nexus Language Academy</span>
+              <span>AcademiaZ Language Academy</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Japanese (N5/N4), German (A1) & <span className="text-sky-600">IELTS / English Programs</span>
+              Japanese (N5/N4), IELTS, Spoken & <span className="text-sky-600">Kids English</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Comprehensive curriculum with experienced trainers, multimedia audio-visual facilities, free books, and regular diagnostic tests at Nowrin Tower, East Side of Laldighi, Jashore.
+              Comprehensive curriculum with experienced educators, multimedia listening audio facilities, free course materials, and regular diagnostic tests at Kadirganj, Rajshahi.
             </p>
           </div>
 
@@ -244,18 +244,18 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-sky-600/30 cursor-pointer"
+                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-sky-600/30 cursor-pointer font-bold"
                   >
                     <span>Enroll / Free Demo Class</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello Nexus Global! I want to join the next ${course.title} batch in Jashore. Please send fee and schedule.`,
+                      `Hello AcademiaZ! I want to join the next ${course.title} batch in Rajshahi. Please send fee and schedule.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn-luxury-secondary w-full text-xs py-2.5 justify-center text-slate-900"
+                    className="btn-luxury-secondary w-full text-xs py-2.5 justify-center text-slate-900 font-bold"
                   >
                     <IconWhatsApp className="w-4 h-4 text-emerald-600" />
                     <span>WhatsApp Inquiry</span>
@@ -281,22 +281,22 @@ function Services() {
               Higher Education Admissions & <span className="text-sky-600">Visa Processing</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From initial profile assessment at our Jashore campus to embassy interview drills and Tokyo airport reception, we guide your journey with integrity.
+              From initial profile evaluation at our Kadirganj campus to COE issuance, Japanese visa processing, and post-arrival settlement, we guide your journey with integrity.
             </p>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div
-                key={service.slug}
+                key={service.id}
                 className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-sky-500/40 hover:shadow-lg transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{service.icon}</span>
-                    {service.highlightBadge && (
+                    {service.badge && (
                       <span className="rounded-full bg-sky-50 text-sky-700 border border-sky-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
-                        {service.highlightBadge}
+                        {service.badge}
                       </span>
                     )}
                   </div>
@@ -305,15 +305,15 @@ function Services() {
                     {service.title}
                   </h3>
 
-                  <p className="text-xs text-slate-600 leading-relaxed">{service.summary}</p>
+                  <p className="text-xs text-slate-600 leading-relaxed">{service.overview}</p>
 
                   <div className="pt-2 border-t border-slate-100">
-                    <BulletList items={service.points} />
+                    <BulletList items={service.benefits} />
                   </div>
                 </div>
 
                 <div className="pt-5 border-t border-slate-100 mt-5 flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-semibold">{service.timeline}</span>
+                  <span className="text-slate-500 font-semibold">{service.intakeNote || "Open for Enrollment"}</span>
                   <button
                     type="button"
                     onClick={open}
@@ -330,7 +330,7 @@ function Services() {
       )}
 
       {/* 5. Destinations & Visa Categories Comprehensive Showcase */}
-      {(activeCategory === "all" || activeCategory === "tokyo-branch" || activeCategory === "study-abroad") && (
+      {(activeCategory === "all" || activeCategory === "japan-managed" || activeCategory === "study-abroad") && (
         <section className="section-shell py-16 border-t border-slate-200">
           <div className="rounded-3xl border border-slate-800 bg-[#0B1528] p-8 sm:p-12 text-white shadow-2xl">
             <div className="text-center max-w-2xl mx-auto mb-10">
@@ -338,10 +338,10 @@ function Services() {
                 Global Destinations & Visas
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Pathways Processed by Nexus Global
+                Top Pathways Processed by AcademiaZ
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                Specialized processing for Japan (with Tokyo liaison reception), tuition-free German universities & Ausbildung, Malaysia, UK, Canada, Australia, and the USA.
+                Specialized processing for Japan (with direct Japan-based oversight), tuition-free European universities, Malaysia, UK, Canada, Australia, and the USA.
               </p>
             </div>
 
@@ -350,19 +350,19 @@ function Services() {
                 {
                   title: "Japan",
                   icon: "🇯🇵",
-                  desc: "Japanese language schools, SSW vocational tracks, and direct reception by our Tokyo liaison office in Shin-Koiwa.",
+                  desc: "Japanese language academies, vocational schools, universities, and SSW/TITP career tracks with 100% Japan-based management.",
                   badge: "Flagship #1",
                 },
                 {
                   title: "Germany",
                   icon: "🇩🇪",
-                  desc: "Tuition-free public universities, dual Ausbildung vocational training, Goethe A1 preparation, and 18-month job search visa.",
-                  badge: "Flagship #2",
+                  desc: "Tuition-free public universities, dual Ausbildung vocational programs, and 18-month post-study work rights.",
+                  badge: "Europe Track",
                 },
                 {
                   title: "Malaysia",
                   icon: "🇲🇾",
-                  desc: "Affordable global degrees, fast EMGS processing, high visa ratio, and credit transfer options to UK/Australia.",
+                  desc: "Affordable world-ranked campuses, fast EMGS approval, and credit transfer pathways to UK and Australia.",
                   badge: "Fast Visa Hub",
                 },
                 {
@@ -374,13 +374,13 @@ function Services() {
                 {
                   title: "United Kingdom",
                   icon: "🇬🇧",
-                  desc: "1-year master's degrees, fast CAS issuance, merit bursaries, and 2-year Graduate Route Post-Study Work visa.",
+                  desc: "1-year master's degrees, fast CAS turnaround, merit scholarships, and 2-year Graduate Route Post-Study Work visa.",
                   badge: "Popular Master's",
                 },
                 {
                   title: "Australia",
                   icon: "🇦🇺",
-                  desc: "World top-ranked universities, high student minimum wage rates, and Subclass 500 visa documentation.",
+                  desc: "World top-ranked universities, high minimum wages for students, and Subclass 500 visa compliance.",
                   badge: "Top Living",
                 },
                 {
@@ -392,7 +392,7 @@ function Services() {
                 {
                   title: "Schengen Europe",
                   icon: "🇪🇺",
-                  desc: "English-taught degrees in Finland, Spain, and Greece with European Schengen visa mobility.",
+                  desc: "English-taught programs across Europe with 29-country Schengen visa mobility and post-study opportunities.",
                   badge: "29 Countries",
                 },
               ].map((v) => (
@@ -432,10 +432,10 @@ function Services() {
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-sky-600">Nexus Global</span>
+            Why Students Choose <span className="text-sky-600">AcademiaZ</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our personalized language coaching, Tokyo branch reception, and dedicated counseling against traditional commercial agencies.
+            Compare our authentic Japan-managed standard, JLPT N5/N4 curriculum, and dedicated counseling against traditional commercial agencies.
           </p>
         </div>
 
@@ -445,8 +445,8 @@ function Services() {
               <thead className="bg-slate-950 text-white font-display uppercase tracking-wider text-[0.7rem]">
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
-                  <th className="p-4 sm:p-5 text-sky-400 font-extrabold bg-slate-900">
-                    ★ Nexus Global (Jashore & Tokyo)
+                  <th className="p-4 sm:p-5 text-amber-400 font-extrabold bg-slate-900">
+                    ★ AcademiaZ (Japan Managed)
                   </th>
                   <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
                 </tr>
@@ -464,7 +464,7 @@ function Services() {
                     <td className="p-4 sm:p-5 font-bold text-sky-800 bg-sky-50/40">
                       <div className="flex items-center gap-2">
                         <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.nexusGlobal}</span>
+                        <span>{row.academiaZ}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -487,7 +487,7 @@ function Services() {
             Our Proven 5-Step Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Structured preparation from profile assessment at Nowrin Tower, Jashore to visa stamping and Tokyo reception.
+            Structured preparation from profile evaluation at Kadirganj, Rajshahi to visa stamping and Japan arrival.
           </p>
         </div>
 
@@ -517,7 +517,7 @@ function Services() {
             Frequently Asked Questions on Services
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Clear, transparent answers about Japanese N5/N4, German A1, IELTS coaching, Tokyo office reception, and visa processing.
+            Clear, transparent answers about Japanese N5/N4, TITP & SSW work programs, IELTS coaching, Japan-based management, and visa processing.
           </p>
         </div>
 

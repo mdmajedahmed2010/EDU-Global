@@ -8,53 +8,43 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      stepColor: "bg-sky-600 text-white",
-      dotPosition: "bottom",
-      dotColor: "bg-sky-600",
+      stepColor: "bg-[#0a1931] text-amber-400",
       icon: "🔍",
-      iconBg: "bg-sky-50 text-sky-600",
+      iconBg: "bg-amber-50 text-amber-700",
       title: "Free Profile Assessment",
-      desc: "Meet our counselors at Nowrin Tower, East Side of Laldighi, Jashore or consult online. We evaluate your CGPA, language readiness, and target country.",
+      desc: "কাদিরগঞ্জ, গ্রেটার রোড, রাজশাহীতে আমাদের অফিসে আসুন অথবা অনলাইনে ফ্রি প্রোফাইল মূল্যায়ন করুন।",
     },
     {
       step: "02",
-      stepColor: "bg-slate-900 text-white",
-      dotPosition: "top",
-      dotColor: "bg-slate-900",
-      icon: "📚",
-      iconBg: "bg-slate-100 text-slate-800",
+      stepColor: "bg-amber-500 text-slate-950 font-black",
+      icon: "⛩️",
+      iconBg: "bg-amber-100 text-amber-900",
       title: "Language Training",
-      desc: "Enroll in our Japanese (N5/N4), Goethe-standard German (A1), or IELTS batches with 100% free books and personalized speaking care.",
+      desc: "জাপান থেকে পরিচালিত ১০০% জাপান স্ট্যান্ডার্ডে Japanese N5/N4, SSW বা IELTS কোর্সে ভর্তি হোন।",
     },
     {
       step: "03",
-      stepColor: "bg-sky-600 text-white",
-      dotPosition: "bottom",
-      dotColor: "bg-sky-600",
+      stepColor: "bg-[#0a1931] text-amber-400",
       icon: "📋",
-      iconBg: "bg-sky-50 text-sky-600",
-      title: "Application & COE Support",
-      desc: "Official application lodgement for Japanese language academies, universities in Germany/Malaysia/UK, and COE (Certificate of Eligibility) processing.",
+      iconBg: "bg-blue-50 text-blue-700",
+      title: "Application & COE",
+      desc: "জাপানের শীর্ষ ল্যাঙ্গুয়েজ স্কুল ও বিশ্ববিদ্যালয়ের অ্যাডমিশন এবং COE ফাইল প্রসেসিং সম্পন্ন করা।",
     },
     {
       step: "04",
       stepColor: "bg-slate-900 text-white",
-      dotPosition: "top",
-      dotColor: "bg-slate-900",
       icon: "✓",
       iconBg: "bg-slate-100 text-slate-800",
-      title: "Visa File & Mock Interviews",
-      desc: "Thorough financial document verification, custom Statement of Purpose (SOP) drafting, and rigorous 1-on-1 embassy mock interview sessions.",
+      title: "Visa File & Mock Prep",
+      desc: "স্পন্সর ডকুমেন্টেশন ভেরিফিকেশন, SOP ড্রাফটিং এবং ১-অন-১ অ্যাম্ব্যাসি মক ইন্টারভিউ প্রস্তুতি।",
     },
     {
       step: "05",
-      stepColor: "bg-orange-600 text-white",
-      dotPosition: "bottom",
-      dotColor: "bg-orange-600",
+      stepColor: "bg-red-600 text-white",
       icon: "✈",
-      iconBg: "bg-orange-50 text-orange-600",
-      title: "Visa & Tokyo Reception",
-      desc: "Celebrate your visa approval! Attend our pre-departure briefing, flight booking, and get connected with our Tokyo office in Shin-Koiwa for arrival reception.",
+      iconBg: "bg-red-50 text-red-600",
+      title: "Visa & Pre-Departure",
+      desc: "ভিসা সফলতার আনন্দ! ফ্লাইট বুকিং, প্রি-ডিপার্চার ব্রিফিং এবং জাপানে আগমনের পর প্রয়োজনীয় গাইডলাইন।",
     },
   ];
 
@@ -63,12 +53,12 @@ export function HowItWorksSection() {
       <div className="section-shell">
         {/* Animated Section Header */}
         <MotionHeading
-          tag="— YOUR ADMISSION ROADMAP —"
+          tag="— YOUR ACADEMIAZ ROADMAP —"
           title="How It"
           highlight="Works"
-          description="Your transparent path to studying abroad and foreign language mastery with Nexus Global in 5 simple, structured steps."
-          tagColor="text-sky-600"
-          highlightColor="text-sky-600"
+          description="স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! মাত্র ৫টি সহজ ও সুনির্দিষ্ট ধাপে আপনার জাপান ও বৈশ্বিক লক্ষ্য অর্জন করুন।"
+          tagColor="text-amber-600"
+          highlightColor="text-amber-600"
         />
 
         {/* 5 Step Roadway Cards with Stagger Animation */}
@@ -82,7 +72,7 @@ export function HowItWorksSection() {
           >
             {steps.map((s) => (
               <StaggerItem key={s.step} className="h-full">
-                <div className="relative rounded-3xl border border-slate-200/90 bg-white p-6 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-400/50 flex flex-col justify-between hover-lift group h-full">
+                <div className="relative rounded-3xl border border-slate-200/90 bg-white p-6 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 flex flex-col justify-between hover-lift group h-full">
                   {/* Step Number Badge */}
                   <div
                     className={`absolute -top-3 -right-3 flex h-9 w-9 items-center justify-center rounded-full text-xs font-black shadow-md transition-transform duration-300 group-hover:scale-110 ${s.stepColor}`}
@@ -99,10 +89,16 @@ export function HowItWorksSection() {
 
                   {/* Content */}
                   <div>
-                    <h3 className="font-display text-base font-bold text-slate-900 mb-2">
+                    <h3 className="font-display text-base font-bold text-slate-950 mb-2 leading-snug">
                       {s.title}
                     </h3>
-                    <p className="text-xs text-slate-500 leading-relaxed font-medium">{s.desc}</p>
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed font-bangla">{s.desc}</p>
+                  </div>
+
+                  {/* Bottom Accent */}
+                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[0.68rem] text-slate-400 font-semibold">
+                    <span>ধাপ {s.step}</span>
+                    <span className="text-amber-600">AcademiaZ ›</span>
                   </div>
                 </div>
               </StaggerItem>
@@ -115,9 +111,9 @@ export function HowItWorksSection() {
           <button
             type="button"
             onClick={open}
-            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-lg active:scale-95 text-white"
+            className="inline-flex items-center gap-2 rounded-xl bg-[#0a1931] hover:bg-[#0f2c59] text-amber-400 px-6 py-3 text-xs sm:text-sm font-bold shadow-md transition-all active:scale-95 cursor-pointer border border-amber-500/30"
           >
-            <span>Start Step 01: Book Free Consultation</span>
+            <span>আজই আপনার পরিকল্পনা শুরু করুন</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
         </div>

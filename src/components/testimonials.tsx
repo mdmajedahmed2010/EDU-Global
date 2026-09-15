@@ -32,7 +32,7 @@ export function Testimonials() {
           tag="— VERIFIED REVIEWS & SUCCESS STORIES —"
           title="What our students"
           highlight="say"
-          description="Real feedback from Japanese N5/N4 learners, German A1 Goethe course students, IELTS test takers, and candidates assisted by our Jashore campus and Tokyo branch."
+          description="Real feedback from Japanese N5/N4 learners, TITP & SSW candidates, IELTS test takers, and students guided by AcademiaZ Rajshahi."
           tagColor="text-sky-600"
           highlightColor="text-sky-600"
         />

@@ -7,12 +7,12 @@ const posters = [
   {
     key: "logo",
     src: "/logo.jpg",
-    label: "Nexus Global Language and Skill Training Centre — Official Circular Brand Emblem (Jashore & Tokyo)",
+    label: "AcademiaZ — Official Circular Brand Emblem (Navy & Gold, Learn · Grow · Achieve)",
   },
   {
     key: "banner",
-    src: "/latest-assets/banner.jpg",
-    label: "Nexus Global — Corporate Visual & International Pathway Network (From Jashore TO THE WORLD)",
+    src: "/banner.jpg",
+    label: "AcademiaZ — Japanese Language Training & Visa Consultancy (Kadirgonj, Rajshahi)",
   },
 ];
 
@@ -26,7 +26,7 @@ export function PosterWall() {
         <SectionHeading
           eyebrow="Official Brand Assets"
           title="Official Visuals & Brand Memorabilia"
-          subtitle="Explore official assets and brand emblems from Nexus Global — click any asset to enlarge."
+          subtitle="Explore official assets and brand identity from AcademiaZ — click any asset to enlarge."
         />
       </Reveal>
 

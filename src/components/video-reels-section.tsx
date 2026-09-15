@@ -4,12 +4,14 @@ import { SlideIn } from "@/components/motion-wrapper";
 
 export function VideoReelsSection({
   title = "Official Facebook Video Reels & Classroom Life",
-  subtitle = "Watch real batch sessions, student guidance, and inside tour of Nexus Academy Jashore.",
+  subtitle = "Watch real batch sessions, Japanese pronunciation practice, and student guidance from AcademiaZ Rajshahi.",
 }: {
   title?: string;
   subtitle?: string;
 }) {
-  const reels = company.featuredReels;
+  const reels = company.featuredReels || [];
+
+  if (!reels || reels.length === 0) return null;
 
   return (
     <section className="section-shell py-12 sm:py-16">
@@ -84,7 +86,7 @@ export function VideoReelsSection({
                   </a>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello Nexus Global! I watched your video reel on "${reel.title}" and would like more details about enrollment.`,
+                      `Hello AcademiaZ! I watched your video on "${reel.title}" and would like more details about enrollment.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"

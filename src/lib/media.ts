@@ -1,19 +1,19 @@
 /**
- * NEXUS GLOBAL / NEXUS ACADEMY — Official Verified Media & Brand Assets.
+ * ACADEMIAZ — Official Verified Media & Brand Assets.
  * Verified from:
- *  - Official Logo: logo.jpg (Circular emblem with warm orange and ocean blue gradient, white 'N' swoosh, taking-off airplane)
- *  - Official Facebook: https://www.facebook.com/nexusacademyjessore/
- *  - Headquarters: Nowrin Tower / Pitha Bari Tower, 3rd Floor, East Side of Laldighi, Beside Kacchi Queen, Sadar, Jashore
- *  - Tokyo Liaison Branch: Nexus Group, Shin-Koiwa, Tokyo, Japan
+ *  - Official Logo: logo.jpg (Intertwined AZ circular insignia, Navy & Gold, "LEARN · GROW · ACHIEVE")
+ *  - Official Facebook: https://www.facebook.com/AcademiaZRajshahi
+ *  - Campus: Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000
+ *  - Direct Management: Japan-Based Direct Oversight ("জাপান থেকে পরিচালিত")
  */
 
 export const mediaUrls: Record<string, string> = {
-  // Official Nexus Global Brand Assets
+  // Official AcademiaZ Brand Assets
   logo: "/logo.jpg",
-  "logo-fallback": "/assets/logo.jpg",
+  "logo-fallback": "/brand-assets/logo.jpg",
   banner: "/banner.jpg",
   "hero-banner": "/banner.jpg",
-  "hero-banner-png": "/banner.png",
+  "hero-banner-brand": "/brand-assets/banner.jpg",
 };
 
 export function getMediaUrl(key: string, fallback?: string): string {

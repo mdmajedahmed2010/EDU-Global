@@ -6,7 +6,7 @@ export function ChatWidget() {
   const [showCallMenu, setShowCallMenu] = useState(false);
 
   const whatsappUrl = `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    "Hello Nexus Global! I would like to consult about Japanese/German language courses and study abroad pathways.",
+    "Hello AcademiaZ! I would like to consult about Japanese language courses (N5/N4), Japan student visa / SSW, and IELTS/English courses in Rajshahi.",
   )}`;
 
   const messengerUrl = company.social.messenger;
@@ -19,7 +19,7 @@ export function ChatWidget() {
           {/* Action 1: Facebook Messenger */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              Facebook Messenger (@nexusacademyjessore)
+              Facebook Messenger (@AcademiaZRajshahi)
             </span>
             <a
               href={messengerUrl}
@@ -37,7 +37,7 @@ export function ChatWidget() {
           {/* Action 2: Direct Phone Call Hotlines */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              Direct Hotlines (Jashore HQ)
+              Direct Hotlines (Rajshahi Campus)
             </span>
             <button
               type="button"
@@ -54,20 +54,20 @@ export function ChatWidget() {
             {showCallMenu && (
               <div className="absolute right-full mr-3 bottom-0 w-64 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl animate-in fade-in duration-150">
                 <p className="text-[0.68rem] font-bold uppercase tracking-wider text-slate-500 mb-2">
-                  Nexus Global অফিস হটলাইন:
+                  AcademiaZ অফিস হটলাইন:
                 </p>
                 <div className="space-y-1.5">
                   <a
                     href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
                     className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-sky-500 hover:text-sky-600 transition-colors"
                   >
-                    📞 {company.phones[0]} (WhatsApp / Jashore)
+                    📞 {company.phones[0]} (WhatsApp / Rajshahi)
                   </a>
                   <a
                     href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
                     className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-sky-500 hover:text-sky-600 transition-colors"
                   >
-                    📞 {company.phones[1]} (Jashore Office)
+                    📞 {company.phones[1]} (Rajshahi Office)
                   </a>
                 </div>
               </div>

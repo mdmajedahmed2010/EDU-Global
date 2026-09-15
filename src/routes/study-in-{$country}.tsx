@@ -11,11 +11,11 @@ export const Route = createFileRoute("/study-in-{$country}")({
   head: ({ loaderData }) => {
     const d = loaderData?.destination;
     const title = d
-      ? `Study & Work in ${d.name} from Bangladesh | Nexus Global — Jashore & Tokyo`
-      : "Study Abroad Destinations | Nexus Global";
+      ? `Study & Work in ${d.name} from Bangladesh | AcademiaZ — Rajshahi & Japan Oversight`
+      : "Study Abroad Destinations | AcademiaZ";
     const description = d
-      ? `${d.tagline}. University admissions, language prep, and visa guidance for ${d.name} from Nexus Global Language & Skill Training Centre. Nowrin Tower, East Side of Laldighi, Jashore. Hotline: ${company.phones[0]}.`
-      : "Study abroad guidance from Nexus Global.";
+      ? `${d.tagline}. Institutional admissions, language preparation, and visa guidance for ${d.name} from AcademiaZ. Kadirganj, Greater Road, Rajshahi. Hotline: ${company.phones[0]}.`
+      : "Study abroad and career guidance from AcademiaZ.";
     return {
       meta: [
         { title },
@@ -32,7 +32,7 @@ function DestinationPage() {
   const { destination: d } = Route.useLoaderData();
 
   const whatsappHref = () => {
-    const text = `Hello Nexus Global! I want to explore higher education / work pathways in ${d.name}.\n\nPlease guide me on admission requirements, scholarships, language courses, and upcoming intake deadlines.`;
+    const text = `Hello AcademiaZ! I want to explore education / career pathways in ${d.name}.\n\nPlease guide me on admission requirements, scholarships, language courses, and upcoming intake deadlines.`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -42,8 +42,8 @@ function DestinationPage() {
         eyebrow={`${d.flag} ${d.region} · Verified Pathway`}
         title={`Pathway to ${d.name}`}
         subtitle={d.tagline}
-        image="/latest-assets/banner.jpg"
-        imageAlt={`Study in ${d.name} — Nexus Global guidance`}
+        image="/banner.jpg"
+        imageAlt={`Study in ${d.name} — AcademiaZ guidance`}
       >
         <div className="space-y-6">
           <Breadcrumbs
@@ -116,7 +116,7 @@ function DestinationPage() {
             {/* Why Study in Country */}
             <div className="rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm">
               <h2 className="font-display text-xl font-black text-slate-900 mb-4">
-                Why Choose {d.name} with Nexus Global?
+                Why Choose {d.name} with AcademiaZ?
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 font-medium">
                 {d.intro}
@@ -152,10 +152,10 @@ function DestinationPage() {
                 Direct Counselor Support
               </span>
               <h3 className="font-display text-lg font-black text-slate-900">
-                Apply for {d.name} with Nexus Global
+                Apply for {d.name} with AcademiaZ
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                Connect directly with our Jashore counselors and Tokyo liaison branch for institutional shortlisting,
+                Connect directly with our Rajshahi counselors and Japan-based advisory desk for institutional shortlisting,
                 document preparation, and fast-track visa filing.
               </p>
 
@@ -178,13 +178,13 @@ function DestinationPage() {
 
               <div className="border-t border-slate-100 pt-4 text-xs text-slate-600 space-y-2">
                 <p>
-                  <strong>📍 Jashore HQ:</strong> {company.offices.headquarters.address}
+                  <strong>📍 Rajshahi Campus:</strong> {company.address.full}
                 </p>
                 <p>
-                  <strong>🇯🇵 Tokyo Branch:</strong> {company.offices.international.name} ({company.offices.international.phone})
+                  <strong>🇯🇵 Management:</strong> Managed Directly from Japan (জাপান থেকে পরিচালিত)
                 </p>
                 <p>
-                  <strong>🎓 Language Academy:</strong> Japanese N5/N4 • German A1 • IELTS • Spoken
+                  <strong>🎓 Language Academy:</strong> Japanese N5/N4 • TITP/SSW • IELTS • Spoken
                 </p>
                 <p>
                   <strong>🕒 Hours:</strong> {company.hours}

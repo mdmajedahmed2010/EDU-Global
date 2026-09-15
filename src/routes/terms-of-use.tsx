@@ -5,17 +5,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use | Nexus Global — Jashore & Tokyo" },
+      { title: "Terms of Use | AcademiaZ — Rajshahi & Japan Oversight" },
       {
         name: "description",
         content:
-          "Terms and conditions governing language training and educational advisory services at Nexus Global Language and Skill Training Centre in Jashore and Tokyo.",
+          "Terms and conditions governing language training and educational advisory services at AcademiaZ in Rajshahi.",
       },
-      { property: "og:title", content: "Terms of Use | Nexus Global" },
+      { property: "og:title", content: "Terms of Use | AcademiaZ" },
       {
         property: "og:description",
         content:
-          "Terms governing our language academy, skill training, and overseas pathway guidance.",
+          "Terms governing our Japanese language academy, TITP/SSW preparation, and overseas pathway guidance.",
       },
     ],
   }),
@@ -25,23 +25,23 @@ export const Route = createFileRoute("/terms-of-use")({
 const sections = [
   {
     title: "1. Scope of Language & Advisory Services",
-    body: "Nexus Global Language and Skill Training Centre provides specialized foreign language training (Japanese N5/N4, German Goethe A1, IELTS, Spoken English, Kids English), university/language school selection, application processing, and visa file preparation for destinations including Japan, Germany, Malaysia, UK, Canada, Australia, and USA. Statutory third-party costs (such as official embassy visa fees, medical tests, language exam fees, and courier services) are paid directly to the respective authorities or test providers.",
+    body: "AcademiaZ provides specialized Japanese language training (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP/SSW career preparation, IELTS coaching, Spoken English, Kids English, school selection, application processing, and visa file preparation for Japan and global destinations. Statutory third-party costs (such as official embassy visa fees, medical tests, language exam fees, and courier services) are paid directly to the respective authorities or test providers.",
   },
   {
     title: "2. Document Authenticity & Applicant Responsibility",
-    body: "Applicants and learners are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. Nexus Global adheres to strict legal standards and has zero tolerance for fraudulent submissions.",
+    body: "Applicants and learners are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. AcademiaZ adheres to strict legal standards and has zero tolerance for fraudulent submissions.",
   },
   {
     title: "3. Admissions & Visa Decisions Disclaimer",
-    body: "Admission offers, scholarships, and visa approvals are decided strictly by sovereign immigration authorities (such as the Immigration Services Agency of Japan, German Federal Foreign Office, and respective embassies) and educational institutions. Nexus Global provides expert coaching, rigorous document auditing, and mock interview preparations, but does not claim jurisdiction over sovereign visa grants.",
+    body: "Admission offers, scholarships, and visa approvals are decided strictly by sovereign immigration authorities (such as the Immigration Services Agency of Japan, Embassy of Japan in Dhaka, and respective consulates) and educational institutions. AcademiaZ provides expert coaching, rigorous document auditing, and mock interview preparations, but does not claim jurisdiction over sovereign visa grants.",
   },
   {
     title: "4. Academy & Batch Policies",
-    body: "Students enrolled in our Japanese, German, IELTS, or Spoken English programs receive official study materials and structured class access. Nexus Global reserves the right to maintain discipline, academic rigor, and batch integrity to safeguard student progress.",
+    body: "Students enrolled in our Japanese, IELTS, or English programs receive official study materials and structured class access. AcademiaZ reserves the right to maintain discipline, academic rigor, and batch integrity to safeguard student progress.",
   },
   {
     title: "5. Contact & Inquiries",
-    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Jashore Headquarters at ${company.offices.headquarters.address}.`,
+    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Rajshahi Campus at ${company.address.full}.`,
   },
 ];
 

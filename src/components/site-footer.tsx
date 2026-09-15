@@ -19,8 +19,8 @@ export function SiteFooter() {
   };
 
   return (
-    <footer className="bg-[#0b1329] text-white pt-16 pb-24 md:pb-16 text-xs relative overflow-hidden border-t border-sky-500/30">
-      {/* Subtle Dark Radial Pattern */}
+    <footer className="bg-[#061122] text-white pt-16 pb-24 md:pb-16 text-xs relative overflow-hidden border-t border-amber-500/30">
+      {/* Subtle Dark Pattern */}
       <div className="absolute inset-0 bg-radial-pattern opacity-10 pointer-events-none" />
 
       <div className="section-shell relative z-10">
@@ -33,28 +33,25 @@ export function SiteFooter() {
           <StaggerItem direction="up" distance={24}>
             <div className="space-y-6">
               <Link to="/" className="inline-flex items-center gap-3">
-                <BrandLogo size={48} withText textClassName="flex text-white" variant="dark" />
+                <BrandLogo size={50} withText textClassName="flex text-white" variant="dark" />
               </Link>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md font-medium">
-                {company.tagline} Empowering students and professionals with world-class foreign language
-                mastery (Japanese, German, English, Malay) and 100% comprehensive visa guidance for Japan,
-                Germany, Malaysia, UK, Canada, and Europe.
+                {company.tagline} {company.bengaliHeadline}
               </p>
 
               {/* Newsletter Subscription Box */}
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md max-w-md">
                 <div className="text-sm font-bold text-white mb-1">
-                  Stay Updated on Language Batches & Intakes
+                  Stay Updated on Japanese Batches & Intakes
                 </div>
                 <p className="text-[0.73rem] text-slate-400 mb-3.5">
-                  Subscribe for verified alerts on Japanese N5/N4 schedules, German A1 batches, IELTS
-                  mock tests, and Japan/Germany admission deadlines.
+                  Subscribe for verified alerts on Japanese N5/N4 batch schedules, JFT-Basic & SSW orientation, IELTS mock tests, and Japan visa submission deadlines.
                 </p>
 
                 {subscribed ? (
                   <div className="rounded-xl bg-emerald-500/20 border border-emerald-400/40 p-2.5 text-center text-xs font-bold text-emerald-200">
-                    ✓ Thank you! You are subscribed to Nexus Global updates.
+                    ✓ Thank you! You are subscribed to AcademiaZ Rajshahi updates.
                   </div>
                 ) : (
                   <form onSubmit={handleSubscribe} className="flex gap-2">
@@ -64,11 +61,11 @@ export function SiteFooter() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email address"
-                      className="flex-1 rounded-xl border border-white/20 bg-black/40 px-3.5 py-2.5 text-xs text-white placeholder:text-slate-500 outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500/30"
+                      className="flex-1 rounded-xl border border-white/20 bg-black/40 px-3.5 py-2.5 text-xs text-white placeholder:text-slate-500 outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30"
                     />
                     <button
                       type="submit"
-                      className="rounded-xl bg-sky-600 hover:bg-sky-500 px-4 py-2.5 text-xs font-bold text-white shadow-md transition-colors flex items-center gap-1.5 shrink-0 cursor-pointer"
+                      className="rounded-xl bg-amber-500 hover:bg-amber-600 px-4 py-2.5 text-xs font-bold text-slate-950 shadow-md transition-colors flex items-center gap-1.5 shrink-0 cursor-pointer"
                     >
                       <span>Subscribe</span>
                       <span>→</span>
@@ -89,92 +86,91 @@ export function SiteFooter() {
                 <li>
                   <Link
                     to="/"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
+                    <span className="text-amber-400">›</span>
                     <span>Home</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/about"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>About Us (Jashore HQ & Tokyo Office)</span>
+                    <span className="text-amber-400">›</span>
+                    <span>About Us (Kadirganj, Rajshahi Campus)</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>Japanese Language Course (N5 & N4)</span>
+                    <span className="text-amber-400">›</span>
+                    <span>Japanese Language Course (N5 & N4) 🇯🇵</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>German Language Course (Goethe A1)</span>
+                    <span className="text-amber-400">›</span>
+                    <span>Student Visa Guidance (Study in Japan)</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>IELTS & Spoken English Training</span>
+                    <span className="text-amber-400">›</span>
+                    <span>TITP & SSW Preparation (Work in Japan)</span>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/destinations"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    to="/services"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>Study in Japan (Higher Education & SSW)</span>
+                    <span className="text-amber-400">›</span>
+                    <span>IELTS & Spoken English Fluency</span>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/study-in-{$country}"
-                    params={{ country: "germany" }}
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    to="/services"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>Study in Germany (Tuition-Free)</span>
+                    <span className="text-amber-400">›</span>
+                    <span>Kids English & Young Learners Program</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
+                    className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
-                    <span className="text-sky-400">›</span>
-                    <span>Contact Us & Campus Map</span>
+                    <span className="text-amber-400">›</span>
+                    <span>Contact Us & Location Map</span>
                   </Link>
                 </li>
               </ul>
             </div>
           </StaggerItem>
 
-          {/* Column 3: Contact & Global Office Information */}
+          {/* Column 3: Contact & Campus Information */}
           <StaggerItem direction="up" distance={24}>
             <div className="space-y-4">
               <div className="text-sm font-bold text-white tracking-wide uppercase">
-                Official Contact & Locations
+                Official Contact & Location
               </div>
 
-              {/* Jashore Campus */}
+              {/* Rajshahi Campus */}
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping inline-block" />
-                  <span className="font-bold text-sky-400 text-xs">Jashore Headquarters</span>
+                  <span className="font-bold text-amber-400 text-xs">Rajshahi Campus (Kadirganj)</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   {company.address.full}
@@ -182,9 +178,9 @@ export function SiteFooter() {
                 <div className="pt-2 border-t border-white/10 flex flex-wrap gap-3 text-xs">
                   <a
                     href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
-                    className="text-white hover:text-sky-300 flex items-center gap-1 font-bold"
+                    className="text-white hover:text-amber-300 flex items-center gap-1 font-bold"
                   >
-                    <IconPhone className="w-3.5 h-3.5 text-sky-400" />
+                    <IconPhone className="w-3.5 h-3.5 text-amber-400" />
                     <span>{company.phones[0]}</span>
                   </a>
                   <a
@@ -196,17 +192,14 @@ export function SiteFooter() {
                 </div>
               </div>
 
-              {/* Tokyo Japan Branch */}
+              {/* Japan Based Management */}
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="text-xs">🇯🇵</span>
-                  <span className="font-bold text-orange-400 text-xs">Tokyo Liaison Office (Japan)</span>
+                  <span className="font-bold text-red-400 text-xs">Japan Based & Managed (জাপান থেকে পরিচালিত)</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  {company.offices.tokyo.address}
-                </p>
-                <p className="text-xs text-slate-400">
-                  <strong>Tokyo Helpline:</strong> {company.tokyoPhone}
+                  ১০০% জাপান স্ট্যান্ডার্ড সেবা, সরাসরি জাপানের বিভিন্ন প্রতিষ্ঠান ও ল্যাঙ্গুয়েজ স্কুলের সাথে সংযুক্ত।
                 </p>
               </div>
 
@@ -215,16 +208,16 @@ export function SiteFooter() {
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-emerald text-xs py-2 px-3.5 rounded-full flex items-center gap-1.5"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-full flex items-center gap-1.5 transition-colors shadow-sm"
                 >
                   <IconWhatsApp className="w-3.5 h-3.5" />
-                  <span>WhatsApp Jashore</span>
+                  <span>WhatsApp Rajshahi</span>
                 </a>
                 <a
                   href={company.social.facebook}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs py-2 px-3.5 transition-colors flex items-center gap-1.5"
+                  className="rounded-full bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold text-xs py-2 px-3.5 transition-colors flex items-center gap-1.5 shadow-sm"
                 >
                   <span>Facebook Page</span>
                   <span>↗</span>
@@ -237,7 +230,7 @@ export function SiteFooter() {
         {/* Bottom Legal Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[0.72rem]">
           <div>
-            © {new Date().getFullYear()} {company.legalName}. All rights reserved. Jashore & Tokyo.
+            © {new Date().getFullYear()} {company.legalName}. All rights reserved. Kadirganj, Rajshahi.
           </div>
           <div className="flex items-center gap-4">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">
@@ -248,7 +241,7 @@ export function SiteFooter() {
               Terms of Use
             </Link>
             <span>•</span>
-            <span className="text-slate-500">Connecting the future</span>
+            <span className="text-amber-400 font-medium">Learn · Grow · Achieve</span>
           </div>
         </div>
       </div>

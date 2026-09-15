@@ -5,17 +5,17 @@ import { company, upcomingIntakesAndOffers } from "@/lib/site-data";
 export const Route = createFileRoute("/offers")({
   head: () => ({
     meta: [
-      { title: "Upcoming Intakes & Language Batches | Nexus Global — Jashore & Tokyo" },
+      { title: "Upcoming Intakes & Language Batches | AcademiaZ — Rajshahi & Japan Oversight" },
       {
         name: "description",
         content:
-          "Explore active intakes: Japanese Language (N5/N4 packages), German Goethe A1 batches, IELTS preparation, Japan student & SSW visa intakes, and Germany university/Ausbildung sessions at Nexus Global Jashore.",
+          "Explore active intakes: Japanese Language (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP & SSW program batches, IELTS preparation, and Japan student visa sessions at AcademiaZ Rajshahi.",
       },
-      { property: "og:title", content: "Upcoming Intakes & Academy Batches | Nexus Global" },
+      { property: "og:title", content: "Upcoming Intakes & Academy Batches | AcademiaZ" },
       {
         property: "og:description",
         content:
-          "Register for upcoming Japanese, German, IELTS language batches and international intakes at Nexus Global, Nowrin Tower, East Side of Laldighi, Jashore.",
+          "Register for upcoming Japanese N5/N4 batches, TITP/SSW tracks, and IELTS batches at AcademiaZ, Kadirganj, Greater Road, Rajshahi.",
       },
     ],
   }),
@@ -28,9 +28,9 @@ function Offers() {
       <PageHero
         eyebrow="Admissions & Special Intakes"
         title="Upcoming Intakes & Academy Admissions"
-        subtitle="Explore active Japanese N5/N4 packages, German Goethe A1 batches, IELTS preparation, and international study intakes guided by Nexus Global (Jashore HQ & Tokyo Branch)."
-        image="/latest-assets/banner.jpg"
-        imageAlt="Nexus Global active admissions and intakes"
+        subtitle="Explore active Japanese N5/N4 packages, TITP & SSW career tracks, IELTS preparation, and Japan student visa intakes guided by AcademiaZ (Rajshahi Campus & Japan Direct Oversight)."
+        image="/banner.jpg"
+        imageAlt="AcademiaZ active admissions and intakes"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Intakes & Offers" }]} />
       </PageHero>
@@ -40,7 +40,7 @@ function Offers() {
         <SectionHeading
           eyebrow="Active Campaigns"
           title="Current Intakes, Drives & Academy Batches"
-          subtitle="All sessions below are actively accepting applications with complete transparency, free study materials, and direct support from our Jashore headquarters and Tokyo branch."
+          subtitle="All sessions below are actively accepting applications with complete transparency, verified study materials, and direct guidance from our Kadirganj campus and Japan-based advisors."
         />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -72,10 +72,10 @@ function Offers() {
 
               <div className="mt-8 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Nexus Global, I want to apply / register for: "${item.title}".`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AcademiaZ, I want to apply / register for: "${item.title}".`)}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn-emerald w-full text-center text-xs py-3 shadow-sm"
+                  className="btn-emerald w-full text-center text-xs py-3 shadow-sm font-bold"
                 >
                   💬 Inquire / Apply on WhatsApp
                 </a>

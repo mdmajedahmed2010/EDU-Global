@@ -16,13 +16,13 @@ export function QuickLeadSection() {
     setSubmitted(true);
 
     const message = encodeURIComponent(
-      `Hello Nexus Global!\n\nI would like a Free Profile Assessment:\n` +
+      `Hello AcademiaZ Rajshahi!\n\nI would like a Free Profile Assessment & Course Information:\n` +
         `• Name: ${name || "Applicant"}\n` +
         `• Phone: ${phone || "Not provided"}\n` +
         `• Email: ${email || "Not provided"}\n` +
-        `• Destination: ${destination}\n` +
+        `• Target Destination: ${destination}\n` +
         `• Course / Program: ${courseLevel}\n\n` +
-        `Please guide me on admission requirements, language batch schedules, and visa procedures.`,
+        `Please guide me on admission requirements, new batch schedules, and visa procedures at your Kadirganj campus.`,
     );
 
     const waNumber = company.whatsapp.replace(/[^0-9]/g, "");
@@ -36,72 +36,70 @@ export function QuickLeadSection() {
           {/* Left Column: Trust & Highlights (Slides from Left) */}
           <SlideIn direction="left" distance={45} className="space-y-6">
             <div className="space-y-3">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-sky-600">
-                — NEXUS GLOBAL COUNSELING —
+              <span className="text-xs font-extrabold uppercase tracking-widest text-amber-600">
+                — ACADEMIAZ RAJSHAHI COUNSELING —
               </span>
-              <h2 className="font-display text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-                Start Your Journey <span className="text-sky-600">With Confidence</span>
+              <h2 className="font-display text-3xl sm:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+                Start Your Journey <span className="text-amber-500">With Confidence</span>
               </h2>
-              <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-lg">
-                Get personalized evaluation from experienced instructors and counselors at Nowrin Tower
-                (3rd Flr), East Side of Laldighi, Beside Kacchi Queen, Sadar, Jashore. Dedicated guidance for
-                Japan, Germany, Malaysia, UK, Canada, and premier language coaching.
+              <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-lg font-bangla">
+                স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! কাদিরগঞ্জ, গ্রেটার রোড (মা ফটোস্ট্যাট এর পাশের গলি), রাজশাহীতে আমাদের অফিসে এসে সরাসরি অভিজ্ঞ ট্রেইনার ও ভিসা কনসালট্যান্টদের সাথে কথা বলুন।
               </p>
             </div>
 
             {/* Two Side-by-Side Stat Boxes with CountUp */}
             <div className="grid grid-cols-2 gap-4 max-w-md">
-              {/* Box 1: Visa Support */}
-              <div className="rounded-2xl border border-sky-100 bg-sky-50/40 p-5 text-center transition-all hover-lift">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-sky-600">
+              {/* Box 1: Japan Managed */}
+              <div className="rounded-2xl border border-red-100 bg-red-50/50 p-5 text-center transition-all hover-lift">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-red-100 text-red-600">
                   <span className="text-xl">🇯🇵</span>
                 </div>
-                <div className="font-serif-editorial text-3xl sm:text-4xl font-bold text-slate-900">
+                <div className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
                   <CountUp value={100} suffix="%" duration={2} />
                 </div>
-                <div className="text-xs font-bold text-slate-600 mt-1">Visa Processing Support</div>
+                <div className="text-xs font-bold text-slate-700 mt-1">জাপান থেকে পরিচালিত</div>
               </div>
 
-              {/* Box 2: Intensive Batches */}
-              <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-5 text-center transition-all hover-lift">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-100 text-orange-700">
-                  <span className="text-xl">📚</span>
+              {/* Box 2: Japanese Levels */}
+              <div className="rounded-2xl border border-amber-100 bg-amber-50/50 p-5 text-center transition-all hover-lift">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
+                  <span className="text-xl">⛩️</span>
                 </div>
-                <div className="font-serif-editorial text-3xl sm:text-4xl font-bold text-slate-900">
-                  <CountUp value={6} suffix=" Days/Wk" duration={2} />
+                <div className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
+                  <CountUp value={2} suffix=" Levels" duration={2} />
                 </div>
-                <div className="text-xs font-bold text-slate-600 mt-1">Japanese Daily Classes</div>
+                <div className="text-xs font-bold text-slate-700 mt-1">Japanese N5 & N4</div>
               </div>
             </div>
 
             {/* Benefit Checklist */}
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>Free Initial Profile Assessment & Country Strategy (Zero Fee)</span>
+                <span>১০০% ফ্রি প্রাথমিক প্রোফাইল মূল্যায়ন ও ভিসা গাইডলাইন</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>Japanese N5 & N4 Packages with 100% Free Books & Extra Classes</span>
+                <span>JLPT, JFT-Basic ও NAT-TEST প্রস্তুতিতে পূর্ণাঙ্গ বই ও লিসেনিং ম্যাটেরিয়ালস</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>Goethe-Standard German A1 Batches & Free Ausbildung Preparation</span>
+                <span>জাপানে স্টুডেন্ট ভিসা, TITP ও SSW ক্যারিয়ারের নির্ভুল COE প্রসেসিং</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
-                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sky-600">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>Direct Tokyo Liaison Branch Support (Shin-Koiwa, Tokyo, Japan)</span>
+                <span>IELTS (Band 7.5+), Spoken English এবং কিডস ইংলিশ একাডেমি</span>
               </div>
             </div>
 
@@ -111,14 +109,14 @@ export function QuickLeadSection() {
                 href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
                 className="inline-flex items-center gap-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 px-3.5 py-2 transition-colors"
               >
-                <IconPhone className="w-3.5 h-3.5 text-sky-600" />
-                <span>{company.phones[0]} (WhatsApp)</span>
+                <IconPhone className="w-3.5 h-3.5 text-amber-600" />
+                <span>{company.phones[0]} (Call / WhatsApp)</span>
               </a>
               <a
                 href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
                 className="inline-flex items-center gap-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 px-3.5 py-2 transition-colors"
               >
-                <IconPhone className="w-3.5 h-3.5 text-sky-600" />
+                <IconPhone className="w-3.5 h-3.5 text-amber-600" />
                 <span>{company.phones[1]}</span>
               </a>
             </div>
@@ -128,15 +126,14 @@ export function QuickLeadSection() {
           <SlideIn direction="right" distance={45}>
             <div className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xl">
               <div className="mb-6">
-                <span className="text-xs font-extrabold uppercase tracking-wider text-sky-600">
+                <span className="text-xs font-extrabold uppercase tracking-wider text-amber-600">
                   Direct Counselor Connect
                 </span>
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-950 mt-1">
                   Request Free Profile Assessment
                 </h3>
-                <p className="text-xs text-slate-500 mt-1">
-                  Fill in your details below. Our senior counselor in Jashore will contact you
-                  promptly.
+                <p className="text-xs text-slate-500 mt-1 font-bangla">
+                  আপনার তথ্য দিন। AcademiaZ রাজশাহী সেন্টারের সিনিয়র কাউন্সেলর দ্রুত আপনার সাথে যোগাযোগ করবেন।
                 </p>
               </div>
 
@@ -151,8 +148,8 @@ export function QuickLeadSection() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="e.g. Tanzim Ahmed"
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-sky-500 focus:bg-white focus:ring-1 focus:ring-sky-500/30 transition-all"
+                    placeholder="e.g. Arifur Rahman"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all"
                   />
                 </div>
 
@@ -167,8 +164,8 @@ export function QuickLeadSection() {
                       required
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="e.g. 01772-399913"
-                      className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-sky-500 focus:bg-white focus:ring-1 focus:ring-sky-500/30 transition-all"
+                      placeholder="e.g. 01518-951062"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all"
                     />
                   </div>
 
@@ -181,7 +178,7 @@ export function QuickLeadSection() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="e.g. student@gmail.com"
-                      className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-sky-500 focus:bg-white focus:ring-1 focus:ring-sky-500/30 transition-all"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all"
                     />
                   </div>
                 </div>
@@ -189,56 +186,54 @@ export function QuickLeadSection() {
                 {/* Target Destination */}
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                    Target Study / Work Destination
+                    Target Study / Career Destination
                   </label>
                   <select
                     value={destination}
                     onChange={(e) => setDestination(e.target.value)}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 outline-none focus:border-sky-500 focus:bg-white focus:ring-1 focus:ring-sky-500/30 transition-all cursor-pointer"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all cursor-pointer"
                   >
-                    <option value="Japan">Japan 🇯🇵 (Higher Education & SSW Work Visa)</option>
-                    <option value="Germany">Germany 🇩🇪 (Tuition-Free Public Universities & Ausbildung)</option>
-                    <option value="Malaysia">Malaysia 🇲🇾 (World-Class Campuses & Fast Visa)</option>
-                    <option value="United Kingdom">United Kingdom 🇬🇧 (1-Yr Masters & 2-Yr PSW)</option>
+                    <option value="Japan (Study in Japan)">Japan 🇯🇵 (Study in Japan - Language School & University)</option>
+                    <option value="Japan (SSW & TITP Work Visa)">Japan 🇯🇵 (SSW & TITP Work Visa Program)</option>
+                    <option value="Germany">Germany 🇩🇪 (Tuition-Free Universities & Ausbildung)</option>
+                    <option value="United Kingdom">United Kingdom 🇬🇧 (1-Year Masters & PSW)</option>
                     <option value="Canada">Canada 🇨🇦 (Public DLIs & PGWP)</option>
-                    <option value="USA">USA 🇺🇸 (Top Universities & 3-Yr STEM OPT)</option>
-                    <option value="Australia">Australia 🇦🇺 (Group of Eight & Work Rights)</option>
+                    <option value="USA">USA 🇺🇸 (Top Universities & STEM OPT)</option>
+                    <option value="Australia">Australia 🇦🇺 (Work Rights & Degrees)</option>
+                    <option value="Malaysia">Malaysia 🇲🇾 (World-Class Branch Campuses)</option>
                   </select>
                 </div>
 
                 {/* Course Level */}
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                    Interested Course / Academy Track
+                    Interested Course / Program
                   </label>
                   <select
                     value={courseLevel}
                     onChange={(e) => setCourseLevel(e.target.value)}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 outline-none focus:border-sky-500 focus:bg-white focus:ring-1 focus:ring-sky-500/30 transition-all cursor-pointer"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all cursor-pointer"
                   >
                     <option value="Japanese Language Course (N5 & N4 Levels)">
-                      Japanese Language Course (N5 & N4 — 3 Months, Free Books)
+                      Japanese Language Course (N5 & N4 Levels — Basic to Advanced)
                     </option>
-                    <option value="German Language Course (Goethe A1)">
-                      German Language Course (Goethe A1 — 3 Months, Free Ausbildung Prep)
+                    <option value="Student Visa Guidance (Study in Japan)">
+                      Student Visa Guidance (Study in Japan — Language Schools & Unis)
+                    </option>
+                    <option value="TITP & SSW Preparation (Work in Japan)">
+                      TITP & SSW Preparation (Work in Japan — JFT & Trade Test)
                     </option>
                     <option value="IELTS Preparation (Target Band 7.5+)">
-                      IELTS Preparation (Academic & General, Target Band 7.5+)
+                      IELTS Preparation (Academic & General — Target Band 7.5+)
                     </option>
                     <option value="Spoken English & Fluency">
                       Spoken English & Communication Fluency
                     </option>
-                    <option value="Kids English (Ages 5-14)">
+                    <option value="Kids English & Junior Fluency (Ages 5-14)">
                       Kids English & Junior Fluency (Ages 5–14)
                     </option>
-                    <option value="English Grammar & Writing">
-                      English Grammar & Academic Writing
-                    </option>
-                    <option value="Malaysian (Malay) Language Course">
-                      Malaysian (Malay) Language Course
-                    </option>
-                    <option value="Direct University Admission Consultation">
-                      Direct University & Visa Application Guidance
+                    <option value="Documentation & Application Support">
+                      Documentation & Application Support (Translations & SOP)
                     </option>
                   </select>
                 </div>
@@ -246,9 +241,9 @@ export function QuickLeadSection() {
                 {/* Submit Action */}
                 <button
                   type="submit"
-                  className="btn-shimmer w-full rounded-xl bg-sky-600 hover:bg-sky-500 text-white py-3.5 text-xs sm:text-sm font-bold shadow-lg hover:shadow-sky-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-98"
+                  className="w-full rounded-xl bg-[#0a1931] hover:bg-[#0f2c59] text-amber-400 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-98 border border-amber-500/30"
                 >
-                  <IconWhatsApp className="w-4 h-4" />
+                  <IconWhatsApp className="w-4 h-4 text-emerald-400" />
                   <span>Submit & Connect on WhatsApp</span>
                 </button>
 

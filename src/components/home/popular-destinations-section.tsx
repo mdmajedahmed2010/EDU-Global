@@ -23,7 +23,7 @@ const destinationsData: DestinationItem[] = [
       "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "japan",
-    highlight: "Tokyo Liaison / SSW Track",
+    highlight: "Flagship / Japan Managed",
   },
   {
     name: "Germany",
@@ -113,7 +113,7 @@ export function PopularDestinationsSection() {
           tag="— GLOBAL HIGHER EDUCATION PATHWAYS —"
           title="Where will you"
           highlight="study or work?"
-          description="Nexus Global opens doors to premier academic institutions and career visas across Asia, Europe, and North America."
+          description="AcademiaZ opens doors to premier academic institutions and career visas across Japan and global destinations."
           tagColor="text-sky-600"
           highlightColor="text-sky-600"
         />
@@ -134,7 +134,7 @@ export function PopularDestinationsSection() {
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <img
                     src={d.image}
-                    alt={`Study in ${d.name} with Nexus Global`}
+                    alt={`Study in ${d.name} with AcademiaZ`}
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     loading="lazy"
                   />

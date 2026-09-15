@@ -264,20 +264,20 @@ export function PageHero({
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
                     <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-sky-300">
-                      Nowrin Tower, Laldighi, Jashore
+                      Kadirganj, Greater Road, Rajshahi
                     </span>
                     <span className="rounded-full bg-sky-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● Nexus Global Academy
+                      ● AcademiaZ Rajshahi
                     </span>
                   </div>
                 </div>
 
                 <div className="p-3 text-center">
                   <p className="text-xs font-bold text-white">
-                    {company.name} · Language & Skill Training
+                    {company.name} · Japanese Language Training & Visa Consultancy
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    Japanese, German & IELTS · Hotline: {company.phones[0]}
+                    Japanese (N5/N4), TITP/SSW & IELTS · Hotline: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -480,7 +480,8 @@ export function UniversityMarquee() {
   );
 }
 
-export function BulletList({ items }: { items: readonly string[] }) {
+export function BulletList({ items }: { items?: readonly string[] }) {
+  if (!items || !items.length) return null;
   return (
     <ul className="space-y-2.5 text-xs sm:text-sm text-slate-600">
       {items.map((item, i) => (
@@ -511,34 +512,34 @@ export function CtaBand() {
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-300">
           <IconGlobe className="w-3.5 h-3.5 text-sky-400" />
-          <span>Jashore Headquarters · Nowrin Tower, East Laldighi | Tokyo Branch Office, Japan</span>
+          <span>Rajshahi Campus · Kadirganj, Greater Road | Japan Direct Oversight</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          From Jashore <span className="text-sky-400">TO THE WORLD</span>
+          Learn · Grow · <span className="text-amber-400">Achieve</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your free profile assessment with {company.name} ({company.shortName}). Specializing in
-          Japanese (N5/N4), German Goethe A1, IELTS, and international visa processing with direct support from our Tokyo branch.
+          Book your free profile assessment with {company.name}. Specializing in
+          Japanese (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP/SSW work tracks, Student Visas, and IELTS coaching directly managed from Japan.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           <button
             type="button"
             onClick={open}
-            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 active:scale-95 cursor-pointer"
+            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 active:scale-95 cursor-pointer font-bold"
           >
             <span>Book Free Appointment</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello Nexus Global! I would like to book a free consultation for Japanese / German / IELTS / study abroad.",
+              "Hello AcademiaZ! I would like to book a free consultation for Japanese language / Japan visa / IELTS in Rajshahi.",
             )}`}
             target="_blank"
             rel="noreferrer"
-            className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900 active:scale-95 cursor-pointer"
+            className="btn-luxury-secondary text-xs sm:text-sm py-3.5 px-7 shadow-xl text-slate-900 active:scale-95 cursor-pointer font-bold"
           >
             <IconWhatsApp className="w-4 h-4 text-emerald-600" />
             <span>WhatsApp {company.phones[0]}</span>
