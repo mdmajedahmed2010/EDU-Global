@@ -9,71 +9,84 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-bangla: "Hind Siliguri", "Plus Jakarta Sans", sans-serif;
 
-  /* ACADEMIAZ Official Brand Palette (Academic Navy, Imperial Gold, Japan Crimson & Crisp Slate) */
-  --color-academia-navy: #0a1931;
-  --color-academia-navy-dark: #061122;
-  --color-academia-navy-light: #0f2c59;
-  --color-academia-navy-soft: #f0f4fa;
+  /* KUSHTIA IELTS CARE Official Brand Palette (Royal Navy & Vibrant Amber Orange) */
+  --color-kic-navy: #092552;
+  --color-kic-navy-dark: #051838;
+  --color-kic-navy-light: #0d3b82;
+  --color-kic-navy-soft: #eff6ff;
 
-  --color-academia-gold: #d4af37;
-  --color-academia-gold-bright: #f3c246;
-  --color-academia-gold-dark: #b8860b;
-  --color-academia-gold-soft: #fef9eb;
+  --color-kic-orange: #ff7a00;
+  --color-kic-orange-bright: #ff9124;
+  --color-kic-orange-dark: #e05e00;
+  --color-kic-orange-soft: #fff7ed;
 
-  --color-academia-red: #dc2626;
-  --color-academia-red-dark: #b91c1c;
-  --color-academia-red-light: #ef4444;
-  --color-academia-red-soft: #fef2f2;
+  --color-kic-blue: #0d3b82;
+  --color-kic-blue-light: #1e5bb8;
+  --color-kic-blue-soft: #f0f7ff;
 
-  --color-academia-blue: #1e3e7b;
-  --color-academia-blue-light: #2563eb;
+  /* Harmonized Aliases for seamless UI rendering */
+  --color-academia-navy: #092552;
+  --color-academia-navy-dark: #051838;
+  --color-academia-navy-light: #0d3b82;
+  --color-academia-navy-soft: #eff6ff;
+
+  --color-academia-gold: #ff7a00;
+  --color-academia-gold-bright: #ff9124;
+  --color-academia-gold-dark: #e05e00;
+  --color-academia-gold-soft: #fff7ed;
+
+  --color-academia-red: #ff7a00;
+  --color-academia-red-dark: #e05e00;
+  --color-academia-red-light: #ff9124;
+  --color-academia-red-soft: #fff7ed;
+
+  --color-academia-blue: #0d3b82;
+  --color-academia-blue-light: #1e5bb8;
   --color-academia-blue-soft: #eff6ff;
 
-  /* Harmonized Theme Aliases for existing components */
-  --color-nexus-blue: #1e3e7b;
-  --color-nexus-blue-dark: #0f2c59;
-  --color-nexus-blue-light: #2563eb;
+  --color-nexus-blue: #0d3b82;
+  --color-nexus-blue-dark: #092552;
+  --color-nexus-blue-light: #1e5bb8;
   --color-nexus-blue-soft: #eff6ff;
 
-  --color-nexus-orange: #d4af37;
-  --color-nexus-orange-dark: #b8860b;
-  --color-nexus-orange-light: #f3c246;
-  --color-nexus-orange-soft: #fef9eb;
+  --color-nexus-orange: #ff7a00;
+  --color-nexus-orange-dark: #e05e00;
+  --color-nexus-orange-light: #ff9124;
+  --color-nexus-orange-soft: #fff7ed;
 
-  --color-nexus-navy: #0a1931;
-  --color-nexus-sapphire: #0f2c59;
+  --color-nexus-navy: #092552;
+  --color-nexus-sapphire: #0d3b82;
   --color-nexus-charcoal: #1e293b;
   --color-nexus-slate: #334155;
 
-  --color-gold-metallic: #d4af37;
-  --color-gold-bright: #f3c246;
-  --color-gold-deep: #b8860b;
-  --color-gold-soft: #fef9eb;
+  --color-gold-metallic: #ff7a00;
+  --color-gold-bright: #ff9124;
+  --color-gold-deep: #e05e00;
+  --color-gold-soft: #fff7ed;
 
   --color-emerald-deep: #059669;
   --color-emerald-soft: #ecfdf5;
 
-  /* Backward Compatibility Aliases */
-  --color-ab-red: #dc2626;
-  --color-ab-red-dark: #b91c1c;
-  --color-ab-red-light: #ef4444;
-  --color-ab-red-soft: #fef2f2;
+  --color-ab-red: #ff7a00;
+  --color-ab-red-dark: #e05e00;
+  --color-ab-red-light: #ff9124;
+  --color-ab-red-soft: #fff7ed;
 
-  --color-ab-black: #061122;
-  --color-ab-charcoal: #0a1931;
+  --color-ab-black: #051838;
+  --color-ab-charcoal: #092552;
   --color-ab-dark: #0f172a;
   --color-ab-slate: #334155;
 
-  --color-agc-navy: #0a1931;
-  --color-agc-navy-dark: #061122;
-  --color-agc-navy-midnight: #050d1a;
-  --color-agc-navy-light: #0f2c59;
-  --color-agc-navy-soft: #f0f4fa;
+  --color-agc-navy: #092552;
+  --color-agc-navy-dark: #051838;
+  --color-agc-navy-midnight: #04122b;
+  --color-agc-navy-light: #0d3b82;
+  --color-agc-navy-soft: #eff6ff;
 
-  --color-agc-red: #d4af37;
-  --color-agc-red-dark: #b8860b;
-  --color-agc-red-light: #f3c246;
-  --color-agc-red-soft: #fef9eb;
+  --color-agc-red: #ff7a00;
+  --color-agc-red-dark: #e05e00;
+  --color-agc-red-light: #ff9124;
+  --color-agc-red-soft: #fff7ed;
 
   --color-sand: #fafafc;
   --color-surface: #ffffff;

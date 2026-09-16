@@ -11,14 +11,14 @@ export function DelegationSpotlight() {
   const currentCourse = courses[activeCourseIdx] ?? courses[0]!;
 
   const visaCategories = [
-    { name: "Japan Student Visa", icon: "🇯🇵" },
-    { name: "SSW Skilled Worker", icon: "💼" },
-    { name: "TITP Technical Intern", icon: "🛠️" },
-    { name: "Japanese Language N5-N4", icon: "⛩️" },
-    { name: "IELTS Preparation", icon: "🇬🇧" },
+    { name: "IELTS Academic & General", icon: "🎯" },
+    { name: "CBT Mock Tests (300 BDT)", icon: "🎧" },
     { name: "Spoken English Fluency", icon: "🗣️" },
     { name: "Kids English Academy", icon: "🧒" },
-    { name: "Documentation & SOP", icon: "📋" },
+    { name: "Study in Portugal", icon: "🇵🇹" },
+    { name: "Czech Republic & Europe", icon: "🇨🇿" },
+    { name: "UK & Canada Admissions", icon: "🇬🇧" },
+    { name: "SOP & Visa Processing", icon: "📋" },
   ];
 
   return (
@@ -26,23 +26,23 @@ export function DelegationSpotlight() {
       <div className="rounded-3xl border border-slate-800 bg-[#061122] p-4 sm:p-8 lg:p-12 relative overflow-hidden text-white shadow-2xl">
         {/* Ambient Glow */}
         <div className="pointer-events-none absolute -top-20 -left-20 h-80 w-80 rounded-full bg-amber-500/15 blur-[100px]" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-red-600/15 blur-[100px]" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-blue-600/15 blur-[100px]" />
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center relative z-10">
           {/* Left: Language Academy Interactive Course Selector */}
           <SlideIn direction="left" distance={45} className="space-y-5">
             <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/20 border border-amber-400/30 px-3.5 py-1 text-xs font-bold text-amber-300">
               <IconSparkles className="w-3.5 h-3.5" />
-              <span>AcademiaZ Language & Visa Consultancy · Kadirganj, Rajshahi</span>
+              <span>Kushtia IELTS Care · Old Kataikhana More, Kushtia</span>
             </div>
 
             <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
-              Master Japanese Language & Career Skills <br />
-              <span className="text-amber-400">Japanese N5/N4, SSW, IELTS & Spoken English</span>
+              Master IELTS, English & European Pathways <br />
+              <span className="text-amber-400">Audio Lab, 300 BDT Mocks, Spoken & Kids English</span>
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl font-bangla">
-              জাপানে উচ্চশিক্ষা কিংবা স্পেসিফাইড স্কিল্ড ওয়ার্কার (SSW/TITP) ক্যারিয়ার—AcademiaZ নিশ্চিত করে জাপান থেকে সরাসরি পরিচালিত ১০০% জাপান স্ট্যান্ডার্ড সেবা, অভিজ্ঞ শিক্ষক দ্বারা নিবিড় পাঠদান এবং নির্ভুল ভিসা গাইডলাইন।
+              আইইএলটিএস পরীক্ষায় কাঙ্ক্ষিত ব্যান্ড স্কোর অর্জন কিংবা পর্তুগাল ও ইউরোপে বিশ্বমানের উচ্চশিক্ষা—Kushtia IELTS Care নিশ্চিত করে আধুনিক সাউন্ড ল্যাব, অভিজ্ঞ মেন্টর এবং শতভাগ যত্নশীল সহায়তা।
             </p>
 
             {/* Course Selector Tabs */}
@@ -114,18 +114,18 @@ export function DelegationSpotlight() {
             </div>
           </SlideIn>
 
-          {/* Right: Key Value Propositions & Japanese Standards */}
+          {/* Right: Key Value Propositions & Care Standards */}
           <SlideIn direction="right" distance={45} className="space-y-4">
             <div className="rounded-2xl bg-gradient-to-br from-[#0a1931] to-[#040b17] border border-amber-500/30 p-6 space-y-4 shadow-xl">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">
-                <span>🇯🇵</span>
-                <span>AcademiaZ Advantage</span>
+                <span>⭐</span>
+                <span>Kushtia IELTS Care Advantage</span>
               </div>
               <h3 className="text-lg sm:text-xl font-black text-white">
-                কেন আপনি AcademiaZ বেছে নেবেন?
+                কেন আপনি Kushtia IELTS Care বেছে নেবেন?
               </h3>
               <p className="text-xs text-slate-300 leading-relaxed font-bangla">
-                স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! আমাদের সমস্ত কার্যক্রম ও সেবা জাপান থেকে সরাসরি মনিটরকৃত হওয়ায় কোনো প্রকার প্রতারণা বা বিভ্রান্তির সুযোগ নেই।
+                কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব, প্রতিটি শিক্ষার্থীর জন্য পৃথক হেডসেট, রিয়েল এক্সাম এনভায়রনমেন্টে মাত্র ৩০০ টাকায় মক টেস্ট এবং ইউরোপের স্টুডেন্ট ভিসার পূর্ণাঙ্গ সাপোর্ট।
               </p>
 
               <div className="grid grid-cols-2 gap-3 pt-2">
@@ -141,7 +141,7 @@ export function DelegationSpotlight() {
               </div>
 
               <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
-                <span>📍 কাদিরগঞ্জ, গ্রেটার রোড, রাজশাহী</span>
+                <span>📍 পুরাতন কসাইখানা মোড়, কুষ্টিয়া</span>
                 <span className="text-amber-400 font-bold">Hotline: {company.phones[0]}</span>
               </div>
             </div>

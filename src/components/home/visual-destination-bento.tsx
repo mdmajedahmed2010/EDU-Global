@@ -21,49 +21,34 @@ export interface DestinationCardData {
 
 const destinationCards: DestinationCardData[] = [
   {
-    slug: "japan",
-    name: "Japan",
-    region: "Asia",
-    flag: "🇯🇵",
-    image:
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Japan-Based Direct Oversight",
-    visaSpeed: "N5/N4 & SSW / Student Visas",
-    withoutIelts: true,
-    avgTuition: "¥700,000 – ¥850,000/yr",
-    pswv: "High Hourly Part-time & Work Visa",
-    topIntake: "April, July & October",
-  },
-  {
-    slug: "germany",
-    name: "Germany",
+    slug: "portugal",
+    name: "Portugal",
     region: "Europe",
-    flag: "🇩🇪",
+    flag: "🇵🇹",
     image:
-      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Tuition-Free & Dual Ausbildung",
-    visaSpeed: "Goethe A1 Preparation",
+    highlightTag: "Schengen European Gateway & PR",
+    visaSpeed: "Affordable Higher Education",
     withoutIelts: true,
-    avgTuition: "€0 – €350/sem (Tuition-Free)",
-    pswv: "18-Month Post-Study Visa",
-    topIntake: "Winter / Summer Intakes",
+    avgTuition: "€1,500 – €3,500/yr",
+    pswv: "Schengen Residence & Work Rights",
+    topIntake: "September & February",
   },
   {
-    slug: "malaysia",
-    name: "Malaysia",
-    region: "Asia",
-    flag: "🇲🇾",
+    slug: "czech",
+    name: "Czech Republic",
+    region: "Europe",
+    flag: "🇨🇿",
     image:
-      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Fast EMGS & Affordable Tuition",
-    visaSpeed: "High Visa Ratio",
+    highlightTag: "Central European Hub & Low Cost",
+    visaSpeed: "Prestigious Public Universities",
     withoutIelts: true,
-    avgTuition: "$3,000 – $6,000/yr",
-    pswv: "Twinning & Regional Career",
-    topIntake: "Multiple Intakes",
+    avgTuition: "€2,500 – €5,000/yr",
+    pswv: "9-Month Job Search Visa",
+    topIntake: "September & February",
   },
   {
     slug: "uk",
@@ -73,12 +58,27 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "1-Yr Masters & Fast CAS",
-    visaSpeed: "Fast CAS Turnaround",
+    highlightTag: "1-Yr Masters & 2-Yr PSW",
+    visaSpeed: "Direct University Admissions",
     withoutIelts: true,
     avgTuition: "£11,000 – £16,000/yr",
     pswv: "2-Year Graduate Visa",
     topIntake: "Jan / May / Sep",
+  },
+  {
+    slug: "germany",
+    name: "Germany",
+    region: "Europe",
+    flag: "🇩🇪",
+    image:
+      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Tuition-Free & Research Universities",
+    visaSpeed: "Public Universities",
+    withoutIelts: true,
+    avgTuition: "€0 – €350/sem (Tuition-Free)",
+    pswv: "18-Month Post-Study Visa",
+    topIntake: "Winter / Summer Intakes",
   },
   {
     slug: "canada",
@@ -163,7 +163,7 @@ export function VisualDestinationBento() {
             Explore Verified <span className="text-sky-600">Global Pathways</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl">
-            Choose your dream pathway with AcademiaZ. Benefit from direct Japan-based management, authentic Japanese language training (JLPT N5/N4, NAT-TEST, JFT), TITP & SSW guidance, and expert IELTS coaching in Kadirganj, Rajshahi.
+            Choose your dream European and international pathway with Kushtia IELTS Care. Benefit from modern audio lab CBT mock tests (300 BDT), Cambridge IELTS coaching, and student visa guidance for Portugal, Czech Republic, UK, and beyond.
           </p>
         </SlideIn>
 

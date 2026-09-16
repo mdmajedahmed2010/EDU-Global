@@ -5,17 +5,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use | AcademiaZ — Rajshahi & Japan Oversight" },
+      { title: "Terms of Use | Kushtia IELTS Care" },
       {
         name: "description",
         content:
-          "Terms and conditions governing language training and educational advisory services at AcademiaZ in Rajshahi.",
+          "Terms and conditions governing Cambridge IELTS coaching, Audio Lab CBT mock tests, language training, and educational advisory services at Kushtia IELTS Care in Kushtia.",
       },
-      { property: "og:title", content: "Terms of Use | AcademiaZ" },
+      { property: "og:title", content: "Terms of Use | Kushtia IELTS Care" },
       {
         property: "og:description",
         content:
-          "Terms governing our Japanese language academy, TITP/SSW preparation, and overseas pathway guidance.",
+          "Terms governing Cambridge IELTS preparation, mock tests, Spoken English, and overseas study visa guidance.",
       },
     ],
   }),
@@ -25,23 +25,23 @@ export const Route = createFileRoute("/terms-of-use")({
 const sections = [
   {
     title: "1. Scope of Language & Advisory Services",
-    body: "AcademiaZ provides specialized Japanese language training (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP/SSW career preparation, IELTS coaching, Spoken English, Kids English, school selection, application processing, and visa file preparation for Japan and global destinations. Statutory third-party costs (such as official embassy visa fees, medical tests, language exam fees, and courier services) are paid directly to the respective authorities or test providers.",
+    body: "Kushtia IELTS Care provides specialized Cambridge IELTS coaching (Academic & General), computer-based and paper-based mock tests (300 BDT) in our dedicated audio lab, Spoken English fluency courses, Kids English Academy, university selection, application processing, and visa guidance for Portugal, Czech Republic, and global destinations. Statutory third-party costs (such as official British Council / IDP exam fees, embassy visa fees, medical tests, and courier fees) are paid directly to the respective authorities or test providers.",
   },
   {
     title: "2. Document Authenticity & Applicant Responsibility",
-    body: "Applicants and learners are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. AcademiaZ adheres to strict legal standards and has zero tolerance for fraudulent submissions.",
+    body: "Applicants and learners are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. Kushtia IELTS Care adheres to strict ethical standards and maintains zero tolerance for fraudulent submissions.",
   },
   {
     title: "3. Admissions & Visa Decisions Disclaimer",
-    body: "Admission offers, scholarships, and visa approvals are decided strictly by sovereign immigration authorities (such as the Immigration Services Agency of Japan, Embassy of Japan in Dhaka, and respective consulates) and educational institutions. AcademiaZ provides expert coaching, rigorous document auditing, and mock interview preparations, but does not claim jurisdiction over sovereign visa grants.",
+    body: "Admission offers, scholarships, and visa approvals are decided strictly by sovereign immigration authorities and educational institutions. Kushtia IELTS Care provides expert coaching, rigorous document auditing, and mock interview preparations, but does not claim jurisdiction over sovereign visa grants.",
   },
   {
-    title: "4. Academy & Batch Policies",
-    body: "Students enrolled in our Japanese, IELTS, or English programs receive official study materials and structured class access. AcademiaZ reserves the right to maintain discipline, academic rigor, and batch integrity to safeguard student progress.",
+    title: "4. Academy & Mock Test Policies",
+    body: "Students enrolled in our IELTS, Spoken English, or Mock Test programs receive official study materials and access to our audio lab equipment with individual headsets. Kushtia IELTS Care reserves the right to maintain discipline, academic rigor, and lab integrity to safeguard student learning.",
   },
   {
     title: "5. Contact & Inquiries",
-    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} (WhatsApp) / ${company.phones[1]}, or visit our Rajshahi Campus at ${company.address.full}.`,
+    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} / ${company.phones[1]}, or visit our Kushtia Campus at ${company.address.full}.`,
   },
 ];
 

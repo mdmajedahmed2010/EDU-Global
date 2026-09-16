@@ -3,48 +3,48 @@ import { CountUp, MotionHeading, StaggerContainer, StaggerItem } from "@/compone
 export function WhyChooseSection() {
   const features = [
     {
-      icon: "🇯🇵",
-      iconBg: "bg-red-50 text-red-600",
+      icon: "🎧",
+      iconBg: "bg-blue-50 text-blue-800",
       value: 100,
       suffix: "%",
       label: "",
-      metricColor: "text-red-600",
-      tag: "JAPAN BASED & MANAGED",
-      title: "জাপান থেকে পরিচালিত",
-      desc: "সরাসরি জাপান স্ট্যান্ডার্ড সেবা ও মনিটরিং, যা আপনাকে দেয় নিখুঁত তথ্য ও জাপানের প্রতিষ্ঠানের সাথে সরাসরি যোগাযোগ।",
+      metricColor: "text-blue-800",
+      tag: "MODERN AUDIO LAB",
+      title: "আধুনিক সাউন্ড ল্যাব",
+      desc: "আইইএলটিএস লিসেনিং পরীক্ষার সঠিক প্রস্তুতির জন্য পৃথক হেডসেট ও ক্রিস্টাল ক্লিয়ার অডিও সেটআপ।",
     },
     {
-      icon: "⛩️",
+      icon: "🎯",
       iconBg: "bg-amber-50 text-amber-700",
-      value: 2,
-      suffix: " Levels",
+      value: 300,
+      suffix: " ৳",
       label: "",
       metricColor: "text-amber-600",
-      tag: "JLPT / JFT / NAT",
-      title: "Japanese N5 & N4 Courses",
-      desc: "হিরাগানা, কাতাকানা, ১০০+ কাঞ্জি, অডিও লিসেনিং ড্রিল ও সাপ্তাহিক মক টেস্ট সহ বেসিক থেকে অ্যাডভান্সড ট্রেনিং।",
+      tag: "FULL CBT & PBT MOCKS",
+      title: "কম্পিউটার মক টেস্ট",
+      desc: "মাত্র ৩০০ টাকায় আসল পরীক্ষার হুবহু পরিবেশে কম্পিউটার-ভিত্তিক ও পেপার-বেসড মক টেস্ট এবং পূর্ণাঙ্গ ফিডব্যাক।",
     },
     {
-      icon: "💼",
-      iconBg: "bg-blue-50 text-blue-600",
+      icon: "📚",
+      iconBg: "bg-emerald-50 text-emerald-600",
+      value: 7.5,
+      suffix: "+",
+      label: "",
+      metricColor: "text-emerald-600",
+      tag: "CAMBRIDGE SYLLABUS",
+      title: "কেমব্রিজ কারিকুলাম ও কেয়ার",
+      desc: "অভিজ্ঞ মেন্টর, সীমিত আসনের ব্যাচ ও প্রতি শিক্ষার্থীর দুর্বলতা চিহ্নিত করে বিশেষ রিভিশন ও স্পিকিং টেস্ট।",
+    },
+    {
+      icon: "🇵🇹",
+      iconBg: "bg-indigo-50 text-indigo-600",
       value: 100,
       suffix: "%",
       label: "",
-      metricColor: "text-blue-600",
-      tag: "CAREER & VISA GUIDANCE",
-      title: "Student Visa & SSW/TITP",
-      desc: "জাপানে স্টুডেন্ট ভিসা, স্পেসিফাইড স্কিল্ড ওয়ার্কার (SSW) এবং টেকনিক্যাল ইন্টার্ন (TITP) প্রিপারেশন সাপোর্ট।",
-    },
-    {
-      icon: "📍",
-      iconBg: "bg-emerald-50 text-emerald-600",
-      value: 100,
-      suffix: "% Free",
-      label: "",
-      metricColor: "text-emerald-600",
-      tag: "KADIRGANJ, RAJSHAHI",
-      title: "আন্তরিক সহায়তা ও কাউন্সেলিং",
-      desc: "কাদিরগঞ্জ, গ্রেটার রোডে মনোরম ক্লাসরুম, অভিজ্ঞ ও দক্ষ ট্রেইনার এবং সম্পূর্ণ ফ্রি প্রোফাইল মূল্যায়ন।",
+      metricColor: "text-indigo-600",
+      tag: "PORTUGAL & EUROPE",
+      title: "ইউরোপ স্টাডি ভিসা সাপোর্ট",
+      desc: "পর্তুগাল ও ইউরোপের বিভিন্ন স্বনামধন্য বিশ্ববিদ্যালয়ে অফার লেটার ও এম্বাসি ফাইল প্রসেসিংয়ে নির্ভুল গাইডলাইন।",
     },
   ];
 
@@ -53,10 +53,10 @@ export function WhyChooseSection() {
       <div className="section-shell">
         {/* Title with Editorial Italic Serif & Framer Motion */}
         <MotionHeading
-          tag="— WHY ACADEMIAZ RAJSHAHI —"
+          tag="— WHY KUSHTIA IELTS CARE —"
           title="Why choose"
-          highlight="AcademiaZ?"
-          description="স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! জাপান থেকে পরিচালিত ১০০% জাপান স্ট্যান্ডার্ড সেবা, অভিজ্ঞ ট্রেইনার টিম এবং আপনার সাফল্যই আমাদের অগ্রাধিকার।"
+          highlight="Kushtia IELTS Care?"
+          description="কুষ্টিয়ায় আন্তর্জাতিক মানের সাউন্ড ল্যাব, কেমব্রিজ সিলেবাস, কম্পিউটার বেসড মক টেস্ট এবং ইউরোপের স্টুডেন্ট ভিসা কনসালটেন্সি নিয়ে আমরা আপনার বিশ্বস্ত সঙ্গী। a great place to learn!"
           tagColor="text-amber-600"
           highlightColor="text-amber-600"
         />

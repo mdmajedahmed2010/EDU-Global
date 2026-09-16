@@ -263,21 +263,21 @@ export function PageHero({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
-                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-sky-300">
-                      Kadirganj, Greater Road, Rajshahi
+                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-amber-300">
+                      Old Kataikhana More, Kushtia
                     </span>
-                    <span className="rounded-full bg-sky-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● AcademiaZ Rajshahi
+                    <span className="rounded-full bg-amber-600 px-3 py-1 font-bold text-white shadow-sm">
+                      ● Kushtia IELTS Care
                     </span>
                   </div>
                 </div>
 
                 <div className="p-3 text-center">
                   <p className="text-xs font-bold text-white">
-                    {company.name} · Japanese Language Training & Visa Consultancy
+                    {company.name} · Cambridge IELTS, Spoken English & Visa Guidance
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    Japanese (N5/N4), TITP/SSW & IELTS · Hotline: {company.phones[0]}
+                    Audio Lab (Headsets), 300 BDT CBT Mock & Europe Visa · Hotline: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -512,16 +512,16 @@ export function CtaBand() {
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-300">
           <IconGlobe className="w-3.5 h-3.5 text-sky-400" />
-          <span>Rajshahi Campus · Kadirganj, Greater Road | Japan Direct Oversight</span>
+          <span>Kushtia Campus · Old Kataikhana More | Audio Lab & Europe Visa</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          Learn · Grow · <span className="text-amber-400">Achieve</span>
+          Learn · Practice · <span className="text-amber-400">Achieve</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your free profile assessment with {company.name}. Specializing in
-          Japanese (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP/SSW work tracks, Student Visas, and IELTS coaching directly managed from Japan.
+          Book your free diagnostic assessment with {company.name}. Specializing in
+          Cambridge IELTS, Computer-Based Mock Tests (300 BDT) in our audio lab, Spoken English, Kids English, and Portugal/Europe visa consultancy.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -535,7 +535,7 @@ export function CtaBand() {
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello AcademiaZ! I would like to book a free consultation for Japanese language / Japan visa / IELTS in Rajshahi.",
+              "Hello Kushtia IELTS Care! I would like to book a free consultation for IELTS / 300 BDT CBT Mock Test / Portugal study visa in Kushtia.",
             )}`}
             target="_blank"
             rel="noreferrer"

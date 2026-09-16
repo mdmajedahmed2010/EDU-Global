@@ -7,8 +7,8 @@ export function QuickLeadSection() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [destination, setDestination] = useState("Japan");
-  const [courseLevel, setCourseLevel] = useState("Japanese Language Course (N5 & N4 Levels)");
+  const [destination, setDestination] = useState("Portugal & Europe");
+  const [courseLevel, setCourseLevel] = useState("IELTS Preparation (Academic & General)");
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -16,13 +16,13 @@ export function QuickLeadSection() {
     setSubmitted(true);
 
     const message = encodeURIComponent(
-      `Hello AcademiaZ Rajshahi!\n\nI would like a Free Profile Assessment & Course Information:\n` +
+      `Hello Kushtia IELTS Care!\n\nI would like a Free Profile Assessment & Course / Mock Test Information:\n` +
         `• Name: ${name || "Applicant"}\n` +
         `• Phone: ${phone || "Not provided"}\n` +
         `• Email: ${email || "Not provided"}\n` +
-        `• Target Destination: ${destination}\n` +
-        `• Course / Program: ${courseLevel}\n\n` +
-        `Please guide me on admission requirements, new batch schedules, and visa procedures at your Kadirganj campus.`,
+        `• Target Destination / Plan: ${destination}\n` +
+        `• Interested Course: ${courseLevel}\n\n` +
+        `Please guide me on class timings, 300 BDT mock test slots, and admission procedures at your Old Kataikhana More campus.`,
     );
 
     const waNumber = company.whatsapp.replace(/[^0-9]/g, "");
@@ -37,38 +37,38 @@ export function QuickLeadSection() {
           <SlideIn direction="left" distance={45} className="space-y-6">
             <div className="space-y-3">
               <span className="text-xs font-extrabold uppercase tracking-widest text-amber-600">
-                — ACADEMIAZ RAJSHAHI COUNSELING —
+                — KUSHTIA IELTS CARE COUNSELING —
               </span>
               <h2 className="font-display text-3xl sm:text-5xl font-black text-slate-950 tracking-tight leading-tight">
                 Start Your Journey <span className="text-amber-500">With Confidence</span>
               </h2>
               <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-lg font-bangla">
-                স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! কাদিরগঞ্জ, গ্রেটার রোড (মা ফটোস্ট্যাট এর পাশের গলি), রাজশাহীতে আমাদের অফিসে এসে সরাসরি অভিজ্ঞ ট্রেইনার ও ভিসা কনসালট্যান্টদের সাথে কথা বলুন।
+                ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়ায় আমাদের অত্যাধুনিক ক্যাম্পাসে এসে সরাসরি অভিজ্ঞ মেন্টর ও ইউরোপ স্টাডি ভিসা বিশেষজ্ঞদের সাথে কথা বলুন।
               </p>
             </div>
 
             {/* Two Side-by-Side Stat Boxes with CountUp */}
             <div className="grid grid-cols-2 gap-4 max-w-md">
-              {/* Box 1: Japan Managed */}
-              <div className="rounded-2xl border border-red-100 bg-red-50/50 p-5 text-center transition-all hover-lift">
-                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-red-100 text-red-600">
-                  <span className="text-xl">🇯🇵</span>
-                </div>
-                <div className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
-                  <CountUp value={100} suffix="%" duration={2} />
-                </div>
-                <div className="text-xs font-bold text-slate-700 mt-1">জাপান থেকে পরিচালিত</div>
-              </div>
-
-              {/* Box 2: Japanese Levels */}
+              {/* Box 1: Mock Test */}
               <div className="rounded-2xl border border-amber-100 bg-amber-50/50 p-5 text-center transition-all hover-lift">
                 <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
-                  <span className="text-xl">⛩️</span>
+                  <span className="text-xl">🎧</span>
                 </div>
                 <div className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
-                  <CountUp value={2} suffix=" Levels" duration={2} />
+                  <CountUp value={300} suffix=" ৳" duration={2} />
                 </div>
-                <div className="text-xs font-bold text-slate-700 mt-1">Japanese N5 & N4</div>
+                <div className="text-xs font-bold text-slate-700 mt-1">পূর্ণাঙ্গ CBT মক টেস্ট</div>
+              </div>
+
+              {/* Box 2: Target Band */}
+              <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 text-center transition-all hover-lift">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                  <span className="text-xl">🎯</span>
+                </div>
+                <div className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">
+                  <CountUp value={7.5} suffix="+" duration={2} />
+                </div>
+                <div className="text-xs font-bold text-slate-700 mt-1">IELTS Target Band</div>
               </div>
             </div>
 
@@ -78,28 +78,28 @@ export function QuickLeadSection() {
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>১০০% ফ্রি প্রাথমিক প্রোফাইল মূল্যায়ন ও ভিসা গাইডলাইন</span>
+                <span>আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট সুবিধা</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>JLPT, JFT-Basic ও NAT-TEST প্রস্তুতিতে পূর্ণাঙ্গ বই ও লিসেনিং ম্যাটেরিয়ালস</span>
+                <span>মাত্র ৩০০ টাকায় কম্পিউটার-বেসড ও পেপার-বেসড রিয়েল এক্সাম মক টেস্ট</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>জাপানে স্টুডেন্ট ভিসা, TITP ও SSW ক্যারিয়ারের নির্ভুল COE প্রসেসিং</span>
+                <span>পর্তুগাল ও ইউরোপের বিভিন্ন স্বনামধন্য বিশ্ববিদ্যালয়ে স্টুডেন্ট ভিসা প্রসেসিং</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm font-semibold text-slate-800">
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
                   <IconCheck className="w-3.5 h-3.5" />
                 </div>
-                <span>IELTS (Band 7.5+), Spoken English এবং কিডস ইংলিশ একাডেমি</span>
+                <span>স্পোকেন ইংলিশ ফ্লুয়েন্সি ও শিশুদের জন্য কিডস ইংলিশ একাডেমি</span>
               </div>
             </div>
 
@@ -130,10 +130,10 @@ export function QuickLeadSection() {
                   Direct Counselor Connect
                 </span>
                 <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-950 mt-1">
-                  Request Free Profile Assessment
+                  Book Assessment or 300 BDT Mock Test
                 </h3>
                 <p className="text-xs text-slate-500 mt-1 font-bangla">
-                  আপনার তথ্য দিন। AcademiaZ রাজশাহী সেন্টারের সিনিয়র কাউন্সেলর দ্রুত আপনার সাথে যোগাযোগ করবেন।
+                  আপনার তথ্য দিন। Kushtia IELTS Care-এর সিনিয়র ইন্সট্রাক্টর দ্রুত আপনার সাথে যোগাযোগ করবেন।
                 </p>
               </div>
 
@@ -148,7 +148,7 @@ export function QuickLeadSection() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="e.g. Arifur Rahman"
+                    placeholder="e.g. Tanvir Ahmed"
                     className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all"
                   />
                 </div>
@@ -164,7 +164,7 @@ export function QuickLeadSection() {
                       required
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="e.g. 01518-951062"
+                      placeholder="e.g. 01715-052885"
                       className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all"
                     />
                   </div>
@@ -186,21 +186,21 @@ export function QuickLeadSection() {
                 {/* Target Destination */}
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1.5">
-                    Target Study / Career Destination
+                    Target Study Destination
                   </label>
                   <select
                     value={destination}
                     onChange={(e) => setDestination(e.target.value)}
                     className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all cursor-pointer"
                   >
-                    <option value="Japan (Study in Japan)">Japan 🇯🇵 (Study in Japan - Language School & University)</option>
-                    <option value="Japan (SSW & TITP Work Visa)">Japan 🇯🇵 (SSW & TITP Work Visa Program)</option>
-                    <option value="Germany">Germany 🇩🇪 (Tuition-Free Universities & Ausbildung)</option>
+                    <option value="Portugal & Europe">Portugal 🇵🇹 (European Schengen & English Taught)</option>
                     <option value="United Kingdom">United Kingdom 🇬🇧 (1-Year Masters & PSW)</option>
-                    <option value="Canada">Canada 🇨🇦 (Public DLIs & PGWP)</option>
+                    <option value="Czech Republic & Europe">Czech Republic 🇨🇿 (Affordable European Education)</option>
+                    <option value="Germany">Germany 🇩🇪 (Public Universities & Engineering)</option>
+                    <option value="Canada">Canada 🇨🇦 (Public Colleges & PGWP)</option>
                     <option value="USA">USA 🇺🇸 (Top Universities & STEM OPT)</option>
-                    <option value="Australia">Australia 🇦🇺 (Work Rights & Degrees)</option>
-                    <option value="Malaysia">Malaysia 🇲🇾 (World-Class Branch Campuses)</option>
+                    <option value="Australia">Australia 🇦🇺 (Work Rights & Global Degrees)</option>
+                    <option value="Only IELTS & English Courses">Only IELTS & English Courses in Kushtia</option>
                   </select>
                 </div>
 
@@ -214,26 +214,23 @@ export function QuickLeadSection() {
                     onChange={(e) => setCourseLevel(e.target.value)}
                     className="w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-xs sm:text-sm text-slate-800 outline-none focus:border-amber-500 focus:bg-white focus:ring-1 focus:ring-amber-500/30 transition-all cursor-pointer"
                   >
-                    <option value="Japanese Language Course (N5 & N4 Levels)">
-                      Japanese Language Course (N5 & N4 Levels — Basic to Advanced)
-                    </option>
-                    <option value="Student Visa Guidance (Study in Japan)">
-                      Student Visa Guidance (Study in Japan — Language Schools & Unis)
-                    </option>
-                    <option value="TITP & SSW Preparation (Work in Japan)">
-                      TITP & SSW Preparation (Work in Japan — JFT & Trade Test)
-                    </option>
-                    <option value="IELTS Preparation (Target Band 7.5+)">
+                    <option value="IELTS Preparation (Academic & General)">
                       IELTS Preparation (Academic & General — Target Band 7.5+)
                     </option>
-                    <option value="Spoken English & Fluency">
+                    <option value="Computer-Based IELTS Mock Test (300 BDT)">
+                      Computer-Based IELTS Mock Test (Only 300 BDT with Individual Headset)
+                    </option>
+                    <option value="Paper-Based IELTS Mock Test">
+                      Paper-Based IELTS Mock Test (Complete Cambridge Simulation)
+                    </option>
+                    <option value="Spoken English & Communication Fluency">
                       Spoken English & Communication Fluency
                     </option>
-                    <option value="Kids English & Junior Fluency (Ages 5-14)">
-                      Kids English & Junior Fluency (Ages 5–14)
+                    <option value="Kids English Academy (Ages 5-14)">
+                      Kids English Academy (Ages 5–14 — Phonics & Speaking)
                     </option>
-                    <option value="Documentation & Application Support">
-                      Documentation & Application Support (Translations & SOP)
+                    <option value="Study Abroad Consultancy (Portugal / UK / Europe)">
+                      Study Abroad Consultancy (Portugal, UK & European Admissions)
                     </option>
                   </select>
                 </div>
@@ -241,7 +238,7 @@ export function QuickLeadSection() {
                 {/* Submit Action */}
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-[#0a1931] hover:bg-[#0f2c59] text-amber-400 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-98 border border-amber-500/30"
+                  className="w-full rounded-xl bg-[#092552] hover:bg-[#0d3b82] text-amber-400 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-98 border border-amber-500/30"
                 >
                   <IconWhatsApp className="w-4 h-4 text-emerald-400" />
                   <span>Submit & Connect on WhatsApp</span>

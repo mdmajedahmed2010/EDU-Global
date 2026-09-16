@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { company } from "@/lib/site-data";
 
 /**
- * ACADEMIAZ — Official Brand Logo Component.
- * Features the signature circular AcademiaZ emblem (Navy & Gold monogram with graduation cap & book)
- * with authentic typography and "LEARN · GROW · ACHIEVE" motto.
+ * KUSHTIA IELTS CARE — Official Brand Logo Component.
+ * Features the signature 4 orange droplets emblem and authentic Kushtia IELTS Care typography.
+ * Slogan: "a great place to learn"
  */
 export function BrandLogo({
   className,
@@ -25,7 +25,7 @@ export function BrandLogo({
     <div className={cn("inline-flex items-center gap-2.5 sm:gap-3 select-none group", className)}>
       <div
         className={cn(
-          "relative inline-flex items-center justify-center shrink-0 overflow-hidden rounded-full bg-white border-2 border-amber-500/50 shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:border-amber-500 p-0.5",
+          "relative inline-flex items-center justify-center shrink-0 overflow-hidden rounded-xl bg-white border border-slate-200/80 shadow-xs transition-all duration-300 group-hover:scale-105 group-hover:shadow-md p-0.5",
         )}
         style={{ width: size, height: size }}
       >
@@ -34,7 +34,7 @@ export function BrandLogo({
           alt={`${company.name} Official Logo`}
           width={size}
           height={size}
-          className="h-full w-full object-cover rounded-full"
+          className="h-full w-full object-contain rounded-lg"
           onError={(e) => {
             e.currentTarget.src = "/brand-assets/logo.jpg";
           }}
@@ -43,33 +43,34 @@ export function BrandLogo({
 
       {withText && (
         <div className={cn("flex flex-col text-left min-w-0", textClassName)}>
-          <div className="flex items-center gap-0.5 sm:gap-1 leading-none">
+          <div className="flex items-center gap-1 leading-none">
             <span
               className={cn(
                 "font-display font-black tracking-tight text-base sm:text-lg md:text-xl whitespace-nowrap",
-                variant === "dark" ? "text-white" : "text-[#0a1931]",
+                variant === "dark" ? "text-white" : "text-[#092552]",
               )}
             >
-              Academia
+              Kushtia
             </span>
             <span
               className={cn(
-                "font-display font-black text-base sm:text-lg md:text-xl tracking-tight text-amber-500 whitespace-nowrap",
+                "font-display font-black text-base sm:text-lg md:text-xl tracking-tight text-[#ff7a00] whitespace-nowrap",
               )}
             >
-              Z
+              IELTS Care
             </span>
           </div>
           <span
             className={cn(
-              "text-[0.55rem] sm:text-[0.62rem] tracking-[0.08em] sm:tracking-[0.12em] uppercase font-bold mt-0.5 sm:mt-1 truncate max-w-[190px] xs:max-w-[240px] sm:max-w-none",
-              variant === "dark" ? "text-amber-400/90" : "text-amber-700/80",
+              "text-[0.55rem] sm:text-[0.62rem] tracking-[0.06em] sm:tracking-[0.1em] font-semibold mt-0.5 sm:mt-1 truncate max-w-[200px] xs:max-w-[250px] sm:max-w-none",
+              variant === "dark" ? "text-orange-300/90" : "text-[#ff7a00]",
             )}
           >
-            {subtitle || "Japanese Language & Global Pathways · Rajshahi"}
+            {subtitle || "a great place to learn · Old Kataikhana More"}
           </span>
         </div>
       )}
     </div>
   );
 }
+

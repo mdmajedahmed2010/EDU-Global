@@ -6,7 +6,7 @@ export function ChatWidget() {
   const [showCallMenu, setShowCallMenu] = useState(false);
 
   const whatsappUrl = `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-    "Hello AcademiaZ! I would like to consult about Japanese language courses (N5/N4), Japan student visa / SSW, and IELTS/English courses in Rajshahi.",
+    "Hello Kushtia IELTS Care! I would like to consult about IELTS preparation, 300 BDT computer-based mock tests, Spoken English, and European study abroad opportunities.",
   )}`;
 
   const messengerUrl = company.social.messenger;
@@ -19,7 +19,7 @@ export function ChatWidget() {
           {/* Action 1: Facebook Messenger */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              Facebook Messenger (@AcademiaZRajshahi)
+              Facebook Messenger (@KushtiaIELTSCare)
             </span>
             <a
               href={messengerUrl}
@@ -37,13 +37,13 @@ export function ChatWidget() {
           {/* Action 2: Direct Phone Call Hotlines */}
           <div className="group relative flex items-center">
             <span className="pointer-events-none absolute right-full mr-3 hidden rounded-xl bg-slate-900/90 px-3 py-1.5 text-xs font-bold text-white shadow-md backdrop-blur whitespace-nowrap opacity-0 transition-all group-hover:opacity-100 sm:block">
-              Direct Hotlines (Rajshahi Campus)
+              Direct Hotlines (Kushtia Campus)
             </span>
             <button
               type="button"
               onClick={() => setShowCallMenu(!showCallMenu)}
               aria-label="Direct Phone Hotlines"
-              className="flex h-12 w-12 sm:h-13 sm:w-13 items-center justify-center rounded-full bg-sky-600 text-white shadow-lg border-2 border-white transition-all duration-200 hover:scale-110 hover:shadow-xl hover:bg-sky-700 cursor-pointer font-bold"
+              className="flex h-12 w-12 sm:h-13 sm:w-13 items-center justify-center rounded-full bg-[#092552] text-amber-400 shadow-lg border-2 border-white transition-all duration-200 hover:scale-110 hover:shadow-xl hover:bg-[#0d3b82] cursor-pointer font-bold"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
@@ -54,20 +54,20 @@ export function ChatWidget() {
             {showCallMenu && (
               <div className="absolute right-full mr-3 bottom-0 w-64 rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl animate-in fade-in duration-150">
                 <p className="text-[0.68rem] font-bold uppercase tracking-wider text-slate-500 mb-2">
-                  AcademiaZ অফিস হটলাইন:
+                  Kushtia IELTS Care হটলাইন:
                 </p>
                 <div className="space-y-1.5">
                   <a
                     href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
-                    className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-sky-500 hover:text-sky-600 transition-colors"
+                    className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-amber-500 hover:text-amber-600 transition-colors"
                   >
-                    📞 {company.phones[0]} (WhatsApp / Rajshahi)
+                    📞 {company.phones[0]} (WhatsApp / Kushtia)
                   </a>
                   <a
                     href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
-                    className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-sky-500 hover:text-sky-600 transition-colors"
+                    className="block rounded-xl border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-center text-xs font-bold text-slate-800 hover:border-amber-500 hover:text-amber-600 transition-colors"
                   >
-                    📞 {company.phones[1]} (Rajshahi Office)
+                    📞 {company.phones[1]} (Kushtia Office)
                   </a>
                 </div>
               </div>

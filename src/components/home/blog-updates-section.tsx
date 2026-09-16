@@ -13,34 +13,33 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    title: "Study in Japan: Japanese N5/N4 Mastery, COE Processing & Student Visa Guide",
+    title: "Computer-Based IELTS Mock Test: কেন এটি পরীক্ষার আসল ভয় দূর করতে সবচেয়ে কার্যকর?",
     excerpt:
-      "Comprehensive guidance on learning Japanese in Rajshahi, achieving JLPT/NAT-TEST/JFT qualifications, and securing your COE directly supervised under our Japan-based management.",
+      "কুষ্টিয়ায় আমাদের আধুনিক সাউন্ড ল্যাবে ব্যক্তিগত হেডসেট ও রিয়েল এক্সাম এনভায়রনমেন্টে মাত্র ৩০০ টাকায় পূর্ণাঙ্গ CBT মক টেস্টের সুবিধা এবং বিস্তারিত ব্যান্ড স্কোর এনালাইসিস।",
     date: "September 2026",
-    tag: "Japan Flagship Track",
-    image:
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
-    slug: "japan-student-visa-guide",
+    tag: "IELTS Mock Test",
+    image: "/banner.png",
+    slug: "computer-based-ielts-mock-test-kushtia",
   },
   {
-    title: "Work in Japan: TITP Trainee & SSW (Specified Skilled Worker) Program Preparation",
+    title: "Study in Portugal & Europe: কম খরচে ইংরেজি মাধ্যমে বিশ্বমানের উচ্চশিক্ষা",
     excerpt:
-      "Explore high-demand career pathways in Japan. Complete your N4 language proficiency, interview grooming, and authentic documentation support in Rajshahi.",
+      "পর্তুগাল ও চেক রিপাবলিকে সাশ্রয়ী টিউশন ফি, পার্ট-টাইম কাজের সুযোগ এবং সেনজেনভুক্ত ২৯ দেশে অবাধ ভ্রমণের জন্য কুষ্টিয়া আইইএলটিএস কেয়ারের পূর্ণাঙ্গ ভিসা প্রসেসিং গাইড।",
     date: "September 2026",
-    tag: "Career in Japan",
+    tag: "Europe Study Abroad",
     image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
-    slug: "japan-work-ssw-titp-guide",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    slug: "study-in-portugal-europe-guide",
   },
   {
-    title: "IELTS 7.5+, Spoken English & Kids English (Ages 5–14) at Kadirganj Campus",
+    title: "IELTS Speaking & Spoken Fluency: আত্মবিশ্বাসের সাথে কথা বলার সেরা কৌশল",
     excerpt:
-      "Interactive, communicative English coaching in Rajshahi. Structured batches for university aspirants, job seekers, and specialized language development for children.",
+      "প্রাত্যহিক যোগাযোগ ও আইইএলটিএস স্পিকিং ব্যান্ড ৭.৫+ অর্জনে আমাদের ওয়ান-টু-ওয়ান স্পিকিং সেশন এবং ছোটদের জন্য স্পেশাল কিডস ইংলিশ প্রোগ্রাম।",
     date: "September 2026",
-    tag: "English Academy",
+    tag: "Spoken & Kids English",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
-    slug: "ielts-spoken-kids-english-rajshahi",
+    slug: "ielts-speaking-kids-english-kushtia",
   },
 ];
 
@@ -53,9 +52,9 @@ export function BlogUpdatesSection() {
           tag="— OFFICIAL UPDATES & INSIGHTS —"
           title="Latest"
           highlight="insights"
-          description="Essential Japan intake roadmaps, Japanese language N5/N4 updates, and IELTS mastery tips from AcademiaZ Rajshahi."
-          tagColor="text-sky-600"
-          highlightColor="text-sky-600"
+          description="IELTS প্রস্তুতি, ৩০০ টাকায় কম্পিউটার মক টেস্ট এবং পর্তুগাল ও ইউরোপ উচ্চশিক্ষার সর্বশেষ তথ্য।"
+          tagColor="text-amber-600"
+          highlightColor="text-amber-600"
         />
 
         {/* 3 Blog Cards Grid with Staggered Motion */}

@@ -22,18 +22,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `${company.legalName} | AcademiaZ — Japanese Language Training & Visa Consultancy | Rajshahi`,
+        title: `${company.legalName} | Kushtia IELTS Care — a great place to learn | Old Kataikhana More, Kushtia`,
       },
       {
         name: "description",
         content:
-          "AcademiaZ — Japanese Language Training & Visa Consultancy in Rajshahi. Managed directly from Japan (জাপান থেকে পরিচালিত). Japanese Language (JLPT N5 & N4, NAT-TEST, JFT-Basic), TITP & SSW (Work in Japan), Student Visa, IELTS, Spoken English, Kids English (Ages 5–14). Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi. Hotlines: 01518-951062 / 01632-372232.",
+          "Kushtia IELTS Care (কুষ্টিয়া আইইএলটিএস কেয়ার) — Your Trusted Partner in IELTS Success! Complete Cambridge IELTS Preparation, Computer-Based Mock Tests with individual headsets at only 300 BDT, Spoken English, Kids English Academy, and European Study Abroad Consultancy (Portugal, Czech Republic, UK, Germany, Canada). 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. Hotlines: 01715-052885, 01805-954731.",
       },
-      { property: "og:title", content: `${company.legalName} — Learn · Grow · Achieve` },
+      { property: "og:title", content: `${company.legalName} — Your Trusted Partner in IELTS Success!` },
       {
         property: "og:description",
         content:
-          "Premier Japanese Language Academy & Visa Consultancy in Rajshahi. Managed directly from Japan. Specializing in Japanese N5/N4, TITP/SSW work programs, student visas, and IELTS coaching.",
+          "Premier IELTS Preparation, Computer Mock Tests at 300 BDT, Spoken English, and European Study Abroad Consultancy in Kushtia. Modern Audio Lab & individual headsets.",
       },
     ],
   }),
@@ -46,48 +46,57 @@ function Home() {
 
   const faqCategories = [
     "All",
-    "Japanese Language",
-    "Japan Visa & SSW",
-    "IELTS & English",
-    "Campus & Guidance",
+    "IELTS Preparation",
+    "Mock Tests (300 BDT)",
+    "Spoken & Kids English",
+    "Portugal & Study Abroad",
+    "Campus & Admission",
   ];
 
   const filteredFaqs =
     activeFaqCategory === "All"
       ? faqs
       : faqs.filter((f) => {
-          if (activeFaqCategory === "Japanese Language")
+          if (activeFaqCategory === "IELTS Preparation")
             return (
-              f.q.toLowerCase().includes("japanese") ||
-              f.q.toLowerCase().includes("n5") ||
-              f.q.toLowerCase().includes("n4") ||
-              f.a.toLowerCase().includes("japanese") ||
-              f.a.toLowerCase().includes("nat-test") ||
-              f.a.toLowerCase().includes("jlpt")
-            );
-          if (activeFaqCategory === "Japan Visa & SSW")
-            return (
-              f.q.toLowerCase().includes("visa") ||
-              f.q.toLowerCase().includes("ssw") ||
-              f.q.toLowerCase().includes("titp") ||
-              f.a.toLowerCase().includes("visa") ||
-              f.a.toLowerCase().includes("ssw") ||
-              f.a.toLowerCase().includes("work")
-            );
-          if (activeFaqCategory === "IELTS & English")
-            return (
-              f.q.toLowerCase().includes("english") ||
               f.q.toLowerCase().includes("ielts") ||
-              f.q.toLowerCase().includes("kids") ||
-              f.a.toLowerCase().includes("english") ||
-              f.a.toLowerCase().includes("ielts")
+              f.q.toLowerCase().includes("band") ||
+              f.q.toLowerCase().includes("cambridge") ||
+              f.a.toLowerCase().includes("ielts") ||
+              f.a.toLowerCase().includes("cambridge")
             );
-          if (activeFaqCategory === "Campus & Guidance")
+          if (activeFaqCategory === "Mock Tests (300 BDT)")
             return (
-              f.q.toLowerCase().includes("rajshahi") ||
-              f.q.toLowerCase().includes("japan") ||
-              f.a.toLowerCase().includes("rajshahi") ||
-              f.a.toLowerCase().includes("japan")
+              f.q.toLowerCase().includes("mock") ||
+              f.q.toLowerCase().includes("300") ||
+              f.q.toLowerCase().includes("computer") ||
+              f.a.toLowerCase().includes("mock") ||
+              f.a.toLowerCase().includes("300") ||
+              f.a.toLowerCase().includes("headset")
+            );
+          if (activeFaqCategory === "Spoken & Kids English")
+            return (
+              f.q.toLowerCase().includes("spoken") ||
+              f.q.toLowerCase().includes("kids") ||
+              f.q.toLowerCase().includes("english") ||
+              f.a.toLowerCase().includes("spoken") ||
+              f.a.toLowerCase().includes("kids")
+            );
+          if (activeFaqCategory === "Portugal & Study Abroad")
+            return (
+              f.q.toLowerCase().includes("portugal") ||
+              f.q.toLowerCase().includes("europe") ||
+              f.q.toLowerCase().includes("abroad") ||
+              f.a.toLowerCase().includes("portugal") ||
+              f.a.toLowerCase().includes("schengen")
+            );
+          if (activeFaqCategory === "Campus & Admission")
+            return (
+              f.q.toLowerCase().includes("kushtia") ||
+              f.q.toLowerCase().includes("kataikhana") ||
+              f.q.toLowerCase().includes("admission") ||
+              f.a.toLowerCase().includes("kushtia") ||
+              f.a.toLowerCase().includes("kataikhana")
             );
           return true;
         });
@@ -117,7 +126,7 @@ function Home() {
         <PopularDestinationsSection />
       </ScrollReveal>
 
-      {/* 6. Why Choose AcademiaZ */}
+      {/* 6. Why Choose Kushtia IELTS Care */}
       <ScrollReveal direction="up" delay={60}>
         <WhyChooseSection />
       </ScrollReveal>
@@ -137,20 +146,19 @@ function Home() {
         <VideoReelsSection />
       </ScrollReveal>
 
-      {/* 10. Rajshahi Campus & Japan Direct Oversight */}
+      {/* 10. Kushtia Campus & Audio Lab */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
-              <span>Campus & Japan Oversight</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
+              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+              <span>Campus & Audio Lab Facilities</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Inside <span className="text-sky-600">AcademiaZ</span>
+              Inside <span className="text-amber-500">Kushtia IELTS Care</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Visit our academy at Kadirganj, Greater Road, Rajshahi and benefit
-              from our 100% Japan-managed standards and direct oversight.
+              ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়া — আধুনিক সাউন্ড ল্যাব, কম্পিউটার ল্যাব ও অভিজ্ঞ শিক্ষক মণ্ডলীর সার্বক্ষণিক তত্ত্বাবধান।
             </p>
           </div>
 
@@ -177,10 +185,10 @@ function Home() {
               <span>Clear Answers</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Frequently Asked <span className="text-sky-600">Questions</span>
+              Frequently Asked <span className="text-amber-500">Questions</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent answers regarding Japanese language courses (N5/N4), Japan student & SSW visa procedures, IELTS, and our Rajshahi campus.
+              Direct, transparent answers regarding IELTS preparation, 300 BDT computer mock tests, Spoken English, Portugal & European study abroad, and our Kushtia campus.
             </p>
           </div>
 

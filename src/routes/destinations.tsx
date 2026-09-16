@@ -6,17 +6,17 @@ import { company, destinations } from "@/lib/site-data";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Study & Career Destinations | AcademiaZ — Japan & Global Pathways | Rajshahi" },
+      { title: "Study Abroad Destinations | Kushtia IELTS Care — Portugal & Global Pathways" },
       {
         name: "description",
         content:
-          "Explore premier study and career destinations processed by AcademiaZ: Japan (direct Japan-based management), Germany, Malaysia, UK, Canada, Australia, and USA. Kadirganj, Greater Road, Rajshahi.",
+          "Explore study abroad destinations guided by Kushtia IELTS Care: Portugal (Schengen European Gateway), Czech Republic, UK, Germany, Canada, USA, and Australia. 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
       },
-      { property: "og:title", content: "Study & Career Destinations | AcademiaZ" },
+      { property: "og:title", content: "Study Abroad Destinations | Kushtia IELTS Care" },
       {
         property: "og:description",
         content:
-          "Your Gateway to Japan & the World! Complete verified guide to Japanese language academies, TITP/SSW work pathways, and global university admissions.",
+          "Your Gateway to Higher Education in Portugal, Czech Republic, and top English-speaking countries with Cambridge IELTS preparation from Kushtia IELTS Care.",
       },
     ],
   }),
@@ -27,14 +27,14 @@ function Destinations() {
   const [activeRegion, setActiveRegion] = useState<string>("All");
   const [search, setSearch] = useState<string>("");
 
-  const regions = ["All", "Asia", "Europe", "North America", "Oceania"];
+  const regions = ["All", "Europe", "North America", "Oceania", "Asia"];
 
   const filtered = destinations.filter((d) => {
     const matchesRegion =
       activeRegion === "All" ||
       d.region === activeRegion ||
-      (activeRegion === "Asia" && (d.region.includes("Asia") || d.slug === "japan" || d.slug === "malaysia")) ||
-      (activeRegion === "Europe" && d.region.includes("Europe"));
+      (activeRegion === "Europe" && d.region.includes("Europe")) ||
+      (activeRegion === "Asia" && (d.region.includes("Asia") || d.slug === "japan" || d.slug === "malaysia"));
     const matchesSearch =
       d.name.toLowerCase().includes(search.toLowerCase()) ||
       d.popularFields.some((f) => f.toLowerCase().includes(search.toLowerCase())) ||
@@ -45,11 +45,11 @@ function Destinations() {
   return (
     <>
       <PageHero
-        eyebrow="Global Pathway Network"
-        title="Verified Study & Career Destinations"
-        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited international institutions guided by AcademiaZ (Rajshahi Campus & Japan Direct Oversight)."
+        eyebrow="Global Study Abroad Network"
+        title="Verified Study Destinations & Visa Pathways"
+        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited European and international institutions guided by Kushtia IELTS Care."
         image="/banner.jpg"
-        imageAlt="AcademiaZ official global destinations banner"
+        imageAlt="Kushtia IELTS Care study abroad destinations"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Destinations" }]} />
       </PageHero>
@@ -94,7 +94,7 @@ function Destinations() {
             destinations
           </p>
           <span className="text-sky-600 font-bold">
-            ✓ Free Profile Assessment at our Kadirganj, Rajshahi Campus
+            ✓ Free Profile Assessment at our Old Kataikhana More, Kushtia Campus
           </span>
         </div>
 

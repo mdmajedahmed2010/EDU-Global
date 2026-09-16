@@ -8,43 +8,43 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      stepColor: "bg-[#0a1931] text-amber-400",
+      stepColor: "bg-[#092552] text-amber-400",
       icon: "🔍",
       iconBg: "bg-amber-50 text-amber-700",
-      title: "Free Profile Assessment",
-      desc: "কাদিরগঞ্জ, গ্রেটার রোড, রাজশাহীতে আমাদের অফিসে আসুন অথবা অনলাইনে ফ্রি প্রোফাইল মূল্যায়ন করুন।",
+      title: "Free Assessment & Level Test",
+      desc: "১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়ায় আমাদের ক্যাম্পাসে এসে ফ্রি এসেসমেন্ট দিন।",
     },
     {
       step: "02",
       stepColor: "bg-amber-500 text-slate-950 font-black",
-      icon: "⛩️",
+      icon: "📚",
       iconBg: "bg-amber-100 text-amber-900",
-      title: "Language Training",
-      desc: "জাপান থেকে পরিচালিত ১০০% জাপান স্ট্যান্ডার্ডে Japanese N5/N4, SSW বা IELTS কোর্সে ভর্তি হোন।",
+      title: "Cambridge IELTS Preparation",
+      desc: "কেমব্রিজ সিলেবাস, আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেটের মাধ্যমে নিয়মিত নিবিড় অনুশীলন।",
     },
     {
       step: "03",
-      stepColor: "bg-[#0a1931] text-amber-400",
-      icon: "📋",
+      stepColor: "bg-[#092552] text-amber-400",
+      icon: "🎧",
       iconBg: "bg-blue-50 text-blue-700",
-      title: "Application & COE",
-      desc: "জাপানের শীর্ষ ল্যাঙ্গুয়েজ স্কুল ও বিশ্ববিদ্যালয়ের অ্যাডমিশন এবং COE ফাইল প্রসেসিং সম্পন্ন করা।",
+      title: "300 BDT CBT Mock Tests",
+      desc: "মাত্র ৩০০ টাকায় রিয়েল এক্সাম এনভায়রনমেন্টে কম্পিউটার-বেসড মক টেস্ট এবং ব্যান্ড স্কোর মূল্যায়ন।",
     },
     {
       step: "04",
       stepColor: "bg-slate-900 text-white",
-      icon: "✓",
+      icon: "🇵🇹",
       iconBg: "bg-slate-100 text-slate-800",
-      title: "Visa File & Mock Prep",
-      desc: "স্পন্সর ডকুমেন্টেশন ভেরিফিকেশন, SOP ড্রাফটিং এবং ১-অন-১ অ্যাম্ব্যাসি মক ইন্টারভিউ প্রস্তুতি।",
+      title: "University Offer & Admission",
+      desc: "পর্তুগাল, চেক রিপাবলিক বা ইউরোপের স্বনামধন্য বিশ্ববিদ্যালয় থেকে দ্রুত অফার লেটার সংগ্রহ।",
     },
     {
       step: "05",
-      stepColor: "bg-red-600 text-white",
+      stepColor: "bg-emerald-600 text-white",
       icon: "✈",
-      iconBg: "bg-red-50 text-red-600",
-      title: "Visa & Pre-Departure",
-      desc: "ভিসা সফলতার আনন্দ! ফ্লাইট বুকিং, প্রি-ডিপার্চার ব্রিফিং এবং জাপানে আগমনের পর প্রয়োজনীয় গাইডলাইন।",
+      iconBg: "bg-emerald-50 text-emerald-600",
+      title: "Visa Success & Departure",
+      desc: "নিখুঁত এম্বাসি ফাইল, স্পন্সরশিপ গাইডলাইন এবং ইউরোপে উড়াল দেওয়ার পূর্ণাঙ্গ নির্দেশনা।",
     },
   ];
 
@@ -53,10 +53,10 @@ export function HowItWorksSection() {
       <div className="section-shell">
         {/* Animated Section Header */}
         <MotionHeading
-          tag="— YOUR ACADEMIAZ ROADMAP —"
+          tag="— YOUR KUSHTIA IELTS CARE ROADMAP —"
           title="How It"
           highlight="Works"
-          description="স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী ! মাত্র ৫টি সহজ ও সুনির্দিষ্ট ধাপে আপনার জাপান ও বৈশ্বিক লক্ষ্য অর্জন করুন।"
+          description="কুষ্টিয়ায় আন্তর্জাতিক মানের IELTS প্রস্তুতি, ৩০০ টাকায় কম্পিউটার মক টেস্ট এবং ইউরোপে স্টুডেন্ট ভিসার সুনির্দিষ্ট ৫টি ধাপ।"
           tagColor="text-amber-600"
           highlightColor="text-amber-600"
         />
@@ -98,7 +98,7 @@ export function HowItWorksSection() {
                   {/* Bottom Accent */}
                   <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[0.68rem] text-slate-400 font-semibold">
                     <span>ধাপ {s.step}</span>
-                    <span className="text-amber-600">AcademiaZ ›</span>
+                    <span className="text-amber-600">IELTS Care ›</span>
                   </div>
                 </div>
               </StaggerItem>

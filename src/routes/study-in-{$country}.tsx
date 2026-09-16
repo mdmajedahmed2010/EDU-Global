@@ -11,11 +11,11 @@ export const Route = createFileRoute("/study-in-{$country}")({
   head: ({ loaderData }) => {
     const d = loaderData?.destination;
     const title = d
-      ? `Study & Work in ${d.name} from Bangladesh | AcademiaZ — Rajshahi & Japan Oversight`
-      : "Study Abroad Destinations | AcademiaZ";
+      ? `Study in ${d.name} from Kushtia | Kushtia IELTS Care — IELTS & Visa Guidance`
+      : "Study Abroad Destinations | Kushtia IELTS Care";
     const description = d
-      ? `${d.tagline}. Institutional admissions, language preparation, and visa guidance for ${d.name} from AcademiaZ. Kadirganj, Greater Road, Rajshahi. Hotline: ${company.phones[0]}.`
-      : "Study abroad and career guidance from AcademiaZ.";
+      ? `${d.tagline}. Institutional admissions, Cambridge IELTS preparation, and visa guidance for ${d.name} from Kushtia IELTS Care. 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia. Hotline: ${company.phones[0]}.`
+      : "Study abroad and Cambridge IELTS coaching from Kushtia IELTS Care.";
     return {
       meta: [
         { title },
@@ -32,7 +32,7 @@ function DestinationPage() {
   const { destination: d } = Route.useLoaderData();
 
   const whatsappHref = () => {
-    const text = `Hello AcademiaZ! I want to explore education / career pathways in ${d.name}.\n\nPlease guide me on admission requirements, scholarships, language courses, and upcoming intake deadlines.`;
+    const text = `Hello Kushtia IELTS Care! I want to explore education / career pathways in ${d.name}.\n\nPlease guide me on admission requirements, Cambridge IELTS score requirements, and upcoming intake deadlines.`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -43,7 +43,7 @@ function DestinationPage() {
         title={`Pathway to ${d.name}`}
         subtitle={d.tagline}
         image="/banner.jpg"
-        imageAlt={`Study in ${d.name} — AcademiaZ guidance`}
+        imageAlt={`Study in ${d.name} — Kushtia IELTS Care guidance`}
       >
         <div className="space-y-6">
           <Breadcrumbs
@@ -116,7 +116,7 @@ function DestinationPage() {
             {/* Why Study in Country */}
             <div className="rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm">
               <h2 className="font-display text-xl font-black text-slate-900 mb-4">
-                Why Choose {d.name} with AcademiaZ?
+                Why Choose {d.name} with Kushtia IELTS Care?
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 font-medium">
                 {d.intro}
@@ -152,11 +152,11 @@ function DestinationPage() {
                 Direct Counselor Support
               </span>
               <h3 className="font-display text-lg font-black text-slate-900">
-                Apply for {d.name} with AcademiaZ
+                Apply for {d.name} with Kushtia IELTS Care
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                Connect directly with our Rajshahi counselors and Japan-based advisory desk for institutional shortlisting,
-                document preparation, and fast-track visa filing.
+                Connect directly with our Kushtia counselors for university shortlisting,
+                IELTS target band preparation, and transparent visa documentation.
               </p>
 
               <div className="space-y-2.5 pt-2">
@@ -178,13 +178,13 @@ function DestinationPage() {
 
               <div className="border-t border-slate-100 pt-4 text-xs text-slate-600 space-y-2">
                 <p>
-                  <strong>📍 Rajshahi Campus:</strong> {company.address.full}
+                  <strong>📍 Kushtia Campus:</strong> {company.address.full}
                 </p>
                 <p>
-                  <strong>🇯🇵 Management:</strong> Managed Directly from Japan (জাপান থেকে পরিচালিত)
+                  <strong>🎧 Facilities:</strong> Modern Audio Lab (Individual Headsets)
                 </p>
                 <p>
-                  <strong>🎓 Language Academy:</strong> Japanese N5/N4 • TITP/SSW • IELTS • Spoken
+                  <strong>💻 Mock Tests:</strong> 300 BDT Computer-Based & Paper-Based
                 </p>
                 <p>
                   <strong>🕒 Hours:</strong> {company.hours}

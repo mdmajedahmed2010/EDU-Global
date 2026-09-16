@@ -5,17 +5,17 @@ import { company, upcomingIntakesAndOffers } from "@/lib/site-data";
 export const Route = createFileRoute("/offers")({
   head: () => ({
     meta: [
-      { title: "Upcoming Intakes & Language Batches | AcademiaZ — Rajshahi & Japan Oversight" },
+      { title: "Upcoming Batches & Mock Tests | Kushtia IELTS Care" },
       {
         name: "description",
         content:
-          "Explore active intakes: Japanese Language (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP & SSW program batches, IELTS preparation, and Japan student visa sessions at AcademiaZ Rajshahi.",
+          "Explore active batches at Kushtia IELTS Care: Cambridge IELTS regular & crash courses, 300 BDT CBT Audio Lab mock tests, Spoken English, Kids English, and Portugal & Czech Republic study visa intakes.",
       },
-      { property: "og:title", content: "Upcoming Intakes & Academy Batches | AcademiaZ" },
+      { property: "og:title", content: "Upcoming Batches & Mock Tests | Kushtia IELTS Care" },
       {
         property: "og:description",
         content:
-          "Register for upcoming Japanese N5/N4 batches, TITP/SSW tracks, and IELTS batches at AcademiaZ, Kadirganj, Greater Road, Rajshahi.",
+          "Register for upcoming Cambridge IELTS batches, 300 BDT audio lab CBT mock tests, and European visa counseling at Kushtia IELTS Care, Old Kataikhana More, Kushtia.",
       },
     ],
   }),
@@ -26,21 +26,21 @@ function Offers() {
   return (
     <>
       <PageHero
-        eyebrow="Admissions & Special Intakes"
-        title="Upcoming Intakes & Academy Admissions"
-        subtitle="Explore active Japanese N5/N4 packages, TITP & SSW career tracks, IELTS preparation, and Japan student visa intakes guided by AcademiaZ (Rajshahi Campus & Japan Direct Oversight)."
+        eyebrow="Admissions & Special Batches"
+        title="Upcoming Batches & Mock Test Schedules"
+        subtitle="Explore active Cambridge IELTS batches, 300 BDT CBT Audio Lab mock tests, Spoken English fluency, Kids English, and European study abroad admissions at Kushtia IELTS Care."
         image="/banner.jpg"
-        imageAlt="AcademiaZ active admissions and intakes"
+        imageAlt="Kushtia IELTS Care active admissions and batches"
       >
-        <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Intakes & Offers" }]} />
+        <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Batches & Offers" }]} />
       </PageHero>
 
       {/* Active High-Priority Campaigns Grid */}
       <section className="section-shell py-14 sm:py-20">
         <SectionHeading
-          eyebrow="Active Campaigns"
-          title="Current Intakes, Drives & Academy Batches"
-          subtitle="All sessions below are actively accepting applications with complete transparency, verified study materials, and direct guidance from our Kadirganj campus and Japan-based advisors."
+          eyebrow="Active Batches"
+          title="Current Batches, CBT Mock Tests & Admissions"
+          subtitle="All programs below are actively accepting admissions with modern audio lab facilities, Cambridge curriculum, individual headsets, and 1-on-1 speaking assessments at our Kushtia campus."
         />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -72,7 +72,7 @@ function Offers() {
 
               <div className="mt-8 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AcademiaZ, I want to apply / register for: "${item.title}".`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Kushtia IELTS Care, I want to apply / register for: "${item.title}".`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-emerald w-full text-center text-xs py-3 shadow-sm font-bold"

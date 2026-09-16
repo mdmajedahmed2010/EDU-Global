@@ -14,17 +14,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | AcademiaZ — Japanese Language Training & Visa Consultancy | Rajshahi" },
+      { title: "About Us | Kushtia IELTS Care — a great place to learn | Old Kataikhana More, Kushtia" },
       {
         name: "description",
         content:
-          "Discover AcademiaZ — Premier Japanese language training centre and visa consultancy in Rajshahi. Managed directly from Japan (জাপান থেকে পরিচালিত). Specialized in Japanese JLPT N5/N4, NAT-TEST, JFT-Basic, TITP/SSW programs, Student Visas, IELTS, and Spoken English. Kadirganj, Greater Road, Rajshahi. Hotlines: 01518-951062 / 01632-372232.",
+          "Discover Kushtia IELTS Care — premier IELTS preparation academy, 300 BDT computer-based mock tests, Spoken English, Kids English, and European study abroad consultancy in Kushtia. 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. Hotlines: 01715-052885 / 01805-954731.",
       },
-      { property: "og:title", content: "About AcademiaZ | Learn · Grow · Achieve" },
+      { property: "og:title", content: "About Kushtia IELTS Care | a great place to learn" },
       {
         property: "og:description",
         content:
-          "Official profile of AcademiaZ — Japanese Language Training & Visa Consultancy. Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight.",
+          "Official profile of Kushtia IELTS Care. Modern audio lab with individual headsets, Cambridge curriculum, 300 BDT mock tests, and Portugal/European visa consultancy.",
       },
     ],
   }),
@@ -33,32 +33,32 @@ export const Route = createFileRoute("/about")({
 
 const advisoryWings = [
   {
-    title: "Japanese Language Academy (N5 & N4)",
-    hub: "Rajshahi Campus & Japan Oversight",
+    title: "IELTS Preparation Academy",
+    hub: "Kushtia Campus Audio Lab",
     badge: "Flagship Wing",
-    icon: "🇯🇵",
-    desc: "Intensive 3–4 month Japanese language tracks focusing on JLPT, NAT-TEST, and JFT-Basic exams with Kanji mastery, audio listening labs, and speaking practice.",
+    icon: "🎯",
+    desc: "Comprehensive Academic & General IELTS preparation with Cambridge syllabus, individual speaking mock sessions, and weekly progress evaluations.",
   },
   {
-    title: "Japan Student Visa & COE Wing",
-    hub: "Rajshahi Campus",
-    badge: "Student Pathway",
-    icon: "🌸",
-    desc: "Comprehensive admissions and Certificate of Eligibility (COE) processing for top language academies, vocational colleges, and universities across Japan.",
+    title: "Computer-Based Mock Test Center",
+    hub: "Modern CBT Lab",
+    badge: "Real Exam Experience",
+    icon: "🎧",
+    desc: "Real-time computer-based and paper-based IELTS mock tests at only 300 BDT with individual headsets, instant feedback, and detailed band scoring.",
   },
   {
-    title: "TITP & SSW (Work in Japan) Wing",
-    hub: "Career Cell",
-    badge: "Employment Track",
-    icon: "💼",
-    desc: "Technical Intern Training Program (TITP) and Specified Skilled Worker (SSW) preparation with professional Japanese language coaching and interview grooming.",
+    title: "Spoken & Kids English Academy",
+    hub: "Fluency & Young Learners Lab",
+    badge: "Communication Wing",
+    icon: "🗣️",
+    desc: "Interactive speaking fluency, interview grooming, and child-friendly phonics and vocabulary development for kids and young learners.",
   },
   {
-    title: "IELTS, Spoken & Kids English Wing",
-    hub: "Rajshahi English Academy",
-    badge: "English Academy",
-    icon: "🎓",
-    desc: "Target Band 7.5+ IELTS preparation with Cambridge mock exams, practical Spoken English fluency classes, and child-centric Kids English programs for ages 5–14.",
+    title: "European Study Abroad Consultancy",
+    hub: "Global Admissions Wing",
+    badge: "Portugal & Europe Track",
+    icon: "🇵🇹",
+    desc: "Affordable European education pathways, specializing in Portugal, Czech Republic, UK, and German university admissions and visa documentation.",
   },
 ];
 
@@ -66,11 +66,11 @@ function About() {
   return (
     <>
       <PageHero
-        eyebrow="Our Story & Japan-Managed Excellence"
-        title="LEARN · GROW · ACHIEVE"
-        subtitle="AcademiaZ is Rajshahi's premier Japanese language training institute and visa consultancy, managed directly from Japan (জাপান থেকে পরিচালিত), opening authentic career and higher education pathways."
-        image="/banner.jpg"
-        imageAlt="AcademiaZ Japanese language and visa consultancy campus"
+        eyebrow="Our Story & Excellence in English"
+        title="YOUR TRUSTED PARTNER IN IELTS SUCCESS!"
+        subtitle="Kushtia IELTS Care is Kushtia's premier English language academy and study abroad consultancy, empowering students with modern audio facilities and authentic pathways."
+        image="/banner.png"
+        imageAlt="Kushtia IELTS Care classroom, audio lab, and banner"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "About Us" }]} />
       </PageHero>
@@ -85,7 +85,7 @@ function About() {
               <div>
                 <h3 className="font-display text-xl font-bold text-slate-900">{company.name}</h3>
                 <span className="inline-block rounded-full bg-amber-50 border border-amber-200 px-3 py-0.5 text-xs font-bold text-amber-800 mt-1">
-                  জাপান থেকে পরিচালিত
+                  a great place to learn
                 </span>
               </div>
             </div>
@@ -97,8 +97,8 @@ function About() {
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
                 <dt className="text-slate-500 font-medium">Brand Identity</dt>
-                <dd className="font-bold text-sky-700 text-right">
-                  AcademiaZ (Learn · Grow · Achieve)
+                <dd className="font-bold text-amber-600 text-right">
+                  Kushtia IELTS Care (a great place to learn)
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
@@ -108,14 +108,14 @@ function About() {
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Management Origin</dt>
-                <dd className="font-bold text-amber-800 text-right">
-                  Japan Direct Oversight (100% Japan Standard)
+                <dt className="text-slate-500 font-medium">Unique Facility</dt>
+                <dd className="font-bold text-blue-900 text-right">
+                  Modern Audio Lab & Individual Headsets
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
                 <dt className="text-slate-500 font-medium">Flagship Offerings</dt>
-                <dd className="font-bold text-sky-700 text-right">Japanese N5/N4 • TITP/SSW • Student Visa • IELTS</dd>
+                <dd className="font-bold text-amber-600 text-right">IELTS • 300 BDT Mock Test • Spoken • Portugal</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
                 <dt className="text-slate-500 font-medium">Learning Model</dt>
@@ -139,41 +139,41 @@ function About() {
           <div className="space-y-6">
             <span className="badge-clean badge-red">Our Vision & Mission</span>
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Empowering Aspirations Through Authentic Japanese Education & Integrity
+              Empowering Aspirations Through International English Standards & Care
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
-              AcademiaZ was established in Kadirganj, Rajshahi with a definitive purpose: to bring genuine, Japan-standard language training and transparent visa consultancy within reach of students and professionals across Bangladesh.
+              কুষ্টিয়া আইইএলটিএস কেয়ার (Kushtia IELTS Care) পুরাতন কসাইখানা মোড়ে শিক্ষার্থীদের জন্য একটি নিবেদিত ইংরেজি ভাষা ও উচ্চশিক্ষা সহায়তা কেন্দ্র হিসেবে প্রতিষ্ঠিত। আমাদের লক্ষ্য কুষ্টিয়ার প্রতিটি শিক্ষার্থীর জন্য আন্তর্জাতিক মানের ভাষা শিক্ষা ও ইউরোপে উচ্চশিক্ষার পথ সহজ করা।
             </p>
             <p className="text-sm leading-relaxed text-slate-600">
-              Being directly managed from Japan ("জাপান থেকে পরিচালিত"), AcademiaZ offers an unmatched standard of authenticity. We ensure that our students do not simply memorize grammar formulas, but develop genuine conversational fluency, cultural comprehension, and the specific skill set demanded by Japanese educational institutions and employers.
+              আইইএলটিএস আসল পরীক্ষার ভীতি দূর করতে আমরা প্রতিষ্ঠা করেছি আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট সেটআপ। মাত্র ৩০০ টাকায় রিয়েল এক্সাম এনভায়রনমেন্টে কম্পিউটার ও পেপার ভিত্তিক মক টেস্ট দিয়ে শিক্ষার্থীরা তাদের প্রকৃত দুর্বলতা কাটিয়ে সর্বোচ্চ ব্যান্ড স্কোর অর্জন করতে সক্ষম হচ্ছে।
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2 pt-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🎯 Our Mission</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  To provide premier Japanese and English language education, honest career counseling, and authentic visa processing that empowers candidates to excel abroad.
+                  কেমব্রিজ সিলেবাসে সঠিক IELTS প্রস্তুতি, সাশ্রয়ী মক টেস্ট এবং ইউরোপীয় সেনজেন দেশগুলোতে সৎ ও স্বচ্ছ ভিসা প্রসেসিং সহায়তা নিশ্চিত করা।
                 </p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🔭 Our Vision</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  To be Bangladesh's most reputable and dependable gateway to Japan, recognized for academic excellence, 100% transparency, and student-first dedication.
+                  কুষ্টিয়া অঞ্চলের সবচেয়ে নির্ভরযোগ্য, আধুনিক ও শিক্ষার্থী-বান্ধব ল্যাঙ্গুয়েজ একাডেমি ও ইউরোপ স্টাডি কনসালটেন্সি হিসেবে প্রতিটি স্বপ্নকে বাস্তবে রূপ দেওয়া।
                 </p>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-r from-sky-50/60 via-slate-50 to-amber-50/60 border border-slate-200 p-5">
-              <h4 className="font-display text-sm font-bold text-sky-700 mb-2">
-                🌟 The 4 AcademiaZ Pillars:
+            <div className="rounded-2xl bg-gradient-to-r from-amber-50/60 via-slate-50 to-blue-50/60 border border-slate-200 p-5">
+              <h4 className="font-display text-sm font-bold text-amber-700 mb-2">
+                🌟 The 4 Kushtia IELTS Care Pillars:
               </h4>
               <BulletList
                 items={[
-                  "Japan-Based Direct Management: Controlled and supervised directly from Japan, ensuring curriculum adherence to genuine Japanese standards.",
-                  "Japanese Language Mastery (N5 & N4): In-depth training for JLPT, NAT-TEST, and JFT-Basic with Kanji drills, listening audio labs, and speaking sessions.",
-                  "Transparent Visa & COE Guidance: Meticulous document verification, SOP writing, and visa interview preparation with genuine school liaisons.",
-                  "English Language & IELTS Excellence: Interactive Cambridge-standard IELTS coaching, Spoken English fluency, and Kids English (Ages 5–14).",
+                  "Modern Sound Lab & Individual Headsets: ক্রিস্টাল ক্লিয়ার অডিও ল্যাব ও রিয়েল এক্সাম এনভায়রনমেন্ট।",
+                  "300 BDT Real Exam Mock Tests: পূর্ণাঙ্গ কম্পিউটার-বেসড ও পেপার-বেসড মক টেস্ট এবং বিস্তারিত স্কোর কার্ড।",
+                  "Cambridge Aligned Syllabus & Expert Care: অভিজ্ঞ শিক্ষক দ্বারা ছোট ব্যাচে ওয়ান-টু-ওয়ান স্পিকিং ও রাইটিং মূল্যায়ন।",
+                  "Portugal & European Study Abroad: সেনজেনভুক্ত পর্তুগাল, চেক রিপাবলিক, ইউকে ও জার্মানিতে সাশ্রয়ী উচ্চশিক্ষা ও সঠিক ভিসা গাইডলাইন।",
                 ]}
               />
             </div>
@@ -186,30 +186,30 @@ function About() {
         <div className="rounded-3xl bg-slate-950 border border-slate-800 p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
             <div>
-              <span className="badge-clean badge-red text-xs">Rajshahi Campus & Japan Oversight</span>
+              <span className="badge-clean badge-red text-xs">Old Kataikhana More Campus</span>
               <h3 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-white">
-                Kadirganj, Greater Road, Rajshahi
+                169/4, Mahatab Uddin Road, Kushtia
               </h3>
               <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                Our modern academy is centrally located at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000. We warmly welcome students and guardians for free profile assessments, Japanese language demo classes, and personalized visa counseling.
+                আমাদের একাডেমি ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়ায় অবস্থিত। শিক্ষার্থী ও অভিভাবকদের আন্তরিকভাবে আমন্ত্রণ জানাচ্ছি ফ্রি অ্যাসেসমেন্ট, ক্লাস পরিদর্শন এবং কনসালটেন্সির জন্য।
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-sky-400">📍 Rajshahi Campus</p>
+                  <p className="text-xs font-bold text-amber-400">📍 Kushtia Campus</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
                     {company.address.full}
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
-                    📞 {company.phones[0]} (WhatsApp) / {company.phones[1]}
+                    📞 {company.phones[0]} (Call / WhatsApp) / {company.phones[1]}
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-amber-400">🇯🇵 Japan Direct Management</p>
+                  <p className="text-xs font-bold text-blue-400">🎧 Modern Audio Lab</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
-                    Supervised Directly from Japan (জাপান থেকে পরিচালিত)
+                    Individual Headset Audio Lab Setup
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
-                    🌐 100% Japan Standard Training & Support
+                    🌐 300 BDT Full CBT Mock Test Experience
                   </p>
                 </div>
               </div>
@@ -219,13 +219,13 @@ function About() {
               <div className="text-center space-y-3">
                 <BrandLogo size={72} />
                 <h4 className="font-display font-black text-xl text-white">
-                  AcademiaZ
+                  Kushtia IELTS Care
                 </h4>
                 <p className="text-xs text-amber-400 font-bold">
-                  Japanese Language Training & Visa Consultancy
+                  Your Trusted Partner in IELTS Success!
                 </p>
                 <p className="text-xs text-slate-400">
-                  Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight
+                  169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia
                 </p>
               </div>
             </div>
@@ -241,9 +241,9 @@ function About() {
       {/* Operational Wings */}
       <section className="section-shell py-14 sm:py-20 border-t border-slate-200">
         <SectionHeading
-          eyebrow="Specialized Academic & Career Wings"
+          eyebrow="Specialized Academic & Study Abroad Wings"
           title="Our Operational Divisions"
-          subtitle="Experienced educators and counselors dedicated to Japanese language, Japan visa compliance, TITP/SSW work pathways, and IELTS training."
+          subtitle="Experienced educators and counselors dedicated to IELTS preparation, 300 BDT mock tests, and European visa processing."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -266,10 +266,10 @@ function About() {
 
               <div className="mt-6 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello AcademiaZ, I want to consult your "${wing.title}" division.`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Kushtia IELTS Care, I want to consult your "${wing.title}" division.`)}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-xs font-bold text-sky-700 hover:underline flex items-center justify-center gap-1.5"
+                  className="text-xs font-bold text-amber-600 hover:underline flex items-center justify-center gap-1.5"
                 >
                   <span>Connect with Division →</span>
                 </a>
@@ -283,8 +283,8 @@ function About() {
       <section className="section-shell py-14 sm:py-20 border-t border-slate-200 bg-slate-50/50">
         <SectionHeading
           eyebrow="Verified Campus & Support"
-          title="Rajshahi Campus & Japan Direct Oversight"
-          subtitle="Explore our modern academy at Kadirganj, Greater Road, Rajshahi, and our direct Japanese operational desk."
+          title="Kushtia Campus & Modern Audio Lab"
+          subtitle="Explore our modern academy at Old Kataikhana More, Kushtia, with dedicated listening lab facilities."
         />
         <div className="mt-10">
           <OfficeGallery />

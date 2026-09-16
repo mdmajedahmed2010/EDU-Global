@@ -18,7 +18,7 @@ export function MobileActionDock() {
 
         <a
           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-            "Hello AcademiaZ! I would like a consultation for Japanese language courses (N5/N4), Japan visa, and IELTS/English courses in Rajshahi.",
+            "Hello Kushtia IELTS Care! I would like a consultation for IELTS courses, 300 BDT CBT Mock Test, Spoken English, or Portugal/Europe study visa in Kushtia.",
           )}`}
           target="_blank"
           rel="noreferrer"

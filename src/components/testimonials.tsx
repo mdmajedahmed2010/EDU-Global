@@ -32,7 +32,7 @@ export function Testimonials() {
           tag="— VERIFIED REVIEWS & SUCCESS STORIES —"
           title="What our students"
           highlight="say"
-          description="Real feedback from Japanese N5/N4 learners, TITP & SSW candidates, IELTS test takers, and students guided by AcademiaZ Rajshahi."
+          description="Real feedback from Cambridge IELTS candidates, CBT mock test takers, Spoken English students, and European visa applicants guided by Kushtia IELTS Care."
           tagColor="text-sky-600"
           highlightColor="text-sky-600"
         />

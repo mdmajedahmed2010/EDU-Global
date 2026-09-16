@@ -5,83 +5,83 @@ import { company } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 import { SlideIn, StaggerContainer, StaggerItem } from "@/components/motion-wrapper";
 
-const flightStages = [
+const roadmapStages = [
   {
     step: "01",
-    title: "Free Profile & Language Assessment",
+    title: "Free Profile & English Diagnostic Assessment",
     timeline: "Day 0 – 2",
-    badge: "Personalized Roadmap",
-    desc: "Comprehensive evaluation of your academic background, target language pathway (Japanese JLPT N5/N4, NAT-TEST, JFT-Basic, IELTS, Spoken English), and destination goals (Japan, Germany, Malaysia, UK, Canada, Australia) by AcademiaZ advisors.",
+    badge: "Personalized Study Plan",
+    desc: "Comprehensive evaluation of your educational background, current English proficiency level, and study abroad ambitions (Portugal, Czech Republic, UK, Canada, Australia) by Kushtia IELTS Care advisors.",
     checklist: [
-      "Academic Document Verification",
-      "Language Track Selection (Japanese / IELTS / English)",
-      "Visa Eligibility & Destination Matching",
+      "Academic Certificate Review",
+      "Free English Proficiency & Band Evaluation",
+      "Tailored IELTS & Destination Roadmap",
     ],
     counselorTip:
-      `Bring your academic certificates to our academy at Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi, or connect via WhatsApp (${company.phones[0]} / ${company.phones[1]}).`,
+      `Visit our center at 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia, or connect via WhatsApp (${company.phones[0]} / ${company.phones[1]}).`,
   },
   {
     step: "02",
-    title: "Language Training & Certificate Prep",
-    timeline: "Weeks 1 – 12",
-    badge: "Accredited Training",
-    desc: "Join interactive multimedia batches for Japanese N5/N4 (JLPT, NAT-TEST, JFT-Basic), or IELTS Band 7.5+ with modern listening lab facilities, free course materials, and diagnostic mock tests.",
+    title: "Cambridge IELTS Coaching & Audio Lab Practice",
+    timeline: "Weeks 1 – 10",
+    badge: "Modern Audio Lab",
+    desc: "Join interactive Cambridge IELTS batches with individual headphones in our dedicated listening audio lab, intensive speaking sessions, and targeted writing feedbacks.",
     checklist: [
-      "Interactive Audio-Visual Lab Practice",
-      "Mock Tests & NAT-TEST / JLPT / JFT Drills",
-      "Official Language Certification Support",
+      "Individual Headset Listening Audio Lab",
+      "1-on-1 Cambridge Speaking Evaluations",
+      "Structured Grammar & Writing Templates",
     ],
     counselorTip:
-      "Language proficiency is the foundation for visa and career success in Japan. Our Japan-supervised instructors ensure rigorous preparation.",
+      "Individual headphone practice eliminates audio distortion and guarantees realistic exam conditions to secure Band 7.0+.",
   },
   {
     step: "03",
-    title: "School Admission & COE Processing",
-    timeline: "Weeks 12 – 16",
-    badge: "Direct Acceptance",
-    desc: "Direct submission for Japanese Certificate of Eligibility (COE), language academy enrollment, or partner college applications across global destinations.",
+    title: "Computer-Based & Paper Mock Tests (300 BDT)",
+    timeline: "Weeks 8 – 12",
+    badge: "300 BDT Exam Experience",
+    desc: "Take full-length Cambridge computer-based and paper-based mock tests in our lab for only 300 BDT with immediate diagnostic score breakdowns.",
     checklist: [
-      "COE & Japanese Immigration Dossier",
-      "School Selection & Interview Drills",
-      "Sponsor Solvency & Financial Compliance",
+      "Authentic Exam Simulation Interface",
+      "Immediate Band Score & Error Feedback",
+      "Final Band Booster Strategy Sessions",
     ],
     counselorTip:
-      "Our compliance specialists conduct meticulous document vetting to guarantee zero documentary errors before lodgement.",
+      "Testing in real exam conditions before your official test date minimizes exam anxiety and boosts time management.",
   },
   {
     step: "04",
-    title: "Embassy Lodgement & Consular Mock Interview",
-    timeline: "Prior to Visa",
-    badge: "Proven Visa Success",
-    desc: "Expert embassy appointment scheduling, student and trainee visa dossier compilation, and rigorous 1-on-1 interview practice simulating authentic consular questions.",
+    title: "University Admission & Document Auditing",
+    timeline: "Weeks 12 – 16",
+    badge: "European University Offers",
+    desc: "Direct applications to accredited universities in Portugal (Lisbon, Porto, Coimbra, Aveiro), Czech Republic, and top English-speaking nations with scholarship guidance.",
     checklist: [
-      "Embassy / Consular Appointment Booking",
-      "1-on-1 Consular Mock Interview Drills",
-      "Passport Stamped with Visa",
+      "Official Offer Letter / Admission Acceptance",
+      "Tuition Fee Transfer Verification",
+      "Document Legalization & Apostille Support",
     ],
     counselorTip:
-      "Simulate authentic Japanese Embassy consular questions with our experienced mentors at AcademiaZ Kadirganj, Rajshahi.",
+      "Our counselors verify all educational certificates and bank solvency documents to ensure 100% compliance with Schengen visa directives.",
   },
   {
     step: "05",
-    title: "Japan Direct Care & Post-Landing Settlement",
-    timeline: "Upon Arrival",
-    badge: "Direct Japan Support",
-    desc: "Airport pickup guidance, dormitory/sharehouse accommodation advice, ward office registration, and direct ongoing support from our Japan-based management.",
+    title: "VFS / Embassy File Lodgement & Pre-Departure",
+    timeline: "Prior to Travel",
+    badge: "Schengen Visa Success",
+    desc: "Comprehensive visa dossier filing, consular interview preparation, flight bookings, and arrival guidance in Portugal and across Europe.",
     checklist: [
-      "Japan-Based Advisory & On-Ground Guidance",
-      "Part-Time Job Rules & City Hall Registration Advice",
-      "Lifelong AcademiaZ Student Network",
+      "VFS Global Appointment & Visa Submission",
+      "Pre-Departure Briefing & Currency Guidance",
+      "Lifelong Kushtia IELTS Care Alumni Network",
     ],
     counselorTip:
-      "You are never alone abroad—our Japan-based management guides and supports you from your very first day in Japan!",
+      "We prepare you for life abroad with detailed orientation on European residence cards, part-time student work, and accommodation.",
   },
 ];
 
 export function IlluminatedFlightPath() {
   const [activeStage, setActiveStage] = useState(0);
   const { open } = useRegisterModal();
-  const current = flightStages[activeStage] ?? flightStages[0]!;
+  const current = roadmapStages[activeStage] ?? roadmapStages[0]!;
 
   return (
     <section className="section-shell py-14 sm:py-20 border-t border-slate-200">
@@ -105,14 +105,14 @@ export function IlluminatedFlightPath() {
         <div className="hidden md:block absolute top-6 left-12 right-12 h-0.5 bg-slate-200 -z-0" />
         <div
           className="hidden md:block absolute top-6 left-12 h-0.5 bg-sky-600 transition-all duration-500 -z-0"
-          style={{ width: `${(activeStage / (flightStages.length - 1)) * 80}%` }}
+          style={{ width: `${(activeStage / (roadmapStages.length - 1)) * 80}%` }}
         />
 
         <StaggerContainer
           staggerDelay={0.07}
           className="grid grid-cols-2 sm:grid-cols-5 gap-3 relative z-10"
         >
-          {flightStages.map((stage, idx) => (
+          {roadmapStages.map((stage, idx) => (
             <StaggerItem key={stage.step} direction="up" distance={22}>
               <button
                 type="button"
@@ -144,34 +144,38 @@ export function IlluminatedFlightPath() {
         </StaggerContainer>
       </div>
 
-      {/* Interactive Detail Box for Active Stage */}
-      <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-white via-slate-50/50 to-sky-50/30 p-6 sm:p-8 shadow-sm">
-        <div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr] md:items-center">
-          <div className="space-y-4">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <span className="rounded-full bg-sky-100 text-sky-800 px-3 py-1 text-xs font-extrabold">
-                {current.badge}
-              </span>
-              <span className="text-xs text-slate-500 font-semibold">
-                Estimated Duration: <strong className="text-slate-900">{current.timeline}</strong>
-              </span>
+      {/* Active Stage Detailed Breakdown */}
+      <div className="card-clean rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-5 mb-5">
+          <div className="flex items-center gap-3">
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-600 text-white font-black text-lg shadow-md">
+              {current.step}
+            </span>
+            <div>
+              <span className="badge-clean badge-blue text-[0.7rem]">{current.badge}</span>
+              <h3 className="font-display text-lg sm:text-xl font-black text-slate-900 mt-1">
+                {current.title}
+              </h3>
             </div>
+          </div>
+          <div className="rounded-xl bg-slate-50 px-3.5 py-1.5 border border-slate-200 text-xs font-semibold text-slate-700 self-start md:self-auto">
+            ⏱ Typical Timeline: <strong className="text-slate-900">{current.timeline}</strong>
+          </div>
+        </div>
 
-            <h3 className="font-display text-xl sm:text-2xl font-bold text-slate-900">
-              Stage {current.step}: {current.title}
-            </h3>
-
+        <div className="grid gap-6 md:grid-cols-2 items-start">
+          <div className="space-y-4">
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
               {current.desc}
             </p>
 
-            <div className="space-y-2 pt-2">
-              <span className="text-xs font-bold text-slate-800 block">
-                Official Stage Checklist:
+            <div className="space-y-2">
+              <span className="text-[0.7rem] font-bold uppercase tracking-wider text-slate-400">
+                Key Deliverables & Action Items:
               </span>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div className="space-y-1.5">
                 {current.checklist.map((item) => (
-                  <div key={item} className="flex items-center gap-2 text-xs text-slate-700">
+                  <div key={item} className="flex items-center gap-2 text-xs text-slate-800">
                     <IconCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span>{item}</span>
                   </div>
@@ -180,13 +184,11 @@ export function IlluminatedFlightPath() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-sky-200 bg-white p-5 sm:p-6 space-y-4 shadow-xs">
+          <div className="rounded-2xl bg-sky-50/50 border border-sky-200/80 p-5 space-y-4">
             <div className="flex items-start gap-2.5">
-              <span className="text-2xl">💡</span>
+              <span className="text-lg">💡</span>
               <div>
-                <span className="block font-bold text-xs text-sky-700 uppercase tracking-wider">
-                  Senior Counselor Advice
-                </span>
+                <p className="text-xs font-bold text-sky-950">Counselor Pro-Tip</p>
                 <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                   {current.counselorTip}
                 </p>
@@ -205,7 +207,7 @@ export function IlluminatedFlightPath() {
 
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello AcademiaZ! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
+                  `Hello Kushtia IELTS Care! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"

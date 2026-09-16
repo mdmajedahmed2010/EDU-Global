@@ -19,112 +19,111 @@ interface SlideData {
 
 const heroSlides: SlideData[] = [
   {
-    country: "Japan",
-    code: "JP",
-    flag: "🇯🇵",
-    slogan:
-      "AcademiaZ-এর অফিশিয়াল ফ্ল্যাগশিপ ট্র্যাক। জাপান থেকে সরাসরি পরিচালিত ১০০% জাপান স্ট্যান্ডার্ড সেবা: জাপানি ভাষা কোর্স (N5 ও N4), স্টুডেন্ট ভিসা গাইডলাইন, TITP ও SSW ক্যারিয়ার ভিসা প্রস্তুতি এবং নির্ভুল COE ও ডকুমেন্টেশন সাপোর্ট।",
-    perks: [
-      "জাপান থেকে পরিচালিত (Japan Managed)",
-      "১০০% জাপান স্ট্যান্ডার্ড সেবা",
-      "Japanese Language N5 & N4",
-      "TITP & SSW ক্যারিয়ার সাপোর্ট",
-    ],
-    image: "/banner.jpg",
-    uniCount: "Top Language Academies & Unis in Japan",
-    intakes: "April, July & October Intakes Open",
-    slug: "japan",
-  },
-  {
-    country: "IELTS & English Academy",
-    code: "EN",
+    country: "IELTS Flagship",
+    code: "IELTS",
     flag: "🇬🇧",
     slogan:
-      "AcademiaZ ইংলিশ ল্যাঙ্গুয়েজ হাব: কেমব্রিজ স্ট্যান্ডার্ডে IELTS প্রস্তুতি (Band 7.5+ টার্গেট), ক্যারিয়ার ও ইন্টারভিউ স্পোকেন ইংলিশ এবং শিশুদের জন্য স্পেশাল কিডস ইংলিশ ও ফোনিক্স একাডেমি।",
+      "কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব, ব্যক্তিগত হেডসেট এবং অভিজ্ঞ ইন্সট্রাক্টরের সার্বক্ষণিক তত্ত্বাবধানে সম্পূর্ণ কেমব্রিজ সিলেবাসে IELTS (Academic & General) প্রস্তুতি। আপনার টার্গেট স্কোর অর্জনে আমাদের বিশেষ মেন্টরশিপ প্রোগ্রাম।",
     perks: [
-      "IELTS Band 7.5+ Strategy",
-      "Spoken English Fluency",
-      "Kids English (Ages 5–14)",
-      "1-on-1 Speaking Feedback",
+      "Modern Audio Lab & Headsets",
+      "Cambridge Aligned Curriculum",
+      "Regular Speaking Assessment",
+      "Weekly Mock Tests & Feedbacks",
+    ],
+    image: "/banner.png",
+    uniCount: "Target Band 7.5+ Mentorship",
+    intakes: "Morning & Evening Batches Open",
+    slug: "ielts-regular",
+  },
+  {
+    country: "Computer-Based Mock Test",
+    code: "MOCK",
+    flag: "🎧",
+    slogan:
+      "আইইএলটিএস আসল পরীক্ষার শতভাগ অনুভূতি ও ভয় কাটাতে মাত্র ৩০০ টাকায় কম্পিউটার-ভিত্তিক এবং অফলাইন মক টেস্ট। প্রতিটি মডিউলে (Listening, Reading, Writing, Speaking) বিস্তারিত ফিডব্যাক ও স্কোর কার্ড।",
+    perks: [
+      "মাত্র ৩০০ টাকায় রিয়েল এক্সাম মক টেস্ট",
+      "Individual Headset & Audio Setup",
+      "CBT & Paper-Based Options",
+      "Detailed Band Analysis Report",
+    ],
+    image: "/banner.jpg",
+    uniCount: "300 BDT Full Real-Time Mock",
+    intakes: "Friday & Saturday Slots Available",
+    slug: "computer-mock-test",
+  },
+  {
+    country: "Portugal & Europe",
+    code: "EU",
+    flag: "🇵🇹",
+    slogan:
+      "কম টিউশন ফি এবং ইংরেজি মাধ্যমে ইউরোপের সেনজেনভুক্ত দেশ পর্তুগাল ও চেক রিপাবলিকে উচ্চশিক্ষা ও স্থায়ী বসবাসের সবচেয়ে সহজ সুযোগ। নির্ভুল অফার লেটার, ভিসা ফাইল প্রস্তুত ও সার্বিক কনসালটেন্সি।",
+    perks: [
+      "Affordable European Tuition Fees",
+      "Schengen 29 Countries Access",
+      "English-Taught Bachelor & Masters",
+      "Complete Visa Documentation",
     ],
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "British Council & Cambridge Aligned",
-    intakes: "Morning & Evening Batches Open",
-    slug: "uk",
+    uniCount: "Portugal & European Schengen Track",
+    intakes: "Fall & Spring Intakes Ongoing",
+    slug: "portugal",
   },
   {
-    country: "Germany",
-    code: "DE",
-    flag: "🇩🇪",
+    country: "Spoken & Kids English",
+    code: "SPEAK",
+    flag: "🗣️",
     slogan:
-      "ইউরোপের অন্যতম শীর্ষ অর্থনীতিতে টিউশন-ফি ছাড়া পাবলিক বিশ্ববিদ্যালয়ে উচ্চশিক্ষা এবং পেইড ভোকেশনাল ট্রেইনিং (Ausbildung) ভিসা প্রসেসিং সহায়তা।",
+      "প্রতিদিনের কথা বলা, প্রেজেন্টেশন ও ইন্টারভিউতে আত্মবিশ্বাসী হতে Spoken English কোর্স এবং শিশুদের জন্য শৈশব থেকেই সঠিক উচ্চারণ ও ভয় দূর করতে আনন্দময় Kids English Academy।",
     perks: [
-      "Tuition-Free Public Universities",
-      "Ausbildung Vocational Guidance",
-      "18-Month Job Seeker Visa",
-      "Schengen 29 Countries Travel",
+      "Natural Fluency & Pronunciation",
+      "Phonics & Storytelling for Kids",
+      "Confidence Building & Debate",
+      "Small Interactive Batches",
     ],
     image:
-      "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "300+ Public German Universities",
-    intakes: "Winter & Summer Intakes Open",
-    slug: "germany",
-  },
-  {
-    country: "Canada & Global",
-    code: "CA",
-    flag: "🇨🇦",
-    slogan:
-      "কানাডা, ইউকে, ইউএসএ ও অস্ট্রেলিয়ায় বিশ্বমানের ডিগ্রি, পেইড কো-অপ ইন্টার্নশিপ এবং পোস্ট গ্র্যাজুয়েশন ওয়ার্ক পারমিটের জন্য স্বচ্ছ ভিসা কনসালটেন্সি।",
-    perks: [
-      "Public DLI & Reputed Unis",
-      "Paid Co-Op Internships",
-      "Up to 3-Year PGWP",
-      "Transparent File Processing",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "Top Global Institutions",
-    intakes: "Upcoming Intakes Ongoing",
-    slug: "canada",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=85",
+    uniCount: "Interactive Speaking & Young Learners",
+    intakes: "Special Weekend Batches Open",
+    slug: "spoken-english",
   },
 ];
 
 const liveSuccessToasts = [
   {
-    student: "Arifur R.",
-    action: "Enrolled in Japanese N5 Level Batch",
-    flag: "🇯🇵",
-    time: "3 mins ago",
-  },
-  {
-    student: "Sharmin S.",
-    action: "Passed JFT-Basic & SSW Interview",
-    flag: "🇯🇵",
-    time: "15 mins ago",
-  },
-  {
-    student: "Tanvir H.",
+    student: "Tanvir Ahmed",
     action: "Achieved IELTS Overall Band 7.5",
     flag: "🇬🇧",
-    time: "25 mins ago",
+    time: "5 mins ago",
   },
   {
-    student: "Imran K.",
-    action: "Received Japan Student Visa & COE",
-    flag: "🇯🇵",
-    time: "40 mins ago",
+    student: "Nusrat Jahan",
+    action: "Completed Computer-Based Mock Test (300 BDT)",
+    flag: "🎧",
+    time: "18 mins ago",
   },
   {
-    student: "Nafisa A.",
-    action: "Joined Kids Spoken English Academy",
+    student: "Sabbir Hossain",
+    action: "Received Portugal University Admission Offer",
+    flag: "🇵🇹",
+    time: "32 mins ago",
+  },
+  {
+    student: "Ayesha Siddiqua",
+    action: "Joined Spoken English Fluency Batch",
+    flag: "🗣️",
+    time: "45 mins ago",
+  },
+  {
+    student: "Zayan (Age 8)",
+    action: "Enrolled in Kids English Academy",
     flag: "🧒",
     time: "1 hour ago",
   },
   {
-    student: "Mahmud B.",
-    action: "Scheduled Free Consultation in Kadirganj",
+    student: "Mahmud Hasan",
+    action: "Booked Free Counselling at Old Kataikhana More",
     flag: "📍",
     time: "2 hours ago",
   },
@@ -168,30 +167,30 @@ export function HeroCommandCenter() {
             {/* Brand Motto Over-Title */}
             <div className="flex flex-wrap items-center gap-2">
               <span className="text-[0.72rem] sm:text-xs font-bold uppercase tracking-[0.14em] text-slate-950 bg-amber-400 px-3 py-1 rounded-full shadow-xs">
-                — ACADEMIAZ · JAPAN BASED & MANAGED —
+                — KUSHTIA IELTS CARE —
               </span>
-              <span className="text-[0.72rem] sm:text-xs font-bold text-red-700 bg-red-50 border border-red-200 px-3 py-1 rounded-full">
-                🇯🇵 ১০০% জাপান স্ট্যান্ডার্ড সেবা
+              <span className="text-[0.72rem] sm:text-xs font-bold text-blue-900 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
+                🎧 আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট
               </span>
             </div>
 
             {/* Slogan & Destination Headline */}
             <div className="space-y-2">
-              <p className="font-bangla font-semibold text-lg sm:text-xl text-amber-700 leading-snug">
+              <p className="font-bangla font-semibold text-lg sm:text-xl text-amber-600 leading-snug">
                 {company.bengaliHeadline}
               </p>
               <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-slate-950 leading-[1.08] tracking-tight">
-                YOUR GATEWAY TO <span className="text-amber-500">JAPAN</span> & THE WORLD
+                YOUR TRUSTED PARTNER IN <span className="text-amber-500">IELTS SUCCESS!</span>
               </h1>
               <div className="flex items-center gap-2 text-slate-700 font-semibold text-sm sm:text-base pt-1">
                 <span>ফ্ল্যাগশিপ প্রোগ্রাম:</span>
                 <span className="inline-flex items-center gap-1 text-[#0a1931] font-bold bg-amber-100/70 px-2.5 py-0.5 rounded-lg border border-amber-300">
                   <span>{slide.flag}</span>
-                  <span>{slide.country} Track</span>
+                  <span>{slide.country}</span>
                 </span>
               </div>
               {/* Navy & Amber Accent Bar */}
-              <div className="h-1.5 w-32 bg-gradient-to-r from-[#0a1931] via-amber-500 to-red-500 rounded-full mt-2" />
+              <div className="h-1.5 w-32 bg-gradient-to-r from-[#092552] via-amber-500 to-amber-600 rounded-full mt-2" />
             </div>
 
             {/* Live Applications Intake Pill */}
@@ -226,9 +225,9 @@ export function HeroCommandCenter() {
               <button
                 type="button"
                 onClick={open}
-                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-[#0a1931] hover:bg-[#0f2c59] text-amber-400 px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer active:scale-95 border border-amber-500/30"
+                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-[#092552] hover:bg-[#0d3b82] text-amber-400 px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer active:scale-95 border border-amber-500/30"
               >
-                <span>ফ্রি প্রোফাইল মূল্যায়ন ও কনসালটেন্সি</span>
+                <span>ফ্রি অ্যাসেসমেন্ট ও মক টেস্ট বুকিং</span>
                 <IconArrowRight className="w-4 h-4 text-amber-400" />
               </button>
 
@@ -247,7 +246,7 @@ export function HeroCommandCenter() {
             <div className="pt-2 text-xs text-slate-600 font-medium flex items-center gap-2">
               <span className="text-amber-500 font-bold">★★★★★</span>
               <span>
-                কাদিরগঞ্জ, গ্রেটার রোড (মা ফটোস্ট্যাট এর পাশের গলি), রাজশাহী - ৬০০০
+                ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়া
               </span>
             </div>
           </div>

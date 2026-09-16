@@ -15,54 +15,54 @@ interface DestinationItem {
 
 const destinationsData: DestinationItem[] = [
   {
-    name: "Japan",
-    code: "JP",
-    flag: "🇯🇵",
-    unis: "50+ Academies & Unis",
+    name: "Portugal",
+    code: "PT",
+    flag: "🇵🇹",
+    unis: "Top Universities (Lisbon, Porto, Coimbra)",
     image:
-      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "japan",
-    highlight: "Flagship / Japan Managed",
+    slug: "portugal",
+    highlight: "Featured / Low Tuition",
   },
   {
-    name: "Germany",
-    code: "DE",
-    flag: "🇩🇪",
-    unis: "300+ Public Unis",
+    name: "Czech Republic",
+    code: "CZ",
+    flag: "🇨🇿",
+    unis: "Charles University & Top Unis",
     image:
-      "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
     popular: true,
-    slug: "germany",
-    highlight: "Tuition-Free & Ausbildung",
-  },
-  {
-    name: "Malaysia",
-    code: "MY",
-    flag: "🇲🇾",
-    unis: "40+ World Campuses",
-    image:
-      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "malaysia",
-    highlight: "Fast Visa & Affordable",
+    slug: "czech-republic",
+    highlight: "Schengen Heart / English",
   },
   {
     name: "United Kingdom",
     code: "GB",
     flag: "🇬🇧",
-    unis: "100+ Leading Unis",
+    unis: "100+ Leading Universities",
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "uk",
-    highlight: "1-Yr Masters / 2-Yr PSW",
+    highlight: "1-Yr Masters / PSW",
+  },
+  {
+    name: "Germany",
+    code: "DE",
+    flag: "🇩🇪",
+    unis: "300+ Public Universities",
+    image:
+      "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "germany",
+    highlight: "Tuition-Free & Engineering",
   },
   {
     name: "Canada",
     code: "CA",
     flag: "🇨🇦",
-    unis: "80+ DLIs",
+    unis: "80+ Reputed Colleges & Unis",
     image:
       "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
     popular: true,
@@ -73,7 +73,7 @@ const destinationsData: DestinationItem[] = [
     name: "United States",
     code: "US",
     flag: "🇺🇸",
-    unis: "150+ Top Unis",
+    unis: "150+ Top Universities",
     image:
       "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=800&q=80",
     popular: true,
@@ -92,15 +92,15 @@ const destinationsData: DestinationItem[] = [
     highlight: "Post-Study Work Visa",
   },
   {
-    name: "Denmark",
-    code: "DK",
-    flag: "🇩🇰",
-    unis: "20+ Universities",
+    name: "Sweden & Europe",
+    code: "SE",
+    flag: "🇸🇪",
+    unis: "Top European Institutes",
     image:
       "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
     popular: false,
-    slug: "denmark",
-    highlight: "Nordic Education",
+    slug: "sweden",
+    highlight: "Nordic Education & Research",
   },
 ];
 
@@ -112,10 +112,10 @@ export function PopularDestinationsSection() {
         <MotionHeading
           tag="— GLOBAL HIGHER EDUCATION PATHWAYS —"
           title="Where will you"
-          highlight="study or work?"
-          description="AcademiaZ opens doors to premier academic institutions and career visas across Japan and global destinations."
-          tagColor="text-sky-600"
-          highlightColor="text-sky-600"
+          highlight="study abroad?"
+          description="Kushtia IELTS Care opens doors to premier European universities in Portugal, Czech Republic, UK, Germany, and top global destinations."
+          tagColor="text-amber-600"
+          highlightColor="text-amber-600"
         />
 
         {/* 8-Card Responsive Grid with Stagger Entrance */}
@@ -134,7 +134,7 @@ export function PopularDestinationsSection() {
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <img
                     src={d.image}
-                    alt={`Study in ${d.name} with AcademiaZ`}
+                    alt={`Study in ${d.name} with Kushtia IELTS Care`}
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     loading="lazy"
                   />

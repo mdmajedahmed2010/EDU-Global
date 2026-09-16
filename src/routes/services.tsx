@@ -9,7 +9,7 @@ import {
   IconSparkles,
   IconWhatsApp,
 } from "@/components/ui-blocks";
-import { company, services, courses } from "@/lib/site-data";
+import { company, services, courses, processSteps } from "@/lib/site-data";
 import { useRegisterModal } from "@/components/register-modal";
 import { cn } from "@/lib/utils";
 
@@ -17,18 +17,18 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       {
-        title: "Services & Academy | AcademiaZ — Japanese N5/N4, TITP & SSW, IELTS & Visa Consultancy | Rajshahi",
+        title: "Services & Courses | Kushtia IELTS Care — IELTS, 300 BDT Mock Tests & Europe Study Abroad",
       },
       {
         name: "description",
         content:
-          "Explore AcademiaZ services: Japanese Language (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP & SSW career tracks, Student Visas for Japan, IELTS coaching, Spoken English, and Kids English (Ages 5–14) in Rajshahi. Managed directly from Japan (জাপান থেকে পরিচালিত). Hotlines: 01518-951062 / 01632-372232.",
+          "Explore Kushtia IELTS Care services: Cambridge IELTS (Academic & General), Computer-Based Mock Tests at 300 BDT with individual headsets, Spoken English, Kids English Academy, and European Study Abroad Consultancy (Portugal, Czech Republic, UK, Germany, Canada). 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
       },
-      { property: "og:title", content: "Services & Academy | AcademiaZ Rajshahi" },
+      { property: "og:title", content: "Services & Courses | Kushtia IELTS Care" },
       {
         property: "og:description",
         content:
-          "Japanese N5/N4, TITP & SSW programs, Student Visas, IELTS, Spoken English, and Kids English at Kadirganj, Greater Road, Rajshahi. Managed directly from Japan.",
+          "Cambridge IELTS, 300 BDT Mock Tests, Spoken English, and European Study Abroad consultancy in Kushtia. Modern audio lab with individual headsets.",
       },
     ],
   }),
@@ -37,71 +37,71 @@ export const Route = createFileRoute("/services")({
 
 const serviceCategories = [
   { id: "all", label: "All Offerings" },
-  { id: "language-courses", label: "Language Academy (Japanese, IELTS, Spoken)" },
-  { id: "study-abroad", label: "Japan Visa & Career Tracks" },
-  { id: "japan-managed", label: "Japan-Based Direct Oversight" },
+  { id: "ielts-courses", label: "IELTS & Mock Tests (300 BDT)" },
+  { id: "spoken-kids", label: "Spoken & Kids English" },
+  { id: "study-abroad", label: "Portugal & European Study Abroad" },
   { id: "free-file", label: "Free Profile Assessment" },
 ];
 
 const comparisonData = [
   {
-    feature: "Profile Assessment & Counseling",
-    academiaZ: "100% Free Transparent Assessment & Personalized Career Roadmap",
-    traditional: "Exorbitant upfront fees with vague assurances",
+    feature: "Listening Lab & Audio Setup",
+    ieltsCare: "Dedicated Audio Lab with individual headsets for clear, distortion-free listening",
+    traditional: "Common loudspeaker in large halls causing echo and low band scores",
     highlight: true,
   },
   {
-    feature: "Japanese Language Training",
-    academiaZ: "Intensive JLPT N5/N4, NAT-TEST & JFT-Basic with Kanji drills & listening lab",
-    traditional: "Generic coaching with no exam-specific mock testing",
+    feature: "Full Real Exam Mock Test",
+    ieltsCare: "Only 300 BDT for full Computer-Based & Paper-Based Mock Tests with Band Analysis",
+    traditional: "High fees (1,000–2,500 BDT) with delayed or no detailed feedback",
     highlight: true,
   },
   {
-    feature: "Management & Operational Origin",
-    academiaZ: "Directly managed and supervised from Japan (জাপান থেকে পরিচালিত)",
-    traditional: "Third-party middlemen with zero direct overseas authority",
+    feature: "Curriculum & Mentorship",
+    ieltsCare: "Complete Cambridge IELTS aligned syllabus with personalized 1-on-1 speaking feedback",
+    traditional: "Generic coaching with crowded batches and no individual care",
     highlight: true,
   },
   {
-    feature: "Work & Career Programs in Japan",
-    academiaZ: "TITP Technical Intern & SSW Specified Skilled Worker mentorship",
-    traditional: "Misleading promises without verified immigration category knowledge",
+    feature: "Study in Portugal & Europe Track",
+    ieltsCare: "Direct university admission, low tuition fees, and complete Schengen visa documentation",
+    traditional: "Unverified third-party file routing with hidden charges",
     highlight: true,
   },
   {
-    feature: "English & IELTS Academy",
-    academiaZ: "Cambridge-standard IELTS 7.5+, Spoken English & Kids English (Ages 5–14)",
-    traditional: "Impersonal large batches with no 1-on-1 speaking feedback",
+    feature: "Spoken & Kids English Academy",
+    ieltsCare: "Practical conversational fluency drills and child-friendly phonics foundation",
+    traditional: "Rote grammar memorization without interactive communication practice",
     highlight: true,
   },
   {
-    feature: "Centrally Located Campus in Rajshahi",
-    academiaZ: "Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi - 6000",
-    traditional: "Unverified agents operating without dedicated classroom infrastructure",
+    feature: "Kushtia Campus Facility",
+    ieltsCare: "169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia (central & accessible)",
+    traditional: "Unverified agents operating without modern audio/computer lab infrastructure",
     highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "How does AcademiaZ support Japanese language learners and Japan visa applicants?",
-    a: "We offer intensive Japanese N5 and N4 level courses designed for JLPT, NAT-TEST, and JFT-Basic exams using the standard Minna no Nihongo curriculum. Classes focus on Kanji mastery, grammatical precision, and listening comprehension. Because our management is based directly in Japan, our counselors guide your COE (Certificate of Eligibility) and visa application with verified up-to-date immigration guidelines.",
+    q: "How does Kushtia IELTS Care conduct computer-based and offline mock tests for 300 BDT?",
+    a: "We provide full-length IELTS mock tests (Listening, Reading, Writing, Speaking) in a simulated exam hall with individual computer terminals and high-quality individual headsets. For only 300 BDT, you receive real exam experience, exact timing, and an extensive diagnostic report highlighting strengths and areas for improvement.",
   },
   {
-    q: "What is the difference between Japan Student Visa, TITP, and SSW programs?",
-    a: "1) Student Visa allows you to enroll in Japanese language academies or universities with permission to work part-time (up to 28 hours/week). 2) TITP (Technical Intern Training Program) is a structured technical internship in Japan for vocational skills development. 3) SSW (Specified Skilled Worker) is a full-fledged employment visa for candidates who pass the Japanese language exam (N4/JFT) and specific occupational skills tests. AcademiaZ provides comprehensive training for all three tracks.",
+    q: "What makes the listening audio lab at Kushtia IELTS Care unique?",
+    a: "Many candidates lose crucial band points in the listening section due to poor room acoustics or loudspeakers. At Kushtia IELTS Care, every single test-taker and student gets a dedicated, noise-isolating headset, mirroring the exact setup of official British Council and IDP test venues.",
   },
   {
-    q: "Why is 'Japan-Based Direct Management' a major advantage for students?",
-    a: "AcademiaZ is managed and directed by professionals currently living and working in Japan. This provides authentic insights into Japanese campus life, living costs, university admission standards, interview expectations, and post-arrival settlement that typical domestic agents cannot offer.",
+    q: "How does Kushtia IELTS Care help with studying in Portugal and Europe?",
+    a: "We assist students in securing admissions at top accredited universities in Portugal and the Czech Republic, where tuition fees are affordable and courses are taught in English. We handle document verification, university applications, motivation letters, and embassy visa appointments.",
   },
   {
-    q: "What English training programs are offered at AcademiaZ Rajshahi?",
-    a: "We provide: 1) IELTS Academic & General Training (targeting Band 7.5+ with Cambridge mock exams), 2) Spoken English for corporate and conversational fluency, 3) Kids English for children aged 5–14 (phonics, vocabulary, confidence building), and 4) English Grammar Foundation.",
+    q: "What English training programs are available for children and job seekers?",
+    a: "We provide: 1) IELTS Academic & General Training (Target Band 7.5+), 2) Professional Spoken English for presentation and interview fluency, 3) Kids English Academy for ages 5–14 (phonics, vocabulary, confidence building), and 4) English Grammar Foundation.",
   },
   {
-    q: "Where is AcademiaZ located in Rajshahi and when can I visit?",
-    a: "Our academy is located at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000. We are open Saturday through Thursday (9:00 AM – 8:00 PM) for free in-person counseling and level assessments.",
+    q: "Where is Kushtia IELTS Care located and what are the office hours?",
+    a: "Our campus is situated at 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. We are open Saturday through Thursday from 9:00 AM to 8:00 PM for free profile evaluations, campus tours, and mock test bookings.",
   },
 ];
 
@@ -114,11 +114,11 @@ function Services() {
     <>
       {/* 1. High-Impact Page Hero with Breadcrumbs */}
       <PageHero
-        eyebrow="Academic, Language & Visa Services"
-        title="Comprehensive Japanese Training & Visa Solutions"
-        subtitle="Specialized foreign language mastery in Japanese (JLPT N5/N4, NAT-TEST, JFT-Basic), TITP & SSW career tracks, student visa processing, and communicative English courses supervised under our Japan-based management."
-        image="/banner.jpg"
-        imageAlt="AcademiaZ admissions and language academy Rajshahi"
+        eyebrow="English Language & European Study Abroad"
+        title="IELTS, 300 BDT Mock Tests & Europe Admissions"
+        subtitle="Specialized Cambridge IELTS coaching, computer-based mock tests with individual headsets at only 300 BDT, Spoken English, Kids English, and study abroad consultancy in Portugal and Europe."
+        image="/banner.png"
+        imageAlt="Kushtia IELTS Care classroom, audio lab, and banner"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -126,14 +126,14 @@ function Services() {
             <button
               type="button"
               onClick={open}
-              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 cursor-pointer font-bold"
+              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-amber-500/30 cursor-pointer font-bold bg-amber-500 hover:bg-amber-400 text-slate-950"
             >
-              <span>Book Free Profile Assessment</span>
+              <span>Book Assessment / 300 BDT Mock</span>
               <IconSparkles className="w-4 h-4" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello AcademiaZ! I would like to inquire about your Japanese courses, visa guidance, and English programs in Rajshahi.",
+                "Hello Kushtia IELTS Care! I would like to inquire about IELTS batches, 300 BDT mock tests, and European admissions.",
               )}`}
               target="_blank"
               rel="noreferrer"
@@ -158,7 +158,7 @@ function Services() {
                 className={cn(
                   "rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer",
                   activeCategory === cat.id
-                    ? "bg-sky-600 text-white shadow-md border border-sky-500"
+                    ? "bg-[#092552] text-amber-400 shadow-md border border-amber-500/40"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200",
                 )}
               >
@@ -170,18 +170,18 @@ function Services() {
       </section>
 
       {/* 3. Language Academy Specialized Section */}
-      {(activeCategory === "all" || activeCategory === "language-courses") && (
+      {(activeCategory === "all" || activeCategory === "ielts-courses" || activeCategory === "spoken-kids") && (
         <section className="section-shell py-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
-              <span>AcademiaZ Language Academy</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+              <span>Kushtia IELTS Care Language Academy</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Japanese (N5/N4), IELTS, Spoken & <span className="text-sky-600">Kids English</span>
+              Cambridge IELTS, 300 BDT Mocks & <span className="text-amber-500">English Academy</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Comprehensive curriculum with experienced educators, multimedia listening audio facilities, free course materials, and regular diagnostic tests at Kadirganj, Rajshahi.
+              কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব, পৃথক হেডসেট, কেমব্রিজ সিলেবাস এবং অভিজ্ঞ মেন্টরদের তত্ত্বাবধানে নিবিড় পাঠদান।
             </p>
           </div>
 
@@ -189,14 +189,14 @@ function Services() {
             {courses.map((course) => (
               <div
                 key={course.slug}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-md flex flex-col justify-between hover:border-sky-500/50 hover:shadow-xl transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-md flex flex-col justify-between hover:border-amber-500/50 hover:shadow-xl transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-4xl p-2 rounded-2xl bg-sky-50 border border-sky-200/80">
+                    <span className="text-4xl p-2 rounded-2xl bg-amber-50 border border-amber-200/80">
                       {course.icon}
                     </span>
-                    <span className="rounded-full bg-sky-100 text-sky-800 border border-sky-200 px-3 py-1 text-xs font-bold">
+                    <span className="rounded-full bg-amber-100 text-amber-900 border border-amber-200 px-3 py-1 text-xs font-bold">
                       {course.badge}
                     </span>
                   </div>
@@ -205,7 +205,7 @@ function Services() {
                     <h3 className="font-display text-xl font-black text-slate-900">
                       {course.title}
                     </h3>
-                    <p className="text-xs font-semibold text-sky-600 mt-0.5">{course.subtitle}</p>
+                    <p className="text-xs font-semibold text-amber-600 mt-0.5">{course.subtitle}</p>
                   </div>
 
                   <p className="text-xs text-slate-600 leading-relaxed">{course.description}</p>
@@ -244,14 +244,14 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-sky-600/30 cursor-pointer font-bold"
+                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-amber-500/30 cursor-pointer font-bold bg-amber-500 hover:bg-amber-400 text-slate-950"
                   >
-                    <span>Enroll / Free Demo Class</span>
+                    <span>Enroll / Book Mock Test</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello AcademiaZ! I want to join the next ${course.title} batch in Rajshahi. Please send fee and schedule.`,
+                      `Hello Kushtia IELTS Care! I want to join the next ${course.title} batch / book a mock test slot. Please send fee and schedule.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
@@ -273,15 +273,15 @@ function Services() {
         activeCategory === "free-file") && (
         <section className="section-shell py-16 border-t border-slate-200">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
               <span>Full Lifecycle Advisory</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Higher Education Admissions & <span className="text-sky-600">Visa Processing</span>
+              Higher Education Admissions & <span className="text-amber-500">Visa Processing</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From initial profile evaluation at our Kadirganj campus to COE issuance, Japanese visa processing, and post-arrival settlement, we guide your journey with integrity.
+              From initial profile evaluation at our Old Kataikhana More campus to university admission, Portugal & European visa processing, and pre-departure briefing.
             </p>
           </div>
 
@@ -289,13 +289,13 @@ function Services() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-sky-500/40 hover:shadow-lg transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-amber-500/40 hover:shadow-lg transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{service.icon}</span>
                     {service.badge && (
-                      <span className="rounded-full bg-sky-50 text-sky-700 border border-sky-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                      <span className="rounded-full bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
                         {service.badge}
                       </span>
                     )}
@@ -317,7 +317,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-sky-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
+                    className="text-amber-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     <span>Apply Now</span>
                     <span>→</span>
@@ -330,46 +330,34 @@ function Services() {
       )}
 
       {/* 5. Destinations & Visa Categories Comprehensive Showcase */}
-      {(activeCategory === "all" || activeCategory === "japan-managed" || activeCategory === "study-abroad") && (
+      {(activeCategory === "all" || activeCategory === "study-abroad") && (
         <section className="section-shell py-16 border-t border-slate-200">
-          <div className="rounded-3xl border border-slate-800 bg-[#0B1528] p-8 sm:p-12 text-white shadow-2xl">
+          <div className="rounded-3xl border border-slate-800 bg-[#061122] p-8 sm:p-12 text-white shadow-2xl">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="rounded-full bg-sky-600/20 text-sky-400 border border-sky-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
+              <span className="rounded-full bg-amber-600/20 text-amber-400 border border-amber-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
                 Global Destinations & Visas
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Pathways Processed by AcademiaZ
+                Top Pathways Processed by Kushtia IELTS Care
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                Specialized processing for Japan (with direct Japan-based oversight), tuition-free European universities, Malaysia, UK, Canada, Australia, and the USA.
+                Specialized processing for Portugal & European Schengen countries, Czech Republic, UK, Germany, Canada, and global destinations.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  title: "Japan",
-                  icon: "🇯🇵",
-                  desc: "Japanese language academies, vocational schools, universities, and SSW/TITP career tracks with 100% Japan-based management.",
-                  badge: "Flagship #1",
+                  title: "Portugal",
+                  icon: "🇵🇹",
+                  desc: "Low tuition fees, English-medium bachelor's and master's degrees, and 29-country Schengen visa access.",
+                  badge: "Featured European Track",
                 },
                 {
-                  title: "Germany",
-                  icon: "🇩🇪",
-                  desc: "Tuition-free public universities, dual Ausbildung vocational programs, and 18-month post-study work rights.",
-                  badge: "Europe Track",
-                },
-                {
-                  title: "Malaysia",
-                  icon: "🇲🇾",
-                  desc: "Affordable world-ranked campuses, fast EMGS approval, and credit transfer pathways to UK and Australia.",
-                  badge: "Fast Visa Hub",
-                },
-                {
-                  title: "Canada",
-                  icon: "🇨🇦",
-                  desc: "Public Designated Learning Institutions (DLI), co-op internships, and up to 3-year Post-Graduation Work Permits.",
-                  badge: "Work Permits",
+                  title: "Czech Republic",
+                  icon: "🇨🇿",
+                  desc: "Affordable European education in central Europe, world-renowned universities, and fast student visa processing.",
+                  badge: "Central Europe Hub",
                 },
                 {
                   title: "United Kingdom",
@@ -378,10 +366,16 @@ function Services() {
                   badge: "Popular Master's",
                 },
                 {
-                  title: "Australia",
-                  icon: "🇦🇺",
-                  desc: "World top-ranked universities, high minimum wages for students, and Subclass 500 visa compliance.",
-                  badge: "Top Living",
+                  title: "Germany",
+                  icon: "🇩🇪",
+                  desc: "Tuition-free public universities, dual vocational programs, and 18-month post-study work search visa.",
+                  badge: "Europe Top Economy",
+                },
+                {
+                  title: "Canada",
+                  icon: "🇨🇦",
+                  desc: "Public Designated Learning Institutions (DLI), co-op internships, and up to 3-year Post-Graduation Work Permits.",
+                  badge: "Work Permits",
                 },
                 {
                   title: "United States",
@@ -390,10 +384,16 @@ function Services() {
                   badge: "STEM Careers",
                 },
                 {
-                  title: "Schengen Europe",
-                  icon: "🇪🇺",
-                  desc: "English-taught programs across Europe with 29-country Schengen visa mobility and post-study opportunities.",
-                  badge: "29 Countries",
+                  title: "Australia",
+                  icon: "🇦🇺",
+                  desc: "World top-ranked universities, high minimum wages for students, and Subclass 500 visa compliance.",
+                  badge: "Top Living",
+                },
+                {
+                  title: "Sweden & Europe",
+                  icon: "🇸🇪",
+                  desc: "High innovation indices, research-focused programs, and Schengen visa mobility across Europe.",
+                  badge: "Nordic Education",
                 },
               ].map((v) => (
                 <div
@@ -432,10 +432,10 @@ function Services() {
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-sky-600">AcademiaZ</span>
+            Why Students Choose <span className="text-sky-600">Kushtia IELTS Care</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our authentic Japan-managed standard, JLPT N5/N4 curriculum, and dedicated counseling against traditional commercial agencies.
+            Compare our dedicated audio lab, 300 BDT CBT mock test standard, Cambridge syllabus, and personalized coaching against traditional commercial coaching centers.
           </p>
         </div>
 
@@ -446,9 +446,9 @@ function Services() {
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
                   <th className="p-4 sm:p-5 text-amber-400 font-extrabold bg-slate-900">
-                    ★ AcademiaZ (Japan Managed)
+                    ★ Kushtia IELTS Care
                   </th>
-                  <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
+                  <th className="p-4 sm:p-5 text-slate-400">Traditional Coaching Centers</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -464,7 +464,7 @@ function Services() {
                     <td className="p-4 sm:p-5 font-bold text-sky-800 bg-sky-50/40">
                       <div className="flex items-center gap-2">
                         <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.academiaZ}</span>
+                        <span>{row.ieltsCare}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -487,7 +487,7 @@ function Services() {
             Our Proven 5-Step Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Structured preparation from profile evaluation at Kadirganj, Rajshahi to visa stamping and Japan arrival.
+            Structured preparation from diagnostic evaluation at our Kushtia campus to IELTS target band achievement and university visa stamping.
           </p>
         </div>
 

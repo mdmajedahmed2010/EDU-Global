@@ -6,20 +6,19 @@ const field =
 const label = "mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-700";
 
 const serviceOptions = [
-  "Japanese Language Course (JLPT N5 & N4 / NAT-TEST / JFT-Basic)",
-  "Study in Japan (Student Visa, COE Processing & Academy Enrollment)",
-  "Work in Japan (TITP Technical Intern & SSW Specified Skilled Worker)",
-  "IELTS Academic & General (Target Band 7.5+, Authentic Cambridge Mocks)",
-  "Spoken English Fluency & Communication Mastery",
-  "Kids English & Phonics Foundation (Ages 5–14)",
-  "Global Study Abroad (Europe, UK, USA, Canada, Malaysia)",
-  "Document Translation & Verification Support",
+  "IELTS Academic & General (Target Band 7.5+, Cambridge Aligned)",
+  "Computer-Based IELTS Mock Test (Only 300 BDT with Individual Headset)",
+  "Paper-Based IELTS Mock Test (Full Simulation & Detailed Band Feedback)",
+  "Spoken English & Communication Fluency",
+  "Kids English Academy (Phonics, Vocabulary & Speaking for Children)",
+  "Study in Portugal (English-Taught Degrees & Schengen Mobility)",
+  "Study in Czech Republic & Europe (Low Tuition & Top Universities)",
+  "Global Study Abroad Consultancy (UK, Canada, Germany, USA, Australia)",
 ];
 
 const officeOptions = [
-  "Rajshahi Campus (Kadirganj, Greater Road, Lane beside Ma Photostat)",
-  "Japan Operations (Direct Japan Oversight & Student Support)",
-  "Online Consultation (WhatsApp / Google Meet)",
+  "Kushtia Campus (169/4, Mahatab Uddin Road, Old Kataikhana More)",
+  "Online Consultation (WhatsApp / Phone Call)",
 ];
 
 export function RegisterForm({ onDone }: { onDone?: () => void }) {
@@ -28,10 +27,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     name: "",
     email: "",
     phone: "",
-    service: "Japanese Language Course (JLPT N5 & N4 / NAT-TEST / JFT-Basic)",
-    destination: "Japan",
+    service: "IELTS Academic & General (Target Band 7.5+, Cambridge Aligned)",
+    destination: "Portugal",
     currentStatus: "HSC / A-Level Completed (Bachelor's Aspirant)",
-    office: "Rajshahi Campus (Kadirganj, Greater Road, Lane beside Ma Photostat)",
+    office: "Kushtia Campus (169/4, Mahatab Uddin Road, Old Kataikhana More)",
     message: "",
   });
 
@@ -40,16 +39,16 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
   const whatsappHref = () => {
     const lines = [
-      "✨ Free Consultation Request — AcademiaZ (Rajshahi)",
+      "✨ Free Consultation / Mock Booking — Kushtia IELTS Care",
       `👤 Name: ${form.name}`,
       `📞 Phone: ${form.phone}`,
       form.email ? `✉️ Email: ${form.email}` : "",
       `🎯 Interested Service: ${form.service}`,
-      `🌍 Destination: ${form.destination}`,
+      `🌍 Target Destination: ${form.destination}`,
       `🎓 Status/Background: ${form.currentStatus}`,
-      `🏢 Preferred Office: ${form.office}`,
+      `🏢 Preferred Office/Mode: ${form.office}`,
       form.message ? `📝 Notes: ${form.message}` : "",
-      "\nI would like to schedule a free counseling session with an AcademiaZ advisor.",
+      "\nI would like to schedule a free counseling session / book a 300 BDT mock test at Kushtia IELTS Care.",
     ].filter(Boolean);
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
@@ -68,15 +67,15 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
         </div>
         <h3 className="font-display text-2xl font-black text-slate-900">Booking Confirmed! 🎉</h3>
         <p className="mx-auto max-w-md text-sm text-slate-600 leading-relaxed">
-          Thank you, <strong className="text-slate-900">{form.name}</strong>! Your free consultation
-          has been registered. An <strong>{company.name}</strong> counselor will contact you on{" "}
+          Thank you, <strong className="text-slate-900">{form.name}</strong>! Your consultation /
+          mock test request has been registered. An instructor from <strong>{company.name}</strong> will contact you on{" "}
           <strong className="text-emerald-700">{form.phone}</strong> shortly.
         </p>
         <div className="mt-2 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-xs text-emerald-800 text-left space-y-1">
-          <p>✔ Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi</p>
-          <p>✔ Japan-Based Direct Oversight & 100% Japan Standard</p>
-          <p>✔ Japanese (N5/N4, NAT-TEST, JFT), TITP & SSW, IELTS, Spoken & Kids English</p>
-          <p>✔ 100% Visa Guidance & Free Profile Assessment</p>
+          <p>✔ ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়া</p>
+          <p>✔ আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট সুবিধা</p>
+          <p>✔ মাত্র ৩০০ টাকায় পূর্ণাঙ্গ কম্পিউটার-ভিত্তিক ও পেপার-বেসড মক টেস্ট</p>
+          <p>✔ পর্তুগাল ও ইউরোপের স্টুডেন্ট ভিসা কনসালটেন্সি</p>
         </div>
         <div className="pt-2 flex flex-col gap-2">
           <a
@@ -85,7 +84,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
             rel="noreferrer"
             className="btn-emerald text-xs py-3 justify-center shadow-md"
           >
-            💬 Open WhatsApp Chat with Counselor
+            💬 Open WhatsApp Chat with Kushtia IELTS Care
           </a>
           {onDone && (
             <button
@@ -104,14 +103,14 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div className="border-b border-slate-100 pb-3 mb-2">
-        <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-sky-600">
-          AcademiaZ · Japanese Language Training & Visa Consultancy
+        <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-amber-600">
+          Kushtia IELTS Care · a great place to learn
         </span>
         <h3 className="font-display text-xl font-black text-slate-900">
-          Book Your Free Assessment
+          Book Your Assessment or 300 BDT Mock Test
         </h3>
         <p className="text-xs text-slate-500 mt-0.5">
-          Kadirganj, Greater Road, Rajshahi · Japan-Based Direct Oversight
+          Old Kataikhana More, Kushtia · Modern Audio Lab & European Consultancy
         </p>
       </div>
 
@@ -265,7 +264,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       </button>
 
       <p className="text-center text-[0.7rem] text-slate-600">
-        🔒 100% Privacy Guaranteed · AcademiaZ · Kadirganj Campus & Japan Direct Oversight
+        🔒 100% Privacy Guaranteed · Kushtia IELTS Care · Old Kataikhana More, Kushtia
       </p>
     </form>
   );

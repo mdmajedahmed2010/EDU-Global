@@ -1,31 +1,25 @@
 /**
- * ACADEMIAZ — Official Verified Brand Data & Knowledge Base
+ * KUSHTIA IELTS CARE — Official Verified Brand Data & Knowledge Base
  *
  * Verified from:
- *  - Official Facebook Page: https://www.facebook.com/AcademiaZRajshahi (@AcademiaZRajshahi)
+ *  - Official Facebook Page: https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/
  *  - Official Brand Assets:
- *      * Logo: logo.jpg (Circular insignia with Navy & Gold intertwined AZ, graduation cap, star and open book, "ACADEMIAZ · LEARN · GROW · ACHIEVE")
- *      * Banner: banner.jpg (Mount Fuji, Cherry Blossoms, Japanese Pagoda, "ACADEMIAZ - JAPANESE LANGUAGE TRAINING & VISA CONSULTANCY - Your Gateway to Japan - Kadirgonj, Rajshahi")
- *  - Headquarters: Kadirganj, Greater Road (Lane beside Ma Photostat, East side of the mosque), Rajshahi - 6000, Bangladesh.
- *  - Core Taglines:
- *      * "Learn · Grow · Achieve"
- *      * "Your Gateway to Japan"
- *      * "স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী !"
- *  - Brand Hallmarks:
- *      * "জাপান থেকে পরিচালিত" (Japan Based & Managed)
- *      * "বিশ্বস্ত, নির্ভরযোগ্য, ১০০% জাপান স্ট্যান্ডার্ড সেবা"
- *      * "অভিজ্ঞ ও দক্ষ টিম · আন্তরিক সহায়তা এবং গাইডলাইন · আপনার সাফল্যই আমাদের অগ্রাধিকার"
- *  - Hotlines & WhatsApp: 01518-951062 / 01632-372232
- *  - Official Email: academiazrajshahi@gmail.com
+ *      * Logo: logo.jpg (4 Orange droplets in 2x2 grid, bold navy wordmark 'Kushtia IELTS Care')
+ *      * Banner: banner.png ('Your Trusted Partner in IELTS Success!', 'a great place to learn',
+ *          real classroom, computer audio lab & female students with branded lanyards)
+ *  - Headquarters: 169/4, Mahatab Uddin Road (in front of Kashem Clinic), Old Kataikhana More, Kushtia - 7000, Bangladesh.
+ *  - Core Slogans / Mottos:
+ *      * 'Your Trusted Partner in IELTS Success!'
+ *      * 'a great place to learn'
  *  - Core Offerings:
- *      * Japanese Language Course (N5 & N4 Levels, JLPT, JFT-Basic, NAT-TEST)
- *      * Student Visa Guidance (Complete Study in Japan, COE processing, Language Schools & Universities)
- *      * TITP & SSW Preparation (Support for Technical Intern & Specified Skilled Worker in Japan)
- *      * Documentation & Application Support (Accurate, Fast & Reliable Service)
- *      * IELTS Preparation (Academic & General Training)
+ *      * IELTS Preparation (Academic & General Training, Band 7.5+ Target)
+ *      * Computer-Based & Offline Premium Mock Tests (300 BDT per test)
  *      * Spoken English & Communication Fluency
- *      * Kids English & Kids Spoken English (Ages 5–14)
- *      * Global Study Abroad (Germany, UK, USA, Canada, Australia, Malaysia & Europe)
+ *      * Kids' English & Phonics Foundation (Ages 5–14)
+ *      * Study Abroad & Student Visa Guidance (Portugal, UK, Czech Republic, Canada, Germany, USA, Australia, Europe)
+ *      * 100% Free Profile Assessment & Counseling
+ *  - Hotlines: 01715-052885 (Call / WhatsApp) · 01805-954731
+ *  - Official Email: kushtiaieltscare@gmail.com
  */
 
 export type NavChild = {
@@ -43,233 +37,211 @@ export type NavItem = {
 };
 
 export const company = {
-  name: "AcademiaZ",
-  shortName: "AcademiaZ",
-  altName: "AcademiaZ Rajshahi",
-  acronym: "AZ",
-  legalName: "AcademiaZ Japanese Language Training & Visa Consultancy",
-  nativeName: "একাডেমিয়া জেড (জাপানিজ ল্যাঙ্গুয়েজ ট্রেইনিং অ্যান্ড ভিসা কনসালটেন্সি, রাজশাহী)",
-  slogan: "Learn · Grow · Achieve",
-  bengaliHeadline: "স্বপ্ন নয়, পরিকল্পনা হোক সঠিক – আমরা আছি আপনার জাপান যাত্রার বিশ্বস্ত সঙ্গী !",
+  name: "Kushtia IELTS Care",
+  shortName: "Kushtia IELTS Care",
+  altName: "Kushtia IELTS Care",
+  acronym: "KIC",
+  legalName: "Kushtia IELTS Care — Language Training & Study Abroad Consultancy",
+  nativeName: "কুষ্টিয়া আইইএলটিএস কেয়ার",
+  slogan: "Your Trusted Partner in IELTS Success!",
+  motto: "a great place to learn",
+  secondaryMotto: "Your Trusted Partner in IELTS Success!",
+  bengaliHeadline: "কুষ্টিয়ায় IELTS প্রস্তুতি, স্পোকেন ইংলিশ এবং স্টাডি অ্যাব্রড-এর বিশ্বস্ত প্রতিষ্ঠান !",
   bengaliSubheadline:
-    "জাপান থেকে পরিচালিত ১০০% জাপান স্ট্যান্ডার্ড সেবা: জাপানি ভাষা কোর্স (N5-N4), স্টুডেন্ট ভিসা গাইডলাইন, TITP ও SSW প্রস্তুতি, IELTS, স্পোকেন ইংলিশ এবং নির্ভুল অ্যাপ্লিকেশন ও ডকুমেনটেশন সাপোর্ট।",
-  motto: "Learn · Grow · Achieve",
-  secondaryMotto: "Your Gateway to Japan",
-  philosophy: "JAPAN BASED & MANAGED • 100% JAPAN STANDARD • TRUSTED & RELIABLE • STUDENT-FIRST SUCCESS",
+    "আইইএলটিএস কেয়ার: অভিজ্ঞ ইন্সট্রাক্টর, আধুনিক কম্পিউটার ল্যাব, মাত্র ৩০০ টাকায় প্রিমিয়াম মক টেস্ট, স্পোকেন ইংলিশ, কিডস ইংলিশ এবং পর্তুগাল ও ইউরোপ সহ গ্লোবাল স্টুডেন্ট ভিসা সহায়তা।",
+  philosophy: "A GREAT PLACE TO LEARN • SMALL BATCH CARE • 300 BDT MOCK TESTS • ETHICAL STUDY ABROAD GUIDANCE",
   tagline:
-    "Premier Japanese Language Training & Visa Consultancy in Kadirganj, Rajshahi — Japan Based & Managed, specializing in JLPT (N5–N4), Student Visas, TITP & SSW Work Visas, IELTS, Spoken English, Kids English, and Worldwide Higher Education.",
-  bio: "Welcome to AcademiaZ Rajshahi! Japanese Language Training & Global Visa Consultancy operated and managed directly from Japan. Kadirganj, Greater Road, Rajshahi. 🇯🇵✈️📚",
-  category: "Japanese Language School · Study in Japan Consultant · Global Visa Agency",
-  origin: "Rajshahi, Bangladesh",
-  presence: "Kadirganj, Greater Road (Lane beside Ma Photostat, east side of mosque), Rajshahi - 6000, Bangladesh",
-  email: "academiazrajshahi@gmail.com",
-  contactEmail: "academiazrajshahi@gmail.com",
-  careerEmail: "academiazrajshahi@gmail.com",
-  altEmail: "academiazrajshahi@gmail.com",
-  emails: ["academiazrajshahi@gmail.com"],
-  phones: ["01518-951062", "01632-372232"],
-  whatsapp: "+8801518951062",
-  whatsappFormatted: "01518-951062",
-  secondaryPhone: "01632-372232",
-  japanLiaisonNote: "Direct liaison & operation management in Japan",
-  hours: "Saturday – Thursday: 9:00 AM – 8:00 PM (Friday Open for Special Batches & Appointments)",
-  established: "2022",
-  signOff: "AcademiaZ · Learn · Grow · Achieve",
+    "Premier IELTS Preparation, Computer-Based Mock Tests, Spoken English, Kids English & Higher Education Abroad in Kushtia — 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
+  bio: "Welcome to Kushtia IELTS Care! Your trusted partner for IELTS, Spoken English, Computer-Based Mock Tests, and Study Abroad Consultancy in Kushtia. 🎓✈️🗣️",
+  category: "IELTS Training Centre · English Language Academy · Study Abroad Consultancy",
+  origin: "Kushtia, Bangladesh",
+  presence: "169/4, Mahatab Uddin Road (in front of Kashem Clinic), Old Kataikhana More, Kushtia, Bangladesh",
+  email: "kushtiaieltscare@gmail.com",
+  contactEmail: "kushtiaieltscare@gmail.com",
+  careerEmail: "kushtiaieltscare@gmail.com",
+  altEmail: "kushtiaieltscare@gmail.com",
+  emails: ["kushtiaieltscare@gmail.com"],
+  phones: ["01715-052885", "01805-954731"],
+  whatsapp: "+8801715052885",
+  whatsappFormatted: "01715-052885",
+  secondaryPhone: "01805-954731",
+  hours: "Saturday – Thursday: 9:00 AM – 8:00 PM (Friday Open for Mock Tests & Scheduled Counseling)",
+  established: "2024",
+  signOff: "Kushtia IELTS Care · a great place to learn",
+  mockTestPrice: "300 BDT",
 
-  // Corporate & Branch Offices
   offices: {
     headquarters: {
-      name: "AcademiaZ Rajshahi Campus (Headquarters)",
-      address:
-        "Kadirganj, Greater Road (Lane beside Ma Photostat, East side of the mosque), Rajshahi - 6000, Bangladesh",
-      full: "Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi - 6000, Bangladesh",
-      short: "Kadirganj, Greater Road, Rajshahi",
-      phone: "01518-951062",
-      phones: ["01518-951062", "01632-372232"],
-      whatsapp: "+8801518951062",
+      name: "Kushtia IELTS Care (Main Campus)",
+      address: "169/4, Mahatab Uddin Road (in front of Kashem Clinic), Old Kataikhana More, Kushtia - 7000, Bangladesh",
+      full: "169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia, Bangladesh",
+      short: "Old Kataikhana More, Kushtia",
+      phone: "01715-052885",
+      phones: ["01715-052885", "01805-954731"],
+      whatsapp: "+8801715052885",
       hours: "Saturday – Thursday: 9:00 AM – 8:00 PM",
-      mapsUrl: "https://maps.google.com/?q=Kadirganj+Rajshahi+Bangladesh",
-      mapsEmbed:
-        "https://maps.google.com/maps?q=Kadirganj+Greater+Road+Rajshahi+Bangladesh&z=16&hl=en&output=embed",
+      mapsUrl: "https://maps.google.com/?q=Old+Kataikhana+More+Kushtia+Bangladesh",
+      mapsEmbed: "https://maps.google.com/maps?q=Old+Kataikhana+More+Kushtia+Bangladesh&z=16&hl=en&output=embed",
     },
-    rajshahi: {
-      name: "AcademiaZ Rajshahi Campus",
-      address:
-        "Kadirganj, Greater Road (Lane beside Ma Photostat, East side of the mosque), Rajshahi - 6000, Bangladesh",
-      full: "Kadirganj, Greater Road (Lane beside Ma Photostat), Rajshahi - 6000, Bangladesh",
-      short: "Kadirganj, Greater Road, Rajshahi",
-      phone: "01518-951062",
-      phones: ["01518-951062", "01632-372232"],
-      whatsapp: "+8801518951062",
+    kushtia: {
+      name: "Kushtia IELTS Care Campus",
+      address: "169/4, Mahatab Uddin Road (in front of Kashem Clinic), Old Kataikhana More, Kushtia - 7000, Bangladesh",
+      full: "169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia, Bangladesh",
+      short: "Old Kataikhana More, Kushtia",
+      phone: "01715-052885",
+      phones: ["01715-052885", "01805-954731"],
+      whatsapp: "+8801715052885",
       hours: "Saturday – Thursday: 9:00 AM – 8:00 PM",
-      mapsUrl: "https://maps.google.com/?q=Kadirganj+Rajshahi+Bangladesh",
-      mapsEmbed:
-        "https://maps.google.com/maps?q=Kadirganj+Greater+Road+Rajshahi+Bangladesh&z=16&hl=en&output=embed",
-    },
-    japanDesk: {
-      name: "AcademiaZ Japan Management Desk",
-      address: "Tokyo, Japan (Direct Operation & Institutional Coordination)",
-      full: "Japan Based & Managed Institutional Liaison, Tokyo, Japan",
-      short: "Tokyo, Japan",
-      phone: "01518-951062 (Via Rajshahi Center)",
-      phones: ["01518-951062"],
-      whatsapp: "+8801518951062",
-      hours: "Monday – Saturday: 10:00 AM – 7:00 PM (JST)",
-      mapsUrl: "https://maps.google.com/?q=Tokyo+Japan",
-      mapsEmbed:
-        "https://maps.google.com/maps?q=Tokyo+Japan&z=12&hl=en&output=embed",
+      mapsUrl: "https://maps.google.com/?q=Old+Kataikhana+More+Kushtia+Bangladesh",
+      mapsEmbed: "https://maps.google.com/maps?q=Old+Kataikhana+More+Kushtia+Bangladesh&z=16&hl=en&output=embed",
     },
     international: {
-      name: "AcademiaZ Japan Operational Liaison & Direct Management",
-      address: "Tokyo & Kanto Region, Japan (Direct Institutional Oversight)",
-      full: "Japan Based & Managed Institutional Liaison, Tokyo, Japan",
-      short: "Tokyo, Japan",
-      phone: "01518-951062 (Rajshahi Coordination Line)",
-      phones: ["01518-951062", "01632-372232"],
-      whatsapp: "+8801518951062",
-      hours: "Monday – Saturday: 10:00 AM – 7:00 PM (JST)",
-      mapsUrl: "https://maps.google.com/?q=Tokyo+Japan",
-      mapsEmbed:
-        "https://maps.google.com/maps?q=Tokyo+Japan&z=12&hl=en&output=embed",
+      name: "Kushtia IELTS Care Global Study Abroad Desk",
+      address: "Portugal, UK & European University Advisory Desk",
+      full: "European & Global Higher Education Liaison",
+      short: "Europe & Global Desk",
+      phone: "01715-052885",
+      phones: ["01715-052885", "01805-954731"],
+      whatsapp: "+8801715052885",
+      hours: "Saturday – Thursday: 9:00 AM – 8:00 PM",
+      mapsUrl: "https://maps.google.com/?q=Old+Kataikhana+More+Kushtia+Bangladesh",
+      mapsEmbed: "https://maps.google.com/maps?q=Old+Kataikhana+More+Kushtia+Bangladesh&z=16&hl=en&output=embed",
     },
   },
 
-  rajshahiOffice: {
-    title: "AcademiaZ Rajshahi Headquarters",
-    building: "Greater Road Center (Lane beside Ma Photostat)",
-    floor: "Dedicated Training & Consultation Suites",
-    area: "Kadirganj (East Side of the Mosque)",
-    city: "Rajshahi",
-    postalCode: "6000",
+  campusOffice: {
+    title: "Kushtia IELTS Care Campus",
+    building: "169/4, Mahatab Uddin Road",
+    floor: "Dedicated Language Labs & Consultation Suites",
+    area: "In front of Kashem Clinic, Old Kataikhana More",
+    city: "Kushtia",
+    postalCode: "7000",
     country: "Bangladesh",
-    full: "Kadirganj, Greater Road (Lane beside Ma Photostat, East side of the mosque), Rajshahi - 6000, Bangladesh",
-    hotlines: ["01518-951062", "01632-372232"],
-    whatsapp: "+8801518951062",
-    whatsappDisplay: "01518-951062",
-    email: "academiazrajshahi@gmail.com",
-    mapsUrl: "https://maps.google.com/?q=Kadirganj+Rajshahi+Bangladesh",
-    mapsEmbed:
-      "https://maps.google.com/maps?q=Kadirganj+Greater+Road+Rajshahi+Bangladesh&z=16&hl=en&output=embed",
+    full: "169/4, Mahatab Uddin Road, in front of Kashem Clinic, Old Kataikhana More, Kushtia - 7000, Bangladesh",
+    hotlines: ["01715-052885", "01805-954731"],
+    whatsapp: "+8801715052885",
+    whatsappDisplay: "01715-052885",
+    email: "kushtiaieltscare@gmail.com",
+    mapsUrl: "https://maps.google.com/?q=Old+Kataikhana+More+Kushtia+Bangladesh",
+    mapsEmbed: "https://maps.google.com/maps?q=Old+Kataikhana+More+Kushtia+Bangladesh&z=16&hl=en&output=embed",
   },
 
   address: {
-    building: "Greater Road Center (Lane beside Ma Photostat)",
-    street: "Greater Road, Kadirganj",
-    area: "Beside Ma Photostat, East Side of Mosque",
-    city: "Rajshahi",
-    postalCode: "6000",
+    building: "169/4, Mahatab Uddin Road (in front of Kashem Clinic)",
+    street: "Mahatab Uddin Road",
+    area: "Old Kataikhana More (পুরাতন কসাইখানা মোড়)",
+    city: "Kushtia",
+    postalCode: "7000",
     country: "Bangladesh",
-    full: "Kadirganj, Greater Road (Lane beside Ma Photostat, East side of the mosque), Rajshahi - 6000, Bangladesh",
-    networkNote:
-      "Japan Based & Managed · 100% Japan Standard Training · Experienced Faculty · Kadirganj, Rajshahi Campus",
+    full: "169/4, Mahatab Uddin Road, in front of Kashem Clinic, Old Kataikhana More, Kushtia - 7000, Bangladesh",
+    networkNote: "Modern Computer Lab · Library & Audio Facilities · Old Kataikhana More, Kushtia",
   },
 
-  geo: { lat: 24.3745, lng: 88.6042 },
-  mapsUrl: "https://maps.google.com/?q=Kadirganj+Rajshahi+Bangladesh",
-  mapsEmbed:
-    "https://maps.google.com/maps?q=Kadirganj+Greater+Road+Rajshahi+Bangladesh&z=16&hl=en&output=embed",
+  geo: { lat: 23.9015, lng: 89.1205 },
+  mapsUrl: "https://maps.google.com/?q=Old+Kataikhana+More+Kushtia+Bangladesh",
+  mapsEmbed: "https://maps.google.com/maps?q=Old+Kataikhana+More+Kushtia+Bangladesh&z=16&hl=en&output=embed",
 
   social: {
-    facebook: "https://www.facebook.com/AcademiaZRajshahi",
-    facebookPageName: "@AcademiaZRajshahi",
-    facebookVideos: "https://www.facebook.com/AcademiaZRajshahi/videos",
-    facebookReels: "https://www.facebook.com/AcademiaZRajshahi/reels",
-    instagram: "https://www.facebook.com/AcademiaZRajshahi",
-    linkedin: "https://www.facebook.com/AcademiaZRajshahi",
-    youtube: "https://www.facebook.com/AcademiaZRajshahi/videos",
-    messenger: "https://m.me/AcademiaZRajshahi",
-    whatsapp: "https://wa.me/8801518951062",
+    facebook: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
+    facebookPageName: "Kushtia IELTS Care",
+    facebookVideos: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
+    facebookReels: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
+    instagram: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
+    linkedin: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
+    youtube: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
+    messenger: "https://m.me/61556387490632",
+    whatsapp: "https://wa.me/8801715052885",
   },
 
   featuredReels: [
     {
       id: "reel-1",
-      badge: "🇯🇵 Japanese N5/N4 Batch",
-      title: "জাপানি ভাষা N5 ও N4 ক্লাসরুম স্পিকিং সেশন",
-      desc: "কাদিরগঞ্জ, রাজশাহী ক্যাম্পাসে সরাসরি জাপানি ভাষার বর্ণমালা, কাঞ্জি ও অডিও লিসেনিং প্র্যাকটিস। ১০০% জাপান স্ট্যান্ডার্ড সিলেবাস ও জাপান থেকে পরিচালিত গাইডলাইন।",
-      embedSrc: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAcademiaZRajshahi%2Fvideos&show_text=false&width=380&t=0",
-      videoUrl: "https://www.facebook.com/AcademiaZRajshahi/videos",
+      badge: "🎧 Computer-Based Mock Test",
+      title: "কম্পিউটার-বেজড আইইএলটিএস মক টেস্ট সেশন",
+      desc: "কুষ্টিয়া আইইএলটিএস কেয়ার ল্যাবে আসল পরীক্ষার পরিবেশে হেডফোন অডিও ড্রিল ও রিয়েল-টাইম টাইমার টেস্ট। ফি মাত্র ৩০০ টাকা।",
+      embedSrc: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FKushtia-IELTS-Care-61556387490632%2F&tabs=timeline&width=380&height=476&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId",
+      videoUrl: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
     },
     {
       id: "reel-2",
-      badge: "✈️ Study in Japan & COE",
-      title: "জাপান স্টুডেন্ট ভিসা ও স্পেশিফাইড স্কিল্ড ওয়ার্কার (SSW)",
-      desc: "জাপানে উচ্চশিক্ষা ও ক্যারিয়ার গড়ার স্বপ্ন বাস্তবায়নে সঠিক প্ল্যানিং, COE আবেদন এবং ইন্টারভিউ প্রস্তুতির বিস্তারিত তথ্য সেশন।",
-      embedSrc: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAcademiaZRajshahi%2Fvideos&show_text=false&width=380&t=0",
-      videoUrl: "https://www.facebook.com/AcademiaZRajshahi/videos",
+      badge: "🎓 IELTS Academic Batch",
+      title: "নতুন আইইএলটিএস ব্যাচ ও স্পিকিং প্র্যাকটিস",
+      desc: "ছোট ব্যাচ সাইজ, অভিজ্ঞ মেন্টর ও ওয়ান-টু-ওয়ান স্পিকিং এসেসমেন্ট এর মাধ্যমে কাঙ্ক্ষিত ব্যান্ড স্কোর ৭.৫+ অর্জনের নিশ্চয়তা।",
+      embedSrc: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FKushtia-IELTS-Care-61556387490632%2F&tabs=timeline&width=380&height=476&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId",
+      videoUrl: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
     },
     {
       id: "reel-3",
-      badge: "🗣️ Kids & Spoken English",
-      title: "কিডস ইংলিশ ও আইইএলটিএস প্রস্তুতি ক্লাস",
-      desc: "ছোটদের জন্য আকর্ষণীয় ফোনেটিক্স ও স্পোকেন ড্রিলস এবং বড়দের জন্য কেমব্রিজ স্ট্যান্ডার্ড ব্যান্ড ৭.৫+ আইইএলটিএস মক টেস্ট ও ওয়ান-টু-ওয়ান গাইডেন্স।",
-      embedSrc: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FAcademiaZRajshahi%2Fvideos&show_text=false&width=380&t=0",
-      videoUrl: "https://www.facebook.com/AcademiaZRajshahi/videos",
+      badge: "🇵🇹 Portugal & Study Abroad",
+      title: "পর্তুগাল ও ইউরোপে উচ্চশিক্ষা ভিসা সেমিনার",
+      desc: "পর্তুগালে ব্যাচেলর, মাস্টার্স ও পিএইচডি অ্যাডমিশন, ফাইল প্রসেসিং এবং স্টুডেন্ট ভিসা সহায়তার বিস্তারিত তথ্য।",
+      embedSrc: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FKushtia-IELTS-Care-61556387490632%2F&tabs=timeline&width=380&height=476&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId",
+      videoUrl: "https://www.facebook.com/p/Kushtia-IELTS-Care-61556387490632/",
     },
   ],
 
   stats: [
-    { value: "100%", label: "Japan Standard Service", badge: "জাপান থেকে পরিচালিত" },
-    { value: "N5 & N4", label: "Japanese Course Tracks", badge: "Basic to Advanced" },
-    { value: "SSW / TITP", label: "Japan Career Pathways", badge: "Work in Japan" },
-    { value: "Kadirganj", label: "Rajshahi Prime Campus", badge: "Greater Road" },
-    { value: "100%", label: "Visa Documentation Support", badge: "Accurate & Reliable" },
-    { value: "Band 7.5+", label: "IELTS Target Score", badge: "Academic & General" },
+    { value: "300 BDT", label: "IELTS Mock Test Fee", badge: "Computer & Paper" },
+    { value: "Band 7.5+", label: "Target IELTS Score", badge: "Academic & General" },
+    { value: "30+", label: "Successful Batches", badge: "Continuous Intakes" },
+    { value: "Kushtia", label: "Kataikhana More Campus", badge: "Mahatab Uddin Rd" },
+    { value: "100%", label: "Individual Student Care", badge: "Small Batch Size" },
+    { value: "Portugal & Global", label: "Study Abroad Destinations", badge: "Full Visa Support" },
   ],
 
   accreditations: [
     {
-      name: "Japan Based & Managed",
-      title: "Direct Operational Management from Japan",
-      desc: "Managed directly with Japanese standards, ensuring verified information, genuine curriculum, and direct coordination with Japanese educational institutions.",
+      name: "Experienced & Caring Instructors",
+      title: "Dedicated IELTS & Spoken English Mentors",
+      desc: "Experienced trainers dedicated to clearing doubts from basic to advanced levels, focusing on individual student weaknesses.",
     },
     {
-      name: "Experienced & Certified Instructors",
-      title: "Native & JLPT Certified Faculty",
-      desc: "Specialized language trainers for Japanese (JLPT/NAT-TEST/JFT-Basic), IELTS examiners' rubrics, Spoken English, and Kids English phonetics.",
+      name: "Modern Computer-Based Mock Lab",
+      title: "Individual Headset Audio Stations",
+      desc: "Modern computer lab equipped with high-fidelity headphones simulating actual British Council and IDP examination environments.",
     },
     {
-      name: "100% Comprehensive Visa Guidance",
-      title: "COE Processing, Embassy Prep & Documentation",
-      desc: "Complete assistance with Certificate of Eligibility (COE) for Japan, university and language school matching, and 1-on-1 consular interview coaching.",
+      name: "Affordable 300 BDT Premium Mocks",
+      title: "In-Depth Evaluation & Scoring",
+      desc: "Full-length computer-based or paper-based mock exams for just 300 BDT with detailed scorecards and personalized feedback.",
     },
     {
-      name: "Student-First Mentorship",
-      title: "আপনার সাফল্যই আমাদের অগ্রাধিকার",
-      desc: "Personalized care for every learner, small interactive batches, continuous feedback, and dedicated post-visa arrival assistance.",
+      name: "Ethical Study Abroad Guidance",
+      title: "Portugal, UK & European Admissions",
+      desc: "Genuine university shortlisting, application support, scholarship advice, and transparent student visa documentation.",
     },
   ],
 
   verifiedKeyPartners: [
     {
-      name: "Leading Japanese Language Academies & Universities",
-      country: "Japan",
-      note: "Top language institutes in Tokyo, Osaka, Nagoya, Fukuoka, and Kyoto with April, July, October & January intakes",
+      name: "Leading Universities & Polytechnics in Portugal",
+      country: "Portugal",
+      note: "Affordable European degrees, post-study residency pathways, and English-taught programs in Lisbon, Porto & Coimbra",
     },
     {
-      name: "TITP & SSW Technical Training Organizations",
-      country: "Japan",
-      note: "Specified Skilled Worker (SSW Category 1 & 2) and Technical Intern Training Program employer connections",
+      name: "Institutions in Czech Republic & Central Europe",
+      country: "Czech Republic & Europe",
+      note: "English-medium Bachelor and Master programs with European Schengen mobility",
     },
     {
-      name: "Public Universities & Colleges in Germany",
+      name: "Premier Universities in United Kingdom",
+      country: "United Kingdom",
+      note: "1-Year Master degrees, 2-Year Graduate Route PSW, and Cambridge-aligned IELTS preparation",
+    },
+    {
+      name: "Accredited Colleges & Universities in Canada",
+      country: "Canada",
+      note: "Public DLI colleges, paid co-op programs, and Post-Graduation Work Permits (PGWP)",
+    },
+    {
+      name: "Public Universities in Germany",
       country: "Germany",
-      note: "Tuition-free Bachelor's and Master's degrees, Ausbildung guidance, and student visa support",
+      note: "Tuition-free public universities, 18-month Job Seeker Visa, and Ausbildung guidance",
     },
     {
-      name: "Premier Universities in UK & Australia",
-      country: "UK & Australia",
-      note: "Fast 1-year Master's, 2-year Graduate Route PSW, and Cambridge-aligned IELTS preparation",
-    },
-    {
-      name: "Accredited Institutions in Canada & USA",
-      country: "Canada & USA",
-      note: "Public colleges, paid co-op internships, PGWP, and STEM OPT research universities",
-    },
-    {
-      name: "Global Branch Campuses in Malaysia",
-      country: "Malaysia",
-      note: "International branch campuses (Monash, Nottingham), fast EMGS visa, and affordable tuition",
+      name: "Top Universities in USA & Australia",
+      country: "USA & Australia",
+      note: "Comprehensive visa processing and high-tier academic placement",
     },
   ],
 } as const;
@@ -281,39 +253,29 @@ export const navItems: NavItem[] = [
     to: "/services",
     children: [
       {
-        label: "Japanese Language Course (N5 & N4) 🇯🇵",
-        to: "/services",
-        badge: "Basic to Advanced",
-      },
-      {
-        label: "Student Visa Guidance (Study in Japan) 🎓",
-        to: "/services",
-        badge: "COE & Admission",
-      },
-      {
-        label: "TITP & SSW Preparation (Work in Japan) 💼",
-        to: "/services",
-        badge: "Career Support",
-      },
-      {
-        label: "Documentation & Application Support 📋",
-        to: "/services",
-        badge: "Fast & Reliable",
-      },
-      {
-        label: "IELTS Preparation (Academic/General) 🇬🇧",
+        label: "IELTS Preparation (Academic & General) 🇬🇧",
         to: "/services",
         badge: "Band 7.5+ Target",
       },
       {
-        label: "Spoken English & Communication 🗣️",
+        label: "Computer-Based IELTS Mock Test (300 BDT) 🎧",
         to: "/services",
-        badge: "Fluency & Confidence",
+        badge: "Just 300 BDT",
       },
       {
-        label: "Kids English (Ages 5–14) 🧒",
+        label: "Spoken English & Fluency Program 🗣️",
+        to: "/services",
+        badge: "Basic to Advance",
+      },
+      {
+        label: "Kids English & Phonics (Ages 5–14) 🧒",
         to: "/services",
         badge: "Junior Fluency",
+      },
+      {
+        label: "English Version Academic Support (Class 3-10) 📚",
+        to: "/services",
+        badge: "Curriculum Support",
       },
       {
         label: "Free Assessment & Consultation 📝",
@@ -323,32 +285,38 @@ export const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Study in Japan & Abroad",
+    label: "Study Abroad",
     to: "/destinations",
     children: [
       {
-        label: "Study in Japan 🇯🇵",
+        label: "Study in Portugal 🇵🇹",
         to: "/study-in-{$country}",
-        params: { country: "japan" },
-        badge: "Flagship Track",
+        params: { country: "portugal" },
+        badge: "Featured European Track",
       },
       {
-        label: "Study in Germany 🇩🇪",
-        to: "/study-in-{$country}",
-        params: { country: "germany" },
-        badge: "Tuition-Free",
-      },
-      {
-        label: "Study in UK 🇬🇧",
+        label: "Study in United Kingdom 🇬🇧",
         to: "/study-in-{$country}",
         params: { country: "uk" },
         badge: "1-Yr Masters / PSW",
+      },
+      {
+        label: "Study in Czech Republic 🇨🇿",
+        to: "/study-in-{$country}",
+        params: { country: "czech-republic" },
+        badge: "Schengen Europe",
       },
       {
         label: "Study in Canada 🇨🇦",
         to: "/study-in-{$country}",
         params: { country: "canada" },
         badge: "PGWP & Co-op",
+      },
+      {
+        label: "Study in Germany 🇩🇪",
+        to: "/study-in-{$country}",
+        params: { country: "germany" },
+        badge: "Tuition-Free",
       },
       {
         label: "Study in USA 🇺🇸",
@@ -362,12 +330,6 @@ export const navItems: NavItem[] = [
         params: { country: "australia" },
         badge: "Top Universities",
       },
-      {
-        label: "Study in Malaysia 🇲🇾",
-        to: "/study-in-{$country}",
-        params: { country: "malaysia" },
-        badge: "Affordable & Fast",
-      },
       { label: "View All Destinations", to: "/destinations", badge: "Worldwide" },
     ],
   },
@@ -375,16 +337,16 @@ export const navItems: NavItem[] = [
     label: "Services",
     to: "/services",
     children: [
-      { label: "Japanese Language (N5–N4)", to: "/services", badge: "JLPT / JFT" },
-      { label: "Student Visa for Japan", to: "/services", badge: "100% Guidance" },
-      { label: "TITP & SSW Career Guidance", to: "/services", badge: "Job Support" },
-      { label: "IELTS & English Programs", to: "/services", badge: "All Levels" },
-      { label: "Documentation & SOP Support", to: "/services", badge: "Accurate" },
-      { label: "Free Profile Assessment", to: "/services", badge: "Zero Fee" },
+      { label: "IELTS Academic & General", to: "/services", badge: "Small Batches" },
+      { label: "Computer Mock Test (300 BDT)", to: "/services", badge: "Headphones & Timed" },
+      { label: "Spoken English & Fluency", to: "/services", badge: "Confidence Building" },
+      { label: "Kids English & Phonics", to: "/services", badge: "Ages 5-14" },
+      { label: "Study Abroad Visa Processing", to: "/services", badge: "Portugal & Global" },
+      { label: "Free Profile Assessment", to: "/services", badge: "Zero Charge" },
     ],
   },
   { label: "Upcoming Batches", to: "/offers" },
-  { label: "About AcademiaZ", to: "/about" },
+  { label: "About Us", to: "/about" },
   { label: "Contact & Location", to: "/contact" },
 ];
 
@@ -410,57 +372,126 @@ export type Destination = {
 
 export const destinations: Destination[] = [
   {
-    slug: "japan",
-    name: "Japan",
-    flag: "🇯🇵",
-    region: "Asia (Top Global Economy)",
-    tagline:
-      "World-class universities, lucrative part-time earnings, SSW/TITP career pathways & 100% Japan standard guidance from Rajshahi",
+    slug: "portugal",
+    name: "Portugal",
+    flag: "🇵🇹",
+    region: "Europe (Schengen Area)",
+    tagline: "Affordable tuition, vibrant European culture, English-taught programs & clear post-study pathways",
     intro:
-      "Japan is the flagship destination at AcademiaZ Rajshahi. Operated and managed directly from Japan, we provide complete, transparent guidance from Japanese language mastery (N5 & N4) to Certificate of Eligibility (COE) processing, language school and university admission, and post-arrival settlement support.",
+      "Portugal is prominently featured at Kushtia IELTS Care for students seeking high quality, cost-effective European higher education. With low tuition fees, affordable living costs, and Schengen mobility across 29 European countries, Portugal is an ideal gateway for Bachelor, Master, and PhD degrees.",
     why: [
-      "Operated and managed directly from Japan (জাপান থেকে পরিচালিত ১০০% জাপান স্ট্যান্ডার্ড সেবা)",
-      "Comprehensive Japanese Language training (JLPT / NAT-TEST / JFT-Basic) at our Kadirganj, Rajshahi campus",
-      "Permitted to work up to 28 hours per week during academic semesters and 40 hours per week during vacations",
-      "High part-time wages allowing students to comfortably bear living expenses and tuition fees",
-      "Clear career transition pathways to full-time engineering, business, and Specified Skilled Worker (SSW 1 & 2) visas",
-      "Safe, technologically advanced, and welcoming society with immense respect for disciplined international scholars",
+      "Affordable tuition fees compared to traditional Western destinations (€1,500 – €4,000 / year)",
+      "Multiple public and polytechnic universities offering English-taught degree programs",
+      "Legal part-time work rights up to 20 hours per week during semesters and full-time during holidays",
+      "Unrestricted travel freedom across all 29 European Schengen member states",
+      "Post-study job seeker visa and pathways to long-term residency in Europe",
+      "Safe, welcoming, warm climate and student-friendly lifestyle in Lisbon, Porto, Coimbra, and Braga",
     ],
     popularFields: [
-      "Information Technology & Software Engineering",
-      "Robotics, Automotives & Mechanical Engineering",
-      "International Business & Hospitality Management",
-      "Japanese Language & Cultural Studies",
-      "Agricultural Technology & Food Processing",
+      "Information Technology & Computer Engineering",
+      "Business Administration & Global Management",
+      "Tourism, Hospitality & Culinary Arts",
+      "Renewable Energy & Environmental Sciences",
+      "Civil & Mechanical Engineering",
     ],
-    avgTuition: "¥600,000 – ¥1,100,000 / year (Varies by Language Academy or University)",
-    avgLiving: "¥60,000 – ¥90,000 / month (Easily covered with student part-time wages)",
-    pswv: "Designated Activities Job Search Visa + Conversion to SSW / Technical / Specialist Work Visa",
-    intakes: "April (Spring), July (Summer), October (Autumn) & January (Winter)",
-    scholarships: "MEXT Scholarships, JASSO Honors Grants & Institutional Tuition Reductions",
+    avgTuition: "€1,500 – €4,000 / year (Public & Polytechnic Universities)",
+    avgLiving: "€450 – €700 / month (Very affordable living costs in Portugal)",
+    pswv: "1-Year Post-Study Job Seeker Visa with extension for employment",
+    intakes: "September/October (Fall - Main Intake) & February (Spring)",
+    scholarships: "Erasmus+ Grants, Government Merit Reductions & Institutional Waivers",
     topUnis: [
-      "University of Tokyo",
-      "Kyoto University",
-      "Tokyo Institute of Technology",
-      "Waseda University",
-      "Top Accredited Japanese Language Academies in Tokyo, Osaka, Nagoya & Fukuoka",
+      "University of Lisbon",
+      "University of Porto",
+      "University of Coimbra",
+      "Nova University Lisbon",
+      "Polytechnic Institute of Porto (IPP)",
+      "University of Aveiro",
     ],
     withoutIelts: true,
     featured: true,
-    specialHighlight: "Official Flagship Track · Japan Based & Managed",
+    specialHighlight: "Featured European Track · High Visa Success",
+  },
+  {
+    slug: "uk",
+    name: "United Kingdom",
+    flag: "🇬🇧",
+    region: "Europe",
+    tagline: "Fast 1-year Master degrees, 2-year Graduate Route PSW & Cambridge-aligned IELTS preparation",
+    intro:
+      "With Kushtia IELTS Care guidance and intensive Band 7.5+ IELTS preparation, students access prestigious UK universities with accelerated 1-year Master programs and 2-year post-study work permits.",
+    why: [
+      "1-Year intensive Master degrees significantly saving overall tuition and living expenses",
+      "2-Year Graduate Route Post-Study Work Visa (PSW) upon graduation",
+      "Comprehensive IELTS preparation (Target Band 7.5+) right at our Kushtia campus",
+      "International merit scholarships ranging from £1,500 to £5,000",
+    ],
+    popularFields: [
+      "Computer Science & Cyber Security",
+      "Business Administration & Global MBA",
+      "Public Health & Healthcare Management",
+      "Data Analytics & Finance",
+    ],
+    avgTuition: "£11,000 – £16,000 / year (after partner scholarships)",
+    avgLiving: "£9,207 – £12,000 / year",
+    pswv: "2 Years (Graduate Route Visa)",
+    intakes: "January, May & September (Key Intakes)",
+    scholarships: "£1,500 – £5,000 International Merit Bursaries",
+    topUnis: [
+      "University of Hertfordshire",
+      "Coventry University",
+      "University of East London",
+      "University of Greenwich",
+      "Birmingham City University",
+    ],
+    withoutIelts: true,
+    featured: true,
+    specialHighlight: "1-Year Fast Masters & IELTS Band 7.5+ Target",
+  },
+  {
+    slug: "czech-republic",
+    name: "Czech Republic",
+    flag: "🇨🇿",
+    region: "Central Europe (Schengen)",
+    tagline: "Historic European education, affordable living & English-taught programs in Prague and Brno",
+    intro:
+      "The Czech Republic is a popular European study destination processed by Kushtia IELTS Care, offering affordable English-taught degrees at historic universities, low living expenses, and Schengen visa privileges.",
+    why: [
+      "Historic European universities renowned for medicine, engineering, and business",
+      "Extremely affordable living costs (€400 – €650 / month) for international students",
+      "Student visa holders have unrestricted access to the entire European Schengen zone",
+      "Post-study work rights and growing multinational tech and manufacturing sectors",
+    ],
+    popularFields: [
+      "Computer Science & Informatics",
+      "General Medicine & Dentistry",
+      "Business Economics & Finance",
+      "Automotive & Industrial Engineering",
+    ],
+    avgTuition: "€2,500 – €6,000 / year for English-taught degrees",
+    avgLiving: "€400 – €650 / month",
+    pswv: "9-Month Post-Study Job Seeker Residence Permit",
+    intakes: "September/October (Main Intake) & February",
+    scholarships: "Government Scholarships for Developing Countries & University Grants",
+    topUnis: [
+      "Charles University, Prague",
+      "Czech Technical University in Prague (CTU)",
+      "Masaryk University, Brno",
+      "Czech University of Life Sciences Prague (CZU)",
+    ],
+    withoutIelts: false,
+    featured: true,
+    specialHighlight: "Central Europe · Affordable Schengen Visa",
   },
   {
     slug: "germany",
     name: "Germany",
     flag: "🇩🇪",
     region: "Europe (Schengen)",
-    tagline:
-      "Tuition-free public universities, dual vocational training (Ausbildung) & 18-month post-study work rights",
+    tagline: "Tuition-free public universities, 18-month job seeker visa & world-class engineering",
     intro:
-      "Germany offers world-renowned tuition-free higher education and practical vocational training (Ausbildung). AcademiaZ assists students with admissions, blocked accounts, and visa documentation.",
+      "Germany offers tuition-free higher education at public universities. Kushtia IELTS Care assists students with admissions, blocked accounts, and visa documentation.",
     why: [
-      "Zero tuition fees at public universities across Germany for Bachelor's and Master's degrees",
-      "Opportunities for paid dual vocational training (Ausbildung) in healthcare, IT, and engineering",
+      "Zero tuition fees at public universities across Germany for Bachelor and Master degrees",
       "18-month Post-Study Work Residence Permit (Job Seeker Visa) for all university graduates",
       "Part-time work rights up to 20 hours/week during semesters and 40 hours/week during vacations",
       "Unrestricted travel across all 29 European Schengen member states",
@@ -469,7 +500,6 @@ export const destinations: Destination[] = [
       "Computer Science & Artificial Intelligence",
       "Mechanical, Automotive & Industrial Engineering",
       "Data Science & International Business",
-      "Ausbildung in Nursing, Hospitality & IT",
     ],
     avgTuition: "€0 – €350 / semester (Public University Semester Contribution Only)",
     avgLiving: "€934 / month (Blocked Account Guideline)",
@@ -484,54 +514,16 @@ export const destinations: Destination[] = [
     ],
     withoutIelts: false,
     featured: true,
-    specialHighlight: "Tuition-Free Degrees & Ausbildung Support",
-  },
-  {
-    slug: "uk",
-    name: "United Kingdom",
-    flag: "🇬🇧",
-    region: "Europe",
-    tagline:
-      "Fast 1-year Master's degrees, 2-year Graduate Route PSW & Cambridge-aligned IELTS preparation",
-    intro:
-      "With AcademiaZ's structured counseling and IELTS coaching, students access prestigious UK institutions with accelerated 1-year Master's programs, 2-year post-study work rights, and merit scholarships.",
-    why: [
-      "1-Year intensive Master's degrees significantly saving tuition and living expenses",
-      "2-Year Graduate Route Post-Study Work Visa (PSW) upon graduation",
-      "Comprehensive IELTS preparation (Target Band 7.5+) right at our Rajshahi campus",
-      "Generous international scholarships ranging from £1,500 to £4,000",
-    ],
-    popularFields: [
-      "Computer Science & Cyber Security",
-      "Business Administration & Global MBA",
-      "Public Health & Healthcare Management",
-      "Civil & Environmental Engineering",
-    ],
-    avgTuition: "£11,000 – £16,000 / year (after partner scholarships)",
-    avgLiving: "£9,207 – £12,000 / year",
-    pswv: "2 Years (Graduate Route Visa)",
-    intakes: "January, May & September (Key Intakes)",
-    scholarships: "£1,500 – £4,000 International Merit Bursaries",
-    topUnis: [
-      "University of Hertfordshire",
-      "Coventry University",
-      "University of East London",
-      "University of Greenwich",
-      "Birmingham City University",
-    ],
-    withoutIelts: true,
-    featured: true,
-    specialHighlight: "1-Year Fast Masters & IELTS Band 7.5+ Target",
+    specialHighlight: "Tuition-Free Public Universities",
   },
   {
     slug: "canada",
     name: "Canada",
     flag: "🇨🇦",
     region: "North America",
-    tagline:
-      "Reputed public DLIs, paid co-op work terms & up to 3-year Post-Graduation Work Permit (PGWP)",
+    tagline: "Reputed public DLIs, paid co-op work terms & up to 3-year Post-Graduation Work Permit (PGWP)",
     intro:
-      "Canada remains a prime global education destination offering hands-on college diplomas, bachelor's and master's degrees, and post-graduation work opportunities.",
+      "Canada remains a prime global education destination offering hands-on college diplomas, bachelor degrees, and post-graduation work opportunities.",
     why: [
       "Accredited Designated Learning Institutions (DLIs) with paid co-op internships",
       "Up to 3-Year Post-Graduation Work Permit (PGWP) for eligible graduates",
@@ -541,7 +533,6 @@ export const destinations: Destination[] = [
       "Software Engineering & Cloud Computing",
       "Business Analytics & Project Management",
       "Health Administration & Nursing",
-      "Supply Chain & International Logistics",
     ],
     avgTuition: "CAD $15,000 – $26,000 / year",
     avgLiving: "CAD $14,000 – $18,000 / year",
@@ -575,7 +566,6 @@ export const destinations: Destination[] = [
       "Artificial Intelligence & Computer Science",
       "Data Science & Business Analytics",
       "Electrical & Mechanical Engineering",
-      "Biotechnology & Pharmaceutical Sciences",
     ],
     avgTuition: "$18,000 – $32,000 / year",
     avgLiving: "$10,000 – $15,000 / year",
@@ -603,13 +593,11 @@ export const destinations: Destination[] = [
       "Internationally recognized qualifications under the Australian Qualifications Framework (AQF)",
       "High minimum hourly wages for part-time work during studies",
       "Post-Study Work rights (Subclass 485) allowing full-time employment",
-      "Safe, multicultural environment with excellent student welfare services",
     ],
     popularFields: [
       "Information Technology & Cybersecurity",
       "Accounting, Finance & Business Analytics",
       "Nursing & Public Health",
-      "Civil & Mining Engineering",
     ],
     avgTuition: "AUD $22,000 – $36,000 / year",
     avgLiving: "AUD $20,000 – $25,000 / year",
@@ -626,45 +614,13 @@ export const destinations: Destination[] = [
     withoutIelts: false,
     featured: false,
   },
-  {
-    slug: "malaysia",
-    name: "Malaysia",
-    flag: "🇲🇾",
-    region: "Southeast Asia",
-    tagline: "UK/Australian branch campuses, streamlined EMGS visa & affordable modern living",
-    intro:
-      "Malaysia delivers high-quality British and Australian degrees through accredited branch campuses at a fraction of Western costs, with rapid visa approvals.",
-    why: [
-      "Earn UK and Australian degrees (Monash, Nottingham) at 1/3rd the cost",
-      "Streamlined EMGS student visa approval with straightforward procedures",
-      "Affordable tuition fees and low cost of living in vibrant multicultural cities",
-    ],
-    popularFields: [
-      "Information Technology & AI",
-      "Business Administration & International Finance",
-      "Biotechnology & Pharmacy",
-    ],
-    avgTuition: "$3,500 – $8,000 / year",
-    avgLiving: "$350 – $550 / month",
-    pswv: "Post-Graduation Internship & Employment Pass Options",
-    intakes: "February, July, September & October",
-    scholarships: "Malaysian International Scholarship (MIS) & Institutional Awards",
-    topUnis: [
-      "Universiti Malaya (UM)",
-      "Universiti Teknologi Malaysia (UTM)",
-      "Monash University Malaysia",
-      "Taylor's University",
-    ],
-    withoutIelts: true,
-    featured: false,
-  },
 ];
 
 export type Course = {
   slug: string;
   title: string;
   subtitle: string;
-  category: "japanese" | "japan-visa" | "titp-ssw" | "ielts" | "spoken" | "kids" | "documentation";
+  category: "ielts" | "mock-test" | "spoken" | "kids" | "study-abroad" | "documentation";
   icon: string;
   badge: string;
   duration: string;
@@ -678,282 +634,156 @@ export type Course = {
 
 export const courses: Course[] = [
   {
-    slug: "japanese-language",
-    title: "Japanese Language Course (N5 & N4 Levels)",
-    subtitle: "From Basic to Advanced Level — JLPT, JFT-Basic & NAT-TEST Preparation",
-    category: "japanese",
-    icon: "🇯🇵",
-    badge: "Official Flagship Course",
-    duration: "3 to 4 Months Intensive Program (N5 Level) / 3 Months (N4 Level)",
-    classSchedule: "Morning, Afternoon & Evening Batches (2 Hours Daily, 5-6 Days a Week)",
-    batchType: "Offline Classroom at Kadirganj Rajshahi Campus with Audio-Visual Drills",
-    targetOutcome: "JLPT / JFT-Basic / NAT-TEST Pass & Japan Visa Eligibility",
-    description:
-      "AcademiaZ's flagship Japanese Language program in Kadirganj, Rajshahi is designed specifically for students and professionals targeting study abroad or skilled careers in Japan. Operated and managed directly from Japan (জাপান থেকে পরিচালিত), the course covers complete script mastery (Hiragana & Katakana), foundational to intermediate Kanji, authentic Minna no Nihongo curriculum, real-life conversational drills, and continuous mock testing to guarantee exam success.",
-    highlights: [
-      "Operated and managed directly from Japan with 100% Japan standard methodology",
-      "Complete Hiragana, Katakana, and essential Kanji writing & reading mastery",
-      "From basic to advanced level training covering JLPT N5, N4, and JFT-Basic standards",
-      "Experienced & certified language instructors with native-level pronunciation guidance",
-      "Authentic Minna no Nihongo curriculum with audio-visual listening drills",
-      "Weekly timed mock exams replicating JLPT and NAT-TEST examination patterns",
-      "Direct pathway to Japan student visa and TITP/SSW work visa documentation",
-    ],
-    modules: [
-      {
-        title: "Japanese Writing Systems (Hiragana & Katakana)",
-        desc: "Complete recognition and writing of all 46 basic Hiragana and Katakana characters, Dakuon, Handakuon, Yoon combined sounds, and stroke orders.",
-      },
-      {
-        title: "Kanji Foundations & Core Vocabulary",
-        desc: "Over 800 essential daily life vocabulary words and 100+ high-frequency Kanji characters required for JLPT N5 level.",
-      },
-      {
-        title: "Grammar Patterns & Conversational Structures",
-        desc: "Mastery of Japanese particles (wa, ga, o, ni, de, to), verb conjugations (Masu, Te, Nai, Ta forms), adjective inflections, and polite forms.",
-      },
-      {
-        title: "Listening Comprehension & Speaking Drills",
-        desc: "Audio listening drills, dialogue roleplays (train stations, shopping, self-introduction, job interviews), and pronunciation refinement.",
-      },
-      {
-        title: "JLPT / JFT / NAT Mock Exams & Interview Coaching",
-        desc: "Full-length timed mock tests with detailed scoring diagnostics and embassy/immigration interview preparation.",
-      },
-    ],
-  },
-  {
-    slug: "student-visa-guidance",
-    title: "Student Visa Guidance (Study in Japan)",
-    subtitle: "Complete Guidance for Higher Education & Japanese Language Schools",
-    category: "japan-visa",
-    icon: "🎓",
-    badge: "100% Visa Guidance",
-    duration: "Intake Specific (April, July, October & January Intakes)",
-    classSchedule: "Personalized Counseling & Document Review Sessions",
-    batchType: "One-on-One Dedicated Case Officer Support",
-    targetOutcome: "Secured Admission, COE Issuance & Japanese Student Visa Approval",
-    description:
-      "Complete end-to-end guidance for students aspiring to study in Japan. We assist in selecting accredited Japanese language academies and universities in Tokyo, Osaka, Nagoya, Fukuoka, and Kyoto, assembling immaculate Certificate of Eligibility (COE) files, ensuring compliant financial sponsorship documentation, and conducting realistic embassy mock interviews.",
-    highlights: [
-      "Personalized university and language school matching based on student academic profile and budget",
-      "Full COE (Certificate of Eligibility) preparation with meticulous documentation verification",
-      "Guidance for financial sponsorship, bank solvency, and family income certificates",
-      "One-on-one Japanese Embassy consular interview preparation and mock sessions",
-      "Pre-departure briefing covering air ticketing, baggage guidelines, and Japan arrival procedures",
-      "Post-arrival guidance in Japan regarding ward office registration and part-time work rights",
-    ],
-    modules: [
-      {
-        title: "Profile Assessment & Institution Selection",
-        desc: "Evaluating academic transcripts, study gap, and selecting accredited language schools or universities in Japan.",
-      },
-      {
-        title: "COE Dossier Assembly & Translation",
-        desc: "Compiling all required educational certificates, Japanese translations, and sponsor financial documentation.",
-      },
-      {
-        title: "Immigration Submission & Follow-up",
-        desc: "Coordinating with Japanese immigration authorities and schools until official COE approval.",
-      },
-      {
-        title: "Embassy Visa File Submission & Mock Interviews",
-        desc: "Preparing the visa application file and conducting intensive question-and-answer mock interviews.",
-      },
-      {
-        title: "Pre-Departure & Japan Settlement Briefing",
-        desc: "Comprehensive guidance on flight booking, accommodation options, ward office procedures, and part-time job rules.",
-      },
-    ],
-  },
-  {
-    slug: "titp-ssw-preparation",
-    title: "TITP & SSW Preparation (Work in Japan)",
-    subtitle: "Specified Skilled Worker & Technical Intern Training Support for Japan",
-    category: "titp-ssw",
-    icon: "💼",
-    badge: "Career in Japan",
-    duration: "3 to 6 Months Comprehensive Preparation",
-    classSchedule: "Intensive Language & Skills Testing Coaching",
-    batchType: "Skill-Focused Career Batch",
-    targetOutcome: "JFT-Basic / JLPT N4 Qualification & SSW Skill Test Readiness",
-    description:
-      "Support for skilled workers and professionals targeting employment in Japan under the Specified Skilled Worker (SSW - 特定技能) and Technical Intern Training Program (TITP) pathways. AcademiaZ provides targeted Japanese language preparation (JFT-Basic A2 / JLPT N4), trade skill test orientation (caregiving, food service, construction, agriculture, etc.), and complete visa documentation.",
-    highlights: [
-      "Focused coaching for JFT-Basic A2 and JLPT N4 required for SSW visa qualification",
-      "Orientation for industry-specific skill evaluation tests (Nursing Care, Food Service, Hospitality, Agriculture)",
-      "Resume (Rirekisho) writing in Japanese format and interview coaching for Japanese employers",
-      "Transparent guidance on Japanese labor standards, minimum wages, and employment contracts",
-      "Direct coordination and documentation support under official Japan standards",
-    ],
-    modules: [
-      {
-        title: "JFT-Basic & Practical Japanese Language",
-        desc: "Intensive study targeting the JFT-Basic exam, emphasizing everyday workplace communication and situational dialogues.",
-      },
-      {
-        title: "Industry Skill Test Orientation",
-        desc: "Understanding trade skill test syllabus and past test formats across key SSW sectors.",
-      },
-      {
-        title: "Japanese Resume & Employer Interview Prep",
-        desc: "Formatting Japanese resumes, mastering polite business Japanese (Keigo basics), and practicing video interview techniques.",
-      },
-      {
-        title: "Visa Contract & Embassy Processing",
-        desc: "Verification of employment contracts, COE issuance for SSW, and visa stamping assistance.",
-      },
-    ],
-  },
-  {
-    slug: "documentation-application-support",
-    title: "Documentation & Application Support",
-    subtitle: "Accurate, Fast & Reliable Service for All Study & Visa Applications",
-    category: "documentation",
-    icon: "📋",
-    badge: "Accurate & Reliable",
-    duration: "Continuous Assistance Throughout Application Cycle",
-    classSchedule: "Walk-in & Scheduled Document Review Sessions",
-    batchType: "Dedicated Documentation Desk at Rajshahi Campus",
-    targetOutcome: "Flawless, Embassy-Compliant Application Dossier",
-    description:
-      "Documentation is the single most decisive factor in visa approval. AcademiaZ provides meticulous, fast, and accurate documentation services including official translations, Statement of Purpose (SOP) writing, study plan formulation, affidavit vetting, and application file audits.",
-    highlights: [
-      "Accurate translation of Bengali certificates, deeds, and official documents into Japanese and English",
-      "Personalized Statement of Purpose (SOP) and Study Plan drafting tailored to student aspirations",
-      "Comprehensive verification of financial documents, income taxes, and bank solvency statements",
-      "Strict zero-error policy preventing costly delays or visa refusals due to clerical discrepancies",
-    ],
-    modules: [
-      {
-        title: "Document Audit & Gap Analysis",
-        desc: "Reviewing all academic, financial, and personal papers to identify any missing elements or discrepancies.",
-      },
-      {
-        title: "Professional Translation & Notarization",
-        desc: "Accurate translations aligned with Japanese immigration and international embassy standards.",
-      },
-      {
-        title: "SOP & Study Plan Formulation",
-        desc: "Drafting compelling, authentic academic statements of purpose reflecting genuine student motivation.",
-      },
-      {
-        title: "Final File Compilation & Lodgement",
-        desc: "Packaging the complete dossier in precise embassy-mandated order for smooth processing.",
-      },
-    ],
-  },
-  {
     slug: "ielts-preparation",
     title: "IELTS Preparation (Academic & General Training)",
-    subtitle: "Comprehensive Band 7.5+ Strategy for Study Abroad & Global Migration",
+    subtitle: "From Basic to Advanced — Target Band 7.5+ Strategy with Cambridge Curriculum",
     category: "ielts",
     icon: "🇬🇧",
-    badge: "Band 7.5+ Target",
+    badge: "Flagship Program",
     duration: "2 to 3 Months Intensive Coaching",
-    classSchedule: "Morning, Evening & Weekend Batches (3-4 Days a Week)",
-    batchType: "Interactive Small Batch at Kadirganj Campus",
+    classSchedule: "Morning, Evening & Weekend Batches (2 Hours Daily, 3-5 Days a Week)",
+    batchType: "Small Interactive Batch at Old Kataikhana More Campus",
     targetOutcome: "Target Band 7.0 – 8.0+ in Academic or General Training",
     description:
-      "AcademiaZ's IELTS Preparation program in Rajshahi provides complete mastery across all 4 modules (Listening, Reading, Writing, Speaking). Tailored for students aspiring for higher education in the UK, USA, Canada, Australia, and European institutions, with weekly Cambridge mock tests, individualized essay evaluations, and 1-on-1 speaking interview simulations.",
+      "Kushtia IELTS Care's premier IELTS training program in Kushtia covers all 4 modules (Listening, Reading, Writing, Speaking). Tailored with small batch sizes, individual doubt-clearing sessions, authentic Cambridge materials, and full-length weekly mock tests to guarantee score excellence.",
     highlights: [
-      "Comprehensive coverage of both Academic and General Training formats",
-      "Small batch sizes ensuring personalized attention and individual speaking feedback",
-      "Weekly authentic full-length mock exams replicating real British Council / IDP test environments",
-      "In-depth Task 1 & Task 2 Writing analysis with examiner band descriptor breakdowns",
-      "1-on-1 Speaking interviews with real-time feedback on fluency, lexical resource, and pronunciation",
-      "Access to authentic Cambridge IELTS past test materials and listening audio library",
+      "Complete mastery of all 4 modules: Listening, Reading, Writing, and Speaking",
+      "Small batch size for personalized attention and individual student care",
+      "In-depth Task 1 & Task 2 writing evaluation with Cambridge band descriptor analysis",
+      "One-on-one speaking interview simulations with actionable pronunciation feedback",
+      "Free diagnostic test and study materials provided",
+      "Regular full-length mock exams simulating real exam conditions",
     ],
     modules: [
       {
         title: "Listening Module Mastery",
-        desc: "Predictive listening techniques, keyword spotting, note completion, multiple choice, and tackling diverse accents.",
+        desc: "Keyword spotting, predictive listening techniques, multiple choice strategies, and diverse international accents in our audio lab.",
       },
       {
-        title: "Reading Speed & Accuracy",
-        desc: "Mastering Skimming & Scanning, True/False/Not Given, Heading Matching, and time-management strategies.",
+        title: "Reading Speed & Precision",
+        desc: "Skimming and scanning techniques, True/False/Not Given, Heading Matching, and rigorous 60-minute time management.",
       },
       {
         title: "Writing Task 1 & Task 2",
-        desc: "Data interpretation (graphs, charts, processes), formal letters, and structured essay writing with cohesive devices.",
+        desc: "Data interpretation for charts/graphs, formal letters, and structured essay writing with cohesive devices and advanced vocabulary.",
       },
       {
         title: "Speaking Confidence & Fluency",
         desc: "Overcoming hesitation, expanding Part 2 cue cards, handling Part 3 abstract discussions, and intonation improvement.",
       },
       {
-        title: "Full-Length Mock Tests & Diagnostic Review",
-        desc: "Timed exam simulations followed by personalized score breakdown and targeted improvement plans.",
+        title: "Full-Length Timed Mock Tests",
+        desc: "Authentic exam simulations followed by personalized diagnostic score breakdowns.",
+      },
+    ],
+  },
+  {
+    slug: "computer-based-mock-test",
+    title: "Computer-Based & Offline IELTS Mock Test",
+    subtitle: "Official Exam Simulation with Individual Headsets — Just 300 BDT per Test",
+    category: "mock-test",
+    icon: "🎧",
+    badge: "Just 300 BDT",
+    duration: "Single Session (2 Hours 45 Mins Full Simulation)",
+    classSchedule: "Available Daily & on Weekends (Morning & Afternoon Slots)",
+    batchType: "Individual Computer Audio Station at Kushtia Campus",
+    targetOutcome: "Realistic Band Score Diagnostic & Detailed Error Analysis",
+    description:
+      "Evaluate your real IELTS exam readiness at Kushtia IELTS Care for just 300 BDT. Our state-of-the-art computer lab features individual audio stations, high-fidelity noise-canceling headphones, official software interface, and comprehensive evaluation by experienced mentors.",
+    highlights: [
+      "Only 300 BDT per test — most affordable premium mock test in Kushtia",
+      "Computer-Based (CDI) and Paper-Based format options available",
+      "High-clarity headphones and private testing workstations",
+      "Detailed diagnostic scorecard across all 4 modules delivered promptly",
+      "One-on-one speaking interview with an experienced IELTS evaluator",
+      "Ideal for final preparation before sitting for the British Council or IDP exam",
+    ],
+    modules: [
+      {
+        title: "Listening Test Simulation (30 Mins)",
+        desc: "Authentic Cambridge audio tracks through high-definition headphones with official timer.",
+      },
+      {
+        title: "Reading Test Simulation (60 Mins)",
+        desc: "3 academic/general passages with timer and on-screen navigation identical to real test.",
+      },
+      {
+        title: "Writing Test Simulation (60 Mins)",
+        desc: "Task 1 and Task 2 with on-screen word count and keyboard typing.",
+      },
+      {
+        title: "Face-to-Face Speaking Evaluation (11-14 Mins)",
+        desc: "1-on-1 interview with senior mentor covering all 3 speaking parts with rubric feedback.",
       },
     ],
   },
   {
     slug: "spoken-english",
     title: "Spoken English & Communication Fluency",
-    subtitle: "Overcome Shyness, Speak Confidently & Master Real-World English",
+    subtitle: "Overcome Hesitation, Gain Fluency & Speak English with Confidence",
     category: "spoken",
     icon: "🗣️",
-    badge: "Fluency & Confidence",
-    duration: "2 Months Active Practice Program",
-    classSchedule: "Flexible Morning, Afternoon & Evening Batches",
-    batchType: "Activity-Based Interactive Batch",
-    targetOutcome: "Spontaneous, Confident & Fluent English Speaking",
+    badge: "Basic to Advance",
+    duration: "2 Months Practical Training",
+    classSchedule: "Morning, Afternoon & Evening Batches (3 Days a Week)",
+    batchType: "Activity-Based Interactive Class",
+    targetOutcome: "Natural, Spontaneous & Confident English Speaking",
     description:
-      "Designed for students, job seekers, and working professionals in Rajshahi who hesitate to speak English despite knowing grammar. Our Spoken English program creates an engaging, pressure-free speaking environment with group discussions, situational roleplays, public speaking exercises, and pronunciation refinement.",
+      "Designed for college students, job seekers, professionals, and freelancers in Kushtia who know English grammar but struggle to speak fluently. Practice real-world conversations, eliminate stage fright, and master corporate presentations.",
     highlights: [
-      "100% English speaking classroom atmosphere to build natural speaking habits",
-      "Practical phonetics, pronunciation, and British/American accent awareness",
-      "Real-world situation roleplays: job interviews, corporate meetings, travel, presentations",
+      "100% English speaking classroom atmosphere to build natural conversation habits",
+      "Practical phonetics, pronunciation, and accent reduction exercises",
+      "Situational roleplays: job interviews, corporate meetings, social discussions",
       "Vocabulary enrichment with modern idioms, phrases, and conversational connectors",
       "Overcoming speaking anxiety through guided presentations and group debates",
     ],
     modules: [
       {
-        title: "Breaking Hesitation & Confidence Building",
-        desc: "Overcoming fear of speaking, positive body language, and spontaneous conversation starters.",
+        title: "Breaking Hesitation & Mindset",
+        desc: "Overcoming fear of making mistakes, positive body language, and spontaneous conversation starters.",
       },
       {
         title: "Pronunciation & Phonetics Drills",
-        desc: "Correct vowel and consonant articulation, word stress, rhythm, and natural sentence intonation.",
+        desc: "Correct vowel/consonant articulation, syllable stress, rhythm, and natural sentence intonation.",
       },
       {
-        title: "Situational Roleplays & Real-Life Dialogue",
-        desc: "Conversations for professional workplaces, interviews, social gatherings, and airport travel.",
+        title: "Real-Life Dialogue & Roleplays",
+        desc: "Office meetings, job interviews, customer interactions, travel, and casual social conversations.",
       },
       {
-        title: "Public Speaking, Debates & Presentations",
-        desc: "Structuring viewpoints, polite agreements/disagreements, and delivering impromptu stage speeches.",
+        title: "Public Speaking & Presentations",
+        desc: "Structuring short talks, impromptu speaking, debates, and delivering ideas persuasively.",
       },
     ],
   },
   {
     slug: "kids-english",
-    title: "Kids English & Young Learners Program (Ages 5–14)",
-    subtitle: "Fun, Interactive & Foundational English Learning for Children",
+    title: "Kids' English & Phonics Foundation (Ages 5–14)",
+    subtitle: "Joyful, Interactive & Foundational English Learning for Children",
     category: "kids",
     icon: "🧒",
     badge: "Junior Fluency",
     duration: "3 Months Foundational Program",
-    classSchedule: "After-School & Weekend Batches",
+    classSchedule: "Special After-School & Weekend Batches",
     batchType: "Child-Friendly Interactive Learning Batch",
-    targetOutcome: "Accurate Pronunciation, Rich Vocabulary & Natural Speaking Habits",
+    targetOutcome: "Accurate Pronunciation, Rich Vocabulary & Confident Communication",
     description:
-      "A joyful, nurturing English learning environment for young learners (ages 5 to 14) in Rajshahi. Children learn English naturally through interactive phonics, storytelling, educational cartoons, rhymes, and vocabulary games, building solid foundations for future academic excellence.",
+      "A warm, engaging environment for young learners (ages 5 to 14) in Kushtia. Children learn English naturally through phonics, storytelling, cartoon videos, rhymes, and vocabulary games, building solid foundations for future success.",
     highlights: [
-      "Age-tailored groups (Junior Group: 5–8 yrs; Senior Group: 9–14 yrs)",
-      "Phonics-based reading and correct English pronunciation habits from early age",
-      "Interactive audio-visual storytelling, illustrated books, and vocabulary games",
-      "Building confidence in school recitations, presentations, and daily dialogue",
-      "Gentle, patient, and specially trained instructors who make learning fun",
+      "Age-tailored batches (Junior Group: 5–8 yrs; Senior Group: 9–14 yrs)",
+      "Phonics-based reading and correct English pronunciation habits from early childhood",
+      "Interactive audio-visual storytelling, illustrated books, and educational games",
+      "Building natural confidence in school recitations and daily dialogue",
+      "Gentle, patient, and specially trained instructors who make learning joyful",
     ],
     modules: [
       {
         title: "Phonics & Letter Sounds",
-        desc: "Jolly phonics, sound blending, sight words, and reading illustrated storybooks.",
+        desc: "Sound blending, sight words, and reading illustrated storybooks with correct pronunciation.",
       },
       {
         title: "Everyday Vocabulary & Action Words",
-        desc: "Colors, animals, family, school objects, fruits, polite social phrases, and descriptive words.",
+        desc: "Colors, animals, family, school objects, polite social phrases, and descriptive words.",
       },
       {
         title: "Sentence Building & Storytelling",
@@ -962,6 +792,46 @@ export const courses: Course[] = [
       {
         title: "Speaking Confidence & Recitations",
         desc: "Rhymes, self-introductions, show-and-tell activities, and interactive dialogue games.",
+      },
+    ],
+  },
+  {
+    slug: "study-abroad-counseling",
+    title: "Study Abroad Counseling & Visa Processing",
+    subtitle: "Portugal, UK, Czech Republic, Canada & European Student Visas",
+    category: "study-abroad",
+    icon: "✈️",
+    badge: "Portugal & Global",
+    duration: "Intake Specific (Fall, Winter & Spring Intakes)",
+    classSchedule: "Free One-on-One Counseling & Document Review",
+    batchType: "Personalized Case Guidance",
+    targetOutcome: "Secured Admission Offer & Student Visa Approval",
+    description:
+      "Complete, transparent guidance for higher education abroad. Specializing in Portugal (prominent European pathway), Czech Republic, United Kingdom, Canada, and Germany. We assist in university shortlisting, application filing, SOP writing, and embassy visa preparation.",
+    highlights: [
+      "Specialized focus on Portugal admissions, public universities, and affordable European study",
+      "Transparent documentation verification and SOP / Statement of Purpose drafting",
+      "Guidance for bank solvency statements, sponsor papers, and police clearance certificates",
+      "One-on-one consular visa interview preparation",
+      "Pre-departure orientation and accommodation guidance",
+      "100% free profile assessment with zero hidden charges",
+    ],
+    modules: [
+      {
+        title: "Profile Assessment & University Shortlisting",
+        desc: "Matching student academic qualifications, budget, and career goals with accredited institutions.",
+      },
+      {
+        title: "Application Lodgement & Offer Letter",
+        desc: "Compiling academic dossiers and securing confirmed admission letters from partner universities.",
+      },
+      {
+        title: "SOP & Financial Dossier Formulation",
+        desc: "Drafting convincing Statements of Purpose and structuring compliant financial sponsorship papers.",
+      },
+      {
+        title: "Embassy Submission & Consular Interview Prep",
+        desc: "Full visa file packaging and realistic question-and-answer mock interview coaching.",
       },
     ],
   },
@@ -983,135 +853,135 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    id: "japanese-language-training",
-    title: "Japanese Language Course (N5 & N4)",
-    subtitle: "JLPT, JFT-Basic & NAT-TEST Preparation with 100% Japan Standard",
-    icon: "🇯🇵",
-    badge: "Official Flagship Course",
+    id: "ielts-preparation-course",
+    title: "IELTS Preparation (Academic & General)",
+    subtitle: "Cambridge-Aligned Syllabus & Band 7.5+ Strategy in Kushtia",
+    icon: "🇬🇧",
+    badge: "Core Program",
     category: "language-courses",
     overview:
-      "AcademiaZ provides intensive Japanese language training in Kadirganj, Rajshahi. Managed directly from Japan, our courses follow the official Minna no Nihongo syllabus with comprehensive Hiragana, Katakana, and Kanji coverage, audio listening drills, and authentic mock tests.",
+      "Kushtia IELTS Care provides intensive IELTS coaching in Old Kataikhana More, Kushtia. Our courses cover all 4 modules (Listening, Reading, Writing, Speaking) with small batch sizes, experienced trainers, and weekly full-length mock tests.",
     benefits: [
-      "Operated and managed directly from Japan with authentic Japanese teaching methodology",
-      "Covers JLPT N5, N4, and JFT-Basic standards for study and work visa qualification",
-      "Small batch sizes ensuring individual attention and speaking practice for every student",
-      "Complete study materials, audio tracks, and weekly exam simulations provided",
+      "Comprehensive syllabus covering both Academic and General Training formats",
+      "Small batch size ensuring individual speaking practice and daily feedback",
+      "Complete study materials, Cambridge practice tests, and audio resources provided",
+      "Experienced mentors focused on individual student improvement",
     ],
     deliverables: [
-      "Full script mastery (Hiragana, Katakana & 100+ Kanji for N5)",
-      "Weekly timed mock exams with detailed instructor feedback",
-      "Certificate of Course Completion",
-      "Direct pathway guidance to Japan Student Visa and SSW/TITP programs",
+      "Free diagnostic assessment test",
+      "Full course curriculum with Task 1 & Task 2 writing evaluations",
+      "One-on-one speaking interview evaluations with scorecards",
+      "Course Completion Certificate",
     ],
   },
   {
-    id: "study-in-japan-visas",
-    title: "Student Visa Guidance (Study in Japan)",
-    subtitle: "Complete Guidance for Higher Education & Japanese Language Schools",
-    icon: "🎓",
-    badge: "Flagship Visa Track",
+    id: "computer-based-mock-tests",
+    title: "Computer-Based & Paper IELTS Mock Test",
+    subtitle: "Real Exam Simulation with Headsets for Just 300 BDT",
+    icon: "🎧",
+    badge: "300 BDT per Test",
+    category: "language-courses",
+    overview:
+      "Sit for an authentic IELTS mock test in our modern computer lab equipped with high-clarity headsets and official software interface for only 300 BDT. Receive detailed diagnostic scorecards and expert feedback.",
+    benefits: [
+      "Authentic exam environment reducing real test-day anxiety",
+      "Individual audio workstation with clear listening headsets",
+      "Official timer and test interface for computer-delivered IELTS practice",
+      "Thorough speaking evaluation by an experienced instructor",
+    ],
+    deliverables: [
+      "Comprehensive module-by-module score report",
+      "Detailed writing feedback with error analysis",
+      "One-on-one speaking rubric feedback",
+      "Recommendations for target band improvement",
+    ],
+  },
+  {
+    id: "spoken-english-fluency",
+    title: "Spoken English & Communication Fluency",
+    subtitle: "Practical Daily Conversation, Pronunciation & Job Interview Skills",
+    icon: "🗣️",
+    badge: "Basic to Advance",
+    category: "language-courses",
+    overview:
+      "Our Spoken English program creates an engaging, hesitation-free environment with group discussions, situational roleplays, public speaking, and accent refinement for students, job seekers, and professionals.",
+    benefits: [
+      "100% English speaking environment with supportive instructors",
+      "Practical phonetics, pronunciation correction, and accent awareness",
+      "Real-world roleplays for job interviews, office meetings, and travel",
+      "Vocabulary enrichment with common idioms and conversational phrases",
+    ],
+    deliverables: [
+      "Free fluency assessment",
+      "Daily conversational practice sessions",
+      "Mock job interview simulations",
+      "Course Completion Certificate",
+    ],
+  },
+  {
+    id: "kids-english-phonics",
+    title: "Kids' English & Phonics (Ages 5–14)",
+    subtitle: "Child-Friendly Foundational English Learning",
+    icon: "🧒",
+    badge: "Ages 5–14",
+    category: "language-courses",
+    overview:
+      "A fun, interactive English learning program for children in Kushtia. Children build strong pronunciation and reading habits through phonics, cartoon storytelling, vocabulary games, and rhymes.",
+    benefits: [
+      "Interactive multimedia classrooms with engaging visuals",
+      "Phonics-based reading and natural pronunciation from early childhood",
+      "Small groups with caring and patient teachers",
+      "Regular progress feedback for parents and guardians",
+    ],
+    deliverables: [
+      "Illustrated study worksheets and reading material",
+      "Phonics audio-visual practice",
+      "Story recitation and presentation activities",
+      "Certificate of Achievement",
+    ],
+  },
+  {
+    id: "study-in-portugal-europe",
+    title: "Study Abroad Consultancy (Portugal & Europe)",
+    subtitle: "Affordable Tuition, English-Taught Degrees & Student Visa Guidance",
+    icon: "✈️",
+    badge: "Portugal & Schengen",
     category: "study-abroad",
     overview:
-      "End-to-end consultancy for students wishing to pursue language school, bachelor's, or master's degrees in Japan. We coordinate directly with accredited institutions across Tokyo, Osaka, Nagoya, and Fukuoka, assembling foolproof COE files and providing consular interview prep.",
+      "Kushtia IELTS Care provides complete student visa assistance for Portugal, Czech Republic, UK, Canada, Germany, USA, and Australia. We assist with university matching, application processing, SOP writing, and visa filing.",
     benefits: [
-      "Direct liaison with top Japanese language schools and universities across major cities",
-      "Flawless COE (Certificate of Eligibility) preparation with rigorous documentation checks",
-      "Permitted part-time work rights up to 28 hours per week with attractive earnings",
-      "One-on-one Japanese Embassy consular interview coaching",
+      "Specialized track for Portugal universities with affordable tuition fees",
+      "Complete assistance with application forms, admission letters, and SOPs",
+      "Bank solvency guidance and document verification",
+      "Consular interview preparation and mock interviews",
     ],
     deliverables: [
-      "Free profile assessment and language school matching",
-      "COE application dossier compilation and submission",
-      "Visa file submission guidance and embassy mock interview sessions",
-      "Pre-departure orientation and Japan settlement guidelines",
+      "Free academic profile assessment",
+      "Target institution selection list",
+      "SOP drafting and document review checklist",
+      "Visa application dossier preparation",
     ],
-    intakeNote: "Key Intakes: April, July, October & January",
-  },
-  {
-    id: "titp-ssw-career-visas",
-    title: "TITP & SSW Preparation (Work in Japan)",
-    subtitle: "Specified Skilled Worker & Technical Intern Support for Work in Japan",
-    icon: "💼",
-    badge: "Work in Japan",
-    category: "visa-guidance",
-    overview:
-      "Comprehensive preparation for skilled professionals seeking employment in Japan under the Specified Skilled Worker (SSW 1 & 2) and Technical Intern Training Program (TITP). We provide JFT-Basic A2 / JLPT N4 training, trade test guidance, and contract documentation.",
-    benefits: [
-      "Targeted language preparation for JFT-Basic A2 and JLPT N4 required for SSW visas",
-      "Guidance across in-demand sectors: Nursing Care, Food Service, Hospitality, Agriculture",
-      "Japanese resume (Rirekisho) writing and video interview preparation with Japanese employers",
-      "Clear, transparent procedures strictly adhering to Japanese labor standards",
-    ],
-    deliverables: [
-      "JFT-Basic / JLPT N4 exam qualification preparation",
-      "Trade test orientation and study materials",
-      "Employer interview coaching in Japanese",
-      "Visa contract verification and embassy processing support",
-    ],
-  },
-  {
-    id: "documentation-application-support",
-    title: "Documentation & Application Support",
-    subtitle: "Accurate, Fast & Reliable Service for Study & Visa Applications",
-    icon: "📋",
-    badge: "Accurate & Fast",
-    category: "visa-guidance",
-    overview:
-      "Professional documentation services ensuring zero-error submission. We provide certified translations, personalized Statement of Purpose (SOP) writing, study plans, financial sponsorship structuring, and application dossier verification.",
-    benefits: [
-      "Accurate translation of certificates and official documents into Japanese and English",
-      "Personalized Statement of Purpose (SOP) and Study Plan drafting",
-      "Meticulous verification of bank solvency and sponsorship affidavits",
-      "Zero-defect packaging meeting strict embassy requirements",
-    ],
-    deliverables: [
-      "Certified translations and notarized copies",
-      "Custom Statement of Purpose (SOP)",
-      "Financial documentation checklist and verification report",
-      "Complete organized visa submission file",
-    ],
-  },
-  {
-    id: "ielts-english-academy",
-    title: "IELTS & English Language Programs",
-    subtitle: "IELTS Preparation (Academic/General), Spoken English & Kids English",
-    icon: "🗣️",
-    badge: "Comprehensive English Hub",
-    category: "language-courses",
-    overview:
-      "AcademiaZ's English Language Academy in Rajshahi provides Cambridge-aligned IELTS coaching targeting Band 7.5+, Spoken English for career and interview fluency, and engaging Kids English for children ages 5 to 14.",
-    benefits: [
-      "IELTS Coaching: Complete 4-module training with weekly authentic mock tests",
-      "Spoken English: Daily conversation drills to eliminate hesitation and build confidence",
-      "Kids English: Joyful phonetics, storytelling, and vocabulary building for young learners",
-      "Experienced faculty providing individual diagnostic feedback",
-    ],
-    deliverables: [
-      "Free diagnostic language level test",
-      "Complete study materials and Cambridge audio resources",
-      "One-on-one speaking interview evaluations",
-      "Course Certificate of Completion",
-    ],
+    intakeNote: "Key Intakes: September/October (Fall) & January/February (Spring)",
   },
   {
     id: "free-profile-assessment",
     title: "100% Free Profile Assessment & Counseling",
-    subtitle: "Zero Consultation Fee · Transparent University & Country Strategy",
+    subtitle: "Zero Consultation Fee · Transparent University & Course Strategy",
     icon: "📝",
-    badge: "100% Free Consultation",
+    badge: "100% Free",
     category: "free-file",
     overview:
-      "Visit our Rajshahi campus at Kadirganj or connect online for a comprehensive, 100% free profile evaluation. Our counselors evaluate your academic transcripts, budget, and career goals to recommend the best Japan or global pathway.",
+      "Visit our campus at Old Kataikhana More, Kushtia or connect on WhatsApp for a completely free profile assessment. Our counselors evaluate your academic transcripts, budget, and language goals.",
     benefits: [
-      "Completely free consultation with zero upfront charges or hidden file fees",
-      "Realistic assessment of Japan Student Visa, SSW, or global study abroad eligibility",
-      "Transparent breakdown of language course durations, tuition fees, and living costs",
-      "Step-by-step personalized roadmap to success",
+      "Completely free counseling with zero upfront file assessment charges",
+      "Realistic evaluation of IELTS target score and study abroad eligibility",
+      "Transparent breakdown of course fees and university expenses",
+      "Personalized step-by-step roadmap to achieve your goals",
     ],
     deliverables: [
-      "Personalized Study & Visa Roadmap",
-      "Estimated cost breakdown sheet (tuition, living, visa fees)",
-      "Recommended course enrollment plan at AcademiaZ Rajshahi",
+      "Personalized Language & Study Roadmap",
+      "Estimated timeline and cost breakdown",
+      "Recommended batch schedule at Kushtia IELTS Care",
     ],
   },
 ];
@@ -1119,197 +989,179 @@ export const services: Service[] = [
 export const processSteps = [
   {
     step: "01",
-    title: "Free Profile Evaluation & Career Planning",
-    bengaliTitle: "ফ্রি প্রোফাইল মূল্যায়ন ও সঠিক পরিকল্পনা",
-    desc: "Visit our Kadirganj, Rajshahi office or consult online. We analyze your academic background, career goals, and budget to formulate a realistic study or work visa roadmap.",
+    title: "Free Profile Evaluation & Counseling",
+    bengaliTitle: "ফ্রি প্রোফাইল মূল্যায়ন ও সঠিক গাইডলাইন",
+    desc: "Visit our Old Kataikhana More campus in Kushtia or contact us online. We assess your English proficiency level, target goals, and study abroad aspirations.",
   },
   {
     step: "02",
-    title: "Language Mastery (Japanese N5-N4 / IELTS / Spoken)",
-    bengaliTitle: "একাডেমিয়া জেড-এ ভাষা দক্ষতা অর্জন",
-    desc: "Enroll in our Japanese Language (N5 & N4), IELTS, or Spoken English batches with authentic curriculum, audio-visual drills, and small-batch mentorship.",
+    title: "Enrollment in IELTS / English Batch",
+    bengaliTitle: "আইইএলটিএস বা স্পোকেন ইংলিশ ব্যাচে ভর্তি",
+    desc: "Join our small interactive batches with experienced mentors, Cambridge curriculum, audio-visual drills, and personalized student care.",
   },
   {
     step: "03",
-    title: "Institution Admission & COE Processing",
-    bengaliTitle: "ল্যাঙ্গুয়েজ স্কুল/বিশ্ববিদ্যালয় ভর্তি ও COE প্রসেসিং",
-    desc: "Our counselors submit official applications to accredited Japanese language academies and universities, securing your admission letter and Certificate of Eligibility (COE).",
+    title: "Computer Mock Tests (300 BDT)",
+    bengaliTitle: "কম্পিউটার-বেজড মক টেস্ট ও স্কোর অ্যানালাইসিস",
+    desc: "Take affordable 300 BDT full-length computer-based or paper mock tests in our modern lab with headsets to diagnose weaknesses and boost confidence.",
   },
   {
     step: "04",
-    title: "Visa File Compilation & Embassy Mock Interview",
-    bengaliTitle: "ভিসা ফাইল প্রস্তুত ও ১-অন-১ মক ইন্টারভিউ",
-    desc: "Complete documentation support, financial verification, SOP preparation, and intensive one-on-one embassy mock interview training.",
+    title: "University Admission & Documentation",
+    bengaliTitle: "বিশ্ববিদ্যালয়ে আবেদন ও ফাইল প্রসেসিং",
+    desc: "For study abroad aspirants, our team submits applications to partner institutions in Portugal, UK, and Europe, assisting with SOP and documentation.",
   },
   {
     step: "05",
-    title: "Visa Approval, Pre-Departure & Japan Guidance",
-    bengaliTitle: "ভিসা প্রাপ্তি ও জাপানে সফল আগমন",
-    desc: "Celebrate your visa success! Receive comprehensive pre-departure briefing on flights, accommodation, ward office registration, and part-time job guidance in Japan.",
+    title: "Visa Success & Final Departure",
+    bengaliTitle: "ভিসা প্রাপ্তি ও সফল যাত্রা",
+    desc: "Prepare for consular interviews with 1-on-1 mock sessions, celebrate your visa approval, and receive thorough pre-departure travel briefings.",
   },
 ];
 
 export const testimonials = [
   {
-    name: "Mohammad Arifur Rahman",
-    destination: "Japan (Tokyo Language Academy)",
+    name: "Md. Ashraful Islam",
+    destination: "IELTS Academic (Band 7.5)",
     quote:
-      "AcademiaZ Rajshahi-তে জাপানিজ N5 কোর্সে ভর্তি হয়েছিলাম। স্যারদের আন্তরিক পাঠদান এবং সাপ্তাহিক মক টেস্টের কারণে প্রথমবারেই JLPT পাস করি। কাদিরগঞ্জ অফিস থেকে COE ও ভিসা প্রসেসিং পেয়েছি নির্ভুলভাবে। এখন আমি টোকিওতে পড়াশোনা করছি!",
-    course: "Japanese Language N5 & Student Visa",
-    batch: "Rajshahi Campus",
-    badge: "Visa Received 🇯🇵",
-  },
-  {
-    name: "Sharmin Sultana",
-    destination: "Japan (Specified Skilled Worker - SSW)",
-    quote:
-      "জাপানে ক্যারিয়ার গড়ার জন্য AcademiaZ-এর চেয়ে বিশ্বস্ত প্রতিষ্ঠান রাজশাহীতে আর নেই। এদের পুরো সিস্টেম জাপান থেকে পরিচালিত হওয়ায় সঠিক তথ্য পেয়েছি। JFT-Basic পাস করে আমি এখন জাপানে কাজের ভিসায় যাচ্ছি।",
-    course: "JFT-Basic & SSW Preparation",
-    batch: "Rajshahi Campus",
-    badge: "SSW Visa Approved",
-  },
-  {
-    name: "Tanvir Hasan",
-    destination: "United Kingdom (Master's Program)",
-    quote:
-      "AcademiaZ-এর IELTS কোর্সে প্রস্তুতি নিয়ে আমার ওভারঅল স্কোর এসেছে Band 7.5! স্পিকিং টেস্টের ১-অন-১ ফিডব্যাক আমার জড়তা পুরোপুরি দূর করেছিল। রাজশাহীতে বিশ্বমানের গাইডেন্স পেয়েছি।",
+      "কুষ্টিয়া আইইএলটিএস কেয়ার-এর নিয়মিত ক্লাস ও ওয়ান-টু-ওয়ান স্পিকিং ফিডব্যাকের কারণে আমি প্রথমবারেই ওভারঅল ব্যান্ড ৭.৫ অর্জন করেছি। এদের ৩০০ টাকার কম্পিউটার মক টেস্টগুলো আসল পরীক্ষার ভয় পুরোপুরি কাটিয়ে দিয়েছিল!",
     course: "IELTS Academic Batch",
-    batch: "Rajshahi Campus",
-    badge: "Band 7.5 Scored",
+    batch: "Kushtia Campus",
+    badge: "Scored Band 7.5 🇬🇧",
   },
   {
-    name: "Farhana Akter",
+    name: "Nusrat Jahan",
+    destination: "Study in Portugal (Polytechnic of Porto)",
+    quote:
+      "পর্তুগালে উচ্চশিক্ষার জন্য সঠিক গাইডলাইন পাওয়া কুষ্টিয়ায় কঠিন ছিল। কুষ্টিয়া আইইএলটিএস কেয়ার টিম আমাকে সঠিক সাবজেক্ট সিলেকশন, অ্যাপ্লিকেশন ও ভিসা ফাইলে শতভাগ সহযোগিতা করেছে।",
+    course: "IELTS + Study in Portugal",
+    batch: "Kushtia Campus",
+    badge: "Portugal Visa Approved 🇵🇹",
+  },
+  {
+    name: "Rakibul Hasan",
+    destination: "Spoken English & Fluency",
+    quote:
+      "ইংরেজিতে কথা বলতে আগে খুব ভয় পেতাম। স্পোকেন ইংলিশ কোর্সে স্যারদের ফ্রেন্ডলি অ্যাটিচ্যুড এবং ক্লাসে নিয়মিত রোলপ্লে ও প্রেজেন্টেশনের কারণে এখন আমি আত্মবিশ্বাসের সাথে ইংরেজিতে কথা বলতে পারি।",
+    course: "Spoken English Program",
+    batch: "Evening Batch",
+    badge: "Confident Speaker",
+  },
+  {
+    name: "Mst. Sultana Razia",
     destination: "Parent of Kids English Student",
     quote:
-      "আমার মেয়ের বয়স ৮ বছর। AcademiaZ-এর কিডস ইংলিশ কোর্সে ভর্তি করানোর পর তার ইংরেজি বলার ভয় কেটে গেছে। শিক্ষকরা অত্যন্ত ধৈর্যশীল এবং গল্পের ছলে সঠিক উচ্চারণ শেখান।",
+      "আমার ছেলের বয়স ৯ বছর। কুষ্টিয়া আইইএলটিএস কেয়ার-এর কিডস ইংলিশ ক্লাসে ভর্তি করার পর ওর ইংরেজি রিডিং ও সঠিক উচ্চারণে দারুণ পরিবর্তন এসেছে। শিক্ষকরা খুবই যত্নশীল ও আন্তরিক।",
     course: "Kids English & Phonics",
     batch: "Junior Batch",
-    badge: "Happy Guardian",
+    badge: "Satisfied Guardian 🧒",
   },
 ];
 
 export const faqs = [
   {
-    q: "Where is AcademiaZ located in Rajshahi?",
-    a: "AcademiaZ is located at Kadirganj, Greater Road (Lane beside Ma Photostat, east side of the mosque), Rajshahi - 6000, Bangladesh. You can easily reach us via Greater Road or Kadirganj.",
+    q: "Where is Kushtia IELTS Care located?",
+    a: "Kushtia IELTS Care is located at 169/4, Mahatab Uddin Road, in front of Kashem Clinic, Old Kataikhana More (পুরাতন কসাইখানা মোড়), Kushtia - 7000, Bangladesh.",
   },
   {
-    q: "What makes AcademiaZ different from other consultancies?",
-    a: "AcademiaZ is operated and managed directly from Japan (জাপান থেকে পরিচালিত), ensuring 100% Japan standard language training, direct connection with accredited Japanese institutions, and zero unverified promises. We offer authentic JLPT N5-N4, SSW, TITP, IELTS, and Spoken English all under one roof in Rajshahi.",
+    q: "How much is the IELTS Mock Test fee at Kushtia IELTS Care?",
+    a: "Our premium Computer-Based and Paper-Based IELTS Mock Tests cost only 300 BDT per test! This includes a complete 4-module test with individual headsets, on-screen timer, and personalized speaking evaluation.",
   },
   {
-    q: "What is the duration and schedule of the Japanese Language Course?",
-    a: "Our Japanese Language N5 package runs for 3 to 4 months with classes 5 to 6 days a week (2 hours daily). We offer morning, afternoon, and evening shifts to accommodate students and working professionals. All study materials, Kanji sheets, and audio files are provided.",
+    q: "What courses are offered by Kushtia IELTS Care?",
+    a: "We offer IELTS Preparation (Academic & General), Computer-Based & Paper Mock Tests, Spoken English & Fluency Programs, Kids English (Ages 5–14), English Version Academic Coaching (Class 3-10), and Study Abroad Visa Processing.",
   },
   {
-    q: "What are the intakes for studying in Japan?",
-    a: "Japan has 4 major intakes every year: April (Spring - primary intake, up to 2-year course), July (Summer - 1 year 9 months), October (Autumn - 1 year 6 months), and January (Winter - 1 year 3 months). Applications must be started 5 to 6 months prior to the intake.",
+    q: "Which countries do you process for Study Abroad?",
+    a: "We specialize in Portugal (popular European track with affordable tuition), Czech Republic, United Kingdom, Canada, Germany, USA, Australia, and European Schengen countries.",
   },
   {
-    q: "Can I work in Japan while studying on a Student Visa?",
-    a: "Yes! International students in Japan are legally permitted to work up to 28 hours per week during academic semesters and up to 40 hours per week during official vacation periods. Part-time wages in Japan are attractive and comfortably cover student living expenses.",
+    q: "What are the batch timings and class schedules?",
+    a: "We offer flexible morning, afternoon, evening, and weekend batches to accommodate school, college, university students, and job holders.",
   },
   {
-    q: "What are the TITP and SSW programs?",
-    a: "SSW (Specified Skilled Worker - 特定技能) allows individuals with Japanese language skills (JFT-Basic A2 or JLPT N4) and relevant trade skills to work full-time in Japan with competitive salaries. TITP (Technical Intern Training Program) focuses on technical internships. AcademiaZ provides language and skill test coaching for both.",
+    q: "Why should I choose Kushtia IELTS Care?",
+    a: "We provide true 'Basic to Advance' personalized care, small batch sizes ensuring every student gets speaking practice, a modern computer audio lab, highly affordable 300 BDT mock tests, and honest, ethical study abroad consultancy.",
   },
   {
-    q: "Do you offer IELTS, Spoken English, and Kids English courses?",
-    a: "Yes! We provide comprehensive IELTS preparation (Academic & General) targeting Band 7.5+, Spoken English fluency courses for university students and job seekers, and a specialized interactive Kids English program for children aged 5 to 14.",
+    q: "Is the initial consultation and profile assessment free?",
+    a: "Yes! Our profile evaluation and study abroad counseling sessions are 100% FREE with zero file assessment charges. Walk into our office or contact us on WhatsApp.",
   },
   {
-    q: "Do you charge any fee for initial consultation and profile evaluation?",
-    a: "No. Our profile evaluation and counseling sessions are 100% FREE with zero obligation and zero hidden charges. You can visit our Kadirganj office or contact us on WhatsApp (01518-951062).",
-  },
-  {
-    q: "How can I contact AcademiaZ Rajshahi?",
-    a: "You can call or WhatsApp our official numbers at 01518-951062 or 01632-372232, message us on Facebook at facebook.com/AcademiaZRajshahi, or visit our office at Kadirganj, Greater Road, Rajshahi.",
+    q: "How can I contact or visit Kushtia IELTS Care?",
+    a: "You can call or WhatsApp us at 01715-052885 or 01805-954731, message us on Facebook (facebook.com/p/Kushtia-IELTS-Care-61556387490632/), email kushtiaieltscare@gmail.com, or visit us at Old Kataikhana More, Kushtia.",
   },
 ];
 
 export const upcomingIntakesAndOffers = [
   {
-    id: "japanese-n5-batch",
-    badge: "Most Popular · Japan Track",
-    date: "New Batch Starts: 1st & 15th of Every Month",
-    title: "Japanese Language Course (N5 & N4 Levels) — New Intake",
-    description:
-      "Intensive 3-month package covering Hiragana, Katakana, 100+ Kanji, grammar patterns, audio listening, and weekly mock exams for JLPT and JFT-Basic qualification.",
-    benefits: [
-      "Operated and managed directly from Japan with 100% Japan standard curriculum",
-      "Morning, afternoon, and evening batch options (2 hours daily)",
-      "Small batch sizes ensuring individual speaking and listening practice",
-      "Direct guidance for Japan Student Visa and SSW/TITP work programs",
-    ],
-  },
-  {
-    id: "japan-student-visa-intake",
-    badge: "April & October Intakes Open",
-    date: "Admissions Ongoing",
-    title: "Study in Japan — Language Schools & University Admissions",
-    description:
-      "Complete application and COE (Certificate of Eligibility) processing for top Japanese language academies and universities in Tokyo, Osaka, Nagoya, and Fukuoka.",
-    benefits: [
-      "Accredited institution shortlisting matching your academic background",
-      "Immaculate COE documentation and certified translations",
-      "One-on-one consular interview coaching for the Embassy of Japan",
-      "Pre-departure guidance and post-arrival support in Japan",
-    ],
-  },
-  {
-    id: "titp-ssw-career-batch",
-    badge: "Career in Japan",
-    date: "Enrollment Open",
-    title: "TITP & SSW Preparation (Specified Skilled Worker)",
-    description:
-      "JFT-Basic A2 and JLPT N4 language training combined with trade skill evaluation orientation for nursing care, hospitality, food service, and agriculture.",
-    benefits: [
-      "Structured syllabus designed specifically for JFT-Basic exam pass",
-      "Japanese resume preparation and video interview coaching",
-      "Direct coordination adhering to Japanese labor standards",
-      "Transparent process with zero false promises",
-    ],
-  },
-  {
-    id: "ielts-score-booster",
-    badge: "Target Band 7.5+",
-    date: "Regular & Weekend Batches",
+    id: "ielts-new-batch",
+    badge: "Popular · Ongoing Enrollment",
+    date: "New Batches Start Every Month",
     title: "IELTS Academic & General Comprehensive Coaching",
     description:
-      "Master Reading, Writing, Listening, and Speaking with certified instructors, weekly full-length Cambridge mock exams, and personalized 1-on-1 speaking interview sessions.",
+      "Target Band 7.5+ intensive package covering all 4 modules with Cambridge curriculum, individual feedback, and weekly mock exams.",
     benefits: [
-      "Authentic Cambridge IELTS practice libraries and audio resources",
-      "Detailed Task 1 and Task 2 writing correction with band feedback",
-      "One-on-one speaking interview simulations to eliminate anxiety",
-      "Free profile assessment for higher education in the UK, Canada, USA & Australia",
+      "Experienced instructors with personalized focus on weak areas",
+      "Morning, afternoon, evening, and weekend batch slots",
+      "Small batch size ensuring daily speaking and writing practice",
+      "Free diagnostic test and authentic Cambridge study materials",
     ],
   },
   {
-    id: "spoken-english-fluency",
-    badge: "Career & Confidence",
-    date: "Evening & Weekend Shifts",
-    title: "Spoken English & Communication Fluency Batch",
+    id: "mock-test-special",
+    badge: "Just 300 BDT",
+    date: "Daily & Weekend Slots Available",
+    title: "Computer-Based & Paper IELTS Mock Test Session",
     description:
-      "Break hesitation, master practical everyday dialogue, and speak English with confidence in presentations, job interviews, and corporate environments.",
+      "Test your real IELTS exam readiness with authentic timer software, individual high-clarity headsets, and detailed performance breakdown.",
     benefits: [
-      "100% English speaking environment with real-world roleplays",
-      "Pronunciation correction and British/American accent awareness",
-      "Public speaking and group debate sessions",
-      "Certificate of Course Completion",
+      "Only 300 BDT per full-length test simulation",
+      "Individual audio workstation with noise-canceling headphones",
+      "Face-to-face speaking test with an experienced evaluator",
+      "Prompt score delivery with error diagnostics",
     ],
   },
   {
-    id: "kids-english-academy",
+    id: "portugal-study-abroad",
+    badge: "Portugal & Europe Track",
+    date: "Fall & Spring Intakes Open",
+    title: "Study in Portugal — Affordable European Degree Programs",
+    description:
+      "Complete guidance for Bachelor, Master, and PhD admissions in Portugal with English-taught programs and Schengen work rights.",
+    benefits: [
+      "Affordable tuition fees (€1,500 – €4,000 / year)",
+      "University shortlisting and admission application processing",
+      "Statement of Purpose (SOP) drafting and financial file compilation",
+      "Consular visa interview coaching and pre-departure briefings",
+    ],
+  },
+  {
+    id: "spoken-english-batch",
+    badge: "Confidence & Career",
+    date: "Evening & Weekend Batches",
+    title: "Spoken English & Communication Fluency Program",
+    description:
+      "Break hesitation, overcome stage fright, and build spontaneous English speaking skills for interviews, jobs, and presentations.",
+    benefits: [
+      "100% English speaking atmosphere with interactive roleplays",
+      "Pronunciation drills and practical conversational expressions",
+      "Mock job interviews and presentation coaching",
+      "Course Certificate of Completion",
+    ],
+  },
+  {
+    id: "kids-english-batch",
     badge: "Ages 5–14 · Junior Achievers",
-    date: "Special Weekend & After-School Batches",
-    title: "Kids English & Phonics Academy",
+    date: "After-School & Weekend Shifts",
+    title: "Kids' English & Phonics Learning Academy",
     description:
-      "Fun, interactive English learning for children with phonics, cartoon storytelling, vocabulary games, rhymes, and foundational sentence building.",
+      "Fun, engaging English classes for children with phonics, cartoon storytelling, vocabulary games, rhymes, and confidence building.",
     benefits: [
-      "Child-friendly interactive classrooms with engaging audio-visuals",
-      "Correct pronunciation and reading habits from early age",
-      "Small groups with patient and caring instructors",
-      "Regular progress updates for parents and guardians",
+      "Child-friendly interactive classrooms with engaging multimedia",
+      "Correct phonics pronunciation habits from an early age",
+      "Small groups with gentle and caring teachers",
+      "Regular progress updates for parents",
     ],
   },
 ];

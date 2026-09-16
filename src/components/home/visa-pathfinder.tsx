@@ -7,44 +7,43 @@ import { Link } from "@tanstack/react-router";
 import { SlideIn } from "@/components/motion-wrapper";
 
 const educationLevels = [
-  { id: "hsc", label: "HSC / Alim / Equivalent", subtitle: "Language School & Undergrad" },
-  { id: "bachelor", label: "Bachelor's / Diploma", subtitle: "Master's, SSW & Career Visa" },
+  { id: "hsc", label: "HSC / Alim / Equivalent", subtitle: "Undergrad Abroad & IELTS" },
+  { id: "bachelor", label: "Bachelor's / Diploma", subtitle: "Master's, Europe & PSW Track" },
   {
     id: "masters",
-    label: "Master's / Skilled Professional",
-    subtitle: "SSW Category 1 & 2 / Postgrad",
+    label: "Master's / Professional",
+    subtitle: "Postgraduate & Skilled Migration",
   },
 ];
 
 const englishProficiency = [
-  { id: "japanese", label: "Japanese Language Track (N5–N4)", badge: "Japan Managed Track" },
-  { id: "ssw", label: "TITP & SSW Career Track", badge: "JFT-Basic & Trade Test" },
-  { id: "ielts", label: "IELTS Academic (Band 7.0+)", badge: "Global Higher Study" },
-  { id: "spoken", label: "Spoken English Mastery", badge: "Fluency & Confidence" },
-  { id: "kids", label: "Kids English (Ages 5–14)", badge: "Phonics & Junior Fluency" },
+  { id: "ielts", label: "Cambridge IELTS (Target 7.5+)", badge: "Flagship Course" },
+  { id: "mock", label: "Audio Lab CBT Mock Test (300 BDT)", badge: "Special Facility" },
+  { id: "spoken", label: "Spoken English & Fluency", badge: "Practical Speaking" },
+  { id: "kids", label: "Kids English Academy (Ages 5–14)", badge: "Phonics & Junior Care" },
 ];
 
 const destinationPreferences = [
   {
-    id: "japan",
-    name: "Japan",
-    flag: "🇯🇵",
-    tag: "Japan Based & Managed",
-    partner: "N5/N4 + Student & SSW Visas",
+    id: "portugal",
+    name: "Portugal",
+    flag: "🇵🇹",
+    tag: "Schengen Gateway & PR",
+    partner: "Affordable Public Unis",
   },
   {
-    id: "germany",
-    name: "Germany",
-    flag: "🇩🇪",
-    tag: "Tuition-Free & Ausbildung",
-    partner: "Public Universities",
+    id: "czech",
+    name: "Czech Republic",
+    flag: "🇨🇿",
+    tag: "Central European Hub",
+    partner: "Top Public Universities",
   },
   {
     id: "uk",
     name: "United Kingdom",
     flag: "🇬🇧",
-    tag: "1-Yr Masters / PSW",
-    partner: "Fast Track CAS",
+    tag: "1-Yr Masters / 2-Yr PSW",
+    partner: "Direct Admissions",
   },
   { id: "canada", name: "Canada", flag: "🇨🇦", tag: "3-Yr PGWP / Co-op", partner: "Public DLIs" },
   {
@@ -55,74 +54,46 @@ const destinationPreferences = [
     partner: "Group of Eight",
   },
   {
-    id: "malaysia",
-    name: "Malaysia",
-    flag: "🇲🇾",
-    tag: "Fast EMGS & Affordable",
-    partner: "Branch Campuses",
+    id: "germany",
+    name: "Germany",
+    flag: "🇩🇪",
+    tag: "Tuition-Free & Research",
+    partner: "Public Universities",
   },
 ];
 
 export function VisaPathfinder() {
   const { open } = useRegisterModal();
   const [eduLevel, setEduLevel] = useState("bachelor");
-  const [english, setEnglish] = useState("japanese");
-  const [destination, setDestination] = useState("japan");
+  const [english, setEnglish] = useState("ielts");
+  const [destination, setDestination] = useState("portugal");
 
   // Dynamic computation logic
   const getMatchData = () => {
-    if (english === "japanese" || destination === "japan") {
+    if (english === "mock") {
       return {
-        matchScore: 99,
-        title: "Japan Student & SSW Career Pathway",
-        headline: "Intensive Japanese N5/N4 Preparation & 100% Japan Standard Guidance",
-        timeline: "April, July, October & January Intakes Open",
-        scholarship: "Part-Time Work up to 28 hrs/wk (High Hourly Wages) + Tuition Reductions",
-        moiAccepted: "Japanese Language Schools, Senmon Gakko & SSW Tracks",
+        matchScore: 100,
+        title: "Audio Lab CBT Mock Test (300 BDT)",
+        headline: "Computer-Based Real Exam Simulation with Individual Headsets",
+        timeline: "Every Week at Kushtia Campus",
+        scholarship: "Only 300 BDT per test with Immediate Diagnostic Band Evaluation",
+        moiAccepted: "Listening, Reading, Writing & 1-on-1 Speaking",
         partnerNote:
-          "Operated and managed directly from Japan. Complete guidance from Kadirganj, Rajshahi campus for COE filing, financial documentation, and embassy interview coaching.",
-        actionType: "abroad",
-      };
-    }
-
-    if (english === "ssw") {
-      return {
-        matchScore: 99,
-        title: "Japan Specified Skilled Worker (SSW) Track",
-        headline: "JFT-Basic A2 / JLPT N4 Qualification & Trade Skill Test Coaching",
-        timeline: "Continuous Recruitment Cycles in Japan",
-        scholarship: "Full-Time Competitive Japanese Salary & Health Benefits",
-        moiAccepted: "Nursing Care, Food Service, Hospitality, Agriculture & Construction",
-        partnerNote:
-          "AcademiaZ Rajshahi provides targeted language training, resume formatting, and employer video interview simulations for Japan.",
-        actionType: "abroad",
+          "Take real exam feel in our state-of-the-art audio lab at Old Kataikhana More, Kushtia. Individual sound isolation headsets eliminate echo.",
+        actionType: "course",
       };
     }
 
     if (english === "spoken") {
       return {
         matchScore: 98,
-        title: "AcademiaZ Spoken English Fluency",
+        title: "Kushtia IELTS Care Spoken English Fluency",
         headline: "Interactive Fluency, Pronunciation & Job Interview Confidence",
         timeline: "2 Months Intensive Practice",
-        scholarship: "Free Speaking Level Assessment & Class Notes",
+        scholarship: "Free Speaking Level Assessment & Practice Materials",
         moiAccepted: "Practical Everyday & Professional Corporate Communication",
         partnerNote:
-          "Conducted at our Kadirganj, Rajshahi campus with interactive dialogues, debates, and public speaking drills.",
-        actionType: "course",
-      };
-    }
-
-    if (english === "ielts") {
-      return {
-        matchScore: 99,
-        title: "AcademiaZ IELTS Preparation Batch",
-        headline: "Intensive IELTS Coaching (Target Band 7.5+, Cambridge Mocks)",
-        timeline: "2 to 3 Months to Band 7.5+",
-        scholarship: "Free Diagnostic Mock Test & Detailed Writing Review",
-        moiAccepted: "British Council & IDP Aligned Curriculum",
-        partnerNote:
-          "Conducted at Kadirganj, Rajshahi with experienced faculty, authentic Cambridge test series, and 1-on-1 speaking evaluations.",
+          "Conducted at our Kushtia campus with daily conversational drills, presentation sessions, and public speaking confidence building.",
         actionType: "course",
       };
     }
@@ -130,30 +101,46 @@ export function VisaPathfinder() {
     if (english === "kids") {
       return {
         matchScore: 100,
-        title: "Kids English & Phonics Foundation",
+        title: "Kids English Academy (Ages 5–14)",
         headline: "Fun, Creative & Child-Centric English Learning (Ages 5–14)",
         timeline: "3 Months Interactive Batches",
         scholarship: "Free Trial Class & Parent Orientation",
         moiAccepted: "Phonics, Storytelling & Spoken Habits",
         partnerNote:
-          "Child-friendly interactive classrooms with caring, patient instructors at Kadirganj, Greater Road, Rajshahi.",
+          "Child-friendly interactive classrooms with caring, patient instructors at 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
         actionType: "course",
       };
     }
 
-    if (destination === "germany") {
+    if (destination === "portugal") {
       return {
-        matchScore: 97,
-        title: "Germany Tuition-Free Public University Track",
-        headline: "State Higher Education, Dual Ausbildung & Blocked Account Setup",
-        timeline: "Winter & Summer Intakes",
-        scholarship: "100% Tuition Fee Waiver at German State Universities",
-        moiAccepted: "English & German Medium Programs",
+        matchScore: 99,
+        title: "Portugal European Schengen Study Pathway",
+        headline: "Affordable Higher Education, Part-Time Work & Schengen Residence Card",
+        timeline: "Fall & Spring Intakes Open",
+        scholarship: "Affordable Tuition (€1,500 – €3,500/year) + Work Rights",
+        moiAccepted: "Public Universities in Lisbon, Porto, Coimbra, Aveiro",
         partnerNote:
-          "Full counseling for public universities, Uni-Assist submissions, and blocked accounts from our Rajshahi center.",
+          "Our flagship European destination. Complete assistance with documentation, university admissions, and VFS Global Schengen student visa filing from Kushtia.",
         actionType: "abroad",
       };
-    } else if (destination === "uk") {
+    }
+
+    if (destination === "czech") {
+      return {
+        matchScore: 98,
+        title: "Czech Republic European University Track",
+        headline: "Prestigious Central European Public Universities & High Safety",
+        timeline: "September & February Intakes",
+        scholarship: "Low Living Costs & High Student Employment Opportunities",
+        moiAccepted: "English-Taught Bachelor's & Master's Programs",
+        partnerNote:
+          "Full visa and document nostrification guidance from Kushtia IELTS Care campus.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "uk") {
       return {
         matchScore: 98,
         title: "UK Direct University Admission",
@@ -162,10 +149,12 @@ export function VisaPathfinder() {
         scholarship: "Up to £2,000 – £4,000 International Bursaries",
         moiAccepted: "IELTS 6.5+ or MOI Options",
         partnerNote:
-          "AcademiaZ provides complete visa file auditing and 1-on-1 embassy mock interview coaching in Rajshahi.",
+          "Kushtia IELTS Care provides complete visa file auditing and 1-on-1 embassy mock interview coaching in Kushtia.",
         actionType: "abroad",
       };
-    } else if (destination === "canada") {
+    }
+
+    if (destination === "canada") {
       return {
         matchScore: 96,
         title: "Canada DLI Admission & Work Permit",
@@ -180,15 +169,15 @@ export function VisaPathfinder() {
     }
 
     return {
-      matchScore: 97,
-      title: "Global Higher Education Pathway",
-      headline: "Top Ranked Universities & Post-Study Work Opportunities",
-      timeline: "Upcoming Intakes Ongoing",
-      scholarship: "Merit Discounts & International Bursaries",
-      moiAccepted: "Recognized English Language Tests",
+      matchScore: 99,
+      title: "Cambridge IELTS Preparation Batch",
+      headline: "Intensive IELTS Coaching (Target Band 7.5+, Audio Lab CBT Mocks)",
+      timeline: "2 to 3 Months to Band 7.5+",
+      scholarship: "Free Diagnostic Mock Test & Detailed Writing Review",
+      moiAccepted: "British Council & IDP Aligned Curriculum",
       partnerNote:
-        "Full transparent guidance from Kadirganj, Greater Road, Rajshahi.",
-      actionType: "abroad",
+        "Conducted at Old Kataikhana More, Kushtia with audio lab individual headsets, Cambridge syllabus, and 1-on-1 speaking evaluations.",
+      actionType: "course",
     };
   };
 
@@ -201,13 +190,13 @@ export function VisaPathfinder() {
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-300 px-3.5 py-1 text-xs font-bold text-amber-800 mb-3">
             <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-            <span>AcademiaZ Eligibility & Pathway Calculator</span>
+            <span>Kushtia IELTS Care Eligibility & Pathway Calculator</span>
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black text-slate-950 tracking-tight leading-tight">
-            Find Your Ideal <span className="text-amber-500">Study & Career Pathway</span>
+            Find Your Ideal <span className="text-amber-500">IELTS & Study Pathway</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-2 font-medium font-bangla">
-            আপনার শিক্ষাগত যোগ্যতা, ভাষা দক্ষতা ও পছন্দের দেশ সিলেক্ট করে জাপানে উচ্চশিক্ষা, SSW ক্যারিয়ার অথবা IELTS/ইংলিশ কোর্সের সম্ভাবনা তাৎক্ষণিকভাবে যাচাই করুন।
+            আপনার শিক্ষাগত যোগ্যতা ও লক্ষ্য সিলেক্ট করে ক্যামব্রিজ আইইএলটিএস, অডিও ল্যাব মক টেস্ট (৩০০ টাকা) অথবা পর্তুগাল/ইউরোপে উচ্চশিক্ষার সুযোগ তাৎক্ষণিকভাবে যাচাই করুন।
           </p>
         </div>
 
@@ -370,7 +359,7 @@ export function VisaPathfinder() {
 
                 <a
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                    `Hello AcademiaZ Rajshahi! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on new batch schedules and visa requirements.`,
+                    `Hello Kushtia IELTS Care! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on new batch schedules and admissions.`,
                   )}`}
                   target="_blank"
                   rel="noreferrer"

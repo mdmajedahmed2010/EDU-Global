@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello AcademiaZ! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an AcademiaZ counselor for me!`;
+    const text = `Hello Kushtia IELTS Care! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with a Kushtia IELTS Care counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -46,11 +46,11 @@ export function InteractiveMatcher() {
             <span>Interactive Tool · 100% Free Profile Assessment</span>
           </div>
           <h2 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Study Abroad & Career <span className="text-sky-600">Eligibility Calculator</span>
+            Study Abroad & IELTS <span className="text-sky-600">Eligibility Calculator</span>
           </h2>
           <p className="mt-1 max-w-2xl text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Select your academic degree level, GPA, English status (or Japanese/German level), and
-            budget to discover matched pathways across Japan (Tokyo liaison branch), Germany, Malaysia, Canada, Australia, and the UK.
+            Select your academic degree level, GPA, English status, and
+            budget to discover matched pathways across Portugal (European Gateway), Czech Republic, Germany, Canada, Australia, and the UK.
           </p>
         </div>
         <div className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-2 text-xs font-bold text-white">
@@ -221,10 +221,10 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a Free Profile Assessment by AcademiaZ Advisors?
+              Want a Free Profile & IELTS Assessment by Kushtia IELTS Care Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Walk into our Rajshahi Campus at Kadirganj, Greater Road (Lane beside Ma Photostat), or connect with our Japan-based advisory desk on WhatsApp.
+              Walk into our Kushtia Campus at 169/4 Mahatab Uddin Road, Old Kataikhana More, or connect with our counselors directly on WhatsApp.
             </p>
           </div>
           <div className="flex items-center gap-3">

@@ -7,12 +7,12 @@ const posters = [
   {
     key: "logo",
     src: "/logo.jpg",
-    label: "AcademiaZ — Official Circular Brand Emblem (Navy & Gold, Learn · Grow · Achieve)",
+    label: "Kushtia IELTS Care — Official Brand Identity & Logo (4 Orange Droplets, Navy Wordmark)",
   },
   {
     key: "banner",
-    src: "/banner.jpg",
-    label: "AcademiaZ — Japanese Language Training & Visa Consultancy (Kadirgonj, Rajshahi)",
+    src: "/banner.png",
+    label: "Kushtia IELTS Care — Official Banner (Classroom, Audio Lab, Your Trusted Partner in IELTS Success!)",
   },
 ];
 
@@ -26,7 +26,7 @@ export function PosterWall() {
         <SectionHeading
           eyebrow="Official Brand Assets"
           title="Official Visuals & Brand Memorabilia"
-          subtitle="Explore official assets and brand identity from AcademiaZ — click any asset to enlarge."
+          subtitle="Explore official assets and brand identity from Kushtia IELTS Care — click any asset to enlarge."
         />
       </Reveal>
 

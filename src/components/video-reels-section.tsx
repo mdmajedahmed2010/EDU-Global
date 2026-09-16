@@ -3,8 +3,8 @@ import { IconSparkles } from "@/components/ui-blocks";
 import { SlideIn } from "@/components/motion-wrapper";
 
 export function VideoReelsSection({
-  title = "Official Facebook Video Reels & Classroom Life",
-  subtitle = "Watch real batch sessions, Japanese pronunciation practice, and student guidance from AcademiaZ Rajshahi.",
+  title = "Official Facebook Video Reels & Audio Lab Sessions",
+  subtitle = "Watch real Cambridge IELTS audio lab practice, mock tests, and student guidance from Kushtia IELTS Care.",
 }: {
   title?: string;
   subtitle?: string;
@@ -86,7 +86,7 @@ export function VideoReelsSection({
                   </a>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello AcademiaZ! I watched your video on "${reel.title}" and would like more details about enrollment.`,
+                      `Hello Kushtia IELTS Care! I watched your video on "${reel.title}" and would like more details about enrollment.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"

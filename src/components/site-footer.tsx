@@ -43,15 +43,15 @@ export function SiteFooter() {
               {/* Newsletter Subscription Box */}
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md max-w-md">
                 <div className="text-sm font-bold text-white mb-1">
-                  Stay Updated on Japanese Batches & Intakes
+                  Stay Updated on IELTS Batches & Mock Tests
                 </div>
                 <p className="text-[0.73rem] text-slate-400 mb-3.5">
-                  Subscribe for verified alerts on Japanese N5/N4 batch schedules, JFT-Basic & SSW orientation, IELTS mock tests, and Japan visa submission deadlines.
+                  Subscribe for verified alerts on IELTS batch schedules, 300 BDT computer mock tests, Spoken English, and European study abroad admission deadlines.
                 </p>
 
                 {subscribed ? (
                   <div className="rounded-xl bg-emerald-500/20 border border-emerald-400/40 p-2.5 text-center text-xs font-bold text-emerald-200">
-                    ✓ Thank you! You are subscribed to AcademiaZ Rajshahi updates.
+                    ✓ Thank you! You are subscribed to Kushtia IELTS Care updates.
                   </div>
                 ) : (
                   <form onSubmit={handleSubscribe} className="flex gap-2">
@@ -98,7 +98,7 @@ export function SiteFooter() {
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>About Us (Kadirganj, Rajshahi Campus)</span>
+                    <span>About Us (Old Kataikhana More Campus)</span>
                   </Link>
                 </li>
                 <li>
@@ -107,7 +107,7 @@ export function SiteFooter() {
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>Japanese Language Course (N5 & N4) 🇯🇵</span>
+                    <span>IELTS Preparation (Academic & General)</span>
                   </Link>
                 </li>
                 <li>
@@ -116,7 +116,7 @@ export function SiteFooter() {
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>Student Visa Guidance (Study in Japan)</span>
+                    <span>Computer-Based Mock Test (300 BDT)</span>
                   </Link>
                 </li>
                 <li>
@@ -125,7 +125,7 @@ export function SiteFooter() {
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>TITP & SSW Preparation (Work in Japan)</span>
+                    <span>Spoken English & Fluency</span>
                   </Link>
                 </li>
                 <li>
@@ -134,16 +134,16 @@ export function SiteFooter() {
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>IELTS & Spoken English Fluency</span>
+                    <span>Kids English Program</span>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services"
+                    to="/destinations"
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>Kids English & Young Learners Program</span>
+                    <span>Study in Portugal & Europe 🇵🇹 🇪🇺</span>
                   </Link>
                 </li>
                 <li>
@@ -152,7 +152,7 @@ export function SiteFooter() {
                     className="hover:text-amber-400 transition-colors flex items-center gap-1.5"
                   >
                     <span className="text-amber-400">›</span>
-                    <span>Contact Us & Location Map</span>
+                    <span>Contact Us & Campus Map</span>
                   </Link>
                 </li>
               </ul>
@@ -166,11 +166,11 @@ export function SiteFooter() {
                 Official Contact & Location
               </div>
 
-              {/* Rajshahi Campus */}
+              {/* Kushtia Campus */}
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping inline-block" />
-                  <span className="font-bold text-amber-400 text-xs">Rajshahi Campus (Kadirganj)</span>
+                  <span className="font-bold text-amber-400 text-xs">Kushtia Campus (Old Kataikhana More)</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
                   {company.address.full}
@@ -190,16 +190,19 @@ export function SiteFooter() {
                     <span>{company.phones[1]}</span>
                   </a>
                 </div>
+                <div className="text-[0.72rem] text-slate-400">
+                  Email: <a href={`mailto:${company.email}`} className="text-slate-300 hover:underline">{company.email}</a>
+                </div>
               </div>
 
-              {/* Japan Based Management */}
+              {/* Verified Facility Badge */}
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs">🇯🇵</span>
-                  <span className="font-bold text-red-400 text-xs">Japan Based & Managed (জাপান থেকে পরিচালিত)</span>
+                  <span className="text-xs">🎧</span>
+                  <span className="font-bold text-amber-400 text-xs">Modern Audio Lab & Individual Headsets</span>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  ১০০% জাপান স্ট্যান্ডার্ড সেবা, সরাসরি জাপানের বিভিন্ন প্রতিষ্ঠান ও ল্যাঙ্গুয়েজ স্কুলের সাথে সংযুক্ত।
+                  কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব ও কম্পিউটার ভিত্তিক রিয়েল এক্সাম মক টেস্টের বিশ্বস্ত ঠিকানা।
                 </p>
               </div>
 
@@ -211,7 +214,7 @@ export function SiteFooter() {
                   className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-3.5 rounded-full flex items-center gap-1.5 transition-colors shadow-sm"
                 >
                   <IconWhatsApp className="w-3.5 h-3.5" />
-                  <span>WhatsApp Rajshahi</span>
+                  <span>WhatsApp Kushtia</span>
                 </a>
                 <a
                   href={company.social.facebook}
@@ -230,7 +233,7 @@ export function SiteFooter() {
         {/* Bottom Legal Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[0.72rem]">
           <div>
-            © {new Date().getFullYear()} {company.legalName}. All rights reserved. Kadirganj, Rajshahi.
+            © {new Date().getFullYear()} {company.legalName}. All rights reserved. Old Kataikhana More, Kushtia.
           </div>
           <div className="flex items-center gap-4">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">
@@ -241,7 +244,7 @@ export function SiteFooter() {
               Terms of Use
             </Link>
             <span>•</span>
-            <span className="text-amber-400 font-medium">Learn · Grow · Achieve</span>
+            <span className="text-amber-400 font-medium">a great place to learn</span>
           </div>
         </div>
       </div>
