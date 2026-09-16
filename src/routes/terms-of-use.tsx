@@ -5,17 +5,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/terms-of-use")({
   head: () => ({
     meta: [
-      { title: "Terms of Use | Kushtia IELTS Care" },
+      { title: "Terms of Use | Higher Study Counselors Bangladesh" },
       {
         name: "description",
         content:
-          "Terms and conditions governing Cambridge IELTS coaching, Audio Lab CBT mock tests, language training, and educational advisory services at Kushtia IELTS Care in Kushtia.",
+          "Terms and conditions governing study abroad admissions, IELTS preparation with 100% Cash Back on Visa Success, and educational advisory services at Higher Study Counselors Bangladesh.",
       },
-      { property: "og:title", content: "Terms of Use | Kushtia IELTS Care" },
+      { property: "og:title", content: "Terms of Use | Higher Study Counselors Bangladesh" },
       {
         property: "og:description",
         content:
-          "Terms governing Cambridge IELTS preparation, mock tests, Spoken English, and overseas study visa guidance.",
+          "Terms governing foreign university admissions, IELTS cashback policy, Move with Family, and study gap assistance.",
       },
     ],
   }),
@@ -24,24 +24,24 @@ export const Route = createFileRoute("/terms-of-use")({
 
 const sections = [
   {
-    title: "1. Scope of Language & Advisory Services",
-    body: "Kushtia IELTS Care provides specialized Cambridge IELTS coaching (Academic & General), computer-based and paper-based mock tests (300 BDT) in our dedicated audio lab, Spoken English fluency courses, Kids English Academy, university selection, application processing, and visa guidance for Portugal, Czech Republic, and global destinations. Statutory third-party costs (such as official British Council / IDP exam fees, embassy visa fees, medical tests, and courier fees) are paid directly to the respective authorities or test providers.",
+    title: "1. Scope of Educational Advisory Services",
+    body: "Higher Study Counselors Bangladesh (Since 2012) provides specialized foreign university selection, application processing, scholarship facilitation, dependent visa assistance, and visa guidance for the UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai. Statutory third-party fees (such as official university tuition, embassy visa fees, medical exams, and test registration fees) are payable directly to the respective authorities.",
   },
   {
-    title: "2. Document Authenticity & Applicant Responsibility",
-    body: "Applicants and learners are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. Kushtia IELTS Care adheres to strict ethical standards and maintains zero tolerance for fraudulent submissions.",
+    title: "2. IELTS Cash Back On Visa Success Terms",
+    body: "Students enrolled in our IELTS preparation courses who subsequently lodge their student visa application through Higher Study Counselors Bangladesh qualify for a 100% tuition cashback of their IELTS course fees upon the official grant of their student visa.",
   },
   {
-    title: "3. Admissions & Visa Decisions Disclaimer",
-    body: "Admission offers, scholarships, and visa approvals are decided strictly by sovereign immigration authorities and educational institutions. Kushtia IELTS Care provides expert coaching, rigorous document auditing, and mock interview preparations, but does not claim jurisdiction over sovereign visa grants.",
+    title: "3. Document Authenticity & Applicant Responsibility",
+    body: "Applicants and students are solely responsible for the accuracy and authenticity of all academic certificates, marks transcripts, language scorecards, and financial documentation provided. Higher Study Counselors Bangladesh adheres strictly to ethical counseling practices with zero tolerance for fraudulent submissions.",
   },
   {
-    title: "4. Academy & Mock Test Policies",
-    body: "Students enrolled in our IELTS, Spoken English, or Mock Test programs receive official study materials and access to our audio lab equipment with individual headsets. Kushtia IELTS Care reserves the right to maintain discipline, academic rigor, and lab integrity to safeguard student learning.",
+    title: "4. Sovereign Visa Decisions Disclaimer",
+    body: "Admission offers, scholarship awards, and visa issuances are decided solely by the respective foreign universities and sovereign immigration departments. Higher Study Counselors Bangladesh provides expert guidance, document verification, and interview preparation, but does not guarantee sovereign immigration decisions.",
   },
   {
     title: "5. Contact & Inquiries",
-    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} / ${company.phones[1]}, or visit our Kushtia Campus at ${company.address.full}.`,
+    body: `For questions regarding these terms, please email ${company.email}, call ${company.phones[0]} / ${company.phones[1]}, or visit our Head Office at ${company.address.full}.`,
   },
 ];
 

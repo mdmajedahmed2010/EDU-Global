@@ -5,17 +5,17 @@ import { company, upcomingIntakesAndOffers } from "@/lib/site-data";
 export const Route = createFileRoute("/offers")({
   head: () => ({
     meta: [
-      { title: "Upcoming Batches & Mock Tests | Kushtia IELTS Care" },
+      { title: "Upcoming Intakes & Signature Offers | Higher Study Counselors Bangladesh" },
       {
         name: "description",
         content:
-          "Explore active batches at Kushtia IELTS Care: Cambridge IELTS regular & crash courses, 300 BDT CBT Audio Lab mock tests, Spoken English, Kids English, and Portugal & Czech Republic study visa intakes.",
+          "Explore active university intakes and signature offers at Higher Study Counselors Bangladesh: 100% IELTS Cash Back on Visa Success, Opportunity To Move With Family, Long Study Gap Accepted, and Low Tuition Fees University Intakes across UK, USA, Australia, Hungary, and Canada.",
       },
-      { property: "og:title", content: "Upcoming Batches & Mock Tests | Kushtia IELTS Care" },
+      { property: "og:title", content: "Upcoming Intakes & Offers | Higher Study Counselors Bangladesh" },
       {
         property: "og:description",
         content:
-          "Register for upcoming Cambridge IELTS batches, 300 BDT audio lab CBT mock tests, and European visa counseling at Kushtia IELTS Care, Old Kataikhana More, Kushtia.",
+          "Register for upcoming foreign university intakes and claim our signature 100% IELTS Cash Back on Visa Success guarantee at Higher Study Counselors Bangladesh (Since 2012).",
       },
     ],
   }),
@@ -26,28 +26,28 @@ function Offers() {
   return (
     <>
       <PageHero
-        eyebrow="Admissions & Special Batches"
-        title="Upcoming Batches & Mock Test Schedules"
-        subtitle="Explore active Cambridge IELTS batches, 300 BDT CBT Audio Lab mock tests, Spoken English fluency, Kids English, and European study abroad admissions at Kushtia IELTS Care."
+        eyebrow="Admissions & Signature Offers"
+        title="UPCOMING INTAKES & SPECIAL OFFERS"
+        subtitle="Explore active global university intakes, our signature 100% IELTS Cash Back on Visa Success guarantee, Move with Family programs, and long study gap admission pathways at Higher Study Counselors Bangladesh."
         image="/banner.jpg"
-        imageAlt="Kushtia IELTS Care active admissions and batches"
+        imageAlt="Higher Study Counselors Bangladesh active admissions and offers"
       >
-        <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Batches & Offers" }]} />
+        <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Intakes & Offers" }]} />
       </PageHero>
 
       {/* Active High-Priority Campaigns Grid */}
       <section className="section-shell py-14 sm:py-20">
         <SectionHeading
-          eyebrow="Active Batches"
-          title="Current Batches, CBT Mock Tests & Admissions"
-          subtitle="All programs below are actively accepting admissions with modern audio lab facilities, Cambridge curriculum, individual headsets, and 1-on-1 speaking assessments at our Kushtia campus."
+          eyebrow="Active Opportunities"
+          title="Current Intakes & Verified Brand Commitments"
+          subtitle="All programs below are actively accepting applications with direct university partner support, transparent visa advisory, and personalized counseling at our Sector 3, Uttara Head Office and Glasgow UK Office."
         />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {upcomingIntakesAndOffers.map((item) => (
             <div
               key={item.id}
-              className="card-clean rounded-3xl p-8 flex flex-col justify-between border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-md transition-all bg-white"
+              className="card-clean rounded-3xl p-8 flex flex-col justify-between border border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-md transition-all bg-white"
             >
               <div>
                 <div className="flex items-center justify-between border-b border-slate-100 pb-4">
@@ -62,7 +62,7 @@ function Offers() {
 
                 {item.benefits && (
                   <div className="mt-5 rounded-2xl bg-slate-50 p-4 border border-slate-200/80">
-                    <p className="text-[0.68rem] font-bold uppercase tracking-wider text-sky-700 mb-2">
+                    <p className="text-[0.68rem] font-bold uppercase tracking-wider text-amber-700 mb-2">
                       Key Highlights & Inclusions:
                     </p>
                     <BulletList items={item.benefits} />
@@ -72,7 +72,7 @@ function Offers() {
 
               <div className="mt-8 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Kushtia IELTS Care, I want to apply / register for: "${item.title}".`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Higher Study Counselors Bangladesh, I want to apply / register for: "${item.title}".`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-emerald w-full text-center text-xs py-3 shadow-sm font-bold"

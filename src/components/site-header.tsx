@@ -21,38 +21,38 @@ export function SiteHeader() {
 
   return (
     <div className="w-full">
-      {/* 1. Global Announcement & Top Bar */}
-      <div className="bg-[#092552] text-white text-xs py-2 relative z-50 border-b border-orange-500/30">
+      {/* 1. Global Top Bar */}
+      <div className="bg-[#161b38] text-white text-xs py-2 relative z-50 border-b border-amber-500/30">
         <div className="section-shell flex items-center justify-between gap-3">
-          {/* Left: Direct Phone & WhatsApp */}
+          {/* Left: Direct Phone & Hotlines */}
           <div className="flex items-center gap-3 sm:gap-4 text-[0.73rem] sm:text-xs">
             <a
               href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
-              className="flex items-center gap-1.5 font-bold text-slate-100 hover:text-orange-400 transition-colors"
+              className="flex items-center gap-1.5 font-bold text-slate-100 hover:text-amber-400 transition-colors"
             >
-              <IconPhone className="w-3.5 h-3.5 text-orange-400" />
-              <span>{company.phones[0]} (Call / WhatsApp)</span>
+              <IconPhone className="w-3.5 h-3.5 text-amber-400" />
+              <span>{company.phones[0]}</span>
             </a>
             <span className="text-slate-600 hidden xs:inline">|</span>
             <a
               href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
-              className="hidden xs:flex items-center gap-1 text-slate-300 hover:text-white transition-colors"
+              className="hidden xs:flex items-center gap-1 text-slate-300 hover:text-amber-400 transition-colors"
             >
               <span>{company.phones[1]}</span>
             </a>
             <span className="text-slate-600 hidden md:inline">|</span>
-            <span className="hidden md:inline-flex items-center gap-1 text-[0.68rem] bg-orange-600 text-white font-bold px-2 py-0.5 rounded-full shadow-sm">
-              🎧 মক টেস্ট মাত্র ৩০০ টাকা
+            <span className="hidden md:inline-flex items-center gap-1 text-[0.68rem] bg-amber-500 text-slate-950 font-extrabold px-2.5 py-0.5 rounded-full shadow-xs">
+              🎁 IELTS ক্যাশ ব্যাক অফার (ভিসা হলে)
             </span>
           </div>
 
           {/* Right: Office Location & Motto */}
           <div className="flex items-center gap-2 text-[0.7rem] sm:text-[0.75rem] text-slate-300">
-            <span className="text-orange-400">📍</span>
-            <span className="truncate">পুরাতন কসাইখানা মোড়, কুষ্টিয়া</span>
+            <span className="text-amber-400">📍</span>
+            <span className="truncate">সেক্টর ৩, উত্তরা, ঢাকা (হাউজ ২৩, রোড ২)</span>
             <span className="hidden lg:inline text-slate-600">|</span>
-            <span className="hidden lg:inline text-orange-300 font-semibold text-[0.68rem] bg-orange-500/15 px-2.5 py-0.5 rounded-full border border-orange-400/40">
-              ★ a great place to learn
+            <span className="hidden lg:inline text-amber-300 font-bold text-[0.68rem] bg-amber-500/20 px-2.5 py-0.5 rounded-full border border-amber-400/40">
+              ★ Since 2012 · 14+ Years Trust
             </span>
           </div>
         </div>
@@ -72,8 +72,8 @@ export function SiteHeader() {
           <Link to="/" className="group flex items-center gap-3 shrink-0">
             <BrandLogo size={46} withText textClassName="flex" />
             <div className="hidden xl:block h-6 w-px bg-slate-200" />
-            <span className="hidden xl:inline text-xs font-extrabold text-orange-600 tracking-wider">
-              A GREAT PLACE TO LEARN
+            <span className="hidden xl:inline text-xs font-extrabold text-amber-600 tracking-wider uppercase">
+              STUDY ABROAD & LANGUAGE
             </span>
           </Link>
 
@@ -82,7 +82,7 @@ export function SiteHeader() {
             {navItems.map((item) => {
               const hasChildren = item.children && item.children.length > 0;
               const isDest = item.label.includes("Study Abroad");
-              const isCourses = item.label.includes("Courses");
+              const isCourses = item.label.includes("Language Courses") || item.label.includes("Courses");
 
               if (hasChildren) {
                 return (
@@ -94,7 +94,7 @@ export function SiteHeader() {
                   >
                     <Link
                       to={item.to}
-                      className="inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-orange-50 hover:text-orange-800 transition-colors whitespace-nowrap"
+                      className="inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors whitespace-nowrap"
                     >
                       <span>{item.label}</span>
                       <span className="text-[0.65rem] opacity-50">▾</span>
@@ -102,13 +102,13 @@ export function SiteHeader() {
 
                     {/* Mega Dropdown for Study Abroad */}
                     {isDest && activeDropdown === item.label && (
-                      <div className="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-[560px] rounded-2xl bg-white p-4 shadow-2xl border border-slate-200 grid grid-cols-2 gap-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div className="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-[580px] rounded-2xl bg-white p-4 shadow-2xl border border-slate-200 grid grid-cols-2 gap-2 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                         <div className="col-span-2 pb-2 mb-1 border-b border-slate-100 flex items-center justify-between">
                           <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
-                            Study Abroad Pathways
+                            Study Abroad Destinations
                           </span>
-                          <span className="text-[0.7rem] text-orange-600 font-bold bg-orange-50 px-2 py-0.5 rounded-full border border-orange-200">
-                            🇵🇹 Portugal Featured European Track
+                          <span className="text-[0.7rem] text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+                            🇬🇧 UK & 🇭🇺 Hungary Priority Track
                           </span>
                         </div>
                         {destinations.slice(0, 8).map((d) => (
@@ -116,16 +116,16 @@ export function SiteHeader() {
                             key={d.slug}
                             to="/study-in-{$country}"
                             params={{ country: d.slug }}
-                            className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-orange-50/80 transition-colors group"
+                            className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-amber-50/80 transition-colors group"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <span className="text-xl shrink-0 mt-0.5">{d.flag}</span>
                             <div className="min-w-0">
-                              <div className="text-xs font-bold text-slate-900 group-hover:text-orange-800 flex items-center gap-1.5">
+                              <div className="text-xs font-bold text-slate-900 group-hover:text-amber-700 flex items-center gap-1.5">
                                 <span>{d.name}</span>
                                 {d.specialHighlight && (
-                                  <span className="text-[0.6rem] bg-orange-100 text-orange-800 px-1.5 py-0.2 rounded font-semibold truncate max-w-[130px]">
-                                    {d.slug === "portugal" ? "Featured" : "Popular"}
+                                  <span className="text-[0.6rem] bg-amber-100 text-amber-800 px-1.5 py-0.2 rounded font-semibold truncate max-w-[130px]">
+                                    {d.slug === "uk" ? "Top Choice" : "Featured"}
                                   </span>
                                 )}
                               </div>
@@ -138,14 +138,14 @@ export function SiteHeader() {
                         <div className="col-span-2 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
                           <Link
                             to="/destinations"
-                            className="font-bold text-orange-700 hover:text-orange-900 flex items-center gap-1"
+                            className="font-bold text-amber-700 hover:text-amber-900 flex items-center gap-1"
                             onClick={() => setActiveDropdown(null)}
                           >
-                            <span>Explore all study abroad destinations</span>
+                            <span>Explore all 9+ destination countries</span>
                             <span>→</span>
                           </Link>
                           <span className="text-[0.7rem] text-slate-400 font-medium">
-                            Kushtia IELTS Care · Old Kataikhana More
+                            HSC BD · Sector 3, Uttara, Dhaka
                           </span>
                         </div>
                       </div>
@@ -156,23 +156,23 @@ export function SiteHeader() {
                       <div className="absolute left-1/2 -translate-x-1/2 top-full mt-1 w-[480px] rounded-2xl bg-white p-4 shadow-2xl border border-slate-200 grid grid-cols-1 gap-1.5 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
                         <div className="pb-2 mb-1 border-b border-slate-100 flex items-center justify-between">
                           <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
-                            IELTS & English Programs
+                            Language & Fluency Academy
                           </span>
                           <span className="text-[0.7rem] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                            Mock Test 300 BDT
+                            IELTS Cash Back Offer
                           </span>
                         </div>
                         {courses.map((c) => (
                           <Link
                             key={c.slug}
                             to="/services"
-                            className="flex items-center justify-between p-2 rounded-xl hover:bg-orange-50/80 transition-colors group"
+                            className="flex items-center justify-between p-2 rounded-xl hover:bg-amber-50/80 transition-colors group"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
                               <span className="text-lg shrink-0">{c.icon}</span>
                               <div className="truncate">
-                                <span className="text-xs font-bold text-slate-900 group-hover:text-orange-800 block truncate">
+                                <span className="text-xs font-bold text-slate-900 group-hover:text-amber-800 block truncate">
                                   {c.title}
                                 </span>
                                 <span className="text-[0.68rem] text-slate-500 block truncate">
@@ -180,7 +180,7 @@ export function SiteHeader() {
                                 </span>
                               </div>
                             </div>
-                            <span className="text-[0.65rem] bg-orange-100 text-orange-900 font-bold px-2 py-0.5 rounded-full shrink-0">
+                            <span className="text-[0.65rem] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full shrink-0">
                               {c.badge}
                             </span>
                           </Link>
@@ -195,7 +195,7 @@ export function SiteHeader() {
                           <Link
                             key={child.label}
                             to={child.to}
-                            className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-orange-50 hover:text-orange-800 transition-colors"
+                            className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <span>{child.label}</span>
@@ -216,7 +216,7 @@ export function SiteHeader() {
                 <Link
                   key={item.label}
                   to={item.to}
-                  className="rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-orange-50 hover:text-orange-800 transition-colors whitespace-nowrap"
+                  className="rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
@@ -228,20 +228,20 @@ export function SiteHeader() {
           <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello Kushtia IELTS Care! I would like to inquire about your IELTS coaching, 300 BDT mock tests, and study abroad counseling.",
+                "Hello Higher Study Counselors Bangladesh! I would like to inquire about study abroad opportunities, IELTS preparation, and spouse/family visa support.",
               )}`}
               target="_blank"
               rel="noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 px-3.5 py-2 rounded-full transition-colors active:scale-95 shadow-sm"
             >
               <IconWhatsApp className="w-4 h-4 text-emerald-600" />
-              <span className="hidden xl:inline">WhatsApp Kushtia</span>
+              <span className="hidden xl:inline">WhatsApp Counselors</span>
             </a>
 
             <button
               type="button"
               onClick={() => open()}
-              className="bg-[#092552] hover:bg-[#0d3b82] text-orange-400 font-bold text-xs py-2 px-4 sm:px-5 rounded-full border border-orange-500/40 shadow-sm active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
+              className="bg-[#161b38] hover:bg-[#242c56] text-amber-400 font-bold text-xs py-2 px-4 sm:px-5 rounded-full border border-amber-500/40 shadow-sm active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
             >
               <span>Free Consultation</span>
               <span>→</span>
@@ -251,119 +251,73 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 transition-colors"
+              className="lg:hidden p-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 transition-colors"
               aria-label="Toggle navigation menu"
             >
-              {mobileOpen ? (
-                <span className="text-xl leading-none">✕</span>
-              ) : (
-                <span className="text-xl leading-none">☰</span>
-              )}
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                {mobileOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
             </button>
           </div>
         </div>
-      </header>
 
-      {/* 3. Mobile Navigation Drawer */}
-      {mobileOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[90px] bottom-0 bg-white/98 backdrop-blur-xl z-40 border-b border-slate-200 p-5 overflow-y-auto animate-in slide-in-from-top-3 duration-200 flex flex-col justify-between">
-          <div className="space-y-4">
-            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 pb-2 border-b border-slate-100 flex items-center justify-between">
-              <span>Kushtia IELTS Care</span>
-              <span className="text-[0.65rem] bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">
-                🎧 Mock Test 300 BDT
-              </span>
-            </div>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  onClick={() => setMobileOpen(false)}
-                  className="block p-2 text-sm font-bold text-slate-800 hover:text-orange-600"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  onClick={() => setMobileOpen(false)}
-                  className="block p-2 text-sm font-bold text-slate-800 hover:text-orange-600"
-                >
-                  IELTS & Mock Tests (300 BDT)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/destinations"
-                  onClick={() => setMobileOpen(false)}
-                  className="block p-2 text-sm font-bold text-slate-800 hover:text-orange-600"
-                >
-                  Study Abroad (Portugal & Global)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/offers"
-                  onClick={() => setMobileOpen(false)}
-                  className="block p-2 text-sm font-bold text-slate-800 hover:text-orange-600"
-                >
-                  Upcoming Batches & Mock Schedule
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  onClick={() => setMobileOpen(false)}
-                  className="block p-2 text-sm font-bold text-slate-800 hover:text-orange-600"
-                >
-                  About Kushtia IELTS Care
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  onClick={() => setMobileOpen(false)}
-                  className="block p-2 text-sm font-bold text-slate-800 hover:text-orange-600"
-                >
-                  Contact & Location (Kataikhana More)
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="pt-6 border-t border-slate-200 space-y-3">
-            <div className="text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-200">
-              <p className="font-bold text-slate-900">📍 Kushtia IELTS Care Campus:</p>
-              <p className="mt-0.5">{company.address.full}</p>
-              <p className="mt-1">
-                <strong>📞 Hotline:</strong> {company.phones[0]} | {company.phones[1]}
-              </p>
+        {/* Mobile Navigation Menu */}
+        {mobileOpen && (
+          <div className="lg:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-3 animate-in fade-in duration-200">
+            <div className="grid grid-cols-1 gap-1">
+              {navItems.map((item) => (
+                <div key={item.label}>
+                  <Link
+                    to={item.to}
+                    className="block px-3 py-2 text-sm font-bold text-slate-800 hover:bg-amber-50 rounded-xl"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                  {item.children && (
+                    <div className="pl-4 space-y-1 mt-1">
+                      {item.children.slice(0, 5).map((child) => (
+                        <Link
+                          key={child.label}
+                          to={child.to}
+                          params={child.params}
+                          className="block px-3 py-1 text-xs font-semibold text-slate-600 hover:text-amber-700"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
 
-            <div className="flex flex-col gap-2">
-              <button
-                type="button"
-                onClick={() => {
-                  setMobileOpen(false);
-                  open();
-                }}
-                className="bg-[#092552] hover:bg-[#0d3b82] text-orange-400 font-bold w-full text-xs py-2.5 text-center rounded-xl shadow-sm"
+            <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
+              <a
+                href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
+                className="flex items-center justify-center gap-2 py-2 text-xs font-bold text-[#161b38] bg-slate-100 rounded-xl"
               >
-                Book Free Consultation
-              </button>
+                <IconPhone className="w-4 h-4 text-amber-600" />
+                <span>Call Hotline: {company.phones[0]}</span>
+              </a>
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
                 target="_blank"
                 rel="noreferrer"
-                className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold w-full text-xs py-2.5 text-center rounded-xl"
+                className="flex items-center justify-center gap-2 py-2 text-xs font-bold text-white bg-emerald-600 rounded-xl"
               >
-                WhatsApp Us Now
+                <IconWhatsApp className="w-4 h-4 text-white" />
+                <span>WhatsApp: {company.whatsappFormatted}</span>
               </a>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </header>
     </div>
   );
 }

@@ -21,36 +21,6 @@ export interface DestinationCardData {
 
 const destinationCards: DestinationCardData[] = [
   {
-    slug: "portugal",
-    name: "Portugal",
-    region: "Europe",
-    flag: "🇵🇹",
-    image:
-      "https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Schengen European Gateway & PR",
-    visaSpeed: "Affordable Higher Education",
-    withoutIelts: true,
-    avgTuition: "€1,500 – €3,500/yr",
-    pswv: "Schengen Residence & Work Rights",
-    topIntake: "September & February",
-  },
-  {
-    slug: "czech",
-    name: "Czech Republic",
-    region: "Europe",
-    flag: "🇨🇿",
-    image:
-      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
-    featured: true,
-    highlightTag: "Central European Hub & Low Cost",
-    visaSpeed: "Prestigious Public Universities",
-    withoutIelts: true,
-    avgTuition: "€2,500 – €5,000/yr",
-    pswv: "9-Month Job Search Visa",
-    topIntake: "September & February",
-  },
-  {
     slug: "uk",
     name: "United Kingdom",
     region: "Europe",
@@ -58,27 +28,57 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "1-Yr Masters & 2-Yr PSW",
-    visaSpeed: "Direct University Admissions",
+    highlightTag: "Official Banner · Move With Family",
+    visaSpeed: "1-Yr Masters & Fast Visa",
     withoutIelts: true,
-    avgTuition: "£11,000 – £16,000/yr",
-    pswv: "2-Year Graduate Visa",
+    avgTuition: "£11,000 – £16,500/yr",
+    pswv: "2-Year Graduate Visa (PSW)",
     topIntake: "Jan / May / Sep",
   },
   {
-    slug: "germany",
-    name: "Germany",
-    region: "Europe",
-    flag: "🇩🇪",
+    slug: "hungary",
+    name: "Hungary",
+    region: "Europe (Schengen)",
+    flag: "🇭🇺",
     image:
-      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Tuition-Free & Research Universities",
-    visaSpeed: "Public Universities",
+    highlightTag: "Official Banner · Low Tuition & Schengen",
+    visaSpeed: "Tuition After Visa Available",
     withoutIelts: true,
-    avgTuition: "€0 – €350/sem (Tuition-Free)",
-    pswv: "18-Month Post-Study Visa",
-    topIntake: "Winter / Summer Intakes",
+    avgTuition: "€1,800 – €3,800/yr",
+    pswv: "Schengen 29 Countries Access",
+    topIntake: "September & February",
+  },
+  {
+    slug: "australia",
+    name: "Australia",
+    region: "Oceania",
+    flag: "🇦🇺",
+    image:
+      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Official Banner · Spouse Work Rights",
+    visaSpeed: "Subclass 500 Visa Advisory",
+    withoutIelts: false,
+    avgTuition: "AUD $22,000 – $36,000/yr",
+    pswv: "2 to 4+ Years Post-Study Work",
+    topIntake: "February & July",
+  },
+  {
+    slug: "usa",
+    name: "United States",
+    region: "North America",
+    flag: "🇺🇸",
+    image:
+      "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Official Banner · STEM OPT 3 Yrs",
+    visaSpeed: "F-1 Mock Consular Prep",
+    withoutIelts: false,
+    avgTuition: "$14,000 – $26,000/yr",
+    pswv: "Up to 3-Year STEM OPT",
+    topIntake: "Fall (Aug) & Spring (Jan)",
   },
   {
     slug: "canada",
@@ -88,172 +88,171 @@ const destinationCards: DestinationCardData[] = [
     image:
       "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Public DLIs & Paid Co-Op",
-    visaSpeed: "Full Permit Compliance",
-    withoutIelts: true,
-    avgTuition: "C$15,000 – C$26,000/yr",
+    highlightTag: "Official Banner · DLIs & PGWP",
+    visaSpeed: "PAL & Study Permit Filing",
+    withoutIelts: false,
+    avgTuition: "CAD $15,000 – $24,000/yr",
     pswv: "Up to 3-Year PGWP",
     topIntake: "Jan / May / Sep",
   },
   {
-    slug: "australia",
-    name: "Australia",
-    region: "Oceania",
-    flag: "🇦🇺",
+    slug: "finland",
+    name: "Finland",
+    region: "Europe (Nordic)",
+    flag: "🇫🇮",
     image:
-      "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
     featured: true,
-    highlightTag: "Subclass 500 & High Wages",
-    visaSpeed: "GTE & Academic Audit",
+    highlightTag: "Official Banner · 30 Hrs Work",
+    visaSpeed: "High Quality Nordic Degrees",
     withoutIelts: false,
-    avgTuition: "A$24,000 – A$36,000/yr",
-    pswv: "2–4 Year Post-Study Visa",
-    topIntake: "Feb & July Intakes",
+    avgTuition: "€8,000 – €12,000/yr",
+    pswv: "2-Year Job Search Residence",
+    topIntake: "August / September",
   },
   {
-    slug: "usa",
-    name: "United States",
-    region: "North America",
-    flag: "🇺🇸",
+    slug: "denmark",
+    name: "Denmark",
+    flag: "🇩🇰",
+    region: "Europe (Nordic)",
     image:
-      "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "F-1 STEM OPT (3 Years)",
-    visaSpeed: "Consular Interview Drills",
+      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Official Banner · High Wages",
+    visaSpeed: "Scandinavian Green Hub",
     withoutIelts: false,
-    avgTuition: "$16,000 – $32,000/yr",
-    pswv: "Up to 36 Months STEM OPT",
-    topIntake: "Fall & Spring Intakes",
+    avgTuition: "€8,000 – €14,000/yr",
+    pswv: "Up to 3-Year Establishment Card",
+    topIntake: "September & February",
   },
   {
-    slug: "spain",
-    name: "Spain / Schengen",
-    region: "Europe",
-    flag: "🇪🇸",
+    slug: "malaysia",
+    name: "Malaysia",
+    flag: "🇲🇾",
+    region: "Southeast Asia",
     image:
-      "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80",
-    highlightTag: "Schengen 29 Countries",
-    visaSpeed: "European Degrees",
+      "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Official Banner · Fast Visa",
+    visaSpeed: "No Bank Statement Complications",
     withoutIelts: true,
-    avgTuition: "€2,000 – €8,000/yr",
-    pswv: "1-Year Job Search Permit",
-    topIntake: "Sep / Feb",
+    avgTuition: "$3,500 – $6,500/yr",
+    pswv: "UK & Australian Twin Degrees",
+    topIntake: "Jan, Mar, Jun, Oct",
+  },
+  {
+    slug: "dubai",
+    name: "Dubai (UAE)",
+    flag: "🇦🇪",
+    region: "Middle East",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+    featured: true,
+    highlightTag: "Official Banner · 100% Visa",
+    visaSpeed: "Tuition After Visa Available",
+    withoutIelts: true,
+    avgTuition: "AED 25,000 – 45,000/yr",
+    pswv: "Work & Study Concurrently",
+    topIntake: "Rolling Monthly Intakes",
   },
 ];
 
 export function VisualDestinationBento() {
-  const [activeRegion, setActiveRegion] = useState("All");
+  const [selectedRegion, setSelectedRegion] = useState<string>("All");
 
-  const regions = ["All", "Asia", "Europe", "North America", "Oceania"];
+  const regions = ["All", "Europe", "North America", "Oceania", "Southeast Asia", "Middle East"];
 
   const filtered =
-    activeRegion === "All"
+    selectedRegion === "All"
       ? destinationCards
-      : destinationCards.filter((d) => d.region === activeRegion);
+      : destinationCards.filter((d) => d.region.includes(selectedRegion));
 
   return (
-    <section className="section-shell py-14 sm:py-20 border-t border-slate-200">
-      {/* Header with Micro-copy */}
+    <section className="section-shell py-12 sm:py-20">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
-        <SlideIn direction="left" distance={35}>
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
-            <span>Curated Study & Career Destinations</span>
-          </div>
-          <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Explore Verified <span className="text-sky-600">Global Pathways</span>
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-xl">
-            Choose your dream European and international pathway with Kushtia IELTS Care. Benefit from modern audio lab CBT mock tests (300 BDT), Cambridge IELTS coaching, and student visa guidance for Portugal, Czech Republic, UK, and beyond.
-          </p>
-        </SlideIn>
-
-        {/* Region Filter Chips */}
-        <SlideIn direction="right" distance={35} delay={0.1}>
-          <div className="flex flex-wrap gap-1.5 p-1 rounded-full bg-slate-100 border border-slate-200">
-            {regions.map((reg) => (
-              <button
-                key={reg}
-                type="button"
-                onClick={() => setActiveRegion(reg)}
-                className={cn(
-                  "rounded-full px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer",
-                  activeRegion === reg
-                    ? "bg-sky-600 text-white shadow-sm"
-                    : "text-slate-600 hover:text-slate-900",
-                )}
-              >
-                {reg}
-              </button>
-            ))}
+        <SlideIn direction="left" distance={30}>
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-800">
+              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+              <span>Official Banner Destinations · Higher Study Counselors BD</span>
+            </div>
+            <h2 className="font-display text-2xl sm:text-4xl font-black text-[#161b38] tracking-tight">
+              Curated Higher Study <span className="text-amber-500">Destinations</span>
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-xl font-bangla">
+              আমাদের অফিসিয়াল ব্যানারের ৯+ শীর্ষ দেশসমূহ। যে দেশেই আপনার স্বপ্ন, হায়ার স্টাডি কাউন্সেলরস বাংলাদেশ নিশ্চিত করে নিখুঁত অ্যাডমিশন ও পূর্ণাঙ্গ ভিসা প্রসেসিং।
+            </p>
           </div>
         </SlideIn>
-      </div>
 
-      {/* Modern Bento Visual Grid */}
-      <StaggerContainer staggerDelay={0.08} className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {filtered.map((dest) => (
-          <StaggerItem key={dest.slug} direction="up" distance={28}>
-            <Link
-              to="/study-in-{$country}"
-              params={{ country: dest.slug }}
+        {/* Region Filter Buttons */}
+        <div className="flex flex-wrap gap-1.5 p-1.5 rounded-2xl bg-slate-100 border border-slate-200 self-start md:self-auto">
+          {regions.map((reg) => (
+            <button
+              key={reg}
+              type="button"
+              onClick={() => setSelectedRegion(reg)}
               className={cn(
-                "group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-950 text-white transition-all duration-500 hover:border-sky-500 hover:shadow-2xl flex flex-col justify-end min-h-[380px]",
-                dest.featured && "ring-1 ring-sky-500/20",
+                "rounded-xl px-3.5 py-1.5 text-xs font-bold transition-all cursor-pointer",
+                selectedRegion === reg
+                  ? "bg-[#161b38] text-amber-400 shadow-sm"
+                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-200/60",
               )}
             >
-              {/* Background Photographic Poster */}
-              <div className="absolute inset-0 overflow-hidden">
+              {reg}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Bento Destination Cards */}
+      <StaggerContainer staggerDelay={0.06} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filtered.map((item) => (
+          <StaggerItem key={item.slug}>
+            <Link
+              to="/study-in-{$country}"
+              params={{ country: item.slug }}
+              className="group block rounded-3xl border border-slate-200/90 bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 h-full flex flex-col justify-between"
+            >
+              <div className="relative aspect-[16/10] overflow-hidden bg-[#090c1f]">
                 <img
-                  src={dest.image}
-                  alt={dest.name}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-95"
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-              {/* Top Floating Glass Badges */}
-              <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
-                <div className="bg-slate-900/80 backdrop-blur-md border border-white/20 rounded-full px-3 py-1 text-xs font-bold flex items-center gap-1.5 shadow-sm">
-                  <span className="text-base">{dest.flag}</span>
-                  <span>{dest.name}</span>
+                <div className="absolute top-3.5 left-3.5 flex items-center gap-2 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-white text-xs font-bold border border-white/20">
+                  <span className="text-base">{item.flag}</span>
+                  <span>{item.name}</span>
                 </div>
 
-                {dest.withoutIelts && (
-                  <span className="rounded-full bg-emerald-600/90 text-white backdrop-blur-md px-2.5 py-0.5 text-[0.65rem] font-extrabold tracking-wide border border-white/20">
-                    WITHOUT IELTS
+                <div className="absolute bottom-3.5 left-3.5 right-3.5 text-white">
+                  <span className="text-[0.68rem] font-bold text-amber-400 block truncate">
+                    {item.highlightTag}
                   </span>
-                )}
-              </div>
-
-              {/* Bottom Content Tray with Micro-chips */}
-              <div className="relative z-10 p-5 sm:p-6 space-y-3">
-                <div className="flex items-center gap-2">
-                  <span className="rounded-full bg-sky-600/30 border border-sky-400/40 px-2.5 py-0.5 text-[0.68rem] font-bold text-sky-200 truncate">
-                    {dest.highlightTag}
+                  <span className="text-xs font-semibold text-slate-200 block truncate mt-0.5">
+                    {item.visaSpeed}
                   </span>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 gap-2 text-[0.72rem] pt-1">
-                  <div className="rounded-xl bg-white/10 backdrop-blur-md p-2 border border-white/10">
-                    <span className="text-slate-400 block text-[0.65rem]">Visa / Intake:</span>
-                    <span className="font-bold text-emerald-400 truncate block">
-                      {dest.visaSpeed}
-                    </span>
+              <div className="p-4 sm:p-5 space-y-3 bg-white flex-1 flex flex-col justify-between">
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                    <span className="text-[0.65rem] text-slate-400 block font-bold uppercase">Avg Tuition</span>
+                    <span className="font-extrabold text-[#161b38] block truncate mt-0.5">{item.avgTuition}</span>
                   </div>
-                  <div className="rounded-xl bg-white/10 backdrop-blur-md p-2 border border-white/10">
-                    <span className="text-slate-400 block text-[0.65rem]">Work / Career:</span>
-                    <span className="font-bold text-amber-300 truncate block">{dest.pswv}</span>
+                  <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                    <span className="text-[0.65rem] text-slate-400 block font-bold uppercase">Intakes</span>
+                    <span className="font-extrabold text-amber-600 block truncate mt-0.5">{item.topIntake}</span>
                   </div>
                 </div>
 
-                <div className="pt-2 flex items-center justify-between text-xs border-t border-white/15">
-                  <span className="text-slate-300 font-medium">
-                    Tuition: <strong className="text-white">{dest.avgTuition}</strong>
-                  </span>
-                  <span className="inline-flex items-center gap-1 font-bold text-sky-400 group-hover:translate-x-1 transition-transform">
-                    <span>Explore</span>
-                    <IconArrowRight className="w-3.5 h-3.5" />
-                  </span>
+                <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#161b38] group-hover:text-amber-600 transition-colors">
+                  <span>{item.pswv}</span>
+                  <IconArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </Link>

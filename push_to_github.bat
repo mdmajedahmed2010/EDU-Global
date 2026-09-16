@@ -1,9 +1,9 @@
 @echo off
-title GitHub Push - mdmajedahmed20011-eng/AB-STUDY-HUB
+title GitHub Push - mdmajedahmed20011-eng/Higher-Study-Counselors-BD-
 color 0a
 echo ==========================================================
 echo   Pushing to GitHub Repository:
-echo   https://github.com/mdmajedahmed20011-eng/AB-STUDY-HUB.git
+echo   https://github.com/mdmajedahmed20011-eng/Higher-Study-Counselors-BD-.git
 echo ==========================================================
 echo.
 cd /d "C:\Users\Majed\Downloads\Alex-Global-Consultancy-main\Alex-Global-Consultancy-main"

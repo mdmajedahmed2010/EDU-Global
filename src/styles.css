@@ -9,84 +9,102 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-bangla: "Hind Siliguri", "Plus Jakarta Sans", sans-serif;
 
-  /* KUSHTIA IELTS CARE Official Brand Palette (Royal Navy & Vibrant Amber Orange) */
-  --color-kic-navy: #092552;
-  --color-kic-navy-dark: #051838;
-  --color-kic-navy-light: #0d3b82;
-  --color-kic-navy-soft: #eff6ff;
+  /* HIGHER STUDY COUNSELORS BANGLADESH Official Brand Palette (Golden Amber #F5A623 & Deep Navy #161B38) */
+  --color-hsc-navy: #161b38;
+  --color-hsc-navy-dark: #0f142e;
+  --color-hsc-navy-midnight: #090c1f;
+  --color-hsc-navy-light: #242c56;
+  --color-hsc-navy-soft: #f0f3fa;
 
-  --color-kic-orange: #ff7a00;
-  --color-kic-orange-bright: #ff9124;
-  --color-kic-orange-dark: #e05e00;
-  --color-kic-orange-soft: #fff7ed;
+  --color-hsc-gold: #f5a623;
+  --color-hsc-gold-bright: #fbbf24;
+  --color-hsc-gold-dark: #d98205;
+  --color-hsc-gold-soft: #fef8ec;
 
-  --color-kic-blue: #0d3b82;
-  --color-kic-blue-light: #1e5bb8;
-  --color-kic-blue-soft: #f0f7ff;
+  --color-hsc-blue: #0ea5e9;
+  --color-hsc-blue-light: #38bdf8;
+  --color-hsc-blue-soft: #f0f9ff;
 
-  /* Harmonized Aliases for seamless UI rendering */
-  --color-academia-navy: #092552;
-  --color-academia-navy-dark: #051838;
-  --color-academia-navy-light: #0d3b82;
-  --color-academia-navy-soft: #eff6ff;
+  --color-hsc-emerald: #059669;
+  --color-hsc-emerald-soft: #ecfdf5;
 
-  --color-academia-gold: #ff7a00;
-  --color-academia-gold-bright: #ff9124;
-  --color-academia-gold-dark: #e05e00;
-  --color-academia-gold-soft: #fff7ed;
+  /* Harmonized Aliases for seamless UI rendering across all components */
+  --color-kic-navy: #161b38;
+  --color-kic-navy-dark: #0f142e;
+  --color-kic-navy-light: #242c56;
+  --color-kic-navy-soft: #f0f3fa;
 
-  --color-academia-red: #ff7a00;
-  --color-academia-red-dark: #e05e00;
-  --color-academia-red-light: #ff9124;
-  --color-academia-red-soft: #fff7ed;
+  --color-kic-orange: #f5a623;
+  --color-kic-orange-bright: #fbbf24;
+  --color-kic-orange-dark: #d98205;
+  --color-kic-orange-soft: #fef8ec;
 
-  --color-academia-blue: #0d3b82;
-  --color-academia-blue-light: #1e5bb8;
-  --color-academia-blue-soft: #eff6ff;
+  --color-kic-blue: #0ea5e9;
+  --color-kic-blue-light: #38bdf8;
+  --color-kic-blue-soft: #f0f9ff;
 
-  --color-nexus-blue: #0d3b82;
-  --color-nexus-blue-dark: #092552;
-  --color-nexus-blue-light: #1e5bb8;
-  --color-nexus-blue-soft: #eff6ff;
+  --color-academia-navy: #161b38;
+  --color-academia-navy-dark: #0f142e;
+  --color-academia-navy-light: #242c56;
+  --color-academia-navy-soft: #f0f3fa;
 
-  --color-nexus-orange: #ff7a00;
-  --color-nexus-orange-dark: #e05e00;
-  --color-nexus-orange-light: #ff9124;
-  --color-nexus-orange-soft: #fff7ed;
+  --color-academia-gold: #f5a623;
+  --color-academia-gold-bright: #fbbf24;
+  --color-academia-gold-dark: #d98205;
+  --color-academia-gold-soft: #fef8ec;
 
-  --color-nexus-navy: #092552;
-  --color-nexus-sapphire: #0d3b82;
+  --color-academia-red: #f5a623;
+  --color-academia-red-dark: #d98205;
+  --color-academia-red-light: #fbbf24;
+  --color-academia-red-soft: #fef8ec;
+
+  --color-academia-blue: #0ea5e9;
+  --color-academia-blue-light: #38bdf8;
+  --color-academia-blue-soft: #f0f9ff;
+
+  --color-nexus-blue: #0ea5e9;
+  --color-nexus-blue-dark: #161b38;
+  --color-nexus-blue-light: #38bdf8;
+  --color-nexus-blue-soft: #f0f9ff;
+
+  --color-nexus-orange: #f5a623;
+  --color-nexus-orange-dark: #d98205;
+  --color-nexus-orange-light: #fbbf24;
+  --color-nexus-orange-soft: #fef8ec;
+
+  --color-nexus-navy: #161b38;
+  --color-nexus-sapphire: #242c56;
   --color-nexus-charcoal: #1e293b;
   --color-nexus-slate: #334155;
 
-  --color-gold-metallic: #ff7a00;
-  --color-gold-bright: #ff9124;
-  --color-gold-deep: #e05e00;
-  --color-gold-soft: #fff7ed;
+  --color-gold-metallic: #f5a623;
+  --color-gold-bright: #fbbf24;
+  --color-gold-deep: #d98205;
+  --color-gold-soft: #fef8ec;
 
   --color-emerald-deep: #059669;
   --color-emerald-soft: #ecfdf5;
 
-  --color-ab-red: #ff7a00;
-  --color-ab-red-dark: #e05e00;
-  --color-ab-red-light: #ff9124;
-  --color-ab-red-soft: #fff7ed;
+  --color-ab-red: #f5a623;
+  --color-ab-red-dark: #d98205;
+  --color-ab-red-light: #fbbf24;
+  --color-ab-red-soft: #fef8ec;
 
-  --color-ab-black: #051838;
-  --color-ab-charcoal: #092552;
-  --color-ab-dark: #0f172a;
+  --color-ab-black: #0f142e;
+  --color-ab-charcoal: #161b38;
+  --color-ab-dark: #090c1f;
   --color-ab-slate: #334155;
 
-  --color-agc-navy: #092552;
-  --color-agc-navy-dark: #051838;
-  --color-agc-navy-midnight: #04122b;
-  --color-agc-navy-light: #0d3b82;
-  --color-agc-navy-soft: #eff6ff;
+  --color-agc-navy: #161b38;
+  --color-agc-navy-dark: #0f142e;
+  --color-agc-navy-midnight: #090c1f;
+  --color-agc-navy-light: #242c56;
+  --color-agc-navy-soft: #f0f3fa;
 
-  --color-agc-red: #ff7a00;
-  --color-agc-red-dark: #e05e00;
-  --color-agc-red-light: #ff9124;
-  --color-agc-red-soft: #fff7ed;
+  --color-agc-red: #f5a623;
+  --color-agc-red-dark: #d98205;
+  --color-agc-red-light: #fbbf24;
+  --color-agc-red-soft: #fef8ec;
 
   --color-sand: #fafafc;
   --color-surface: #ffffff;

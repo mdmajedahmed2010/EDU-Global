@@ -6,17 +6,17 @@ import { company, destinations } from "@/lib/site-data";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Study Abroad Destinations | Kushtia IELTS Care — Portugal & Global Pathways" },
+      { title: "Study Abroad Destinations | Higher Study Counselors Bangladesh — 9+ Official Pathways" },
       {
         name: "description",
         content:
-          "Explore study abroad destinations guided by Kushtia IELTS Care: Portugal (Schengen European Gateway), Czech Republic, UK, Germany, Canada, USA, and Australia. 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
+          "Explore study abroad destinations guided by Higher Study Counselors Bangladesh: UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai. Enjoy 100% IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance. Uttara Dhaka & Glasgow UK offices.",
       },
-      { property: "og:title", content: "Study Abroad Destinations | Kushtia IELTS Care" },
+      { property: "og:title", content: "Study Abroad Destinations | Higher Study Counselors Bangladesh" },
       {
         property: "og:description",
         content:
-          "Your Gateway to Higher Education in Portugal, Czech Republic, and top English-speaking countries with Cambridge IELTS preparation from Kushtia IELTS Care.",
+          "Your Gateway to Higher Education in the UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai with Higher Study Counselors Bangladesh (Since 2012).",
       },
     ],
   }),
@@ -27,14 +27,14 @@ function Destinations() {
   const [activeRegion, setActiveRegion] = useState<string>("All");
   const [search, setSearch] = useState<string>("");
 
-  const regions = ["All", "Europe", "North America", "Oceania", "Asia"];
+  const regions = ["All", "Europe", "North America", "Oceania", "Asia & Middle East"];
 
   const filtered = destinations.filter((d) => {
     const matchesRegion =
       activeRegion === "All" ||
       d.region === activeRegion ||
       (activeRegion === "Europe" && d.region.includes("Europe")) ||
-      (activeRegion === "Asia" && (d.region.includes("Asia") || d.slug === "japan" || d.slug === "malaysia"));
+      (activeRegion === "Asia & Middle East" && (d.region.includes("Asia") || d.region.includes("Middle East") || d.slug === "malaysia" || d.slug === "dubai"));
     const matchesSearch =
       d.name.toLowerCase().includes(search.toLowerCase()) ||
       d.popularFields.some((f) => f.toLowerCase().includes(search.toLowerCase())) ||
@@ -46,10 +46,10 @@ function Destinations() {
     <>
       <PageHero
         eyebrow="Global Study Abroad Network"
-        title="Verified Study Destinations & Visa Pathways"
-        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited European and international institutions guided by Kushtia IELTS Care."
+        title="Official Destinations & Global Visa Pathways"
+        subtitle="Explore admission criteria, post-study work rights, living costs, scholarships, and language requirements across accredited global institutions guided by Higher Study Counselors Bangladesh (Since 2012)."
         image="/banner.jpg"
-        imageAlt="Kushtia IELTS Care study abroad destinations"
+        imageAlt="Higher Study Counselors Bangladesh study abroad destinations"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Destinations" }]} />
       </PageHero>
@@ -66,7 +66,7 @@ function Destinations() {
                 onClick={() => setActiveRegion(reg)}
                 className={`rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer ${
                   activeRegion === reg
-                    ? "bg-sky-600 text-white shadow-sm border border-sky-500"
+                    ? "bg-amber-500 text-slate-950 shadow-sm border border-amber-400 font-extrabold"
                     : "border border-slate-200 bg-white text-slate-700 hover:bg-slate-100"
                 }`}
               >
@@ -82,7 +82,7 @@ function Destinations() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="🔍 Search country or program..."
-              className="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-xs text-slate-800 outline-none shadow-sm focus:border-sky-500 focus:ring-2 focus:ring-sky-500/10"
+              className="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-xs text-slate-800 outline-none shadow-sm focus:border-amber-500 focus:ring-2 focus:ring-amber-500/10"
             />
           </div>
         </div>
@@ -93,8 +93,8 @@ function Destinations() {
             Showing <strong>{filtered.length}</strong> of {destinations.length} verified
             destinations
           </p>
-          <span className="text-sky-600 font-bold">
-            ✓ Free Profile Assessment at our Old Kataikhana More, Kushtia Campus
+          <span className="text-amber-700 font-bold">
+            ✓ Free Profile Assessment at our Sector 3, Uttara Head Office & Glasgow UK Office
           </span>
         </div>
 

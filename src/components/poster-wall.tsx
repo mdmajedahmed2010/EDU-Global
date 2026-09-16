@@ -7,12 +7,12 @@ const posters = [
   {
     key: "logo",
     src: "/logo.jpg",
-    label: "Kushtia IELTS Care — Official Brand Identity & Logo (4 Orange Droplets, Navy Wordmark)",
+    label: "Higher Study Counselors Bangladesh — Official Shield Crest & Emblem (Since 2012)",
   },
   {
     key: "banner",
-    src: "/banner.png",
-    label: "Kushtia IELTS Care — Official Banner (Classroom, Audio Lab, Your Trusted Partner in IELTS Success!)",
+    src: "/banner.jpg",
+    label: "Higher Study Counselors Bangladesh — Official Comprehensive Banner (USPs, 9 Destinations, UK & Dhaka Offices)",
   },
 ];
 
@@ -26,7 +26,7 @@ export function PosterWall() {
         <SectionHeading
           eyebrow="Official Brand Assets"
           title="Official Visuals & Brand Memorabilia"
-          subtitle="Explore official assets and brand identity from Kushtia IELTS Care — click any asset to enlarge."
+          subtitle="Explore verified assets and official credentials from Higher Study Counselors Bangladesh — click any asset to enlarge."
         />
       </Reveal>
 

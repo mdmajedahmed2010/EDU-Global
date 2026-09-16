@@ -11,38 +11,38 @@ export function DelegationSpotlight() {
   const currentCourse = courses[activeCourseIdx] ?? courses[0]!;
 
   const visaCategories = [
-    { name: "IELTS Academic & General", icon: "🎯" },
-    { name: "CBT Mock Tests (300 BDT)", icon: "🎧" },
+    { name: "IELTS Preparation (Cash Back)", icon: "🎯" },
     { name: "Spoken English Fluency", icon: "🗣️" },
-    { name: "Kids English Academy", icon: "🧒" },
-    { name: "Study in Portugal", icon: "🇵🇹" },
-    { name: "Czech Republic & Europe", icon: "🇨🇿" },
-    { name: "UK & Canada Admissions", icon: "🇬🇧" },
-    { name: "SOP & Visa Processing", icon: "📋" },
+    { name: "Kids' English Academy", icon: "🧒" },
+    { name: "Opportunity To Move With Family", icon: "👥" },
+    { name: "Study in UK (1-Yr Master & PSW)", icon: "🇬🇧" },
+    { name: "Study in USA & Australia", icon: "🇺🇸" },
+    { name: "Study in Hungary & Europe", icon: "🇭🇺" },
+    { name: "Malaysia & Dubai Fast Track", icon: "🇦🇪" },
   ];
 
   return (
     <section className="section-shell py-10 sm:py-16">
-      <div className="rounded-3xl border border-slate-800 bg-[#061122] p-4 sm:p-8 lg:p-12 relative overflow-hidden text-white shadow-2xl">
+      <div className="rounded-3xl border border-slate-800 bg-[#090c1f] p-4 sm:p-8 lg:p-12 relative overflow-hidden text-white shadow-2xl">
         {/* Ambient Glow */}
         <div className="pointer-events-none absolute -top-20 -left-20 h-80 w-80 rounded-full bg-amber-500/15 blur-[100px]" />
-        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-blue-600/15 blur-[100px]" />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-sky-600/15 blur-[100px]" />
 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center relative z-10">
           {/* Left: Language Academy Interactive Course Selector */}
           <SlideIn direction="left" distance={45} className="space-y-5">
             <div className="inline-flex items-center gap-2 rounded-full bg-amber-500/20 border border-amber-400/30 px-3.5 py-1 text-xs font-bold text-amber-300">
               <IconSparkles className="w-3.5 h-3.5" />
-              <span>Kushtia IELTS Care · Old Kataikhana More, Kushtia</span>
+              <span>Higher Study Counselors Bangladesh · Sector 3, Uttara</span>
             </div>
 
             <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
-              Master IELTS, English & European Pathways <br />
-              <span className="text-amber-400">Audio Lab, 300 BDT Mocks, Spoken & Kids English</span>
+              Master IELTS, English & Study Abroad <br />
+              <span className="text-amber-400">Cash Back Offer, Spoken English & Global Visas</span>
             </h2>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl font-bangla">
-              আইইএলটিএস পরীক্ষায় কাঙ্ক্ষিত ব্যান্ড স্কোর অর্জন কিংবা পর্তুগাল ও ইউরোপে বিশ্বমানের উচ্চশিক্ষা—Kushtia IELTS Care নিশ্চিত করে আধুনিক সাউন্ড ল্যাব, অভিজ্ঞ মেন্টর এবং শতভাগ যত্নশীল সহায়তা।
+              আইইএলটিএস পরীক্ষায় কাঙ্ক্ষিত ব্যান্ড স্কোর অর্জন কিংবা ইউকে, ইউএসএ, অস্ট্রেলিয়া ও ইউরোপে বিশ্বমানের উচ্চশিক্ষা—Higher Study Counselors Bangladesh নিশ্চিত করে অভিজ্ঞ মেন্টর, ক্যাশ ব্যাক অফার ও স্বচ্ছ ভিসা গাইডলাইন।
             </p>
 
             {/* Course Selector Tabs */}
@@ -98,7 +98,7 @@ export function DelegationSpotlight() {
                 onClick={open}
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-3 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer active:scale-95"
               >
-                <span>কোর্সে রেজিস্ট্রেশন করুন</span>
+                <span>ফ্রি প্রোফাইল এসেসমেন্ট বুকিং</span>
                 <IconArrowRight className="w-4 h-4" />
               </button>
 
@@ -106,42 +106,39 @@ export function DelegationSpotlight() {
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-950/40 hover:bg-emerald-900/60 text-emerald-300 px-5 py-3 text-xs sm:text-sm font-bold transition-all shadow-xs active:scale-95"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-emerald-500/50 bg-emerald-950/40 hover:bg-emerald-900/60 text-emerald-300 px-5 py-3 text-xs sm:text-sm font-bold transition-all"
               >
                 <IconWhatsApp className="w-4 h-4 text-emerald-400" />
-                <span>হোয়াটসঅ্যাপে বিস্তারিত জানুন</span>
+                <span>WhatsApp: {company.whatsappFormatted}</span>
               </a>
             </div>
           </SlideIn>
 
-          {/* Right: Key Value Propositions & Care Standards */}
-          <SlideIn direction="right" distance={45} className="space-y-4">
-            <div className="rounded-2xl bg-gradient-to-br from-[#0a1931] to-[#040b17] border border-amber-500/30 p-6 space-y-4 shadow-xl">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">
-                <span>⭐</span>
-                <span>Kushtia IELTS Care Advantage</span>
+          {/* Right: Quick Services Grid Matrix */}
+          <SlideIn direction="right" distance={45}>
+            <div className="rounded-2xl border border-slate-700/80 bg-slate-900/60 p-6 space-y-4">
+              <div className="border-b border-slate-800 pb-3">
+                <span className="text-xs font-black uppercase tracking-widest text-amber-400">
+                  Core Education & Visa Portfolio
+                </span>
+                <h3 className="font-display text-lg font-bold text-white mt-1">
+                  Higher Study Counselors Bangladesh Services
+                </h3>
               </div>
-              <h3 className="text-lg sm:text-xl font-black text-white">
-                কেন আপনি Kushtia IELTS Care বেছে নেবেন?
-              </h3>
-              <p className="text-xs text-slate-300 leading-relaxed font-bangla">
-                কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব, প্রতিটি শিক্ষার্থীর জন্য পৃথক হেডসেট, রিয়েল এক্সাম এনভায়রনমেন্টে মাত্র ৩০০ টাকায় মক টেস্ট এবং ইউরোপের স্টুডেন্ট ভিসার পূর্ণাঙ্গ সাপোর্ট।
-              </p>
 
-              <div className="grid grid-cols-2 gap-3 pt-2">
-                {visaCategories.map((v) => (
-                  <div
-                    key={v.name}
-                    className="flex items-center gap-2 p-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-slate-200"
-                  >
-                    <span>{v.icon}</span>
-                    <span className="truncate">{v.name}</span>
-                  </div>
+              <StaggerContainer staggerDelay={0.05} className="grid grid-cols-2 gap-2.5">
+                {visaCategories.map((item) => (
+                  <StaggerItem key={item.name}>
+                    <div className="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800/60 border border-slate-700/60 hover:border-amber-400/60 transition-colors">
+                      <span className="text-xl">{item.icon}</span>
+                      <span className="text-xs font-semibold text-slate-200">{item.name}</span>
+                    </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
 
-              <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
-                <span>📍 পুরাতন কসাইখানা মোড়, কুষ্টিয়া</span>
+              <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span>📍 House 23, Road 2, Sector 3, Uttara</span>
                 <span className="text-amber-400 font-bold">Hotline: {company.phones[0]}</span>
               </div>
             </div>

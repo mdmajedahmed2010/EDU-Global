@@ -13,33 +13,33 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    title: "Computer-Based IELTS Mock Test: কেন এটি পরীক্ষার আসল ভয় দূর করতে সবচেয়ে কার্যকর?",
+    title: "IELTS Cash Back On Visa Success: যেভাবে নিজের সম্পূর্ণ টেস্ট ফি ফেরত পাবেন",
     excerpt:
-      "কুষ্টিয়ায় আমাদের আধুনিক সাউন্ড ল্যাবে ব্যক্তিগত হেডসেট ও রিয়েল এক্সাম এনভায়রনমেন্টে মাত্র ৩০০ টাকায় পূর্ণাঙ্গ CBT মক টেস্টের সুবিধা এবং বিস্তারিত ব্যান্ড স্কোর এনালাইসিস।",
-    date: "September 2026",
-    tag: "IELTS Mock Test",
-    image: "/banner.png",
-    slug: "computer-based-ielts-mock-test-kushtia",
+      "হায়ার স্টাডি কাউন্সেলরস বাংলাদেশ-এর বিশেষ অফার—আমাদের সাথে IELTS প্রস্তুতি নিয়ে ভিসা প্রসেস সম্পন্ন করলেই ভিসা সাকসেসে পাচ্ছেন ১০০% IELTS পরীক্ষার ফি রিফান্ড সুবিধা।",
+    date: "Latest Guide",
+    tag: "Exclusive Offer",
+    image: "/banner.jpg",
+    slug: "ielts-cashback-visa-success",
   },
   {
-    title: "Study in Portugal & Europe: কম খরচে ইংরেজি মাধ্যমে বিশ্বমানের উচ্চশিক্ষা",
+    title: "Opportunity To Move With Family: ইউকে ও অস্ট্রেলিয়ায় স্পাউস সহ ভিসা গাইডলাইন",
     excerpt:
-      "পর্তুগাল ও চেক রিপাবলিকে সাশ্রয়ী টিউশন ফি, পার্ট-টাইম কাজের সুযোগ এবং সেনজেনভুক্ত ২৯ দেশে অবাধ ভ্রমণের জন্য কুষ্টিয়া আইইএলটিএস কেয়ারের পূর্ণাঙ্গ ভিসা প্রসেসিং গাইড।",
-    date: "September 2026",
-    tag: "Europe Study Abroad",
+      "পরিবারকে রেখে একা নয়—ইউকে, অস্ট্রেলিয়া, ফিনল্যান্ড ও ডেনমার্কে মাস্টার্স শিক্ষার্থীদের জন্য স্পাউস ও সন্তানসহ একত্রে যাওয়ার বিস্তারিত ভিসা নিয়মাবলী ও কাজের অধিকার।",
+    date: "Family Relocation",
+    tag: "Family Move",
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
-    slug: "study-in-portugal-europe-guide",
+    slug: "move-with-family-uk-australia",
   },
   {
-    title: "IELTS Speaking & Spoken Fluency: আত্মবিশ্বাসের সাথে কথা বলার সেরা কৌশল",
+    title: "Long Study Gap Accepted: দীর্ঘ স্টাডি গ্যাপ থাকলেও যেভাবে ভিসা নিশ্চিত করবেন",
     excerpt:
-      "প্রাত্যহিক যোগাযোগ ও আইইএলটিএস স্পিকিং ব্যান্ড ৭.৫+ অর্জনে আমাদের ওয়ান-টু-ওয়ান স্পিকিং সেশন এবং ছোটদের জন্য স্পেশাল কিডস ইংলিশ প্রোগ্রাম।",
-    date: "September 2026",
-    tag: "Spoken & Kids English",
+      "এইচএসসি বা গ্র্যাজুয়েশনের পর ৫ থেকে ১০ বছরের গ্যাপ থাকলেও হতাশ হবেন না। হাঙ্গেরি, ইউকে, মালয়েশিয়া ও দুবাইতে জব এক্সপেরিয়েন্স দেখিয়ে ভিসা পাওয়ার কৌশল।",
+    date: "Admission Tips",
+    tag: "Study Gap Accepted",
     image:
-      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
-    slug: "ielts-speaking-kids-english-kushtia",
+      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
+    slug: "long-study-gap-accepted-abroad",
   },
 ];
 
@@ -49,10 +49,10 @@ export function BlogUpdatesSection() {
       <div className="section-shell">
         {/* Animated Section Header */}
         <MotionHeading
-          tag="— OFFICIAL UPDATES & INSIGHTS —"
+          tag="— OFFICIAL INSIGHTS & VISA UPDATES —"
           title="Latest"
           highlight="insights"
-          description="IELTS প্রস্তুতি, ৩০০ টাকায় কম্পিউটার মক টেস্ট এবং পর্তুগাল ও ইউরোপ উচ্চশিক্ষার সর্বশেষ তথ্য।"
+          description="IELTS ক্যাশ ব্যাক অফার, ফ্যামিলি ও স্পাউস ভিসা সুবিধা এবং স্টাডি গ্যাপ একসেপ্টেন্স সংক্রান্ত প্রামাণ্য তথ্য।"
           tagColor="text-amber-600"
           highlightColor="text-amber-600"
         />
@@ -64,9 +64,9 @@ export function BlogUpdatesSection() {
         >
           {posts.map((post) => (
             <StaggerItem key={post.title} className="h-full">
-              <div className="group rounded-3xl border border-slate-200/90 bg-white overflow-hidden shadow-xs hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-400/40 flex flex-col justify-between hover-lift h-full">
+              <div className="group rounded-3xl border border-slate-200/90 bg-white overflow-hidden shadow-xs hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 flex flex-col justify-between hover-lift h-full">
                 {/* Card Image */}
-                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#090c1f]">
                   <img
                     src={post.image}
                     alt={post.title}
@@ -81,10 +81,10 @@ export function BlogUpdatesSection() {
                 {/* Card Body */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div className="space-y-2.5">
-                    <h3 className="font-display text-base sm:text-lg font-bold text-slate-900 group-hover:text-sky-600 transition-colors leading-snug">
+                    <h3 className="font-display text-base sm:text-lg font-bold text-[#161b38] group-hover:text-amber-600 transition-colors leading-snug">
                       {post.title}
                     </h3>
-                    <p className="text-xs text-slate-500 leading-relaxed font-medium line-clamp-3">
+                    <p className="text-xs text-slate-600 leading-relaxed font-bangla line-clamp-3">
                       {post.excerpt}
                     </p>
                   </div>
@@ -94,7 +94,7 @@ export function BlogUpdatesSection() {
                     <span className="text-slate-400 font-semibold">{post.date}</span>
                     <Link
                       to="/offers"
-                      className="font-bold text-sky-600 hover:text-sky-700 transition-colors inline-flex items-center gap-1 group-hover:translate-x-1 duration-200"
+                      className="font-bold text-amber-600 hover:text-amber-700 transition-colors inline-flex items-center gap-1 group-hover:translate-x-1 duration-200"
                     >
                       <span>Read More</span>
                       <IconArrowRight className="w-3.5 h-3.5" />

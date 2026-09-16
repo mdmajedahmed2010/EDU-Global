@@ -18,7 +18,7 @@ export function MobileActionDock() {
 
         <a
           href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-            "Hello Kushtia IELTS Care! I would like a consultation for IELTS courses, 300 BDT CBT Mock Test, Spoken English, or Portugal/Europe study visa in Kushtia.",
+            "Hello Higher Study Counselors Bangladesh! I would like a consultation for Study Abroad, IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance.",
           )}`}
           target="_blank"
           rel="noreferrer"

@@ -264,20 +264,20 @@ export function PageHero({
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
                     <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-amber-300">
-                      Old Kataikhana More, Kushtia
+                      Sector 3, Uttara, Dhaka & Glasgow, UK
                     </span>
                     <span className="rounded-full bg-amber-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● Kushtia IELTS Care
+                      ● HSC BD (Since 2012)
                     </span>
                   </div>
                 </div>
 
                 <div className="p-3 text-center">
                   <p className="text-xs font-bold text-white">
-                    {company.name} · Cambridge IELTS, Spoken English & Visa Guidance
+                    {company.name} · Foreign Education Advisory & Language Academy
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    Audio Lab (Headsets), 300 BDT CBT Mock & Europe Visa · Hotline: {company.phones[0]}
+                    Dhaka HQ & Glasgow UK Office · IELTS Cash Back · Hotlines: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -510,32 +510,31 @@ export function CtaBand() {
         viewport={{ once: true }}
         className="section-shell relative z-10 text-center max-w-3xl mx-auto space-y-6"
       >
-        <div className="inline-flex items-center gap-2 rounded-full border border-sky-500/40 bg-sky-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-300">
-          <IconGlobe className="w-3.5 h-3.5 text-sky-400" />
-          <span>Kushtia Campus · Old Kataikhana More | Audio Lab & Europe Visa</span>
+        <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-300">
+          <IconGlobe className="w-3.5 h-3.5 text-amber-400" />
+          <span>Higher Study Counselors Bangladesh · Sector 3, Uttara, Dhaka & Glasgow, UK</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          Learn · Practice · <span className="text-amber-400">Achieve</span>
+          Study Abroad · IELTS Cash Back · <span className="text-amber-400">Achieve</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your free diagnostic assessment with {company.name}. Specializing in
-          Cambridge IELTS, Computer-Based Mock Tests (300 BDT) in our audio lab, Spoken English, Kids English, and Portugal/Europe visa consultancy.
+          Book your free advisory session with {company.name} (Since 2012). Specializing in UK, USA, Canada, Australia, Hungary, Finland, Denmark, Malaysia, and Dubai. Benefit from 100% IELTS Cash Back on Visa Success, Move with Family, and Long Study Gap Accepted.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           <button
             type="button"
             onClick={open}
-            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-sky-600/30 active:scale-95 cursor-pointer font-bold"
+            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-amber-500/30 active:scale-95 cursor-pointer font-bold"
           >
-            <span>Book Free Appointment</span>
+            <span>Book Free Assessment</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello Kushtia IELTS Care! I would like to book a free consultation for IELTS / 300 BDT CBT Mock Test / Portugal study visa in Kushtia.",
+              "Hello Higher Study Counselors Bangladesh! I would like to book a free consultation for Study Abroad, IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance.",
             )}`}
             target="_blank"
             rel="noreferrer"

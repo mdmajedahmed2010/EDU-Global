@@ -14,17 +14,22 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | Kushtia IELTS Care — a great place to learn | Old Kataikhana More, Kushtia" },
+      {
+        title: "About Us | Higher Study Counselors Bangladesh — Since 2012 | Sector 3, Uttara, Dhaka & Glasgow, UK",
+      },
       {
         name: "description",
         content:
-          "Discover Kushtia IELTS Care — premier IELTS preparation academy, 300 BDT computer-based mock tests, Spoken English, Kids English, and European study abroad consultancy in Kushtia. 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. Hotlines: 01715-052885 / 01805-954731.",
+          "Discover Higher Study Counselors Bangladesh (Since 2012) — Premier foreign education advisory and language academy. 100% IELTS Cash Back on Visa Success, Move with Family, Long Study Gap Accepted, Low Tuition Fees. Head Office: House 23, Road 2, Sector 3, Uttara, Dhaka. UK Office: Glasgow, UK. Hotlines: 01974843470, 01676997222.",
       },
-      { property: "og:title", content: "About Kushtia IELTS Care | a great place to learn" },
+      {
+        property: "og:title",
+        content: "About Higher Study Counselors Bangladesh — Since 2012",
+      },
       {
         property: "og:description",
         content:
-          "Official profile of Kushtia IELTS Care. Modern audio lab with individual headsets, Cambridge curriculum, 300 BDT mock tests, and Portugal/European visa consultancy.",
+          "Official profile of Higher Study Counselors Bangladesh. 14+ years of counseling trust, dual offices in Dhaka and Glasgow UK, 100% IELTS Cash Back on Visa Success.",
       },
     ],
   }),
@@ -33,32 +38,32 @@ export const Route = createFileRoute("/about")({
 
 const advisoryWings = [
   {
-    title: "IELTS Preparation Academy",
-    hub: "Kushtia Campus Audio Lab",
-    badge: "Flagship Wing",
-    icon: "🎯",
-    desc: "Comprehensive Academic & General IELTS preparation with Cambridge syllabus, individual speaking mock sessions, and weekly progress evaluations.",
+    title: "Global Higher Education Wing",
+    hub: "Uttara HQ & Global Desks",
+    badge: "9+ Destinations",
+    icon: "🎓",
+    desc: "Direct admissions and scholarship processing for prestigious universities across the UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai.",
   },
   {
-    title: "Computer-Based Mock Test Center",
-    hub: "Modern CBT Lab",
-    badge: "Real Exam Experience",
-    icon: "🎧",
-    desc: "Real-time computer-based and paper-based IELTS mock tests at only 300 BDT with individual headsets, instant feedback, and detailed band scoring.",
+    title: "IELTS Academy & Cash Back",
+    hub: "Language Training Wing",
+    badge: "100% Cash Back",
+    icon: "💰",
+    desc: "Comprehensive Cambridge IELTS Academic & General preparation. Upon securing your student visa through HSC BD, receive 100% course fee cash back!",
   },
   {
-    title: "Spoken & Kids English Academy",
-    hub: "Fluency & Young Learners Lab",
-    badge: "Communication Wing",
-    icon: "🗣️",
-    desc: "Interactive speaking fluency, interview grooming, and child-friendly phonics and vocabulary development for kids and young learners.",
+    title: "Family & Spouse Visa Wing",
+    hub: "Move With Family Desk",
+    badge: "Family Migration",
+    icon: "👨‍👩‍👧‍👦",
+    desc: "Specialized advisory for students moving abroad with spouse and children, including dependent visa documentation, maintenance funds, and family accommodation.",
   },
   {
-    title: "European Study Abroad Consultancy",
-    hub: "Global Admissions Wing",
-    badge: "Portugal & Europe Track",
-    icon: "🇵🇹",
-    desc: "Affordable European education pathways, specializing in Portugal, Czech Republic, UK, and German university admissions and visa documentation.",
+    title: "UK On-Ground & Glasgow Office",
+    hub: "3A Westburn Road, Glasgow",
+    badge: "UK Direct Support",
+    icon: "🇬🇧",
+    desc: "In-country UK support providing post-arrival guidance, airport reception, accommodation search, and legal part-time job hunting advisory.",
   },
 ];
 
@@ -66,11 +71,11 @@ function About() {
   return (
     <>
       <PageHero
-        eyebrow="Our Story & Excellence in English"
-        title="YOUR TRUSTED PARTNER IN IELTS SUCCESS!"
-        subtitle="Kushtia IELTS Care is Kushtia's premier English language academy and study abroad consultancy, empowering students with modern audio facilities and authentic pathways."
-        image="/banner.png"
-        imageAlt="Kushtia IELTS Care classroom, audio lab, and banner"
+        eyebrow="Our Story & 14+ Years of Trust"
+        title="HIGHER STUDY COUNSELORS BANGLADESH"
+        subtitle="Established in 2012, HSC BD has guided thousands of ambitious students into accredited global universities across the UK, USA, Australia, Canada, and Europe with unmatched integrity."
+        image="/banner.jpg"
+        imageAlt="Higher Study Counselors Bangladesh official banner"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "About Us" }]} />
       </PageHero>
@@ -85,7 +90,7 @@ function About() {
               <div>
                 <h3 className="font-display text-xl font-bold text-slate-900">{company.name}</h3>
                 <span className="inline-block rounded-full bg-amber-50 border border-amber-200 px-3 py-0.5 text-xs font-bold text-amber-800 mt-1">
-                  a great place to learn
+                  Since 2012 · 14+ Years Experience
                 </span>
               </div>
             </div>
@@ -96,30 +101,28 @@ function About() {
                 <dd className="font-bold text-slate-900 text-right">{company.legalName}</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Brand Identity</dt>
-                <dd className="font-bold text-amber-600 text-right">
-                  Kushtia IELTS Care (a great place to learn)
-                </dd>
-              </div>
-              <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Campus Location</dt>
+                <dt className="text-slate-500 font-medium">Head Office (Dhaka)</dt>
                 <dd className="font-bold text-slate-900 text-right max-w-[240px]">
-                  {company.address.full}
+                  House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Unique Facility</dt>
-                <dd className="font-bold text-blue-900 text-right">
-                  Modern Audio Lab & Individual Headsets
+                <dt className="text-slate-500 font-medium">UK International Office</dt>
+                <dd className="font-bold text-sky-800 text-right">
+                  3A Westburn Road, Glasgow, United Kingdom
                 </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Flagship Offerings</dt>
-                <dd className="font-bold text-amber-600 text-right">IELTS • 300 BDT Mock Test • Spoken • Portugal</dd>
+                <dt className="text-slate-500 font-medium">Signature Advantage</dt>
+                <dd className="font-bold text-amber-600 text-right">
+                  100% IELTS Cash Back On Visa Success
+                </dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-3">
-                <dt className="text-slate-500 font-medium">Learning Model</dt>
-                <dd className="font-bold text-emerald-700">Japan Curriculum • Listening Labs • Real Mock Tests</dd>
+                <dt className="text-slate-500 font-medium">Key Specializations</dt>
+                <dd className="font-bold text-emerald-700 text-right">
+                  Move With Family • Study Gap Accepted • Low Tuition
+                </dd>
               </div>
               <div className="flex justify-between pt-1">
                 <dt className="text-slate-500 font-medium">Hotlines & WhatsApp</dt>
@@ -131,7 +134,7 @@ function About() {
 
             <div className="mt-8 rounded-2xl bg-amber-50/70 p-4 border border-amber-200">
               <p className="text-xs font-bold text-slate-900 mb-1">Guiding Philosophy:</p>
-              <p className="text-xs italic text-amber-900 font-bold font-bangla">"{company.slogan}"</p>
+              <p className="text-xs italic text-amber-900 font-bold">"{company.slogan}"</p>
             </div>
           </div>
 
@@ -139,41 +142,43 @@ function About() {
           <div className="space-y-6">
             <span className="badge-clean badge-red">Our Vision & Mission</span>
             <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Empowering Aspirations Through International English Standards & Care
+              Connecting Bangladeshi Talent with World-Class Higher Education Since 2012
             </h2>
             <p className="text-sm leading-relaxed text-slate-600">
-              কুষ্টিয়া আইইএলটিএস কেয়ার (Kushtia IELTS Care) পুরাতন কসাইখানা মোড়ে শিক্ষার্থীদের জন্য একটি নিবেদিত ইংরেজি ভাষা ও উচ্চশিক্ষা সহায়তা কেন্দ্র হিসেবে প্রতিষ্ঠিত। আমাদের লক্ষ্য কুষ্টিয়ার প্রতিটি শিক্ষার্থীর জন্য আন্তর্জাতিক মানের ভাষা শিক্ষা ও ইউরোপে উচ্চশিক্ষার পথ সহজ করা।
+              হায়ার স্টাডি কাউন্সেলরস বাংলাদেশ (Higher Study Counselors Bangladesh - HSC BD) ২০১২ সাল থেকে উচ্চশিক্ষায় আগ্রহী শিক্ষার্থীদের জন্য একটি বিশ্বস্ত প্ল্যাটফর্ম হিসেবে কাজ করে আসছে। দীর্ঘ ১৪ বছরের বাস্তব অভিজ্ঞতা নিয়ে আমরা প্রতিটি শিক্ষার্থীর স্বপ্নকে বাস্তবে রূপ দিতে অঙ্গীকারবদ্ধ।
             </p>
             <p className="text-sm leading-relaxed text-slate-600">
-              আইইএলটিএস আসল পরীক্ষার ভীতি দূর করতে আমরা প্রতিষ্ঠা করেছি আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট সেটআপ। মাত্র ৩০০ টাকায় রিয়েল এক্সাম এনভায়রনমেন্টে কম্পিউটার ও পেপার ভিত্তিক মক টেস্ট দিয়ে শিক্ষার্থীরা তাদের প্রকৃত দুর্বলতা কাটিয়ে সর্বোচ্চ ব্যান্ড স্কোর অর্জন করতে সক্ষম হচ্ছে।
+              উত্তরা সেক্টর ৩-এ প্রধান কার্যালয় এবং যুক্তরাজ্যের গ্লাসগোতে আন্তর্জাতিক কার্যালয়ের মাধ্যমে আমরা অফার লেটার, ভিসা প্রসেসিং, ব্যাংক সলভেন্সি, ফ্যামিলি মুভমেন্ট গাইডেন্স এবং আইইএলটিএস কোর্সের সম্পূর্ণ ফি ক্যাশব্যাক দেওয়ার এক অনন্য সুযোগ তৈরি করেছি।
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2 pt-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🎯 Our Mission</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  কেমব্রিজ সিলেবাসে সঠিক IELTS প্রস্তুতি, সাশ্রয়ী মক টেস্ট এবং ইউরোপীয় সেনজেন দেশগুলোতে সৎ ও স্বচ্ছ ভিসা প্রসেসিং সহায়তা নিশ্চিত করা।
+                  সততা ও স্বচ্ছতার সাথে বিশ্বমানের বিশ্ববিদ্যালয়গুলোতে ভর্তি, সাশ্রয়ী টিউশন ফি সুবিধা, এবং সফল ভিসার পর আইইএলটিএস ফি ১০০% ফেরত দিয়ে শিক্ষার্থীদের আত্মবিশ্বাস বৃদ্ধি করা।
                 </p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <h4 className="font-display text-base font-bold text-slate-900">🔭 Our Vision</h4>
                 <p className="mt-2 text-xs text-slate-600 leading-relaxed">
-                  কুষ্টিয়া অঞ্চলের সবচেয়ে নির্ভরযোগ্য, আধুনিক ও শিক্ষার্থী-বান্ধব ল্যাঙ্গুয়েজ একাডেমি ও ইউরোপ স্টাডি কনসালটেন্সি হিসেবে প্রতিটি স্বপ্নকে বাস্তবে রূপ দেওয়া।
+                  বাংলাদেশের শীর্ষস্থানীয় ও সবচেয়ে নির্ভরযোগ্য বৈদেশিক শিক্ষা পরামর্শদাতা প্রতিষ্ঠান হিসেবে শিক্ষার্থীদের বৈশ্বিক ক্যারিয়ার ও জীবনমানের উত্তরণ ঘটানো।
                 </p>
               </div>
             </div>
 
             <div className="rounded-2xl bg-gradient-to-r from-amber-50/60 via-slate-50 to-blue-50/60 border border-slate-200 p-5">
               <h4 className="font-display text-sm font-bold text-amber-700 mb-2">
-                🌟 The 4 Kushtia IELTS Care Pillars:
+                🌟 The 6 HSC BD Core Commitments (Verified on Official Banner):
               </h4>
               <BulletList
                 items={[
-                  "Modern Sound Lab & Individual Headsets: ক্রিস্টাল ক্লিয়ার অডিও ল্যাব ও রিয়েল এক্সাম এনভায়রনমেন্ট।",
-                  "300 BDT Real Exam Mock Tests: পূর্ণাঙ্গ কম্পিউটার-বেসড ও পেপার-বেসড মক টেস্ট এবং বিস্তারিত স্কোর কার্ড।",
-                  "Cambridge Aligned Syllabus & Expert Care: অভিজ্ঞ শিক্ষক দ্বারা ছোট ব্যাচে ওয়ান-টু-ওয়ান স্পিকিং ও রাইটিং মূল্যায়ন।",
-                  "Portugal & European Study Abroad: সেনজেনভুক্ত পর্তুগাল, চেক রিপাবলিক, ইউকে ও জার্মানিতে সাশ্রয়ী উচ্চশিক্ষা ও সঠিক ভিসা গাইডলাইন।",
+                  "Opportunity To Move With Family: স্পাউস ও সন্তানদের নিয়ে বিদেশে উচ্চশিক্ষার পূর্ণাঙ্গ ভিসা সাপোর্ট।",
+                  "Long Study Gap Accepted: দীর্ঘ স্টাডি গ্যাপ বা শিক্ষাবিরতি থাকা সত্ত্বেও বিশ্ববিদ্যালয় ভর্তির নিশ্চয়তা।",
+                  "Part Time Job In UK & Abroad: পড়াশোনার পাশাপাশি বৈধ পার্ট-টাইম কাজ ও কাজের সুযোগের গাইডলাইন।",
+                  "Low Tuition Fees University: সাশ্রয়ী টিউশন ফি ও কিস্তিতে ফি প্রদানের সুযোগ সম্বলিত বিশ্ববিদ্যালয়।",
+                  "Financial Advice & Guidance: ব্যাংক ব্যালেন্স, স্পন্সরশিপ ও অর্থনৈতিক কাগজপত্রের সঠিক মূল্যায়ন।",
+                  "IELTS Cash Back On Visa Success: আমাদের মাধ্যমে ভিসা সফল হলেই আইইএলটিএস কোর্স ফি ১০০% ফেরত।",
                 ]}
               />
             </div>
@@ -186,30 +191,30 @@ function About() {
         <div className="rounded-3xl bg-slate-950 border border-slate-800 p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
             <div>
-              <span className="badge-clean badge-red text-xs">Old Kataikhana More Campus</span>
+              <span className="badge-clean badge-red text-xs">Dhaka HQ & Glasgow UK Presence</span>
               <h3 className="mt-3 font-display text-2xl sm:text-3xl font-extrabold text-white">
-                169/4, Mahatab Uddin Road, Kushtia
+                Uttara, Dhaka & Glasgow, United Kingdom
               </h3>
               <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-                আমাদের একাডেমি ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়ায় অবস্থিত। শিক্ষার্থী ও অভিভাবকদের আন্তরিকভাবে আমন্ত্রণ জানাচ্ছি ফ্রি অ্যাসেসমেন্ট, ক্লাস পরিদর্শন এবং কনসালটেন্সির জন্য।
+                উত্তরা সেক্টর ৩ প্রধান কার্যালয়ে সামনাসামনি এসে সিনিয়র কনসালট্যান্টদের সাথে ফাইল এসেসমেন্ট করান অথবা গ্লাসগো অফিসের মাধ্যমে যুক্তরাজ্যে সরাসরি পরামর্শ গ্রহণ করুন।
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-amber-400">📍 Kushtia Campus</p>
+                  <p className="text-xs font-bold text-amber-400">📍 Dhaka Head Office</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
-                    {company.address.full}
+                    House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
-                    📞 {company.phones[0]} (Call / WhatsApp) / {company.phones[1]}
+                    📞 {company.phones[0]} (WhatsApp) · {company.phones[1]}
                   </p>
                 </div>
                 <div className="rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-                  <p className="text-xs font-bold text-blue-400">🎧 Modern Audio Lab</p>
+                  <p className="text-xs font-bold text-sky-400">🇬🇧 UK International Office</p>
                   <p className="text-[0.75rem] text-slate-300 mt-1">
-                    Individual Headset Audio Lab Setup
+                    3A Westburn Road, Glasgow, United Kingdom
                   </p>
                   <p className="text-[0.75rem] text-slate-400 mt-1">
-                    🌐 300 BDT Full CBT Mock Test Experience
+                    🌐 Website: www.hscbd.co.uk
                   </p>
                 </div>
               </div>
@@ -219,13 +224,13 @@ function About() {
               <div className="text-center space-y-3">
                 <BrandLogo size={72} />
                 <h4 className="font-display font-black text-xl text-white">
-                  Kushtia IELTS Care
+                  Higher Study Counselors Bangladesh
                 </h4>
                 <p className="text-xs text-amber-400 font-bold">
-                  Your Trusted Partner in IELTS Success!
+                  Since 2012 · 14+ Years of Trust & Excellence
                 </p>
                 <p className="text-xs text-slate-400">
-                  169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia
+                  Sector 3, Uttara, Dhaka & Glasgow, UK
                 </p>
               </div>
             </div>
@@ -243,14 +248,14 @@ function About() {
         <SectionHeading
           eyebrow="Specialized Academic & Study Abroad Wings"
           title="Our Operational Divisions"
-          subtitle="Experienced educators and counselors dedicated to IELTS preparation, 300 BDT mock tests, and European visa processing."
+          subtitle="Experienced educators and foreign education counselors dedicated to study abroad admissions, IELTS preparation, and family visa processing."
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {advisoryWings.map((wing) => (
             <div
               key={wing.title}
-              className="card-clean rounded-3xl p-6 flex flex-col justify-between border border-slate-200 hover:border-sky-300 shadow-sm hover:shadow-md transition-all bg-white"
+              className="card-clean rounded-3xl p-6 flex flex-col justify-between border border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-md transition-all bg-white"
             >
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
@@ -266,7 +271,7 @@ function About() {
 
               <div className="mt-6 pt-4 border-t border-slate-100">
                 <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Kushtia IELTS Care, I want to consult your "${wing.title}" division.`)}`}
+                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(`Hello Higher Study Counselors Bangladesh, I want to consult your "${wing.title}" division.`)}`}
                   target="_blank"
                   rel="noreferrer"
                   className="text-xs font-bold text-amber-600 hover:underline flex items-center justify-center gap-1.5"
@@ -282,9 +287,9 @@ function About() {
       {/* Verified Media & Office Gallery */}
       <section className="section-shell py-14 sm:py-20 border-t border-slate-200 bg-slate-50/50">
         <SectionHeading
-          eyebrow="Verified Campus & Support"
-          title="Kushtia Campus & Modern Audio Lab"
-          subtitle="Explore our modern academy at Old Kataikhana More, Kushtia, with dedicated listening lab facilities."
+          eyebrow="Verified Global Centers"
+          title="Head Office & UK International Presence"
+          subtitle="Explore our central counseling premises in Sector 3, Uttara, Dhaka and our UK operations in Glasgow."
         />
         <div className="mt-10">
           <OfficeGallery />

@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { company } from "@/lib/site-data";
 
 /**
- * KUSHTIA IELTS CARE — Official Brand Logo Component.
- * Features the signature 4 orange droplets emblem and authentic Kushtia IELTS Care typography.
- * Slogan: "a great place to learn"
+ * HIGHER STUDY COUNSELORS BANGLADESH — Official Brand Logo Component.
+ * Displays the verified shield crest (H & S quadrants, golden flight & cap, 'SINCE 2012')
+ * and the signature golden-amber / navy typography.
  */
 export function BrandLogo({
   className,
@@ -25,52 +25,59 @@ export function BrandLogo({
     <div className={cn("inline-flex items-center gap-2.5 sm:gap-3 select-none group", className)}>
       <div
         className={cn(
-          "relative inline-flex items-center justify-center shrink-0 overflow-hidden rounded-xl bg-white border border-slate-200/80 shadow-xs transition-all duration-300 group-hover:scale-105 group-hover:shadow-md p-0.5",
+          "relative inline-flex items-center justify-center shrink-0 overflow-hidden rounded-xl bg-white border border-slate-200/90 shadow-xs transition-all duration-300 group-hover:scale-105 group-hover:shadow-md p-1",
         )}
         style={{ width: size, height: size }}
       >
         <img
           src="/logo.jpg"
-          alt={`${company.name} Official Logo`}
+          alt={`${company.name} Official Shield Logo`}
           width={size}
           height={size}
           className="h-full w-full object-contain rounded-lg"
           onError={(e) => {
-            e.currentTarget.src = "/brand-assets/logo.jpg";
+            e.currentTarget.src = "/logo.jpg";
           }}
         />
       </div>
 
       {withText && (
-        <div className={cn("flex flex-col text-left min-w-0", textClassName)}>
-          <div className="flex items-center gap-1 leading-none">
+        <div className={cn("flex flex-col text-left min-w-0 leading-tight", textClassName)}>
+          <div className="flex items-center gap-1.5 leading-none">
             <span
               className={cn(
-                "font-display font-black tracking-tight text-base sm:text-lg md:text-xl whitespace-nowrap",
-                variant === "dark" ? "text-white" : "text-[#092552]",
+                "font-display font-extrabold text-base sm:text-lg md:text-xl tracking-tight text-[#f5a623] uppercase",
               )}
             >
-              Kushtia
+              Higher
             </span>
             <span
               className={cn(
-                "font-display font-black text-base sm:text-lg md:text-xl tracking-tight text-[#ff7a00] whitespace-nowrap",
+                "font-display font-extrabold tracking-tight text-base sm:text-lg md:text-xl uppercase",
+                variant === "dark" ? "text-white" : "text-[#161b38]",
               )}
             >
-              IELTS Care
+              Study
             </span>
           </div>
           <span
             className={cn(
-              "text-[0.55rem] sm:text-[0.62rem] tracking-[0.06em] sm:tracking-[0.1em] font-semibold mt-0.5 sm:mt-1 truncate max-w-[200px] xs:max-w-[250px] sm:max-w-none",
-              variant === "dark" ? "text-orange-300/90" : "text-[#ff7a00]",
+              "font-display font-bold text-[0.62rem] sm:text-[0.7rem] tracking-[0.08em] uppercase truncate max-w-[200px] xs:max-w-[250px] sm:max-w-none mt-0.5",
+              variant === "dark" ? "text-slate-300" : "text-[#161b38]/90",
             )}
           >
-            {subtitle || "a great place to learn · Old Kataikhana More"}
+            Counselors Bangladesh
+          </span>
+          <span
+            className={cn(
+              "text-[0.52rem] sm:text-[0.58rem] tracking-[0.06em] font-semibold truncate",
+              variant === "dark" ? "text-amber-400/90" : "text-amber-600",
+            )}
+          >
+            {subtitle || "Since 2012 · Sector 3, Uttara, Dhaka"}
           </span>
         </div>
       )}
     </div>
   );
 }
-

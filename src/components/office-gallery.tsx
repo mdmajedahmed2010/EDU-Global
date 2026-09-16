@@ -5,21 +5,21 @@ import { SlideIn } from "@/components/motion-wrapper";
 export function OfficeGallery() {
   return (
     <div className="space-y-8">
-      {/* Campus Hubs: Kushtia Campus & Modern Audio Lab Facility */}
+      {/* Dual Offices: Dhaka Head Office & Glasgow UK International Office */}
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* Kushtia Campus Card & Map */}
+        {/* Dhaka Head Office Card & Map */}
         <SlideIn direction="left" distance={45} className="h-full">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm space-y-4 flex flex-col justify-between h-full hover:border-amber-400 transition-colors">
             <div className="space-y-3">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 border border-amber-200 px-3 py-1 text-xs font-bold text-amber-700">
                 <span>🏢</span>
-                <span>Kushtia Campus</span>
+                <span>Dhaka Head Office (Uttara)</span>
               </span>
               <h4 className="font-display text-lg font-black text-slate-900">
-                169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia
+                House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                কুষ্টিয়ায় আমাদের আধুনিক ক্যাম্পাসে এসে সরাসরি অভিজ্ঞ ইন্সট্রাক্টরদের সাথে কথা বলুন। ফ্রি প্রোফাইল মূল্যায়ন, লেভেল এসেসমেন্ট টেস্ট এবং মাত্র ৩০০ টাকায় কম্পিউটার-ভিত্তিক মক টেস্ট সম্পন্ন করুন।
+                উত্তরায় আমাদের প্রধান কার্যালয়ে সরাসরি এসে অভিজ্ঞ সিনিয়র কাউন্সেলরদের সাথে বসুন। ফ্রি প্রোফাইল মূল্যায়ন, ভিসা ফাইল এসেসমেন্ট, এবং আইইএলটিএস কোর্সের সাথে ১০০% ক্যাশব্যাক অফার নিশ্চিত করুন।
               </p>
               <div className="text-xs text-slate-700 space-y-1.5 border-t border-slate-100 pt-3">
                 <p>
@@ -29,7 +29,7 @@ export function OfficeGallery() {
                   <strong>🕒 Hours:</strong> {company.hours}
                 </p>
                 <p>
-                  <strong>📞 Hotlines:</strong> {company.phones[0]} (Call / WhatsApp) · {company.phones[1]}
+                  <strong>📞 Hotlines:</strong> {company.phones[0]} (WhatsApp) · {company.phones[1]} · {company.phones[2]} · {company.phones[3]}
                 </p>
                 <p>
                   <strong>✉️ Email:</strong> {company.email}
@@ -40,7 +40,7 @@ export function OfficeGallery() {
             <div className="overflow-hidden rounded-2xl border border-slate-200 aspect-[16/9] w-full">
               <iframe
                 src={company.mapsEmbed}
-                title="Kushtia IELTS Care Campus Map"
+                title="Higher Study Counselors Bangladesh Uttara HQ Map"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -51,14 +51,14 @@ export function OfficeGallery() {
             <div className="pt-2 flex flex-wrap gap-2.5">
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  "Hello Kushtia IELTS Care! I would like to visit your Old Kataikhana More campus in Kushtia for a free counseling session.",
+                  "Hello Higher Study Counselors Bangladesh! I would like to visit your Uttara Sector 3 office in Dhaka for a free counseling session.",
                 )}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-emerald text-xs py-2.5 px-4 shadow-sm active:scale-95"
               >
                 <IconWhatsApp className="w-4 h-4" />
-                <span>WhatsApp Kushtia Desk</span>
+                <span>WhatsApp Dhaka Desk</span>
               </a>
               <a
                 href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
@@ -71,34 +71,34 @@ export function OfficeGallery() {
           </div>
         </SlideIn>
 
-        {/* Modern Audio Lab & European Track Spotlight */}
+        {/* Glasgow UK Office & Core Advantages */}
         <SlideIn direction="right" distance={45} className="h-full">
           <div className="rounded-3xl border border-amber-200 bg-gradient-to-br from-amber-50/40 via-white to-blue-50/40 p-6 sm:p-7 shadow-sm space-y-4 flex flex-col justify-between h-full hover:border-amber-400 transition-colors">
             <div className="space-y-3">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-blue-100 border border-blue-200 px-3 py-1 text-xs font-bold text-blue-900">
-                <span>🎧</span>
-                <span>Modern Audio Lab & Individual Headset Setup</span>
+                <span>🇬🇧</span>
+                <span>United Kingdom International Office</span>
               </span>
               <h4 className="font-display text-lg font-black text-slate-900">
-                আন্তর্জাতিক মানের প্রস্তুতি ও শতভাগ যত্ন
+                3A Westburn Road, Glasgow, United Kingdom
               </h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Kushtia IELTS Care শিক্ষার্থীদের জন্য নিশ্চিত করেছে পৃথক হেডসেট সম্বলিত সাউন্ড ল্যাব, কম্পিউটার ল্যাব এবং শান্ত শিক্ষার পরিবেশ। প্রতিটি শিক্ষার্থীর দুর্বলতা চিহ্নিত করে সর্বোচ্চ স্কোর নিশ্চিত করা হয়।
+                যুক্তরাজ্যে নিজস্ব স্থায়ী কার্যালয় থাকার সুবাদে যুক্তরাজ্যে আগমন, এয়ারপোর্ট পিকআপ, স্থায়ী আবাসন ও পার্ট-টাইম কাজের পূর্ণাঙ্গ দিকনির্দেশনা প্রদান করে HSC BD টিম।
               </p>
               <div className="text-xs text-slate-700 space-y-2 border-t border-slate-100 pt-3">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1.5 shadow-xs">
-                  <strong className="text-[#092552] block text-xs">Flagship Programs & Facilities:</strong>
+                  <strong className="text-[#161B38] block text-xs">Official Commitments & USPs:</strong>
                   <ul className="space-y-1 text-[0.73rem] text-slate-600">
-                    <li>• <strong>IELTS Preparation (Academic & General):</strong> কেমব্রিজ স্ট্যান্ডার্ডে নিবিড় ক্লাস</li>
-                    <li>• <strong>300 BDT Mock Tests:</strong> রিয়েল এক্সাম কম্পিউটার ও পেপার টেস্ট এবং স্কোর কার্ড</li>
-                    <li>• <strong>Spoken English:</strong> নিয়মিত ওয়ান-টু-ওয়ান স্পিকিং সেশন ও ফ্লুয়েন্সি ট্রেইনিং</li>
-                    <li>• <strong>Kids English Academy:</strong> শিশুদের উপযোগী আনন্দময় পরিবেশ ও সঠিক উচ্চারণ</li>
-                    <li>• <strong>Study in Portugal & Europe:</strong> অফার লেটার, ভিসা ফাইল ও এম্বাসি কাউন্সেলিং</li>
-                    <li>• <strong>Expert Mentorship:</strong> কুষ্টিয়ায় আন্তর্জাতিক মানের অভিজ্ঞ মেন্টর টিম</li>
+                    <li>• <strong>IELTS Cash Back On Visa Success:</strong> ভিসা হলেই আইইএলটিএস ফি ১০০% ফেরত</li>
+                    <li>• <strong>Opportunity To Move With Family:</strong> স্পাউস ও সন্তানসহ বিদেশে যাওয়ার সুবিধা</li>
+                    <li>• <strong>Long Study Gap Accepted:</strong> দীর্ঘ শিক্ষাবিরতি থাকলেও উচ্চশিক্ষার সুযোগ</li>
+                    <li>• <strong>Part Time Job In UK & Abroad:</strong> পড়াশোনার পাশাপাশি বৈধ পার্ট-টাইম কাজ</li>
+                    <li>• <strong>Low Tuition Fees University:</strong> সাশ্রয়ী টিউশন ফি ও কিস্তিতে পরিশোধের সুযোগ</li>
+                    <li>• <strong>Financial Advice & Guidance:</strong> ব্যাংক সলভেন্সি ও ফান্ড স্পন্সরশিপের সঠিক গাইডলাইন</li>
                   </ul>
                 </div>
                 <p>
-                  <strong>✨ Official Slogan:</strong> "Your Trusted Partner in IELTS Success! — a great place to learn"
+                  <strong>✨ Official Trust:</strong> "Higher Study Counselors Bangladesh — Since 2012 | www.hscbd.co.uk"
                 </p>
               </div>
             </div>
@@ -106,14 +106,14 @@ export function OfficeGallery() {
             <div className="pt-2 flex flex-wrap gap-2.5">
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  "Hello Kushtia IELTS Care! I want to enroll in the IELTS batch / book a 300 BDT mock test slot. Please guide me.",
+                  "Hello Higher Study Counselors Bangladesh! I want to consult about UK & international study admission and IELTS cashback offer.",
                 )}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-luxury-primary text-xs py-2.5 px-4 active:scale-95 text-slate-950 font-bold bg-amber-500 hover:bg-amber-400"
               >
                 <IconWhatsApp className="w-4 h-4" />
-                <span>Book Mock / Next Batch</span>
+                <span>Consult UK Specialist</span>
               </a>
               <a
                 href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}

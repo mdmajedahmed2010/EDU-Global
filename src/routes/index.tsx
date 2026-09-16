@@ -22,18 +22,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `${company.legalName} | Kushtia IELTS Care — a great place to learn | Old Kataikhana More, Kushtia`,
+        title: `${company.legalName} | Study Abroad Consultancy & IELTS Language Academy | Sector 3, Uttara, Dhaka & Glasgow, UK`,
       },
       {
         name: "description",
         content:
-          "Kushtia IELTS Care (কুষ্টিয়া আইইএলটিএস কেয়ার) — Your Trusted Partner in IELTS Success! Complete Cambridge IELTS Preparation, Computer-Based Mock Tests with individual headsets at only 300 BDT, Spoken English, Kids English Academy, and European Study Abroad Consultancy (Portugal, Czech Republic, UK, Germany, Canada). 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. Hotlines: 01715-052885, 01805-954731.",
+          "Higher Study Counselors Bangladesh (Since 2012) — Your Trusted Global Education & Language Partner! UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, Dubai. IELTS Cash Back On Visa Success, Opportunity To Move With Family, Long Study Gap Accepted, Low Tuition Fees. Head Office: Sector 3, Uttara, Dhaka. UK Office: Glasgow, UK. Hotlines: 01974843470, 01676997222.",
       },
-      { property: "og:title", content: `${company.legalName} — Your Trusted Partner in IELTS Success!` },
+      { property: "og:title", content: `${company.legalName} — Since 2012 | Study Abroad & Language Academy` },
       {
         property: "og:description",
         content:
-          "Premier IELTS Preparation, Computer Mock Tests at 300 BDT, Spoken English, and European Study Abroad Consultancy in Kushtia. Modern Audio Lab & individual headsets.",
+          "Trusted Global Education Consultancy & Language Academy since 2012. 100% IELTS Cash Back on Visa Success, Move with Family, Study Gap Accepted. Offices in Uttara, Dhaka & Glasgow, UK.",
       },
     ],
   }),
@@ -46,57 +46,52 @@ function Home() {
 
   const faqCategories = [
     "All",
-    "IELTS Preparation",
-    "Mock Tests (300 BDT)",
-    "Spoken & Kids English",
-    "Portugal & Study Abroad",
-    "Campus & Admission",
+    "IELTS & Cash Back",
+    "Move With Family",
+    "Study Gap Accepted",
+    "UK & Global Destinations",
+    "Offices & Admission",
   ];
 
   const filteredFaqs =
     activeFaqCategory === "All"
       ? faqs
       : faqs.filter((f) => {
-          if (activeFaqCategory === "IELTS Preparation")
+          if (activeFaqCategory === "IELTS & Cash Back")
             return (
               f.q.toLowerCase().includes("ielts") ||
-              f.q.toLowerCase().includes("band") ||
-              f.q.toLowerCase().includes("cambridge") ||
+              f.q.toLowerCase().includes("cash back") ||
+              f.q.toLowerCase().includes("cashback") ||
               f.a.toLowerCase().includes("ielts") ||
-              f.a.toLowerCase().includes("cambridge")
+              f.a.toLowerCase().includes("cash back")
             );
-          if (activeFaqCategory === "Mock Tests (300 BDT)")
+          if (activeFaqCategory === "Move With Family")
             return (
-              f.q.toLowerCase().includes("mock") ||
-              f.q.toLowerCase().includes("300") ||
-              f.q.toLowerCase().includes("computer") ||
-              f.a.toLowerCase().includes("mock") ||
-              f.a.toLowerCase().includes("300") ||
-              f.a.toLowerCase().includes("headset")
+              f.q.toLowerCase().includes("family") ||
+              f.q.toLowerCase().includes("spouse") ||
+              f.a.toLowerCase().includes("family") ||
+              f.a.toLowerCase().includes("spouse")
             );
-          if (activeFaqCategory === "Spoken & Kids English")
+          if (activeFaqCategory === "Study Gap Accepted")
             return (
-              f.q.toLowerCase().includes("spoken") ||
-              f.q.toLowerCase().includes("kids") ||
-              f.q.toLowerCase().includes("english") ||
-              f.a.toLowerCase().includes("spoken") ||
-              f.a.toLowerCase().includes("kids")
+              f.q.toLowerCase().includes("gap") ||
+              f.a.toLowerCase().includes("gap")
             );
-          if (activeFaqCategory === "Portugal & Study Abroad")
+          if (activeFaqCategory === "UK & Global Destinations")
             return (
-              f.q.toLowerCase().includes("portugal") ||
-              f.q.toLowerCase().includes("europe") ||
+              f.q.toLowerCase().includes("uk") ||
+              f.q.toLowerCase().includes("destination") ||
               f.q.toLowerCase().includes("abroad") ||
-              f.a.toLowerCase().includes("portugal") ||
-              f.a.toLowerCase().includes("schengen")
+              f.a.toLowerCase().includes("uk") ||
+              f.a.toLowerCase().includes("countries")
             );
-          if (activeFaqCategory === "Campus & Admission")
+          if (activeFaqCategory === "Offices & Admission")
             return (
-              f.q.toLowerCase().includes("kushtia") ||
-              f.q.toLowerCase().includes("kataikhana") ||
-              f.q.toLowerCase().includes("admission") ||
-              f.a.toLowerCase().includes("kushtia") ||
-              f.a.toLowerCase().includes("kataikhana")
+              f.q.toLowerCase().includes("uttara") ||
+              f.q.toLowerCase().includes("office") ||
+              f.q.toLowerCase().includes("apply") ||
+              f.a.toLowerCase().includes("uttara") ||
+              f.a.toLowerCase().includes("glasgow")
             );
           return true;
         });
@@ -126,7 +121,7 @@ function Home() {
         <PopularDestinationsSection />
       </ScrollReveal>
 
-      {/* 6. Why Choose Kushtia IELTS Care */}
+      {/* 6. Why Choose Higher Study Counselors Bangladesh */}
       <ScrollReveal direction="up" delay={60}>
         <WhyChooseSection />
       </ScrollReveal>
@@ -136,7 +131,7 @@ function Home() {
         <HowItWorksSection />
       </ScrollReveal>
 
-      {/* 8. Language Academy & 8 Visa Categories Spotlight */}
+      {/* 8. Language Academy & Core Pillars */}
       <ScrollReveal direction="up" delay={60}>
         <DelegationSpotlight />
       </ScrollReveal>
@@ -146,19 +141,19 @@ function Home() {
         <VideoReelsSection />
       </ScrollReveal>
 
-      {/* 10. Kushtia Campus & Audio Lab */}
+      {/* 10. Official Headquarters & Global Centers */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
               <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>Campus & Audio Lab Facilities</span>
+              <span>Headquarters & International Presence</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Inside <span className="text-amber-500">Kushtia IELTS Care</span>
+              Higher Study Counselors <span className="text-amber-500">Bangladesh</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়া — আধুনিক সাউন্ড ল্যাব, কম্পিউটার ল্যাব ও অভিজ্ঞ শিক্ষক মণ্ডলীর সার্বক্ষণিক তত্ত্বাবধান।
+              House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230 & 3A Westburn Road, Glasgow, UK — Direct physical counseling & expert visa advisory since 2012.
             </p>
           </div>
 
@@ -188,7 +183,7 @@ function Home() {
               Frequently Asked <span className="text-amber-500">Questions</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent answers regarding IELTS preparation, 300 BDT computer mock tests, Spoken English, Portugal & European study abroad, and our Kushtia campus.
+              Direct, transparent answers regarding IELTS Cash Back on visa success, Opportunity to Move with Family, Long Study Gap acceptance, UK/USA admissions, and our Uttara & Glasgow offices.
             </p>
           </div>
 

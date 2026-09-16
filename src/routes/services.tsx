@@ -17,18 +17,18 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       {
-        title: "Services & Courses | Kushtia IELTS Care — IELTS, 300 BDT Mock Tests & Europe Study Abroad",
+        title: "Services & Courses | Higher Study Counselors Bangladesh — Study Abroad & IELTS Cash Back",
       },
       {
         name: "description",
         content:
-          "Explore Kushtia IELTS Care services: Cambridge IELTS (Academic & General), Computer-Based Mock Tests at 300 BDT with individual headsets, Spoken English, Kids English Academy, and European Study Abroad Consultancy (Portugal, Czech Republic, UK, Germany, Canada). 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
+          "Explore Higher Study Counselors Bangladesh services: Global Study Abroad (UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, Dubai), 100% IELTS Cash Back On Visa Success, Opportunity To Move With Family, Long Study Gap Accepted, Low Tuition Fees Universities, Spoken English, and Kids English. Uttara Dhaka & Glasgow UK offices.",
       },
-      { property: "og:title", content: "Services & Courses | Kushtia IELTS Care" },
+      { property: "og:title", content: "Services & Courses | Higher Study Counselors Bangladesh" },
       {
         property: "og:description",
         content:
-          "Cambridge IELTS, 300 BDT Mock Tests, Spoken English, and European Study Abroad consultancy in Kushtia. Modern audio lab with individual headsets.",
+          "Official services of Higher Study Counselors Bangladesh (Since 2012). Global study admissions, 100% IELTS Cash Back on Visa Success, Move with Family, and Study Gap Accepted.",
       },
     ],
   }),
@@ -36,72 +36,72 @@ export const Route = createFileRoute("/services")({
 });
 
 const serviceCategories = [
-  { id: "all", label: "All Offerings" },
-  { id: "ielts-courses", label: "IELTS & Mock Tests (300 BDT)" },
-  { id: "spoken-kids", label: "Spoken & Kids English" },
-  { id: "study-abroad", label: "Portugal & European Study Abroad" },
-  { id: "free-file", label: "Free Profile Assessment" },
+  { id: "all", label: "All Services" },
+  { id: "study-abroad", label: "Global Study Abroad" },
+  { id: "ielts-courses", label: "IELTS & 100% Cash Back" },
+  { id: "family-move", label: "Move With Family" },
+  { id: "study-gap", label: "Study Gap Accepted" },
 ];
 
 const comparisonData = [
   {
-    feature: "Listening Lab & Audio Setup",
-    ieltsCare: "Dedicated Audio Lab with individual headsets for clear, distortion-free listening",
-    traditional: "Common loudspeaker in large halls causing echo and low band scores",
+    feature: "IELTS Course Fee Policy",
+    hscbd: "100% Cash Back on Successful Visa Grant through HSC BD",
+    traditional: "Non-refundable fees regardless of visa outcome",
     highlight: true,
   },
   {
-    feature: "Full Real Exam Mock Test",
-    ieltsCare: "Only 300 BDT for full Computer-Based & Paper-Based Mock Tests with Band Analysis",
-    traditional: "High fees (1,000–2,500 BDT) with delayed or no detailed feedback",
+    feature: "Opportunity To Move With Family",
+    hscbd: "Dedicated dependent visa advisory for spouse and children",
+    traditional: "Single applicant focus only, minimal family guidance",
     highlight: true,
   },
   {
-    feature: "Curriculum & Mentorship",
-    ieltsCare: "Complete Cambridge IELTS aligned syllabus with personalized 1-on-1 speaking feedback",
-    traditional: "Generic coaching with crowded batches and no individual care",
+    feature: "Long Study Gap Acceptance",
+    hscbd: "Expert gap justification and university placement (up to 7–10+ yrs accepted)",
+    traditional: "Immediate rejection of profiles with educational gaps",
     highlight: true,
   },
   {
-    feature: "Study in Portugal & Europe Track",
-    ieltsCare: "Direct university admission, low tuition fees, and complete Schengen visa documentation",
-    traditional: "Unverified third-party file routing with hidden charges",
+    feature: "Affordable Tuition & Installments",
+    hscbd: "Low tuition fee university matching with flexible installment options",
+    traditional: "Pushing expensive universities with exorbitant commission charges",
     highlight: true,
   },
   {
-    feature: "Spoken & Kids English Academy",
-    ieltsCare: "Practical conversational fluency drills and child-friendly phonics foundation",
-    traditional: "Rote grammar memorization without interactive communication practice",
+    feature: "UK International Office Presence",
+    hscbd: "Permanent UK office at 3A Westburn Road, Glasgow for on-ground student care",
+    traditional: "Zero overseas presence once student boards flight",
     highlight: true,
   },
   {
-    feature: "Kushtia Campus Facility",
-    ieltsCare: "169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia (central & accessible)",
-    traditional: "Unverified agents operating without modern audio/computer lab infrastructure",
+    feature: "Financial Advice & Guidance",
+    hscbd: "Comprehensive bank solvency auditing and genuine financial counseling",
+    traditional: "Unverified document vendors with high visa refusal risk",
     highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "How does Kushtia IELTS Care conduct computer-based and offline mock tests for 300 BDT?",
-    a: "We provide full-length IELTS mock tests (Listening, Reading, Writing, Speaking) in a simulated exam hall with individual computer terminals and high-quality individual headsets. For only 300 BDT, you receive real exam experience, exact timing, and an extensive diagnostic report highlighting strengths and areas for improvement.",
+    q: "How does the 'IELTS Cash Back On Visa Success' guarantee work?",
+    a: "When you enroll in our IELTS Academic or General preparation course at Higher Study Counselors Bangladesh and subsequently process your student visa file through us, your entire IELTS tuition fee is refunded 100% as cashback upon the successful issuance of your student visa.",
   },
   {
-    q: "What makes the listening audio lab at Kushtia IELTS Care unique?",
-    a: "Many candidates lose crucial band points in the listening section due to poor room acoustics or loudspeakers. At Kushtia IELTS Care, every single test-taker and student gets a dedicated, noise-isolating headset, mirroring the exact setup of official British Council and IDP test venues.",
+    q: "Can I move abroad with my family (spouse and children)?",
+    a: "Yes! One of HSC BD's core pillars is 'Opportunity To Move With Family'. We specialize in dependent visa documentation, maintenance fund requirements, and family accommodation guidelines for countries like the UK, Australia, and Canada where student dependents are legally permitted.",
   },
   {
-    q: "How does Kushtia IELTS Care help with studying in Portugal and Europe?",
-    a: "We assist students in securing admissions at top accredited universities in Portugal and the Czech Republic, where tuition fees are affordable and courses are taught in English. We handle document verification, university applications, motivation letters, and embassy visa appointments.",
+    q: "I have a 5 to 10 year study gap. Can I still apply for foreign universities?",
+    a: "Absolutely. Under our 'Long Study Gap Accepted' program, we analyze your work experience, certifications, and professional background to build a compelling Statement of Purpose and justify the gap to universities and visa officers in the UK, USA, Hungary, Denmark, and other flexible destinations.",
   },
   {
-    q: "What English training programs are available for children and job seekers?",
-    a: "We provide: 1) IELTS Academic & General Training (Target Band 7.5+), 2) Professional Spoken English for presentation and interview fluency, 3) Kids English Academy for ages 5–14 (phonics, vocabulary, confidence building), and 4) English Grammar Foundation.",
+    q: "Which destinations does Higher Study Counselors Bangladesh process?",
+    a: "We officially process admissions for 9 key destinations: United Kingdom (UK), United States (USA), Australia, Hungary (Schengen Europe), Canada, Finland, Denmark, Malaysia, and Dubai.",
   },
   {
-    q: "Where is Kushtia IELTS Care located and what are the office hours?",
-    a: "Our campus is situated at 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. We are open Saturday through Thursday from 9:00 AM to 8:00 PM for free profile evaluations, campus tours, and mock test bookings.",
+    q: "Where are your offices located and how do I schedule a consultation?",
+    a: "Our Bangladesh Head Office is located at House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230. We also operate our UK office at 3A Westburn Road, Glasgow. You can visit in person Saturday through Thursday (9:30 AM – 6:30 PM) or call our hotlines: 01974843470, 01676997222.",
   },
 ];
 
@@ -114,11 +114,11 @@ function Services() {
     <>
       {/* 1. High-Impact Page Hero with Breadcrumbs */}
       <PageHero
-        eyebrow="English Language & European Study Abroad"
-        title="IELTS, 300 BDT Mock Tests & Europe Admissions"
-        subtitle="Specialized Cambridge IELTS coaching, computer-based mock tests with individual headsets at only 300 BDT, Spoken English, Kids English, and study abroad consultancy in Portugal and Europe."
-        image="/banner.png"
-        imageAlt="Kushtia IELTS Care classroom, audio lab, and banner"
+        eyebrow="Foreign Education Advisory & Language Academy"
+        title="GLOBAL ADMISSIONS & IELTS CASH BACK"
+        subtitle="Higher Study Counselors Bangladesh (Since 2012) offers comprehensive study abroad processing for 9+ countries, 100% IELTS Cash Back on Visa Success, Move with Family, and Long Study Gap Accepted."
+        image="/banner.jpg"
+        imageAlt="Higher Study Counselors Bangladesh official banner"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -128,12 +128,12 @@ function Services() {
               onClick={open}
               className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-amber-500/30 cursor-pointer font-bold bg-amber-500 hover:bg-amber-400 text-slate-950"
             >
-              <span>Book Assessment / 300 BDT Mock</span>
+              <span>Book Free Profile Assessment</span>
               <IconSparkles className="w-4 h-4" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello Kushtia IELTS Care! I would like to inquire about IELTS batches, 300 BDT mock tests, and European admissions.",
+                "Hello Higher Study Counselors Bangladesh! I would like to inquire about study abroad admissions, IELTS cashback, and family visa support.",
               )}`}
               target="_blank"
               rel="noreferrer"
@@ -158,7 +158,7 @@ function Services() {
                 className={cn(
                   "rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer",
                   activeCategory === cat.id
-                    ? "bg-[#092552] text-amber-400 shadow-md border border-amber-500/40"
+                    ? "bg-[#161B38] text-amber-400 shadow-md border border-amber-500/40"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200",
                 )}
               >
@@ -169,19 +169,82 @@ function Services() {
         </div>
       </section>
 
-      {/* 3. Language Academy Specialized Section */}
-      {(activeCategory === "all" || activeCategory === "ielts-courses" || activeCategory === "spoken-kids") && (
+      {/* 3. Core Study Abroad & Advisory Services Grid */}
+      {(activeCategory === "all" ||
+        activeCategory === "study-abroad" ||
+        activeCategory === "family-move" ||
+        activeCategory === "study-gap") && (
         <section className="section-shell py-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
               <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>Kushtia IELTS Care Language Academy</span>
+              <span>Full Lifecycle Global Advisory</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Cambridge IELTS, 300 BDT Mocks & <span className="text-amber-500">English Academy</span>
+              Comprehensive Foreign Education <span className="text-amber-500">& Visa Services</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব, পৃথক হেডসেট, কেমব্রিজ সিলেবাস এবং অভিজ্ঞ মেন্টরদের তত্ত্বাবধানে নিবিড় পাঠদান।
+              From free profile evaluation at our Uttara Head Office to university admission, financial guidance, family visa lodging, and UK on-ground support.
+            </p>
+          </div>
+
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-amber-500/40 hover:shadow-lg transition-all"
+              >
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-3xl">{service.icon}</span>
+                    {service.badge && (
+                      <span className="rounded-full bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                        {service.badge}
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 className="font-display text-lg font-black text-slate-900">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-xs text-slate-600 leading-relaxed">{service.overview}</p>
+
+                  <div className="pt-2 border-t border-slate-100">
+                    <BulletList items={service.benefits} />
+                  </div>
+                </div>
+
+                <div className="pt-5 border-t border-slate-100 mt-5 flex items-center justify-between text-xs">
+                  <span className="text-slate-500 font-semibold">{service.intakeNote || "Open for Enrollment"}</span>
+                  <button
+                    type="button"
+                    onClick={open}
+                    className="text-amber-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
+                  >
+                    <span>Consult Counselor</span>
+                    <span>→</span>
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* 4. Language Academy & IELTS Cash Back Section */}
+      {(activeCategory === "all" || activeCategory === "ielts-courses") && (
+        <section className="section-shell py-16 border-t border-slate-200 bg-slate-50/50">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+              <span>HSC BD Language Academy</span>
+            </div>
+            <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+              Cambridge IELTS with <span className="text-amber-500">100% Cash Back on Visa</span>
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              Learn from experienced Cambridge-certified trainers. When your student visa is granted through HSC BD, receive a full 100% cash back of your course fee!
             </p>
           </div>
 
@@ -246,12 +309,12 @@ function Services() {
                     onClick={open}
                     className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-amber-500/30 cursor-pointer font-bold bg-amber-500 hover:bg-amber-400 text-slate-950"
                   >
-                    <span>Enroll / Book Mock Test</span>
+                    <span>Enroll / Claim Cashback</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello Kushtia IELTS Care! I want to join the next ${course.title} batch / book a mock test slot. Please send fee and schedule.`,
+                      `Hello Higher Study Counselors Bangladesh! I want to enroll in the ${course.title} batch and learn about the IELTS Cash Back on Visa Success guarantee.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
@@ -267,143 +330,87 @@ function Services() {
         </section>
       )}
 
-      {/* 4. Core Educational Services Grid */}
-      {(activeCategory === "all" ||
-        activeCategory === "study-abroad" ||
-        activeCategory === "free-file") && (
-        <section className="section-shell py-16 border-t border-slate-200">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>Full Lifecycle Advisory</span>
-            </div>
-            <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Higher Education Admissions & <span className="text-amber-500">Visa Processing</span>
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From initial profile evaluation at our Old Kataikhana More campus to university admission, Portugal & European visa processing, and pre-departure briefing.
-            </p>
-          </div>
-
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
-              <div
-                key={service.id}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-amber-500/40 hover:shadow-lg transition-all"
-              >
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-3xl">{service.icon}</span>
-                    {service.badge && (
-                      <span className="rounded-full bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
-                        {service.badge}
-                      </span>
-                    )}
-                  </div>
-
-                  <h3 className="font-display text-lg font-black text-slate-900">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-xs text-slate-600 leading-relaxed">{service.overview}</p>
-
-                  <div className="pt-2 border-t border-slate-100">
-                    <BulletList items={service.benefits} />
-                  </div>
-                </div>
-
-                <div className="pt-5 border-t border-slate-100 mt-5 flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-semibold">{service.intakeNote || "Open for Enrollment"}</span>
-                  <button
-                    type="button"
-                    onClick={open}
-                    className="text-amber-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
-                  >
-                    <span>Apply Now</span>
-                    <span>→</span>
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* 5. Destinations & Visa Categories Comprehensive Showcase */}
+      {/* 5. 9 Official Destinations Showcase */}
       {(activeCategory === "all" || activeCategory === "study-abroad") && (
         <section className="section-shell py-16 border-t border-slate-200">
-          <div className="rounded-3xl border border-slate-800 bg-[#061122] p-8 sm:p-12 text-white shadow-2xl">
+          <div className="rounded-3xl border border-slate-800 bg-[#161B38] p-8 sm:p-12 text-white shadow-2xl">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="rounded-full bg-amber-600/20 text-amber-400 border border-amber-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
-                Global Destinations & Visas
+              <span className="rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
+                Official Banner Destinations
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Pathways Processed by Kushtia IELTS Care
+                Top Study Pathways with HSC BD
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                Specialized processing for Portugal & European Schengen countries, Czech Republic, UK, Germany, Canada, and global destinations.
+                All 9 destinations verified directly from our official corporate banner with direct university partnerships.
               </p>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                {
-                  title: "Portugal",
-                  icon: "🇵🇹",
-                  desc: "Low tuition fees, English-medium bachelor's and master's degrees, and 29-country Schengen visa access.",
-                  badge: "Featured European Track",
-                },
-                {
-                  title: "Czech Republic",
-                  icon: "🇨🇿",
-                  desc: "Affordable European education in central Europe, world-renowned universities, and fast student visa processing.",
-                  badge: "Central Europe Hub",
-                },
                 {
                   title: "United Kingdom",
                   icon: "🇬🇧",
-                  desc: "1-year master's degrees, fast CAS turnaround, merit scholarships, and 2-year Graduate Route Post-Study Work visa.",
-                  badge: "Popular Master's",
-                },
-                {
-                  title: "Germany",
-                  icon: "🇩🇪",
-                  desc: "Tuition-free public universities, dual vocational programs, and 18-month post-study work search visa.",
-                  badge: "Europe Top Economy",
-                },
-                {
-                  title: "Canada",
-                  icon: "🇨🇦",
-                  desc: "Public Designated Learning Institutions (DLI), co-op internships, and up to 3-year Post-Graduation Work Permits.",
-                  badge: "Work Permits",
+                  desc: "1-year master's programs, fast CAS turnaround, low tuition fee universities, and 2-year Graduate Route Post-Study Work visa.",
+                  badge: "UK Office Support",
                 },
                 {
                   title: "United States",
                   icon: "🇺🇸",
-                  desc: "I-20 issuance, STEM OPT extensions (up to 3 years), and comprehensive consular mock interview coaching.",
-                  badge: "STEM Careers",
+                  desc: "I-20 issuance, up to 3 years STEM OPT work authorization, scholarship guidance, and expert visa interview preparation.",
+                  badge: "STEM & OPT",
                 },
                 {
                   title: "Australia",
                   icon: "🇦🇺",
-                  desc: "World top-ranked universities, high minimum wages for students, and Subclass 500 visa compliance.",
-                  badge: "Top Living",
+                  desc: "Top Group of Eight and progressive universities, high hourly wages, post-study work rights, and family dependent pathways.",
+                  badge: "High Minimum Wage",
                 },
                 {
-                  title: "Sweden & Europe",
-                  icon: "🇸🇪",
-                  desc: "High innovation indices, research-focused programs, and Schengen visa mobility across Europe.",
-                  badge: "Nordic Education",
+                  title: "Hungary",
+                  icon: "🇭🇺",
+                  desc: "Affordable tuition fees in Central Europe, English-medium degrees, and 29-nation Schengen visa mobility.",
+                  badge: "Schengen Europe",
+                },
+                {
+                  title: "Canada",
+                  icon: "🇨🇦",
+                  desc: "Top Designated Learning Institutions (DLI), co-op internships, and up to 3-year Post-Graduation Work Permits (PGWP).",
+                  badge: "Work Permits",
+                },
+                {
+                  title: "Finland",
+                  icon: "🇫🇮",
+                  desc: "World's happiest country, high innovation education, generous post-graduation permits, and tuition discounts.",
+                  badge: "Nordic Excellence",
+                },
+                {
+                  title: "Denmark",
+                  icon: "🇩🇰",
+                  desc: "Cutting-edge research universities, excellent work-life balance, and English-taught bachelor's & master's degrees.",
+                  badge: "European Leader",
+                },
+                {
+                  title: "Malaysia",
+                  icon: "🇲🇾",
+                  desc: "Cost-effective international degree transfers, UK/Australian branch campuses, and fast visa approvals.",
+                  badge: "Budget-Friendly",
+                },
+                {
+                  title: "Dubai (UAE)",
+                  icon: "🇦🇪",
+                  desc: "Rapid visa processing, tax-free part-time earning opportunities, and branch campuses of premier global institutions.",
+                  badge: "Fast Visa Turnaround",
                 },
               ].map((v) => (
                 <div
                   key={v.title}
-                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-sky-500/50 transition-colors"
+                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-amber-500/50 transition-colors"
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-2xl">{v.icon}</span>
-                      <span className="text-[0.65rem] font-bold text-sky-400 bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-500/30">
+                      <span className="text-[0.65rem] font-bold text-amber-400 bg-amber-500/20 px-2 py-0.5 rounded-full border border-amber-500/30">
                         {v.badge}
                       </span>
                     </div>
@@ -413,7 +420,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-[0.72rem] font-bold text-sky-400 hover:text-sky-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
+                    className="text-[0.72rem] font-bold text-amber-400 hover:text-amber-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
                   >
                     Check Eligibility →
                   </button>
@@ -427,15 +434,15 @@ function Services() {
       {/* 6. Transparency Comparison Table */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-sky-600">Kushtia IELTS Care</span>
+            Why Students Choose <span className="text-amber-500">Higher Study Counselors Bangladesh</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our dedicated audio lab, 300 BDT CBT mock test standard, Cambridge syllabus, and personalized coaching against traditional commercial coaching centers.
+            Compare our 100% IELTS Cash Back policy, family move support, long study gap acceptance, and dual-country offices against traditional agencies.
           </p>
         </div>
 
@@ -445,10 +452,10 @@ function Services() {
               <thead className="bg-slate-950 text-white font-display uppercase tracking-wider text-[0.7rem]">
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
-                  <th className="p-4 sm:p-5 text-amber-400 font-extrabold bg-slate-900">
-                    ★ Kushtia IELTS Care
+                  <th className="p-4 sm:p-5 text-amber-400 font-extrabold bg-[#161B38]">
+                    ★ HSC BD (Since 2012)
                   </th>
-                  <th className="p-4 sm:p-5 text-slate-400">Traditional Coaching Centers</th>
+                  <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -457,14 +464,14 @@ function Services() {
                     key={row.feature}
                     className={cn(
                       "transition-colors hover:bg-slate-50",
-                      row.highlight && "bg-sky-50/20",
+                      row.highlight && "bg-amber-50/20",
                     )}
                   >
                     <td className="p-4 sm:p-5 font-bold text-slate-900">{row.feature}</td>
-                    <td className="p-4 sm:p-5 font-bold text-sky-800 bg-sky-50/40">
+                    <td className="p-4 sm:p-5 font-bold text-slate-900 bg-amber-50/40">
                       <div className="flex items-center gap-2">
                         <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.ieltsCare}</span>
+                        <span>{row.hscbd}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -476,18 +483,18 @@ function Services() {
         </div>
       </section>
 
-      {/* 7. Step-by-Step Admission Process */}
+      {/* 7. Step-by-Step Roadmap */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
             <span>Structured Process</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Our Proven 5-Step Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Structured preparation from diagnostic evaluation at our Kushtia campus to IELTS target band achievement and university visa stamping.
+            Structured roadmap from free file evaluation at our Uttara Head Office to IELTS preparation, visa issuance, and UK on-ground reception.
           </p>
         </div>
 
@@ -495,10 +502,10 @@ function Services() {
           {processSteps.map((step) => (
             <div
               key={step.step}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-sky-500/50 hover:shadow-md transition-all"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-amber-500/50 hover:shadow-md transition-all"
             >
               <div className="flex items-center justify-between">
-                <span className="font-display font-black text-2xl text-sky-600">{step.step}</span>
+                <span className="font-display font-black text-2xl text-amber-600">{step.step}</span>
                 <span className="rounded-full bg-slate-100 text-slate-700 text-[0.68rem] font-bold px-2.5 py-0.5">
                   {step.badge}
                 </span>
@@ -517,7 +524,7 @@ function Services() {
             Frequently Asked Questions on Services
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Clear, transparent answers about Japanese N5/N4, TITP & SSW work programs, IELTS coaching, Japan-based management, and visa processing.
+            Clear, transparent answers about IELTS Cashback, Move with Family, Study Gap Acceptance, and UK/Dhaka offices.
           </p>
         </div>
 
@@ -530,7 +537,7 @@ function Services() {
                 className={cn(
                   "rounded-2xl border transition-all duration-300 overflow-hidden",
                   isOpen
-                    ? "bg-white border-sky-500 shadow-md ring-1 ring-sky-500/20"
+                    ? "bg-white border-amber-500 shadow-md ring-1 ring-amber-500/20"
                     : "bg-white border-slate-200 hover:border-slate-300",
                 )}
               >
@@ -543,7 +550,7 @@ function Services() {
                   <span
                     className={cn(
                       "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                      isOpen ? "bg-sky-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                      isOpen ? "bg-amber-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
                     )}
                   >
                     ↓

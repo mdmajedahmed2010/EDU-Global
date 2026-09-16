@@ -6,19 +6,20 @@ const field =
 const label = "mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-700";
 
 const serviceOptions = [
-  "IELTS Academic & General (Target Band 7.5+, Cambridge Aligned)",
-  "Computer-Based IELTS Mock Test (Only 300 BDT with Individual Headset)",
-  "Paper-Based IELTS Mock Test (Full Simulation & Detailed Band Feedback)",
+  "Study Abroad Consultation (UK, USA, Australia, Hungary, Canada, etc.)",
+  "IELTS Academic & General (100% Cash Back on Visa Success)",
+  "Opportunity to Move with Family (Spouse & Dependent Visa Support)",
+  "Long Study Gap Application Support (Accepted 7–10+ Years)",
+  "Low Tuition University Admissions & Scholarships",
   "Spoken English & Communication Fluency",
-  "Kids English Academy (Phonics, Vocabulary & Speaking for Children)",
-  "Study in Portugal (English-Taught Degrees & Schengen Mobility)",
-  "Study in Czech Republic & Europe (Low Tuition & Top Universities)",
-  "Global Study Abroad Consultancy (UK, Canada, Germany, USA, Australia)",
+  "Kids' English Academy (Ages 5–14)",
+  "English Grammar & Writing Foundation",
 ];
 
 const officeOptions = [
-  "Kushtia Campus (169/4, Mahatab Uddin Road, Old Kataikhana More)",
-  "Online Consultation (WhatsApp / Phone Call)",
+  "Dhaka Head Office (House 23, Road 2, Sector 3, Uttara, Dhaka - 1230)",
+  "UK Office (3A Westburn Road, Glasgow, UK)",
+  "Online Consultation (WhatsApp / Phone Call / Zoom)",
 ];
 
 export function RegisterForm({ onDone }: { onDone?: () => void }) {
@@ -27,10 +28,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     name: "",
     email: "",
     phone: "",
-    service: "IELTS Academic & General (Target Band 7.5+, Cambridge Aligned)",
-    destination: "Portugal",
+    service: "Study Abroad Consultation (UK, USA, Australia, Hungary, Canada, etc.)",
+    destination: "United Kingdom (UK)",
     currentStatus: "HSC / A-Level Completed (Bachelor's Aspirant)",
-    office: "Kushtia Campus (169/4, Mahatab Uddin Road, Old Kataikhana More)",
+    office: "Dhaka Head Office (House 23, Road 2, Sector 3, Uttara, Dhaka - 1230)",
     message: "",
   });
 
@@ -39,7 +40,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
   const whatsappHref = () => {
     const lines = [
-      "✨ Free Consultation / Mock Booking — Kushtia IELTS Care",
+      "✨ Free Consultation Request — Higher Study Counselors Bangladesh",
       `👤 Name: ${form.name}`,
       `📞 Phone: ${form.phone}`,
       form.email ? `✉️ Email: ${form.email}` : "",
@@ -48,7 +49,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       `🎓 Status/Background: ${form.currentStatus}`,
       `🏢 Preferred Office/Mode: ${form.office}`,
       form.message ? `📝 Notes: ${form.message}` : "",
-      "\nI would like to schedule a free counseling session / book a 300 BDT mock test at Kushtia IELTS Care.",
+      "\nI would like to schedule a free counseling session with Higher Study Counselors Bangladesh.",
     ].filter(Boolean);
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
@@ -65,17 +66,16 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
         <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-emerald-100 text-4xl shadow-inner">
           ✅
         </div>
-        <h3 className="font-display text-2xl font-black text-slate-900">Booking Confirmed! 🎉</h3>
+        <h3 className="font-display text-2xl font-black text-slate-900">Appointment Requested! 🎉</h3>
         <p className="mx-auto max-w-md text-sm text-slate-600 leading-relaxed">
-          Thank you, <strong className="text-slate-900">{form.name}</strong>! Your consultation /
-          mock test request has been registered. An instructor from <strong>{company.name}</strong> will contact you on{" "}
+          Thank you, <strong className="text-slate-900">{form.name}</strong>! Your consultation request has been registered. An expert counselor from <strong>{company.name}</strong> will contact you on{" "}
           <strong className="text-emerald-700">{form.phone}</strong> shortly.
         </p>
         <div className="mt-2 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-xs text-emerald-800 text-left space-y-1">
-          <p>✔ ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়া</p>
-          <p>✔ আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট সুবিধা</p>
-          <p>✔ মাত্র ৩০০ টাকায় পূর্ণাঙ্গ কম্পিউটার-ভিত্তিক ও পেপার-বেসড মক টেস্ট</p>
-          <p>✔ পর্তুগাল ও ইউরোপের স্টুডেন্ট ভিসা কনসালটেন্সি</p>
+          <p>✔ House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230</p>
+          <p>✔ 3A Westburn Road, Glasgow, UK</p>
+          <p>✔ 100% IELTS Cash Back on Successful Visa Grant</p>
+          <p>✔ Opportunity to Move with Family & Long Study Gap Accepted</p>
         </div>
         <div className="pt-2 flex flex-col gap-2">
           <a
@@ -84,7 +84,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
             rel="noreferrer"
             className="btn-emerald text-xs py-3 justify-center shadow-md"
           >
-            💬 Open WhatsApp Chat with Kushtia IELTS Care
+            💬 Open WhatsApp Chat with HSC BD Counselor
           </a>
           {onDone && (
             <button
@@ -104,13 +104,13 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div className="border-b border-slate-100 pb-3 mb-2">
         <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-amber-600">
-          Kushtia IELTS Care · a great place to learn
+          Higher Study Counselors Bangladesh · Since 2012
         </span>
         <h3 className="font-display text-xl font-black text-slate-900">
-          Book Your Assessment or 300 BDT Mock Test
+          Book Your Free Assessment & Profile Evaluation
         </h3>
         <p className="text-xs text-slate-500 mt-0.5">
-          Old Kataikhana More, Kushtia · Modern Audio Lab & European Consultancy
+          Sector 3, Uttara, Dhaka & Glasgow, UK · 100% IELTS Cash Back On Visa Success
         </p>
       </div>
 
@@ -264,7 +264,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       </button>
 
       <p className="text-center text-[0.7rem] text-slate-600">
-        🔒 100% Privacy Guaranteed · Kushtia IELTS Care · Old Kataikhana More, Kushtia
+        🔒 100% Privacy Guaranteed · Higher Study Counselors Bangladesh · Uttara, Dhaka & Glasgow, UK
       </p>
     </form>
   );

@@ -8,73 +8,73 @@ import { SlideIn, StaggerContainer, StaggerItem } from "@/components/motion-wrap
 const roadmapStages = [
   {
     step: "01",
-    title: "Free Profile & English Diagnostic Assessment",
+    title: "Free Profile Assessment & Destination Selection",
     timeline: "Day 0 – 2",
-    badge: "Personalized Study Plan",
-    desc: "Comprehensive evaluation of your educational background, current English proficiency level, and study abroad ambitions (Portugal, Czech Republic, UK, Canada, Australia) by Kushtia IELTS Care advisors.",
+    badge: "Free Consultation",
+    desc: "Comprehensive evaluation of your academic history, study gap, English level, and global study ambitions (UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, Dubai) by Higher Study Counselors Bangladesh.",
     checklist: [
-      "Academic Certificate Review",
-      "Free English Proficiency & Band Evaluation",
-      "Tailored IELTS & Destination Roadmap",
+      "Academic Transcript & Certificate Audit",
+      "Long Study Gap Evaluation & Strategy",
+      "Tailored Destination & Budget Planning",
     ],
     counselorTip:
-      `Visit our center at 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia, or connect via WhatsApp (${company.phones[0]} / ${company.phones[1]}).`,
+      `Visit our Head Office at House 23, Road 2, Sector 3, Uttara, Dhaka, or connect via WhatsApp (${company.phones[0]} / ${company.phones[1]}).`,
   },
   {
     step: "02",
-    title: "Cambridge IELTS Coaching & Audio Lab Practice",
-    timeline: "Weeks 1 – 10",
-    badge: "Modern Audio Lab",
-    desc: "Join interactive Cambridge IELTS batches with individual headphones in our dedicated listening audio lab, intensive speaking sessions, and targeted writing feedbacks.",
+    title: "IELTS Preparation with 100% Cash Back on Visa",
+    timeline: "Weeks 1 – 8",
+    badge: "IELTS Cash Back Offer",
+    desc: "Join our intensive IELTS Academic/General, Spoken English, or Kids English coaching. Upon successful student visa grant through HSC BD, receive 100% course fee cash back!",
     checklist: [
-      "Individual Headset Listening Audio Lab",
-      "1-on-1 Cambridge Speaking Evaluations",
-      "Structured Grammar & Writing Templates",
+      "Cambridge Exam Curriculum & Mock Tests",
+      "Target Band 6.5 - 7.5+ Strategy Modules",
+      "Automatic Cash Back Enrollment on Visa Lodgment",
     ],
     counselorTip:
-      "Individual headphone practice eliminates audio distortion and guarantees realistic exam conditions to secure Band 7.0+.",
+      "Our IELTS coaching is tailored to ensure you meet university English requirements quickly while securing our signature 100% Cash Back on Visa Success guarantee.",
   },
   {
     step: "03",
-    title: "Computer-Based & Paper Mock Tests (300 BDT)",
-    timeline: "Weeks 8 – 12",
-    badge: "300 BDT Exam Experience",
-    desc: "Take full-length Cambridge computer-based and paper-based mock tests in our lab for only 300 BDT with immediate diagnostic score breakdowns.",
+    title: "Low Tuition University Offer Letter & Admission",
+    timeline: "Weeks 4 – 10",
+    badge: "Affordable Universities",
+    desc: "Fast-track admissions to accredited universities with low tuition fees, high visa success rates, and flexible entry requirements across UK, Europe, and North America.",
     checklist: [
-      "Authentic Exam Simulation Interface",
-      "Immediate Band Score & Error Feedback",
-      "Final Band Booster Strategy Sessions",
+      "Direct Application to Partner Institutions",
+      "Offer Letter Issuance (Conditional / Unconditional)",
+      "Scholarship & Tuition Discount Assistance",
     ],
     counselorTip:
-      "Testing in real exam conditions before your official test date minimizes exam anxiety and boosts time management.",
+      "We partner with reputable universities offering lower tuition costs and installment payment facilities, easing your financial journey.",
   },
   {
     step: "04",
-    title: "University Admission & Document Auditing",
-    timeline: "Weeks 12 – 16",
-    badge: "European University Offers",
-    desc: "Direct applications to accredited universities in Portugal (Lisbon, Porto, Coimbra, Aveiro), Czech Republic, and top English-speaking nations with scholarship guidance.",
+    title: "Move with Family & Financial Advice & Guidance",
+    timeline: "Weeks 8 – 14",
+    badge: "Move With Family",
+    desc: "Specialized assistance for students planning to move with spouse and children. Comprehensive bank solvency preparation, fund justification, and CAS/I-20 issuance.",
     checklist: [
-      "Official Offer Letter / Admission Acceptance",
-      "Tuition Fee Transfer Verification",
-      "Document Legalization & Apostille Support",
+      "Family & Dependent Visa Document Structuring",
+      "Authentic Financial Advice & Solvency Auditing",
+      "CAS / I-20 / Confirmation of Acceptance Acquisition",
     ],
     counselorTip:
-      "Our counselors verify all educational certificates and bank solvency documents to ensure 100% compliance with Schengen visa directives.",
+      "Our counselors have extensive experience with dependent visas, ensuring legal compliance so your family can accompany you seamlessly.",
   },
   {
     step: "05",
-    title: "VFS / Embassy File Lodgement & Pre-Departure",
+    title: "Visa Lodgment, UK Office Support & Pre-Departure",
     timeline: "Prior to Travel",
-    badge: "Schengen Visa Success",
-    desc: "Comprehensive visa dossier filing, consular interview preparation, flight bookings, and arrival guidance in Portugal and across Europe.",
+    badge: "Global Visa Success",
+    desc: "Meticulous visa dossier preparation, biometrics appointment scheduling, flight booking assistance, and on-ground coordination via our Glasgow, UK office.",
     checklist: [
-      "VFS Global Appointment & Visa Submission",
-      "Pre-Departure Briefing & Currency Guidance",
-      "Lifelong Kushtia IELTS Care Alumni Network",
+      "Embassy / VFS File Lodgment & Interview Prep",
+      "Pre-Departure Briefing on Part-Time Jobs & Accommodation",
+      "UK & Overseas Alumni Network Support",
     ],
     counselorTip:
-      "We prepare you for life abroad with detailed orientation on European residence cards, part-time student work, and accommodation.",
+      "With offices in both Dhaka and Glasgow, UK, our support doesn't end when your visa arrives—we guide you through arrival, accommodation, and part-time job hunting.",
   },
 ];
 
@@ -207,7 +207,7 @@ export function IlluminatedFlightPath() {
 
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                  `Hello Kushtia IELTS Care! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
+                  `Hello Higher Study Counselors Bangladesh! I am currently at Stage ${current.step} (${current.title}). Please guide me on next steps.`,
                 )}`}
                 target="_blank"
                 rel="noreferrer"

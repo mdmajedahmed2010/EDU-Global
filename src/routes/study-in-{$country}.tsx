@@ -11,11 +11,11 @@ export const Route = createFileRoute("/study-in-{$country}")({
   head: ({ loaderData }) => {
     const d = loaderData?.destination;
     const title = d
-      ? `Study in ${d.name} from Kushtia | Kushtia IELTS Care — IELTS & Visa Guidance`
-      : "Study Abroad Destinations | Kushtia IELTS Care";
+      ? `Study in ${d.name} | Higher Study Counselors Bangladesh — IELTS Cash Back & Visa`
+      : "Study Abroad Destinations | Higher Study Counselors Bangladesh";
     const description = d
-      ? `${d.tagline}. Institutional admissions, Cambridge IELTS preparation, and visa guidance for ${d.name} from Kushtia IELTS Care. 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia. Hotline: ${company.phones[0]}.`
-      : "Study abroad and Cambridge IELTS coaching from Kushtia IELTS Care.";
+      ? `${d.tagline}. University admissions, 100% IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance for ${d.name} with Higher Study Counselors Bangladesh (Since 2012). Head Office: Uttara, Dhaka. UK Office: Glasgow, UK. Hotlines: ${company.phones[0]} / ${company.phones[1]}.`
+      : "Study abroad and Cambridge IELTS coaching from Higher Study Counselors Bangladesh.";
     return {
       meta: [
         { title },
@@ -32,18 +32,18 @@ function DestinationPage() {
   const { destination: d } = Route.useLoaderData();
 
   const whatsappHref = () => {
-    const text = `Hello Kushtia IELTS Care! I want to explore education / career pathways in ${d.name}.\n\nPlease guide me on admission requirements, Cambridge IELTS score requirements, and upcoming intake deadlines.`;
+    const text = `Hello Higher Study Counselors Bangladesh! I want to explore higher education pathways in ${d.name}.\n\nPlease guide me on admission requirements, low tuition universities, IELTS Cash Back on Visa Success, and upcoming intake deadlines.`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
   return (
     <>
       <PageHero
-        eyebrow={`${d.flag} ${d.region} · Verified Pathway`}
-        title={`Pathway to ${d.name}`}
+        eyebrow={`${d.flag} ${d.region} · Official Destination`}
+        title={`Study in ${d.name}`}
         subtitle={d.tagline}
         image="/banner.jpg"
-        imageAlt={`Study in ${d.name} — Kushtia IELTS Care guidance`}
+        imageAlt={`Study in ${d.name} — Higher Study Counselors Bangladesh`}
       >
         <div className="space-y-6">
           <Breadcrumbs
@@ -90,7 +90,7 @@ function DestinationPage() {
                   <span className="text-slate-500 block text-xs font-medium">
                     Post-Study Work Visa:
                   </span>
-                  <span className="font-bold text-sky-600 mt-1 block">{d.pswv}</span>
+                  <span className="font-bold text-amber-600 mt-1 block">{d.pswv}</span>
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200">
                   <span className="text-slate-500 block text-xs font-medium">Major Intakes:</span>
@@ -98,7 +98,7 @@ function DestinationPage() {
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200">
                   <span className="text-slate-500 block text-xs font-medium">Scholarships / Perks:</span>
-                  <span className="font-bold text-sky-600 mt-1 block">{d.scholarships}</span>
+                  <span className="font-bold text-amber-600 mt-1 block">{d.scholarships}</span>
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200">
                   <span className="text-slate-500 block text-xs font-medium">
@@ -116,7 +116,7 @@ function DestinationPage() {
             {/* Why Study in Country */}
             <div className="rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm">
               <h2 className="font-display text-xl font-black text-slate-900 mb-4">
-                Why Choose {d.name} with Kushtia IELTS Care?
+                Why Choose {d.name} with Higher Study Counselors Bangladesh?
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 font-medium">
                 {d.intro}
@@ -135,7 +135,7 @@ function DestinationPage() {
                     key={uni}
                     className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4"
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-lg shadow-sm border border-sky-200 text-sky-600">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-lg shadow-sm border border-amber-200 text-amber-600">
                       🎓
                     </span>
                     <span className="text-xs font-bold text-slate-800">{uni}</span>
@@ -147,16 +147,16 @@ function DestinationPage() {
 
           {/* Right Sidebar: Assessment Form & Hotlines */}
           <aside className="space-y-6">
-            <div className="rounded-3xl p-6 sm:p-8 sticky top-24 border border-sky-200 bg-white shadow-md space-y-4">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-sky-50 border border-sky-200 px-3 py-1 text-xs font-bold text-sky-700">
-                Direct Counselor Support
+            <div className="rounded-3xl p-6 sm:p-8 sticky top-24 border border-amber-200 bg-white shadow-md space-y-4">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 border border-amber-200 px-3 py-1 text-xs font-bold text-amber-700">
+                Official Senior Counselor Support
               </span>
               <h3 className="font-display text-lg font-black text-slate-900">
-                Apply for {d.name} with Kushtia IELTS Care
+                Apply for {d.name} with HSC BD
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                Connect directly with our Kushtia counselors for university shortlisting,
-                IELTS target band preparation, and transparent visa documentation.
+                Connect directly with our senior foreign education counselors for university shortlisting,
+                IELTS 100% Cash Back guarantee, Opportunity to Move with Family, and long study gap evaluation.
               </p>
 
               <div className="space-y-2.5 pt-2">
@@ -178,13 +178,13 @@ function DestinationPage() {
 
               <div className="border-t border-slate-100 pt-4 text-xs text-slate-600 space-y-2">
                 <p>
-                  <strong>📍 Kushtia Campus:</strong> {company.address.full}
+                  <strong>📍 Dhaka Head Office:</strong> {company.address.full}
                 </p>
                 <p>
-                  <strong>🎧 Facilities:</strong> Modern Audio Lab (Individual Headsets)
+                  <strong>🇬🇧 UK Office:</strong> 3A Westburn Road, Glasgow, UK
                 </p>
                 <p>
-                  <strong>💻 Mock Tests:</strong> 300 BDT Computer-Based & Paper-Based
+                  <strong>💰 Special Offer:</strong> 100% IELTS Cash Back on Visa Success
                 </p>
                 <p>
                   <strong>🕒 Hours:</strong> {company.hours}

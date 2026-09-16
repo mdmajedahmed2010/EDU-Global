@@ -11,7 +11,17 @@ export function Testimonials() {
     destination: `${r.course} (${r.destination})`,
     quote: r.quote,
     stars: 5,
-    flag: r.destination.includes("Japan") ? "🇯🇵" : r.destination.includes("Germany") ? "🇩🇪" : "🇬🇧",
+    flag: r.destination.includes("UK")
+      ? "🇬🇧"
+      : r.destination.includes("USA")
+        ? "🇺🇸"
+        : r.destination.includes("Australia")
+          ? "🇦🇺"
+          : r.destination.includes("Canada")
+            ? "🇨🇦"
+            : r.destination.includes("Hungary")
+              ? "🇭🇺"
+              : "🇬🇧",
     initials: r.name
       .split(" ")
       .map((n) => n[0])
@@ -32,7 +42,7 @@ export function Testimonials() {
           tag="— VERIFIED REVIEWS & SUCCESS STORIES —"
           title="What our students"
           highlight="say"
-          description="Real feedback from Cambridge IELTS candidates, CBT mock test takers, Spoken English students, and European visa applicants guided by Kushtia IELTS Care."
+          description="Real feedback from students who achieved foreign university admissions, IELTS cash back rewards, and family visas with Higher Study Counselors Bangladesh since 2012."
           tagColor="text-sky-600"
           highlightColor="text-sky-600"
         />

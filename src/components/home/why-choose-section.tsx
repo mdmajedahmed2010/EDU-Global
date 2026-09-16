@@ -1,62 +1,63 @@
 import { CountUp, MotionHeading, StaggerContainer, StaggerItem } from "@/components/motion-wrapper";
+import { company } from "@/lib/site-data";
 
 export function WhyChooseSection() {
   const features = [
     {
-      icon: "🎧",
-      iconBg: "bg-blue-50 text-blue-800",
-      value: 100,
-      suffix: "%",
+      icon: "🏛️",
+      iconBg: "bg-blue-50 text-[#161b38]",
+      value: 14,
+      suffix: "+ Yrs",
       label: "",
-      metricColor: "text-blue-800",
-      tag: "MODERN AUDIO LAB",
-      title: "আধুনিক সাউন্ড ল্যাব",
-      desc: "আইইএলটিএস লিসেনিং পরীক্ষার সঠিক প্রস্তুতির জন্য পৃথক হেডসেট ও ক্রিস্টাল ক্লিয়ার অডিও সেটআপ।",
+      metricColor: "text-[#161b38]",
+      tag: "ESTABLISHED SINCE 2012",
+      title: "১৪+ বছরের আস্থা ও অভিজ্ঞতা",
+      desc: "২০১২ সাল থেকে উত্তরা, ঢাকায় উচ্চশিক্ষা ও স্টুডেন্ট ভিসা প্রসেসিংয়ে সততা, নির্ভরযোগ্যতা ও সহস্রাধিক ভিসা সাকসেস।",
     },
     {
-      icon: "🎯",
+      icon: "🎁",
       iconBg: "bg-amber-50 text-amber-700",
-      value: 300,
-      suffix: " ৳",
+      value: 100,
+      suffix: "%",
       label: "",
       metricColor: "text-amber-600",
-      tag: "FULL CBT & PBT MOCKS",
-      title: "কম্পিউটার মক টেস্ট",
-      desc: "মাত্র ৩০০ টাকায় আসল পরীক্ষার হুবহু পরিবেশে কম্পিউটার-ভিত্তিক ও পেপার-বেসড মক টেস্ট এবং পূর্ণাঙ্গ ফিডব্যাক।",
+      tag: "IELTS CASH BACK PROMO",
+      title: "ভিসা হলে IELTS ক্যাশ ব্যাক",
+      desc: "আমাদের মাধ্যমে IELTS প্রস্তুতি ও স্টুডেন্ট ভিসা প্রসেস সম্পন্ন হলে ভিসা প্রাপ্তির পর সম্পূর্ণ IELTS পরীক্ষার ফি ক্যাশ ব্যাক!",
     },
     {
-      icon: "📚",
+      icon: "👥",
       iconBg: "bg-emerald-50 text-emerald-600",
-      value: 7.5,
-      suffix: "+",
-      label: "",
-      metricColor: "text-emerald-600",
-      tag: "CAMBRIDGE SYLLABUS",
-      title: "কেমব্রিজ কারিকুলাম ও কেয়ার",
-      desc: "অভিজ্ঞ মেন্টর, সীমিত আসনের ব্যাচ ও প্রতি শিক্ষার্থীর দুর্বলতা চিহ্নিত করে বিশেষ রিভিশন ও স্পিকিং টেস্ট।",
-    },
-    {
-      icon: "🇵🇹",
-      iconBg: "bg-indigo-50 text-indigo-600",
       value: 100,
       suffix: "%",
       label: "",
+      metricColor: "text-emerald-600",
+      tag: "MOVE WITH FAMILY",
+      title: "পরিবার ও স্পাউস ভিসা সুবিধা",
+      desc: "ইউকে, অস্ট্রেলিয়া, ফিনল্যান্ড ও ডেনমার্কে পোস্টগ্র্যাজুয়েট শিক্ষার্থীদের স্পাউস ও সন্তানসহ একসঙ্গে ভিসা প্রসেসিং সহায়তা।",
+    },
+    {
+      icon: "📊",
+      iconBg: "bg-indigo-50 text-indigo-600",
+      value: 10,
+      suffix: "+ Yrs",
+      label: "",
       metricColor: "text-indigo-600",
-      tag: "PORTUGAL & EUROPE",
-      title: "ইউরোপ স্টাডি ভিসা সাপোর্ট",
-      desc: "পর্তুগাল ও ইউরোপের বিভিন্ন স্বনামধন্য বিশ্ববিদ্যালয়ে অফার লেটার ও এম্বাসি ফাইল প্রসেসিংয়ে নির্ভুল গাইডলাইন।",
+      tag: "GAP ACCEPTED",
+      title: "দীর্ঘ স্টাডি গ্যাপ গ্রহণযোগ্য",
+      desc: "এইচএসসি, অনার্স বা মাস্টার্সের পর দীর্ঘ স্টাডি গ্যাপ থাকলেও সঠিক ওয়ার্ক এক্সপেরিয়েন্স ও পোর্টফোলিও দ্বারা সফল ভিসা প্রাপ্তি।",
     },
   ];
 
   return (
     <section className="relative py-16 sm:py-24 bg-white border-b border-slate-200/80">
       <div className="section-shell">
-        {/* Title with Editorial Italic Serif & Framer Motion */}
+        {/* Title with Framer Motion */}
         <MotionHeading
-          tag="— WHY KUSHTIA IELTS CARE —"
+          tag="— WHY HIGHER STUDY COUNSELORS BANGLADESH —"
           title="Why choose"
-          highlight="Kushtia IELTS Care?"
-          description="কুষ্টিয়ায় আন্তর্জাতিক মানের সাউন্ড ল্যাব, কেমব্রিজ সিলেবাস, কম্পিউটার বেসড মক টেস্ট এবং ইউরোপের স্টুডেন্ট ভিসা কনসালটেন্সি নিয়ে আমরা আপনার বিশ্বস্ত সঙ্গী। a great place to learn!"
+          highlight="HSC Bangladesh?"
+          description="উত্তরা সেক্টর ৩-এ অবস্থিত আমাদের প্রধান কার্যালয় এবং যুক্তরাজ্যের গ্লাসগোতে নিজস্ব অফিসের মাধ্যমে আমরা প্রদান করি স্বচ্ছ, পেশাদার এবং সম্পূর্ণ নির্ভুল স্টাডি অ্যাব্রড ও ল্যাঙ্গুয়েজ কাউন্সেলিং।"
           tagColor="text-amber-600"
           highlightColor="text-amber-600"
         />
@@ -89,10 +90,10 @@ export function WhyChooseSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-display text-base font-bold text-slate-900 mb-2">{f.title}</h3>
+                <h3 className="font-display text-base font-bold text-[#161b38] mb-2">{f.title}</h3>
 
                 {/* Description */}
-                <p className="text-xs text-slate-500 leading-relaxed font-medium font-bangla">{f.desc}</p>
+                <p className="text-xs text-slate-600 leading-relaxed font-medium font-bangla">{f.desc}</p>
               </div>
             </StaggerItem>
           ))}

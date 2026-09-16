@@ -7,58 +7,78 @@ import { Link } from "@tanstack/react-router";
 import { SlideIn } from "@/components/motion-wrapper";
 
 const educationLevels = [
-  { id: "hsc", label: "HSC / Alim / Equivalent", subtitle: "Undergrad Abroad & IELTS" },
-  { id: "bachelor", label: "Bachelor's / Diploma", subtitle: "Master's, Europe & PSW Track" },
+  { id: "hsc", label: "HSC / A-Levels / Equivalent", subtitle: "Undergraduate Abroad & Foundation" },
+  { id: "bachelor", label: "Bachelor's / Honors / Diploma", subtitle: "Master's & Post-Study Work Visa" },
   {
     id: "masters",
-    label: "Master's / Professional",
-    subtitle: "Postgraduate & Skilled Migration",
+    label: "Master's / Professional Experience",
+    subtitle: "Postgraduate & Family Relocation",
   },
 ];
 
 const englishProficiency = [
-  { id: "ielts", label: "Cambridge IELTS (Target 7.5+)", badge: "Flagship Course" },
-  { id: "mock", label: "Audio Lab CBT Mock Test (300 BDT)", badge: "Special Facility" },
-  { id: "spoken", label: "Spoken English & Fluency", badge: "Practical Speaking" },
-  { id: "kids", label: "Kids English Academy (Ages 5–14)", badge: "Phonics & Junior Care" },
+  { id: "ielts", label: "IELTS (Academic & General)", badge: "Cash Back Offer" },
+  { id: "spoken", label: "Spoken English & Fluency", badge: "Interview Prep" },
+  { id: "kids", label: "Kids' English Academy", badge: "Ages 5–14" },
+  { id: "moi", label: "Without IELTS (MOI Track)", badge: "Europe & Dubai" },
 ];
 
 const destinationPreferences = [
   {
-    id: "portugal",
-    name: "Portugal",
-    flag: "🇵🇹",
-    tag: "Schengen Gateway & PR",
-    partner: "Affordable Public Unis",
-  },
-  {
-    id: "czech",
-    name: "Czech Republic",
-    flag: "🇨🇿",
-    tag: "Central European Hub",
-    partner: "Top Public Universities",
-  },
-  {
     id: "uk",
     name: "United Kingdom",
     flag: "🇬🇧",
-    tag: "1-Yr Masters / 2-Yr PSW",
-    partner: "Direct Admissions",
+    tag: "1-Yr Masters / Family",
+    partner: "Top UK Universities",
   },
-  { id: "canada", name: "Canada", flag: "🇨🇦", tag: "3-Yr PGWP / Co-op", partner: "Public DLIs" },
+  {
+    id: "usa",
+    name: "United States",
+    flag: "🇺🇸",
+    tag: "STEM OPT 3 Years",
+    partner: "High Scholarships",
+  },
   {
     id: "australia",
     name: "Australia",
     flag: "🇦🇺",
-    tag: "Top Degrees / High Wages",
-    partner: "Group of Eight",
+    tag: "Spouse Work Rights",
+    partner: "Go8 & Tech Unis",
   },
   {
-    id: "germany",
-    name: "Germany",
-    flag: "🇩🇪",
-    tag: "Tuition-Free & Research",
-    partner: "Public Universities",
+    id: "hungary",
+    name: "Hungary",
+    flag: "🇭🇺",
+    tag: "Low Tuition / Schengen",
+    partner: "Tuition After Visa",
+  },
+  {
+    id: "canada",
+    name: "Canada",
+    flag: "🇨🇦",
+    tag: "PGWP & PR Pathways",
+    partner: "Public DLIs",
+  },
+  {
+    id: "finland",
+    name: "Finland",
+    flag: "🇫🇮",
+    tag: "30 Hrs/Wk Work Rights",
+    partner: "Nordic Happiness",
+  },
+  {
+    id: "malaysia",
+    name: "Malaysia",
+    flag: "🇲🇾",
+    tag: "Twin Degrees / Low Cost",
+    partner: "Fast Visa Approval",
+  },
+  {
+    id: "dubai",
+    name: "Dubai (UAE)",
+    flag: "🇦🇪",
+    tag: "100% Visa / No IELTS",
+    partner: "Work & Study Track",
   },
 ];
 
@@ -66,20 +86,20 @@ export function VisaPathfinder() {
   const { open } = useRegisterModal();
   const [eduLevel, setEduLevel] = useState("bachelor");
   const [english, setEnglish] = useState("ielts");
-  const [destination, setDestination] = useState("portugal");
+  const [destination, setDestination] = useState("uk");
 
   // Dynamic computation logic
   const getMatchData = () => {
-    if (english === "mock") {
+    if (english === "kids") {
       return {
         matchScore: 100,
-        title: "Audio Lab CBT Mock Test (300 BDT)",
-        headline: "Computer-Based Real Exam Simulation with Individual Headsets",
-        timeline: "Every Week at Kushtia Campus",
-        scholarship: "Only 300 BDT per test with Immediate Diagnostic Band Evaluation",
-        moiAccepted: "Listening, Reading, Writing & 1-on-1 Speaking",
+        title: "Kids' English Academy (Ages 5–14)",
+        headline: "Phonics, Interactive Storytelling & Confident Speaking for Children",
+        timeline: "Ongoing Weekend & After-School Batches",
+        scholarship: "Free Parent Orientation & Child Level Assessment",
+        moiAccepted: "Joyful English learning, correct British pronunciation & rhymes",
         partnerNote:
-          "Take real exam feel in our state-of-the-art audio lab at Old Kataikhana More, Kushtia. Individual sound isolation headsets eliminate echo.",
+          "Conducted at our modern, child-friendly campus at House 23, Road 2, Sector 3, Uttara, Dhaka with gentle, patient teachers.",
         actionType: "course",
       };
     }
@@ -87,96 +107,96 @@ export function VisaPathfinder() {
     if (english === "spoken") {
       return {
         matchScore: 98,
-        title: "Kushtia IELTS Care Spoken English Fluency",
-        headline: "Interactive Fluency, Pronunciation & Job Interview Confidence",
-        timeline: "2 Months Intensive Practice",
-        scholarship: "Free Speaking Level Assessment & Practice Materials",
-        moiAccepted: "Practical Everyday & Professional Corporate Communication",
+        title: "Spoken English & Communication Mastery",
+        headline: "Break Speaking Hesitation, Refine Accent & Master Embassy Interviews",
+        timeline: "2 Months Intensive Fluency Drills",
+        scholarship: "Free Speaking Level Evaluation & Presentation Coaching",
+        moiAccepted: "Situational Roleplays, Group Discussions & Daily Dialogue",
         partnerNote:
-          "Conducted at our Kushtia campus with daily conversational drills, presentation sessions, and public speaking confidence building.",
+          "Interactive speaking sessions at our Sector 3 Uttara office designed for students, job holders, and visa applicants.",
         actionType: "course",
-      };
-    }
-
-    if (english === "kids") {
-      return {
-        matchScore: 100,
-        title: "Kids English Academy (Ages 5–14)",
-        headline: "Fun, Creative & Child-Centric English Learning (Ages 5–14)",
-        timeline: "3 Months Interactive Batches",
-        scholarship: "Free Trial Class & Parent Orientation",
-        moiAccepted: "Phonics, Storytelling & Spoken Habits",
-        partnerNote:
-          "Child-friendly interactive classrooms with caring, patient instructors at 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia.",
-        actionType: "course",
-      };
-    }
-
-    if (destination === "portugal") {
-      return {
-        matchScore: 99,
-        title: "Portugal European Schengen Study Pathway",
-        headline: "Affordable Higher Education, Part-Time Work & Schengen Residence Card",
-        timeline: "Fall & Spring Intakes Open",
-        scholarship: "Affordable Tuition (€1,500 – €3,500/year) + Work Rights",
-        moiAccepted: "Public Universities in Lisbon, Porto, Coimbra, Aveiro",
-        partnerNote:
-          "Our flagship European destination. Complete assistance with documentation, university admissions, and VFS Global Schengen student visa filing from Kushtia.",
-        actionType: "abroad",
-      };
-    }
-
-    if (destination === "czech") {
-      return {
-        matchScore: 98,
-        title: "Czech Republic European University Track",
-        headline: "Prestigious Central European Public Universities & High Safety",
-        timeline: "September & February Intakes",
-        scholarship: "Low Living Costs & High Student Employment Opportunities",
-        moiAccepted: "English-Taught Bachelor's & Master's Programs",
-        partnerNote:
-          "Full visa and document nostrification guidance from Kushtia IELTS Care campus.",
-        actionType: "abroad",
       };
     }
 
     if (destination === "uk") {
       return {
-        matchScore: 98,
-        title: "UK Direct University Admission",
-        headline: "1-Year Master's, 2-Year PSW & Fast CAS Turnaround",
-        timeline: "Offer Letter in 1–2 Weeks",
-        scholarship: "Up to £2,000 – £4,000 International Bursaries",
-        moiAccepted: "IELTS 6.5+ or MOI Options",
+        matchScore: 99,
+        title: "United Kingdom Master's & Family Move",
+        headline: "1-Year Fast Master's, 2-Year Graduate Route PSW & IELTS Cashback on Visa",
+        timeline: "Offer Letter in 1–2 Weeks · Major Intakes: Jan, May, Sep",
+        scholarship: "£1,500 – £5,000 University Merit Bursaries + IELTS Cashback",
+        moiAccepted: "IELTS 6.0–6.5 or MOI acceptance in select partner universities",
         partnerNote:
-          "Kushtia IELTS Care provides complete visa file auditing and 1-on-1 embassy mock interview coaching in Kushtia.",
+          "Higher Study Counselors Bangladesh provides full spouse/dependent visa processing, bank solvency guidance, and 1-on-1 consular mock interviews.",
         actionType: "abroad",
       };
     }
 
-    if (destination === "canada") {
+    if (destination === "hungary") {
+      return {
+        matchScore: 98,
+        title: "Hungary European Schengen Degree Track",
+        headline: "Low Tuition Fees (€1,800–€3,500/yr), Tuition After Visa & 29 Schengen Countries",
+        timeline: "Fall (September) & Spring (February) Intakes",
+        scholarship: "Low Cost of Living + Stipendium Hungaricum Opportunities",
+        moiAccepted: "MOI Accepted / With or Without IELTS",
+        partnerNote:
+          "Featured on our official banner. Study gap accepted with job proof. Complete documentation and Schengen visa assistance from Uttara Dhaka HQ.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "australia") {
+      return {
+        matchScore: 97,
+        title: "Australia Master's & Spouse Full Work Rights",
+        headline: "Post-Study Work Visas up to 4+ Years & Legal Spouse Full-Time Employment",
+        timeline: "February & July Intakes",
+        scholarship: "20% – 30% International Student Merit Reductions",
+        moiAccepted: "IELTS 6.5+ / PTE Academic Accepted",
+        partnerNote:
+          "Subclass 500 visa filing, Genuine Student (GS) formulation, and joint dependent file processing by senior HSC BD counselors.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "usa") {
       return {
         matchScore: 96,
-        title: "Canada DLI Admission & Work Permit",
-        headline: "Top Designated Learning Institutions with up to 3-Year PGWP",
-        timeline: "Jan, May & Sep Intakes",
-        scholarship: "CAD $2,000 – $8,000 Entrance Grants",
-        moiAccepted: "IELTS / PTE Accepted",
+        title: "USA STEM Degree & 3-Year OPT Work Rights",
+        headline: "World-Class State Universities with Substantial Merit Scholarships & F-1 Visa",
+        timeline: "Fall (August) & Spring (January) Intakes",
+        scholarship: "$3,000 – $15,000 / year Institutional Merit Awards",
+        moiAccepted: "IELTS 6.5+ / Duolingo / GRE waivers available",
         partnerNote:
-          "Paid co-op internships and post-graduation work permit guidance for global graduates.",
+          "Comprehensive F-1 visa interview training and DS-160 document verification at our Uttara Dhaka office.",
+        actionType: "abroad",
+      };
+    }
+
+    if (destination === "dubai" || destination === "malaysia") {
+      return {
+        matchScore: 100,
+        title: "Fast Visa & Budget-Friendly Higher Education",
+        headline: "100% Visa Approvals, No IELTS Required (MOI), Low Fees & Twin Degrees",
+        timeline: "Rapid 2–3 Weeks Visa Turnaround · Monthly Rolling Intakes",
+        scholarship: "High Part-time Earning Potential to Cover Living Costs",
+        moiAccepted: "Medium of Instruction (MOI) 100% Accepted",
+        partnerNote:
+          "Official banner destination. No complicated bank statements required. Tuition fee after visa in select Dubai universities.",
         actionType: "abroad",
       };
     }
 
     return {
       matchScore: 99,
-      title: "Cambridge IELTS Preparation Batch",
-      headline: "Intensive IELTS Coaching (Target Band 7.5+, Audio Lab CBT Mocks)",
-      timeline: "2 to 3 Months to Band 7.5+",
-      scholarship: "Free Diagnostic Mock Test & Detailed Writing Review",
-      moiAccepted: "British Council & IDP Aligned Curriculum",
+      title: "Cambridge IELTS Preparation + Visa Cashback",
+      headline: "Master Listening, Reading, Writing & Speaking (Target Band 7.5+)",
+      timeline: "2.5 to 3 Months Intensive Coaching",
+      scholarship: "100% IELTS Test Fee Cashback Upon Visa Approval with HSC BD",
+      moiAccepted: "Cambridge Authentic Test Materials & British Council Aligned",
       partnerNote:
-        "Conducted at Old Kataikhana More, Kushtia with audio lab individual headsets, Cambridge syllabus, and 1-on-1 speaking evaluations.",
+        "Taught at House 23, Road 2, Sector 3, Uttara, Dhaka with 1-on-1 speaking interview simulations and weekly full-length mock exams.",
       actionType: "course",
     };
   };
@@ -190,13 +210,13 @@ export function VisaPathfinder() {
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-300 px-3.5 py-1 text-xs font-bold text-amber-800 mb-3">
             <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-            <span>Kushtia IELTS Care Eligibility & Pathway Calculator</span>
+            <span>Higher Study Counselors Bangladesh · Eligibility Pathfinder</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-5xl font-black text-slate-950 tracking-tight leading-tight">
-            Find Your Ideal <span className="text-amber-500">IELTS & Study Pathway</span>
+          <h2 className="font-display text-3xl sm:text-5xl font-black text-[#161b38] tracking-tight leading-tight">
+            Find Your Ideal <span className="text-amber-500">Study & Visa Pathway</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-2 font-medium font-bangla">
-            আপনার শিক্ষাগত যোগ্যতা ও লক্ষ্য সিলেক্ট করে ক্যামব্রিজ আইইএলটিএস, অডিও ল্যাব মক টেস্ট (৩০০ টাকা) অথবা পর্তুগাল/ইউরোপে উচ্চশিক্ষার সুযোগ তাৎক্ষণিকভাবে যাচাই করুন।
+            আপনার শিক্ষাগত যোগ্যতা, বর্তমান ইংরেজি স্তর ও কাঙ্ক্ষিত দেশ সিলেক্ট করে ভিসা সম্ভাবনা, IELTS ক্যাশ ব্যাক ও ফ্যামিলি মুভ সুবিধা তাৎক্ষণিকভাবে যাচাই করুন।
           </p>
         </div>
 
@@ -261,9 +281,9 @@ export function VisaPathfinder() {
             {/* 3. Preferred Destination */}
             <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
               <span className="text-xs font-extrabold uppercase tracking-wider text-amber-700 block mb-3">
-                3. Preferred Destination
+                3. Preferred Destination (Official Banner Countries)
               </span>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                 {destinationPreferences.map((dest) => (
                   <button
                     key={dest.id}
@@ -278,7 +298,7 @@ export function VisaPathfinder() {
                   >
                     <div className="flex items-center gap-1.5 font-bold text-xs text-slate-900">
                       <span>{dest.flag}</span>
-                      <span>{dest.name}</span>
+                      <span className="truncate">{dest.name}</span>
                     </div>
                     <div className="text-[0.65rem] text-slate-500 mt-1 truncate">{dest.tag}</div>
                   </button>
@@ -295,7 +315,7 @@ export function VisaPathfinder() {
                   <span className="text-[0.65rem] font-black uppercase tracking-widest text-amber-700">
                     Official Assessment
                   </span>
-                  <h3 className="font-display text-lg font-bold text-slate-950 mt-0.5">
+                  <h3 className="font-display text-lg font-bold text-[#161b38] mt-0.5">
                     {match.title}
                   </h3>
                 </div>
@@ -351,7 +371,7 @@ export function VisaPathfinder() {
                 <button
                   type="button"
                   onClick={open}
-                  className="w-full rounded-xl bg-[#0a1931] hover:bg-[#0f2c59] text-amber-400 py-3 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-500/30"
+                  className="w-full rounded-xl bg-[#161b38] hover:bg-[#242c56] text-amber-400 py-3 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-500/30"
                 >
                   <span>Apply for 100% Free Profile Assessment</span>
                   <IconArrowRight className="w-3.5 h-3.5" />
@@ -359,7 +379,7 @@ export function VisaPathfinder() {
 
                 <a
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                    `Hello Kushtia IELTS Care! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on new batch schedules and admissions.`,
+                    `Hello Higher Study Counselors Bangladesh! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on next admission intakes and IELTS cashback benefits.`,
                   )}`}
                   target="_blank"
                   rel="noreferrer"

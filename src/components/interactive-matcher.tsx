@@ -20,12 +20,12 @@ export function InteractiveMatcher() {
         }
         // Low/Zero tuition budget matching
         if (budget === "Affordable (৳8L – ৳15L)") {
-          if (["japan", "germany", "malaysia", "uk"].includes(d.slug)) {
+          if (["hungary", "malaysia", "dubai", "denmark", "finland", "uk"].includes(d.slug)) {
             return true;
           }
         }
         if (budget === "Premium (৳18L+)") {
-          return ["japan", "canada", "germany", "uk", "australia"].includes(d.slug);
+          return ["uk", "usa", "australia", "canada", "finland", "denmark"].includes(d.slug);
         }
         return true;
       })
@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello Kushtia IELTS Care! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with a Kushtia IELTS Care counselor for me!`;
+    const text = `Hello Higher Study Counselors Bangladesh! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an HSC BD counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -50,7 +50,7 @@ export function InteractiveMatcher() {
           </h2>
           <p className="mt-1 max-w-2xl text-xs sm:text-sm text-slate-600 leading-relaxed">
             Select your academic degree level, GPA, English status, and
-            budget to discover matched pathways across Portugal (European Gateway), Czech Republic, Germany, Canada, Australia, and the UK.
+            budget to discover matched pathways across UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai.
           </p>
         </div>
         <div className="rounded-2xl border border-slate-800 bg-slate-950 px-4 py-2 text-xs font-bold text-white">
@@ -221,10 +221,10 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a Free Profile & IELTS Assessment by Kushtia IELTS Care Advisors?
+              Want a Free Profile & Study Abroad Assessment by HSC BD Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Walk into our Kushtia Campus at 169/4 Mahatab Uddin Road, Old Kataikhana More, or connect with our counselors directly on WhatsApp.
+              Visit our Head Office at House 23, Road 2, Sector 3, Uttara, Dhaka, or connect with our counselors directly on WhatsApp.
             </p>
           </div>
           <div className="flex items-center gap-3">

@@ -19,112 +19,110 @@ interface SlideData {
 
 const heroSlides: SlideData[] = [
   {
-    country: "IELTS Flagship",
+    country: "Study Abroad (9+ Nations)",
+    code: "GLOBAL",
+    flag: "🌍",
+    slogan:
+      "২০১২ সাল থেকে হায়ার স্টাডি কাউন্সেলরস বাংলাদেশ-এর বিশ্বস্ত গাইডলাইনে ইউকে, ইউএসএ, অস্ট্রেলিয়া, হাঙ্গেরি, কানাডা, ফিনল্যান্ড, ডেনমার্ক, মালয়েশিয়া ও দুবাইতে নিশ্চিন্তে উচ্চশিক্ষা।",
+    perks: [
+      "Opportunity To Move With Family",
+      "Long Study Gap Accepted",
+      "Part Time Job In UK & Abroad",
+      "IELTS Cash Back On Visa Success",
+    ],
+    image: "/banner.jpg",
+    uniCount: "Official Banner · 9+ Countries",
+    intakes: "2026/2027 Intakes Open",
+    slug: "study-abroad-counseling",
+  },
+  {
+    country: "United Kingdom & Family",
+    code: "UK",
+    flag: "🇬🇧",
+    slogan:
+      "১ বছরের মাস্টার্স, ২ বছরের গ্র্যাজুয়েট রুট পিএসডব্লিউ (PSW), বৈধ পার্ট-টাইম কাজের অধিকার এবং মাস্টার্স পর্যায়ে স্পাউস ও পরিবার নিয়ে যাওয়ার সম্পূর্ণ ভিসা প্রসেসিং।",
+    perks: [
+      "1-Year Fast Masters Degree",
+      "2-Year Graduate Route PSW",
+      "Spouse / Family Visa Option",
+      "MOI / Without IELTS Options",
+    ],
+    image: "/banner.jpg",
+    uniCount: "UK Direct Admissions & Cash Back",
+    intakes: "Jan, May & Sept Intakes",
+    slug: "uk",
+  },
+  {
+    country: "IELTS Preparation + Cash Back",
     code: "IELTS",
     flag: "🇬🇧",
     slogan:
-      "কুষ্টিয়ায় আধুনিক সাউন্ড ল্যাব, ব্যক্তিগত হেডসেট এবং অভিজ্ঞ ইন্সট্রাক্টরের সার্বক্ষণিক তত্ত্বাবধানে সম্পূর্ণ কেমব্রিজ সিলেবাসে IELTS (Academic & General) প্রস্তুতি। আপনার টার্গেট স্কোর অর্জনে আমাদের বিশেষ মেন্টরশিপ প্রোগ্রাম।",
+      "কেমব্রিজ অথেনটিক কারিকুলাম ও অভিজ্ঞ মেন্টরদের তত্ত্বাবধানে লিসেনিং, রিডিং, রাইটিং ও স্পিকিং প্রস্তুতি। আর ভিসা সাকসেস হলে থাকছে আপনার পুরো IELTS ফি ক্যাশ ব্যাক অফার!",
     perks: [
-      "Modern Audio Lab & Headsets",
-      "Cambridge Aligned Curriculum",
-      "Regular Speaking Assessment",
-      "Weekly Mock Tests & Feedbacks",
-    ],
-    image: "/banner.png",
-    uniCount: "Target Band 7.5+ Mentorship",
-    intakes: "Morning & Evening Batches Open",
-    slug: "ielts-regular",
-  },
-  {
-    country: "Computer-Based Mock Test",
-    code: "MOCK",
-    flag: "🎧",
-    slogan:
-      "আইইএলটিএস আসল পরীক্ষার শতভাগ অনুভূতি ও ভয় কাটাতে মাত্র ৩০০ টাকায় কম্পিউটার-ভিত্তিক এবং অফলাইন মক টেস্ট। প্রতিটি মডিউলে (Listening, Reading, Writing, Speaking) বিস্তারিত ফিডব্যাক ও স্কোর কার্ড।",
-    perks: [
-      "মাত্র ৩০০ টাকায় রিয়েল এক্সাম মক টেস্ট",
-      "Individual Headset & Audio Setup",
-      "CBT & Paper-Based Options",
-      "Detailed Band Analysis Report",
+      "ভিসা সাকসেসে ১০০% ক্যাশ ব্যাক অফার",
+      "Small Interactive Batches",
+      "1-on-1 Speaking Evaluation",
+      "Weekly Full-Length Mock Exams",
     ],
     image: "/banner.jpg",
-    uniCount: "300 BDT Full Real-Time Mock",
-    intakes: "Friday & Saturday Slots Available",
-    slug: "computer-mock-test",
+    uniCount: "Band 7.5+ Target Coaching",
+    intakes: "Morning & Evening Batches",
+    slug: "ielts-preparation",
   },
   {
-    country: "Portugal & Europe",
-    code: "EU",
-    flag: "🇵🇹",
+    country: "Hungary & Europe Schengen",
+    code: "SCHENGEN",
+    flag: "🇭🇺",
     slogan:
-      "কম টিউশন ফি এবং ইংরেজি মাধ্যমে ইউরোপের সেনজেনভুক্ত দেশ পর্তুগাল ও চেক রিপাবলিকে উচ্চশিক্ষা ও স্থায়ী বসবাসের সবচেয়ে সহজ সুযোগ। নির্ভুল অফার লেটার, ভিসা ফাইল প্রস্তুত ও সার্বিক কনসালটেন্সি।",
+      "স্বল্প টিউশন ফি (€১,৮০০ – €৩,৫00/বছর), টিউশন ফি আফটার ভিসা সুবিধা, স্টাডি গ্যাপ গ্রহণযোগ্যতা এবং ২৯টি ইউরোপীয় সেনজেন দেশে অবাধ চলাচলের অপূর্ব সুযোগ।",
     perks: [
-      "Affordable European Tuition Fees",
-      "Schengen 29 Countries Access",
-      "English-Taught Bachelor & Masters",
-      "Complete Visa Documentation",
+      "Low Tuition Fees University",
+      "Tuition Fee After Visa Available",
+      "Long Study Gap Accepted",
+      "29 Schengen Countries Mobility",
     ],
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "Portugal & European Schengen Track",
-    intakes: "Fall & Spring Intakes Ongoing",
-    slug: "portugal",
-  },
-  {
-    country: "Spoken & Kids English",
-    code: "SPEAK",
-    flag: "🗣️",
-    slogan:
-      "প্রতিদিনের কথা বলা, প্রেজেন্টেশন ও ইন্টারভিউতে আত্মবিশ্বাসী হতে Spoken English কোর্স এবং শিশুদের জন্য শৈশব থেকেই সঠিক উচ্চারণ ও ভয় দূর করতে আনন্দময় Kids English Academy।",
-    perks: [
-      "Natural Fluency & Pronunciation",
-      "Phonics & Storytelling for Kids",
-      "Confidence Building & Debate",
-      "Small Interactive Batches",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=85",
-    uniCount: "Interactive Speaking & Young Learners",
-    intakes: "Special Weekend Batches Open",
-    slug: "spoken-english",
+    image: "/banner.jpg",
+    uniCount: "Affordable European Track",
+    intakes: "Fall & Spring Intakes",
+    slug: "hungary",
   },
 ];
 
 const liveSuccessToasts = [
   {
     student: "Tanvir Ahmed",
-    action: "Achieved IELTS Overall Band 7.5",
+    action: "Secured UK Visa with Spouse · IELTS Cash Back Claimed",
     flag: "🇬🇧",
-    time: "5 mins ago",
+    time: "4 mins ago",
   },
   {
-    student: "Nusrat Jahan",
-    action: "Completed Computer-Based Mock Test (300 BDT)",
-    flag: "🎧",
-    time: "18 mins ago",
+    student: "Farhana Akter",
+    action: "Hungary Schengen Visa Approved (4-Yr Study Gap Accepted)",
+    flag: "🇭🇺",
+    time: "15 mins ago",
   },
   {
-    student: "Sabbir Hossain",
-    action: "Received Portugal University Admission Offer",
-    flag: "🇵🇹",
-    time: "32 mins ago",
+    student: "Kamrul Hasan",
+    action: "Australia Subclass 500 Visa Issued (Move With Family)",
+    flag: "🇦🇺",
+    time: "28 mins ago",
   },
   {
-    student: "Ayesha Siddiqua",
-    action: "Joined Spoken English Fluency Batch",
-    flag: "🗣️",
-    time: "45 mins ago",
+    student: "Abrar Zahin",
+    action: "Scored IELTS Overall Band 7.5 (Academic)",
+    flag: "🇬🇧",
+    time: "42 mins ago",
   },
   {
-    student: "Zayan (Age 8)",
-    action: "Enrolled in Kids English Academy",
-    flag: "🧒",
+    student: "Sumaiya Rahman",
+    action: "Received Dubai University Offer Letter & Scholarship",
+    flag: "🇦🇪",
     time: "1 hour ago",
   },
   {
-    student: "Mahmud Hasan",
-    action: "Booked Free Counselling at Old Kataikhana More",
-    flag: "📍",
+    student: "Nafisa (Age 9)",
+    action: "Enrolled in Kids' English Academy (Sector 3 Uttara)",
+    flag: "🧒",
     time: "2 hours ago",
   },
 ];
@@ -154,43 +152,43 @@ export function HeroCommandCenter() {
   const activeToast = liveSuccessToasts[toastIndex] ?? liveSuccessToasts[0]!;
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#f5f8fc] via-[#FAFAFC] to-[#FAFAFC] pt-6 pb-14 sm:pt-10 sm:pb-20 border-b border-slate-200/80">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#f3f5fa] via-[#FAFAFC] to-[#FAFAFC] pt-6 pb-14 sm:pt-10 sm:pb-20 border-b border-slate-200/80">
       {/* Ambient Glows */}
       <div className="pointer-events-none absolute -left-28 -top-28 h-96 w-96 rounded-full bg-amber-500/15 blur-[130px]" />
-      <div className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-red-500/10 blur-[130px]" />
+      <div className="pointer-events-none absolute right-0 top-1/4 h-96 w-96 rounded-full bg-sky-500/10 blur-[130px]" />
 
       <div className="section-shell relative z-10">
         {/* Main 2-Column Hero Showcase */}
-        <div className="grid gap-8 lg:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center min-h-[480px]">
+        <div className="grid gap-8 lg:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center min-h-[500px]">
           {/* Left Column: Headline & Value Proposition */}
           <div className="space-y-5">
             {/* Brand Motto Over-Title */}
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-[0.72rem] sm:text-xs font-bold uppercase tracking-[0.14em] text-slate-950 bg-amber-400 px-3 py-1 rounded-full shadow-xs">
-                — KUSHTIA IELTS CARE —
+              <span className="text-[0.72rem] sm:text-xs font-black uppercase tracking-[0.14em] text-slate-950 bg-amber-400 px-3.5 py-1 rounded-full shadow-xs">
+                — HIGHER STUDY COUNSELORS BANGLADESH —
               </span>
-              <span className="text-[0.72rem] sm:text-xs font-bold text-blue-900 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
-                🎧 আধুনিক সাউন্ড ল্যাব ও ইন্ডিভিজুয়াল হেডসেট
+              <span className="text-[0.72rem] sm:text-xs font-bold text-[#161b38] bg-slate-100 border border-slate-300 px-3 py-1 rounded-full">
+                🏛️ সেক্টর ৩, উত্তরা, ঢাকা (Since 2012)
               </span>
             </div>
 
             {/* Slogan & Destination Headline */}
             <div className="space-y-2">
-              <p className="font-bangla font-semibold text-lg sm:text-xl text-amber-600 leading-snug">
+              <p className="font-bangla font-semibold text-base sm:text-lg text-amber-600 leading-snug">
                 {company.bengaliHeadline}
               </p>
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-slate-950 leading-[1.08] tracking-tight">
-                YOUR TRUSTED PARTNER IN <span className="text-amber-500">IELTS SUCCESS!</span>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black text-[#161b38] leading-[1.08] tracking-tight">
+                GUIDING YOUR GLOBAL DREAM <span className="text-amber-500">SINCE 2012</span>
               </h1>
               <div className="flex items-center gap-2 text-slate-700 font-semibold text-sm sm:text-base pt-1">
-                <span>ফ্ল্যাগশিপ প্রোগ্রাম:</span>
-                <span className="inline-flex items-center gap-1 text-[#0a1931] font-bold bg-amber-100/70 px-2.5 py-0.5 rounded-lg border border-amber-300">
+                <span>হাইলাইটেড প্রোগ্রাম:</span>
+                <span className="inline-flex items-center gap-1.5 text-[#161b38] font-bold bg-amber-100/80 px-3 py-1 rounded-lg border border-amber-300/90">
                   <span>{slide.flag}</span>
                   <span>{slide.country}</span>
                 </span>
               </div>
               {/* Navy & Amber Accent Bar */}
-              <div className="h-1.5 w-32 bg-gradient-to-r from-[#092552] via-amber-500 to-amber-600 rounded-full mt-2" />
+              <div className="h-1.5 w-36 bg-gradient-to-r from-[#161b38] via-amber-500 to-amber-600 rounded-full mt-2" />
             </div>
 
             {/* Live Applications Intake Pill */}
@@ -207,16 +205,23 @@ export function HeroCommandCenter() {
               {slide.slogan}
             </p>
 
-            {/* High Impact Perks Bullet Pills */}
-            <div className="flex flex-wrap gap-2 pt-1">
-              {slide.perks.map((perk) => (
-                <span
-                  key={perk}
-                  className="inline-flex items-center gap-1.5 rounded-lg bg-white border border-slate-200 px-3 py-1.5 text-[0.73rem] sm:text-xs font-bold text-slate-800 shadow-xs hover:border-amber-400 transition-colors"
+            {/* 6 Official Banner USPs Pills */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1 max-w-xl">
+              {company.bannerUSPs.map((usp) => (
+                <div
+                  key={usp.title}
+                  className="flex items-start gap-2 p-2.5 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-amber-400 transition-colors"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
-                  <span>{perk}</span>
-                </span>
+                  <span className="text-lg shrink-0 mt-0.5">{usp.icon}</span>
+                  <div className="min-w-0">
+                    <span className="block text-xs font-extrabold text-[#161b38] leading-tight truncate">
+                      {usp.title}
+                    </span>
+                    <span className="block text-[0.68rem] text-slate-500 font-bangla leading-tight truncate">
+                      {usp.bengali}
+                    </span>
+                  </div>
+                </div>
               ))}
             </div>
 
@@ -225,9 +230,9 @@ export function HeroCommandCenter() {
               <button
                 type="button"
                 onClick={open}
-                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-[#092552] hover:bg-[#0d3b82] text-amber-400 px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer active:scale-95 border border-amber-500/30"
+                className="btn-shimmer inline-flex items-center justify-center gap-2 rounded-xl bg-[#161b38] hover:bg-[#242c56] text-amber-400 px-6 py-3.5 text-xs sm:text-sm font-bold shadow-lg transition-all cursor-pointer active:scale-95 border border-amber-500/30"
               >
-                <span>ফ্রি অ্যাসেসমেন্ট ও মক টেস্ট বুকিং</span>
+                <span>ফ্রি প্রোফাইল এসেসমেন্ট ও অ্যাপয়েন্টমেন্ট</span>
                 <IconArrowRight className="w-4 h-4 text-amber-400" />
               </button>
 
@@ -242,18 +247,18 @@ export function HeroCommandCenter() {
               </a>
             </div>
 
-            {/* Real Social Trust Line */}
-            <div className="pt-2 text-xs text-slate-600 font-medium flex items-center gap-2">
+            {/* Real Address & Hotlines Line */}
+            <div className="pt-2 text-xs text-slate-600 font-medium flex flex-wrap items-center gap-2">
               <span className="text-amber-500 font-bold">★★★★★</span>
               <span>
-                ১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়া
+                হাউজ ২৩, রোড ২, ১ম তলা, সেক্টর ৩, উত্তরা, ঢাকা | হটলাইন: {company.phones[0]}
               </span>
             </div>
           </div>
 
           {/* Right Column: Visual Destination / Official Banner Card */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-[2.2rem] sm:rounded-[2.8rem] shadow-2xl border-4 border-white aspect-[4/3] sm:aspect-[16/11] lg:aspect-[5/4] bg-[#0a1931] group">
+            <div className="relative overflow-hidden rounded-[2.2rem] sm:rounded-[2.8rem] shadow-2xl border-4 border-white aspect-[4/3] sm:aspect-[16/11] lg:aspect-[5/4] bg-[#090c1f] group">
               {/* Photo or Official Banner */}
               <img
                 key={slide.country}
@@ -277,7 +282,7 @@ export function HeroCommandCenter() {
               </div>
 
               {/* Floating Live Success Toast (Top-Left) */}
-              <div className="absolute top-5 left-5 rounded-xl bg-black/70 backdrop-blur-md px-3 py-1.5 text-xs text-white border border-white/20 flex items-center gap-2 max-w-[270px]">
+              <div className="absolute top-5 left-5 rounded-xl bg-black/75 backdrop-blur-md px-3 py-1.5 text-xs text-white border border-white/20 flex items-center gap-2 max-w-[280px]">
                 <span className="text-base">{activeToast.flag}</span>
                 <span className="truncate text-[0.7rem] font-medium">
                   <strong>{activeToast.student}</strong> {activeToast.action}

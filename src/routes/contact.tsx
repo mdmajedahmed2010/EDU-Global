@@ -6,17 +6,17 @@ import { company } from "@/lib/site-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | Kushtia IELTS Care — Old Kataikhana More, Kushtia" },
+      { title: "Contact Us | Higher Study Counselors Bangladesh — Uttara, Dhaka & Glasgow, UK" },
       {
         name: "description",
         content:
-          "Visit Kushtia IELTS Care at 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia. Call 01715-052885 (Call / WhatsApp) or 01805-954731 for IELTS preparation, 300 BDT computer mock tests, Spoken English, and European study abroad consultancy.",
+          "Contact Higher Study Counselors Bangladesh (Since 2012). Head Office: House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230. UK Office: 3A Westburn Road, Glasgow, UK. Hotlines: 01974843470, 01676997222, +880 1328-524659, Landline: 02-48956923. Emails: apply.hscb24@gmail.com, hscb0184@gmail.com.",
       },
-      { property: "og:title", content: "Contact Kushtia IELTS Care | a great place to learn" },
+      { property: "og:title", content: "Contact Higher Study Counselors Bangladesh — Since 2012" },
       {
         property: "og:description",
         content:
-          "Kushtia IELTS Care campus at Old Kataikhana More, Kushtia. Modern audio lab with individual headsets, Cambridge curriculum, 300 BDT mock tests, and Portugal visa consultancy.",
+          "Visit our Uttara, Dhaka Head Office or contact our Glasgow UK team for foreign education advisory, 100% IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance.",
       },
     ],
   }),
@@ -28,14 +28,14 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    program: "IELTS Preparation (Academic & General)",
-    destination: "Portugal & Europe (Featured European Track)",
+    program: "Study Abroad Consultation (UK, USA, Australia, Hungary, etc.)",
+    destination: "United Kingdom (UK)",
     notes: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const text = `Hello Kushtia IELTS Care!\n\nI want to book a consultation / mock test from your website contact page:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service/Course: ${formData.program}\n• Target Destination/Goal: ${formData.destination}\n• Query: ${formData.notes || "N/A"}`;
+    const text = `Hello Higher Study Counselors Bangladesh!\n\nI want to book a free consultation from your website contact page:\n• Name: ${formData.name}\n• Phone: ${formData.phone}\n• Service/Course: ${formData.program}\n• Target Destination: ${formData.destination}\n• Query: ${formData.notes || "N/A"}`;
     window.open(
       `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`,
       "_blank",
@@ -46,11 +46,11 @@ function Contact() {
   return (
     <>
       <PageHero
-        eyebrow="Direct Campus Desk"
-        title="Connect With Kushtia IELTS Care"
-        subtitle="১৬৯/৪, মাহাতাব উদ্দিন রোড, পুরাতন কসাইখানা মোড়, কুষ্টিয়ায় আমাদের আধুনিক ক্যাম্পাসে সরাসরি আসুন। ফ্রি প্রোফাইল মূল্যায়ন, লেভেল এসেসমেন্ট টেস্ট এবং মাত্র ৩০০ টাকায় কম্পিউটার-ভিত্তিক মক টেস্ট।"
-        image="/banner.png"
-        imageAlt="Kushtia IELTS Care campus at Old Kataikhana More, Kushtia"
+        eyebrow="Direct Consultation Desks"
+        title="Connect With Higher Study Counselors Bangladesh"
+        subtitle="উত্তরা সেক্টর ৩ প্রধান কার্যালয়ে সরাসরি আসুন অথবা গ্লাসগো, যুক্তরাজ্য অফিসের মাধ্যমে যোগাযোগ করুন। অভিজ্ঞ সিনিয়র কাউন্সেলরদের সাথে ফ্রি প্রোফাইল মূল্যায়ন এবং আইইএলটিএস ১০০% ক্যাশব্যাক অফার।"
+        image="/banner.jpg"
+        imageAlt="Higher Study Counselors Bangladesh Dhaka and UK offices"
       >
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Contact Us" }]} />
       </PageHero>
@@ -58,15 +58,15 @@ function Contact() {
       {/* Office & Hotline Cards Section */}
       <section className="section-shell py-12">
         <div className="grid gap-8 md:grid-cols-2">
-          {/* Kushtia Campus Card */}
+          {/* Dhaka Head Office Card */}
           <div className="card-clean rounded-3xl p-8 border border-amber-200/90 shadow-md bg-white flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <span className="badge-clean badge-red text-xs">
                   <span className="h-2 w-2 rounded-full bg-amber-500 animate-ping inline-block mr-1" />
-                  Kushtia Campus
+                  Dhaka Head Office
                 </span>
-                <span className="text-xs font-bold text-slate-500">IELTS & Visa Hub</span>
+                <span className="text-xs font-bold text-slate-500">Since 2012</span>
               </div>
 
               <h2 className="mt-4 font-display text-xl font-bold text-slate-900">
@@ -78,32 +78,34 @@ function Contact() {
 
               <div className="mt-5 space-y-2 text-xs sm:text-sm text-slate-700 border-t border-slate-100 pt-4">
                 <p>
-                  <strong>📞 Primary Call / WhatsApp:</strong> {company.phones[0]}
+                  <strong>📞 Primary WhatsApp / Call:</strong> {company.phones[0]}
                 </p>
                 <p>
-                  <strong>📞 Alternate Hotline:</strong> {company.phones[1]}
+                  <strong>📞 Senior Counselor Hotline:</strong> {company.phones[1]}
                 </p>
                 <p>
-                  <strong>🕒 Working Hours:</strong> {company.offices.headquarters.hours}
+                  <strong>📞 Admission Helpline:</strong> {company.phones[2]}
                 </p>
                 <p>
-                  <strong>✉️ Email:</strong> {company.email}
+                  <strong>☎️ Landline:</strong> {company.phones[3]}
                 </p>
                 <p>
-                  <strong>🌟 Specialty:</strong>{" "}
-                  <span className="text-amber-600 font-bold">Cambridge IELTS, 300 BDT Mock Tests & Portugal Track</span>
+                  <strong>🕒 Office Hours:</strong> {company.offices.headquarters.hours}
+                </p>
+                <p>
+                  <strong>✉️ Official Emails:</strong> {company.email} · {company.emails[1]}
                 </p>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello Kushtia IELTS Care, I want to book a free consultation at your Kushtia office.")}`}
+                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello Higher Study Counselors Bangladesh, I want to book a free consultation at your Uttara Head Office.")}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-emerald w-full text-center text-xs py-3 shadow-sm font-bold"
               >
-                💬 WhatsApp Kushtia Desk: {company.phones[0]}
+                💬 WhatsApp Dhaka Desk: {company.phones[0]}
               </a>
               <a
                 href={`tel:${company.phones[0].replace(/[^0-9+]/g, "")}`}
@@ -114,53 +116,56 @@ function Contact() {
             </div>
           </div>
 
-          {/* Modern Audio Lab Facility Card */}
-          <div className="card-clean rounded-3xl p-8 border border-blue-200/90 shadow-md bg-white flex flex-col justify-between">
+          {/* UK International Office Card */}
+          <div className="card-clean rounded-3xl p-8 border border-sky-200/90 shadow-md bg-white flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <span className="badge-clean badge-navy text-xs">
-                  🎧 Modern Audio Lab Setup
+                  🇬🇧 UK International Office
                 </span>
-                <span className="text-xs font-bold text-amber-700 font-bangla">পৃথক হেডসেট সুবিধা</span>
+                <span className="text-xs font-bold text-sky-800">Glasgow Support</span>
               </div>
 
               <h2 className="mt-4 font-display text-xl font-bold text-slate-900">
-                Computer-Based & Real Mock Lab
+                {company.offices.international.name}
               </h2>
-              <p className="mt-2 text-xs sm:text-sm text-slate-700 leading-relaxed">
-                📍 169/4, Mahatab Uddin Road, Old Kataikhana More, Kushtia
+              <p className="mt-2 text-xs sm:text-sm text-slate-700 leading-relaxed font-semibold">
+                📍 {company.offices.international.address}
               </p>
 
               <div className="mt-5 space-y-2 text-xs sm:text-sm text-slate-700 border-t border-slate-100 pt-4">
                 <p>
-                  <strong>🎧 Facility:</strong> Individual Noise-Isolating Headsets for Listening
+                  <strong>🇬🇧 UK Presence:</strong> On-ground reception & post-arrival assistance
                 </p>
                 <p>
-                  <strong>🎯 Mock Fee:</strong> মাত্র ৩০০ টাকায় পূর্ণাঙ্গ CBT ও পেপার-বেসড মক টেস্ট
+                  <strong>💼 Key Focus:</strong> Part Time Job guidance, accommodation & settlement
                 </p>
                 <p>
-                  <strong>🕒 Lab Timing:</strong> Saturday – Thursday: 9:00 AM – 8:00 PM
+                  <strong>🕒 UK Office Hours:</strong> {company.offices.international.hours}
                 </p>
                 <p>
-                  <strong>👥 Mentorship:</strong> অভিজ্ঞ ইন্সট্রাক্টরের নিবিড় কেয়ার ও বিস্তারিত ব্যান্ড রিপোর্ট
+                  <strong>✉️ UK Email:</strong> {company.offices.international.email}
+                </p>
+                <p>
+                  <strong>🌐 Official Website:</strong> {company.offices.international.website}
                 </p>
               </div>
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
               <a
-                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello Kushtia IELTS Care, I want to book a 300 BDT mock test slot in the audio lab.")}`}
+                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent("Hello Higher Study Counselors Bangladesh, I want to consult regarding UK university admission and Glasgow support.")}`}
                 target="_blank"
                 rel="noreferrer"
                 className="btn-luxury-primary w-full text-center text-xs py-3 shadow-sm font-bold text-slate-950 bg-amber-500 hover:bg-amber-400"
               >
-                💬 Book 300 BDT Mock Test Slot
+                💬 Inquire About UK Direct Support
               </a>
               <a
                 href={`tel:${company.phones[1].replace(/[^0-9+]/g, "")}`}
                 className="rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-center text-xs font-bold text-slate-800 hover:border-amber-300 transition-colors"
               >
-                📞 Call Alternate Line: {company.phones[1]}
+                📞 Call Counselor Hotline: {company.phones[1]}
               </a>
             </div>
           </div>
@@ -169,32 +174,32 @@ function Contact() {
 
       {/* Main Interactive Form & Google Map */}
       <section className="section-shell grid gap-10 py-10 sm:py-16 lg:grid-cols-[0.95fr_1.05fr]">
-        {/* Left Column: Map and Community */}
+        {/* Left Column: Map and Trust Pillars */}
         <div className="space-y-6">
           <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-sm">
             <div className="p-3 border-b border-slate-100">
               <div className="flex items-center justify-between">
                 <h3 className="font-display font-bold text-lg text-slate-900">
-                  Campus Location Map
+                  Dhaka Head Office Location Map
                 </h3>
                 <a
                   href={company.mapsUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-xs font-bold text-sky-600 hover:text-sky-700 inline-flex items-center gap-1"
+                  className="text-xs font-bold text-amber-600 hover:text-amber-700 inline-flex items-center gap-1"
                 >
                   <span>Open in Google Maps</span>
                   <span>↗</span>
                 </a>
               </div>
               <p className="text-xs text-slate-500 mt-1">
-                {company.address}
+                {company.address.full}
               </p>
             </div>
             <div className="h-72 sm:h-80 w-full overflow-hidden rounded-2xl">
               <iframe
                 src={company.mapsEmbed}
-                title="Kushtia IELTS Care Campus Google Map"
+                title="Higher Study Counselors Bangladesh Head Office Map"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -204,16 +209,21 @@ function Contact() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-950 p-6 text-white shadow-sm">
-            <span className="badge-clean badge-red text-xs">Learn · Practice · Achieve</span>
+          <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-[#161B38] to-slate-950 p-6 text-white shadow-sm">
+            <span className="badge-clean badge-red text-xs">Since 2012 · 14+ Years Trust</span>
             <h3 className="font-display font-bold text-lg text-white mt-2">
-              Your Gateway to IELTS & European Higher Education
+              6 Verified Corporate Commitments
             </h3>
-            <p className="text-xs text-slate-300 mt-1 leading-relaxed font-bangla">
-              "{company.slogan}"
-            </p>
+            <ul className="mt-3 text-xs text-slate-300 space-y-1.5 leading-relaxed">
+              <li>• <strong>Opportunity To Move With Family:</strong> স্পাউস ও সন্তানসহ ভিসা সুবিধা</li>
+              <li>• <strong>Long Study Gap Accepted:</strong> দীর্ঘ শিক্ষাবিরতি থাকলেও ভর্তি সুবিধা</li>
+              <li>• <strong>Part Time Job In UK & Abroad:</strong> বৈধ পার্ট-টাইম কাজের পূর্ণাঙ্গ গাইডলাইন</li>
+              <li>• <strong>Low Tuition Fees University:</strong> সাশ্রয়ী খরচে মানসম্মত বিশ্ববিদ্যালয়</li>
+              <li>• <strong>Financial Advice & Guidance:</strong> ব্যাংক সলভেন্সি ও ফান্ড প্রস্তুত সহায়তা</li>
+              <li>• <strong>IELTS Cash Back On Visa Success:</strong> ভিসা হলেই আইইএলটিএস ফি ১০০% ফেরত</li>
+            </ul>
             <div className="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
-              <span className="text-slate-400">Kushtia Campus</span>
+              <span className="text-slate-400">Uttara & Glasgow</span>
               <a
                 href={company.social.facebook}
                 target="_blank"
@@ -229,12 +239,12 @@ function Contact() {
         {/* Right Column: Interactive Consultation Booking Form */}
         <div className="card-clean rounded-3xl p-8 border border-slate-200 bg-white shadow-sm">
           <div className="border-b border-slate-100 pb-4">
-            <span className="badge-clean badge-red">Free Profile & Level Assessment</span>
+            <span className="badge-clean badge-red">Free Profile Assessment</span>
             <h2 className="mt-3 font-display text-2xl font-extrabold text-slate-900">
               Send Your Inquiry / Book Counseling
             </h2>
             <p className="mt-1 text-xs text-slate-600">
-              Fill in your details to immediately connect with a Kushtia IELTS Care counselor on WhatsApp.
+              Fill in your details to immediately connect with an HSC BD senior counselor on WhatsApp.
             </p>
           </div>
 
@@ -248,7 +258,7 @@ function Contact() {
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto">
                 Thank you, <strong>{formData.name}</strong>. If WhatsApp did not open automatically,
-                tap below to chat with a Kushtia IELTS Care counselor.
+                tap below to chat directly with our senior counseling desk.
               </p>
               <a
                 href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
@@ -271,7 +281,7 @@ function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="e.g. Tanvir Ahmed"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-amber-500 focus:bg-white transition-colors"
                 />
               </div>
 
@@ -284,70 +294,63 @@ function Contact() {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="e.g. 01715-XXXXXX"
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
+                  placeholder="e.g. 01974-XXXXXX"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-amber-500 focus:bg-white transition-colors"
                 />
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                    Service / Course
+                    Service / Program
                   </label>
                   <select
                     value={formData.program}
                     onChange={(e) => setFormData({ ...formData, program: e.target.value })}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-amber-500 focus:bg-white transition-colors"
                   >
-                    <option value="IELTS Premium Regular Batch">IELTS Premium Regular (Target 7.5+)</option>
-                    <option value="IELTS Crash / Exam Booster">IELTS Crash Course</option>
-                    <option value="Audio Lab CBT Mock Test (300 BDT)">Audio Lab CBT Mock Test (300 BDT)</option>
+                    <option value="Study Abroad Consultation (UK, USA, Australia, Hungary, etc.)">Study Abroad Consultation</option>
+                    <option value="IELTS with 100% Cash Back on Visa Success">IELTS with 100% Cash Back on Visa</option>
+                    <option value="Opportunity to Move with Family (Spouse/Child Visa)">Move with Family (Dependent Visa)</option>
+                    <option value="Long Study Gap Application Support">Long Study Gap Support</option>
+                    <option value="Low Tuition Fees University Admission">Low Tuition Universities</option>
                     <option value="Spoken English & Communication Fluency">Spoken English & Fluency</option>
-                    <option value="Kids English Academy (Phonics & Grammar)">Kids English Academy</option>
-                    <option value="Study in Europe — Portugal & Czech Republic">Study in Portugal & Europe</option>
-                    <option value="Study in UK / USA / Canada / Australia">Study in UK / USA / Canada / Australia</option>
+                    <option value="Kids English Academy">Kids English Academy</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                    Target Destination / Goal
+                    Target Destination
                   </label>
                   <select
                     value={formData.destination}
                     onChange={(e) => setFormData({ ...formData, destination: e.target.value })}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-amber-500 focus:bg-white transition-colors"
                   >
-                    <option value="Portugal (European Schengen Residency & Affordable Higher Ed)">
-                      🇵🇹 Portugal (Schengen Gateway & PR Pathway)
-                    </option>
-                    <option value="Czech Republic (Central European Top Public Universities)">
-                      🇨🇿 Czech Republic (Central Europe)
-                    </option>
-                    <option value="United Kingdom (1-Yr Masters & 2-Yr Post-Study Work)">
-                      🇬🇧 United Kingdom
-                    </option>
-                    <option value="Canada (Public Universities & PGWP)">🇨🇦 Canada</option>
-                    <option value="Australia (Subclass 500 & Regional Visas)">🇦🇺 Australia</option>
-                    <option value="USA (Top Scholarships & STEM OPT)">🇺🇸 United States</option>
-                    <option value="Germany (Tuition-Free Public Universities)">🇩🇪 Germany</option>
-                    <option value="IELTS / Spoken Skill Development in Kushtia Only">
-                      🎯 IELTS / Language Skill Development Only
-                    </option>
+                    <option value="United Kingdom (UK)">🇬🇧 United Kingdom (UK)</option>
+                    <option value="United States (USA)">🇺🇸 United States (USA)</option>
+                    <option value="Australia">🇦🇺 Australia</option>
+                    <option value="Hungary (Europe Schengen)">🇭🇺 Hungary (Europe)</option>
+                    <option value="Canada">🇨🇦 Canada</option>
+                    <option value="Finland">🇫🇮 Finland</option>
+                    <option value="Denmark">🇩🇰 Denmark</option>
+                    <option value="Malaysia">🇲🇾 Malaysia</option>
+                    <option value="Dubai (UAE)">🇦🇪 Dubai (UAE)</option>
                   </select>
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                  Your Query or Academic Background
+                  Your Academic Background or Query
                 </label>
                 <textarea
                   rows={3}
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="e.g. Completed HSC / Bachelor's. Looking for IELTS morning/evening batch, 300 BDT CBT mock test, or Portugal study visa counseling in Kushtia..."
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-sky-500 focus:bg-white transition-colors"
+                  placeholder="e.g. Completed HSC / Bachelor's. Looking for low tuition university, family move support, or IELTS Cashback details..."
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs sm:text-sm text-slate-900 outline-none focus:border-amber-500 focus:bg-white transition-colors"
                 />
               </div>
 
@@ -361,7 +364,7 @@ function Contact() {
               </div>
 
               <p className="text-[0.68rem] text-slate-500 text-center pt-1">
-                🔒 Direct 1-on-1 counseling · 169/4 Mahatab Uddin Road, Old Kataikhana More, Kushtia.
+                🔒 Direct 1-on-1 counseling · House 23, Road 2, Sector 3, Uttara, Dhaka & Glasgow, UK.
               </p>
             </form>
           )}
