@@ -263,11 +263,11 @@ export function PageHero({
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-white">
-                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-amber-300">
-                      Sector 3, Uttara, Dhaka & Glasgow, UK
+                    <span className="rounded-full bg-slate-950/85 px-3 py-1 font-bold backdrop-blur-md border border-white/20 text-emerald-300">
+                      Keari Plaza, 4th Floor, Satmasjid Road, Dhanmondi
                     </span>
-                    <span className="rounded-full bg-amber-600 px-3 py-1 font-bold text-white shadow-sm">
-                      ● HSC BD (Since 2012)
+                    <span className="rounded-full bg-emerald-600 px-3 py-1 font-bold text-white shadow-sm">
+                      ● EDU Global
                     </span>
                   </div>
                 </div>
@@ -277,7 +277,7 @@ export function PageHero({
                     {company.name} · Foreign Education Advisory & Language Academy
                   </p>
                   <p className="text-[0.68rem] text-slate-400">
-                    Dhaka HQ & Glasgow UK Office · IELTS Cash Back · Hotlines: {company.phones[0]}
+                    Dhanmondi HQ · Free Bank Support & 100% Admissions · Hotline: {company.phones[0]}
                   </p>
                 </div>
               </div>
@@ -511,30 +511,30 @@ export function CtaBand() {
         className="section-shell relative z-10 text-center max-w-3xl mx-auto space-y-6"
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/40 bg-amber-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-300">
-          <IconGlobe className="w-3.5 h-3.5 text-amber-400" />
-          <span>Higher Study Counselors Bangladesh · Sector 3, Uttara, Dhaka & Glasgow, UK</span>
+          <IconGlobe className="w-3.5 h-3.5 text-emerald-400" />
+          <span>EDU Global (ইডিইউ গ্লোবাল) · Keari Plaza, Satmasjid Road, Dhanmondi, Dhaka</span>
         </div>
 
         <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-          Study Abroad · IELTS Cash Back · <span className="text-amber-400">Achieve</span>
+          Study Abroad · Free Bank Support · <span className="text-emerald-400">Achieve</span>
         </h2>
 
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed font-medium">
-          Book your free advisory session with {company.name} (Since 2012). Specializing in UK, USA, Canada, Australia, Hungary, Finland, Denmark, Malaysia, and Dubai. Benefit from 100% IELTS Cash Back on Visa Success, Move with Family, and Long Study Gap Accepted.
+          Book your free advisory session with {company.name}. 100% Admission Guidance across UK, Europe, Australia, USA, Canada, New Zealand, Japan, and South Korea. Benefit from Free Bank Support, Study Gap (up to 10+ yrs) & Low CGPA acceptance, and premier Language Academy.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
           <button
             type="button"
             onClick={open}
-            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-amber-500/30 active:scale-95 cursor-pointer font-bold"
+            className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-emerald-500/30 active:scale-95 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
           >
             <span>Book Free Assessment</span>
             <IconArrowRight className="w-4 h-4" />
           </button>
           <a
             href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-              "Hello Higher Study Counselors Bangladesh! I would like to book a free consultation for Study Abroad, IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance.",
+              "Hello EDU Global! I would like to book a free consultation for Study Abroad admissions, Free Bank Support, and language courses.",
             )}`}
             target="_blank"
             rel="noreferrer"

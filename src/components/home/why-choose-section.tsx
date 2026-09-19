@@ -4,48 +4,56 @@ import { company } from "@/lib/site-data";
 export function WhyChooseSection() {
   const features = [
     {
+      icon: "🎓",
+      iconBg: "bg-blue-50 text-blue-700",
+      value: 100,
+      suffix: "%",
+      label: "",
+      metricColor: "text-[#0047ba]",
+      tag: "ADMISSION GUIDANCE",
+      title: "100% University Admission Guidance",
+      bengaliTitle: "১০০% ভর্তি নিশ্চয়তা ও ডিরেক্ট পার্টনারশিপ",
+      desc: "Direct official university representation with Canterbury Christ Church University (UK) and premier European, American & Asian institutions.",
+      bengaliDesc: "যুক্তরাজ্যের Canterbury Christ Church University সহ ইউরোপ ও বিশ্বের শীর্ষ বিশ্ববিদ্যালয়ে শতভাগ ভর্তি নিশ্চয়তা ও সরাসরি প্রসেসিং।",
+    },
+    {
       icon: "🏛️",
-      iconBg: "bg-blue-50 text-[#161b38]",
-      value: 14,
-      suffix: "+ Yrs",
-      label: "",
-      metricColor: "text-[#161b38]",
-      tag: "ESTABLISHED SINCE 2012",
-      title: "১৪+ বছরের আস্থা ও অভিজ্ঞতা",
-      desc: "২০১২ সাল থেকে উত্তরা, ঢাকায় উচ্চশিক্ষা ও স্টুডেন্ট ভিসা প্রসেসিংয়ে সততা, নির্ভরযোগ্যতা ও সহস্রাধিক ভিসা সাকসেস।",
-    },
-    {
-      icon: "🎁",
-      iconBg: "bg-amber-50 text-amber-700",
-      value: 100,
-      suffix: "%",
-      label: "",
-      metricColor: "text-amber-600",
-      tag: "IELTS CASH BACK PROMO",
-      title: "ভিসা হলে IELTS ক্যাশ ব্যাক",
-      desc: "আমাদের মাধ্যমে IELTS প্রস্তুতি ও স্টুডেন্ট ভিসা প্রসেস সম্পন্ন হলে ভিসা প্রাপ্তির পর সম্পূর্ণ IELTS পরীক্ষার ফি ক্যাশ ব্যাক!",
-    },
-    {
-      icon: "👥",
-      iconBg: "bg-emerald-50 text-emerald-600",
-      value: 100,
-      suffix: "%",
+      iconBg: "bg-emerald-50 text-emerald-700",
+      value: 20,
+      suffix: " Students",
       label: "",
       metricColor: "text-emerald-600",
-      tag: "MOVE WITH FAMILY",
-      title: "পরিবার ও স্পাউস ভিসা সুবিধা",
-      desc: "ইউকে, অস্ট্রেলিয়া, ফিনল্যান্ড ও ডেনমার্কে পোস্টগ্র্যাজুয়েট শিক্ষার্থীদের স্পাউস ও সন্তানসহ একসঙ্গে ভিসা প্রসেসিং সহায়তা।",
+      tag: "SPECIAL PROMOTION",
+      title: "Free Bank Support Offer",
+      bengaliTitle: "ফ্রি ব্যাংক সাপোর্ট সুবিধা",
+      desc: "Exclusive bank solvency assistance for early applicants (first 20 students) applying for Cyprus and European Union upcoming intakes.",
+      bengaliDesc: "সাইপ্রাস ও ইউরোপীয় ইউনিয়নের আসন্ন ইনটেকে আবেদনের ক্ষেত্রে প্রথম ২০ জন শিক্ষার্থীর জন্য বিশেষ ফ্রি ব্যাংক সাপোর্ট সুবিধা।",
     },
     {
-      icon: "📊",
-      iconBg: "bg-indigo-50 text-indigo-600",
+      icon: "⚡",
+      iconBg: "bg-amber-50 text-amber-700",
       value: 10,
       suffix: "+ Yrs",
       label: "",
+      metricColor: "text-amber-600",
+      tag: "INCLUSIVE PATHWAYS",
+      title: "Study Gap & Low CGPA Accepted",
+      bengaliTitle: "স্টাডি গ্যাপ ও কম CGPA গ্রহণযোগ্য",
+      desc: "Comprehensive profile packaging for students with up to 10+ years study gap and graduation GPA down to 2.5 in accredited institutions.",
+      bengaliDesc: "এইচএসসি বা ডিগ্রির পর দীর্ঘ শিক্ষাবিরতি এবং CGPA ২.৫+ থাকলেও সঠিক প্রফেশনাল ফাইল তৈরি করে ভিসা লাভের সুযোগ।",
+    },
+    {
+      icon: "🗣️",
+      iconBg: "bg-indigo-50 text-indigo-700",
+      value: 4,
+      suffix: " Academies",
+      label: "",
       metricColor: "text-indigo-600",
-      tag: "GAP ACCEPTED",
-      title: "দীর্ঘ স্টাডি গ্যাপ গ্রহণযোগ্য",
-      desc: "এইচএসসি, অনার্স বা মাস্টার্সের পর দীর্ঘ স্টাডি গ্যাপ থাকলেও সঠিক ওয়ার্ক এক্সপেরিয়েন্স ও পোর্টফোলিও দ্বারা সফল ভিসা প্রাপ্তি।",
+      tag: "LANGUAGE ACADEMY",
+      title: "Comprehensive Language Academy",
+      bengaliTitle: "পূর্ণাঙ্গ ল্যাঙ্গুয়েজ একাডেমি",
+      desc: "Cambridge authentic IELTS (Band 7.5+), Spoken English Fluency, Kids English & Phonics, and Japanese JLPT instruction at Dhanmondi HQ.",
+      bengaliDesc: "আন্তর্জাতিক মানের ট্রেইনারদের পরিচালনায় IELTS, স্পোকেন ইংলিশ, কিডস ইংলিশ এবং জাপানিজ ভাষা কোর্স।",
     },
   ];
 
@@ -54,12 +62,12 @@ export function WhyChooseSection() {
       <div className="section-shell">
         {/* Title with Framer Motion */}
         <MotionHeading
-          tag="— WHY HIGHER STUDY COUNSELORS BANGLADESH —"
-          title="Why choose"
-          highlight="HSC Bangladesh?"
-          description="উত্তরা সেক্টর ৩-এ অবস্থিত আমাদের প্রধান কার্যালয় এবং যুক্তরাজ্যের গ্লাসগোতে নিজস্ব অফিসের মাধ্যমে আমরা প্রদান করি স্বচ্ছ, পেশাদার এবং সম্পূর্ণ নির্ভুল স্টাডি অ্যাব্রড ও ল্যাঙ্গুয়েজ কাউন্সেলিং।"
-          tagColor="text-amber-600"
-          highlightColor="text-amber-600"
+          tag="— WHY EDU GLOBAL (ইডিইউ গ্লোবাল) —"
+          title="Why Choose"
+          highlight="EDU Global?"
+          description="Direct official university partnerships, verified Free Bank Support for European intakes, and professional language training at Keari Plaza, Satmasjid Road, Dhanmondi, Dhaka."
+          tagColor="text-[#0047ba]"
+          highlightColor="text-[#0047ba]"
         />
 
         {/* 4 Feature Cards Grid with Staggered Entrance & CountUp */}
@@ -69,31 +77,40 @@ export function WhyChooseSection() {
         >
           {features.map((f) => (
             <StaggerItem key={f.title}>
-              <div className="rounded-3xl border border-slate-200/70 bg-slate-50/40 p-7 text-center flex flex-col items-center hover:bg-white hover:border-amber-300 hover:shadow-2xl transition-all duration-300 group hover-lift h-full">
+              <div className="rounded-3xl border border-slate-200/80 bg-slate-50/50 p-6 sm:p-7 text-center flex flex-col items-center hover:bg-white hover:border-blue-400 hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 h-full">
                 {/* Icon Container */}
                 <div
-                  className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl mb-4 transition-transform duration-300 group-hover:scale-110 ${f.iconBg}`}
+                  className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl mb-4 transition-transform duration-300 group-hover:scale-110 shadow-xs ${f.iconBg}`}
                 >
                   <span>{f.icon}</span>
                 </div>
 
                 {/* Animated Big Metric */}
-                <div
-                  className={`font-display text-3xl sm:text-4xl font-extrabold mb-0.5 ${f.metricColor}`}
-                >
-                  <CountUp value={f.value} suffix={f.suffix} duration={2} />
+                <div className="mb-1.5">
+                  <span className={`text-3xl sm:text-4xl font-black font-display ${f.metricColor}`}>
+                    <CountUp target={f.value} suffix={f.suffix} />
+                  </span>
                 </div>
 
-                {/* Subheading Tag */}
-                <div className="text-[0.65rem] font-bold uppercase tracking-widest text-slate-400 mb-3">
+                <span className="inline-block rounded-full bg-slate-200/70 px-3 py-0.5 text-[0.65rem] font-black uppercase tracking-wider text-slate-700 mb-3">
                   {f.tag}
-                </div>
+                </span>
 
-                {/* Title */}
-                <h3 className="font-display text-base font-bold text-[#161b38] mb-2">{f.title}</h3>
+                <h3 className="font-display text-sm sm:text-base font-extrabold text-[#0a1931] mb-1 leading-snug group-hover:text-[#0047ba] transition-colors">
+                  {f.title}
+                </h3>
 
-                {/* Description */}
-                <p className="text-xs text-slate-600 leading-relaxed font-medium font-bangla">{f.desc}</p>
+                <p className="text-[0.72rem] text-slate-500 font-bangla font-semibold mb-3">
+                  {f.bengaliTitle}
+                </p>
+
+                <p className="text-xs text-slate-600 leading-relaxed font-medium mb-2">
+                  {f.desc}
+                </p>
+
+                <p className="text-[0.68rem] text-slate-400 font-bangla font-medium leading-normal mt-auto pt-2 border-t border-slate-200/60 w-full">
+                  {f.bengaliDesc}
+                </p>
               </div>
             </StaggerItem>
           ))}

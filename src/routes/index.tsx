@@ -11,29 +11,31 @@ import { BlogUpdatesSection } from "@/components/home/blog-updates-section";
 import { MobileActionDock } from "@/components/home/mobile-action-dock";
 import { OfficeGallery } from "@/components/office-gallery";
 import { VideoReelsSection } from "@/components/video-reels-section";
+import { VisaPathfinder } from "@/components/home/visa-pathfinder";
 import { Testimonials } from "@/components/testimonials";
 import { UniversityMarquee, CtaBand, IconSparkles } from "@/components/ui-blocks";
 import { faqs, company } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { LiveActivityToast } from "@/components/live-activity-toast";
+import { motion } from "framer-motion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: `${company.legalName} | Study Abroad Consultancy & IELTS Language Academy | Sector 3, Uttara, Dhaka & Glasgow, UK`,
+        title: `${company.name} | Study Abroad Consultancy & IELTS Language Academy | Dhanmondi, Dhaka`,
       },
       {
         name: "description",
         content:
-          "Higher Study Counselors Bangladesh (Since 2012) — Your Trusted Global Education & Language Partner! UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, Dubai. IELTS Cash Back On Visa Success, Opportunity To Move With Family, Long Study Gap Accepted, Low Tuition Fees. Head Office: Sector 3, Uttara, Dhaka. UK Office: Glasgow, UK. Hotlines: 01974843470, 01676997222.",
+          "EDU Global — Your Gateway to the World! Europe, UK, USA, Canada, Australia, New Zealand, Japan, South Korea, and Malaysia. 100% Admission Guidance, Free Bank Support Offer, Study Gap Accepted, Low CGPA Solutions. Head Office: Keari Plaza (Lift-3), Road 8/A, Dhanmondi, Dhaka. Hotlines: +880 1901-402990, +880 1901-402992.",
       },
-      { property: "og:title", content: `${company.legalName} — Since 2012 | Study Abroad & Language Academy` },
+      { property: "og:title", content: `${company.name} — Your Gateway to the World | Study Abroad & Language Academy` },
       {
         property: "og:description",
         content:
-          "Trusted Global Education Consultancy & Language Academy since 2012. 100% IELTS Cash Back on Visa Success, Move with Family, Study Gap Accepted. Offices in Uttara, Dhaka & Glasgow, UK.",
+          "One stop Solution to Your Journey of Higher Education. 100% Admission Guidance, Free Bank Support Offer, Study Gap Accepted. Head Office: Dhanmondi, Dhaka.",
       },
     ],
   }),
@@ -46,114 +48,118 @@ function Home() {
 
   const faqCategories = [
     "All",
-    "IELTS & Cash Back",
-    "Move With Family",
-    "Study Gap Accepted",
-    "UK & Global Destinations",
-    "Offices & Admission",
+    "Admission Guidance",
+    "Free Bank Support",
+    "Study Gap & CGPA",
+    "Destinations",
+    "Dhanmondi Office",
   ];
 
   const filteredFaqs =
     activeFaqCategory === "All"
       ? faqs
       : faqs.filter((f) => {
-          if (activeFaqCategory === "IELTS & Cash Back")
+          if (activeFaqCategory === "Admission Guidance")
             return (
-              f.q.toLowerCase().includes("ielts") ||
-              f.q.toLowerCase().includes("cash back") ||
-              f.q.toLowerCase().includes("cashback") ||
-              f.a.toLowerCase().includes("ielts") ||
-              f.a.toLowerCase().includes("cash back")
+              f.q.toLowerCase().includes("admission") ||
+              f.q.toLowerCase().includes("guidance") ||
+              f.a.toLowerCase().includes("admission") ||
+              f.a.toLowerCase().includes("guidance")
             );
-          if (activeFaqCategory === "Move With Family")
+          if (activeFaqCategory === "Free Bank Support")
             return (
-              f.q.toLowerCase().includes("family") ||
-              f.q.toLowerCase().includes("spouse") ||
-              f.a.toLowerCase().includes("family") ||
-              f.a.toLowerCase().includes("spouse")
+              f.q.toLowerCase().includes("bank") ||
+              f.a.toLowerCase().includes("bank") ||
+              f.a.toLowerCase().includes("solvency")
             );
-          if (activeFaqCategory === "Study Gap Accepted")
+          if (activeFaqCategory === "Study Gap & CGPA")
             return (
               f.q.toLowerCase().includes("gap") ||
-              f.a.toLowerCase().includes("gap")
+              f.q.toLowerCase().includes("cgpa") ||
+              f.a.toLowerCase().includes("gap") ||
+              f.a.toLowerCase().includes("cgpa")
             );
-          if (activeFaqCategory === "UK & Global Destinations")
+          if (activeFaqCategory === "Destinations")
             return (
-              f.q.toLowerCase().includes("uk") ||
               f.q.toLowerCase().includes("destination") ||
-              f.q.toLowerCase().includes("abroad") ||
-              f.a.toLowerCase().includes("uk") ||
-              f.a.toLowerCase().includes("countries")
+              f.q.toLowerCase().includes("countries") ||
+              f.a.toLowerCase().includes("countries") ||
+              f.a.toLowerCase().includes("europe")
             );
-          if (activeFaqCategory === "Offices & Admission")
+          if (activeFaqCategory === "Dhanmondi Office")
             return (
-              f.q.toLowerCase().includes("uttara") ||
-              f.q.toLowerCase().includes("office") ||
-              f.q.toLowerCase().includes("apply") ||
-              f.a.toLowerCase().includes("uttara") ||
-              f.a.toLowerCase().includes("glasgow")
+              f.q.toLowerCase().includes("dhanmondi") ||
+              f.q.toLowerCase().includes("located") ||
+              f.q.toLowerCase().includes("contact") ||
+              f.a.toLowerCase().includes("dhanmondi") ||
+              f.a.toLowerCase().includes("keari")
             );
           return true;
         });
 
   return (
-    <div className="relative min-h-screen bg-[#FAFAFC] text-slate-900 selection:bg-sky-600 selection:text-white">
+    <div className="relative min-h-screen bg-[#FAFAFC] text-slate-900 selection:bg-blue-600 selection:text-white">
       {/* 1. Destination Hero Slider with Real-time Success Toast */}
       <HeroCommandCenter />
 
-      {/* 2. Fast-Track Lead Form & Side-by-Side Stat Highlights */}
+      {/* 2. Impact Stats ("Learn · Grow · Achieve") */}
       <ScrollReveal direction="up" delay={50}>
-        <QuickLeadSection />
+        <StatsImpactStrip />
       </ScrollReveal>
 
-      {/* 3. Partner Institutions Showcase & Marquee */}
+      {/* 3. Official Facebook Video Reels Showcase — Elevated for Immediate Proof */}
+      <ScrollReveal direction="up" delay={50}>
+        <VideoReelsSection />
+      </ScrollReveal>
+
+      {/* 4. Interactive Visa Pathfinder / Eligibility Matcher */}
+      <ScrollReveal direction="up" delay={60}>
+        <VisaPathfinder />
+      </ScrollReveal>
+
+      {/* 5. Partner Institutions Showcase & Marquee */}
       <ScrollReveal direction="fade" delay={50}>
         <UniversityMarquee />
       </ScrollReveal>
 
-      {/* 4. Impact Stats ("Learn · Grow · Achieve") */}
-      <ScrollReveal direction="up" delay={60}>
-        <StatsImpactStrip />
-      </ScrollReveal>
-
-      {/* 5. Popular Study Destinations Grid ("Where will you study?") */}
+      {/* 6. Popular Study Destinations Grid */}
       <ScrollReveal direction="up" delay={60}>
         <PopularDestinationsSection />
       </ScrollReveal>
 
-      {/* 6. Why Choose Higher Study Counselors Bangladesh */}
-      <ScrollReveal direction="up" delay={60}>
-        <WhyChooseSection />
-      </ScrollReveal>
-
-      {/* 7. 5-Step Process Timeline ("How It Works") */}
-      <ScrollReveal direction="up" delay={60}>
-        <HowItWorksSection />
-      </ScrollReveal>
-
-      {/* 8. Language Academy & Core Pillars */}
+      {/* 7. Language Academy & Core Pillars (IELTS, Spoken, Kids, Japanese) */}
       <ScrollReveal direction="up" delay={60}>
         <DelegationSpotlight />
       </ScrollReveal>
 
-      {/* 9. Official Facebook Video Reels Showcase */}
+      {/* 8. Fast-Track Lead Form & Side-by-Side Stat Highlights */}
       <ScrollReveal direction="up" delay={60}>
-        <VideoReelsSection />
+        <QuickLeadSection />
       </ScrollReveal>
 
-      {/* 10. Official Headquarters & Global Centers */}
+      {/* 9. Why Choose EDU Global (The 6 Verified USPs) */}
+      <ScrollReveal direction="up" delay={60}>
+        <WhyChooseSection />
+      </ScrollReveal>
+
+      {/* 10. 5-Step Process Timeline ("How It Works") */}
+      <ScrollReveal direction="up" delay={60}>
+        <HowItWorksSection />
+      </ScrollReveal>
+
+      {/* 11. Official Headquarters & Counseling Center */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>Headquarters & International Presence</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-[#0047ba] mb-2.5">
+              <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
+              <span>Headquarters & Counseling Center</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Higher Study Counselors <span className="text-amber-500">Bangladesh</span>
+              EDU Global <span className="text-[#0047ba]">Dhanmondi, Dhaka</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230 & 3A Westburn Road, Glasgow, UK — Direct physical counseling & expert visa advisory since 2012.
+              Keari Plaza, Plot No- 83, 4th Floor (Lift-3), Road No- 8/A, Satmasjid Road, Dhanmondi, Dhaka - 1209 — Direct physical counseling & expert visa advisory.
             </p>
           </div>
 
@@ -161,52 +167,60 @@ function Home() {
         </section>
       </ScrollReveal>
 
-      {/* 11. Student Testimonials ("What our students say") */}
+      {/* 12. Student Testimonials ("What our students say") */}
       <ScrollReveal direction="up" delay={60}>
         <Testimonials />
       </ScrollReveal>
 
-      {/* 12. Latest Updates / Blog Grid ("Latest updates") */}
+      {/* 13. Latest Updates / Blog Grid */}
       <ScrollReveal direction="up" delay={60}>
         <BlogUpdatesSection />
       </ScrollReveal>
 
-      {/* 13. Minimalist Categorized FAQ Accordion */}
+      {/* 14. Minimalist Categorized FAQ Accordion with Animated Pill */}
       <ScrollReveal direction="up" delay={60}>
         <section className="section-shell py-14 sm:py-20 border-t border-slate-200/80">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 border border-sky-200 px-3.5 py-1 text-xs font-bold text-sky-700 mb-2.5">
-              <IconSparkles className="w-3.5 h-3.5 text-sky-600" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-blue-700 mb-2.5">
+              <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
               <span>Clear Answers</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Frequently Asked <span className="text-amber-500">Questions</span>
+              Frequently Asked <span className="text-[#0047ba]">Questions</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Direct, transparent answers regarding IELTS Cash Back on visa success, Opportunity to Move with Family, Long Study Gap acceptance, UK/USA admissions, and our Uttara & Glasgow offices.
+              Direct, transparent answers regarding 100% admission guidance, Free Bank Support offer, study gap acceptance, language preparation, and our Dhanmondi office.
             </p>
           </div>
 
-          {/* FAQ Category Filter Pills */}
-          <div className="flex flex-wrap justify-center gap-1.5 mb-8">
-            {faqCategories.map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => {
-                  setActiveFaqCategory(cat);
-                  setOpenFaqIndex(0);
-                }}
-                className={cn(
-                  "rounded-full px-4 py-1.5 text-xs font-bold transition-all cursor-pointer active:scale-95",
-                  activeFaqCategory === cat
-                    ? "bg-slate-900 text-white shadow-xs border border-slate-800"
-                    : "bg-white border border-slate-200 text-slate-700 hover:bg-slate-50",
-                )}
-              >
-                {cat}
-              </button>
-            ))}
+          {/* FAQ Category Filter Pills with layoutId */}
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {faqCategories.map((cat) => {
+              const isActive = activeFaqCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => {
+                    setActiveFaqCategory(cat);
+                    setOpenFaqIndex(0);
+                  }}
+                  className={cn(
+                    "relative rounded-full px-4 py-2 text-xs font-bold transition-colors cursor-pointer active:scale-95",
+                    isActive ? "text-white" : "text-slate-700 hover:text-slate-900 bg-white border border-slate-200",
+                  )}
+                >
+                  {isActive && (
+                    <motion.div
+                      layoutId="activeFaqPill"
+                      className="absolute inset-0 rounded-full bg-[#0047ba] shadow-sm"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                  <span className="relative z-10">{cat}</span>
+                </button>
+              );
+            })}
           </div>
 
           {/* Modern Clean Accordion List */}
@@ -219,7 +233,7 @@ function Home() {
                   className={cn(
                     "rounded-2xl border transition-all duration-300 overflow-hidden",
                     isOpen
-                      ? "bg-white border-sky-500 shadow-md ring-1 ring-sky-500/20"
+                      ? "bg-white border-blue-500 shadow-md ring-1 ring-blue-500/20"
                       : "bg-white/80 border-slate-200 hover:border-slate-300 hover:bg-white",
                   )}
                 >
@@ -234,7 +248,7 @@ function Home() {
                     <span
                       className={cn(
                         "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                        isOpen ? "bg-sky-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                        isOpen ? "bg-[#0047ba] text-white rotate-180" : "bg-slate-100 text-slate-600",
                       )}
                     >
                       ↓
@@ -260,13 +274,13 @@ function Home() {
         </section>
       </ScrollReveal>
 
-      {/* 14. Pre-Footer High-Converting Banner */}
+      {/* 15. Pre-Footer High-Converting Banner */}
       <CtaBand />
 
-      {/* 15. Ergonomic Floating Thumb Action Dock on Mobile */}
+      {/* 16. Ergonomic Floating Thumb Action Dock on Mobile */}
       <MobileActionDock />
 
-      {/* 16. Live Real-Time Success Activity Toast */}
+      {/* 17. Live Real-Time Success Activity Toast */}
       <LiveActivityToast />
     </div>
   );

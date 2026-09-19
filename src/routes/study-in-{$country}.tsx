@@ -11,11 +11,11 @@ export const Route = createFileRoute("/study-in-{$country}")({
   head: ({ loaderData }) => {
     const d = loaderData?.destination;
     const title = d
-      ? `Study in ${d.name} | Higher Study Counselors Bangladesh — IELTS Cash Back & Visa`
-      : "Study Abroad Destinations | Higher Study Counselors Bangladesh";
+      ? `Study in ${d.name} | EDU Global — 100% Admission & Visa Guidance`
+      : "Study Abroad Destinations | EDU Global";
     const description = d
-      ? `${d.tagline}. University admissions, 100% IELTS Cash Back on Visa Success, Move with Family, and Study Gap Acceptance for ${d.name} with Higher Study Counselors Bangladesh (Since 2012). Head Office: Uttara, Dhaka. UK Office: Glasgow, UK. Hotlines: ${company.phones[0]} / ${company.phones[1]}.`
-      : "Study abroad and Cambridge IELTS coaching from Higher Study Counselors Bangladesh.";
+      ? `${d.tagline}. University admissions, 100% admission guidance, Free Bank Support for European visas, Study Gap (up to 10+ yrs) & Low CGPA (2.5+) accepted for ${d.name} with EDU Global (ইডিইউ গ্লোবাল). Office: Keari Plaza, 4th Floor, Satmasjid Road, Dhanmondi, Dhaka. Hotlines: ${company.phones[0]} / ${company.phones[1]}.`
+      : "Study abroad admissions and language academy coaching from EDU Global.";
     return {
       meta: [
         { title },
@@ -32,7 +32,7 @@ function DestinationPage() {
   const { destination: d } = Route.useLoaderData();
 
   const whatsappHref = () => {
-    const text = `Hello Higher Study Counselors Bangladesh! I want to explore higher education pathways in ${d.name}.\n\nPlease guide me on admission requirements, low tuition universities, IELTS Cash Back on Visa Success, and upcoming intake deadlines.`;
+    const text = `Hello EDU Global! I want to explore higher education pathways in ${d.name}.\n\nPlease guide me on admission requirements, partner universities, Free Bank Support, and upcoming intake deadlines.`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -42,8 +42,8 @@ function DestinationPage() {
         eyebrow={`${d.flag} ${d.region} · Official Destination`}
         title={`Study in ${d.name}`}
         subtitle={d.tagline}
-        image="/banner.jpg"
-        imageAlt={`Study in ${d.name} — Higher Study Counselors Bangladesh`}
+        image="/banner.png"
+        imageAlt={`Study in ${d.name} — EDU Global`}
       >
         <div className="space-y-6">
           <Breadcrumbs
@@ -90,7 +90,7 @@ function DestinationPage() {
                   <span className="text-slate-500 block text-xs font-medium">
                     Post-Study Work Visa:
                   </span>
-                  <span className="font-bold text-amber-600 mt-1 block">{d.pswv}</span>
+                  <span className="font-bold text-emerald-600 mt-1 block">{d.pswv}</span>
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200">
                   <span className="text-slate-500 block text-xs font-medium">Major Intakes:</span>
@@ -98,7 +98,7 @@ function DestinationPage() {
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200">
                   <span className="text-slate-500 block text-xs font-medium">Scholarships / Perks:</span>
-                  <span className="font-bold text-amber-600 mt-1 block">{d.scholarships}</span>
+                  <span className="font-bold text-emerald-600 mt-1 block">{d.scholarships}</span>
                 </div>
                 <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200">
                   <span className="text-slate-500 block text-xs font-medium">
@@ -107,7 +107,7 @@ function DestinationPage() {
                   <span
                     className={`font-bold mt-1 block ${d.withoutIelts ? "text-emerald-700" : "text-slate-700"}`}
                   >
-                    {d.withoutIelts ? "Available (Selected Programs)" : "Language Test / IELTS"}
+                    {d.withoutIelts ? "Available (MOI / Internal Test)" : "Language Test / IELTS"}
                   </span>
                 </div>
               </div>
@@ -116,7 +116,7 @@ function DestinationPage() {
             {/* Why Study in Country */}
             <div className="rounded-3xl p-6 sm:p-8 border border-slate-200 bg-white shadow-sm">
               <h2 className="font-display text-xl font-black text-slate-900 mb-4">
-                Why Choose {d.name} with Higher Study Counselors Bangladesh?
+                Why Choose {d.name} with EDU Global?
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 font-medium">
                 {d.intro}
@@ -135,7 +135,7 @@ function DestinationPage() {
                     key={uni}
                     className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-4"
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-lg shadow-sm border border-amber-200 text-amber-600">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-lg shadow-sm border border-emerald-200 text-emerald-600">
                       🎓
                     </span>
                     <span className="text-xs font-bold text-slate-800">{uni}</span>
@@ -147,16 +147,16 @@ function DestinationPage() {
 
           {/* Right Sidebar: Assessment Form & Hotlines */}
           <aside className="space-y-6">
-            <div className="rounded-3xl p-6 sm:p-8 sticky top-24 border border-amber-200 bg-white shadow-md space-y-4">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 border border-amber-200 px-3 py-1 text-xs font-bold text-amber-700">
+            <div className="rounded-3xl p-6 sm:p-8 sticky top-24 border border-emerald-200 bg-white shadow-md space-y-4">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-xs font-bold text-emerald-700">
                 Official Senior Counselor Support
               </span>
               <h3 className="font-display text-lg font-black text-slate-900">
-                Apply for {d.name} with HSC BD
+                Apply for {d.name} with EDU Global
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed font-medium">
                 Connect directly with our senior foreign education counselors for university shortlisting,
-                IELTS 100% Cash Back guarantee, Opportunity to Move with Family, and long study gap evaluation.
+                Free Bank Support evaluation, Study Gap (up to 10+ yrs) justification, and visa lodging.
               </p>
 
               <div className="space-y-2.5 pt-2">
@@ -178,16 +178,16 @@ function DestinationPage() {
 
               <div className="border-t border-slate-100 pt-4 text-xs text-slate-600 space-y-2">
                 <p>
-                  <strong>📍 Dhaka Head Office:</strong> {company.address.full}
+                  <strong>📍 Dhanmondi Head Office:</strong> {company.address.full}
                 </p>
                 <p>
-                  <strong>🇬🇧 UK Office:</strong> 3A Westburn Road, Glasgow, UK
+                  <strong>🎯 Landmark:</strong> Opposite Unimart, Old 15 Bus Stand
                 </p>
                 <p>
-                  <strong>💰 Special Offer:</strong> 100% IELTS Cash Back on Visa Success
+                  <strong>🏦 Special Campaign:</strong> Free Bank Support for first 20 students
                 </p>
                 <p>
-                  <strong>🕒 Hours:</strong> {company.hours}
+                  <strong>🕒 Counseling Hours:</strong> {company.hours}
                 </p>
                 <p className="text-emerald-700 font-bold">
                   ✓ Free 1-on-1 Profile Assessment guaranteed

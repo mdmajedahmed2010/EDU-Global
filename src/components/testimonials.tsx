@@ -42,7 +42,7 @@ export function Testimonials() {
           tag="— VERIFIED REVIEWS & SUCCESS STORIES —"
           title="What our students"
           highlight="say"
-          description="Real feedback from students who achieved foreign university admissions, IELTS cash back rewards, and family visas with Higher Study Counselors Bangladesh since 2012."
+          description="Real feedback from students who achieved foreign university admissions, Free Bank Support, and language training with EDU Global."
           tagColor="text-sky-600"
           highlightColor="text-sky-600"
         />

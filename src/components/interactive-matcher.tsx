@@ -33,7 +33,7 @@ export function InteractiveMatcher() {
   }, [budget, ielts]);
 
   const whatsappHref = () => {
-    const text = `Hello Higher Study Counselors Bangladesh! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an HSC BD counselor for me!`;
+    const text = `Hello EDU Global! I used your Pathway & Eligibility Calculator.\n\nMy Profile:\n• Desired Level: ${level}\n• Academic Result: ${score}\n• English / Language Proficiency: ${ielts}\n• Tuition Budget: ${budget}\n\nMatched Destinations: ${matchedDestinations.map((m) => m.name).join(", ")}\n\nPlease schedule a free consultation with an EDU Global counselor for me!`;
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(text)}`;
   };
 
@@ -221,10 +221,10 @@ export function InteractiveMatcher() {
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-3xl bg-slate-950 border border-slate-800 p-5 sm:p-6 text-white shadow-lg">
           <div>
             <p className="font-display text-sm sm:text-base font-bold text-white">
-              Want a Free Profile & Study Abroad Assessment by HSC BD Advisors?
+              Want a Free Profile & Study Abroad Assessment by EDU Global Advisors?
             </p>
             <p className="text-xs text-slate-300 mt-0.5">
-              Visit our Head Office at House 23, Road 2, Sector 3, Uttara, Dhaka, or connect with our counselors directly on WhatsApp.
+              Visit our Head Office at Keari Plaza, 4th Floor, Road 8/A, Satmasjid Road, Dhanmondi, Dhaka, or connect with our counselors directly on WhatsApp.
             </p>
           </div>
           <div className="flex items-center gap-3">

@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { BrandLogo } from "@/components/brand-logo";
 import { company, navItems, destinations, courses } from "@/lib/site-data";
 import { useRegisterModal } from "@/components/register-modal";
-import { IconPhone, IconWhatsApp } from "@/components/ui-blocks";
+import { IconPhone, IconWhatsApp, IconSparkles } from "@/components/ui-blocks";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,10 +20,22 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Prevent background scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   return (
     <div className="w-full">
       {/* 1. Global Top Bar */}
-      <div className="bg-[#161b38] text-white text-xs py-2 relative z-50 border-b border-amber-500/30">
+      <div className="bg-[#0a1931] text-white text-xs py-2 relative z-50 border-b border-blue-500/20">
         <div className="section-shell flex items-center justify-between gap-3">
           {/* Left: Direct Phone & Hotlines */}
           <div className="flex items-center gap-3 sm:gap-4 text-[0.73rem] sm:text-xs">
@@ -41,18 +54,18 @@ export function SiteHeader() {
               <span>{company.phones[1]}</span>
             </a>
             <span className="text-slate-600 hidden md:inline">|</span>
-            <span className="hidden md:inline-flex items-center gap-1 text-[0.68rem] bg-amber-500 text-slate-950 font-extrabold px-2.5 py-0.5 rounded-full shadow-xs">
-              🎁 IELTS ক্যাশ ব্যাক অফার (ভিসা হলে)
+            <span className="hidden md:inline-flex items-center gap-1 text-[0.68rem] bg-blue-600 text-white font-extrabold px-2.5 py-0.5 rounded-full shadow-xs">
+              🏛️ 1st 20 Students Free Bank Support Offer
             </span>
           </div>
 
           {/* Right: Office Location & Motto */}
           <div className="flex items-center gap-2 text-[0.7rem] sm:text-[0.75rem] text-slate-300">
             <span className="text-amber-400">📍</span>
-            <span className="truncate">সেক্টর ৩, উত্তরা, ঢাকা (হাউজ ২৩, রোড ২)</span>
+            <span className="truncate">Keari Plaza (Lift-3), Road 8/A, Dhanmondi, Dhaka</span>
             <span className="hidden lg:inline text-slate-600">|</span>
-            <span className="hidden lg:inline text-amber-300 font-bold text-[0.68rem] bg-amber-500/20 px-2.5 py-0.5 rounded-full border border-amber-400/40">
-              ★ Since 2012 · 14+ Years Trust
+            <span className="hidden lg:inline text-blue-300 font-bold text-[0.68rem] bg-blue-500/20 px-2.5 py-0.5 rounded-full border border-blue-400/40">
+              ★ Your Gateway to the World
             </span>
           </div>
         </div>
@@ -72,8 +85,8 @@ export function SiteHeader() {
           <Link to="/" className="group flex items-center gap-3 shrink-0">
             <BrandLogo size={46} withText textClassName="flex" />
             <div className="hidden xl:block h-6 w-px bg-slate-200" />
-            <span className="hidden xl:inline text-xs font-extrabold text-amber-600 tracking-wider uppercase">
-              STUDY ABROAD & LANGUAGE
+            <span className="hidden xl:inline text-xs font-extrabold text-[#0047ba] tracking-wider uppercase">
+              STUDY ABROAD & LANGUAGE ACADEMY
             </span>
           </Link>
 
@@ -81,8 +94,8 @@ export function SiteHeader() {
           <nav className="hidden items-center gap-1 xl:gap-1.5 lg:flex">
             {navItems.map((item) => {
               const hasChildren = item.children && item.children.length > 0;
-              const isDest = item.label.includes("Study Abroad");
-              const isCourses = item.label.includes("Language Courses") || item.label.includes("Courses");
+              const isDest = item.label.includes("Study Abroad") || item.label.includes("Destinations");
+              const isCourses = item.label.includes("Language") || item.label.includes("Courses");
 
               if (hasChildren) {
                 return (
@@ -94,7 +107,7 @@ export function SiteHeader() {
                   >
                     <Link
                       to={item.to}
-                      className="inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors whitespace-nowrap"
+                      className="inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-blue-50 hover:text-[#0047ba] transition-colors whitespace-nowrap"
                     >
                       <span>{item.label}</span>
                       <span className="text-[0.65rem] opacity-50">▾</span>
@@ -107,8 +120,8 @@ export function SiteHeader() {
                           <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
                             Study Abroad Destinations
                           </span>
-                          <span className="text-[0.7rem] text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
-                            🇬🇧 UK & 🇭🇺 Hungary Priority Track
+                          <span className="text-[0.7rem] text-[#0047ba] font-bold bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
+                            🇬🇧 Canterbury Christ Church & 🇨🇾 Cyprus Priority
                           </span>
                         </div>
                         {destinations.slice(0, 8).map((d) => (
@@ -116,16 +129,16 @@ export function SiteHeader() {
                             key={d.slug}
                             to="/study-in-{$country}"
                             params={{ country: d.slug }}
-                            className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-amber-50/80 transition-colors group"
+                            className="flex items-start gap-2.5 p-2 rounded-xl hover:bg-blue-50/80 transition-colors group"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <span className="text-xl shrink-0 mt-0.5">{d.flag}</span>
                             <div className="min-w-0">
-                              <div className="text-xs font-bold text-slate-900 group-hover:text-amber-700 flex items-center gap-1.5">
+                              <div className="text-xs font-bold text-slate-900 group-hover:text-[#0047ba] flex items-center gap-1.5">
                                 <span>{d.name}</span>
                                 {d.specialHighlight && (
-                                  <span className="text-[0.6rem] bg-amber-100 text-amber-800 px-1.5 py-0.2 rounded font-semibold truncate max-w-[130px]">
-                                    {d.slug === "uk" ? "Top Choice" : "Featured"}
+                                  <span className="text-[0.6rem] bg-blue-100 text-[#0047ba] px-1.5 py-0.2 rounded font-semibold truncate max-w-[130px]">
+                                    {d.slug === "uk" ? "Partner Uni" : "Featured"}
                                   </span>
                                 )}
                               </div>
@@ -138,14 +151,14 @@ export function SiteHeader() {
                         <div className="col-span-2 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
                           <Link
                             to="/destinations"
-                            className="font-bold text-amber-700 hover:text-amber-900 flex items-center gap-1"
+                            className="font-bold text-[#0047ba] hover:text-blue-900 flex items-center gap-1"
                             onClick={() => setActiveDropdown(null)}
                           >
-                            <span>Explore all 9+ destination countries</span>
+                            <span>Explore all 10+ destination countries</span>
                             <span>→</span>
                           </Link>
                           <span className="text-[0.7rem] text-slate-400 font-medium">
-                            HSC BD · Sector 3, Uttara, Dhaka
+                            EDU Global · Dhanmondi, Dhaka
                           </span>
                         </div>
                       </div>
@@ -158,21 +171,21 @@ export function SiteHeader() {
                           <span className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
                             Language & Fluency Academy
                           </span>
-                          <span className="text-[0.7rem] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                            IELTS Cash Back Offer
+                          <span className="text-[0.7rem] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                            IELTS · Spoken · Kids · Japanese
                           </span>
                         </div>
                         {courses.map((c) => (
                           <Link
                             key={c.slug}
                             to="/services"
-                            className="flex items-center justify-between p-2 rounded-xl hover:bg-amber-50/80 transition-colors group"
+                            className="flex items-center justify-between p-2 rounded-xl hover:bg-blue-50/80 transition-colors group"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
                               <span className="text-lg shrink-0">{c.icon}</span>
                               <div className="truncate">
-                                <span className="text-xs font-bold text-slate-900 group-hover:text-amber-800 block truncate">
+                                <span className="text-xs font-bold text-slate-900 group-hover:text-[#0047ba] block truncate">
                                   {c.title}
                                 </span>
                                 <span className="text-[0.68rem] text-slate-500 block truncate">
@@ -180,7 +193,7 @@ export function SiteHeader() {
                                 </span>
                               </div>
                             </div>
-                            <span className="text-[0.65rem] bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded-full shrink-0">
+                            <span className="text-[0.65rem] bg-blue-100 text-[#0047ba] font-bold px-2 py-0.5 rounded-full shrink-0">
                               {c.badge}
                             </span>
                           </Link>
@@ -195,7 +208,7 @@ export function SiteHeader() {
                           <Link
                             key={child.label}
                             to={child.to}
-                            className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors"
+                            className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-blue-50 hover:text-[#0047ba] transition-colors"
                             onClick={() => setActiveDropdown(null)}
                           >
                             <span>{child.label}</span>
@@ -216,7 +229,7 @@ export function SiteHeader() {
                 <Link
                   key={item.label}
                   to={item.to}
-                  className="rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors whitespace-nowrap"
+                  className="rounded-full px-3.5 py-2 text-xs font-bold text-slate-700 hover:bg-blue-50 hover:text-[#0047ba] transition-colors whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
@@ -228,20 +241,20 @@ export function SiteHeader() {
           <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello Higher Study Counselors Bangladesh! I would like to inquire about study abroad opportunities, IELTS preparation, and spouse/family visa support.",
+                "Hello EDU Global! I would like to inquire about study abroad opportunities, admission guidance, and IELTS / language courses.",
               )}`}
               target="_blank"
               rel="noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 px-3.5 py-2 rounded-full transition-colors active:scale-95 shadow-sm"
             >
               <IconWhatsApp className="w-4 h-4 text-emerald-600" />
-              <span className="hidden xl:inline">WhatsApp Counselors</span>
+              <span className="hidden xl:inline">WhatsApp Us</span>
             </a>
 
             <button
               type="button"
               onClick={() => open()}
-              className="bg-[#161b38] hover:bg-[#242c56] text-amber-400 font-bold text-xs py-2 px-4 sm:px-5 rounded-full border border-amber-500/40 shadow-sm active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
+              className="bg-[#0047ba] hover:bg-[#003894] text-white font-bold text-xs py-2 px-4 sm:px-5 rounded-full shadow-sm active:scale-95 transition-all flex items-center gap-1.5 cursor-pointer"
             >
               <span>Free Consultation</span>
               <span>→</span>
@@ -251,7 +264,7 @@ export function SiteHeader() {
             <button
               type="button"
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 transition-colors"
+              className="lg:hidden p-2 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
               aria-label="Toggle navigation menu"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -265,58 +278,127 @@ export function SiteHeader() {
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
-        {mobileOpen && (
-          <div className="lg:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-3 animate-in fade-in duration-200">
-            <div className="grid grid-cols-1 gap-1">
-              {navItems.map((item) => (
-                <div key={item.label}>
-                  <Link
-                    to={item.to}
-                    className="block px-3 py-2 text-sm font-bold text-slate-800 hover:bg-amber-50 rounded-xl"
+        {/* Mobile Navigation Drawer with Framer Motion Spring */}
+        <AnimatePresence>
+          {mobileOpen && (
+            <>
+              {/* Backdrop */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setMobileOpen(false)}
+                className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 lg:hidden"
+              />
+
+              {/* Drawer Container */}
+              <motion.div
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ type: "spring", damping: 28, stiffness: 280 }}
+                className="fixed top-0 right-0 bottom-0 w-[85vw] max-w-md bg-white shadow-2xl z-50 flex flex-col justify-between overflow-y-auto lg:hidden"
+              >
+                {/* Drawer Header */}
+                <div className="p-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+                  <BrandLogo size={38} withText />
+                  <button
+                    type="button"
                     onClick={() => setMobileOpen(false)}
+                    className="p-2 rounded-full hover:bg-slate-200 text-slate-600 transition-colors cursor-pointer"
+                    aria-label="Close menu"
                   >
-                    {item.label}
-                  </Link>
-                  {item.children && (
-                    <div className="pl-4 space-y-1 mt-1">
-                      {item.children.slice(0, 5).map((child) => (
+                    ✕
+                  </button>
+                </div>
+
+                {/* Nav Links */}
+                <div className="p-4 space-y-4 flex-1">
+                  <div className="space-y-1">
+                    {navItems.map((item) => (
+                      <div key={item.label} className="border-b border-slate-100 pb-2 mb-2">
                         <Link
-                          key={child.label}
-                          to={child.to}
-                          params={child.params}
-                          className="block px-3 py-1 text-xs font-semibold text-slate-600 hover:text-amber-700"
+                          to={item.to}
+                          className="block px-2 py-2 text-sm font-extrabold text-[#0a1931] hover:text-[#0047ba]"
                           onClick={() => setMobileOpen(false)}
                         >
-                          {child.label}
+                          {item.label}
                         </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+                        {item.children && (
+                          <div className="pl-3 space-y-1 mt-1">
+                            {item.children.slice(0, 6).map((child) => (
+                              <Link
+                                key={child.label}
+                                to={child.to}
+                                params={child.params}
+                                className="flex items-center justify-between px-2 py-1.5 text-xs font-semibold text-slate-600 hover:text-[#0047ba] hover:bg-blue-50 rounded-lg"
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                <span>{child.label}</span>
+                                {child.badge && (
+                                  <span className="text-[0.62rem] bg-blue-100 text-[#0047ba] px-1.5 py-0.5 rounded font-bold">
+                                    {child.badge}
+                                  </span>
+                                )}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
 
-            <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
-              <a
-                href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
-                className="flex items-center justify-center gap-2 py-2 text-xs font-bold text-[#161b38] bg-slate-100 rounded-xl"
-              >
-                <IconPhone className="w-4 h-4 text-amber-600" />
-                <span>Call Hotline: {company.phones[0]}</span>
-              </a>
-              <a
-                href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-center gap-2 py-2 text-xs font-bold text-white bg-emerald-600 rounded-xl"
-              >
-                <IconWhatsApp className="w-4 h-4 text-white" />
-                <span>WhatsApp: {company.whatsappFormatted}</span>
-              </a>
-            </div>
-          </div>
-        )}
+                  {/* Hotlines & Headquarters in Drawer */}
+                  <div className="rounded-2xl bg-blue-50/80 border border-blue-200 p-3.5 space-y-2">
+                    <span className="text-[0.7rem] font-black uppercase tracking-wider text-[#0047ba] block">
+                      Dhanmondi Headquarters
+                    </span>
+                    <p className="text-xs text-slate-700 font-medium leading-relaxed">
+                      Keari Plaza (Lift-3), Road 8/A, Satmasjid Road, Dhanmondi, Dhaka.
+                    </p>
+                    <p className="text-[0.72rem] text-slate-500 font-bangla">
+                      সরাসরি অফিসে এসে অভিজ্ঞ কাউন্সেলরদের সাথে ফ্রি পরামর্শ করুন।
+                    </p>
+                  </div>
+                </div>
+
+                {/* Drawer Footer Actions */}
+                <div className="p-4 border-t border-slate-200 bg-slate-50 space-y-2.5">
+                  <a
+                    href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
+                    className="flex items-center justify-center gap-2 py-2.5 text-xs font-bold text-white bg-[#0a1931] rounded-xl shadow-xs"
+                  >
+                    <IconPhone className="w-4 h-4 text-amber-400" />
+                    <span>Call Hotline: {company.phones[0]}</span>
+                  </a>
+
+                  <a
+                    href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+                      "Hello EDU Global! I am inquiring from the website menu.",
+                    )}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-center gap-2 py-2.5 text-xs font-bold text-white bg-emerald-600 rounded-xl shadow-xs"
+                  >
+                    <IconWhatsApp className="w-4 h-4 text-white" />
+                    <span>Chat on WhatsApp ({company.whatsappFormatted})</span>
+                  </a>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMobileOpen(false);
+                      open();
+                    }}
+                    className="w-full py-2.5 text-xs font-extrabold text-white bg-[#0047ba] rounded-xl shadow-sm cursor-pointer"
+                  >
+                    Book Free Profile Assessment
+                  </button>
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
       </header>
     </div>
   );

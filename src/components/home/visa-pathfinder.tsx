@@ -1,26 +1,25 @@
 import { useState } from "react";
 import { useRegisterModal } from "@/components/register-modal";
-import { IconSparkles, IconCheck, IconArrowRight, IconWhatsApp } from "@/components/ui-blocks";
+import { IconSparkles, IconArrowRight, IconWhatsApp } from "@/components/ui-blocks";
 import { company } from "@/lib/site-data";
 import { cn } from "@/lib/utils";
-import { Link } from "@tanstack/react-router";
-import { SlideIn } from "@/components/motion-wrapper";
+import { motion, AnimatePresence } from "framer-motion";
 
 const educationLevels = [
-  { id: "hsc", label: "HSC / A-Levels / Equivalent", subtitle: "Undergraduate Abroad & Foundation" },
-  { id: "bachelor", label: "Bachelor's / Honors / Diploma", subtitle: "Master's & Post-Study Work Visa" },
+  { id: "hsc", label: "HSC / A-Levels / High School", subtitle: "Undergraduate Abroad & Foundation Track" },
+  { id: "bachelor", label: "Bachelor's / Honors / Degree", subtitle: "Master's & Post-Study Work Visa (PSW)" },
   {
     id: "masters",
-    label: "Master's / Professional Experience",
-    subtitle: "Postgraduate & Family Relocation",
+    label: "Master's / Working Professional",
+    subtitle: "Postgraduate, Spouse & Family Relocation",
   },
 ];
 
 const englishProficiency = [
-  { id: "ielts", label: "IELTS (Academic & General)", badge: "Cash Back Offer" },
-  { id: "spoken", label: "Spoken English & Fluency", badge: "Interview Prep" },
-  { id: "kids", label: "Kids' English Academy", badge: "Ages 5–14" },
-  { id: "moi", label: "Without IELTS (MOI Track)", badge: "Europe & Dubai" },
+  { id: "ielts", label: "IELTS (Academic & General)", badge: "Target Band 7.5+" },
+  { id: "spoken", label: "Spoken English Fluency", badge: "Interview Mastery" },
+  { id: "kids", label: "Kids' English Academy", badge: "Ages 5–14 & Phonics" },
+  { id: "moi", label: "Without IELTS (MOI Option)", badge: "Cyprus & Europe" },
 ];
 
 const destinationPreferences = [
@@ -28,57 +27,57 @@ const destinationPreferences = [
     id: "uk",
     name: "United Kingdom",
     flag: "🇬🇧",
-    tag: "1-Yr Masters / Family",
-    partner: "Top UK Universities",
+    tag: "Canterbury Christ Church Partner",
+    partner: "1-Yr Masters & 2-Yr PSW",
+  },
+  {
+    id: "cyprus",
+    name: "Cyprus (Europe)",
+    flag: "🇨🇾",
+    tag: "1st 20 Free Bank Support",
+    partner: "Low Fees from €2,500",
   },
   {
     id: "usa",
     name: "United States",
     flag: "🇺🇸",
-    tag: "STEM OPT 3 Years",
-    partner: "High Scholarships",
-  },
-  {
-    id: "australia",
-    name: "Australia",
-    flag: "🇦🇺",
-    tag: "Spouse Work Rights",
-    partner: "Go8 & Tech Unis",
-  },
-  {
-    id: "hungary",
-    name: "Hungary",
-    flag: "🇭🇺",
-    tag: "Low Tuition / Schengen",
-    partner: "Tuition After Visa",
+    tag: "3-Year STEM OPT",
+    partner: "Merit Scholarships",
   },
   {
     id: "canada",
     name: "Canada",
     flag: "🇨🇦",
     tag: "PGWP & PR Pathways",
-    partner: "Public DLIs",
+    partner: "Top Public Colleges",
   },
   {
-    id: "finland",
-    name: "Finland",
-    flag: "🇫🇮",
-    tag: "30 Hrs/Wk Work Rights",
-    partner: "Nordic Happiness",
+    id: "australia",
+    name: "Australia",
+    flag: "🇦🇺",
+    tag: "Spouse Full Work Rights",
+    partner: "Subclass 500 Visa",
+  },
+  {
+    id: "italy",
+    name: "Italy (Schengen)",
+    flag: "🇮🇹",
+    tag: "100% DSU Regional Award",
+    partner: "29 European Nations",
+  },
+  {
+    id: "japan",
+    name: "Japan",
+    flag: "🇯🇵",
+    tag: "Work & Study Track",
+    partner: "COE & JLPT Support",
   },
   {
     id: "malaysia",
     name: "Malaysia",
     flag: "🇲🇾",
-    tag: "Twin Degrees / Low Cost",
-    partner: "Fast Visa Approval",
-  },
-  {
-    id: "dubai",
-    name: "Dubai (UAE)",
-    flag: "🇦🇪",
-    tag: "100% Visa / No IELTS",
-    partner: "Work & Study Track",
+    tag: "HELP & MMU Partner",
+    partner: "Fast Visa & Low Cost",
   },
 ];
 
@@ -88,18 +87,18 @@ export function VisaPathfinder() {
   const [english, setEnglish] = useState("ielts");
   const [destination, setDestination] = useState("uk");
 
-  // Dynamic computation logic
+  // Dynamic computation logic based on official EDU Global verified pathways
   const getMatchData = () => {
     if (english === "kids") {
       return {
         matchScore: 100,
-        title: "Kids' English Academy (Ages 5–14)",
+        title: "EDU Global Kids' English Academy (Ages 5–14)",
         headline: "Phonics, Interactive Storytelling & Confident Speaking for Children",
-        timeline: "Ongoing Weekend & After-School Batches",
-        scholarship: "Free Parent Orientation & Child Level Assessment",
-        moiAccepted: "Joyful English learning, correct British pronunciation & rhymes",
+        timeline: "Weekend & After-School Batches at Dhanmondi HQ",
+        scholarship: "Free Initial Linguistic Assessment & Parent Orientation",
+        moiAccepted: "Joyful English immersion, British phonics pronunciation & vocabulary building",
         partnerNote:
-          "Conducted at our modern, child-friendly campus at House 23, Road 2, Sector 3, Uttara, Dhaka with gentle, patient teachers.",
+          "Conducted at our child-friendly campus at Keari Plaza (Lift-3), Road 8/A, Satmasjid Road, Dhanmondi, Dhaka with certified instructors.",
         actionType: "course",
       };
     }
@@ -107,41 +106,55 @@ export function VisaPathfinder() {
     if (english === "spoken") {
       return {
         matchScore: 98,
-        title: "Spoken English & Communication Mastery",
-        headline: "Break Speaking Hesitation, Refine Accent & Master Embassy Interviews",
-        timeline: "2 Months Intensive Fluency Drills",
-        scholarship: "Free Speaking Level Evaluation & Presentation Coaching",
-        moiAccepted: "Situational Roleplays, Group Discussions & Daily Dialogue",
+        title: "Spoken English Fluency & Professional Communication",
+        headline: "Overcome Speaking Hesitation, Refine Accent & Master Embassy Interviews",
+        timeline: "2 to 3 Months Intensive Practical Drills",
+        scholarship: "Free Fluency Level Evaluation & Public Speaking Clinics",
+        moiAccepted: "Real-world conversations, corporate presentation drills & interview simulations",
         partnerNote:
-          "Interactive speaking sessions at our Sector 3 Uttara office designed for students, job holders, and visa applicants.",
+          "Small interactive batches at our Dhanmondi Headquarters designed for university students, career professionals, and visa applicants.",
         actionType: "course",
+      };
+    }
+
+    if (destination === "cyprus") {
+      return {
+        matchScore: 100,
+        title: "Cyprus Higher Education Track (Free Bank Support Offer)",
+        headline: "Exclusive Free Bank Support for First 20 Applicants & Low Tuition Fees",
+        timeline: "Spring & Fall Intakes · Fast 3-Week Offer Letters",
+        scholarship: "Affordable Annual Tuition Starting from €2,500",
+        moiAccepted: "Medium of Instruction (MOI) 100% Accepted / No Mandatory IELTS",
+        partnerNote:
+          "Official banner campaign. Long study gap and CGPA down to 2.5 accepted. Free bank solvency support provided from Dhanmondi Dhaka HQ.",
+        actionType: "abroad",
       };
     }
 
     if (destination === "uk") {
       return {
         matchScore: 99,
-        title: "United Kingdom Master's & Family Move",
-        headline: "1-Year Fast Master's, 2-Year Graduate Route PSW & IELTS Cashback on Visa",
-        timeline: "Offer Letter in 1–2 Weeks · Major Intakes: Jan, May, Sep",
-        scholarship: "£1,500 – £5,000 University Merit Bursaries + IELTS Cashback",
-        moiAccepted: "IELTS 6.0–6.5 or MOI acceptance in select partner universities",
+        title: "United Kingdom — Canterbury Christ Church University Partner",
+        headline: "1-Year Fast-Track Master's Degree & 2-Year Graduate Route PSW",
+        timeline: "Direct Partner Admissions for Jan, May & September Intakes",
+        scholarship: "£1,500 – £4,000 University Merit Bursaries",
+        moiAccepted: "IELTS 6.0–6.5 or MOI waivers in select degree pathways",
         partnerNote:
-          "Higher Study Counselors Bangladesh provides full spouse/dependent visa processing, bank solvency guidance, and 1-on-1 consular mock interviews.",
+          "EDU Global is an official partner representative. Full assistance for student visa and spouse/dependent family relocation.",
         actionType: "abroad",
       };
     }
 
-    if (destination === "hungary") {
+    if (destination === "italy") {
       return {
         matchScore: 98,
-        title: "Hungary European Schengen Degree Track",
-        headline: "Low Tuition Fees (€1,800–€3,500/yr), Tuition After Visa & 29 Schengen Countries",
-        timeline: "Fall (September) & Spring (February) Intakes",
-        scholarship: "Low Cost of Living + Stipendium Hungaricum Opportunities",
-        moiAccepted: "MOI Accepted / With or Without IELTS",
+        title: "Italy Public Universities & 100% Regional DSU Scholarship",
+        headline: "100% Free Tuition + €7,000 Annual Government Stipend & Schengen Mobility",
+        timeline: "Annual September/October Intake · Pre-Enrollment Guidance",
+        scholarship: "100% Full Tuition Waiver + Cash Living Support via DSU",
+        moiAccepted: "English-taught programs with MOI or basic IELTS 6.0",
         partnerNote:
-          "Featured on our official banner. Study gap accepted with job proof. Complete documentation and Schengen visa assistance from Uttara Dhaka HQ.",
+          "Complete assistance with CIMEA comparability statement, Embassy pre-enrollment, and DSU scholarship dossier compilation.",
         actionType: "abroad",
       };
     }
@@ -149,13 +162,13 @@ export function VisaPathfinder() {
     if (destination === "australia") {
       return {
         matchScore: 97,
-        title: "Australia Master's & Spouse Full Work Rights",
-        headline: "Post-Study Work Visas up to 4+ Years & Legal Spouse Full-Time Employment",
-        timeline: "February & July Intakes",
+        title: "Australia Master's & Unrestricted Spouse Work Rights",
+        headline: "Post-Study Work Visas up to 4+ Years & Subclass 500 Visa Processing",
+        timeline: "February & July Primary Intakes",
         scholarship: "20% – 30% International Student Merit Reductions",
         moiAccepted: "IELTS 6.5+ / PTE Academic Accepted",
         partnerNote:
-          "Subclass 500 visa filing, Genuine Student (GS) formulation, and joint dependent file processing by senior HSC BD counselors.",
+          "Subclass 500 visa filing, Genuine Student (GS) formulation, and joint family file processing by senior EDU Global counselors.",
         actionType: "abroad",
       };
     }
@@ -163,40 +176,40 @@ export function VisaPathfinder() {
     if (destination === "usa") {
       return {
         matchScore: 96,
-        title: "USA STEM Degree & 3-Year OPT Work Rights",
-        headline: "World-Class State Universities with Substantial Merit Scholarships & F-1 Visa",
+        title: "USA STEM Degree Programs & 3-Year OPT Work Rights",
+        headline: "Top US Universities with High Merit Scholarships & F-1 Visa Prep",
         timeline: "Fall (August) & Spring (January) Intakes",
         scholarship: "$3,000 – $15,000 / year Institutional Merit Awards",
         moiAccepted: "IELTS 6.5+ / Duolingo / GRE waivers available",
         partnerNote:
-          "Comprehensive F-1 visa interview training and DS-160 document verification at our Uttara Dhaka office.",
+          "Rigorous F-1 visa interview training and DS-160 document verification at our Dhanmondi Dhaka office.",
         actionType: "abroad",
       };
     }
 
-    if (destination === "dubai" || destination === "malaysia") {
+    if (destination === "japan") {
       return {
-        matchScore: 100,
-        title: "Fast Visa & Budget-Friendly Higher Education",
-        headline: "100% Visa Approvals, No IELTS Required (MOI), Low Fees & Twin Degrees",
-        timeline: "Rapid 2–3 Weeks Visa Turnaround · Monthly Rolling Intakes",
-        scholarship: "High Part-time Earning Potential to Cover Living Costs",
-        moiAccepted: "Medium of Instruction (MOI) 100% Accepted",
+        matchScore: 98,
+        title: "Japan Higher Education & Career Pathway",
+        headline: "COE Processing, High Part-Time Wages & Post-Graduation Employment",
+        timeline: "April & October Major Intakes",
+        scholarship: "JASSO Scholarships & Substantial University Waivers",
+        moiAccepted: "Basic Japanese (NAT-TEST / JLPT N5) or English Track Degrees",
         partnerNote:
-          "Official banner destination. No complicated bank statements required. Tuition fee after visa in select Dubai universities.",
+          "Comprehensive COE documentation, Embassy interview readiness, and in-house Japanese language training at Dhanmondi HQ.",
         actionType: "abroad",
       };
     }
 
     return {
       matchScore: 99,
-      title: "Cambridge IELTS Preparation + Visa Cashback",
-      headline: "Master Listening, Reading, Writing & Speaking (Target Band 7.5+)",
+      title: "EDU Global IELTS Preparation Academy (Band 7.5+)",
+      headline: "Master Listening, Reading, Writing & Speaking with Cambridge Materials",
       timeline: "2.5 to 3 Months Intensive Coaching",
-      scholarship: "100% IELTS Test Fee Cashback Upon Visa Approval with HSC BD",
-      moiAccepted: "Cambridge Authentic Test Materials & British Council Aligned",
+      scholarship: "Complete Cambridge Test Practice & Weekly Mock Examinations",
+      moiAccepted: "British Council & IDP Aligned Certified Instruction",
       partnerNote:
-        "Taught at House 23, Road 2, Sector 3, Uttara, Dhaka with 1-on-1 speaking interview simulations and weekly full-length mock exams.",
+        "Taught at Keari Plaza, 4th Floor, Road 8/A, Satmasjid Road, Dhanmondi, Dhaka with 1-on-1 speaking interview simulations.",
       actionType: "course",
     };
   };
@@ -204,29 +217,32 @@ export function VisaPathfinder() {
   const match = getMatchData();
 
   return (
-    <section className="relative py-16 sm:py-24 bg-gradient-to-b from-white via-slate-50/50 to-white border-b border-slate-200/80">
+    <section className="relative py-14 sm:py-20 bg-gradient-to-b from-white via-slate-50/50 to-white border-b border-slate-200/80">
       <div className="section-shell">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-300 px-3.5 py-1 text-xs font-bold text-amber-800 mb-3">
-            <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-            <span>Higher Study Counselors Bangladesh · Eligibility Pathfinder</span>
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 border border-blue-200 px-3.5 py-1 text-xs font-bold text-[#0047ba] mb-3">
+            <IconSparkles className="w-3.5 h-3.5 text-blue-600" />
+            <span>Interactive Visa & Program Pathfinder</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-5xl font-black text-[#161b38] tracking-tight leading-tight">
-            Find Your Ideal <span className="text-amber-500">Study & Visa Pathway</span>
+          <h2 className="font-display text-3xl sm:text-5xl font-black text-[#0a1931] tracking-tight leading-tight">
+            Find Your Ideal <span className="text-[#0047ba]">Study & Visa Pathway</span>
           </h2>
-          <p className="text-xs sm:text-sm text-slate-600 mt-2 font-medium font-bangla">
-            আপনার শিক্ষাগত যোগ্যতা, বর্তমান ইংরেজি স্তর ও কাঙ্ক্ষিত দেশ সিলেক্ট করে ভিসা সম্ভাবনা, IELTS ক্যাশ ব্যাক ও ফ্যামিলি মুভ সুবিধা তাৎক্ষণিকভাবে যাচাই করুন।
+          <p className="text-xs sm:text-sm text-slate-600 mt-2 font-medium">
+            Select your background and destination to calculate your match ratio, admission timeline, and Free Bank Support eligibility.
+          </p>
+          <p className="text-xs text-slate-400 font-bangla mt-1">
+            আপনার শিক্ষাগত যোগ্যতা ও পছন্দের দেশ নির্বাচন করে তাৎক্ষণিকভাবে সঠিক ভর্তি ও ভিসা গাইডলাইন জানুন।
           </p>
         </div>
 
         {/* 2-Column Pathfinder Architecture */}
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start max-w-5xl mx-auto">
-          {/* Left: Input Selection Cards */}
-          <div className="space-y-6">
+          {/* Left: Interactive Selectors */}
+          <div className="space-y-5">
             {/* 1. Academic Level */}
-            <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-amber-700 block mb-3">
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
+              <span className="text-xs font-black uppercase tracking-wider text-[#0047ba] block mb-3">
                 1. Your Current Academic Qualification
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
@@ -236,9 +252,9 @@ export function VisaPathfinder() {
                     type="button"
                     onClick={() => setEduLevel(lvl.id)}
                     className={cn(
-                      "rounded-2xl p-3.5 text-left border transition-all cursor-pointer",
+                      "rounded-2xl p-3.5 text-left border transition-all cursor-pointer active:scale-95",
                       eduLevel === lvl.id
-                        ? "border-amber-500 bg-amber-50/60 shadow-xs ring-1 ring-amber-500"
+                        ? "border-[#0047ba] bg-blue-50/70 shadow-xs ring-1 ring-blue-500 font-bold"
                         : "border-slate-200 hover:border-slate-300 bg-white",
                     )}
                   >
@@ -250,8 +266,8 @@ export function VisaPathfinder() {
             </div>
 
             {/* 2. Language Status */}
-            <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-amber-700 block mb-3">
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
+              <span className="text-xs font-black uppercase tracking-wider text-[#0047ba] block mb-3">
                 2. Target Program / Language Status
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -261,15 +277,15 @@ export function VisaPathfinder() {
                     type="button"
                     onClick={() => setEnglish(eng.id)}
                     className={cn(
-                      "rounded-2xl p-3.5 text-left border transition-all cursor-pointer flex items-center justify-between",
+                      "rounded-2xl p-3.5 text-left border transition-all cursor-pointer flex items-center justify-between active:scale-95",
                       english === eng.id
-                        ? "border-amber-500 bg-amber-50/60 shadow-xs ring-1 ring-amber-500"
+                        ? "border-[#0047ba] bg-blue-50/70 shadow-xs ring-1 ring-blue-500 font-bold"
                         : "border-slate-200 hover:border-slate-300 bg-white",
                     )}
                   >
                     <div>
                       <div className="font-bold text-xs text-slate-900">{eng.label}</div>
-                      <span className="inline-block mt-1 rounded bg-slate-100 px-2 py-0.5 text-[0.62rem] font-semibold text-slate-700">
+                      <span className="inline-block mt-1 rounded bg-slate-100 px-2 py-0.5 text-[0.65rem] font-bold text-[#0047ba]">
                         {eng.badge}
                       </span>
                     </div>
@@ -279,9 +295,9 @@ export function VisaPathfinder() {
             </div>
 
             {/* 3. Preferred Destination */}
-            <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 shadow-xs">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-amber-700 block mb-3">
-                3. Preferred Destination (Official Banner Countries)
+            <div className="rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs">
+              <span className="text-xs font-black uppercase tracking-wider text-[#0047ba] block mb-3">
+                3. Preferred Study Destination (10+ Countries)
               </span>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                 {destinationPreferences.map((dest) => (
@@ -290,9 +306,9 @@ export function VisaPathfinder() {
                     type="button"
                     onClick={() => setDestination(dest.id)}
                     className={cn(
-                      "rounded-2xl p-3 text-left border transition-all cursor-pointer",
+                      "rounded-2xl p-3 text-left border transition-all cursor-pointer active:scale-95",
                       destination === dest.id
-                        ? "border-amber-500 bg-amber-50/50 shadow-xs ring-1 ring-amber-500"
+                        ? "border-[#0047ba] bg-blue-50/70 shadow-xs ring-1 ring-blue-500 font-bold"
                         : "border-slate-200 hover:border-slate-300 bg-white",
                     )}
                   >
@@ -307,79 +323,90 @@ export function VisaPathfinder() {
             </div>
           </div>
 
-          {/* Right: Dynamic Match Assessment Card */}
-          <div className="sticky top-24">
-            <div className="rounded-3xl border-2 border-amber-500/30 bg-gradient-to-br from-white via-[#FDFBF7] to-white p-6 sm:p-8 shadow-xl">
+          {/* Right: Dynamic Match Assessment Card with AnimatePresence */}
+          <div className="lg:sticky lg:top-24">
+            <div className="rounded-3xl border-2 border-blue-500/30 bg-gradient-to-br from-white via-blue-50/20 to-white p-6 sm:p-8 shadow-xl">
               <div className="flex items-center justify-between gap-3 border-b border-slate-100 pb-4 mb-5">
                 <div>
-                  <span className="text-[0.65rem] font-black uppercase tracking-widest text-amber-700">
-                    Official Assessment
+                  <span className="text-[0.68rem] font-black uppercase tracking-widest text-[#0047ba] bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
+                    Official Pathway Match
                   </span>
-                  <h3 className="font-display text-lg font-bold text-[#161b38] mt-0.5">
+                  <h3 className="font-display text-base sm:text-lg font-black text-[#0a1931] mt-1.5">
                     {match.title}
                   </h3>
                 </div>
                 <div className="flex flex-col items-end">
-                  <span className="font-display text-2xl font-black text-emerald-600">
+                  <span className="font-display text-3xl font-black text-[#0047ba]">
                     {match.matchScore}%
                   </span>
                   <span className="text-[0.6rem] font-bold text-slate-400 uppercase tracking-widest">
-                    Match Ratio
+                    Match Confidence
                   </span>
                 </div>
               </div>
 
-              {/* Assessment Breakdown */}
-              <div className="space-y-4 text-xs">
-                <div>
-                  <span className="text-slate-400 font-semibold block mb-0.5">
-                    Primary Opportunity:
-                  </span>
-                  <p className="font-bold text-slate-900 text-sm leading-snug">{match.headline}</p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3 pt-1">
-                  <div className="rounded-2xl bg-white border border-slate-100 p-3 shadow-2xs">
-                    <span className="text-slate-400 text-[0.68rem] block mb-0.5 font-semibold">
-                      Estimated Timeline
+              {/* Assessment Breakdown with Smooth Motion */}
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`${eduLevel}-${english}-${destination}`}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.25 }}
+                  className="space-y-4 text-xs"
+                >
+                  <div>
+                    <span className="text-slate-400 font-bold text-[0.7rem] uppercase tracking-wider block mb-0.5">
+                      Primary Advantage:
                     </span>
-                    <span className="font-bold text-slate-800 text-xs">{match.timeline}</span>
+                    <p className="font-bold text-slate-900 text-sm leading-snug">{match.headline}</p>
                   </div>
 
-                  <div className="rounded-2xl bg-white border border-slate-100 p-3 shadow-2xs">
-                    <span className="text-slate-400 text-[0.68rem] block mb-0.5 font-semibold">
-                      Opportunity Potential
-                    </span>
-                    <span className="font-bold text-emerald-700 text-xs">{match.scholarship}</span>
+                  <div className="grid grid-cols-2 gap-3 pt-1">
+                    <div className="rounded-2xl bg-white border border-slate-100 p-3 shadow-2xs">
+                      <span className="text-slate-400 text-[0.68rem] block mb-0.5 font-semibold">
+                        Intake Timeline
+                      </span>
+                      <span className="font-bold text-slate-800 text-xs">{match.timeline}</span>
+                    </div>
+
+                    <div className="rounded-2xl bg-white border border-slate-100 p-3 shadow-2xs">
+                      <span className="text-slate-400 text-[0.68rem] block mb-0.5 font-semibold">
+                        Tuition & Benefits
+                      </span>
+                      <span className="font-bold text-[#0047ba] text-xs">{match.scholarship}</span>
+                    </div>
                   </div>
-                </div>
 
-                <div className="rounded-2xl bg-amber-50/70 border border-amber-200 p-3.5">
-                  <span className="text-amber-900 font-bold block mb-1">
-                    Language & Pathway Requirements:
-                  </span>
-                  <span className="text-slate-700 font-medium">{match.moiAccepted}</span>
-                </div>
+                  <div className="rounded-2xl bg-blue-50/70 border border-blue-200 p-3.5">
+                    <span className="text-[#0047ba] font-bold block mb-1">
+                      Language & Solvency Requirements:
+                    </span>
+                    <span className="text-slate-700 font-medium">{match.moiAccepted}</span>
+                  </div>
 
-                <p className="text-slate-600 font-medium text-[0.75rem] leading-relaxed italic">
-                  &quot;{match.partnerNote}&quot;
-                </p>
-              </div>
+                  <p className="text-slate-600 font-medium text-[0.75rem] leading-relaxed italic">
+                    &quot;{match.partnerNote}&quot;
+                  </p>
+                </motion.div>
+              </AnimatePresence>
 
               {/* Action Buttons */}
               <div className="mt-6 pt-4 border-t border-slate-100 space-y-2.5">
-                <button
+                <motion.button
                   type="button"
+                  whileTap={{ scale: 0.98 }}
                   onClick={open}
-                  className="w-full rounded-xl bg-[#161b38] hover:bg-[#242c56] text-amber-400 py-3 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer border border-amber-500/30"
+                  className="w-full rounded-xl bg-[#0047ba] hover:bg-blue-700 text-white py-3.5 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <span>Apply for 100% Free Profile Assessment</span>
+                  <span>Book Free Evaluation for This Pathway</span>
                   <IconArrowRight className="w-3.5 h-3.5" />
-                </button>
+                </motion.button>
 
-                <a
+                <motion.a
+                  whileTap={{ scale: 0.98 }}
                   href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                    `Hello Higher Study Counselors Bangladesh! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on next admission intakes and IELTS cashback benefits.`,
+                    `Hello EDU Global! My calculated pathway is ${match.title} with ${match.matchScore}% match. Please guide me on next admission intakes, Free Bank Support, and language training at your Dhanmondi office.`,
                   )}`}
                   target="_blank"
                   rel="noreferrer"
@@ -387,7 +414,7 @@ export function VisaPathfinder() {
                 >
                   <IconWhatsApp className="w-3.5 h-3.5 text-emerald-600" />
                   <span>Discuss With Counselor on WhatsApp</span>
-                </a>
+                </motion.a>
               </div>
             </div>
           </div>

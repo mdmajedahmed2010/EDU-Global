@@ -2,23 +2,22 @@ import { useState } from "react";
 import { company, destinations } from "@/lib/site-data";
 
 const field =
-  "w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm text-slate-900 outline-none transition-all hover:bg-white focus:border-sky-500 focus:bg-white focus:ring-2 focus:ring-sky-500/10";
+  "w-full rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3 text-sm text-slate-900 outline-none transition-all hover:bg-white focus:border-emerald-500 focus:bg-white focus:ring-2 focus:ring-emerald-500/10";
 const label = "mb-1.5 block text-xs font-bold uppercase tracking-wider text-slate-700";
 
 const serviceOptions = [
-  "Study Abroad Consultation (UK, USA, Australia, Hungary, Canada, etc.)",
-  "IELTS Academic & General (100% Cash Back on Visa Success)",
-  "Opportunity to Move with Family (Spouse & Dependent Visa Support)",
-  "Long Study Gap Application Support (Accepted 7–10+ Years)",
-  "Low Tuition University Admissions & Scholarships",
+  "Study Abroad Consultation (UK, Europe, USA, Canada, Australia, etc.)",
+  "Free Bank Support Offer (First 20 Students for Cyprus & Europe)",
+  "Study Gap & Low CGPA Support (Gap up to 10+ yrs & CGPA 2.5+)",
+  "Study Abroad Without IELTS / MOI Pathway",
+  "IELTS Academic & General Preparation (Band 7.5+)",
   "Spoken English & Communication Fluency",
-  "Kids' English Academy (Ages 5–14)",
-  "English Grammar & Writing Foundation",
+  "Kids' English & Phonics Academy (Ages 5–14)",
+  "Japanese Language Course (JLPT N5/N4)",
 ];
 
 const officeOptions = [
-  "Dhaka Head Office (House 23, Road 2, Sector 3, Uttara, Dhaka - 1230)",
-  "UK Office (3A Westburn Road, Glasgow, UK)",
+  "Dhanmondi Head Office (Keari Plaza, 4th Floor, Road 8/A, Satmasjid Road)",
   "Online Consultation (WhatsApp / Phone Call / Zoom)",
 ];
 
@@ -28,10 +27,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
     name: "",
     email: "",
     phone: "",
-    service: "Study Abroad Consultation (UK, USA, Australia, Hungary, Canada, etc.)",
+    service: "Study Abroad Consultation (UK, Europe, USA, Canada, Australia, etc.)",
     destination: "United Kingdom (UK)",
     currentStatus: "HSC / A-Level Completed (Bachelor's Aspirant)",
-    office: "Dhaka Head Office (House 23, Road 2, Sector 3, Uttara, Dhaka - 1230)",
+    office: "Dhanmondi Head Office (Keari Plaza, 4th Floor, Road 8/A, Satmasjid Road)",
     message: "",
   });
 
@@ -40,7 +39,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
   const whatsappHref = () => {
     const lines = [
-      "✨ Free Consultation Request — Higher Study Counselors Bangladesh",
+      "✨ Free Consultation Request — EDU Global",
       `👤 Name: ${form.name}`,
       `📞 Phone: ${form.phone}`,
       form.email ? `✉️ Email: ${form.email}` : "",
@@ -49,7 +48,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
       `🎓 Status/Background: ${form.currentStatus}`,
       `🏢 Preferred Office/Mode: ${form.office}`,
       form.message ? `📝 Notes: ${form.message}` : "",
-      "\nI would like to schedule a free counseling session with Higher Study Counselors Bangladesh.",
+      "\nI would like to schedule a free counseling session with EDU Global.",
     ].filter(Boolean);
     return `https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
@@ -72,10 +71,10 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
           <strong className="text-emerald-700">{form.phone}</strong> shortly.
         </p>
         <div className="mt-2 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-xs text-emerald-800 text-left space-y-1">
-          <p>✔ House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230</p>
-          <p>✔ 3A Westburn Road, Glasgow, UK</p>
-          <p>✔ 100% IELTS Cash Back on Successful Visa Grant</p>
-          <p>✔ Opportunity to Move with Family & Long Study Gap Accepted</p>
+          <p>✔ Keari Plaza, 4th Floor (Lift-3), Road 8/A, Satmasjid Road, Dhanmondi, Dhaka</p>
+          <p>✔ 100% Admission Guidance & Direct University Partnerships</p>
+          <p>✔ Free Bank Support for First 20 Students (Cyprus & Europe)</p>
+          <p>✔ Study Gap up to 10+ Years & Low CGPA 2.5+ Accepted</p>
         </div>
         <div className="pt-2 flex flex-col gap-2">
           <a
@@ -84,7 +83,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
             rel="noreferrer"
             className="btn-emerald text-xs py-3 justify-center shadow-md"
           >
-            💬 Open WhatsApp Chat with HSC BD Counselor
+            💬 Open WhatsApp Chat with EDU Global Counselor
           </a>
           {onDone && (
             <button
@@ -103,14 +102,14 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
   return (
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div className="border-b border-slate-100 pb-3 mb-2">
-        <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-amber-600">
-          Higher Study Counselors Bangladesh · Since 2012
+        <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-emerald-600">
+          EDU Global (ইডিইউ গ্লোবাল)
         </span>
         <h3 className="font-display text-xl font-black text-slate-900">
           Book Your Free Assessment & Profile Evaluation
         </h3>
         <p className="text-xs text-slate-500 mt-0.5">
-          Sector 3, Uttara, Dhaka & Glasgow, UK · 100% IELTS Cash Back On Visa Success
+          Keari Plaza, 4th Floor, Satmasjid Road, Dhanmondi · Free Bank Support & Admissions
         </p>
       </div>
 
@@ -140,7 +139,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
             required
             value={form.phone}
             onChange={set("phone")}
-            placeholder="e.g. 01518-XXXXXX"
+            placeholder="e.g. 01901-XXXXXX"
             className={field}
           />
         </div>
@@ -175,7 +174,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
                 {d.flag} {d.name}
               </option>
             ))}
-            <option value="Language Course (Japanese / IELTS / Spoken / Kids)">
+            <option value="Language Course (IELTS / Spoken / Kids / Japanese)">
               🎯 Language Training Only
             </option>
             <option value="Other / Need Advice">🌍 Other / Need Advice</option>
@@ -201,8 +200,8 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
               Bachelor's Graduate (Master's)
             </option>
             <option value="Diploma / Polytechnic Holder">Diploma / Polytechnic Graduate</option>
-            <option value="Working Professional (SSW / Job Seeker / Language)">
-              Working Professional (SSW / Job Seeker / Language)
+            <option value="Working Professional (Study Gap / Career)">
+              Working Professional (Study Gap / Career)
             </option>
             <option value="Parent for Kids English Course">
               Parent inquiring for Kids English
@@ -249,7 +248,7 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
             rows={1}
             value={form.message}
             onChange={set("message")}
-            placeholder="Target intake (April, July, October), background, etc."
+            placeholder="Target intake, background, study gap details, etc."
             className={field}
           />
         </div>
@@ -257,14 +256,14 @@ export function RegisterForm({ onDone }: { onDone?: () => void }) {
 
       <button
         type="submit"
-        className="btn-luxury-primary w-full text-xs py-3.5 mt-2 justify-center shadow-lg hover:shadow-sky-600/30 cursor-pointer font-bold"
+        className="btn-luxury-primary w-full text-xs py-3.5 mt-2 justify-center shadow-lg hover:shadow-emerald-600/30 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
       >
         <span>Book Free Appointment</span>
         <span>→</span>
       </button>
 
       <p className="text-center text-[0.7rem] text-slate-600">
-        🔒 100% Privacy Guaranteed · Higher Study Counselors Bangladesh · Uttara, Dhaka & Glasgow, UK
+        🔒 100% Privacy Guaranteed · EDU Global · Keari Plaza, Dhanmondi, Dhaka
       </p>
     </form>
   );

@@ -9,43 +9,48 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      stepColor: "bg-[#161b38] text-amber-400 font-bold",
+      stepColor: "bg-[#0a1931] text-blue-300 font-bold",
       icon: "🔍",
-      iconBg: "bg-amber-50 text-amber-700",
-      title: "Free Profile Assessment",
-      desc: "হাউজ ২৩, রোড ২, সেক্টর ৩, উত্তরা, ঢাকায় এসে আপনার রেজাল্ট, বাজেট ও স্টাডি গ্যাপ মূল্যায়ন করে নিন সম্পূর্ণ ফ্রিতে।",
+      iconBg: "bg-blue-50 text-blue-700",
+      title: "Profile Assessment & Counseling",
+      descEn: "Comprehensive evaluation of your academic qualifications, budget, study gaps, and career goals at our Dhanmondi HQ.",
+      descBn: "ধানমন্ডি অফিসে আপনার রেজাল্ট, বাজেট ও স্টাডি গ্যাপ মূল্যায়ন করে উপযুক্ত দেশ ও বিশ্ববিদ্যালয় নির্বাচন।",
     },
     {
       step: "02",
-      stepColor: "bg-amber-500 text-slate-950 font-black",
+      stepColor: "bg-[#0047ba] text-white font-bold",
       icon: "📚",
-      iconBg: "bg-amber-100 text-amber-900",
-      title: "IELTS Preparation & Cashback",
-      desc: "কেমব্রিজ সিলেবাসে লিসেনিং, রিডিং, রাইটিং ও স্পিকিং অনুশীলন করুন এবং ভিসা হলে সম্পূর্ণ IELTS ফি ক্যাশ ব্যাক পান।",
+      iconBg: "bg-indigo-50 text-indigo-700",
+      title: "Language Academy Training",
+      descEn: "Master IELTS (Band 7.5+), Spoken English Fluency, or Japanese JLPT with certified instructors and weekly mock tests.",
+      descBn: "অভিজ্ঞ মেন্টরদের সাথে IELTS (7.5+), স্পোকেন ইংলিশ ফ্লুয়েন্সি কিংবা জাপানিজ ভাষার আধুনিক প্রস্তুতি।",
     },
     {
       step: "03",
-      stepColor: "bg-[#161b38] text-amber-400 font-bold",
+      stepColor: "bg-[#0a1931] text-blue-300 font-bold",
       icon: "🏛️",
-      iconBg: "bg-blue-50 text-blue-700",
-      title: "University Admission & Offer",
-      desc: "ইউকে, ইউএসএ, অস্ট্রেলিয়া, হাঙ্গেরি বা ইউরোপের শীর্ষ বিশ্ববিদ্যালয় থেকে কনফার্মড অফার লেটার ও স্কলারশিপ সংগ্রহ।",
+      iconBg: "bg-blue-50 text-[#0047ba]",
+      title: "Direct University Admission",
+      descEn: "Fast-track confirmed offer letters from Canterbury Christ Church University (UK) and premier global partner universities.",
+      descBn: "যুক্তরাজ্যের Canterbury Christ Church সহ ইউরোপ ও বিশ্বের সেরা বিশ্ববিদ্যালয় থেকে কনফার্মড অফার সংগ্রহ।",
     },
     {
       step: "04",
-      stepColor: "bg-slate-900 text-white font-bold",
-      icon: "👥",
-      iconBg: "bg-slate-100 text-slate-800",
-      title: "Financial & Family Visa File",
-      desc: "ব্যাংক সলভেন্সি গাইডলাইন, স্পনসর পেপারস ও স্পাউস সহ পরিবার নিয়ে যাওয়ার জন্য নিখুঁত ভিসা ফাইল প্রস্তুতকরণ।",
+      stepColor: "bg-amber-500 text-slate-950 font-black",
+      icon: "🏦",
+      iconBg: "bg-amber-50 text-amber-800",
+      title: "Free Bank Support & Visa Audit",
+      descEn: "Exclusive Free Bank Support for first 20 students in European tracks with rigorous Embassy document verification.",
+      descBn: "সাইপ্রাস ও ইউরোপের জন্য ফ্রি ব্যাংক সলভেন্সি এবং ভিসা আবেদনের জন্য নিখুঁত ফাইল অডিট।",
     },
     {
       step: "05",
       stepColor: "bg-emerald-600 text-white font-black",
       icon: "✈",
-      iconBg: "bg-emerald-50 text-emerald-600",
-      title: "Visa Success & Departure",
-      desc: "১-অন-১ এম্বাসি ইন্টারভিউ প্রিপারেশন, ভিসা সিলমোহর, IELTS ক্যাশ ব্যাক গ্রহণ এবং বিদেশে সফল যাত্রা।",
+      iconBg: "bg-emerald-50 text-emerald-700",
+      title: "Visa Grant & Departure",
+      descEn: "Rigorous 1-on-1 embassy mock interview coaching, confirmed visa stamping, and pre-departure accommodation guidance.",
+      descBn: "১-অন-১ এম্বাসি ইন্টারভিউ প্রিপারেশন, সফল ভিসা লাভ এবং বিদেশে পৌঁছানোর সম্পূর্ণ দিকনির্দেশনা।",
     },
   ];
 
@@ -54,12 +59,12 @@ export function HowItWorksSection() {
       <div className="section-shell">
         {/* Animated Section Header */}
         <MotionHeading
-          tag="— YOUR HIGHER STUDY COUNSELORS ROADMAP —"
+          tag="— YOUR EDU GLOBAL ROADMAP —"
           title="How It"
           highlight="Works"
-          description="উত্তরা সেক্টর ৩ অফিসে ফ্রি প্রোফাইল মূল্যায়ন থেকে শুরু করে বিশ্ববিদ্যালয় অ্যাডমিশন, IELTS ক্যাশ ব্যাক ও সফল ভিসা প্রাপ্তির ৫টি সুস্পষ্ট ধাপ।"
-          tagColor="text-amber-600"
-          highlightColor="text-amber-600"
+          description="From free profile evaluation at our Dhanmondi Satmasjid Road office to confirmed admission, Free Bank Support, and visa grant."
+          tagColor="text-[#0047ba]"
+          highlightColor="text-[#0047ba]"
         />
 
         {/* 5 Step Roadway Cards with Stagger Animation */}
@@ -73,7 +78,7 @@ export function HowItWorksSection() {
           >
             {steps.map((s) => (
               <StaggerItem key={s.step} className="h-full">
-                <div className="relative rounded-3xl border border-slate-200/90 bg-white p-6 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-amber-400/50 flex flex-col justify-between hover-lift group h-full">
+                <div className="relative rounded-3xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-400/70 flex flex-col justify-between hover-lift group h-full">
                   {/* Step Number Badge */}
                   <div
                     className={`absolute -top-3 -right-3 flex h-9 w-9 items-center justify-center rounded-full text-xs shadow-md transition-transform duration-300 group-hover:scale-110 ${s.stepColor}`}
@@ -89,17 +94,18 @@ export function HowItWorksSection() {
                   </div>
 
                   {/* Content */}
-                  <div>
-                    <h3 className="font-display text-base font-bold text-slate-950 mb-2 leading-snug">
+                  <div className="space-y-2">
+                    <h3 className="font-display text-sm sm:text-base font-extrabold text-[#0a1931] group-hover:text-[#0047ba] transition-colors leading-snug">
                       {s.title}
                     </h3>
-                    <p className="text-xs text-slate-600 font-medium leading-relaxed font-bangla">{s.desc}</p>
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed">{s.descEn}</p>
+                    <p className="text-[0.68rem] text-slate-400 font-bangla font-medium leading-relaxed pt-1 border-t border-slate-100">{s.descBn}</p>
                   </div>
 
                   {/* Bottom Accent */}
                   <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[0.68rem] text-slate-400 font-semibold">
-                    <span>ধাপ {s.step}</span>
-                    <span className="text-amber-600 font-bold group-hover:translate-x-1 transition-transform">
+                    <span>Step {s.step} (ধাপ {s.step})</span>
+                    <span className="text-[#0047ba] font-bold group-hover:translate-x-1 transition-transform">
                       Next →
                     </span>
                   </div>
@@ -114,10 +120,10 @@ export function HowItWorksSection() {
           <button
             type="button"
             onClick={open}
-            className="btn-shimmer inline-flex items-center gap-2 rounded-xl bg-[#161b38] hover:bg-[#242c56] text-amber-400 px-8 py-4 text-xs sm:text-sm font-bold shadow-xl transition-all cursor-pointer active:scale-95 border border-amber-500/30"
+            className="btn-shimmer inline-flex items-center gap-2 rounded-2xl bg-[#0047ba] hover:bg-blue-700 text-white px-8 py-4 text-xs sm:text-sm font-bold shadow-xl shadow-blue-600/20 transition-all cursor-pointer active:scale-95"
           >
-            <span>Start Your Higher Study Journey with HSC BD</span>
-            <IconArrowRight className="w-4 h-4 text-amber-400" />
+            <span>Start Your Higher Study Journey with EDU Global</span>
+            <IconArrowRight className="w-4 h-4 text-white" />
           </button>
         </div>
       </div>

@@ -17,18 +17,18 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       {
-        title: "Services & Courses | Higher Study Counselors Bangladesh — Study Abroad & IELTS Cash Back",
+        title: "Services & Academy | EDU Global — Study Abroad, IELTS, Spoken English & Kids English",
       },
       {
         name: "description",
         content:
-          "Explore Higher Study Counselors Bangladesh services: Global Study Abroad (UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, Dubai), 100% IELTS Cash Back On Visa Success, Opportunity To Move With Family, Long Study Gap Accepted, Low Tuition Fees Universities, Spoken English, and Kids English. Uttara Dhaka & Glasgow UK offices.",
+          "Explore EDU Global services: 100% Admission Guidance (UK, USA, Canada, Australia, Europe, New Zealand, South Korea, Japan, Finland, Ireland, Cyprus), Free Bank Support Offer for first 20 students, Study Gap & Low CGPA accepted, IELTS Prep, Spoken English, Kids English & Japanese Courses. Dhanmondi, Dhaka.",
       },
-      { property: "og:title", content: "Services & Courses | Higher Study Counselors Bangladesh" },
+      { property: "og:title", content: "Services & Language Academy | EDU Global" },
       {
         property: "og:description",
         content:
-          "Official services of Higher Study Counselors Bangladesh (Since 2012). Global study admissions, 100% IELTS Cash Back on Visa Success, Move with Family, and Study Gap Accepted.",
+          "Official services of EDU Global (ইডিইউ গ্লোবাল). Global admissions, Free Bank Support for European visas, Study Gap & Low CGPA solutions, and comprehensive language training.",
       },
     ],
   }),
@@ -37,71 +37,71 @@ export const Route = createFileRoute("/services")({
 
 const serviceCategories = [
   { id: "all", label: "All Services" },
-  { id: "study-abroad", label: "Global Study Abroad" },
-  { id: "ielts-courses", label: "IELTS & 100% Cash Back" },
-  { id: "family-move", label: "Move With Family" },
-  { id: "study-gap", label: "Study Gap Accepted" },
+  { id: "study-abroad", label: "Study Abroad Admissions" },
+  { id: "language-academy", label: "Language Academy (IELTS & English)" },
+  { id: "bank-support", label: "Free Bank Support" },
+  { id: "study-gap", label: "Study Gap & Low CGPA" },
 ];
 
 const comparisonData = [
   {
-    feature: "IELTS Course Fee Policy",
-    hscbd: "100% Cash Back on Successful Visa Grant through HSC BD",
-    traditional: "Non-refundable fees regardless of visa outcome",
+    feature: "Admission & University Processing",
+    edugbl: "100% Admission Guidance with Direct University Partnerships (e.g. Canterbury Christ Church UK)",
+    traditional: "Random unaccredited university choices with uncertain outcome",
     highlight: true,
   },
   {
-    feature: "Opportunity To Move With Family",
-    hscbd: "Dedicated dependent visa advisory for spouse and children",
-    traditional: "Single applicant focus only, minimal family guidance",
+    feature: "Financial & Bank Solvency Support",
+    edugbl: "Free Bank Support Offer for first 20 students (Cyprus & Europe intakes)",
+    traditional: "Expensive, unverified third-party paper vendors risking visa bans",
     highlight: true,
   },
   {
-    feature: "Long Study Gap Acceptance",
-    hscbd: "Expert gap justification and university placement (up to 7–10+ yrs accepted)",
-    traditional: "Immediate rejection of profiles with educational gaps",
+    feature: "Study Gap & Low CGPA Solutions",
+    edugbl: "Profiles with long study gaps (up to 10+ years) and CGPA down to 2.5 accepted",
+    traditional: "Immediate rejection of profiles with educational gaps or low marks",
     highlight: true,
   },
   {
-    feature: "Affordable Tuition & Installments",
-    hscbd: "Low tuition fee university matching with flexible installment options",
-    traditional: "Pushing expensive universities with exorbitant commission charges",
+    feature: "Study Abroad Without IELTS",
+    edugbl: "Options via Medium of Instruction (MOI), Duolingo, and internal university English tests",
+    traditional: "Forces expensive retakes without alternative admission pathways",
     highlight: true,
   },
   {
-    feature: "UK International Office Presence",
-    hscbd: "Permanent UK office at 3A Westburn Road, Glasgow for on-ground student care",
-    traditional: "Zero overseas presence once student boards flight",
+    feature: "Comprehensive Language Academy",
+    edugbl: "IELTS 7.5+, Spoken English Fluency, Kids English & Phonics (ages 5–14), and Japanese (JLPT)",
+    traditional: "Basic or no in-house language academy, outsourced without quality control",
     highlight: true,
   },
   {
-    feature: "Financial Advice & Guidance",
-    hscbd: "Comprehensive bank solvency auditing and genuine financial counseling",
-    traditional: "Unverified document vendors with high visa refusal risk",
+    feature: "Accessible Central Location",
+    edugbl: "Prime Dhanmondi Satmasjid Road (Keari Plaza, 4th Floor, Lift-3, Opp. Unimart)",
+    traditional: "Hard-to-reach or hidden locations without proper counseling infrastructure",
     highlight: true,
   },
 ];
 
 const serviceFaqs = [
   {
-    q: "How does the 'IELTS Cash Back On Visa Success' guarantee work?",
-    a: "When you enroll in our IELTS Academic or General preparation course at Higher Study Counselors Bangladesh and subsequently process your student visa file through us, your entire IELTS tuition fee is refunded 100% as cashback upon the successful issuance of your student visa.",
+    q: "What is EDU Global's Free Bank Support offer?",
+    a: "EDU Global offers Free Bank Support to the first 20 students applying for Cyprus and European Union partner university intakes. This helps students fulfill strict embassy financial solvency requirements legally and smoothly.",
   },
   {
-    q: "Can I move abroad with my family (spouse and children)?",
-    a: "Yes! One of HSC BD's core pillars is 'Opportunity To Move With Family'. We specialize in dependent visa documentation, maintenance fund requirements, and family accommodation guidelines for countries like the UK, Australia, and Canada where student dependents are legally permitted.",
+    q: "Can I study abroad with a study gap or a CGPA around 2.5?",
+    a: "Yes! EDU Global specializes in study gap solutions (up to 10+ years) and accepts CGPA down to 2.5. We evaluate your professional experience, build a robust SOP, and map you to universities in the UK, Europe, Cyprus, and Malaysia with accommodating policies.",
   },
   {
-    q: "I have a 5 to 10 year study gap. Can I still apply for foreign universities?",
-    a: "Absolutely. Under our 'Long Study Gap Accepted' program, we analyze your work experience, certifications, and professional background to build a compelling Statement of Purpose and justify the gap to universities and visa officers in the UK, USA, Hungary, Denmark, and other flexible destinations.",
+    q: "Is it possible to study abroad without an IELTS score?",
+    a: "Yes. Many of our partner universities across the UK, Europe, Cyprus, and Malaysia accept Medium of Instruction (MOI) certificates from your previous degree, Duolingo English Test (DET), or internal university language assessments.",
   },
   {
-    q: "Which destinations does Higher Study Counselors Bangladesh process?",
-    a: "We officially process admissions for 9 key destinations: United Kingdom (UK), United States (USA), Australia, Hungary (Schengen Europe), Canada, Finland, Denmark, Malaysia, and Dubai.",
+    q: "What courses are offered at the EDU Global Language Academy?",
+    a: "We offer comprehensive IELTS Preparation (Academic & General targeting Band 7.5+), Spoken English Fluency courses for career & visa interviews, Kids English & Phonics Academy (ages 5–14), and Japanese Language Courses (JLPT N5/N4).",
   },
   {
-    q: "Where are your offices located and how do I schedule a consultation?",
-    a: "Our Bangladesh Head Office is located at House 23, Road 2, 1st Floor, Sector 3, Uttara, Dhaka - 1230. We also operate our UK office at 3A Westburn Road, Glasgow. You can visit in person Saturday through Thursday (9:30 AM – 6:30 PM) or call our hotlines: 01974843470, 01676997222.",
+    q: "Where is EDU Global located and how do I schedule an assessment?",
+    a: "Our central office is at Keari Plaza, Plot No- 83, 4th Floor (Lift-3), Road No- 8/A, Satmasjid Road, Dhanmondi R/A, Dhaka - 1209 (Opposite Unimart, Old 15 Bus Stand). You can visit in person or call our hotlines: +880 1901-402990 or +880 1901-402992.",
   },
 ];
 
@@ -115,10 +115,10 @@ function Services() {
       {/* 1. High-Impact Page Hero with Breadcrumbs */}
       <PageHero
         eyebrow="Foreign Education Advisory & Language Academy"
-        title="GLOBAL ADMISSIONS & IELTS CASH BACK"
-        subtitle="Higher Study Counselors Bangladesh (Since 2012) offers comprehensive study abroad processing for 9+ countries, 100% IELTS Cash Back on Visa Success, Move with Family, and Long Study Gap Accepted."
-        image="/banner.jpg"
-        imageAlt="Higher Study Counselors Bangladesh official banner"
+        title="GLOBAL ADMISSIONS & LANGUAGE ACADEMY"
+        subtitle="EDU Global (ইডিইউ গ্লোবাল) offers comprehensive study abroad processing for 10+ countries, Free Bank Support for early applicants, Study Gap & Low CGPA acceptance, and premier IELTS, Spoken English & Kids English programs."
+        image="/banner.png"
+        imageAlt="EDU Global official banner"
       >
         <div className="space-y-6">
           <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Services" }]} />
@@ -126,14 +126,14 @@ function Services() {
             <button
               type="button"
               onClick={open}
-              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-amber-500/30 cursor-pointer font-bold bg-amber-500 hover:bg-amber-400 text-slate-950"
+              className="btn-luxury-primary text-xs sm:text-sm py-3.5 px-8 shadow-xl hover:shadow-emerald-500/30 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
             >
               <span>Book Free Profile Assessment</span>
               <IconSparkles className="w-4 h-4" />
             </button>
             <a
               href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                "Hello Higher Study Counselors Bangladesh! I would like to inquire about study abroad admissions, IELTS cashback, and family visa support.",
+                "Hello EDU Global! I would like to inquire about study abroad admissions, language training, and free bank support.",
               )}`}
               target="_blank"
               rel="noreferrer"
@@ -158,7 +158,7 @@ function Services() {
                 className={cn(
                   "rounded-full px-4 py-2 text-xs font-bold transition-all cursor-pointer",
                   activeCategory === cat.id
-                    ? "bg-[#161B38] text-amber-400 shadow-md border border-amber-500/40"
+                    ? "bg-[#0b1f17] text-emerald-400 shadow-md border border-emerald-500/40"
                     : "bg-slate-100 text-slate-700 hover:bg-slate-200",
                 )}
               >
@@ -172,19 +172,19 @@ function Services() {
       {/* 3. Core Study Abroad & Advisory Services Grid */}
       {(activeCategory === "all" ||
         activeCategory === "study-abroad" ||
-        activeCategory === "family-move" ||
+        activeCategory === "bank-support" ||
         activeCategory === "study-gap") && (
         <section className="section-shell py-16">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
               <span>Full Lifecycle Global Advisory</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Comprehensive Foreign Education <span className="text-amber-500">& Visa Services</span>
+              Comprehensive Foreign Education <span className="text-emerald-600">& Visa Services</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              From free profile evaluation at our Uttara Head Office to university admission, financial guidance, family visa lodging, and UK on-ground support.
+              From free profile assessment at our Dhanmondi Head Office to direct university admissions, visa file processing, and embassy interview coaching.
             </p>
           </div>
 
@@ -192,13 +192,13 @@ function Services() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-amber-500/40 hover:shadow-lg transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm flex flex-col justify-between hover:border-emerald-500/40 hover:shadow-lg transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-3xl">{service.icon}</span>
                     {service.badge && (
-                      <span className="rounded-full bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
+                      <span className="rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
                         {service.badge}
                       </span>
                     )}
@@ -220,7 +220,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-amber-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
+                    className="text-emerald-600 font-bold hover:underline flex items-center gap-1 cursor-pointer"
                   >
                     <span>Consult Counselor</span>
                     <span>→</span>
@@ -232,48 +232,48 @@ function Services() {
         </section>
       )}
 
-      {/* 4. Language Academy & IELTS Cash Back Section */}
-      {(activeCategory === "all" || activeCategory === "ielts-courses") && (
+      {/* 4. Language Academy & IELTS / English Section */}
+      {(activeCategory === "all" || activeCategory === "language-academy") && (
         <section className="section-shell py-16 border-t border-slate-200 bg-slate-50/50">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-3">
-              <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>HSC BD Language Academy</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-3">
+              <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
+              <span>EDU Global Language Academy</span>
             </div>
             <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Cambridge IELTS with <span className="text-amber-500">100% Cash Back on Visa</span>
+              Premier English & Language <span className="text-emerald-600">Training Programs</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Learn from experienced Cambridge-certified trainers. When your student visa is granted through HSC BD, receive a full 100% cash back of your course fee!
+              Master English communication for study abroad, professional careers, and kids' phonics mastery with our certified trainers.
             </p>
           </div>
 
-          <div className="grid gap-8 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {courses.map((course) => (
               <div
                 key={course.slug}
-                className="rounded-3xl border border-slate-200 bg-white p-7 shadow-md flex flex-col justify-between hover:border-amber-500/50 hover:shadow-xl transition-all"
+                className="rounded-3xl border border-slate-200 bg-white p-6 shadow-md flex flex-col justify-between hover:border-emerald-500/50 hover:shadow-xl transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-4xl p-2 rounded-2xl bg-amber-50 border border-amber-200/80">
+                    <span className="text-3xl p-2 rounded-2xl bg-emerald-50 border border-emerald-200/80">
                       {course.icon}
                     </span>
-                    <span className="rounded-full bg-amber-100 text-amber-900 border border-amber-200 px-3 py-1 text-xs font-bold">
+                    <span className="rounded-full bg-emerald-100 text-emerald-900 border border-emerald-200 px-2.5 py-0.5 text-[0.68rem] font-bold">
                       {course.badge}
                     </span>
                   </div>
 
                   <div>
-                    <h3 className="font-display text-xl font-black text-slate-900">
+                    <h3 className="font-display text-lg font-black text-slate-900">
                       {course.title}
                     </h3>
-                    <p className="text-xs font-semibold text-amber-600 mt-0.5">{course.subtitle}</p>
+                    <p className="text-xs font-semibold text-emerald-700 mt-0.5">{course.subtitle}</p>
                   </div>
 
                   <p className="text-xs text-slate-600 leading-relaxed">{course.description}</p>
 
-                  <div className="space-y-2 rounded-2xl bg-slate-50 p-3.5 text-[0.72rem] text-slate-700 border border-slate-200/70">
+                  <div className="space-y-2 rounded-2xl bg-slate-50 p-3 text-[0.72rem] text-slate-700 border border-slate-200/70">
                     <div className="flex justify-between">
                       <span className="text-slate-500 font-medium">Duration:</span>
                       <strong className="text-slate-900">{course.duration}</strong>
@@ -288,13 +288,13 @@ function Services() {
                     </div>
                   </div>
 
-                  <div className="space-y-2 pt-2">
+                  <div className="space-y-1.5 pt-2">
                     <span className="text-[0.68rem] font-extrabold uppercase tracking-wider text-slate-500 block">
-                      Course Modules & Highlights:
+                      Course Highlights:
                     </span>
-                    <ul className="space-y-1.5">
-                      {course.highlights.slice(0, 4).map((h) => (
-                        <li key={h} className="flex items-start gap-2 text-xs text-slate-700">
+                    <ul className="space-y-1">
+                      {course.highlights.slice(0, 3).map((h) => (
+                        <li key={h} className="flex items-start gap-1.5 text-xs text-slate-700">
                           <IconCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{h}</span>
                         </li>
@@ -303,22 +303,22 @@ function Services() {
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-slate-100 mt-6 flex flex-col gap-2">
+                <div className="pt-5 border-t border-slate-100 mt-5 flex flex-col gap-2">
                   <button
                     type="button"
                     onClick={open}
-                    className="btn-luxury-primary w-full text-xs py-3 justify-center shadow-md hover:shadow-amber-500/30 cursor-pointer font-bold bg-amber-500 hover:bg-amber-400 text-slate-950"
+                    className="btn-luxury-primary w-full text-xs py-2.5 justify-center shadow-md hover:shadow-emerald-500/30 cursor-pointer font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950"
                   >
-                    <span>Enroll / Claim Cashback</span>
+                    <span>Enroll Now</span>
                     <span>→</span>
                   </button>
                   <a
                     href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
-                      `Hello Higher Study Counselors Bangladesh! I want to enroll in the ${course.title} batch and learn about the IELTS Cash Back on Visa Success guarantee.`,
+                      `Hello EDU Global! I want to enroll in the ${course.title} batch.`,
                     )}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="btn-luxury-secondary w-full text-xs py-2.5 justify-center text-slate-900 font-bold"
+                    className="btn-luxury-secondary w-full text-xs py-2 justify-center text-slate-900 font-bold"
                   >
                     <IconWhatsApp className="w-4 h-4 text-emerald-600" />
                     <span>WhatsApp Inquiry</span>
@@ -330,19 +330,19 @@ function Services() {
         </section>
       )}
 
-      {/* 5. 9 Official Destinations Showcase */}
+      {/* 5. 10+ Official Destinations Showcase */}
       {(activeCategory === "all" || activeCategory === "study-abroad") && (
         <section className="section-shell py-16 border-t border-slate-200">
-          <div className="rounded-3xl border border-slate-800 bg-[#161B38] p-8 sm:p-12 text-white shadow-2xl">
+          <div className="rounded-3xl border border-slate-800 bg-[#0c1f17] p-8 sm:p-12 text-white shadow-2xl">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
-                Official Banner Destinations
+              <span className="rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-3.5 py-1 text-xs font-bold inline-block mb-3">
+                Global Destinations (Verified from Brand Banner)
               </span>
               <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight">
-                Top Study Pathways with HSC BD
+                Top Study Pathways with EDU Global
               </h2>
               <p className="text-xs sm:text-sm text-slate-300 mt-2">
-                All 9 destinations verified directly from our official corporate banner with direct university partnerships.
+                10+ verified countries featured on our official banner and university partner network.
               </p>
             </div>
 
@@ -351,66 +351,66 @@ function Services() {
                 {
                   title: "United Kingdom",
                   icon: "🇬🇧",
-                  desc: "1-year master's programs, fast CAS turnaround, low tuition fee universities, and 2-year Graduate Route Post-Study Work visa.",
-                  badge: "UK Office Support",
+                  desc: "1-year master's programs, fast CAS turnaround, Canterbury Christ Church University direct admissions, and Graduate Route work visa.",
+                  badge: "Direct University Partner",
+                },
+                {
+                  title: "Europe & Schengen",
+                  icon: "🇪🇺",
+                  desc: "Cyprus, Greece, Italy, and Hungary admissions with Schengen travel access and special Free Bank Support for initial applicants.",
+                  badge: "Free Bank Support",
                 },
                 {
                   title: "United States",
                   icon: "🇺🇸",
-                  desc: "I-20 issuance, up to 3 years STEM OPT work authorization, scholarship guidance, and expert visa interview preparation.",
+                  desc: "I-20 issuance, up to 3 years STEM OPT work authorization, merit scholarships, and visa interview preparation.",
                   badge: "STEM & OPT",
-                },
-                {
-                  title: "Australia",
-                  icon: "🇦🇺",
-                  desc: "Top Group of Eight and progressive universities, high hourly wages, post-study work rights, and family dependent pathways.",
-                  badge: "High Minimum Wage",
-                },
-                {
-                  title: "Hungary",
-                  icon: "🇭🇺",
-                  desc: "Affordable tuition fees in Central Europe, English-medium degrees, and 29-nation Schengen visa mobility.",
-                  badge: "Schengen Europe",
                 },
                 {
                   title: "Canada",
                   icon: "🇨🇦",
-                  desc: "Top Designated Learning Institutions (DLI), co-op internships, and up to 3-year Post-Graduation Work Permits (PGWP).",
+                  desc: "Designated Learning Institutions (DLI), co-op internships, and Post-Graduation Work Permits (PGWP).",
                   badge: "Work Permits",
                 },
                 {
-                  title: "Finland",
+                  title: "Australia",
+                  icon: "🇦🇺",
+                  desc: "Top institutions, high hourly part-time earnings, post-study work rights, and high visa grant rate.",
+                  badge: "High Minimum Wage",
+                },
+                {
+                  title: "New Zealand",
+                  icon: "🇳🇿",
+                  desc: "Globally accredited universities, welcoming community, safe study environment, and post-study open work visa.",
+                  badge: "Safe & Welcoming",
+                },
+                {
+                  title: "Japan & South Korea",
+                  icon: "🇯🇵",
+                  desc: "Cutting-edge technology degrees, Japanese language training (JLPT), and high-tech career placements in Asia.",
+                  badge: "Asia Tech Hubs",
+                },
+                {
+                  title: "Finland & Ireland",
                   icon: "🇫🇮",
-                  desc: "World's happiest country, high innovation education, generous post-graduation permits, and tuition discounts.",
-                  badge: "Nordic Excellence",
+                  desc: "Nordic education quality, European tech capital opportunities in Dublin, and generous stay-back work permits.",
+                  badge: "Innovation Leaders",
                 },
                 {
-                  title: "Denmark",
-                  icon: "🇩🇰",
-                  desc: "Cutting-edge research universities, excellent work-life balance, and English-taught bachelor's & master's degrees.",
-                  badge: "European Leader",
-                },
-                {
-                  title: "Malaysia",
+                  title: "Malaysia & Cyprus",
                   icon: "🇲🇾",
-                  desc: "Cost-effective international degree transfers, UK/Australian branch campuses, and fast visa approvals.",
-                  badge: "Budget-Friendly",
-                },
-                {
-                  title: "Dubai (UAE)",
-                  icon: "🇦🇪",
-                  desc: "Rapid visa processing, tax-free part-time earning opportunities, and branch campuses of premier global institutions.",
-                  badge: "Fast Visa Turnaround",
+                  desc: "Budget-friendly tuition, HELP University & MMU credit transfers, easy entry requirements without IELTS.",
+                  badge: "Budget Friendly",
                 },
               ].map((v) => (
                 <div
                   key={v.title}
-                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-amber-500/50 transition-colors"
+                  className="rounded-2xl bg-slate-900/90 border border-slate-800 p-5 space-y-2.5 flex flex-col justify-between hover:border-emerald-500/50 transition-colors"
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <span className="text-2xl">{v.icon}</span>
-                      <span className="text-[0.65rem] font-bold text-amber-400 bg-amber-500/20 px-2 py-0.5 rounded-full border border-amber-500/30">
+                      <span className="text-[0.65rem] font-bold text-emerald-400 bg-emerald-500/20 px-2 py-0.5 rounded-full border border-emerald-500/30">
                         {v.badge}
                       </span>
                     </div>
@@ -420,7 +420,7 @@ function Services() {
                   <button
                     type="button"
                     onClick={open}
-                    className="text-[0.72rem] font-bold text-amber-400 hover:text-amber-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
+                    className="text-[0.72rem] font-bold text-emerald-400 hover:text-emerald-300 text-left pt-2 border-t border-slate-800 cursor-pointer"
                   >
                     Check Eligibility →
                   </button>
@@ -434,15 +434,15 @@ function Services() {
       {/* 6. Transparency Comparison Table */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
             <span>Honesty & Transparency</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            Why Students Choose <span className="text-amber-500">Higher Study Counselors Bangladesh</span>
+            Why Students Choose <span className="text-emerald-600">EDU Global</span>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Compare our 100% IELTS Cash Back policy, family move support, long study gap acceptance, and dual-country offices against traditional agencies.
+            Compare our Free Bank Support, 100% Admission commitment, in-house Language Academy, and prime Dhanmondi location against ordinary agencies.
           </p>
         </div>
 
@@ -452,8 +452,8 @@ function Services() {
               <thead className="bg-slate-950 text-white font-display uppercase tracking-wider text-[0.7rem]">
                 <tr>
                   <th className="p-4 sm:p-5">Key Parameter</th>
-                  <th className="p-4 sm:p-5 text-amber-400 font-extrabold bg-[#161B38]">
-                    ★ HSC BD (Since 2012)
+                  <th className="p-4 sm:p-5 text-emerald-400 font-extrabold bg-[#0c1f17]">
+                    ★ EDU Global
                   </th>
                   <th className="p-4 sm:p-5 text-slate-400">Traditional Agencies</th>
                 </tr>
@@ -464,14 +464,14 @@ function Services() {
                     key={row.feature}
                     className={cn(
                       "transition-colors hover:bg-slate-50",
-                      row.highlight && "bg-amber-50/20",
+                      row.highlight && "bg-emerald-50/20",
                     )}
                   >
                     <td className="p-4 sm:p-5 font-bold text-slate-900">{row.feature}</td>
-                    <td className="p-4 sm:p-5 font-bold text-slate-900 bg-amber-50/40">
+                    <td className="p-4 sm:p-5 font-bold text-slate-900 bg-emerald-50/40">
                       <div className="flex items-center gap-2">
                         <IconCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>{row.hscbd}</span>
+                        <span>{row.edugbl}</span>
                       </div>
                     </td>
                     <td className="p-4 sm:p-5 text-slate-500">{row.traditional}</td>
@@ -486,15 +486,15 @@ function Services() {
       {/* 7. Step-by-Step Roadmap */}
       <section className="section-shell py-16 border-t border-slate-200">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 border border-amber-200 px-3.5 py-1 text-xs font-bold text-amber-700 mb-2.5">
-            <IconSparkles className="w-3.5 h-3.5 text-amber-600" />
+          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 mb-2.5">
+            <IconSparkles className="w-3.5 h-3.5 text-emerald-600" />
             <span>Structured Process</span>
           </div>
           <h2 className="font-display text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Our Proven 5-Step Roadmap
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Structured roadmap from free file evaluation at our Uttara Head Office to IELTS preparation, visa issuance, and UK on-ground reception.
+            Structured roadmap from free profile evaluation at our Dhanmondi Head Office to language training, admission offer, visa grant, and pre-departure briefing.
           </p>
         </div>
 
@@ -502,10 +502,10 @@ function Services() {
           {processSteps.map((step) => (
             <div
               key={step.step}
-              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-amber-500/50 hover:shadow-md transition-all"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm space-y-3 relative hover:border-emerald-500/50 hover:shadow-md transition-all"
             >
               <div className="flex items-center justify-between">
-                <span className="font-display font-black text-2xl text-amber-600">{step.step}</span>
+                <span className="font-display font-black text-2xl text-emerald-600">{step.step}</span>
                 <span className="rounded-full bg-slate-100 text-slate-700 text-[0.68rem] font-bold px-2.5 py-0.5">
                   {step.badge}
                 </span>
@@ -524,7 +524,7 @@ function Services() {
             Frequently Asked Questions on Services
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Clear, transparent answers about IELTS Cashback, Move with Family, Study Gap Acceptance, and UK/Dhaka offices.
+            Clear, transparent answers about Free Bank Support, Study Gap & Low CGPA acceptance, Language Academy, and admission procedures.
           </p>
         </div>
 
@@ -537,7 +537,7 @@ function Services() {
                 className={cn(
                   "rounded-2xl border transition-all duration-300 overflow-hidden",
                   isOpen
-                    ? "bg-white border-amber-500 shadow-md ring-1 ring-amber-500/20"
+                    ? "bg-white border-emerald-500 shadow-md ring-1 ring-emerald-500/20"
                     : "bg-white border-slate-200 hover:border-slate-300",
                 )}
               >
@@ -550,7 +550,7 @@ function Services() {
                   <span
                     className={cn(
                       "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold transition-transform duration-300",
-                      isOpen ? "bg-amber-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
+                      isOpen ? "bg-emerald-600 text-white rotate-180" : "bg-slate-100 text-slate-600",
                     )}
                   >
                     ↓

@@ -7,12 +7,12 @@ const posters = [
   {
     key: "logo",
     src: "/logo.jpg",
-    label: "Higher Study Counselors Bangladesh — Official Shield Crest & Emblem (Since 2012)",
+    label: "EDU Global — Official Brand Emblem & Logo (Royal Blue Badge with Mortarboard Cap & Stylized Pencil)",
   },
   {
     key: "banner",
-    src: "/banner.jpg",
-    label: "Higher Study Counselors Bangladesh — Official Comprehensive Banner (USPs, 9 Destinations, UK & Dhaka Offices)",
+    src: "/banner.png",
+    label: "EDU Global — Official Comprehensive Banner ('One stop Solution to Your Journey of Higher Education', 10 Flags & 'INBOX US TO KNOW MORE')",
   },
 ];
 
@@ -26,7 +26,7 @@ export function PosterWall() {
         <SectionHeading
           eyebrow="Official Brand Assets"
           title="Official Visuals & Brand Memorabilia"
-          subtitle="Explore verified assets and official credentials from Higher Study Counselors Bangladesh — click any asset to enlarge."
+          subtitle="Explore verified assets and official credentials from EDU Global (Dhanmondi, Dhaka) — click any asset to enlarge."
         />
       </Reveal>
 
@@ -36,21 +36,21 @@ export function PosterWall() {
             <button
               type="button"
               onClick={() => setActive(p.key)}
-              className="card-clean group block w-64 sm:w-72 overflow-hidden rounded-3xl text-left transition-all hover:scale-[1.02] cursor-pointer border border-slate-200 hover:border-sky-300"
+              className="card-clean group block w-64 sm:w-80 overflow-hidden rounded-3xl text-left transition-all hover:scale-[1.02] cursor-pointer border border-slate-200 hover:border-blue-400"
             >
               <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
                 <img
                   src={p.src}
                   alt={p.label}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="h-full w-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="p-4 bg-white">
                 <span className="block text-xs font-bold text-slate-900 leading-snug line-clamp-2">
                   {p.label}
                 </span>
-                <span className="mt-2 inline-flex items-center gap-1 text-[0.68rem] font-bold text-sky-700">
+                <span className="mt-2 inline-flex items-center gap-1 text-[0.68rem] font-bold text-blue-700">
                   <span>✨</span> Verified Brand Asset
                 </span>
               </div>
@@ -68,7 +68,7 @@ export function PosterWall() {
           onClick={() => setActive(null)}
           className="fixed inset-0 z-[110] flex items-center justify-center overflow-y-auto bg-slate-950/90 p-4 backdrop-blur-md cursor-zoom-out"
         >
-          <div className="relative max-w-3xl max-h-[90vh] overflow-hidden rounded-3xl border border-slate-700 bg-slate-900 shadow-2xl p-2">
+          <div className="relative max-w-4xl max-h-[90vh] overflow-hidden rounded-3xl border border-slate-700 bg-slate-900 shadow-2xl p-2">
             <img
               src={activePoster.src}
               alt={activePoster.label}
@@ -84,7 +84,7 @@ export function PosterWall() {
               type="button"
               aria-label="Close"
               onClick={() => setActive(null)}
-              className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-950/80 text-white border border-slate-700 shadow-md hover:bg-red-600 hover:text-white transition-colors"
+              className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-slate-950/80 text-white border border-slate-700 shadow-md hover:bg-red-600 hover:text-white transition-colors cursor-pointer"
             >
               ✕
             </button>

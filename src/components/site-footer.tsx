@@ -19,7 +19,7 @@ export function SiteFooter() {
   };
 
   return (
-    <footer className="bg-[#090c1f] text-white pt-16 pb-24 md:pb-16 text-xs relative overflow-hidden border-t border-amber-500/30">
+    <footer className="bg-[#07132b] text-white pt-16 pb-24 md:pb-16 text-xs relative overflow-hidden border-t border-blue-500/20">
       {/* Subtle Dark Pattern */}
       <div className="absolute inset-0 bg-radial-pattern opacity-10 pointer-events-none" />
 
@@ -37,37 +37,37 @@ export function SiteFooter() {
               </Link>
 
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md font-medium">
-                {company.tagline} {company.bengaliHeadline}
+                {company.tagline}. {company.bengaliHeadline}
               </p>
 
               {/* Verified USPs Strip */}
               <div className="flex flex-wrap gap-2 text-[0.7rem] font-bold">
+                <span className="bg-blue-500/20 text-blue-300 border border-blue-400/30 px-2.5 py-1 rounded-full">
+                  ★ 100% Admission Guidance
+                </span>
                 <span className="bg-amber-500/20 text-amber-300 border border-amber-400/30 px-2.5 py-1 rounded-full">
-                  ★ Move With Family
+                  ★ Free Bank Support Offer
                 </span>
                 <span className="bg-white/10 text-slate-200 border border-white/15 px-2.5 py-1 rounded-full">
                   ★ Study Gap Accepted
                 </span>
                 <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2.5 py-1 rounded-full">
-                  ★ IELTS Cash Back
-                </span>
-                <span className="bg-sky-500/20 text-sky-300 border border-sky-400/30 px-2.5 py-1 rounded-full">
-                  ★ Low Tuition Fees
+                  ★ Low CGPA (Down to 2.5)
                 </span>
               </div>
 
               {/* Newsletter Subscription Box */}
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md max-w-md">
                 <div className="text-sm font-bold text-white mb-1">
-                  Stay Updated on Admissions & IELTS Batches
+                  Stay Updated on Admissions & Upcoming Intakes
                 </div>
                 <p className="text-[0.73rem] text-slate-400 mb-3.5">
-                  Subscribe for verified alerts on UK, USA, Australia, Hungary and Europe upcoming intakes, scholarship opportunities, and IELTS cashback offers.
+                  Subscribe for verified alerts on UK, USA, Canada, Australia, Cyprus and Europe upcoming intakes, scholarship opportunities, and IELTS batch enrollments.
                 </p>
 
                 {subscribed ? (
                   <div className="rounded-xl bg-emerald-500/20 border border-emerald-400/40 p-2.5 text-center text-xs font-bold text-emerald-200">
-                    ✓ Thank you! You are subscribed to Higher Study Counselors updates.
+                    ✓ Thank you! You are subscribed to EDU Global updates.
                   </div>
                 ) : (
                   <form onSubmit={handleSubscribe} className="flex gap-2">
@@ -77,11 +77,11 @@ export function SiteFooter() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email address"
-                      className="flex-1 rounded-xl border border-white/20 bg-black/40 px-3.5 py-2.5 text-xs text-white placeholder:text-slate-500 outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30"
+                      className="flex-1 rounded-xl border border-white/20 bg-black/40 px-3.5 py-2.5 text-xs text-white placeholder:text-slate-500 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30"
                     />
                     <button
                       type="submit"
-                      className="rounded-xl bg-amber-500 hover:bg-amber-600 px-4 py-2.5 text-xs font-bold text-slate-950 shadow-md transition-colors flex items-center gap-1.5 shrink-0 cursor-pointer"
+                      className="rounded-xl bg-[#0047ba] hover:bg-blue-700 px-4 py-2.5 text-xs font-bold text-white shadow-md transition-colors flex items-center gap-1.5 shrink-0 cursor-pointer"
                     >
                       <span>Subscribe</span>
                       <span>→</span>
@@ -96,174 +96,180 @@ export function SiteFooter() {
           <StaggerItem direction="up" distance={24}>
             <div className="space-y-4">
               <div className="text-sm font-bold text-white tracking-wide uppercase">
-                Study Destinations & Services
+                Banner Study Destinations
               </div>
               <ul className="space-y-2 text-xs text-slate-300 font-medium">
                 <li>
-                  <Link to="/study-in-{$country}" params={{ country: "uk" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Study in United Kingdom 🇬🇧 (1-Yr Master/PSW)</span>
+                  <Link to="/study-in-{$country}" params={{ country: "uk" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in United Kingdom 🇬🇧 (Canterbury Christ Church Partner)</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/study-in-{$country}" params={{ country: "usa" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
+                  <Link to="/study-in-{$country}" params={{ country: "usa" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
                     <span>Study in USA 🇺🇸 (STEM OPT 3 Years)</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/study-in-{$country}" params={{ country: "australia" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Study in Australia 🇦🇺 (Spouse Full Work Rights)</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/study-in-{$country}" params={{ country: "hungary" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Study in Hungary 🇭🇺 (Low Tuition €1,800/yr)</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/study-in-{$country}" params={{ country: "canada" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
+                  <Link to="/study-in-{$country}" params={{ country: "canada" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
                     <span>Study in Canada 🇨🇦 (PGWP & PR Pathways)</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/study-in-{$country}" params={{ country: "finland" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
+                  <Link to="/study-in-{$country}" params={{ country: "australia" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in Australia 🇦🇺 (Spouse Full Work Rights)</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/study-in-{$country}" params={{ country: "new-zealand" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in New Zealand 🇳🇿 (3-Year PSW Visa)</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/study-in-{$country}" params={{ country: "cyprus" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in Cyprus 🇨🇾 (Free Bank Support Offer)</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/study-in-{$country}" params={{ country: "finland" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
                     <span>Study in Finland 🇫🇮 (30 Hrs/Week Work)</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/study-in-{$country}" params={{ country: "malaysia" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Study in Malaysia 🇲🇾 (Twin Degrees)</span>
+                  <Link to="/study-in-{$country}" params={{ country: "ireland" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in Ireland 🇮🇪 (Tech Hub 2-Yr Stay Back)</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/study-in-{$country}" params={{ country: "dubai" }} className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Study in Dubai 🇦🇪 (100% Visa / No IELTS)</span>
-                  </Link>
-                </li>
-                <li className="pt-2 border-t border-white/10">
-                  <Link to="/services" className="hover:text-amber-400 transition-colors flex items-center gap-1.5 font-bold text-amber-300">
-                    <span className="text-amber-400">★</span>
-                    <span>IELTS Cash Back On Visa Success</span>
+                  <Link to="/study-in-{$country}" params={{ country: "japan" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in Japan 🇯🇵 (Language to Degree)</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Spoken English & Fluency Program</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                    <span className="text-amber-400">›</span>
-                    <span>Kids' English Academy (Ages 5–14)</span>
+                  <Link to="/study-in-{$country}" params={{ country: "south-korea" }} className="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                    <span className="text-blue-400">›</span>
+                    <span>Study in South Korea 🇰🇷 (High Tech & Scholarships)</span>
                   </Link>
                 </li>
               </ul>
             </div>
           </StaggerItem>
 
-          {/* Column 3: Contact & Office Details */}
+          {/* Column 3: Verified Dhanmondi Office & Contact */}
           <StaggerItem direction="up" distance={24}>
             <div className="space-y-4">
               <div className="text-sm font-bold text-white tracking-wide uppercase">
-                Headquarters & Global Presence
+                Dhanmondi Head Office
               </div>
 
-              {/* Dhaka Headquarters */}
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping inline-block" />
-                  <span className="font-bold text-amber-400 text-xs">Dhaka Headquarters (Uttara)</span>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 space-y-3">
+                <div className="flex items-start gap-2.5">
+                  <span className="text-base text-blue-400 shrink-0 mt-0.5">📍</span>
+                  <div>
+                    <div className="font-bold text-white text-xs">
+                      {company.offices.headquarters.name}
+                    </div>
+                    <div className="text-[0.72rem] text-slate-300 mt-1 leading-relaxed">
+                      {company.address.full}
+                    </div>
+                    <div className="text-[0.68rem] text-amber-300 font-medium mt-1">
+                      {company.address.networkNote}
+                    </div>
+                  </div>
                 </div>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  {company.address.full}
-                </p>
-                <div className="pt-2 border-t border-white/10 flex flex-wrap gap-3 text-xs">
-                  <a
-                    href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`}
-                    className="text-white hover:text-amber-300 flex items-center gap-1 font-bold"
-                  >
-                    <IconPhone className="w-3.5 h-3.5 text-amber-400" />
-                    <span>{company.phones[0]}</span>
-                  </a>
-                  <a
-                    href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`}
-                    className="text-slate-300 hover:text-white flex items-center gap-1"
-                  >
-                    <span>{company.phones[1]}</span>
-                  </a>
-                  <a
-                    href="tel:0248956923"
-                    className="text-slate-300 hover:text-white flex items-center gap-1"
-                  >
-                    <span>Tel: 02-48956923</span>
-                  </a>
-                </div>
-                <div className="text-[0.72rem] text-slate-400">
-                  Email: <a href={`mailto:${company.emails[0]}`} className="text-slate-300 hover:underline">{company.emails[0]}</a>
+
+                <div className="pt-2 border-t border-white/10 space-y-1.5 text-[0.73rem]">
+                  <div className="flex items-center gap-2 text-slate-300">
+                    <IconPhone className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                    <span className="font-bold text-white">Hotline:</span>
+                    <a href={`tel:${company.phones[0].replace(/[^0-9]/g, "")}`} className="hover:text-blue-300">
+                      {company.phones[0]}
+                    </a>
+                    <span>·</span>
+                    <a href={`tel:${company.phones[1].replace(/[^0-9]/g, "")}`} className="hover:text-blue-300">
+                      {company.phones[1]}
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-slate-300">
+                    <IconWhatsApp className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span className="font-bold text-white">WhatsApp:</span>
+                    <a
+                      href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:text-emerald-300 font-semibold"
+                    >
+                      {company.whatsappFormatted}
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-slate-300">
+                    <span className="text-blue-400">✉</span>
+                    <span className="font-bold text-white">Email:</span>
+                    <a href={`mailto:${company.email}`} className="hover:text-blue-300">
+                      {company.email}
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-slate-300">
+                    <span className="text-amber-400">⏰</span>
+                    <span className="font-bold text-white">Hours:</span>
+                    <span>{company.hours}</span>
+                  </div>
                 </div>
               </div>
 
-              {/* UK Office */}
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs">🇬🇧</span>
-                  <span className="font-bold text-amber-400 text-xs">UK Liaison Office (Glasgow)</span>
-                </div>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  3A Westburn Road, Glasgow, United Kingdom
-                </p>
-                <div className="text-[0.72rem] text-slate-400">
-                  Email: <a href="mailto:apply.hscb.uk@gmail.com" className="text-slate-300 hover:underline">apply.hscb.uk@gmail.com</a>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 pt-2">
-                <a
-                  href={`https://wa.me/${company.whatsapp.replace(/[^0-9]/g, "")}`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-2 px-4 rounded-full flex items-center gap-1.5 transition-colors shadow-sm"
-                >
-                  <IconWhatsApp className="w-3.5 h-3.5" />
-                  <span>WhatsApp Helpline</span>
-                </a>
+              {/* Social Media Links */}
+              <div className="pt-2 flex items-center gap-3">
                 <a
                   href={company.social.facebook}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold text-xs py-2 px-4 transition-colors flex items-center gap-1.5 shadow-sm"
+                  className="rounded-full bg-white/10 hover:bg-blue-600 px-3 py-1.5 text-xs font-bold text-white transition-colors flex items-center gap-1.5 border border-white/15"
                 >
-                  <span>Facebook Page</span>
-                  <span>↗</span>
+                  <span>Facebook Page (@edugbl)</span>
+                  <span className="text-[0.65rem]">↗</span>
+                </a>
+                <a
+                  href={company.social.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-white/10 hover:bg-pink-600 px-3 py-1.5 text-xs font-bold text-white transition-colors flex items-center gap-1.5 border border-white/15"
+                >
+                  <span>Instagram</span>
+                  <span className="text-[0.65rem]">↗</span>
                 </a>
               </div>
             </div>
           </StaggerItem>
         </StaggerContainer>
 
-        {/* Bottom Legal Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-[0.72rem]">
+        {/* Bottom Bar: Copyright & Legal */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[0.72rem] text-slate-400">
           <div>
-            © 2012–{new Date().getFullYear()} {company.legalName}. All rights reserved. Sector 3, Uttara, Dhaka.
+            © {new Date().getFullYear()} {company.name}. All rights reserved. {company.slogan}.
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 font-medium">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
-            <span>•</span>
+            <span>·</span>
             <Link to="/terms-of-use" className="hover:text-white transition-colors">
               Terms of Use
             </Link>
-            <span>•</span>
-            <span className="text-amber-400 font-medium">Guiding Your Global Education Dream Since 2012</span>
+            <span>·</span>
+            <Link to="/contact" className="hover:text-white transition-colors">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

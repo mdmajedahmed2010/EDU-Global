@@ -99,16 +99,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "EducationalOrganization",
           name: company.legalName,
-          alternateName: "HSC BD (Higher Study Counselors Bangladesh)",
+          alternateName: "EDU Global (@edugbl)",
           slogan: company.slogan,
           description:
-            "Higher Study Counselors Bangladesh (Since 2012) is an elite foreign education advisory and language academy with offices in Sector 3, Uttara, Dhaka and Glasgow, UK. Specializing in UK, USA, Australia, Hungary, Canada, Finland, Denmark, Malaysia, and Dubai, with IELTS Cash Back on Visa Success, Move with Family, and Long Study Gap Accepted.",
-          foundingDate: company.established,
-          areaServed: ["Bangladesh", "Dhaka", "Uttara", "United Kingdom", "Worldwide"],
+            "EDU Global is a premier foreign higher education consultancy and language academy based in Keari Plaza, Satmasjid Road, Dhanmondi, Dhaka. Specializing in Europe, UK, USA, Canada, Australia, Japan, South Korea, and Malaysia, with 100% Admission Guidance, Free Bank Support Offer, and Study Gap Acceptance.",
+          foundingDate: "Verified Consultancy",
+          areaServed: ["Bangladesh", "Dhaka", "Dhanmondi", "Worldwide"],
           email: company.email,
-          telephone: company.phones.map((p) => `+880${p.replace(/[^0-9]/g, "").slice(-10)}`),
-          openingHours: "Sa-Th 09:30-18:30",
-          sameAs: [company.social.facebook, company.social.youtube, company.social.tiktok],
+          telephone: company.phones,
+          openingHours: "Sa-Th 10:00-19:00",
+          sameAs: [company.social.facebook, company.social.instagram],
           hasMap: company.mapsUrl,
           geo: {
             "@type": "GeoCoordinates",
@@ -139,7 +139,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className="overflow-x-hidden w-full max-w-[100vw]">
+      <body className="min-h-screen bg-background font-sans antialiased text-foreground selection:bg-blue-600 selection:text-white">
         {children}
         <Scripts />
       </body>
@@ -153,9 +153,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <RegisterModalProvider>
-        <div className="flex min-h-screen flex-col font-sans w-full overflow-x-clip pb-16 md:pb-0">
+        <div className="flex min-h-screen flex-col bg-background">
           <SiteHeader />
-          <main id="content" className="flex-1 w-full">
+          <main className="flex-1">
             <Outlet />
           </main>
           <SiteFooter />

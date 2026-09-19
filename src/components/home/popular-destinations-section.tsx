@@ -14,57 +14,57 @@ interface DestinationItem {
   highlight?: string;
 }
 
-// 9 Official Destinations Featured on Higher Study Counselors Bangladesh Banner
+// Official Destinations Featured on EDU Global Banner & University Network
 const destinationsData: DestinationItem[] = [
   {
     name: "United Kingdom",
     code: "UK",
     flag: "🇬🇧",
-    unis: "1-Yr Masters · PSW · Move With Family",
+    unis: "Canterbury Christ Church Partner · 1-Yr Masters & PSW",
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "uk",
-    highlight: "Official Banner · Move With Family",
+    highlight: "Official Partner · Move With Family",
+  },
+  {
+    name: "Cyprus (Europe)",
+    code: "CY",
+    flag: "🇨🇾",
+    unis: "1st 20 Free Bank Support · Tuition from €2,500 · MOI",
+    image:
+      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "cyprus",
+    highlight: "1st 20 Free Bank Support Offer",
+  },
+  {
+    name: "Italy (Schengen)",
+    code: "IT",
+    flag: "🇮🇹",
+    unis: "100% DSU Regional Scholarship · €7,000 Stipend",
+    image:
+      "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "italy",
+    highlight: "100% Scholarship Available",
   },
   {
     name: "United States",
     code: "USA",
     flag: "🇺🇸",
-    unis: "Top Universities · 3-Yr STEM OPT",
+    unis: "Top Universities · 3-Yr STEM OPT · High Merit Awards",
     image:
       "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "usa",
-    highlight: "Official Banner · High Scholarships",
-  },
-  {
-    name: "Australia",
-    code: "AUS",
-    flag: "🇦🇺",
-    unis: "Go8 & Tech Unis · Full Spouse Work Rights",
-    image:
-      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "australia",
-    highlight: "Official Banner · Spouse Work Rights",
-  },
-  {
-    name: "Hungary",
-    code: "HU",
-    flag: "🇭🇺",
-    unis: "Low Tuition (€1,800/yr) · Tuition After Visa",
-    image:
-      "https://images.unsplash.com/photo-1541849546-216549ae216d?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "hungary",
-    highlight: "Official Banner · Low Tuition Europe",
+    highlight: "STEM OPT & Scholarships",
   },
   {
     name: "Canada",
     code: "CA",
     flag: "🇨🇦",
-    unis: "DLI Institutions · Up to 3-Yr PGWP",
+    unis: "DLI Institutions · Up to 3-Yr PGWP · PR Pathways",
     image:
       "https://images.unsplash.com/photo-1517935703635-2717090c2210?auto=format&fit=crop&w=800&q=80",
     popular: true,
@@ -72,48 +72,48 @@ const destinationsData: DestinationItem[] = [
     highlight: "Official Banner · PR Pathways",
   },
   {
+    name: "Australia",
+    code: "AUS",
+    flag: "🇦🇺",
+    unis: "Go8 & Tech Unis · Full Spouse Work Rights · PSW",
+    image:
+      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "australia",
+    highlight: "Spouse Full Work Rights",
+  },
+  {
+    name: "Japan",
+    code: "JP",
+    flag: "🇯🇵",
+    unis: "Language to University Degree · High Wages & COE",
+    image:
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+    popular: true,
+    slug: "japan",
+    highlight: "Official Banner · Work & Study",
+  },
+  {
     name: "Finland",
     code: "FI",
     flag: "🇫🇮",
-    unis: "Happiest Country · 30 Hrs/Wk Work",
+    unis: "World-Class Education · 30 Hrs/Wk Work Rights",
     image:
       "https://images.unsplash.com/photo-1538332576228-eb5b4c4de6f5?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "finland",
-    highlight: "Official Banner · 30 Hrs Work",
-  },
-  {
-    name: "Denmark",
-    code: "DK",
-    flag: "🇩🇰",
-    unis: "Green Innovation · High Wage Economy",
-    image:
-      "https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "denmark",
-    highlight: "Official Banner · Scandinavian Standard",
+    highlight: "Nordic Quality · 30 Hrs Work",
   },
   {
     name: "Malaysia",
     code: "MY",
     flag: "🇲🇾",
-    unis: "UK/Aus Twin Degrees · Fast Visa Approval",
+    unis: "HELP & MMU Partner · UK/Aus Twinning Degrees",
     image:
       "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80",
     popular: true,
     slug: "malaysia",
-    highlight: "Official Banner · Fast Visa / Low Cost",
-  },
-  {
-    name: "Dubai (UAE)",
-    code: "UAE",
-    flag: "🇦🇪",
-    unis: "100% Visa · No IELTS · Work & Study",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
-    popular: true,
-    slug: "dubai",
-    highlight: "Official Banner · 100% Visa / No IELTS",
+    highlight: "Fast Visa & Low Cost",
   },
 ];
 
@@ -123,12 +123,12 @@ export function PopularDestinationsSection() {
       <div className="section-shell">
         {/* Animated Heading */}
         <MotionHeading
-          tag="— GLOBAL HIGHER EDUCATION PATHWAYS (SINCE 2012) —"
+          tag="— GLOBAL HIGHER EDUCATION PATHWAYS —"
           title="Featured Study"
           highlight="Abroad Destinations"
-          description="Higher Study Counselors Bangladesh provides verified admission support, scholarship matching, and student visa processing across our official banner destinations."
-          tagColor="text-amber-600"
-          highlightColor="text-amber-600"
+          description="EDU Global provides verified 100% admission support, Free Bank Support for European intakes, and student visa processing across our official banner destinations."
+          tagColor="text-emerald-700"
+          highlightColor="text-emerald-700"
         />
 
         {/* 9-Card Responsive Grid with Stagger Entrance */}
@@ -147,7 +147,7 @@ export function PopularDestinationsSection() {
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <img
                     src={d.image}
-                    alt={`Study in ${d.name} with Higher Study Counselors Bangladesh`}
+                    alt={`Study in ${d.name} with EDU Global`}
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     loading="lazy"
                   />
